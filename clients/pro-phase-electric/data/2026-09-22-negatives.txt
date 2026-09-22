@@ -1,0 +1,121 @@
+# Negativas propuestas — Pro Phase Electric (758-301-1023) — 2026-09-22
+# Formato: término | match | nivel | fuente
+# Nivel "campaña" = campaña 24208591381 (única de la cuenta). Windsor no crea listas compartidas;
+# cuando haya API/Editor se mueven a las listas "PMM Universal" y "pro-phase-electric nicho".
+
+# --- Universal PMM (knowledge/negativas-universales.md) que faltan en la cuenta ---
+careers | PHRASE | campaña | universal
+vacancy | PHRASE | campaña | universal
+recruit | PHRASE | campaña | universal
+work from home | PHRASE | campaña | universal
+how do i | PHRASE | campaña | universal
+certificate | PHRASE | campaña | universal
+license exam | PHRASE | campaña | universal
+manual | PHRASE | campaña | universal
+pdf | PHRASE | campaña | universal
+wikipedia | PHRASE | campaña | universal
+meaning | PHRASE | campaña | universal
+youtube | PHRASE | campaña | universal
+for free | PHRASE | campaña | universal
+freebie | PHRASE | campaña | universal
+cheapest | PHRASE | campaña | universal
+no cost | PHRASE | campaña | universal
+donation | PHRASE | campaña | universal
+donate | PHRASE | campaña | universal
+volunteer | PHRASE | campaña | universal
+supplies | PHRASE | campaña | universal
+kit | PHRASE | campaña | universal
+kits | PHRASE | campaña | universal
+amazon | PHRASE | campaña | universal
+ebay | PHRASE | campaña | universal
+walmart | PHRASE | campaña | universal
+lowes | PHRASE | campaña | universal
+menards | PHRASE | campaña | nicho (retail NWA)
+for sale | PHRASE | campaña | universal
+rental | PHRASE | campaña | universal
+scam | PHRASE | campaña | universal
+lawsuit | PHRASE | campaña | universal
+reddit | PHRASE | campaña | universal
+quora | PHRASE | campaña | universal
+yelp | PHRASE | campaña | universal
+bbb | PHRASE | campaña | universal
+permit | PHRASE | campaña | universal
+city of | PHRASE | campaña | universal
+insurance claim | PHRASE | campaña | universal
+lawyer | PHRASE | campaña | universal
+attorney | PHRASE | campaña | universal
+porn | PHRASE | campaña | universal
+meme | PHRASE | campaña | universal
+lyrics | PHRASE | campaña | universal
+song | PHRASE | campaña | universal
+movie | PHRASE | campaña | universal
+
+# --- Nicho electricistas (knowledge) ---
+electrician salary | PHRASE | campaña | nicho
+electrician school | PHRASE | campaña | nicho
+electrical supply | PHRASE | campaña | nicho
+wire for sale | PHRASE | campaña | nicho
+circuit breaker for sale | PHRASE | campaña | nicho
+electrical engineer | PHRASE | campaña | nicho
+nec | PHRASE | campaña | nicho
+
+# --- Utilities / cooperativas NWA (search terms + competitors.md) ---
+carroll electric | PHRASE | campaña | search terms ($50.46)
+ozarks electric | PHRASE | campaña | search terms
+ozark electric | PHRASE | campaña | search terms ($7.25)
+bentonville electric | PHRASE | campaña | search terms ($10.87)
+bentonville utilities | PHRASE | campaña | competitors
+swepco | PHRASE | campaña | competitors
+entergy | PHRASE | campaña | competitors
+liberty utilities | PHRASE | campaña | competitors
+og&e | PHRASE | campaña | competitors
+electric cooperative | PHRASE | campaña | competitors
+electric coop | PHRASE | campaña | competitors
+power outage | PHRASE | campaña | competitors
+outage | PHRASE | campaña | competitors
+pay my bill | PHRASE | campaña | competitors
+electricity provider | PHRASE | campaña | competitors
+
+# --- Competidores (estándar PMM 5) ---
+mister sparky | PHRASE | campaña | competitors
+mr sparky | PHRASE | campaña | competitors
+mr electric | PHRASE | campaña | competitors
+mr. electric | PHRASE | campaña | competitors
+epic electric | PHRASE | campaña | search terms ($12.28)
+wireworks | PHRASE | campaña | competitors
+emperial | PHRASE | campaña | competitors
+atlantic electric | PHRASE | campaña | competitors
+cj's electric | PHRASE | campaña | competitors
+cjs electric | PHRASE | campaña | competitors
+blueline electric | PHRASE | campaña | competitors
+alokin | PHRASE | campaña | competitors
+hills electric | PHRASE | campaña | search terms ($8.88)
+abs electrical | PHRASE | campaña | search terms ($10.99)
+arnold & blevins | PHRASE | campaña | search terms ($5.84)
+arnold and blevins | PHRASE | campaña | search terms
+blevins | PHRASE | campaña | search terms
+triway | PHRASE | campaña | search terms ($6.46)
+electrical solutions | PHRASE | campaña | search terms ($6.79)
+streib | PHRASE | campaña | competitors
+true blue electric | PHRASE | campaña | competitors
+enm nwa | PHRASE | campaña | competitors
+
+# --- Producto / DIY / info (search terms) ---
+nema 14 50 outlet | EXACT | campaña | search terms ($13.33)
+nema 14-50 outlet | EXACT | campaña | search terms
+dc charger for home | EXACT | campaña | search terms ($11.89)
+level 2 ev charger for home | EXACT | campaña | search terms ($10.93)
+home ev charger | EXACT | campaña | search terms ($9.81)
+junction box | PHRASE | campaña | search terms ($11.51)
+old time electrical wiring | EXACT | campaña | search terms ($13.37)
+replacing ceiling fan | EXACT | campaña | search terms ($10.28)
+electrical | EXACT | campaña | search terms ($25.22)
+
+# --- Fuera de servicio / horario (brief) ---
+24 hour | PHRASE | campaña | brief (no 24/7)
+24/7 | PHRASE | campaña | brief (no 24/7)
+after hours | PHRASE | campaña | brief (no 24/7)
+generator | PHRASE | campaña | brief (no ofrece; confirmar)
+generators | PHRASE | campaña | brief (no ofrece; confirmar)
+handyman | PHRASE | campaña | benchmark
+ac unit repair | PHRASE | campaña | benchmark
