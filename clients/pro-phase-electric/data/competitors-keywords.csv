@@ -1,0 +1,33 @@
+keyword,volumen_us,cpc_us,competencia,intencion_semrush,vol_nwa_est,competidores_que_ofrecen,intencion_pmm,cubrir
+electrician near me,246000,17.06,0.73,transaccional,440,todos,comercial,si
+licensed electrician near me,22200,13.43,0.52,transaccional,40,todos,comercial,si
+electric company near me,9900,13.27,0.67,transaccional,18,todos,ambigua (utility),no - negativa si trae cooperativas
+electrician fayetteville ar,140,28.27,0.85,comercial,140,todos,comercial,si
+electrician rogers ar,90,22.24,0.68,comercial,90,todos,comercial,si
+electrician springdale ar,70,17.68,0.75,comercial,70,todos,comercial,si
+electrician bentonville ar,40,13.61,0.97,informacional,40,todos,comercial,si
+electrician bella vista ar,30,46.18,0.85,comercial,30,todos,comercial,si
+electrician nwa,30,34.45,0.55,informacional,30,todos,comercial,si
+electrical repair near me,12100,17.74,0.16,transaccional,22,todos,comercial,si
+electrical panel upgrade,12100,10.47,0.35,informacional,22,"Mister Sparky, Warranty, Wireworks, Epic",comercial,si
+electrical panel replacement,8100,9.42,0.53,comercial,15,"Mister Sparky, Warranty, Wireworks, Epic",comercial,si
+panel upgrade electrician,90,11.58,0.16,comercial,<5,"Mister Sparky, Warranty, Wireworks, Epic",comercial,si
+200 amp panel upgrade,170,5.89,0.67,informacional,<5,"Warranty, Wireworks",comercial,si
+ev charger installation,40500,9.73,0.38,informacional,73,"Warranty, Wireworks, Epic, CJ's, Blueline, Alokin, ENM",comercial,si
+ev charger installation near me,22200,13.74,0.55,transaccional,40,"Warranty, Wireworks, Epic, CJ's, Blueline, Alokin, ENM",comercial,si
+tesla charger installation,4400,9.48,0.64,informacional,8,"Epic, Alokin",comercial,si
+level 2 charger installation,1300,6.74,0.59,informacional,<5,"Alokin, Blueline",comercial,si
+circuit breaker repair,6600,7.69,0.10,informacional,12,"Mister Sparky, Wireworks",comercial,si (dentro de repair)
+outlet repair,1600,9.56,0.20,informacional,<5,"Mister Sparky, Wireworks",comercial,si (dentro de repair)
+electrical wiring repair,1000,7.37,0.19,informacional,<5,"Mister Sparky, Wireworks",comercial,si (dentro de repair)
+emergency electrician,27100,21.48,0.15,comercial,49,"Mister Sparky, Epic, Mr. Electric (24/7)",comercial,no - cliente no es 24/7
+24 hour electrician,12100,20.00,0.33,comercial,22,"Mister Sparky, Epic (24/7)",comercial,no - cliente no es 24/7
+generator installation,60500,13.98,0.25,comercial,109,"Epic, Wireworks",comercial,no - servicio no ofrecido (confirmar)
+whole house generator installation,5400,9.16,0.17,transaccional,10,"Epic, Wireworks",comercial,no - servicio no ofrecido (confirmar)
+ceiling fan installation,49500,6.04,0.36,informacional,89,"Mister Sparky, Epic",mixta (DIY),no en fase 1
+ceiling fan installation near me,27100,9.04,0.38,transaccional,49,"Mister Sparky, Epic",comercial ticket bajo,no en fase 1
+recessed lighting installation,27100,5.12,0.66,comercial,49,"Mister Sparky",comercial ticket bajo,no en fase 1
+lighting installation,4400,8.51,0.32,informacional,8,"Mister Sparky",comercial ticket bajo,no en fase 1
+smoke detector installation,4400,8.68,0.13,comercial,8,"Mister Sparky",comercial ticket bajo,no
+electrical inspection,2900,10.28,0.42,informacional,5,"Mister Sparky",mixta,no en fase 1
+rewiring house,40,5.22,0.22,informacional,<5,"Mister Sparky (aluminum wiring)",comercial,no (volumen nulo)
