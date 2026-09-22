@@ -36,12 +36,12 @@ estado: onboarding
 
 ## Objetivo y economía
 - Objetivo primario: **llamadas**
-- Presupuesto mensual: **USD 825 de pauta** (≈ USD 27/día). Jhombis dijo "1,500, pero me puedo gastar 825"; lo interpreto como 1,500 de contrato total y 825 de pauta. Margen para escalar: PENDIENTE
+- Presupuesto mensual: **USD 825 de pauta** (≈ USD 27/día). Jhombis dijo "1,500, pero me puedo gastar 825"; el nombre de la cuenta en el MCC ("$1500 Pro Phase Electric") confirma 1,500 de contrato y 825 de pauta. Margen para escalar: PENDIENTE
   - Implicación: con un CPC probable de USD 8–15 en NWA salen ~55–100 clics al mes. Alcanza para una campaña Search concentrada en 1–2 servicios, no para una cuenta repartida
 - Ticket promedio / margen: PENDIENTE
 - Capacidad (leads o trabajos/mes): PENDIENTE
 - **CPL máximo aceptable**: PENDIENTE. Fórmula: margen por trabajo × tasa de cierre estimada × 0.3
-- Historial Google Ads: **sí, en el MCC de PMM**. ID de cuenta: **758-301-1023**. Antigüedad y resultados: PENDIENTE; /benchmark-interno los lee de la cuenta
+- Historial Google Ads: **sí, en el MCC de PMM**. ID de cuenta: **758-301-1023**. **Activa desde 01-sep-2026** (Max. clics, broad, $27/día): $442.75 gastados, 1 conv. Diagnóstico en `benchmark.md`
 
 ## Operación
 - Horario / 24-7: **todos los días (lunes a domingo), 5:00–16:00**, según el cliente. No es 24/7. ⚠️ Yelp y los directorios publican L–V 8:00–17:00: hay que alinear el GBP y los directorios. La programación de anuncios sigue el horario real (5:00–16:00, 7 días)
@@ -76,7 +76,6 @@ Competidores que reconoce el cliente: PENDIENTE
 - [ ] **Bloqueante**: ticket promedio, margen y tasa de cierre para calcular el CPL máximo. Sin esto /strategy no fija el tCPA objetivo
 - [ ] **Bloqueante**: tracking de llamadas. ¿Acepta número de reenvío? ¿Las llamadas desde anuncios y desde el sitio están configuradas como conversión y probadas con Tag Assistant?
 - [ ] **Bloqueante**: acceso para editar el sitio (CMS) y destino del formulario
-- [ ] Confirmar la lectura del presupuesto: ¿825 de pauta y 1,500 de contrato total?
 - [ ] GBP: aclarar si "No" es no verificado o sin acceso; pedir acceso de gestor; alinear el horario publicado con el real (5–16, 7 días)
 - [ ] Orden de servicios por rentabilidad; servicio estrella y servicio a evitar
 - [ ] Quién contesta el teléfono y tiempo de respuesta; capacidad de trabajos al mes
