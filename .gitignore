@@ -1,0 +1,6 @@
+google-ads.yaml
+client_secret.json
+*.env
+__pycache__/
+clients/*/data/*.json
+!clients/_template/
