@@ -44,7 +44,7 @@ estado: evaluacion (cuenta existente, sin cambios en Ads)
 | RPM Automotive (Phillips Hwy / Roosevelt) | PENDIENTE | Aparece en search terms pagados. |
 | Take 5 Oil Change | PENDIENTE | Aparece en search terms pagados ($26.58). |
 | Mitchell Transmission, Hughes Riverside Automotive, Tillman Auto | PENDIENTE | Search terms de competidor con gasto. |
-PENDIENTE: correr `/competitors`.
+Análisis completo en [`competitors.md`](competitors.md). Directos en la misma calle: Duval County Transmission (8333 103rd St, abre sábado, NAPA 36/36) y Budget Automotive (8670 103rd St).
 
 ## Web y tracking
 - Plataforma / quién edita: PENDIENTE (sitio de la franquicia/ZETA).

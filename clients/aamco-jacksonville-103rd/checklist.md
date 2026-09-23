@@ -19,3 +19,7 @@ Se regenera con /roadmap. Por ahora, bloqueantes que salieron de la evaluación:
 - [ ] (PMM) Eventos clave en GA4 (form_submit, click_tel)
 - [ ] (Cliente) Dominio canónico único para la sede (anuncio, subdominio, GBP)
 - [ ] (PMM) Cerrar N/V de la landing: habilitar dominio en red o captura móvil + PageSpeed
+- [x] (PMM) /competitors (2026-09-23): ver competitors.md
+- [ ] (Cliente) Garantía por tipo de trabajo, condiciones de financiamiento, ¿remolque gratis con la reparación?
+- [ ] (Cliente) Plan de reseñas (4.4★ frente a 4.9★ de los independientes)
+- [ ] (PMM) Métricas de Auction Insights desde la interfaz (Windsor solo da los dominios)
