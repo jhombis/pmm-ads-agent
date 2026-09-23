@@ -32,11 +32,12 @@ estado: onboarding
   - Supuestos: ticket light-duty de $175, margen del 45% (→ $79 por trabajo), cierre del 60% en llamadas de emergencia. Cálculo: $79 × 0.6 × 0.3 ≈ $14.
   - Este valor queda muy por debajo del CPL típico de towing en Search. Si long-distance o exotic pesan en la mezcla, el ticket real sube y el CPL tolerable también. Hay que confirmar el ticket antes de /strategy.
   - Referencia de economía para el cliente: $1,500 ÷ leads/mes = su costo real por lead (incluye el fee).
-- Historial Google Ads: **sí**.
-  - Cuenta del MCC: "Premium Local Listings 004046 ($1500 290 Tow and Recovery)", **ID 213-019-5545**.
-  - Premium Local Listings es el revendedor.
-  - A 2026-09-23 la cuenta **no aparece en Windsor.ai** (el último ID sincronizado es 004049, pero 004046 falta). Hay que leer el historial por API o conectar la cuenta a Windsor.
-  - Hay más de 25 cuentas de towing de PLL en el MCC. Sirven de base para /benchmark-interno.
+- Historial Google Ads: **cuenta nueva, sin historial útil**.
+  - Cuenta del MCC: "Premium Local Listings 004046 ($1500 290 Tow and Recovery)", **ID 213-019-5545**. Premium Local Listings es el revendedor.
+  - Ya aparece en Windsor.ai y se leyó el 2026-09-23.
+  - Se lanzó el **2026-09-17**. Tiene 1 campaña Search "ENHPRM Radius": Maximizar clics, $27/día, radio de 40 mi por presencia, 1 ad group con 10 keywords en amplia.
+  - En 6 días: $165.57, 14 clics, CPC de $11.83 y **0 conversiones**. Detalle en `benchmark.md` y `data/hist-*.csv`.
+  - Hay más de 25 cuentas de towing de PLL en el MCC. Son la base de /benchmark-interno.
 
 ## Operación
 - Horario / 24-7: 24/7 con alguien que contesta de verdad. Programación de anuncios 24/7.
@@ -62,7 +63,7 @@ estado: onboarding
 ## Pendientes
 - [ ] **(bloqueante)** Conversión de llamadas: forwarding number + clic para llamar en el sitio, probados con Tag Assistant antes de gastar.
 - [ ] **(bloqueante)** Ticket promedio y margen por servicio, para fijar el CPL máximo real.
-- [ ] **(bloqueante)** Leer el historial de la cuenta 213-019-5545 (API o conectarla a Windsor).
+- [x] Leer el historial de la cuenta 213-019-5545 (hecho 2026-09-23 vía Windsor). La cuenta se lanzó el 17/09 y en 6 días gastó $165.57 con CPC de $11.83, 0 conversiones y un 43% de desperdicio en amplia, así que no hay historial útil (ver benchmark.md).
 - [ ] Orden de rentabilidad de los servicios, más el servicio estrella y el servicio a evitar.
 - [ ] Quién contesta las llamadas, tiempo de respuesta y capacidad (tows/mes).
 - [ ] Crear y verificar el Google Business Profile (desbloquea el activo de ubicación y LSA).
