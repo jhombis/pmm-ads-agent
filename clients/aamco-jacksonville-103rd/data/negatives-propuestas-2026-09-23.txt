@@ -1,0 +1,41 @@
+# Negativas PROPUESTAS — Search 103rd (NO aplicadas). Revisar con Jhombis antes de /negatives.
+# Fuente: search terms 90d (Windsor, 2026-09-23). La campaña ya tiene 368 negativas; esta lista cubre huecos vistos.
+# Formato: término | concordancia | nivel sugerido | motivo
+
+# --- Competidores (frase, campaña) ---
+take 5 | frase | campaña | competidor oil change ($26.58 gastado)
+rpm automotive | frase | campaña | competidor
+rpm phillips | frase | campaña | competidor
+rpm roosevelt | frase | campaña | competidor
+mitchell transmission | frase | campaña | competidor
+hughes riverside | frase | campaña | competidor
+tillman auto | frase | campaña | competidor
+valvoline | frase | campaña | competidor
+keith pierson | frase | campaña | concesionario
+pick a part | frase | campaña | repuestos
+
+# --- Otras sedes AAMCO (frase, SOLO en campaña 103rd; evita pagar por clientes de otra sede) ---
+dunn ave | frase | campaña 103rd | sede Biscayne/Dunn
+biscayne | frase | campaña 103rd | sede Biscayne
+san jose blvd | frase | campaña 103rd | sede San Jose
+atlantic blvd | frase | campaña 103rd | sede Atlantic
+blanding | frase | campaña 103rd | sede Orange Park
+orange park | frase | campaña 103rd | sede Orange Park
+st augustine | frase | campaña 103rd | sede St. Augustine
+# (y la inversa: "103rd" como negativa en Biscayne, San Jose y Atlantic)
+
+# --- Servicios que AAMCO no hace / baja intención ---
+windshield | frase | cuenta | vidrio
+auto glass | frase | cuenta | vidrio
+tow hitch | frase | cuenta | no aplica
+salvage | frase | cuenta | repuestos usados
+used transmission | frase | cuenta | compra de pieza, no servicio
+transmissions for sale | frase | cuenta | compra de pieza
+buy transmission | frase | cuenta | compra de pieza
+part store | frase | cuenta | repuestos
+who put | frase | cuenta | informacional
+how to fix | frase | cuenta | DIY
+
+# --- Revisar con el cliente antes de excluir ---
+# oil change / tune up: ¿el taller los quiere como puerta de entrada o son ticket bajo que satura bahías?
+# phone number / hours con marca: suelen ser clientes actuales llamando por su auto (no leads nuevos).
