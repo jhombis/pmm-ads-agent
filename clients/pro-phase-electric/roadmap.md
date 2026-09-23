@@ -37,7 +37,7 @@ plan_en: https://claude.ai/artifact/3KhWsGyQmP8QY9ZLm1zZgk
     - Poner techo de CPC de $12.
     - Apagar socios de búsqueda y Display.
     - Revisar que la ubicación sea "Presencia".
-    - Poner la programación L–D de 5:00 a 16:00.
+    - Programación L–D 5:00–16:00 hora de Arkansas = 3:00–14:00 en la cuenta (Pacífico). ✅ 23-sep.
   - *Tracking (PMM, necesita acceso al Tag y al sitio):*
     - Conversión de formulario con página de gracias o evento.
     - "Website calls" con número de reenvío de Google.

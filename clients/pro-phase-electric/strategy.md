@@ -57,7 +57,7 @@ Lectura (playbook §3): mucha IS perdida por presupuesto con gasto bajo = el pre
 ## Campañas
 | Campaña | Objetivo | Presupuesto/día F1 | Puja | Geo | Horario |
 |---|---|---|---|---|---|
-| Pro Phase Electric - Search NWA - $1500/mo. - [fecha de lanzamiento] | Llamadas + formularios | $27 (100%) | Max. clics, tope CPC $12 → Max. conversiones con 15+ conv/mes | **Presencia**: condados de Benton y Washington (AR) + Huntsville (AR). Resto excluido | L–D 5:00–16:00 (zona horaria de la cuenta) |
+| Pro Phase Electric - Search NWA - $1500/mo. - [fecha de lanzamiento] | Llamadas + formularios | $27 (100%) | Max. clics, tope CPC $12 → Max. conversiones con 15+ conv/mes | **Presencia**: condados de Benton y Washington (AR) + Huntsville (AR). Resto excluido | L–D 5:00–16:00 **hora de Arkansas** = **3:00–14:00 en la zona de la cuenta** (America/Los_Angeles) |
 | *(actual)* Pro Phase Electric - ENHPRM Radius - $1500/mo. - 09/01/2026 | — | $27 → **se pausa** el día que sale la nueva | Max. clics (en F0: tope de CPC $12) | — | — |
 
 Configuración fija: solo red de Búsqueda (socios y Display apagados: mezclan tráfico y contaminan la lectura), aplicación automática de recomendaciones apagada, rotación optimizar, idioma EN, sin segmentos de audiencia como exclusión.
@@ -118,7 +118,7 @@ Completo en **`data/ads-search-nwa.md`** (largos validados por script). **1 RSA 
 
 4 descripciones: una del grupo y 3 compartidas (confianza + quote, horario 7 días, precio justo + puntualidad).
 
-Extensiones: llamada (5–16), 5 sitelinks (Free Quote, Reviews, Services, Safety Inspections, Residential; Panel y EV en F2; se quita /portfolio/), 8 callouts, snippet "Service catalog", imágenes propias del portfolio, ubicación cuando haya acceso al GBP.
+Extensiones: llamada (5–16 Central = 3–14 en la cuenta), 5 sitelinks (Free Quote, Reviews, Services, Safety Inspections, Residential; Panel y EV en F2; se quita /portfolio/), 8 callouts, snippet "Service catalog", imágenes propias del portfolio, ubicación cuando haya acceso al GBP.
 **No se usa**: "same day", "24/7", "emergency", número de reseñas ni la marca Tesla.
 
 ## Medición (playbook §7) — va antes de cualquier ajuste de puja
@@ -126,7 +126,7 @@ Extensiones: llamada (5–16), 5 sitelinks (Free Quote, Reviews, Services, Safet
 - **Formulario de prueba**: mensaje de gracias, llegada del correo (hoy a un Gmail) y conversión registrada en 24–48 h.
 - **Acciones de conversión**: primarias solo formulario + llamadas ≥60 s (anuncio y sitio). Nada de vistas ni clics como primarias.
 - **Recurso de llamada**: aprobado, no en revisión; filtro de duración en 60 s (no más alto).
-- **Horario de anuncios = horario de atención**: 5:00–16:00, 7 días.
+- **Horario de anuncios = horario de atención**: 5:00–16:00 Central, 7 días. La cuenta está en hora del Pacífico: se programa 3:00–14:00 (aplicado en la campaña actual el 23-sep).
 - **Popups y "After Submit"** si el sitio usa Elementor.
 - **Fecha de cada arreglo** registrada en el log, para comparar antes y después.
 

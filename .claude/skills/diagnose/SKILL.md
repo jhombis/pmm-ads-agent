@@ -22,7 +22,7 @@ Datos por Windsor (`google_ads`) o API (`scripts/gaql.py`). Si Windsor da error 
 4. **`conversion_action_name` por mes**: si una acción cae a cero y las demás siguen, el problema es de **medición**, no de demanda.
 5. **Search terms** con clics > 0 (30–60 días). Clasifica en las categorías de desperdicio del playbook (§6): utilities, marcas de producto, DIY/informativas, competencia, precio/empleo, vertical/geografía fuera de zona. Reporta cada categoría en **$ y % sobre el gasto rastreable** (el informe de términos no cubre todo el gasto; di cuánto cubre).
 6. **`keyword_text`** con impresiones > 0: concentración del gasto, keywords de alta intención con impresiones y 0 clics (síntoma de Max. clics sin tope comprando lo barato).
-7. **Medición y landing** (checklist del playbook §7): un solo teléfono en todo el sitio y que sea el de reenvío, formulario de prueba, acciones de conversión reales (no vistas ni clics), estado de los recursos de llamada, filtro de duración de llamada, horario de atención contra programación, popups y "After Submit" si es Elementor.
+7. **Medición y landing** (checklist del playbook §7): un solo teléfono en todo el sitio y que sea el de reenvío, formulario de prueba, acciones de conversión reales (no vistas ni clics), estado de los recursos de llamada, filtro de duración de llamada, horario de atención contra programación **convertido a la zona horaria de la cuenta** (`customer.time_zone`), popups y "After Submit" si es Elementor.
 
 ## Lectura rápida
 - Mucha IS perdida por presupuesto + gasto bajo → el presupuesto se agota en tráfico equivocado: faltan filtros, no dinero.

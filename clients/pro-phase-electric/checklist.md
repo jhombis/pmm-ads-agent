@@ -22,7 +22,7 @@ Cuenta 758-301-1023 · campaña actual 24208591381 (Max. clics, se pausa en F1).
 - [x] (PMM) Pausadas las 4 keywords broad genéricas — 23-sep
 - [x] (PMM) Techo de CPC de $12 (Max. clics) — 23-sep
 - [x] (PMM) Socios de búsqueda y Display apagados; ubicación = Presencia — verificado vía API 23-sep
-- [ ] (Jhombis) Programación: la cuenta está en hora del Pacífico; el horario actual 5–16 PT = 7–18 en Arkansas. Decidido no cambiarlo por ahora (23-sep)
+- [x] (PMM) Programación corregida: L–D 3:00–14:00 hora de la cuenta (Pacífico) = 5:00–16:00 Arkansas — 23-sep (antes corría 7–18 en Arkansas)
 
 ### Tracking
 - [ ] **B** (PMM) Google Tag verificado en todas las páginas (el cliente dice que está; confirmar el ID y el acceso)
@@ -66,11 +66,11 @@ Cuenta 758-301-1023 · campaña actual 24208591381 (Max. clics, se pausa en F1).
 - [ ] (PMM) /build-campaign: "Search NWA" con 4 ad groups (NWA + Repair activos; Paneles y EV pausados) según `strategy.md`, creada en pausa
 - [ ] (PMM) Red: solo Búsqueda; socios y Display apagados
 - [ ] (PMM) Ubicación: Presencia; condados de Benton y Washington + Huntsville; resto excluido
-- [ ] (PMM) Programación L–D 5:00–16:00
+- [ ] (PMM) Programación L–D 3:00–14:00 en hora de la cuenta (= 5:00–16:00 Arkansas)
 - [ ] (PMM) Puja: Max. clics con tope de CPC $12; $27/día (playbook §5)
 - [ ] (PMM) Keywords en frase + exacta (83; ciudades sin "ar" por la inserción de keyword; sin Tesla); ninguna broad
 - [ ] (PMM) 1 RSA por ad group, H1 pinneado, 15 headlines y 4 descripciones (`data/ads-search-nwa.md`), fuerza "Buena" o superior
-- [ ] (PMM) Extensiones: 5 sitelinks, 8 callouts, snippet, llamada (5–16), imágenes propias; ubicación cuando haya GBP
+- [ ] (PMM) Extensiones: 5 sitelinks, 8 callouts, snippet, llamada (3–14 hora de la cuenta), imágenes propias; ubicación cuando haya GBP
 - [ ] (PMM) Negativas de enrutamiento por ad group (NWA, Repair)
 - [ ] (PMM) URLs finales verificadas (200, https, sin redirect)
 - [ ] **B** (Jhombis) Revisión y activación; pausar la campaña actual el mismo día
