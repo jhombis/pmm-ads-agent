@@ -14,7 +14,7 @@ La única métrica que importa es la **rentabilidad del cliente**. CTR, tasa de 
 ## Estructura del repo
 ```
 CLAUDE.md                 este archivo
-knowledge/                estrategias, benchmarks, checklists y listas base
+knowledge/                estrategias, benchmarks, checklists, listas base y estilo-informes/ (plantilla HTML + logo PMM)
 .claude/skills/           skills invocables con /nombre
 clients/<slug>/           una carpeta por cliente (ver clients/_template)
 docs/                     setup de integraciones
@@ -80,3 +80,4 @@ scripts/                  utilidades (API de Google Ads, PageSpeed, etc.)
 - Los archivos de cliente usan Markdown con front matter (`cliente`, `slug`, `pais`, `actualizado`).
 - Cuando termines un skill, resume en 3–5 líneas qué produjiste y cuál es el siguiente skill a correr.
 - **Toda página, artefacto o HTML de entrega (plan, reporte, resumen para el cliente) se genera SIEMPRE en dos versiones: español e inglés.** Archivos `clients/<slug>/plan-es.html` y `plan-en.html` (o `<nombre>-es.html` / `<nombre>-en.html`), mismo contenido y diseño, cada una con un enlace a la otra. Se publican como dos artefactos y sus URLs se guardan en el front matter de `roadmap.md` (`plan_es`, `plan_en`). Al actualizar, se republican las dos en sus mismas URLs.
+- **Estilo gráfico único para toda entrega HTML**: logo PMM, paleta, tipografías y componentes de `knowledge/estilo-informes/` (guía en `README.md`, base en `plantilla.html`, logo en `pmm-logo.webp`). Se parte siempre de `python scripts/informe_html.py new <es> <en>`, no se inventa otro diseño ni se edita el `<style>`, y antes de publicar se corre `python scripts/informe_html.py check <es> <en>`.

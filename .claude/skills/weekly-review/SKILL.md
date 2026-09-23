@@ -62,5 +62,7 @@ Fecha y qué mirar.
 
 Actualiza `roadmap.md` (estado de fases, historial) y `checklist.md`.
 
+Si la revisión se entrega al cliente o al equipo como página, usar el estilo PMM (`knowledge/estilo-informes/`, `scripts/informe_html.py new/check`) en ES y EN, y republicar en las mismas URLs.
+
 ## Al terminar
 Resume estado, acciones propuestas que necesitan OK, y si la fase avanzó.
