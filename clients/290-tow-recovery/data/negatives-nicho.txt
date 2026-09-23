@@ -1,0 +1,146 @@
+# Negativas nicho + cliente — 290 Tow and Recovery (2026-09-23)
+# Nivel: cuenta (lista compartida "290 Towing Nicho"), además de "PMM Universal" (knowledge/negativas-universales.md).
+# Concordancia: frase salvo que se indique [exacta].
+# OJO al aplicar la universal: NO excluir "tow truck" ni "towing". En la universal, "trailer" (towing) y "rental/rent" están bien.
+
+## Towing (lista de nicho PMM)
+junkyard
+junk yard
+salvage
+scrap
+car for cash
+sell my car
+tow truck for sale
+tow truck driver
+tow truck jobs
+dmv
+impound lot
+tow hitch
+tow bar
+trailer
+
+## Desperdicio real de la cuenta (18–23/09)
+jumper
+jump starter
+jump box
+battery charger
+dolly
+dollies
+hauler
+haulers
+what does
+cover
+cheap
+
+## Equipo / compra de grúas
+rollback tow truck
+wrecker trucks
+wrecker for sale
+tow truck bed
+wheel lift
+tow straps
+tow rope
+
+## Fuera de servicio (el cliente es light/medium)
+heavy duty
+semi
+semi truck
+18 wheeler
+big rig
+tractor trailer
+bus towing
+rotator
+
+## Transporte / brokers (protege long-distance)
+auto transport
+car shipping
+ship a car
+ship my car
+shipping
+enclosed car transport
+enclosed auto transport
+car carrier
+broker
+uship
+shiply
+montway
+
+## Roadside de terceros / seguros
+aaa
+geico
+progressive
+state farm
+allstate
+insurance roadside
+roadside assistance plan
+roadside assistance program
+freeway service patrol
+roadside assistance number
+roadside assistance phone number
+
+## Ticket bajo / CPC alto (F1)
+fuel delivery
+gas delivery
+ran out of gas
+battery replacement
+battery change
+tire shop
+tire store
+locksmith
+
+## Geo fuera de mercado
+virginia
+va
+22401
+22405
+22407
+culpeper
+stafford
+spotsylvania
+shanks
+tennessee
+tn
+towing san antonio
+tow truck san antonio
+san antonio towing
+san antonio tow truck
+san antonio wrecker
+# (no 'san antonio' suelto: bloquearía 'tow car to san antonio' de AG6)
+new braunfels
+austin tx towing
+[towing austin]
+
+## Competidores (no pujar)
+tic tac towing
+douglas towing
+midway wrecker
+mr wrecker
+mr. wrecker
+integrity towing
+five star wrecker
+5 star towing
+5 star wrecker
+jimmy's towing
+jimmys towing
+fat boy towing
+jds wrecker
+jds towing
+puncher towing
+chapman wrecker
+river city wrecker
+k and w towing
+kw towing
+k&w towing
+creswell towing
+gator towing
+ej towing
+west central towing
+wimberley towing
+true towing
+24hr towing
+
+## Informacional
+cost per mile
+how much does
+how much is
+price per mile
