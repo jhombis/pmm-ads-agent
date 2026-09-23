@@ -63,8 +63,8 @@ plan_en: https://claude.ai/artifact/3KhWsGyQmP8QY9ZLm1zZgk
 - **Condición de paso**: campaña activa 7 días, anuncios aprobados, ≥1 conversión registrada **del sitio** (no solo de la extensión de llamada).
 - **Qué se lanza**:
   - "Pro Phase Electric - Search NWA - $1500/mo. - [fecha]" con **$27/día** y Max. conversiones sin tCPA.
-  - 6 ad groups activos: General, Fayetteville, Rogers, Springdale, Bentonville y Repair. Paneles y EV se crean **pausados**.
-  - 18 RSA, extensiones de `data/ads-search-nwa.md` y negativas universal + nicho.
+  - 2 ad groups activos: **Electrician - NWA** (near me + todas las ciudades, H1 con inserción de keyword) y **Electrical Repair**. Paneles y EV se crean **pausados**.
+  - 6 RSA activos, extensiones de `data/ads-search-nwa.md` y negativas universal + nicho.
   - Se pausa la campaña actual el mismo día.
   - La construye `/build-campaign`, en pausa. Jhombis revisa y activa.
 - **Riesgos**:
@@ -75,7 +75,7 @@ plan_en: https://claude.ai/artifact/3KhWsGyQmP8QY9ZLm1zZgk
 ## Fase 2 — Limpieza (D7 · D14 · D30) + Paneles y EV
 - **Fechas** (si el lanzamiento es el 01-oct): **D7 = 08-oct · D14 = 15-oct · D30 = 31-oct**.
 - **Condición de paso**: las tres revisiones hechas, negativas aplicadas, keywords sin impresiones pausadas en D30, RSA más débil de cada grupo reemplazado y ≥10 conversiones en 30 días.
-- **Qué se revisa**: search terms → negativas (sobre todo utilities, competidores y DIY que se escapen), gasto sin conversión por keyword (>2× CPL sin conversión → revisar), RSA más débil por grupo, IS perdida por presupuesto contra ranking, y **QS y experiencia de landing de los grupos de ciudad**.
+- **Qué se revisa**: search terms → negativas (sobre todo utilities, competidores y DIY que se escapen), gasto sin conversión por keyword (>2× CPL sin conversión → revisar), RSA más débil por grupo, IS perdida por presupuesto contra ranking, y **search terms y conversiones por ciudad** dentro del grupo NWA (insumo para decidir si se separan ciudades en F3).
 - **Paneles y EV**: se activan **después de D14** si ya pasaron por /audit-landing (pista Landing). Se agregan sus sitelinks.
 - **Pedido al cliente en D30**: que marque qué llamadas se volvieron trabajo (hoja simple). Es la única forma de validar el CPL sin CRM.
 
@@ -133,3 +133,4 @@ plan_en: https://claude.ai/artifact/3KhWsGyQmP8QY9ZLm1zZgk
 
 ## Historial de cambios
 - 2026-09-23: creado (D0 = 2026-09-23). Cuenta ya activa desde 01-sep; F0 incluye contención.
+- 2026-09-23: estrategia v2. De 8 a 4 ad groups (2 activos en F1): las ciudades se integran en "Electrician - NWA" con inserción de keyword; con ~80 clics/mes, 6 grupos fragmentaban los datos. Separar ciudades pasa a ser decisión de F3.

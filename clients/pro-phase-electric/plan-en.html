@@ -254,7 +254,7 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
         <h3>The decision in five lines</h3>
         <ul>
           <li><b>1 new Search campaign</b> ("Search NWA") replaces the current one; 3 weeks and 1 conversion leave nothing worth keeping.</li>
-          <li><b>8 ad groups</b>: General, Fayetteville, Rogers, Springdale, Bentonville and Repair (P1); Panels and EV wait for their landing pages.</li>
+          <li><b>4 ad groups</b>: Electrician - NWA (near me + every city) and Repair in P1; Panels and EV wait for their landing pages. Few on purpose: at ~80 clicks/month, more groups only fragment the data.</li>
           <li><b>Maximize Conversions, no tCPA</b>, phrase + exact, zero broad. Presence in Benton and Washington counties + Huntsville, Mon–Sun 5 AM–4 PM.</li>
           <li><b>tCPA is out of reach at $825</b> (~16 conv. per 30-day window). With $1,500–1,800 ad spend: ~Jan 5, 2027.</li>
           <li><b>No PMax, Display, remarketing or brand campaign</b> for now. LSA on hold.</li>
@@ -291,7 +291,7 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
       <thead><tr><th>Ad group</th><th>Phase</th><th>Main keywords</th><th class="r">NWA vol./mo</th><th>Landing page</th></tr></thead>
       <tbody id="agrows"></tbody>
     </table></div>
-    <p class="muted" style="font-size:.88rem; margin-top:10px">Cities get their own ad group because each has ≥100 searches/month; the rest (Bella Vista, Lowell, Centerton, Cave Springs…) go to General. Bidding is campaign-level, so splitting ad groups doesn't split the budget. Full detail: <span class="mono">data/keywords.csv</span> (101 keywords).</p>
+    <p class="muted" style="font-size:.88rem; margin-top:10px">Cities live inside <b>Electrician - NWA</b>: at ~80 clicks/month, one ad group per city left ~13 clicks per group and unusable data. RSA A uses keyword insertion in H1 (<span class="mono">{KeyWord:Licensed NWA Electrician}</span> → "Electrician Rogers"), so city keywords drop the "ar". Splitting cities is a P3 decision. Full detail: <span class="mono">data/keywords.csv</span> (87 keywords).</p>
 
     <h3 style="margin-top:28px; margin-bottom:10px">Budget by phase</h3>
     <div class="tbl"><table>
@@ -306,13 +306,13 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
   </section>
 
   <section id="anuncios">
-    <div class="sec-head"><h2>Ads</h2><p>3 RSAs per ad group (24 total). Each pins H1 to the group's keyword; 14 unpinned headlines and 4 descriptions rotate benefits. Lengths validated by script.</p></div>
+    <div class="sec-head"><h2>Ads</h2><p>3 RSAs per ad group (12 total; 6 active in P1). Each pins H1 to the group's keyword; 14 unpinned headlines and 4 descriptions rotate benefits. Lengths validated by script.</p></div>
     <div class="adgrid">
       <div class="serp">
         <div class="spon">Sponsored</div>
         <div class="url">prophaseelectricar.com</div>
-        <div class="hl">Electrician in Rogers, AR | Licensed, Bonded &amp; Insured | Open 7 Days a Week</div>
-        <div class="ds">Your local electrician in Rogers, AR. Repairs, panels, EV chargers &amp; more. Call now. Fair, honest pricing and clean, code-compliant work.</div>
+        <div class="hl">Electrician Rogers | Licensed, Bonded &amp; Insured | Open 7 Days a Week</div>
+        <div class="ds">Local electricians for Fayetteville, Rogers, Springdale, Bentonville &amp; all of NWA. Fair, honest pricing and clean, code-compliant work.</div>
       </div>
       <div class="serp">
         <div class="spon">Sponsored</div>
@@ -376,9 +376,9 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
             <tr><td class="mono">/electrical-panel-upgrade/</td><td><span class="chip st-block">Create</span></td><td>Panels ad group (P2)</td></tr>
             <tr><td class="mono">/ev-charger-installation/</td><td><span class="chip st-block">Create</span></td><td>EV ad group (P2)</td></tr>
             <tr><td class="mono">/thank-you/ or event</td><td><span class="chip st-block">Verify</span></td><td>Form tracking (P0)</td></tr>
-            <tr><td class="mono">/ (new H1)</td><td><span class="chip st-todo">Improve</span></td><td>General, cities, Repair</td></tr>
+            <tr><td class="mono">/ (new H1)</td><td><span class="chip st-todo">Improve</span></td><td>NWA and Repair</td></tr>
             <tr><td class="mono">/electrical-repair/</td><td><span class="chip st-todo">Optional</span></td><td>Repair</td></tr>
-            <tr><td class="mono">/[city]-electrician/ ×4</td><td><span class="chip st-pause">P3</span></td><td>Only if city Quality Score stays low</td></tr>
+            <tr><td class="mono">/[city]-electrician/ ×4</td><td><span class="chip st-pause">P3</span></td><td>Only if cities are split in P3</td></tr>
           </tbody>
         </table></div>
         <p style="font-size:.9rem; color:var(--ink-2); margin-top:12px">Every service page gets: H1 with service + NWA, the 4-field form above the fold, a call button, the 4.9 ★ widget, the Licensed/Bonded/Insured badge, real portfolio photos and the Free Quote offer.</p>
@@ -499,7 +499,7 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
     ['Mobile PageSpeed score + mobile homepage screenshot', 'A score <40 becomes a blocker. Check the form and call button are visible without scrolling.', 'Jhombis', true],
     ['Manager access to the Business Profile', 'The profile exists (4.9 ★ widget). No access means no location asset.', 'Client', false],
     ['Ticket and margin: panel and EV', 'To set the max CPL before turning on Panels and EV.', 'Client', false],
-    ['/build-campaign: Search NWA, paused', '8 ad groups, 24 RSAs, assets, county geo and shared negative lists, via API.', 'PMM', false],
+    ['/build-campaign: Search NWA, paused', '4 ad groups (2 active), 12 RSAs, assets, county geo and shared negative lists, via API.', 'PMM', false],
     ['Build the Panels and EV landing pages', 'Target Oct 14 if PMM edits, Oct 21 if the client does.', 'PMM/Client', false]
   ];
   document.getElementById('steps').innerHTML = steps.map((s,i)=>`
@@ -541,7 +541,7 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
      i:['Contain the current campaign: negatives, pause broad, $12 CPC cap, 5–4 schedule','Tracking: form, website calls, tel:, Calls from Ads ≥60 s, GCLID','Client: Business Profile, answering process, forwarding number, ticket and margin']},
     {k:'F1', t:'Search NWA launch', w:'Oct 1 → Oct 8', s:['todo','Pending'],
      c:'7 days live, ads approved, ≥1 website conversion.',
-     i:['Search NWA at $27/day, Maximize Conversions, 6 active ad groups','Panels and EV created paused','Current campaign paused the same day']},
+     i:['Search NWA at $27/day, Maximize Conversions, 2 active ad groups (NWA + Repair)','Panels and EV created paused','Current campaign paused the same day']},
     {k:'F2', t:'Cleanup + Panels/EV', w:'D7 Oct 8 · D14 Oct 15 · D30 Oct 31', s:['todo','Pending'],
      c:'3 reviews done, negatives applied, ≥10 conversions and CPL ≤ $60.',
      i:['Search terms → negatives; >$100 spend with no conversion goes to review','Turn on Panels and EV after D14 once their landing pages pass the audit','D30: client sheet of calls → jobs']},
@@ -562,11 +562,7 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
     </article>`).join('');
 
   const ags = [
-    ['Electrician - NWA General','F1',['electrician near me','electricians near me','local electrician','licensed electrician','electrician bella vista','electrician nwa'],'~1,470*','/'],
-    ['Electrician - Fayetteville','F1',['electrician fayetteville ar','electricians fayetteville ar','fayetteville electrician'],'~280','/'],
-    ['Electrician - Rogers','F1',['electrician rogers ar','electricians rogers ar','rogers electrician'],'~180','/'],
-    ['Electrician - Springdale','F1',['electrician springdale ar','springdale electrician'],'~120','/'],
-    ['Electrician - Bentonville','F1',['electrician bentonville ar','bentonville electrician'],'~110','/'],
+    ['Electrician - NWA','F1',['electrician near me','electricians near me','electrician fayetteville','electrician rogers','electrician springdale','electrician bentonville','licensed electrician','electrician bella vista'],'~1,500*','/'],
     ['Electrical Repair','F1',['electrical repair near me','circuit breaker repair','outlet repair','electrical troubleshooting'],'~117','/'],
     ['Electrical Panel Upgrade','F2',['electrical panel upgrade','electrical panel replacement','breaker box replacement','200 amp panel upgrade'],'~48','/electrical-panel-upgrade/ (create)'],
     ['EV Charger Installation','F2',['ev charger installation','tesla charger installation','electric car charger installation','level 2 charger installation'],'~157','/ev-charger-installation/ (create)']
@@ -574,19 +570,15 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
   document.getElementById('agrows').innerHTML = ags.map(a=>`
     <tr><td><b>${esc(a[0])}</b></td><td><span class="chip ${a[1]==='F1'?'st-run':'st-pause'}">${a[1]==='F1'?'P1 active':'P2 paused'}</span></td>
     <td>${a[2].map(k=>`<span class="kw">${esc(k)}</span>`).join('')}</td><td class="r num">${esc(a[3])}</td><td class="mono">${esc(a[4])}</td></tr>`).join('')
-    + `<tr><td colspan="5" class="muted" style="font-size:.84rem">* Inflated by [electrician], much of which is job or informational searches.</td></tr>`;
+    + `<tr><td colspan="5" class="muted" style="font-size:.84rem">* Excluding [electrician] (~2,160 with it), much of which is job or informational searches.</td></tr>`;
 
   const h1 = [
-    ['NWA General','Licensed Electrician Near You','Local Electrician Near You','Northwest Arkansas Electrician'],
-    ['Fayetteville','Electrician in Fayetteville AR','Fayetteville Electrician','Fayetteville AR Electricians'],
-    ['Rogers','Electrician in Rogers, AR','Rogers AR Electrician','Local Rogers Electricians'],
-    ['Springdale','Electrician in Springdale, AR','Springdale AR Electrician','Local Springdale Electrician'],
-    ['Bentonville','Electrician in Bentonville AR','Bentonville AR Electrician','Local Bentonville Electrician'],
+    ['NWA (+ cities)','{KeyWord:Licensed NWA Electrician}','Licensed Electrician Near You','Northwest Arkansas Electrician'],
     ['Repair','Electrical Repair in NWA','Breaker & Outlet Repair','Electrical Repairs Done Right'],
     ['Panel (P2)','Electrical Panel Upgrades','Panel Replacement in NWA','200 Amp Panel Upgrades'],
     ['EV (P2)','EV Charger Installation','Home EV Charger Installers','Tesla & Level 2 Installs']
   ];
-  document.getElementById('h1rows').innerHTML = h1.map(r=>`<tr><td><b>${esc(r[0])}</b></td><td>${r.slice(1).map(x=>`${esc(x)} <span class="lenc">${x.length}</span>`).join('<br>')}</td></tr>`).join('');
+  document.getElementById('h1rows').innerHTML = h1.map(r=>`<tr><td><b>${esc(r[0])}</b></td><td>${r.slice(1).map(x=>`${esc(x)} <span class="lenc">${x.startsWith('{KeyWord:')?x.length-10:x.length}</span>`).join('<br>')}</td></tr>`).join('');
   const pool = ["Licensed, Bonded & Insured","4.9-Star Rated on Google","Open 7 Days a Week","Get a Free Quote Today","Call (479) 287-3650","Local NWA Electricians","Fair, Honest Pricing","Nextdoor Neighborhood Fave","We Show Up When We Say","Clean, Code-Compliant Work","Early Appointments From 5 AM","Weekend Service Available"];
   document.getElementById('pool').innerHTML = pool.map(x=>`<li>${esc(x)} <span class="lenc">${x.length}</span></li>`).join('') + `<li class="muted">+2 specific to each group</li>`;
   const descs = ["Licensed, bonded & insured electricians. 4.9 stars on Google. Call for a free quote today.","Open 7 days a week, 5 AM to 4 PM. Local Lowell-based team serving all of NW Arkansas.","Fair, honest pricing and clean, code-compliant work. We show up when we say we will."];
@@ -631,15 +623,15 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
     ['F0','Confirm service area: Siloam Springs, Gentry, Madison','Client','todo',false],
     ['F0','Confirm whether they install generators','Client','todo',false],
     ['F0','Arkansas license number','Client','todo',false],
-    ['F1','/build-campaign: Search NWA with 8 ad groups, paused','PMM','todo',false],
+    ['F1','/build-campaign: Search NWA with 4 ad groups, paused','PMM','todo',false],
     ['F1','Search Network only; partners and Display off','PMM','todo',false],
     ['F1','Presence: Benton + Washington + Huntsville','PMM','todo',false],
     ['F1','Schedule Mon–Sun 5 AM–4 PM','PMM','todo',false],
     ['F1','Maximize Conversions, no tCPA; $27/day','PMM','todo',false],
-    ['F1','101 keywords on phrase + exact; no broad','PMM','todo',false],
+    ['F1','87 keywords on phrase + exact (cities without "ar"); no broad','PMM','todo',false],
     ['F1','3 RSAs per ad group, pinned H1, 15H/4D','PMM','todo',false],
     ['F1','Assets: sitelinks, callouts, snippet, call, images','PMM','todo',false],
-    ['F1','Routing negatives (General, Repair)','PMM','todo',false],
+    ['F1','Routing negatives (NWA, Repair)','PMM','todo',false],
     ['F1','Final URLs verified (200, https)','PMM','todo',false],
     ['F1','Review and enable; pause the current campaign','Jhombis','todo',true],
     ['F1','Ads approved (check after 24 h)','PMM','todo',false],
@@ -648,7 +640,7 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
     ['F2','D14: search terms; keywords >$100 with no conversion to review','PMM','todo',false],
     ['F2','D14+: Panels and EV landing pages audited → turn on ad groups','PMM','todo',false],
     ['F2','D30: search terms; pause zero impressions; replace weakest RSA','PMM','todo',false],
-    ['F2','D30: city ad group Quality Score → city landing pages?','PMM','todo',false],
+    ['F2','D30: conversions by city in NWA → split cities in P3?','PMM','todo',false],
     ['F2','D30: calls → jobs sheet','Client','todo',false],
     ['F2','D30: ≥10 conv. and CPL ≤ $60 → $1,500–1,800 proposal','PMM','todo',false],
     ['F3','≥30 conversions in 30 days (needs more budget)','PMM','todo',false],

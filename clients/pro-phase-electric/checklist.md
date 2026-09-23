@@ -57,15 +57,15 @@ Cuenta 758-301-1023 · campaña actual 24208591381 (Max. clics, se pausa en F1).
 - [ ] (PMM) LSA: **en espera** (el cliente dijo "No"). Reabrir si cambia
 
 ## Fase 1 — Lanzamiento Search NWA
-- [ ] (PMM) /build-campaign: "Search NWA" con 8 ad groups (6 activos + Paneles y EV pausados) según `strategy.md`, creada en pausa
+- [ ] (PMM) /build-campaign: "Search NWA" con 4 ad groups (NWA + Repair activos; Paneles y EV pausados) según `strategy.md`, creada en pausa
 - [ ] (PMM) Red: solo Búsqueda; socios y Display apagados
 - [ ] (PMM) Ubicación: Presencia; condados de Benton y Washington + Huntsville; resto excluido
 - [ ] (PMM) Programación L–D 5:00–16:00
 - [ ] (PMM) Puja: Max. conversiones sin tCPA; $27/día
-- [ ] (PMM) Keywords en frase + exacta (101); ninguna broad
+- [ ] (PMM) Keywords en frase + exacta (87; ciudades sin "ar" por la inserción de keyword); ninguna broad
 - [ ] (PMM) 3 RSA por ad group, H1 pinneado, 15 headlines y 4 descripciones (`data/ads-search-nwa.md`), fuerza "Buena" o superior
 - [ ] (PMM) Extensiones: 5 sitelinks, 8 callouts, snippet, llamada (5–16), imágenes propias; ubicación cuando haya GBP
-- [ ] (PMM) Negativas de enrutamiento por ad group (General, Repair)
+- [ ] (PMM) Negativas de enrutamiento por ad group (NWA, Repair)
 - [ ] (PMM) URLs finales verificadas (200, https, sin redirect)
 - [ ] **B** (Jhombis) Revisión y activación; pausar la campaña actual el mismo día
 - [ ] (PMM) Anuncios aprobados (revisar a las 24 h)
@@ -80,7 +80,7 @@ Cuenta 758-301-1023 · campaña actual 24208591381 (Max. clics, se pausa en F1).
 - [ ] D30: search terms revisados, negativas agregadas
 - [ ] D30: keywords con 0 impresiones en 30 días pausadas
 - [ ] D30: RSA más débil de cada grupo reemplazado
-- [ ] D30: QS y experiencia de landing de los grupos de ciudad revisados (¿hacen falta landings por ciudad?)
+- [ ] D30: search terms y conversiones por ciudad en el grupo NWA (¿separar ciudades en F3?)
 - [ ] D30: hoja de "llamadas → trabajos" recibida del cliente
 - [ ] D30: ≥10 conversiones y CPL ≤ $60 → presentar la propuesta de presupuesto ($1,500–1,800)
 
