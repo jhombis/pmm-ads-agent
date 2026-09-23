@@ -17,17 +17,17 @@ plan_en: https://claude.ai/artifact/3KhWsGyQmP8QY9ZLm1zZgk
 ## Resumen
 | Fase | Fecha estimada | Estado |
 |---|---|---|
-| 0 — Fundación + contención | 23-sep → 30-sep (o 07-oct si el sitio lo edita el cliente) | 🔄 en curso |
+| 0 — Medición + contención | 23-sep → 30-sep (o 07-oct si el sitio lo edita el cliente) | 🔄 en curso |
 | 1 — Lanzamiento Search NWA | 01-oct → 08-oct | ⏳ |
 | 2 — Limpieza (D7 · D14 · D30) + Paneles/EV | 08-oct · 15-oct · 31-oct | ⏳ |
-| 3 — tCPA | **No alcanzable con $825/mes.** Con aumento a $1,500–1,800: ~05-ene-2027 | ⛔ por presupuesto |
+| 3 — Decisión de presupuesto → cambio de puja → tCPA | Decisión ~1–15-nov. Max. conversiones: con 15+ conv/mes (pide ~$1,275/mes a CPL $85). tCPA: sin fecha en el escenario base; ~05-ene-2027 solo con aumento y CPL ≤$55 | ⛔ por presupuesto |
 | 4 — Remarketing | No realista (audiencia < 1,000) | ⛔ |
 | 5 — Performance Max | No califica en el horizonte visible | ⛔ |
 | 6 — Conversiones offline | Fuera de alcance (sin CRM) | ⏸ |
 | Pista Landing | Paneles + EV listas ~14-oct (si edita PMM) | 🔄 |
 | Pista LSA | En espera: el cliente dijo "No" por ahora | ⏸ |
 
-## Fase 0 — Fundación + contención
+## Fase 0 — Medición + contención
 - **Fecha estimada**: 23-sep → 30-sep, si PMM edita el sitio (+3 días por los bloqueantes de audit). Se corre a **07-oct** si lo edita el cliente (+7–14). Quién edita está PENDIENTE en el brief.
 - **Condición de paso**: todos los ítems bloqueantes de Fase 0 en `checklist.md` en ✅, en especial **llamadas del sitio + formulario probados con Tag Assistant** (≥1 conversión de prueba en cada acción).
 - **Tareas**:
@@ -45,6 +45,7 @@ plan_en: https://claude.ai/artifact/3KhWsGyQmP8QY9ZLm1zZgk
     - "Calls from Ads" con duración mínima de 60 s.
     - Probar todo con Tag Assistant.
     - GCLID/UTM en campos ocultos del formulario.
+    - Medición del playbook §7: **un solo teléfono** en todo el sitio (el de reenvío; hoy (479) 287-3650 en barra, header y hero), formulario de prueba con llegada del correo y conversión registrada en 24–48 h, recurso de llamada aprobado con filtro de 60 s, popups/"After Submit" si es Elementor. Anotar la fecha de cada arreglo.
   - *Cliente:*
     - Acceso de gestor al GBP para PMM.
     - Decir quién contesta el teléfono de 5 a 16, en cuánto tiempo, y qué pasa con el buzón.
@@ -74,19 +75,18 @@ plan_en: https://claude.ai/artifact/3KhWsGyQmP8QY9ZLm1zZgk
 
 ## Fase 2 — Limpieza (D7 · D14 · D30) + Paneles y EV
 - **Fechas** (si el lanzamiento es el 01-oct): **D7 = 08-oct · D14 = 15-oct · D30 = 31-oct**.
-- **Condición de paso**: las tres revisiones hechas, negativas aplicadas, keywords sin impresiones pausadas en D30, RSA más débil de cada grupo reemplazado y ≥10 conversiones en 30 días.
-- **Qué se revisa**: search terms → negativas (sobre todo utilities, competidores y DIY que se escapen), gasto sin conversión por keyword (>2× CPL sin conversión → revisar), RSA más débil por grupo, IS perdida por presupuesto contra ranking, y **search terms y conversiones por ciudad** dentro del grupo NWA (insumo para decidir si se separan ciudades en F3).
-- **Cambio de puja**: con **15+ conversiones en 30 días**, estables y con medición limpia (sin vistas ni clics como conversión) → Max. conversiones sin tCPA. Proyección con $825: ~12–20/mes, así que puede darse hacia D30–D45 o no darse. Anotar la fecha del cambio.
+- **Condición de paso**: las tres revisiones hechas, negativas aplicadas, keywords sin impresiones pausadas en D30, y **≥8 conversiones en 30 días con CPL ≤ $100** y tendencia a la baja (escenario base de strategy v4: ~8–13 prospectos/mes, CPL ~$65–100). Con 1 RSA por grupo no hay "RSA más débil" que reemplazar: se revisan los activos del RSA.
+- **Qué se revisa**: search terms → negativas (sobre todo utilities, competidores y DIY que se escapen), gasto sin conversión por keyword (>2× CPL sin conversión → revisar), RSA más débil por grupo, IS perdida por presupuesto contra ranking, y clics por ciudad dentro del grupo NWA (una ciudad solo se separa en F3 si acumula **≥50 clics** con diferencias claras; antes es ruido, playbook §9).
+- **Cambio de puja**: con **15+ conversiones en 30 días**, estables y con medición limpia (sin vistas ni clics como conversión) → Max. conversiones sin tCPA. Con $825 y el escenario base (~8–13/mes) **no se espera**; solo en el optimista. Anotar la fecha si ocurre.
 - **Paneles y EV**: se activan **después de D14** si ya pasaron por /audit-landing (pista Landing). Se agregan sus sitelinks.
 - **Pedido al cliente en D30**: que marque qué llamadas se volvieron trabajo (hoja simple). Es la única forma de validar el CPL sin CRM.
 
-## Fase 3 — Optimización de puja (tCPA)
-- **Fecha estimada**: **no alcanzable con $825/mes.**
-  - *Supuesto*: $27/día ÷ CPL de $50 = 0.54 conv./día → ~16 conv. por ventana de 30 días. La condición pide 30 en 30 días, y a este ritmo **nunca se llega**. Juntar 30 conversiones acumuladas tomaría 56 días, pero eso no es lo mismo que la condición.
-  - *Con el aumento propuesto en strategy* ($1,500–1,800 de pauta ≈ $55/día → ~1.1 conv./día), aprobado hacia el **15-nov**: la ventana llega a 30 conv. ~30 días después, más 2 semanas por presupuesto < 3× CPL → **~05-ene-2027**.
-- **Condición de paso**: ≥30 conversiones en una ventana de 30 días con tracking verificado.
-- **Acción**: tCPA = CPA real observado (no el deseado); reajustar presupuesto según capacidad.
-- **Si no se cumple en fecha**: revisar la tasa de conversión de la landing (<5% → landing), el presupuesto y la mezcla de keywords. **No forzar tCPA con menos datos.** Mientras tanto se sigue con Max. conversiones; en F3 se presenta la propuesta de presupuesto.
+## Fase 3 — Decisión de presupuesto, cambio de puja y tCPA
+- **Decisión de presupuesto (~1–15-nov)**: con 30 días de datos, presentar al cliente la matemática real (playbook §4): con $825 el techo es ~8–13 prospectos/mes. Propuesta $1,500–1,800 de pauta.
+- **Cambio a Max. conversiones**: condición 15+ conv/30 días estables con medición limpia. A CPL ~$85 eso requiere ~$1,275/mes de pauta: alcanzable solo con el aumento (o si el CPL real resulta optimista).
+- **tCPA**: condición ≥30 conversiones en 30 días. A CPL $85 requiere ~$2,550/mes; a $55, ~$1,650. Por eso **no tiene fecha en el escenario base**. Si el aumento se aprueba hacia el 15-nov **y** el CPL baja a ≤$55: ventana de 30 conversiones ~30 días después + 2 semanas de margen → **~05-ene-2027**.
+- **Acción**: tCPA = CPA histórico observado +10–20% (nunca el deseado); reajustar presupuesto según capacidad del cliente.
+- **Si no se cumple**: revisar la medición primero, luego la tasa de conversión de las landings (<5% → landing), el presupuesto y la mezcla de keywords. **No forzar tCPA con menos datos.** Max. clics con tope no es la estrategia final: si en F3 no hay aumento, se documenta que la cuenta queda limitada por presupuesto.
 
 ## Fase 4 — Remarketing
 - **Fecha estimada**: no realista en el horizonte visible.
@@ -120,7 +120,9 @@ plan_en: https://claude.ai/artifact/3KhWsGyQmP8QY9ZLm1zZgk
 | Número de licencia de Arkansas junto al badge | Mejora | Cliente | 15-oct |
 | Captcha matemático → reCAPTCHA v3 o honeypot | Mejora | PMM o cliente | 31-oct |
 | Email propio en lugar de Gmail | Mejora | Cliente | 31-oct |
-| `/electrical-repair/` y landings por ciudad | Mejora F3 (según QS) | — | después de D30 |
+| Verificar que `/residential-electrical-service/` hable de reparaciones (landing del grupo Repair en F1) | Verificar F0 | PMM | 30-sep |
+| Landing `/electrical-repair/` (playbook §8: cada grupo a su página) | Recomendada | PMM o cliente | 21-oct |
+| Landings por ciudad | Solo si en F3 se separan ciudades | — | después de F3 |
 
 ## Pista paralela — LSA
 - **Estado**: ⏸ en espera. Electricista califica en US, pero el cliente dijo "No" por ahora (GBP y requisitos).
@@ -134,5 +136,6 @@ plan_en: https://claude.ai/artifact/3KhWsGyQmP8QY9ZLm1zZgk
 
 ## Historial de cambios
 - 2026-09-23: creado (D0 = 2026-09-23). Cuenta ya activa desde 01-sep; F0 incluye contención.
+- 2026-09-23: estrategia v4 regenerada con el playbook como base: CPC real $9.80 → ~84 clics/mes; proyección por escenarios (base 8–13 prospectos, CPL ~$65–100, objetivo provisional ≤$85); F2 pide ≥8 conv y CPL ≤$100; F3 pasa a ser decisión de presupuesto; tCPA sin fecha en el escenario base; Repair a /residential-electrical-service/; medición §7 en F0; separar ciudades solo con ≥50 clics.
 - 2026-09-23: estrategia v3 (playbook de analítica integrado): puja Max. clics con tope $12 hasta 15+ conv/mes; 1 RSA por grupo; sin keywords Tesla ni "electrical troubleshooting"; +31 negativas del playbook.
 - 2026-09-23: estrategia v2. De 8 a 4 ad groups (2 activos en F1): las ciudades se integran en "Electrician - NWA" con inserción de keyword; con ~80 clics/mes, 6 grupos fragmentaban los datos. Separar ciudades pasa a ser decisión de F3.

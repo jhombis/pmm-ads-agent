@@ -34,7 +34,7 @@ H1 alternativos (para un 2.º RSA si sube el volumen): Licensed Electrician Near
 - Fair, honest pricing and clean, code-compliant work. We show up when we say we will. (84)
 
 ## Electrical Repair — F1
-Landing: https://prophaseelectricar.com/ (F2: /electrical-repair/)
+Landing: https://prophaseelectricar.com/residential-electrical-service/ (F1, verificar que hable de reparaciones) → /electrical-repair/ cuando exista
 
 **RSA — H1 pinneado (posición 1):** Electrical Repair in NWA (24)
 

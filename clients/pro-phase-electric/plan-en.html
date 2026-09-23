@@ -229,16 +229,16 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
     <div class="sec-head"><h2>Summary</h2><p>Residential and commercial electrician based in Lowell, AR. Goal: phone calls.</p></div>
     <div class="kpis">
       <div class="kpi"><b>$825</b><span>ad spend/month · ≈ $27/day ($1,500 contract)</span></div>
-      <div class="kpi"><b>$40–60</b><span>target CPL per call ≥60 s</span></div>
-      <div class="kpi"><b>12–20</b><span>expected calls/month</span></div>
+      <div class="kpi"><b>≤$85</b><span>provisional target CPL (aspirational $40–60)</span></div>
+      <div class="kpi"><b>8–13</b><span>leads/month, base scenario (~84 clicks)</span></div>
       <div class="kpi"><b>Oct 1</b><span>Search NWA launch (Oct 8 if the client edits the site)</span></div>
     </div>
 
     <div class="two">
       <div>
         <p class="eyebrow">Account status today</p>
-        <h3 style="margin:6px 0 10px">$442.75 spent, 1 conversion, $12.65 CPC</h3>
-        <p>The current campaign (live since Sep 1, spending since Sep 11) bids on <b>Maximize Clicks with broad match</b>, has a single RSA, sends everything to the homepage and carries 736 negatives inherited from another account. In the visible search terms, <b>75% of spend had no commercial intent</b>.</p>
+        <h3 style="margin:6px 0 10px">$469.62 spent, 38 clicks, 1 conversion (through Sep 22)</h3>
+        <p>The current campaign (live since Sep 1, spending since Sep 11) bids on <b>Maximize Clicks with broad match</b>, has a single RSA, sends everything to the homepage and carries 736 negatives inherited from another account. It is <i>limited by budget</i> (46.5% impression share lost) and CPC fell from $18 to <b>$9.80</b> last week. In the visible search terms, <b>75% of spend had no commercial intent</b>: it needs filters, not more money.</p>
         <div class="bar-spend" role="img" aria-label="Breakdown of $290.74 in visible search terms">
           <i style="width:23.6%; background:var(--red)"></i><i style="width:23.7%; background:var(--orange)"></i><i style="width:27.9%; background:var(--purple)"></i><i style="width:24.8%; background:var(--sky)"></i>
         </div>
@@ -256,10 +256,23 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
           <li><b>1 new Search campaign</b> ("Search NWA") replaces the current one; 3 weeks and 1 conversion leave nothing worth keeping.</li>
           <li><b>4 ad groups</b>: Electrician - NWA (near me + every city) and Repair in P1; Panels and EV wait for their landing pages. Few on purpose: at ~80 clicks/month, more groups only fragment the data.</li>
           <li><b>Maximize Clicks with a $12 CPC cap</b> until 15+ conv/month; then Maximize Conversions. 1 RSA per group, phrase + exact, zero broad. Presence in Benton and Washington counties + Huntsville, Mon–Sun 5 AM–4 PM.</li>
-          <li><b>tCPA is out of reach at $825</b> (~16 conv. per 30-day window). With $1,500–1,800 ad spend: ~Jan 5, 2027.</li>
+          <li><b>At $825 the ceiling is ~8–13 leads/month.</b> Maximize Conversions and tCPA depend on more ad spend; the decision is made with 30 days of data (~Nov 1–15).</li>
           <li><b>No PMax, Display, remarketing or brand campaign</b> for now. LSA on hold.</li>
         </ul>
       </div>
+    </div>
+    <div style="margin-top:24px">
+      <p class="eyebrow">Budget math (playbook §4)</p>
+      <h3 style="margin:6px 0 10px">$27/day ÷ $9.80 CPC ≈ 2.8 clicks/day → ~84 clicks/month</h3>
+      <div class="tbl"><table>
+        <thead><tr><th>Scenario</th><th class="r">Conv. rate</th><th class="r">Leads/month</th><th class="r">CPL</th><th>Reference</th></tr></thead>
+        <tbody>
+          <tr><td>Conservative</td><td class="r">5%</td><td class="r">~4</td><td class="r">~$195</td><td>Floor of healthy for local services</td></tr>
+          <tr><td><b>Base</b></td><td class="r"><b>10–15%</b></td><td class="r"><b>~8–13</b></td><td class="r"><b>~$65–100</b></td><td>Healthy range with call-from-ad conversions counted</td></tr>
+          <tr><td>Optimistic</td><td class="r">25%</td><td class="r">~21</td><td class="r">~$39</td><td>MCC accounts A/B ($3.60–5.20 CPC)</td></tr>
+        </tbody>
+      </table></div>
+      <p class="muted" style="font-size:.86rem; margin-top:8px">Provisional target CPL ≤ $85 until we have ticket and margin. Maximize Conversions needs 15+ conv/month (~$1,275/month at $85 CPL); tCPA needs 30 (~$2,550/month at $85, ~$1,650 at $55).</p>
     </div>
   </section>
 
@@ -299,8 +312,8 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
       <tbody>
         <tr><td><b>P0</b> Containment + tracking</td><td class="num">$825 (current campaign)</td><td>Negatives, pause generic broad keywords, $12 CPC cap, website tracking</td><td>Website calls + form tested with Tag Assistant</td></tr>
         <tr><td><b>P1</b> Launch</td><td class="num">$825 → Search NWA</td><td>2 active ad groups (1 RSA each), Max. Clicks with $12 cap; current campaign paused</td><td>7 days live, ads approved, ≥1 website conversion</td></tr>
-        <tr><td><b>P2</b> Cleanup + Panels/EV</td><td class="num">$825</td><td>D7/D14/D30 reviews; turn on Panels and EV</td><td>≥10 conv. in 30 days, CPL ≤ $60. At 15+/month stable → Max. Conversions</td></tr>
-        <tr><td><b>P3</b> tCPA</td><td class="num">Proposal $1,500–1,800</td><td>Reallocate by CPA; tCPA = actual CPA</td><td>≥30 conv. in a 30-day window</td></tr>
+        <tr><td><b>P2</b> Cleanup + Panels/EV</td><td class="num">$825</td><td>D7/D14/D30 reviews; turn on Panels and EV</td><td>≥8 conv. in 30 days, CPL ≤ $100. At 15+/month stable → Max. Conversions</td></tr>
+        <tr><td><b>P3</b> Budget decision</td><td class="num">Proposal $1,500–1,800</td><td>Present the math; with more spend: Max. Conversions and, if CPL drops to ≤$55, tCPA</td><td>Client approval; tCPA at ≥30 conv. in 30 days</td></tr>
       </tbody>
     </table></div>
   </section>
@@ -376,8 +389,9 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
             <tr><td class="mono">/electrical-panel-upgrade/</td><td><span class="chip st-block">Create</span></td><td>Panels ad group (P2)</td></tr>
             <tr><td class="mono">/ev-charger-installation/</td><td><span class="chip st-block">Create</span></td><td>EV ad group (P2)</td></tr>
             <tr><td class="mono">/thank-you/ or event</td><td><span class="chip st-block">Verify</span></td><td>Form tracking (P0)</td></tr>
-            <tr><td class="mono">/ (new H1)</td><td><span class="chip st-todo">Improve</span></td><td>NWA and Repair</td></tr>
-            <tr><td class="mono">/electrical-repair/</td><td><span class="chip st-todo">Optional</span></td><td>Repair</td></tr>
+            <tr><td class="mono">/ (new H1)</td><td><span class="chip st-todo">Improve</span></td><td>NWA</td></tr>
+            <tr><td class="mono">/residential-electrical-service/</td><td><span class="chip st-block">Verify</span></td><td>Repair in P1 (must talk about repairs)</td></tr>
+            <tr><td class="mono">/electrical-repair/</td><td><span class="chip st-todo">Recommended</span></td><td>Repair (every group to its own page)</td></tr>
             <tr><td class="mono">/[city]-electrician/ ×4</td><td><span class="chip st-pause">P3</span></td><td>Only if cities are split in P3</td></tr>
           </tbody>
         </table></div>
@@ -466,7 +480,7 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
     <div class="callout" style="margin-top:22px">
       <h3>Risks &amp; assumptions</h3>
       <ul>
-        <li>Without ticket and margin there's no max CPL: $60 per call is healthy if a panel job nets $500+, not if the typical job is a $150 outlet.</li>
+        <li>Without ticket and margin there's no max CPL: $85 per lead is healthy if a panel job nets $500+, not if the typical job is a $150 outlet.</li>
         <li>A conversion is a call ≥60 s, not a job. Monthly client sheet to mark which calls became jobs.</li>
         <li>Budget-limited by design: ~2,000+ commercial searches/month and $825 buys ~80 clicks. Impression share lost to budget will be high.</li>
         <li>No Business Profile access: no location asset and no Maps presence through Ads.</li>
@@ -493,7 +507,7 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
   const steps = [
     ['Import the 134 negatives into the current campaign', 'Utilities, competitors, DIY, product brands and universal. CSV ready; can also be applied directly through the API.', 'PMM', true],
     ['Pause 4 generic broad keywords + $12 CPC cap', '"home electrical", "electrical services", "electrical contractors", "home electrical services". Schedule Mon–Sun 5–4.', 'PMM', false],
-    ['Track the website form and calls', 'Thank-you page or event for the "Get a Free Quote" form, Google forwarding number, tel: clicks. Test with Tag Assistant.', 'PMM', true],
+    ['Track the website form and calls', 'One phone number across the site (the forwarding one), form thank-you page or event, test submission with email delivery, call asset approved (60 s). Test with Tag Assistant and log the date.', 'PMM', true],
     ['Call answering process', 'Who picks up 5 AM–4 PM, how fast, what happens with voicemail.', 'Client', true],
     ['Approve the forwarding number (call tracking)', 'Required to track calls from the website.', 'Client', true],
     ['Mobile PageSpeed score + mobile homepage screenshot', 'A score <40 becomes a blocker. Check the form and call button are visible without scrolling.', 'Jhombis', true],
@@ -514,11 +528,11 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
   const months = ['2026-10-01','2026-11-01','2026-12-01','2027-01-01'];
   const mname = {'2026-10-01':'Oct','2026-11-01':'Nov','2026-12-01':'Dec','2027-01-01':'Jan 2027'};
   const rows = [
-    {k:'F0', label:'P0 Foundation', bars:[{a:'2026-09-23', b:'2026-09-30', t:'P0'},{a:'2026-09-30', b:'2026-10-07', t:'', ghost:true}]},
+    {k:'F0', label:'P0 Measurement', bars:[{a:'2026-09-23', b:'2026-09-30', t:'P0'},{a:'2026-09-30', b:'2026-10-07', t:'', ghost:true}]},
     {k:'F1', label:'P1 Launch', bars:[{a:'2026-10-01', b:'2026-10-08', t:'P1'}]},
     {k:'F2', label:'P2 Cleanup', bars:[{a:'2026-10-08', b:'2026-10-31', t:'D7 · D14 + Panels/EV · D30'}]},
     {k:'LAND', label:'Landing pages', bars:[{a:'2026-09-23', b:'2026-10-14', t:'Panels, EV, tracking'},{a:'2026-10-14', b:'2026-10-21', t:'', ghost:true}]},
-    {k:'F3', label:'P3 tCPA', bars:[{a:'2026-11-15', b:'2027-01-05', t:'only with $1,500–1,800', ghost:true}], marks:[{d:'2027-01-05', t:'tCPA'}]},
+    {k:'F3', label:'P3 Budget/bidding', bars:[{a:'2026-11-01', b:'2026-11-15', t:'budget call'},{a:'2026-11-15', b:'2027-01-05', t:'tCPA only with more spend and CPL ≤$55', ghost:true}]},
     {k:'F4', label:'P4 Remarketing', bars:[], note:'Not realistic: audience < 1,000'},
     {k:'F5', label:'P5 PMax', bars:[], note:'Does not qualify at this budget'},
     {k:'LSA', label:'LSA', bars:[], note:'On hold: client said "No"'}
@@ -536,18 +550,18 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
   document.getElementById('timeline').innerHTML = h;
 
   const phases = [
-    {k:'F0', t:'Foundation + containment', w:'Sep 23 → Sep 30 (Oct 7 if the client edits the site)', s:['run','In progress'],
+    {k:'F0', t:'Measurement + containment', w:'Sep 23 → Sep 30 (Oct 7 if the client edits the site)', s:['run','In progress'],
      c:'Website calls + form tested with Tag Assistant; every Phase 0 blocker ✅.',
-     i:['Contain the current campaign: negatives, pause broad, $12 CPC cap, 5–4 schedule','Tracking: form, website calls, tel:, Calls from Ads ≥60 s, GCLID','Client: Business Profile, answering process, forwarding number, ticket and margin']},
+     i:['Contain the current campaign: negatives, pause broad, $12 CPC cap, 5–4 schedule','Measurement (playbook §7): one phone number, test form, website calls, tel:, Calls from Ads ≥60 s, GCLID','Client: Business Profile, answering process, forwarding number, ticket and margin']},
     {k:'F1', t:'Search NWA launch', w:'Oct 1 → Oct 8', s:['todo','Pending'],
      c:'7 days live, ads approved, ≥1 website conversion.',
      i:['Search NWA at $27/day, Max. Clicks with $12 cap, 2 active ad groups (NWA + Repair)','Panels and EV created paused','Current campaign paused the same day']},
     {k:'F2', t:'Cleanup + Panels/EV', w:'D7 Oct 8 · D14 Oct 15 · D30 Oct 31', s:['todo','Pending'],
-     c:'3 reviews done, negatives applied, ≥10 conversions and CPL ≤ $60.',
+     c:'3 reviews done, negatives applied, ≥8 conversions and CPL ≤ $100 trending down.',
      i:['Search terms → negatives; >$100 spend with no conversion goes to review','Turn on Panels and EV after D14 once their landing pages pass the audit','D30: client sheet of calls → jobs','15+ stable conv. in 30 days → Max. Conversions']},
-    {k:'F3', t:'Bid optimization (tCPA)', w:'~Jan 5, 2027, only with more budget', s:['block','Blocked'],
-     c:'≥30 conversions in a 30-day window with verified tracking.',
-     i:['At $825: ~16 conv./30 days, never gets there','With $1,500–1,800 approved ~Nov 15: tCPA ~Jan 5','tCPA = actual CPA, not the wished-for one']},
+    {k:'F3', t:'Budget, bidding and tCPA', w:'Decision ~Nov 1–15 · tCPA undated in the base scenario', s:['block','Budget-dependent'],
+     c:'Budget increase approved; Max. Conversions at 15+ conv/month; tCPA at ≥30 in 30 days.',
+     i:['At $825: ~8–13 leads/month, never reaches 15','Max. Conversions needs ~$1,275/month at $85 CPL','tCPA needs ~$2,550/month at $85 (~$1,650 at $55): ~Jan 5 only with more spend and CPL ≤$55']},
     {k:'F4', t:'Remarketing', w:'No date', s:['block','Not realistic'],
      c:'Audience ≥1,000 users in 30 days.', i:['~80 clicks/month + ~3 organic visits: won’t get there']},
     {k:'F5', t:'Performance Max', w:'No date', s:['block','Does not qualify'],
@@ -563,7 +577,7 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
 
   const ags = [
     ['Electrician - NWA','F1',['electrician near me','electricians near me','electrician fayetteville','electrician rogers','electrician springdale','electrician bentonville','licensed electrician','electrician bella vista'],'~1,500*','/'],
-    ['Electrical Repair','F1',['electrical repair near me','circuit breaker repair','outlet repair','wiring repair'],'~112','/'],
+    ['Electrical Repair','F1',['electrical repair near me','circuit breaker repair','outlet repair','wiring repair'],'~112','/residential-electrical-service/'],
     ['Electrical Panel Upgrade','F2',['electrical panel upgrade','electrical panel replacement','breaker box replacement','200 amp panel upgrade'],'~48','/electrical-panel-upgrade/ (create)'],
     ['EV Charger Installation','F2',['ev charger installation','home ev charger installation','electric car charger installation','level 2 charger installation'],'~139','/ev-charger-installation/ (create)']
   ];
@@ -609,6 +623,10 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
     ['F0','Secondary conversions set as secondary','PMM','todo',false],
     ['F0','GA4 linked','PMM','todo',false],
     ['F0','Hidden UTM + GCLID fields on the form','PMM','todo',false],
+    ['F0','One phone number across the site = forwarding number','PMM','todo',true],
+    ['F0','Test form: thank-you + email + conversion within 24–48 h','PMM','todo',true],
+    ['F0','Call asset approved, 60 s filter; popups/After Submit checked','PMM','todo',false],
+    ['F0','Verify /residential-electrical-service/ talks about repairs','PMM','todo',false],
     ['F0','PMM Universal list at account level (shared list via API)','PMM','todo',false],
     ['F0','pro-phase-electric niche list applied to Search NWA','PMM','todo',false],
     ['F0','Mobile PageSpeed score (<40 = blocker)','PMM','todo',true],
@@ -639,15 +657,16 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
     ['F2','D7: search terms → negatives; flag zero-impression keywords','PMM','todo',false],
     ['F2','D14: search terms; keywords >$100 with no conversion to review','PMM','todo',false],
     ['F2','D14+: Panels and EV landing pages audited → turn on ad groups','PMM','todo',false],
-    ['F2','D30: search terms; pause zero impressions; replace weakest RSA','PMM','todo',false],
-    ['F2','D30: conversions by city in NWA → split cities in P3?','PMM','todo',false],
+    ['F2','D30: search terms; pause zero impressions; review RSA assets','PMM','todo',false],
+    ['F2','D30: clicks by city in NWA (split only at ≥50 clicks)','PMM','todo',false],
     ['F2','D30: calls → jobs sheet','Client','todo',false],
-    ['F2','D30: ≥10 conv. and CPL ≤ $60 → $1,500–1,800 proposal','PMM','todo',false],
-    ['F3','≥30 conversions in 30 days (needs more budget)','PMM','todo',false],
+    ['F2','D30: ≥8 conv. and CPL ≤ $100 → math + $1,500–1,800 proposal','PMM','todo',false],
+    ['F3','Client budget decision (~Nov 1–15)','Client','todo',false],
+    ['F3','≥30 conversions in 30 days (needs more spend and CPL ≤$55)','PMM','todo',false],
     ['F3','tCPA = actual observed CPA','PMM','todo',false],
     ['F3','Budget adjusted to CPA and client capacity','PMM','todo',false]
   ];
-  const PHT = {F0:'Foundation + containment', F1:'Search NWA launch', F2:'Cleanup + Panels/EV', F3:'Bid optimization'};
+  const PHT = {F0:'Measurement + containment', F1:'Search NWA launch', F2:'Cleanup + Panels/EV', F3:'Budget, bidding and tCPA'};
   let fWho='All', fSt='All';
   const whoOpts=['All','PMM','Client','Jhombis'], stOpts=['All','Pending','Blockers','Done'];
   function btns(el, opts, cur, set){

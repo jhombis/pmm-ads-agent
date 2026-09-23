@@ -9,7 +9,7 @@ actualizado: 2026-09-23
 Generado por /roadmap desde `knowledge/checklists/setup-cuenta.md`. **B** = bloqueante de la fase. /weekly-review lo mantiene.
 Cuenta 758-301-1023 · campaña actual 24208591381 (Max. clics, se pausa en F1).
 
-## Fase 0 — Fundación + contención (bloqueante para lanzar Search NWA)
+## Fase 0 — Medición + contención (bloqueante para lanzar Search NWA)
 ### Cuenta
 - [x] (PMM) Cuenta en el MCC de PMM — visible como "Premium Local Listings 004049 ($1500 Pro Phase Electric)"
 - [x] (PMM) Facturación activa — la cuenta gasta desde el 11-sep
@@ -33,6 +33,11 @@ Cuenta 758-301-1023 · campaña actual 24208591381 (Max. clics, se pausa en F1).
 - [ ] (PMM) Conversiones secundarias como secundarias (no primarias)
 - [ ] (PMM) GA4 vinculado (Windsor no tiene una propiedad de este dominio conectada)
 - [ ] (PMM) Campos ocultos UTM + GCLID en el formulario
+- [ ] **B** (PMM/Cliente) Un solo teléfono en todo el sitio = número de reenvío (hoy (479) 287-3650 en barra, header y hero) — playbook §7
+- [ ] **B** (PMM) Formulario de prueba: mensaje de gracias + llegada del correo + conversión registrada en 24–48 h
+- [ ] (PMM) Recurso de llamada aprobado (no en revisión), filtro de duración 60 s
+- [ ] (PMM) Popups y "After Submit" revisados si el sitio usa Elementor
+- [ ] (PMM) Fecha de cada arreglo de medición anotada en el log
 
 ### Negativas
 - [ ] (PMM) Lista "PMM Universal" a nivel cuenta (hoy como negativas de campaña vía CSV; pasar a lista cuando haya API)
@@ -43,6 +48,7 @@ Cuenta 758-301-1023 · campaña actual 24208591381 (Max. clics, se pausa en F1).
 - [ ] **B** (PMM) Score de PageSpeed móvil (si es <40, bloqueante)
 - [ ] **B** (Jhombis) Captura móvil de la home: formulario y botón de llamada visibles
 - [ ] (PMM/Cliente) Decir quién edita el sitio (PENDIENTE en el brief)
+- [ ] (PMM) Verificar que `/residential-electrical-service/` hable de reparaciones (landing del grupo Repair en F1)
 
 ### Cliente
 - [ ] **B** (Cliente) Proceso de respuesta: quién contesta de 5 a 16, tiempo de respuesta, qué pasa con el buzón
@@ -79,14 +85,15 @@ Cuenta 758-301-1023 · campaña actual 24208591381 (Max. clics, se pausa en F1).
 - [ ] D14+: landings de Paneles y EV auditadas → activar esos ad groups y sus sitelinks
 - [ ] D30: search terms revisados, negativas agregadas
 - [ ] D30: keywords con 0 impresiones en 30 días pausadas
-- [ ] D30: RSA más débil de cada grupo reemplazado
-- [ ] D30: search terms y conversiones por ciudad en el grupo NWA (¿separar ciudades en F3?)
+- [ ] D30: activos del RSA de cada grupo revisados (1 RSA por grupo: no hay A/B)
+- [ ] D30: clics por ciudad en el grupo NWA (solo se separa una ciudad con ≥50 clics y diferencias claras)
 - [ ] D30: hoja de "llamadas → trabajos" recibida del cliente
-- [ ] D30: ≥10 conversiones y CPL ≤ $60 → presentar la propuesta de presupuesto ($1,500–1,800)
+- [ ] D30: ≥8 conversiones y CPL ≤ $100 → presentar la matemática y la propuesta de presupuesto ($1,500–1,800)
 - [ ] 15+ conversiones en 30 días, estables y con medición limpia → pasar a Max. conversiones (anotar fecha)
 
-## Fase 3 — Optimización de puja (bloqueada con $825/mes)
-- [ ] ≥30 conversiones en 30 días confirmadas (requiere el aumento de presupuesto)
+## Fase 3 — Decisión de presupuesto, cambio de puja y tCPA
+- [ ] Decisión de presupuesto del cliente (~1–15-nov)
+- [ ] ≥30 conversiones en 30 días confirmadas (a CPL $85 pide ~$2,550/mes; a $55, ~$1,650)
 - [ ] tCPA = CPA real observado (no el deseado)
 - [ ] Presupuesto reajustado según CPA y capacidad del cliente
 - [ ] Ajustes de puja por horario y dispositivo evaluados con datos
@@ -105,7 +112,7 @@ No aplica con el presupuesto actual (requiere ~$150/día, tCPA estable y 30+ con
 ## Recurrente (semanal, /weekly-review)
 - [ ] Search terms → negativas
 - [ ] Gasto contra presupuesto mensual ($825)
-- [ ] CPL contra objetivo ($40–60); tendencia 7d contra 28d
+- [ ] CPL contra objetivo (≤$85 provisional; aspiracional $40–60); tendencia 7d contra 28d
 - [ ] Anuncios rechazados o limitados
 - [ ] IS perdida por presupuesto y por ranking
 - [ ] Calidad de leads reportada por el cliente

@@ -230,16 +230,16 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
     <div class="sec-head"><h2>Resumen</h2><p>Electricista residencial y comercial con base en Lowell, AR. Objetivo: llamadas.</p></div>
     <div class="kpis">
       <div class="kpi"><b>$825</b><span>pauta/mes · ≈ $27/día (contrato $1,500)</span></div>
-      <div class="kpi"><b>$40–60</b><span>CPL objetivo por llamada ≥60 s</span></div>
-      <div class="kpi"><b>12–20</b><span>llamadas/mes esperadas</span></div>
+      <div class="kpi"><b>≤$85</b><span>CPL objetivo provisional (aspiracional $40–60)</span></div>
+      <div class="kpi"><b>8–13</b><span>prospectos/mes, escenario base (~84 clics)</span></div>
       <div class="kpi"><b>1-oct</b><span>lanzamiento Search NWA (8-oct si el sitio lo edita el cliente)</span></div>
     </div>
 
     <div class="two">
       <div>
         <p class="eyebrow">Estado de la cuenta hoy</p>
-        <h3 style="margin:6px 0 10px">$442.75 gastados, 1 conversión, CPC $12.65</h3>
-        <p>La campaña actual (activa desde 01-sep, gasto desde 11-sep) puja a <b>Max. clics con broad</b>, tiene 1 solo RSA, manda todo a la home y trae 736 negativas heredadas de otra cuenta. En los search terms visibles, <b>75% del gasto no tenía intención comercial</b>.</p>
+        <h3 style="margin:6px 0 10px">$469.62 gastados, 38 clics, 1 conversión (al 22-sep)</h3>
+        <p>La campaña actual (activa desde 01-sep, gasto desde 11-sep) puja a <b>Max. clics con broad</b>, tiene 1 solo RSA, manda todo a la home y trae 736 negativas heredadas de otra cuenta. Está <i>limitada por presupuesto</i> (46.5% de IS perdida) y el CPC bajó de $18 a <b>$9.80</b> en la última semana. En los search terms visibles, <b>75% del gasto no tenía intención comercial</b>: faltan filtros, no dinero.</p>
         <div class="bar-spend" role="img" aria-label="Distribución de $290.74 en search terms visibles">
           <i style="width:23.6%; background:var(--red)"></i><i style="width:23.7%; background:var(--orange)"></i><i style="width:27.9%; background:var(--purple)"></i><i style="width:24.8%; background:var(--sky)"></i>
         </div>
@@ -257,10 +257,23 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
           <li><b>1 campaña Search nueva</b> ("Search NWA") reemplaza a la actual; nada que conservar de 3 semanas y 1 conversión.</li>
           <li><b>4 ad groups</b>: Electrician - NWA (near me + todas las ciudades) y Reparación en F1; Paneles y EV esperan sus landings. Pocos a propósito: con ~80 clics/mes, más grupos solo fragmentan los datos.</li>
           <li><b>Max. clics con tope de CPC $12</b> hasta 15+ conv/mes; después Max. conversiones. 1 RSA por grupo, frase + exacta, cero broad. Presencia en los condados de Benton y Washington + Huntsville, L–D 5:00–16:00.</li>
-          <li><b>tCPA no llega con $825</b> (~16 conv. por ventana de 30 días). Con $1,500–1,800 de pauta: ~5-ene-2027.</li>
+          <li><b>El techo con $825 es ~8–13 prospectos/mes.</b> Max. conversiones y tCPA dependen de subir la pauta; la decisión se toma con 30 días de datos (~1–15-nov).</li>
           <li><b>Sin PMax, Display, remarketing ni marca</b> por ahora. LSA en espera.</li>
         </ul>
       </div>
+    </div>
+    <div style="margin-top:24px">
+      <p class="eyebrow">Matemática de presupuesto (playbook §4)</p>
+      <h3 style="margin:6px 0 10px">$27/día ÷ CPC $9.80 ≈ 2.8 clics/día → ~84 clics/mes</h3>
+      <div class="tbl"><table>
+        <thead><tr><th>Escenario</th><th class="r">Tasa conv.</th><th class="r">Prospectos/mes</th><th class="r">CPL</th><th>Referencia</th></tr></thead>
+        <tbody>
+          <tr><td>Conservador</td><td class="r">5%</td><td class="r">~4</td><td class="r">~$195</td><td>Piso de lo sano en servicios locales</td></tr>
+          <tr><td><b>Base</b></td><td class="r"><b>10–15%</b></td><td class="r"><b>~8–13</b></td><td class="r"><b>~$65–100</b></td><td>Rango sano con llamadas del anuncio contadas</td></tr>
+          <tr><td>Optimista</td><td class="r">25%</td><td class="r">~21</td><td class="r">~$39</td><td>Cuentas A/B del MCC (CPC $3.60–5.20)</td></tr>
+        </tbody>
+      </table></div>
+      <p class="muted" style="font-size:.86rem; margin-top:8px">CPL objetivo provisional ≤ $85 hasta tener ticket y margen. Max. conversiones pide 15+ conv/mes (~$1,275/mes a CPL $85); tCPA pide 30 (~$2,550/mes a $85, ~$1,650 a $55).</p>
     </div>
   </section>
 
@@ -303,8 +316,8 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
       <tbody>
         <tr><td><b>F0</b> Contención + tracking</td><td class="num">$825 (campaña actual)</td><td>Negativas, pausar broad genéricas, techo CPC $12, medir sitio</td><td>Llamadas del sitio + formulario probados con Tag Assistant</td></tr>
         <tr><td><b>F1</b> Lanzamiento</td><td class="num">$825 → Search NWA</td><td>2 ad groups activos (1 RSA c/u), Max. clics con tope $12; se pausa la actual</td><td>7 días, anuncios aprobados, ≥1 conversión del sitio</td></tr>
-        <tr><td><b>F2</b> Limpieza + Paneles/EV</td><td class="num">$825</td><td>Revisiones D7/D14/D30; activar Paneles y EV</td><td>≥10 conv. en 30 días, CPL ≤ $60. Con 15+/mes estables → Max. conversiones</td></tr>
-        <tr><td><b>F3</b> tCPA</td><td class="num">Propuesta $1,500–1,800</td><td>Reasignar por CPA; tCPA = CPA real</td><td>≥30 conv. en ventana de 30 días</td></tr>
+        <tr><td><b>F2</b> Limpieza + Paneles/EV</td><td class="num">$825</td><td>Revisiones D7/D14/D30; activar Paneles y EV</td><td>≥8 conv. en 30 días, CPL ≤ $100. Con 15+/mes estables → Max. conversiones</td></tr>
+        <tr><td><b>F3</b> Decisión de presupuesto</td><td class="num">Propuesta $1,500–1,800</td><td>Presentar la matemática; con más pauta: Max. conversiones y, si el CPL baja a ≤$55, tCPA</td><td>Aprobación del cliente; tCPA con ≥30 conv. en 30 días</td></tr>
       </tbody>
     </table></div>
   </section>
@@ -385,8 +398,9 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
             <tr><td class="mono">/electrical-panel-upgrade/</td><td><span class="chip st-block">Crear</span></td><td>Ad group Paneles (F2)</td></tr>
             <tr><td class="mono">/ev-charger-installation/</td><td><span class="chip st-block">Crear</span></td><td>Ad group EV (F2)</td></tr>
             <tr><td class="mono">/thank-you/ o evento</td><td><span class="chip st-block">Verificar</span></td><td>Medir el formulario (F0)</td></tr>
-            <tr><td class="mono">/ (H1 nuevo)</td><td><span class="chip st-todo">Mejora</span></td><td>NWA y Reparación</td></tr>
-            <tr><td class="mono">/electrical-repair/</td><td><span class="chip st-todo">Opcional</span></td><td>Reparación</td></tr>
+            <tr><td class="mono">/ (H1 nuevo)</td><td><span class="chip st-todo">Mejora</span></td><td>NWA</td></tr>
+            <tr><td class="mono">/residential-electrical-service/</td><td><span class="chip st-block">Verificar</span></td><td>Reparación en F1 (debe hablar de reparaciones)</td></tr>
+            <tr><td class="mono">/electrical-repair/</td><td><span class="chip st-todo">Recomendada</span></td><td>Reparación (cada grupo a su página)</td></tr>
             <tr><td class="mono">/[ciudad]-electrician/ ×4</td><td><span class="chip st-pause">F3</span></td><td>Solo si en F3 se separan ciudades</td></tr>
           </tbody>
         </table></div>
@@ -479,7 +493,7 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
     <div class="callout" style="margin-top:22px">
       <h3>Riesgos y supuestos</h3>
       <ul>
-        <li>Sin ticket ni margen no hay CPL máximo: $60 por llamada es sano si un panel deja $500+, no si el trabajo típico es un outlet de $150.</li>
+        <li>Sin ticket ni margen no hay CPL máximo: $85 por prospecto es sano si un panel deja $500+, no si el trabajo típico es un outlet de $150.</li>
         <li>La conversión es una llamada ≥60 s, no un trabajo. Hoja mensual del cliente para marcar llamadas que se volvieron trabajo.</li>
         <li>Presupuesto limitado por diseño: ~2,000+ búsquedas comerciales/mes y $825 compran ~80 clics. La IS perdida por presupuesto va a ser alta.</li>
         <li>Sin acceso al GBP: sin activo de ubicación ni presencia en Maps vía Ads.</li>
@@ -507,7 +521,7 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
   const steps = [
     ['Importar las 134 negativas en la campaña actual', 'Utilities, competidores, DIY, marcas de producto y universal. CSV listo; con la API también se puede aplicar directo.', 'PMM', true],
     ['Pausar 4 keywords broad genéricas + techo de CPC $12', '"home electrical", "electrical services", "electrical contractors", "home electrical services". Programación L–D 5–16.', 'PMM', false],
-    ['Medir formulario y llamadas del sitio', 'Página de gracias o evento del formulario "Get a Free Quote", número de reenvío de Google, clic en tel:. Probar con Tag Assistant.', 'PMM', true],
+    ['Medir formulario y llamadas del sitio', 'Un solo teléfono en todo el sitio (el de reenvío), página de gracias o evento del formulario, formulario de prueba con llegada del correo, recurso de llamada aprobado (60 s). Probar con Tag Assistant y anotar la fecha.', 'PMM', true],
     ['Proceso de respuesta a llamadas', 'Quién contesta de 5 a 16, en cuánto tiempo, qué pasa con el buzón.', 'Cliente', true],
     ['Aceptar número de reenvío (call tracking)', 'Necesario para medir llamadas desde el sitio.', 'Cliente', true],
     ['Score de PageSpeed móvil + captura móvil de la home', 'Si el score es <40 pasa a bloqueante. Ver si el formulario y el botón de llamada se ven sin scroll.', 'Jhombis', true],
@@ -529,11 +543,11 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
   const months = ['2026-10-01','2026-11-01','2026-12-01','2027-01-01'];
   const mname = {'2026-10-01':'oct','2026-11-01':'nov','2026-12-01':'dic','2027-01-01':'ene 2027'};
   const rows = [
-    {k:'F0', label:'F0 Fundación', bars:[{a:'2026-09-23', b:'2026-09-30', t:'F0'},{a:'2026-09-30', b:'2026-10-07', t:'', ghost:true}]},
+    {k:'F0', label:'F0 Medición', bars:[{a:'2026-09-23', b:'2026-09-30', t:'F0'},{a:'2026-09-30', b:'2026-10-07', t:'', ghost:true}]},
     {k:'F1', label:'F1 Lanzamiento', bars:[{a:'2026-10-01', b:'2026-10-08', t:'F1'}]},
     {k:'F2', label:'F2 Limpieza', bars:[{a:'2026-10-08', b:'2026-10-31', t:'D7 · D14 + Paneles/EV · D30'}]},
     {k:'LAND', label:'Landings', bars:[{a:'2026-09-23', b:'2026-10-14', t:'Paneles, EV, tracking'},{a:'2026-10-14', b:'2026-10-21', t:'', ghost:true}]},
-    {k:'F3', label:'F3 tCPA', bars:[{a:'2026-11-15', b:'2027-01-05', t:'solo con $1,500–1,800', ghost:true}], marks:[{d:'2027-01-05', t:'tCPA'}]},
+    {k:'F3', label:'F3 Presupuesto/puja', bars:[{a:'2026-11-01', b:'2026-11-15', t:'decisión $'},{a:'2026-11-15', b:'2027-01-05', t:'tCPA solo con aumento y CPL ≤$55', ghost:true}]},
     {k:'F4', label:'F4 Remarketing', bars:[], note:'No realista: audiencia < 1,000'},
     {k:'F5', label:'F5 PMax', bars:[], note:'No califica con este presupuesto'},
     {k:'LSA', label:'LSA', bars:[], note:'En espera: el cliente dijo "No"'}
@@ -551,18 +565,18 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
   document.getElementById('timeline').innerHTML = h;
 
   const phases = [
-    {k:'F0', t:'Fundación + contención', w:'23-sep → 30-sep (07-oct si edita el cliente)', s:['run','En curso'],
+    {k:'F0', t:'Medición + contención', w:'23-sep → 30-sep (07-oct si edita el cliente)', s:['run','En curso'],
      c:'Llamadas del sitio + formulario probados con Tag Assistant; todos los B de Fase 0 en ✅.',
-     i:['Contener la campaña actual: negativas, pausar broad, techo CPC $12, horario 5–16','Tracking: formulario, llamadas del sitio, tel:, Calls from Ads ≥60 s, GCLID','Cliente: GBP, proceso de respuesta, número de reenvío, ticket y margen']},
+     i:['Contener la campaña actual: negativas, pausar broad, techo CPC $12, horario 5–16','Medición (playbook §7): un solo teléfono, formulario de prueba, llamadas del sitio, tel:, Calls from Ads ≥60 s, GCLID','Cliente: GBP, proceso de respuesta, número de reenvío, ticket y margen']},
     {k:'F1', t:'Lanzamiento Search NWA', w:'1-oct → 8-oct', s:['todo','Pendiente'],
      c:'7 días activa, anuncios aprobados, ≥1 conversión del sitio.',
      i:['Search NWA a $27/día, Max. clics con tope $12, 2 ad groups activos (NWA + Reparación)','Paneles y EV creados en pausa','Se pausa la campaña actual el mismo día']},
     {k:'F2', t:'Limpieza + Paneles/EV', w:'D7 8-oct · D14 15-oct · D30 31-oct', s:['todo','Pendiente'],
-     c:'3 revisiones hechas, negativas aplicadas, ≥10 conversiones y CPL ≤ $60.',
+     c:'3 revisiones hechas, negativas aplicadas, ≥8 conversiones y CPL ≤ $100 con tendencia a la baja.',
      i:['Search terms → negativas; gasto >$100 sin conversión a revisión','Activar Paneles y EV después de D14 si las landings pasaron audit','D30: hoja de llamadas → trabajos del cliente','15+ conv. en 30 días estables → Max. conversiones']},
-    {k:'F3', t:'Optimización de puja (tCPA)', w:'~5-ene-2027, solo con aumento', s:['block','Bloqueada'],
-     c:'≥30 conversiones en ventana de 30 días con tracking verificado.',
-     i:['Con $825: ~16 conv./30 días, nunca llega','Con $1,500–1,800 aprobado ~15-nov: tCPA ~5-ene','tCPA = CPA real, no el deseado']},
+    {k:'F3', t:'Presupuesto, puja y tCPA', w:'Decisión ~1–15-nov · tCPA sin fecha en el escenario base', s:['block','Depende de presupuesto'],
+     c:'Aprobación del aumento; Max. conversiones con 15+ conv/mes; tCPA con ≥30 en 30 días.',
+     i:['Con $825: ~8–13 prospectos/mes, no llega a 15','Max. conversiones pide ~$1,275/mes a CPL $85','tCPA pide ~$2,550/mes a $85 (~$1,650 a $55): ~5-ene solo con aumento y CPL ≤$55']},
     {k:'F4', t:'Remarketing', w:'Sin fecha', s:['block','No realista'],
      c:'Audiencia ≥1,000 usuarios en 30 días.', i:['~80 clics/mes + ~3 visitas orgánicas: no llega']},
     {k:'F5', t:'Performance Max', w:'Sin fecha', s:['block','No califica'],
@@ -579,7 +593,7 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
   /* Ad groups */
   const ags = [
     ['Electrician - NWA','F1',['electrician near me','electricians near me','electrician fayetteville','electrician rogers','electrician springdale','electrician bentonville','licensed electrician','electrician bella vista'],'~1,500*','/'],
-    ['Electrical Repair','F1',['electrical repair near me','circuit breaker repair','outlet repair','wiring repair'],'~112','/'],
+    ['Electrical Repair','F1',['electrical repair near me','circuit breaker repair','outlet repair','wiring repair'],'~112','/residential-electrical-service/'],
     ['Electrical Panel Upgrade','F2',['electrical panel upgrade','electrical panel replacement','breaker box replacement','200 amp panel upgrade'],'~48','/electrical-panel-upgrade/ (crear)'],
     ['EV Charger Installation','F2',['ev charger installation','home ev charger installation','electric car charger installation','level 2 charger installation'],'~139','/ev-charger-installation/ (crear)']
   ];
@@ -629,6 +643,10 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
     ['F0','Conversiones secundarias marcadas como secundarias','PMM','todo',false],
     ['F0','GA4 vinculado','PMM','todo',false],
     ['F0','Campos ocultos UTM + GCLID en el formulario','PMM','todo',false],
+    ['F0','Un solo teléfono en todo el sitio = número de reenvío','PMM','todo',true],
+    ['F0','Formulario de prueba: gracias + correo + conversión en 24–48 h','PMM','todo',true],
+    ['F0','Recurso de llamada aprobado, filtro 60 s; popups/After Submit revisados','PMM','todo',false],
+    ['F0','Verificar que /residential-electrical-service/ hable de reparaciones','PMM','todo',false],
     ['F0','Lista PMM Universal a nivel cuenta (lista compartida vía API)','PMM','todo',false],
     ['F0','Lista pro-phase-electric nicho aplicada a Search NWA','PMM','todo',false],
     ['F0','Score de PageSpeed móvil (<40 = bloqueante)','PMM','todo',true],
@@ -659,15 +677,16 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
     ['F2','D7: search terms → negativas; keywords sin impresiones identificadas','PMM','todo',false],
     ['F2','D14: search terms; keywords >$100 sin conversión a revisión','PMM','todo',false],
     ['F2','D14+: landings Paneles y EV auditadas → activar ad groups','PMM','todo',false],
-    ['F2','D30: search terms; pausar 0 impresiones; reemplazar RSA más débil','PMM','todo',false],
-    ['F2','D30: conversiones por ciudad en NWA → ¿separar ciudades en F3?','PMM','todo',false],
+    ['F2','D30: search terms; pausar 0 impresiones; revisar activos del RSA','PMM','todo',false],
+    ['F2','D30: clics por ciudad en NWA (separar solo con ≥50 clics)','PMM','todo',false],
     ['F2','D30: hoja de llamadas → trabajos','Cliente','todo',false],
-    ['F2','D30: ≥10 conv. y CPL ≤ $60 → propuesta $1,500–1,800','PMM','todo',false],
-    ['F3','≥30 conversiones en 30 días (requiere aumento)','PMM','todo',false],
+    ['F2','D30: ≥8 conv. y CPL ≤ $100 → matemática + propuesta $1,500–1,800','PMM','todo',false],
+    ['F3','Decisión de presupuesto del cliente (~1–15-nov)','Cliente','todo',false],
+    ['F3','≥30 conversiones en 30 días (requiere aumento y CPL ≤$55)','PMM','todo',false],
     ['F3','tCPA = CPA real observado','PMM','todo',false],
     ['F3','Presupuesto reajustado según CPA y capacidad','PMM','todo',false]
   ];
-  const PHT = {F0:'Fundación + contención', F1:'Lanzamiento Search NWA', F2:'Limpieza + Paneles/EV', F3:'Optimización de puja'};
+  const PHT = {F0:'Medición + contención', F1:'Lanzamiento Search NWA', F2:'Limpieza + Paneles/EV', F3:'Presupuesto, puja y tCPA'};
   let fWho='Todos', fSt='Todos';
   const whoOpts=['Todos','PMM','Cliente','Jhombis'], stOpts=['Todos','Pendientes','Bloqueantes','Hechos'];
   function btns(el, opts, cur, set){
