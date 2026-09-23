@@ -4,6 +4,8 @@ slug: pro-phase-electric
 D0: 2026-09-23
 actualizado: 2026-09-23
 fase_actual: 0
+plan_es: https://claude.ai/artifact/B6JRbhCt3HNMFq29UeJv36
+plan_en: https://claude.ai/artifact/3KhWsGyQmP8QY9ZLm1zZgk
 ---
 
 # Roadmap — Pro Phase Electric

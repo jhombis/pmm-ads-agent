@@ -33,6 +33,7 @@ scripts/                  utilidades (API de Google Ads, PageSpeed, etc.)
 | `checklist.md` | /roadmap (crea), /weekly-review (actualiza) | todos |
 | `log/YYYY-MM-DD.md` | /weekly-review | /weekly-review |
 | `data/` | exports CSV/JSON de la API | /weekly-review, /negatives |
+| `plan-es.html` + `plan-en.html` | cualquier skill que entregue el plan/resumen al cliente | Jhombis, equipo, cliente |
 
 **Regla**: antes de ejecutar cualquier skill sobre un cliente, lee `brief.md` y `checklist.md` de ese cliente. Nunca asumas contexto que no esté en sus archivos. Si un archivo requerido no existe, indica qué skill debe correrse primero.
 
@@ -67,3 +68,4 @@ scripts/                  utilidades (API de Google Ads, PageSpeed, etc.)
 - Trabaja en español con Jhombis. Los anuncios se escriben en el idioma del mercado del cliente (inglés para US, español para Colombia).
 - Los archivos de cliente usan Markdown con front matter (`cliente`, `slug`, `pais`, `actualizado`).
 - Cuando termines un skill, resume en 3–5 líneas qué produjiste y cuál es el siguiente skill a correr.
+- **Toda página, artefacto o HTML de entrega (plan, reporte, resumen para el cliente) se genera SIEMPRE en dos versiones: español e inglés.** Archivos `clients/<slug>/plan-es.html` y `plan-en.html` (o `<nombre>-es.html` / `<nombre>-en.html`), mismo contenido y diseño, cada una con un enlace a la otra. Se publican como dos artefactos y sus URLs se guardan en el front matter de `roadmap.md` (`plan_es`, `plan_en`). Al actualizar, se republican las dos en sus mismas URLs.
