@@ -255,7 +255,7 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
         <ul>
           <li><b>1 new Search campaign</b> ("Search NWA") replaces the current one; 3 weeks and 1 conversion leave nothing worth keeping.</li>
           <li><b>4 ad groups</b>: Electrician - NWA (near me + every city) and Repair in P1; Panels and EV wait for their landing pages. Few on purpose: at ~80 clicks/month, more groups only fragment the data.</li>
-          <li><b>Maximize Conversions, no tCPA</b>, phrase + exact, zero broad. Presence in Benton and Washington counties + Huntsville, Mon–Sun 5 AM–4 PM.</li>
+          <li><b>Maximize Clicks with a $12 CPC cap</b> until 15+ conv/month; then Maximize Conversions. 1 RSA per group, phrase + exact, zero broad. Presence in Benton and Washington counties + Huntsville, Mon–Sun 5 AM–4 PM.</li>
           <li><b>tCPA is out of reach at $825</b> (~16 conv. per 30-day window). With $1,500–1,800 ad spend: ~Jan 5, 2027.</li>
           <li><b>No PMax, Display, remarketing or brand campaign</b> for now. LSA on hold.</li>
         </ul>
@@ -280,7 +280,7 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
       <div><dt>Campaign</dt><dd>Pro Phase Electric - Search NWA - $1500/mo.</dd></div>
       <div><dt>Type</dt><dd>Search · Search Network only</dd></div>
       <div><dt>Budget</dt><dd class="num">$27/day (100%)</dd></div>
-      <div><dt>Bidding</dt><dd>Maximize Conversions, no tCPA</dd></div>
+      <div><dt>Bidding</dt><dd>Max. Clicks, $12 CPC cap → Max. Conversions at 15+ conv/month</dd></div>
       <div><dt>Conversions</dt><dd>Calls ≥60 s (ad + website) and form</dd></div>
       <div><dt>Match types</dt><dd>Phrase + exact · no broad</dd></div>
       <div><dt>Location</dt><dd>Presence · Benton and Washington counties + Huntsville</dd></div>
@@ -291,22 +291,22 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
       <thead><tr><th>Ad group</th><th>Phase</th><th>Main keywords</th><th class="r">NWA vol./mo</th><th>Landing page</th></tr></thead>
       <tbody id="agrows"></tbody>
     </table></div>
-    <p class="muted" style="font-size:.88rem; margin-top:10px">Cities live inside <b>Electrician - NWA</b>: at ~80 clicks/month, one ad group per city left ~13 clicks per group and unusable data. RSA A uses keyword insertion in H1 (<span class="mono">{KeyWord:Licensed NWA Electrician}</span> → "Electrician Rogers"), so city keywords drop the "ar". Splitting cities is a P3 decision. Full detail: <span class="mono">data/keywords.csv</span> (87 keywords).</p>
+    <p class="muted" style="font-size:.88rem; margin-top:10px">Cities live inside <b>Electrician - NWA</b>: at ~80 clicks/month, one ad group per city left ~13 clicks per group and unusable data. RSA A uses keyword insertion in H1 (<span class="mono">{KeyWord:Licensed NWA Electrician}</span> → "Electrician Rogers"), so city keywords drop the "ar". Splitting cities is a P3 decision. Full detail: <span class="mono">data/keywords.csv</span> (83 keywords).</p>
 
     <h3 style="margin-top:28px; margin-bottom:10px">Budget by phase</h3>
     <div class="tbl"><table>
       <thead><tr><th>Phase</th><th>Total/month</th><th>What happens</th><th>Exit condition</th></tr></thead>
       <tbody>
         <tr><td><b>P0</b> Containment + tracking</td><td class="num">$825 (current campaign)</td><td>Negatives, pause generic broad keywords, $12 CPC cap, website tracking</td><td>Website calls + form tested with Tag Assistant</td></tr>
-        <tr><td><b>P1</b> Launch</td><td class="num">$825 → Search NWA</td><td>6 active ad groups; current campaign paused</td><td>7 days live, ads approved, ≥1 website conversion</td></tr>
-        <tr><td><b>P2</b> Cleanup + Panels/EV</td><td class="num">$825</td><td>D7/D14/D30 reviews; turn on Panels and EV</td><td>≥10 conv. in 30 days, CPL ≤ $60</td></tr>
+        <tr><td><b>P1</b> Launch</td><td class="num">$825 → Search NWA</td><td>2 active ad groups (1 RSA each), Max. Clicks with $12 cap; current campaign paused</td><td>7 days live, ads approved, ≥1 website conversion</td></tr>
+        <tr><td><b>P2</b> Cleanup + Panels/EV</td><td class="num">$825</td><td>D7/D14/D30 reviews; turn on Panels and EV</td><td>≥10 conv. in 30 days, CPL ≤ $60. At 15+/month stable → Max. Conversions</td></tr>
         <tr><td><b>P3</b> tCPA</td><td class="num">Proposal $1,500–1,800</td><td>Reallocate by CPA; tCPA = actual CPA</td><td>≥30 conv. in a 30-day window</td></tr>
       </tbody>
     </table></div>
   </section>
 
   <section id="anuncios">
-    <div class="sec-head"><h2>Ads</h2><p>3 RSAs per ad group (12 total; 6 active in P1). Each pins H1 to the group's keyword; 14 unpinned headlines and 4 descriptions rotate benefits. Lengths validated by script.</p></div>
+    <div class="sec-head"><h2>Ads</h2><p>1 RSA per ad group (4 total; 2 active in P1): at ~3 clicks/day an A/B test is noise. H1 pinned to the group's keyword; 14 unpinned headlines and 4 descriptions rotate benefits. Lengths validated by script.</p></div>
     <div class="adgrid">
       <div class="serp">
         <div class="spon">Sponsored</div>
@@ -323,7 +323,7 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
     </div>
     <div class="two" style="margin-top:22px">
       <div>
-        <h3 style="margin-bottom:8px">Pinned H1 by ad group (RSA A / B / C)</h3>
+        <h3 style="margin-bottom:8px">Pinned H1 by ad group (first is the RSA; the others are alternates for a 2nd RSA)</h3>
         <div class="tbl"><table><tbody id="h1rows"></tbody></table></div>
       </div>
       <div>
@@ -347,10 +347,10 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
   </section>
 
   <section id="negativas">
-    <div class="sec-head"><h2>Negative keywords</h2><p>15 inherited negatives that blocked services or service-area cities were removed. 103 new ones are ready to import.</p></div>
+    <div class="sec-head"><h2>Negative keywords</h2><p>15 inherited negatives that blocked services or service-area cities were removed. 134 new ones are ready to import (103 + 31 from the analytics playbook).</p></div>
     <div class="two" style="margin-top:0">
       <div>
-        <h3 style="margin-bottom:12px">103 new (pending import)</h3>
+        <h3 style="margin-bottom:12px">134 new (pending import)</h3>
         <div class="negbars" id="negbars"></div>
         <p class="muted" style="font-size:.86rem; margin-top:12px">Checked against active keywords and service/city searches: 0 conflicts. File: <span class="mono">data/2026-09-22-negatives-editor.csv</span>.</p>
       </div>
@@ -491,7 +491,7 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
   const esc = s => String(s).replace(/[&<>"]/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));
 
   const steps = [
-    ['Import the 103 negatives into the current campaign', 'Utilities, competitors, DIY and universal. CSV ready; can also be applied directly through the API.', 'PMM', true],
+    ['Import the 134 negatives into the current campaign', 'Utilities, competitors, DIY, product brands and universal. CSV ready; can also be applied directly through the API.', 'PMM', true],
     ['Pause 4 generic broad keywords + $12 CPC cap', '"home electrical", "electrical services", "electrical contractors", "home electrical services". Schedule Mon–Sun 5–4.', 'PMM', false],
     ['Track the website form and calls', 'Thank-you page or event for the "Get a Free Quote" form, Google forwarding number, tel: clicks. Test with Tag Assistant.', 'PMM', true],
     ['Call answering process', 'Who picks up 5 AM–4 PM, how fast, what happens with voicemail.', 'Client', true],
@@ -499,7 +499,7 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
     ['Mobile PageSpeed score + mobile homepage screenshot', 'A score <40 becomes a blocker. Check the form and call button are visible without scrolling.', 'Jhombis', true],
     ['Manager access to the Business Profile', 'The profile exists (4.9 ★ widget). No access means no location asset.', 'Client', false],
     ['Ticket and margin: panel and EV', 'To set the max CPL before turning on Panels and EV.', 'Client', false],
-    ['/build-campaign: Search NWA, paused', '4 ad groups (2 active), 12 RSAs, assets, county geo and shared negative lists, via API.', 'PMM', false],
+    ['/build-campaign: Search NWA, paused', '4 ad groups (2 active), 1 RSA per group, assets, county geo and shared negative lists, via API.', 'PMM', false],
     ['Build the Panels and EV landing pages', 'Target Oct 14 if PMM edits, Oct 21 if the client does.', 'PMM/Client', false]
   ];
   document.getElementById('steps').innerHTML = steps.map((s,i)=>`
@@ -541,10 +541,10 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
      i:['Contain the current campaign: negatives, pause broad, $12 CPC cap, 5–4 schedule','Tracking: form, website calls, tel:, Calls from Ads ≥60 s, GCLID','Client: Business Profile, answering process, forwarding number, ticket and margin']},
     {k:'F1', t:'Search NWA launch', w:'Oct 1 → Oct 8', s:['todo','Pending'],
      c:'7 days live, ads approved, ≥1 website conversion.',
-     i:['Search NWA at $27/day, Maximize Conversions, 2 active ad groups (NWA + Repair)','Panels and EV created paused','Current campaign paused the same day']},
+     i:['Search NWA at $27/day, Max. Clicks with $12 cap, 2 active ad groups (NWA + Repair)','Panels and EV created paused','Current campaign paused the same day']},
     {k:'F2', t:'Cleanup + Panels/EV', w:'D7 Oct 8 · D14 Oct 15 · D30 Oct 31', s:['todo','Pending'],
      c:'3 reviews done, negatives applied, ≥10 conversions and CPL ≤ $60.',
-     i:['Search terms → negatives; >$100 spend with no conversion goes to review','Turn on Panels and EV after D14 once their landing pages pass the audit','D30: client sheet of calls → jobs']},
+     i:['Search terms → negatives; >$100 spend with no conversion goes to review','Turn on Panels and EV after D14 once their landing pages pass the audit','D30: client sheet of calls → jobs','15+ stable conv. in 30 days → Max. Conversions']},
     {k:'F3', t:'Bid optimization (tCPA)', w:'~Jan 5, 2027, only with more budget', s:['block','Blocked'],
      c:'≥30 conversions in a 30-day window with verified tracking.',
      i:['At $825: ~16 conv./30 days, never gets there','With $1,500–1,800 approved ~Nov 15: tCPA ~Jan 5','tCPA = actual CPA, not the wished-for one']},
@@ -563,9 +563,9 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
 
   const ags = [
     ['Electrician - NWA','F1',['electrician near me','electricians near me','electrician fayetteville','electrician rogers','electrician springdale','electrician bentonville','licensed electrician','electrician bella vista'],'~1,500*','/'],
-    ['Electrical Repair','F1',['electrical repair near me','circuit breaker repair','outlet repair','electrical troubleshooting'],'~117','/'],
+    ['Electrical Repair','F1',['electrical repair near me','circuit breaker repair','outlet repair','wiring repair'],'~112','/'],
     ['Electrical Panel Upgrade','F2',['electrical panel upgrade','electrical panel replacement','breaker box replacement','200 amp panel upgrade'],'~48','/electrical-panel-upgrade/ (create)'],
-    ['EV Charger Installation','F2',['ev charger installation','tesla charger installation','electric car charger installation','level 2 charger installation'],'~157','/ev-charger-installation/ (create)']
+    ['EV Charger Installation','F2',['ev charger installation','home ev charger installation','electric car charger installation','level 2 charger installation'],'~139','/ev-charger-installation/ (create)']
   ];
   document.getElementById('agrows').innerHTML = ags.map(a=>`
     <tr><td><b>${esc(a[0])}</b></td><td><span class="chip ${a[1]==='F1'?'st-run':'st-pause'}">${a[1]==='F1'?'P1 active':'P2 paused'}</span></td>
@@ -576,7 +576,7 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
     ['NWA (+ cities)','{KeyWord:Licensed NWA Electrician}','Licensed Electrician Near You','Northwest Arkansas Electrician'],
     ['Repair','Electrical Repair in NWA','Breaker & Outlet Repair','Electrical Repairs Done Right'],
     ['Panel (P2)','Electrical Panel Upgrades','Panel Replacement in NWA','200 Amp Panel Upgrades'],
-    ['EV (P2)','EV Charger Installation','Home EV Charger Installers','Tesla & Level 2 Installs']
+    ['EV (P2)','EV Charger Installation','Home EV Charger Installers','Level 2 EV Charger Installs']
   ];
   document.getElementById('h1rows').innerHTML = h1.map(r=>`<tr><td><b>${esc(r[0])}</b></td><td>${r.slice(1).map(x=>`${esc(x)} <span class="lenc">${x.startsWith('{KeyWord:')?x.length-10:x.length}</span>`).join('<br>')}</td></tr>`).join('');
   const pool = ["Licensed, Bonded & Insured","4.9-Star Rated on Google","Open 7 Days a Week","Get a Free Quote Today","Call (479) 287-3650","Local NWA Electricians","Fair, Honest Pricing","Nextdoor Neighborhood Fave","We Show Up When We Say","Clean, Code-Compliant Work","Early Appointments From 5 AM","Weekend Service Available"];
@@ -584,7 +584,7 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
   const descs = ["Licensed, bonded & insured electricians. 4.9 stars on Google. Call for a free quote today.","Open 7 days a week, 5 AM to 4 PM. Local Lowell-based team serving all of NW Arkansas.","Fair, honest pricing and clean, code-compliant work. We show up when we say we will."];
   document.getElementById('descs').innerHTML = descs.map(x=>`<li style="margin:4px 0">${esc(x)} <span class="lenc">${x.length}</span></li>`).join('') + `<li class="muted">+1 specific to each group</li>`;
 
-  const negs = [['Missing PMM universal',43,'var(--ink-2)'],['Competitors',22,'var(--orange)'],['Electric co-ops & utilities',15,'var(--red)'],['DIY / product (search terms)',9,'var(--purple)'],['Electrician niche',7,'var(--blue)'],['Out of service / hours',7,'var(--muted)']];
+  const negs = [['Missing PMM universal',43,'var(--ink-2)'],['Playbook: products, DIY, pricing',31,'var(--green)'],['Competitors',22,'var(--orange)'],['Electric co-ops & utilities',15,'var(--red)'],['DIY / product (search terms)',9,'var(--purple)'],['Electrician niche',7,'var(--blue)'],['Out of service / hours',7,'var(--muted)']];
   document.getElementById('negbars').innerHTML = negs.map(n=>`<div class="negbar"><span>${esc(n[0])}</span><div class="t"><i style="width:${n[1]/43*100}%; --c:${n[2]}"></i></div><b class="num" style="text-align:right">${n[1]}</b></div>`).join('');
 
   const rub = [['Headline matches the service',1],['Short form above the fold (mobile)',1],['Click to call',2],['Clear offer',1],['Social proof',2],['Trust (license, years)',1],['Mobile speed',null],['Google Tag present',1],['Measurable thank-you page',0],['Service pages',1],['No leaks',2]];
@@ -596,7 +596,7 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
     ['F0','API access (google-ads.yaml) — OK Sep 23; move to environment variables','PMM','done',false],
     ['F0','Auto-applied recommendations OFF (verify)','PMM','todo',true],
     ['F0','Removed 15 inherited negatives that blocked services or the service area','PMM','done',false],
-    ['F0','Import 103 negatives (utilities, competitors, DIY, universal)','PMM','todo',true],
+    ['F0','Import 134 negatives (utilities, competitors, DIY, products, universal)','PMM','todo',true],
     ['F0','Pause generic broad keywords (4)','PMM','todo',false],
     ['F0','$12 CPC cap on the current campaign','PMM','todo',false],
     ['F0','Search partners and Display off; location = Presence (verified via API)','PMM','done',false],
@@ -627,9 +627,9 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
     ['F1','Search Network only; partners and Display off','PMM','todo',false],
     ['F1','Presence: Benton + Washington + Huntsville','PMM','todo',false],
     ['F1','Schedule Mon–Sun 5 AM–4 PM','PMM','todo',false],
-    ['F1','Maximize Conversions, no tCPA; $27/day','PMM','todo',false],
-    ['F1','87 keywords on phrase + exact (cities without "ar"); no broad','PMM','todo',false],
-    ['F1','3 RSAs per ad group, pinned H1, 15H/4D','PMM','todo',false],
+    ['F1','Max. Clicks with $12 cap; $27/day','PMM','todo',false],
+    ['F1','83 keywords on phrase + exact (no Tesla; cities without "ar"); no broad','PMM','todo',false],
+    ['F1','1 RSA per ad group, pinned H1, 15H/4D','PMM','todo',false],
     ['F1','Assets: sitelinks, callouts, snippet, call, images','PMM','todo',false],
     ['F1','Routing negatives (NWA, Repair)','PMM','todo',false],
     ['F1','Final URLs verified (200, https)','PMM','todo',false],

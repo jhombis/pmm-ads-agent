@@ -30,13 +30,14 @@ Lee `brief.md`, `audit-site.md`, `competitors.md`, `benchmark.md`. Si falta algu
    - Prioridad de presupuesto según "servicio estrella" y "servicio a evitar" del brief.
    - Un ad group "Emergencia/24-7" separado solo si el cliente atiende de verdad fuera de horario: intención y CPC distintos.
    - Marca en campaña aparte solo si existe volumen de búsqueda de marca (en un negocio nuevo no lo hay).
+3b. **Puja** (estándar 6 / playbook §5): <15 conv/mes o sin historial → Max. clics con tope de CPC (definir el tope con el CPC del mercado); condición de paso a Max. conversiones: 15+ conv/mes estables con medición limpia; tCPA con ~30/30d desde el CPA histórico.
 4. **Match types**: frase por defecto; exacta para los top 3–5 términos de cada grupo; amplia y AI Max no, hasta ~50 conversiones limpias acumuladas (playbook §8).
 5. **Presupuesto por fase** con el benchmark:
    - Fase 1: presupuesto del brief repartido por campaña (% según prioridad), con CPL objetivo = mediana del benchmark. Si el benchmark es bimodal (p. ej. cuentas en Max. clics sin tope contra Max. conversiones), usar el grupo comparable y decirlo.
    - Declarar los límites de bajo volumen (playbook §9): qué no se podrá concluir con los clics esperados.
    - Regla de aprendizaje: cada campaña necesita ≥3× CPL/día; si no alcanza, consolidar campañas (menos campañas, más ad groups).
    - Fase 3+: reasignación según CPA real.
-6. **Copy**: por ad group, 15 headlines + 4 descripciones en el idioma del mercado, H1 pinneado = término del grupo, usando los diferenciadores y ofertas del brief y los gaps de competitors.md. Extensiones: sitelinks (otros servicios), callouts (diferenciadores), snippets (servicios), llamada, ubicación.
+6. **Copy**: por ad group, 1 RSA (máx. 2) si la pauta es <$1,500/mes, 3 si es mayor; cada uno con 15 headlines + 4 descripciones en el idioma del mercado, H1 pinneado = término del grupo, usando los diferenciadores y ofertas del brief y los gaps de competitors.md. Extensiones: sitelinks (otros servicios), callouts (diferenciadores), snippets (servicios), llamada, ubicación.
 7. **Landings**: mapear cada ad group a su URL. Si la landing no existe, listarla como requerida (alimenta roadmap pista Landing).
 8. **Negativas**: universal + nicho + competidores + lo descartado en el research → `data/negatives-nicho.txt`.
 

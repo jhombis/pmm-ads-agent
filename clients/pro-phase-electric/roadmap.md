@@ -62,20 +62,21 @@ plan_en: https://claude.ai/artifact/3KhWsGyQmP8QY9ZLm1zZgk
 - **Fecha estimada**: lanzamiento **01-oct** (o 08-oct), paso a Fase 2 el **08-oct**.
 - **Condición de paso**: campaña activa 7 días, anuncios aprobados, ≥1 conversión registrada **del sitio** (no solo de la extensión de llamada).
 - **Qué se lanza**:
-  - "Pro Phase Electric - Search NWA - $1500/mo. - [fecha]" con **$27/día** y Max. conversiones sin tCPA.
+  - "Pro Phase Electric - Search NWA - $1500/mo. - [fecha]" con **$27/día** y **Max. clics con tope de CPC $12** (playbook §5: <15 conv/mes).
   - 2 ad groups activos: **Electrician - NWA** (near me + todas las ciudades, H1 con inserción de keyword) y **Electrical Repair**. Paneles y EV se crean **pausados**.
-  - 6 RSA activos, extensiones de `data/ads-search-nwa.md` y negativas universal + nicho.
+  - 1 RSA por ad group (2 activos), extensiones de `data/ads-search-nwa.md` y negativas universal + nicho.
   - Se pausa la campaña actual el mismo día.
   - La construye `/build-campaign`, en pausa. Jhombis revisa y activa.
 - **Riesgos**:
   - Presupuesto menor a 3× CPL/día: el aprendizaje va a ser lento y ruidoso. No se juzga antes de 30 días; en semanas 1–3 se tolera un CPL de hasta $80.
-  - Advertencia de operación: si el cliente no contesta en el horario de 5 a 16, Max. conversiones aprende de llamadas perdidas.
+  - Advertencia de operación: si el cliente no contesta en el horario de 5 a 16, se pagan llamadas que nadie atiende (y cuando pase a Max. conversiones, aprenderá de llamadas perdidas).
   - Sin el GBP vinculado no hay activo de ubicación.
 
 ## Fase 2 — Limpieza (D7 · D14 · D30) + Paneles y EV
 - **Fechas** (si el lanzamiento es el 01-oct): **D7 = 08-oct · D14 = 15-oct · D30 = 31-oct**.
 - **Condición de paso**: las tres revisiones hechas, negativas aplicadas, keywords sin impresiones pausadas en D30, RSA más débil de cada grupo reemplazado y ≥10 conversiones en 30 días.
 - **Qué se revisa**: search terms → negativas (sobre todo utilities, competidores y DIY que se escapen), gasto sin conversión por keyword (>2× CPL sin conversión → revisar), RSA más débil por grupo, IS perdida por presupuesto contra ranking, y **search terms y conversiones por ciudad** dentro del grupo NWA (insumo para decidir si se separan ciudades en F3).
+- **Cambio de puja**: con **15+ conversiones en 30 días**, estables y con medición limpia (sin vistas ni clics como conversión) → Max. conversiones sin tCPA. Proyección con $825: ~12–20/mes, así que puede darse hacia D30–D45 o no darse. Anotar la fecha del cambio.
 - **Paneles y EV**: se activan **después de D14** si ya pasaron por /audit-landing (pista Landing). Se agregan sus sitelinks.
 - **Pedido al cliente en D30**: que marque qué llamadas se volvieron trabajo (hoja simple). Es la única forma de validar el CPL sin CRM.
 
@@ -133,4 +134,5 @@ plan_en: https://claude.ai/artifact/3KhWsGyQmP8QY9ZLm1zZgk
 
 ## Historial de cambios
 - 2026-09-23: creado (D0 = 2026-09-23). Cuenta ya activa desde 01-sep; F0 incluye contención.
+- 2026-09-23: estrategia v3 (playbook de analítica integrado): puja Max. clics con tope $12 hasta 15+ conv/mes; 1 RSA por grupo; sin keywords Tesla ni "electrical troubleshooting"; +31 negativas del playbook.
 - 2026-09-23: estrategia v2. De 8 a 4 ad groups (2 activos en F1): las ciudades se integran en "Electrician - NWA" con inserción de keyword; con ~80 clics/mes, 6 grupos fragmentaban los datos. Separar ciudades pasa a ser decisión de F3.

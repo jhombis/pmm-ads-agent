@@ -27,9 +27,9 @@ Copiado a `clients/<slug>/checklist.md` por /roadmap. Cada ítem tiene responsab
 - [ ] Red: solo Búsqueda, socios y Display apagados
 - [ ] Ubicación: Presencia solamente; países restantes excluidos
 - [ ] Programación de anuncios según horario del cliente
-- [ ] Puja: Maximizar conversiones (sin tCPA) o Max. clics si sin historial
+- [ ] Puja: Max. clics con tope de CPC si es cuenta nueva o <15 conv/mes; Max. conversiones con 15+ estables (playbook §5)
 - [ ] Keywords en frase; exacta para los top términos
-- [ ] 3 RSA por ad group, H1 pinneado, 15H/4D, fuerza "Buena" o superior
+- [ ] RSA por ad group según volumen (1–2 si pauta <$1,500/mes; 3 si mayor), H1 pinneado, 15H/4D, fuerza "Buena" o superior
 - [ ] Extensiones: sitelinks (4+), callouts (6+), snippets, llamada, ubicación
 - [ ] URLs finales verificadas (200, https, sin redirect)
 - [ ] Presupuesto diario configurado según fase 1 de `strategy.md`

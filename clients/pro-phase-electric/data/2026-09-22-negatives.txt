@@ -119,3 +119,35 @@ generator | PHRASE | campaña | brief (no ofrece; confirmar)
 generators | PHRASE | campaña | brief (no ofrece; confirmar)
 handyman | PHRASE | campaña | benchmark
 ac unit repair | PHRASE | campaña | benchmark
+# --- Agregadas 23-sep desde el playbook de analítica §6 ---
+supercharger | PHRASE | campaña | playbook 6.2
+ccs | PHRASE | campaña | playbook 6.2
+adapter | PHRASE | campaña | playbook 6.2
+generac | PHRASE | campaña | playbook 6.2
+leviton | PHRASE | campaña | playbook 6.2
+lutron | PHRASE | campaña | playbook 6.2
+harbor breeze | PHRASE | campaña | playbook 6.2
+minka | PHRASE | campaña | playbook 6.2
+casablanca | PHRASE | campaña | playbook 6.2
+intermatic | PHRASE | campaña | playbook 6.2
+sylvania | PHRASE | campaña | playbook 6.2
+tesla home charger | PHRASE | campaña | playbook 6.2 (Ideal Electric)
+tesla wall connector | PHRASE | campaña | playbook 6.2 (sin keywords Tesla)
+home ev charger for sale | PHRASE | campaña | playbook 6.2
+best home ev charger | PHRASE | campaña | playbook 6.2 (Ideal Electric)
+wire size | PHRASE | campaña | playbook 6.3
+gauge | PHRASE | campaña | playbook 6.3
+not working | PHRASE | campaña | playbook 6.3
+what size | PHRASE | campaña | playbook 6.3
+why does | PHRASE | campaña | playbook 6.3
+reset | PHRASE | campaña | playbook 6.3
+how to replace | PHRASE | campaña | playbook 6.3
+hourly rate | PHRASE | campaña | playbook 6.5
+cost per hour | PHRASE | campaña | playbook 6.5
+average cost | PHRASE | campaña | playbook 6.5
+how much does | PHRASE | campaña | playbook 6.5
+price list | PHRASE | campaña | playbook 6.5
+license requirements | PHRASE | campaña | playbook 6.5
+cooperative | PHRASE | campaña | playbook 6.1
+utility | PHRASE | campaña | playbook 6.1
+power company | PHRASE | campaña | playbook 6.1

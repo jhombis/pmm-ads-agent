@@ -1,17 +1,15 @@
 # Anuncios — Search NWA (Pro Phase Electric)
 
-Idioma: EN. 3 RSA por ad group. En cada RSA, **H1 pinneado a la posición 1** (cambia de un RSA a otro). Las 14 headlines sin pin y las 4 descripciones son iguales en los 3 RSA.
+Idioma: EN. **1 RSA por ad group** (pauta <$1,500/mes; playbook §9: con ~3 clics/día un A/B es ruido). H1 pinneado a la posición 1 = el H1 del RSA. Los H1 alternativos quedan listos para un 2.º RSA solo si sube el volumen.
 Estructura v2 (23-sep): 2 ad groups activos en F1 (NWA + Repair) y 2 en F2 (Panel, EV). Las ciudades van dentro de *Electrician - NWA*; el RSA A usa inserción de keyword en el H1 (`{KeyWord:Licensed NWA Electrician}`), así que las keywords de ciudad van **sin "ar"** para que el titular no salga "Electrician Rogers Ar". Si la keyword pasa de 30 caracteres, Google muestra el texto por defecto.
 Largos validados por script: headlines ≤30, descripciones ≤90, callouts ≤25, snippets ≤25, sitelinks ≤25/35.
 
 ## Electrician - NWA — F1
 Landing: https://prophaseelectricar.com/
 
-| RSA | Headline 1 (pin posición 1) |
-|---|---|
-| A | {KeyWord:Licensed NWA Electrician} (24) |
-| B | Licensed Electrician Near You (29) |
-| C | Northwest Arkansas Electrician (30) |
+**RSA — H1 pinneado (posición 1):** {KeyWord:Licensed NWA Electrician} (24)
+
+H1 alternativos (para un 2.º RSA si sube el volumen): Licensed Electrician Near You (29) · Northwest Arkansas Electrician (30)
 
 **Headlines sin pin (14):**
 - Licensed, Bonded & Insured (26)
@@ -38,11 +36,9 @@ Landing: https://prophaseelectricar.com/
 ## Electrical Repair — F1
 Landing: https://prophaseelectricar.com/ (F2: /electrical-repair/)
 
-| RSA | Headline 1 (pin posición 1) |
-|---|---|
-| A | Electrical Repair in NWA (24) |
-| B | Breaker & Outlet Repair (23) |
-| C | Electrical Repairs Done Right (29) |
+**RSA — H1 pinneado (posición 1):** Electrical Repair in NWA (24)
+
+H1 alternativos (para un 2.º RSA si sube el volumen): Breaker & Outlet Repair (23) · Electrical Repairs Done Right (29)
 
 **Headlines sin pin (14):**
 - Licensed, Bonded & Insured (26)
@@ -69,11 +65,9 @@ Landing: https://prophaseelectricar.com/ (F2: /electrical-repair/)
 ## Electrical Panel Upgrade — F2 (pausado hasta landing)
 Landing: https://prophaseelectricar.com/electrical-panel-upgrade/ (CREAR)
 
-| RSA | Headline 1 (pin posición 1) |
-|---|---|
-| A | Electrical Panel Upgrades (25) |
-| B | Panel Replacement in NWA (24) |
-| C | 200 Amp Panel Upgrades (22) |
+**RSA — H1 pinneado (posición 1):** Electrical Panel Upgrades (25)
+
+H1 alternativos (para un 2.º RSA si sube el volumen): Panel Replacement in NWA (24) · 200 Amp Panel Upgrades (22)
 
 **Headlines sin pin (14):**
 - Licensed, Bonded & Insured (26)
@@ -100,11 +94,9 @@ Landing: https://prophaseelectricar.com/electrical-panel-upgrade/ (CREAR)
 ## EV Charger Installation — F2 (pausado hasta landing)
 Landing: https://prophaseelectricar.com/ev-charger-installation/ (CREAR)
 
-| RSA | Headline 1 (pin posición 1) |
-|---|---|
-| A | EV Charger Installation (23) |
-| B | Home EV Charger Installers (26) |
-| C | Tesla & Level 2 Installs (24) |
+**RSA — H1 pinneado (posición 1):** EV Charger Installation (23)
+
+H1 alternativos (para un 2.º RSA si sube el volumen): Home EV Charger Installers (26) · Level 2 EV Charger Installs (27)
 
 **Headlines sin pin (14):**
 - Licensed, Bonded & Insured (26)
@@ -119,11 +111,11 @@ Landing: https://prophaseelectricar.com/ev-charger-installation/ (CREAR)
 - Clean, Code-Compliant Work (26)
 - Early Appointments From 5 AM (28)
 - Weekend Service Available (25)
-- Tesla Wall Connector Installs (29)
+- Level 2 Home EV Chargers (24)
 - Free EV Charger Quotes (22)
 
 **Descripciones (4):**
-- Level 2 and Tesla charger installs for your home or business, done safely and up to code. (89)
+- Level 2 EV charger installs for your home or business, done safely and up to code. (82)
 - Licensed, bonded & insured electricians. 4.9 stars on Google. Call for a free quote today. (90)
 - Open 7 days a week, 5 AM to 4 PM. Local Lowell-based team serving all of NW Arkansas. (85)
 - Fair, honest pricing and clean, code-compliant work. We show up when we say we will. (84)
@@ -140,7 +132,7 @@ Landing: https://prophaseelectricar.com/ev-charger-installation/ (CREAR)
 | Safety Inspections | /electrical-safety-inspections/ | Panels, wiring & breakers checked | Find code issues before they grow |
 | Residential Electrical | /residential-electrical-service/ | Repairs, upgrades, installs | For homes across Northwest Arkansas |
 | *(F2)* Panel Upgrades | /electrical-panel-upgrade/ | Upgrade to 200 amp service | Free quotes on panel work |
-| *(F2)* EV Charger Installs | /ev-charger-installation/ | Level 2 & Tesla chargers | Home or business installs |
+| *(F2)* EV Charger Installs | /ev-charger-installation/ | Level 2 chargers, installed | Home or business installs |
 
 Se quita el sitelink a /portfolio/.
 

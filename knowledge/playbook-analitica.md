@@ -231,3 +231,16 @@ El agente debe declarar los límites antes de que alguien saque conclusiones equ
 - Nombrar lo que no puede saber: presupuestos históricos, el historial de cambios, qué servicios presta realmente el cliente, si la cobertura configurada coincide con la real.
 - Proponer el orden de ejecución, no una lista suelta: medición → negativas → estructura → puja → creatividad.
 - No aplicar cambios sin aprobación, y dejar registrada la fecha de cada cambio para poder medirlo después.
+
+---
+
+## Reconciliación con los estándares PMM (decidido por Jhombis, 23-sep-2026)
+
+| Tema | Playbook | Estándar anterior | Queda |
+|---|---|---|---|
+| Puja inicial | <15 conv/mes o cuenta nueva → Max. clics con tope | Max. conversiones desde el inicio | **Playbook**: Max. clics con tope de CPC hasta 15+ conv/mes estables con medición limpia; luego Max. conversiones; tCPA con ~30/30d desde el CPA histórico |
+| RSA por grupo | 1 | mínimo 3 | **Por volumen**: <$1,500/mes de pauta → 1 (máx. 2); más volumen → 3 |
+| Amplia / AI Max | tras ~50 conversiones limpias | con tCPA maduro | Ambas condiciones + aprobación de Jhombis |
+| Estructura | tabla de fragmentación por inversión | STAG, ciudad con ≥100 búsquedas | La tabla manda; ciudades dentro del grupo del servicio con inserción de keyword |
+| Negativas genéricas vs. servicios vendidos | `tesla`, `wall connector`, `wiring`, `troubleshooting`, `replace` sueltas | "nunca negar una keyword activa" | No se usan sueltas si chocan: se quitan las keywords de producto/DIY (p. ej. las de Tesla) o se usan negativas combinadas ("tesla home charger", "wiring diagram") |
+| Marcas de paneles (`zinsco`, `siemens`, `eaton`) | negativas de producto | — | **No** negar en cuentas con grupo de paneles: "zinsco panel replacement" es un lead de ticket alto |

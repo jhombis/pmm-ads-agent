@@ -18,7 +18,7 @@ Cuenta 758-301-1023 · campaña actual 24208591381 (Max. clics, se pausa en F1).
 
 ### Contención en la campaña actual
 - [x] (PMM) Quitadas 15 negativas heredadas que bloqueaban servicios o el área (vista, car, estimate, free…) — 22-sep, ver log
-- [ ] **B** (PMM) Importar `data/2026-09-22-negatives-editor.csv` (103 negativas: utilities, competidores, DIY, universal)
+- [ ] **B** (PMM) Importar `data/2026-09-22-negatives-editor.csv` (134 negativas: utilities, competidores, DIY, productos, universal)
 - [ ] (PMM) Pausar las keywords broad "home electrical", "electrical services", "electrical contractors" y "home electrical services"
 - [ ] (PMM) Techo de CPC de $12 (Max. clics)
 - [x] (PMM) Socios de búsqueda y Display apagados; ubicación = Presencia — verificado vía API 23-sep
@@ -61,9 +61,9 @@ Cuenta 758-301-1023 · campaña actual 24208591381 (Max. clics, se pausa en F1).
 - [ ] (PMM) Red: solo Búsqueda; socios y Display apagados
 - [ ] (PMM) Ubicación: Presencia; condados de Benton y Washington + Huntsville; resto excluido
 - [ ] (PMM) Programación L–D 5:00–16:00
-- [ ] (PMM) Puja: Max. conversiones sin tCPA; $27/día
-- [ ] (PMM) Keywords en frase + exacta (87; ciudades sin "ar" por la inserción de keyword); ninguna broad
-- [ ] (PMM) 3 RSA por ad group, H1 pinneado, 15 headlines y 4 descripciones (`data/ads-search-nwa.md`), fuerza "Buena" o superior
+- [ ] (PMM) Puja: Max. clics con tope de CPC $12; $27/día (playbook §5)
+- [ ] (PMM) Keywords en frase + exacta (83; ciudades sin "ar" por la inserción de keyword; sin Tesla); ninguna broad
+- [ ] (PMM) 1 RSA por ad group, H1 pinneado, 15 headlines y 4 descripciones (`data/ads-search-nwa.md`), fuerza "Buena" o superior
 - [ ] (PMM) Extensiones: 5 sitelinks, 8 callouts, snippet, llamada (5–16), imágenes propias; ubicación cuando haya GBP
 - [ ] (PMM) Negativas de enrutamiento por ad group (NWA, Repair)
 - [ ] (PMM) URLs finales verificadas (200, https, sin redirect)
@@ -83,6 +83,7 @@ Cuenta 758-301-1023 · campaña actual 24208591381 (Max. clics, se pausa en F1).
 - [ ] D30: search terms y conversiones por ciudad en el grupo NWA (¿separar ciudades en F3?)
 - [ ] D30: hoja de "llamadas → trabajos" recibida del cliente
 - [ ] D30: ≥10 conversiones y CPL ≤ $60 → presentar la propuesta de presupuesto ($1,500–1,800)
+- [ ] 15+ conversiones en 30 días, estables y con medición limpia → pasar a Max. conversiones (anotar fecha)
 
 ## Fase 3 — Optimización de puja (bloqueada con $825/mes)
 - [ ] ≥30 conversiones en 30 días confirmadas (requiere el aumento de presupuesto)

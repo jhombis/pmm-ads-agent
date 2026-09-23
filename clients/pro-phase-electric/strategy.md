@@ -3,7 +3,7 @@ cliente: Pro Phase Electric
 slug: pro-phase-electric
 pais: US
 actualizado: 2026-09-23
-version: 2
+version: 3
 supuestos:
   - Ticket promedio, margen y tasa de cierre desconocidos → sin CPL máximo; se usa el CPL objetivo del benchmark ($40–60 por llamada)
   - Volúmenes = Semrush nacional × 0.18% (población de NWA), salvo las keywords con ciudad, que ya son locales. Sin Keyword Planner (no hay google-ads.yaml)
@@ -20,14 +20,14 @@ supuestos:
 ## Resumen ejecutivo
 - **1 campaña Search**, "Search NWA", con **4 ad groups**: 2 activos en F1 (**Electrician - NWA**, que incluye near me y todas las ciudades, y **Electrical Repair**) y 2 que se activan en F2 cuando existan sus landings (**Paneles** y **EV**). Se reemplaza la campaña actual (Max. clics, broad, 1 RSA, 736 negativas heredadas).
 - **Presupuesto: $825/mes ≈ $27/día**, todo en esa campaña. No alcanza para dividir por servicio ni para muchos ad groups: la regla de aprendizaje pide ≥3× CPL/día (~$120–180) y ni una sola campaña llega.
-- **Puja: Max. conversiones sin tCPA.** Conversión principal: llamadas ≥60 s (anuncio + sitio) y formulario. Solo match de frase y exacta.
+- **Puja (v3, playbook §5): Max. clics con tope de CPC de $12** mientras haya <15 conv/mes (hoy 1 conversión de historial). Pasa a **Max. conversiones** con 15+ conv/mes estables y medición limpia; tCPA con ~30/30d desde el CPA histórico. Conversión principal: llamadas ≥60 s (anuncio + sitio) y formulario. Solo match de frase y exacta.
 - **CPL objetivo: $40–60 por llamada** (benchmark, grupo Max. conversiones ajustado al CPC de NWA). Se esperan **~12–20 llamadas/mes**.
 - **tCPA no es alcanzable con este presupuesto** (hacen falta ~30 conv./30 días). Con $1,500–1,800 de pauta se llegaría en ~60 días desde F1. Sin marca, PMax, Display ni RLSA en esta etapa. LSA queda como pista paralela, sujeta a GBP y documentos.
 
 ## Campañas
 | Campaña | Objetivo | Presupuesto/día F1 | % | Puja inicial | Geo | Horario |
 |---|---|---|---|---|---|---|
-| Pro Phase Electric - Search NWA - $1500/mo. - [fecha de lanzamiento] | Llamadas + formularios | $27 | 100% | Max. conversiones (sin tCPA) | **Presencia**: condados de Benton y Washington (AR) + Huntsville (AR). Resto excluido | L–D 5:00–16:00 (zona horaria de la cuenta) |
+| Pro Phase Electric - Search NWA - $1500/mo. - [fecha de lanzamiento] | Llamadas + formularios | $27 | 100% | Max. clics, tope CPC $12 → Max. conversiones con 15+ conv/mes | **Presencia**: condados de Benton y Washington (AR) + Huntsville (AR). Resto excluido | L–D 5:00–16:00 (zona horaria de la cuenta) |
 | *(actual)* Pro Phase Electric - ENHPRM Radius - $1500/mo. - 09/01/2026 | — | $27 → **se pausa** el día que sale la nueva | — | Max. clics (hasta F1: techo de CPC $12) | — | — |
 
 Configuración fija (estándares PMM): socios de búsqueda y Display **apagados**, aplicación automática de recomendaciones **apagada**, rotación **optimizar**, idioma EN, sin segmentos de audiencia como exclusión.
@@ -39,9 +39,9 @@ Configuración fija (estándares PMM): socios de búsqueda y Display **apagados*
 | Ad group | Fase | Keywords (match) | Vol. est. NWA/mes | Landing | H1 pinneado (RSA A/B/C) |
 |---|---|---|---|---|---|
 | Electrician - NWA | F1 | [electrician near me], [electricians near me], [electrician], [electricians], [local electrician], [electrician fayetteville], [electrician rogers], [electrician springdale], [electrician bentonville] + frase: "licensed electrician", "residential electrician", "electrician northwest arkansas", "fayetteville electrician", "electricians rogers", "electrician bella vista", "electrician centerton"… (44) | ~1,500 sin contar [electrician] (~2,160 con él) | `/` | {KeyWord:Licensed NWA Electrician} / Licensed Electrician Near You / Northwest Arkansas Electrician |
-| Electrical Repair | F1 | [electrical repair near me], [circuit breaker repair], [outlet repair] + frase: "circuit breaker replacement", "electrical troubleshooting", "wiring repair", "lighting repair near me"… (14) | ~117 | `/` (F2: `/electrical-repair/` opcional) | Electrical Repair in NWA / Breaker & Outlet Repair / Electrical Repairs Done Right |
+| Electrical Repair | F1 | [electrical repair near me], [circuit breaker repair], [outlet repair] + frase: "circuit breaker replacement", "wiring repair", "lighting repair near me"… (13) | ~112 | `/` (F2: `/electrical-repair/` opcional) | Electrical Repair in NWA / Breaker & Outlet Repair / Electrical Repairs Done Right |
 | Electrical Panel Upgrade | **F2** (pausado) | [electrical panel upgrade], [electrical panel replacement], [breaker box replacement], [panel upgrade near me] + frase: "fuse box replacement", "200 amp panel upgrade", "electrical service upgrade"… (15) | ~48 | `/electrical-panel-upgrade/` **(crear)** | Electrical Panel Upgrades / Panel Replacement in NWA / 200 Amp Panel Upgrades |
-| EV Charger Installation | **F2** (pausado) | [ev charger installation], [ev charger installation near me], [tesla charger installation], [electric car charger installation] + frase: "tesla wall connector installation", "level 2 charger installation", "nema 14-50 outlet installation"… (14) | ~157 | `/ev-charger-installation/` **(crear)** | EV Charger Installation / Home EV Charger Installers / Tesla & Level 2 Installs |
+| EV Charger Installation | **F2** (pausado) | [ev charger installation], [ev charger installation near me], [electric car charger installation] + frase: "level 2 charger installation", "nema 14-50 outlet installation", "home ev charger installation"… (11; sin keywords Tesla) | ~139 | `/ev-charger-installation/` **(crear)** | EV Charger Installation / Home EV Charger Installers / Level 2 EV Charger Installs |
 
 **Por qué solo 2 ad groups activos (v2, 23-sep).** En la v1 separé cada ciudad con ≥100 búsquedas/mes aplicando la regla STAG al pie de la letra. Con $27/día el límite es el presupuesto, no la demanda: ~80 clics/mes contra ~2,000 búsquedas comerciales, y hoy ya se pierde 47% de IS por presupuesto. Con 6 grupos quedaban ~13 clics por grupo y ~4 por RSA al mes, datos inútiles para las revisiones D7/D14/D30. Las ciudades comparten la misma intención ("necesito un electricista"), así que van juntas. La relevancia del titular se mantiene con inserción de keyword en el H1 del RSA A (`{KeyWord:Licensed NWA Electrician}` → "Electrician Rogers"). Por eso las keywords de ciudad van **sin "ar"**. Reparación va aparte porque la intención y el anuncio son distintos (un problema concreto). Paneles y EV van aparte por ticket, landing y copy propios. **Separar ciudades es decisión de F3**: si sube el presupuesto, o si los search terms muestran que una ciudad convierte distinto o tiene QS bajo.
 
@@ -53,7 +53,12 @@ En F1, las búsquedas de paneles y EV no se sirven, porque no hay landing. Es de
 
 **Sin ad group de Emergencia/24-7:** el cliente no atiende 24/7. "emergency", "24 hour", "24/7" y "after hours" son negativas.
 
-Detalle de keywords: `data/keywords.csv` (87 activas + descartadas).
+Detalle de keywords: `data/keywords.csv` (83 activas + descartadas).
+
+**Cambios v3 (23-sep, playbook de analítica):**
+- **Puja**: Max. clics con tope $12 en lugar de Max. conversiones. Con 1 conversión de historial, Max. conversiones puja a ciegas y compra lo genérico (playbook §5; caso Integrity Plumbing). Lo que falló en las cuentas C, D y la actual de Pro Phase fue Max. clics **sin tope y en broad**; aquí hay tope, frase/exacta y negativas.
+- **1 RSA por ad group** (4 en total, 2 activos en F1): con ~3 clics/día un A/B es ruido (playbook §9). Los H1 alternativos quedan listos para un 2.º RSA si sube el volumen. En el grupo NWA, el RSA único es el de inserción de keyword.
+- **Sin keywords Tesla** en EV (en Ideal Electric el EV gastó ~$430 con 1 conversión por búsquedas de producto tipo "tesla home charger") y sin "electrical troubleshooting" en Repair (DIY). Negativas combinadas: "tesla home charger", "tesla wall connector", "wire size", "diagram"… (31 del playbook en `data/negatives-nicho.txt`). No se niegan `zinsco`, `siemens` ni `eaton`: "zinsco panel replacement" es un lead de paneles.
 
 ## Keywords descartadas y por qué
 | Keyword | Vol. US | CPC | Decisión | Por qué |
@@ -69,7 +74,7 @@ Detalle de keywords: `data/keywords.csv` (87 activas + descartadas).
 | Competidores y empresas de energía | — | — | Negativa | Estándar 5; $137 perdidos en 11 días |
 
 ## Copy
-Completo en **`data/ads-search-nwa.md`** (largos validados por script). Por ad group: 3 RSA con H1 pinneado a la keyword y 14 headlines sin pin que rotan beneficios y ofertas:
+Completo en **`data/ads-search-nwa.md`** (largos validados por script). Por ad group: **1 RSA** con H1 pinneado a la keyword y 14 headlines sin pin que rotan beneficios y ofertas (H1 alternativos guardados para un 2.º RSA):
 - **Confianza**: Licensed, Bonded & Insured · 4.9-Star Rated on Google · Nextdoor Neighborhood Fave
 - **Diferenciales frente a competencia**: Open 7 Days a Week · Weekend Service Available · Early Appointments From 5 AM · Fair, Honest Pricing · We Show Up When We Say
 - **Oferta**: Get a Free Quote Today
@@ -101,8 +106,8 @@ Extensiones:
 | Fase | Fechas est. | Total/mes | Por campaña | Qué pasa | Condición para pasar |
 |---|---|---|---|---|---|
 | **F0 — Contención + tracking** | 23-sep → ~30-sep | $825 (campaña actual) | Actual: $27/día | En la campaña actual: importar `2026-09-22-negatives-editor.csv`, pausar las keywords broad "home electrical", "electrical services", "electrical contractors" y "home electrical services", y poner techo de CPC de $12. Configurar las conversiones de llamadas del sitio y del formulario. Presencia, horario, socios y Display apagados. Pedir acceso al GBP | Llamadas del sitio + formulario **probados con Tag Assistant** (≥1 conversión de prueba en cada acción) |
-| **F1 — Lanzamiento Search NWA** | ~1-oct → ~21-oct | $825 | Search NWA: $27/día (la actual se pausa) | 2 ad groups (NWA + Repair), Max. conversiones. Revisión de search terms los días 3, 7 y 14 | Landings de paneles y EV publicadas y auditadas **y** ≥14 días de F1 sin problemas de tracking |
-| **F2 — Paneles + EV** | ~22-oct → ~15-nov | $825 | Search NWA: $27/día | Activar los ad groups de Paneles y EV, con sus sitelinks | 30 días desde F1, ≥10 conversiones, CPL ≤ $60 |
+| **F1 — Lanzamiento Search NWA** | ~1-oct → ~21-oct | $825 | Search NWA: $27/día (la actual se pausa) | 2 ad groups (NWA + Repair), 1 RSA c/u, Max. clics con tope $12. Revisión de search terms los días 3, 7 y 14 | Landings de paneles y EV publicadas y auditadas **y** ≥14 días de F1 sin problemas de tracking |
+| **F2 — Paneles + EV** | ~22-oct → ~15-nov | $825 | Search NWA: $27/día | Activar los ad groups de Paneles y EV, con sus sitelinks | 30 días desde F1, ≥10 conversiones, CPL ≤ $60. Con **15+ conv/mes estables** y medición limpia → pasar a Max. conversiones |
 | **F3 — Optimizar y proponer escala** | ~15-nov → | Propuesta: $1,500–1,800 | Search NWA (única); ad group Marca solo si hay competidores pujando por ella | Reasignar según el CPA por ad group; evaluar separar ciudades, pausar lo que gaste >2× CPL sin conversión, proponer más presupuesto. Separar Paneles+EV en campaña propia solo si queda ≥3× CPL/día | ~30 conv./30 días → **tCPA** al CPA real +10–20% |
 | F4 — RLSA | después de F3 | — | Observación | Listas de visitantes. Con el tráfico actual difícilmente llegan a 1,000 usuarios | Lista ≥1,000 usuarios |
 | F5 — PMax | no planificada | — | — | Ver "Por qué NO" | Condiciones de `knowledge/estrategias/pmax-cuando-y-como.md` |
