@@ -60,7 +60,7 @@ No excluir en marca: "reviews", "hours", "phone number". Son búsquedas de marca
 **Anuncio de solo llamada**: se mantiene uno en MARCA y uno en A (hoy se lleva ~31% del gasto y convierte). Se mide aparte para decidir en F2.
 
 Negativas por ad group (evitan que los grupos compitan entre sí):
-- A: rebuild, replacement, cost, price, flush, fluid, clutch, cvt
+- A: rebuild, replacement, cost, price, flush, "fluid change", "fluid service", clutch, cvt (no "fluid" solo: bloquearía "transmission leaking fluid")
 - B: flush, fluid change, clutch
 - C: rebuild, replacement
 - E: transmission, check engine, engine, oil change, lube, brake(s), tire(s)
