@@ -26,3 +26,8 @@ Se regenera con /roadmap. Por ahora, bloqueantes que salieron de la evaluación:
 - [x] (PMM) /benchmark-interno (2026-09-23): ver benchmark.md; agregado en knowledge/benchmarks/auto-repair-transmisiones-us.md
 - [ ] (PMM) Revisar las negativas "aaa" y "duval" (pueden bloquear intención comercial)
 - [ ] (PMM) Etiquetar las cuentas del MCC con nicho:* / pais:* (hoy ninguna tiene etiqueta)
+- [x] (PMM) /strategy v1 (2026-09-23): ver strategy.md, data/ads-search-103rd.md, data/keywords.csv, data/negatives-nicho.txt
+- [ ] (Cliente) Decidir el oil change: ¿producto de entrada o se excluye?
+- [ ] (PMM) Confirmar volúmenes con Keyword Planner (radio 5 mi) antes de /build-campaign
+- [ ] (Cuenta) Acordar entre sedes quién puja por [aamco] genérico
+- [ ] (PMM) Verificar si LSA está disponible para auto repair en Jacksonville (pista paralela)
