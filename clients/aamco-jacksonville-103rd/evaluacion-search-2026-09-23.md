@@ -86,7 +86,7 @@ Feb–mar 2026: la campaña casi no gastó. Causa PENDIENTE (¿pausa, facturaci�
 
 ### Marca y canibalización entre sedes (90 días, misma cuenta)
 - Término "aamco" pagado por 4 campañas de Jacksonville: Biscayne $476, San Jose $461, 103rd $372, Atlantic $231. **$1,540 solo en la palabra "aamco"**, a ~$5 por clic.
-- Fugas cruzadas: 103rd pagó "aamco dunn ave" (Biscayne) y San Jose pagó "aamco blanding blvd" (Orange Park). Poco dinero, pero muestra que los radios de 4–5 mi no separan bien las sedes.
+- Fugas cruzadas: 103rd pagó "aamco dunn ave" (Biscayne) y San Jose pagó "aamco blanding blvd" (Orange Park). Poco dinero, pero muestra que los radios de 4–5 mi no separan bien las sedes. *(Actualizado con /benchmark-interno: ya existen negativas cruzadas entre sedes, como "biscayne", "orange park" o "aamco dunn ave" en 103rd. Las fugas indican que la concordancia de esas negativas es exacta o que faltan variantes.)*
 - GBP 103rd: 507 reseñas, 4.4★. El resultado orgánico/Maps de marca es fuerte. Hay que probar cuánto de la marca pagada es incremental.
 
 ## 2. Mejoras, en orden de impacto en dinero
@@ -106,7 +106,7 @@ Feb–mar 2026: la campaña casi no gastó. Causa PENDIENTE (¿pausa, facturaci�
 - Campaña (o ad group aislado) **Marca 103rd**: "aamco 103rd", "aamco on 103rd", "aamco westside", "aamco near me", en frase/exacta. Presupuesto propio y bajo; objetivo de cuota de impresiones en marca local.
 - Probar incrementalidad de la palabra "aamco" sola: 2–4 semanas bajando la puja o pausando **solo** en 103rd y midiendo las llamadas totales en CallRail (incluye GBP/orgánico). Si las llamadas totales no bajan, ese gasto (~$120/mes) se mueve a no-marca.
 - Coordinar con las otras 3 sedes: hoy las 4 pujan por "aamco" y el precio lo pone la propia franquicia. Opción: cada sede puja solo por "aamco + su calle/barrio", y "aamco" genérico lo cubre la sede más cercana por geo.
-- Negativas cruzadas de sede (ver `data/negatives-propuestas-2026-09-23.txt`).
+- Negativas cruzadas de sede: ya existen en parte. Completar variantes ("dunn ave", "atlantic blvd", "san jose blvd") y pasar las existentes a frase (ver `data/negatives-propuestas-2026-09-23.txt`).
 
 ### P3 — Reestructurar no-marca por servicio (STAG), con frase como estándar
 **Por qué**: la transmisión es el ticket alto de AAMCO y hoy recibe el 15% del gasto visible. "oil change near me" amplia consume un tercio del presupuesto.

@@ -23,3 +23,6 @@ Se regenera con /roadmap. Por ahora, bloqueantes que salieron de la evaluación:
 - [ ] (Cliente) Garantía por tipo de trabajo, condiciones de financiamiento, ¿remolque gratis con la reparación?
 - [ ] (Cliente) Plan de reseñas (4.4★ frente a 4.9★ de los independientes)
 - [ ] (PMM) Métricas de Auction Insights desde la interfaz (Windsor solo da los dominios)
+- [x] (PMM) /benchmark-interno (2026-09-23): ver benchmark.md; agregado en knowledge/benchmarks/auto-repair-transmisiones-us.md
+- [ ] (PMM) Revisar las negativas "aaa" y "duval" (pueden bloquear intención comercial)
+- [ ] (PMM) Etiquetar las cuentas del MCC con nicho:* / pais:* (hoy ninguna tiene etiqueta)
