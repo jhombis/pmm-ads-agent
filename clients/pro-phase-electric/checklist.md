@@ -1,7 +1,7 @@
 ---
 cliente: Pro Phase Electric
 slug: pro-phase-electric
-fase_actual: 0
+fase_actual: 1
 actualizado: 2026-09-23
 ---
 # Checklist — Pro Phase Electric
@@ -62,22 +62,25 @@ Cuenta 758-301-1023 · campaña actual 24208591381 (Max. clics, se pausa en F1).
 - [ ] (Cliente) Número de licencia de Arkansas
 - [ ] (PMM) LSA: **en espera** (el cliente dijo "No"). Reabrir si cambia
 
-## Fase 1 — Lanzamiento Search NWA
-- [ ] (PMM) /build-campaign: "Search NWA" con 4 ad groups (NWA + Repair activos; Paneles y EV pausados) según `strategy.md`, creada en pausa
-- [ ] (PMM) Red: solo Búsqueda; socios y Display apagados
-- [ ] (PMM) Ubicación: Presencia; condados de Benton y Washington + Huntsville; resto excluido
-- [ ] (PMM) Programación L–D 3:00–14:00 en hora de la cuenta (= 5:00–16:00 Arkansas)
-- [ ] (PMM) Puja: Max. clics con tope de CPC $12; $27/día (playbook §5)
-- [ ] (PMM) Keywords en frase + exacta (83; ciudades sin "ar" por la inserción de keyword; sin Tesla); ninguna broad
-- [ ] (PMM) 1 RSA por ad group, H1 pinneado, 15 headlines y 4 descripciones (`data/ads-search-nwa.md`), fuerza "Buena" o superior
-- [ ] (PMM) Extensiones: 5 sitelinks, 8 callouts, snippet, llamada (3–14 hora de la cuenta), imágenes propias; ubicación cuando haya GBP
-- [ ] (PMM) Negativas de enrutamiento por ad group (NWA, Repair)
-- [ ] (PMM) URLs finales verificadas (200, https, sin redirect)
-- [ ] **B** (Jhombis) Revisión y activación; pausar la campaña actual el mismo día
-- [ ] (PMM) Anuncios aprobados (revisar a las 24 h)
+## Fase 1 — Lanzamiento Search NWA (lanzada 23-sep con Fase 0 incompleta, por decisión de Jhombis — ver log/2026-09-23-build.md)
+- [x] (PMM) Campaña Search NWA creada: ID 24273708366, 4 ad groups **activos**, todas las URLs a la home — 23-sep
+- [x] (PMM) Red: solo Búsqueda; socios y Display apagados
+- [x] (PMM) Ubicación: Presencia; condados de Benton y Washington + Huntsville
+- [x] (PMM) Programación L–D 3:00–14:00 en hora de la cuenta (= 5:00–16:00 Arkansas)
+- [x] (PMM) Puja: Max. clics con tope de CPC $12; $27/día
+- [x] (PMM) 83 keywords (64 frase + 19 exacta); ninguna broad
+- [x] (PMM) 1 RSA por ad group, H1 pinneado, 15H/4D. Headline con teléfono reemplazado (política PHONE_NUMBER_IN_AD_TEXT)
+- [ ] (PMM) Fuerza del anuncio "Buena" o superior (revisar en la UI)
+- [x] (PMM) Extensiones: 5 sitelinks, 8 callouts, snippet, llamada (aprobada)
+- [ ] (PMM) Imágenes propias; ubicación cuando haya GBP
+- [x] (PMM) Negativas de enrutamiento por ad group (15) + listas compartidas PMM Universal (167) y nicho (97)
+- [ ] (PMM) URLs finales verificadas (200, https): no se pudo con HEAD desde el entorno; confirmar en la aprobación
+- [x] (Jhombis) Activación decidida; campaña anterior 24208591381 pausada — 23-sep
+- [ ] (PMM) Anuncios aprobados (en revisión el 23-sep; revisar el 24-sep)
+- [ ] (PMM) D7 (30-sep): CTR y QS de Paneles y EV apuntando a la home; si no convierten, pausar hasta tener landing
 - [ ] **B** (PMM) Primera conversión **del sitio** registrada
 
-## Fase 2 — Limpieza (D7 08-oct · D14 15-oct · D30 31-oct) + Paneles/EV
+## Fase 2 — Limpieza (D7 30-sep · D14 07-oct · D30 23-oct)
 - [ ] D7: search terms revisados, negativas agregadas
 - [ ] D7: keywords sin impresiones identificadas (no pausar aún)
 - [ ] D14: search terms revisados, negativas agregadas

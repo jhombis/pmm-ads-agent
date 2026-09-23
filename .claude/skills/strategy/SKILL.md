@@ -37,7 +37,7 @@ Lee `brief.md`, `audit-site.md`, `competitors.md`, `benchmark.md`. Si falta algu
    - Declarar los límites de bajo volumen (playbook §9): qué no se podrá concluir con los clics esperados.
    - Regla de aprendizaje: cada campaña necesita ≥3× CPL/día; si no alcanza, consolidar campañas (menos campañas, más ad groups).
    - Fase 3+: reasignación según CPA real.
-6. **Copy**: por ad group, 1 RSA (máx. 2) si la pauta es <$1,500/mes, 3 si es mayor; cada uno con 15 headlines + 4 descripciones en el idioma del mercado, H1 pinneado = término del grupo, usando los diferenciadores y ofertas del brief y los gaps de competitors.md. Extensiones: sitelinks (otros servicios), callouts (diferenciadores), snippets (servicios), llamada, ubicación.
+6. **Copy** (sin teléfonos en headlines ni descripciones: Google los rechaza por PHONE_NUMBER_IN_AD_TEXT; el teléfono va en la extensión de llamada): por ad group, 1 RSA (máx. 2) si la pauta es <$1,500/mes, 3 si es mayor; cada uno con 15 headlines + 4 descripciones en el idioma del mercado, H1 pinneado = término del grupo, usando los diferenciadores y ofertas del brief y los gaps de competitors.md. Extensiones: sitelinks (otros servicios), callouts (diferenciadores), snippets (servicios), llamada, ubicación.
 7. **Landings**: mapear cada ad group a su URL. Si la landing no existe, listarla como requerida (alimenta roadmap pista Landing).
 8. **Negativas**: universal + nicho + competidores + lo descartado en el research → `data/negatives-nicho.txt`.
 

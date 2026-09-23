@@ -3,7 +3,7 @@ cliente: Pro Phase Electric
 slug: pro-phase-electric
 D0: 2026-09-23
 actualizado: 2026-09-23
-fase_actual: 0
+fase_actual: 1
 plan_es: https://claude.ai/artifact/B6JRbhCt3HNMFq29UeJv36
 plan_en: https://claude.ai/artifact/3KhWsGyQmP8QY9ZLm1zZgk
 ---
@@ -17,9 +17,9 @@ plan_en: https://claude.ai/artifact/3KhWsGyQmP8QY9ZLm1zZgk
 ## Resumen
 | Fase | Fecha estimada | Estado |
 |---|---|---|
-| 0 — Medición + contención | 23-sep → 30-sep (o 07-oct si el sitio lo edita el cliente) | 🔄 en curso |
-| 1 — Lanzamiento Search NWA | 01-oct → 08-oct | ⏳ |
-| 2 — Limpieza (D7 · D14 · D30) + Paneles/EV | 08-oct · 15-oct · 31-oct | ⏳ |
+| 0 — Medición + contención | Contención ✅. Medición del sitio pendiente (en paralelo, por Jhombis) | 🔄 en curso |
+| 1 — Lanzamiento Search NWA | **Lanzada 23-sep** (ID 24273708366; F0 incompleta por decisión de Jhombis) → paso a F2 el 30-sep | 🔄 en curso |
+| 2 — Limpieza (D7 · D14 · D30) | **30-sep · 07-oct · 23-oct** | ⏳ |
 | 3 — Decisión de presupuesto → cambio de puja → tCPA | Decisión ~1–15-nov. Max. conversiones: con 15+ conv/mes (pide ~$1,275/mes a CPL $85). tCPA: sin fecha en el escenario base; ~05-ene-2027 solo con aumento y CPL ≤$55 | ⛔ por presupuesto |
 | 4 — Remarketing | No realista (audiencia < 1,000) | ⛔ |
 | 5 — Performance Max | No califica en el horizonte visible | ⛔ |
@@ -74,7 +74,7 @@ plan_en: https://claude.ai/artifact/3KhWsGyQmP8QY9ZLm1zZgk
   - Sin el GBP vinculado no hay activo de ubicación.
 
 ## Fase 2 — Limpieza (D7 · D14 · D30) + Paneles y EV
-- **Fechas** (si el lanzamiento es el 01-oct): **D7 = 08-oct · D14 = 15-oct · D30 = 31-oct**.
+- **Fechas** (lanzada el 23-sep): **D7 = 30-sep · D14 = 07-oct · D30 = 23-oct**.
 - **Condición de paso**: las tres revisiones hechas, negativas aplicadas, keywords sin impresiones pausadas en D30, y **≥8 conversiones en 30 días con CPL ≤ $100** y tendencia a la baja (escenario base de strategy v4: ~8–13 prospectos/mes, CPL ~$65–100). Con 1 RSA por grupo no hay "RSA más débil" que reemplazar: se revisan los activos del RSA.
 - **Qué se revisa**: search terms → negativas (sobre todo utilities, competidores y DIY que se escapen), gasto sin conversión por keyword (>2× CPL sin conversión → revisar), RSA más débil por grupo, IS perdida por presupuesto contra ranking, y clics por ciudad dentro del grupo NWA (una ciudad solo se separa en F3 si acumula **≥50 clics** con diferencias claras; antes es ruido, playbook §9).
 - **Cambio de puja**: con **15+ conversiones en 30 días**, estables y con medición limpia (sin vistas ni clics como conversión) → Max. conversiones sin tCPA. Con $825 y el escenario base (~8–13/mes) **no se espera**; solo en el optimista. Anotar la fecha si ocurre.
@@ -136,6 +136,7 @@ plan_en: https://claude.ai/artifact/3KhWsGyQmP8QY9ZLm1zZgk
 
 ## Historial de cambios
 - 2026-09-23: creado (D0 = 2026-09-23). Cuenta ya activa desde 01-sep; F0 incluye contención.
+- 2026-09-23: **Search NWA lanzada** (24273708366) con los 4 ad groups activos y todas las URLs a la home; campaña anterior pausada. Fase 0 de medición sigue abierta por decisión de Jhombis. Revisiones D7/D14/D30 → 30-sep, 07-oct, 23-oct.
 - 2026-09-23: estrategia v4 regenerada con el playbook como base: CPC real $9.80 → ~84 clics/mes; proyección por escenarios (base 8–13 prospectos, CPL ~$65–100, objetivo provisional ≤$85); F2 pide ≥8 conv y CPL ≤$100; F3 pasa a ser decisión de presupuesto; tCPA sin fecha en el escenario base; Repair a /residential-electrical-service/; medición §7 en F0; separar ciudades solo con ≥50 clics.
 - 2026-09-23: estrategia v3 (playbook de analítica integrado): puja Max. clics con tope $12 hasta 15+ conv/mes; 1 RSA por grupo; sin keywords Tesla ni "electrical troubleshooting"; +31 negativas del playbook.
 - 2026-09-23: estrategia v2. De 8 a 4 ad groups (2 activos en F1): las ciudades se integran en "Electrician - NWA" con inserción de keyword; con ~80 clics/mes, 6 grupos fragmentaban los datos. Separar ciudades pasa a ser decisión de F3.

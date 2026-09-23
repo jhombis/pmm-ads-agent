@@ -216,7 +216,7 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
       <dt>MCC</dt><dd class="mono">444-523-7672</dd>
       <dt>Mercado</dt><dd>Northwest Arkansas · EN</dd>
       <dt>D0</dt><dd class="num">23-sep-2026</dd>
-      <dt>Fase actual</dt><dd><span class="chip st-run">Fase 0 · en curso</span></dd>
+      <dt>Fase actual</dt><dd><span class="chip st-run">Fase 1 · lanzada 23-sep</span></dd>
       <dt>Actualizado</dt><dd class="num">23-sep-2026</dd>
     </dl>
   </header>
@@ -232,7 +232,7 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
       <div class="kpi"><b>$825</b><span>pauta/mes · ≈ $27/día (contrato $1,500)</span></div>
       <div class="kpi"><b>≤$85</b><span>CPL objetivo provisional (aspiracional $40–60)</span></div>
       <div class="kpi"><b>8–13</b><span>prospectos/mes, escenario base (~84 clics)</span></div>
-      <div class="kpi"><b>1-oct</b><span>lanzamiento Search NWA (8-oct si el sitio lo edita el cliente)</span></div>
+      <div class="kpi"><b>23-sep</b><span>Search NWA lanzada (ID 24273708366); anterior pausada</span></div>
     </div>
 
     <div class="two">
@@ -527,7 +527,7 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
     ['Score de PageSpeed móvil + captura móvil de la home', 'Si el score es <40 pasa a bloqueante. Ver si el formulario y el botón de llamada se ven sin scroll.', 'Jhombis', true],
     ['Acceso de gestor al GBP', 'El perfil existe (widget 4.9 ★). Sin acceso no hay activo de ubicación.', 'Cliente', false],
     ['Ticket y margen: panel y EV', 'Para fijar el CPL máximo antes de activar Paneles y EV.', 'Cliente', false],
-    ['/build-campaign: Search NWA en pausa', '4 ad groups (2 activos), 1 RSA por grupo, extensiones, geo por condado y listas compartidas de negativas, vía API.', 'PMM', false],
+    ['✓ Hecho 23-sep: Search NWA creada y activa', '4 ad groups activos, 83 keywords, 1 RSA por grupo (en revisión), listas PMM Universal y nicho, extensiones, condados, 3–14 hora de la cuenta. Todas las URLs a la home. Campaña anterior pausada.', 'PMM', false],
     ['Crear landings de Paneles y EV', 'Objetivo 14-oct si edita PMM, 21-oct si edita el cliente.', 'PMM/Cliente', false]
   ];
   document.getElementById('steps').innerHTML = steps.map((s,i)=>`
@@ -544,8 +544,8 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
   const mname = {'2026-10-01':'oct','2026-11-01':'nov','2026-12-01':'dic','2027-01-01':'ene 2027'};
   const rows = [
     {k:'F0', label:'F0 Medición', bars:[{a:'2026-09-23', b:'2026-09-30', t:'F0'},{a:'2026-09-30', b:'2026-10-07', t:'', ghost:true}]},
-    {k:'F1', label:'F1 Lanzamiento', bars:[{a:'2026-10-01', b:'2026-10-08', t:'F1'}]},
-    {k:'F2', label:'F2 Limpieza', bars:[{a:'2026-10-08', b:'2026-10-31', t:'D7 · D14 + Paneles/EV · D30'}]},
+    {k:'F1', label:'F1 Lanzamiento', bars:[{a:'2026-09-23', b:'2026-09-30', t:'F1'}]},
+    {k:'F2', label:'F2 Limpieza', bars:[{a:'2026-09-30', b:'2026-10-23', t:'D7 · D14 · D30'}]},
     {k:'LAND', label:'Landings', bars:[{a:'2026-09-23', b:'2026-10-14', t:'Paneles, EV, tracking'},{a:'2026-10-14', b:'2026-10-21', t:'', ghost:true}]},
     {k:'F3', label:'F3 Presupuesto/puja', bars:[{a:'2026-11-01', b:'2026-11-15', t:'decisión $'},{a:'2026-11-15', b:'2027-01-05', t:'tCPA solo con aumento y CPL ≤$55', ghost:true}]},
     {k:'F4', label:'F4 Remarketing', bars:[], note:'No realista: audiencia < 1,000'},
@@ -568,12 +568,12 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
     {k:'F0', t:'Medición + contención', w:'23-sep → 30-sep (07-oct si edita el cliente)', s:['run','En curso'],
      c:'Llamadas del sitio + formulario probados con Tag Assistant; todos los B de Fase 0 en ✅.',
      i:['Contener la campaña actual: negativas, pausar broad, techo CPC $12, horario 5–16','Medición (playbook §7): un solo teléfono, formulario de prueba, llamadas del sitio, tel:, Calls from Ads ≥60 s, GCLID','Cliente: GBP, proceso de respuesta, número de reenvío, ticket y margen']},
-    {k:'F1', t:'Lanzamiento Search NWA', w:'1-oct → 8-oct', s:['todo','Pendiente'],
+    {k:'F1', t:'Lanzamiento Search NWA', w:'Lanzada 23-sep → D7 30-sep', s:['run','En curso'],
      c:'7 días activa, anuncios aprobados, ≥1 conversión del sitio.',
-     i:['Search NWA a $27/día, Max. clics con tope $12, 2 ad groups activos (NWA + Reparación)','Paneles y EV creados en pausa','Se pausa la campaña actual el mismo día']},
-    {k:'F2', t:'Limpieza + Paneles/EV', w:'D7 8-oct · D14 15-oct · D30 31-oct', s:['todo','Pendiente'],
+     i:['Search NWA (24273708366) a $27/día, Max. clics con tope $12','4 ad groups activos, todo a la home (decisión 23-sep)','Campaña anterior pausada el mismo día']},
+    {k:'F2', t:'Limpieza + Paneles/EV', w:'D7 30-sep · D14 7-oct · D30 23-oct', s:['todo','Pendiente'],
      c:'3 revisiones hechas, negativas aplicadas, ≥8 conversiones y CPL ≤ $100 con tendencia a la baja.',
-     i:['Search terms → negativas; gasto >$100 sin conversión a revisión','Activar Paneles y EV después de D14 si las landings pasaron audit','D30: hoja de llamadas → trabajos del cliente','15+ conv. en 30 días estables → Max. conversiones']},
+     i:['Search terms → negativas; gasto >$100 sin conversión a revisión','D7: CTR y QS de Paneles y EV hacia la home; pausar si no convierten hasta tener landing','D30: hoja de llamadas → trabajos del cliente','15+ conv. en 30 días estables → Max. conversiones']},
     {k:'F3', t:'Presupuesto, puja y tCPA', w:'Decisión ~1–15-nov · tCPA sin fecha en el escenario base', s:['block','Depende de presupuesto'],
      c:'Aprobación del aumento; Max. conversiones con 15+ conv/mes; tCPA con ≥30 en 30 días.',
      i:['Con $825: ~8–13 prospectos/mes, no llega a 15','Max. conversiones pide ~$1,275/mes a CPL $85','tCPA pide ~$2,550/mes a $85 (~$1,650 a $55): ~5-ene solo con aumento y CPL ≤$55']},
@@ -593,9 +593,9 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
   /* Ad groups */
   const ags = [
     ['Electrician - NWA','F1',['electrician near me','electricians near me','electrician fayetteville','electrician rogers','electrician springdale','electrician bentonville','licensed electrician','electrician bella vista'],'~1,500*','/'],
-    ['Electrical Repair','F1',['electrical repair near me','circuit breaker repair','outlet repair','wiring repair'],'~112','/residential-electrical-service/'],
-    ['Electrical Panel Upgrade','F2',['electrical panel upgrade','electrical panel replacement','breaker box replacement','200 amp panel upgrade'],'~48','/electrical-panel-upgrade/ (crear)'],
-    ['EV Charger Installation','F2',['ev charger installation','home ev charger installation','electric car charger installation','level 2 charger installation'],'~139','/ev-charger-installation/ (crear)']
+    ['Electrical Repair','F1',['electrical repair near me','circuit breaker repair','outlet repair','wiring repair'],'~112','/ (decisión 23-sep)'],
+    ['Electrical Panel Upgrade','F1',['electrical panel upgrade','electrical panel replacement','breaker box replacement','200 amp panel upgrade'],'~48','/ (landing propia pendiente)'],
+    ['EV Charger Installation','F1',['ev charger installation','home ev charger installation','electric car charger installation','level 2 charger installation'],'~139','/ (landing propia pendiente)']
   ];
   document.getElementById('agrows').innerHTML = ags.map(a=>`
     <tr><td><b>${esc(a[0])}</b></td><td><span class="chip ${a[1]==='F1'?'st-run':'st-pause'}">${a[1]==='F1'?'F1 activo':'F2 en pausa'}</span></td>
@@ -606,11 +606,11 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
   const h1 = [
     ['NWA (+ ciudades)','{KeyWord:Licensed NWA Electrician}','Licensed Electrician Near You','Northwest Arkansas Electrician'],
     ['Repair','Electrical Repair in NWA','Breaker & Outlet Repair','Electrical Repairs Done Right'],
-    ['Panel (F2)','Electrical Panel Upgrades','Panel Replacement in NWA','200 Amp Panel Upgrades'],
-    ['EV (F2)','EV Charger Installation','Home EV Charger Installers','Level 2 EV Charger Installs']
+    ['Panel','Electrical Panel Upgrades','Panel Replacement in NWA','200 Amp Panel Upgrades'],
+    ['EV','EV Charger Installation','Home EV Charger Installers','Level 2 EV Charger Installs']
   ];
   document.getElementById('h1rows').innerHTML = h1.map(r=>`<tr><td><b>${esc(r[0])}</b></td><td>${r.slice(1).map(x=>`${esc(x)} <span class="lenc">${x.startsWith('{KeyWord:')?x.length-10:x.length}</span>`).join('<br>')}</td></tr>`).join('');
-  const pool = ["Licensed, Bonded & Insured","4.9-Star Rated on Google","Open 7 Days a Week","Get a Free Quote Today","Call (479) 287-3650","Local NWA Electricians","Fair, Honest Pricing","Nextdoor Neighborhood Fave","We Show Up When We Say","Clean, Code-Compliant Work","Early Appointments From 5 AM","Weekend Service Available"];
+  const pool = ["Licensed, Bonded & Insured","4.9-Star Rated on Google","Open 7 Days a Week","Get a Free Quote Today","Talk to a Local Electrician","Local NWA Electricians","Fair, Honest Pricing","Nextdoor Neighborhood Fave","We Show Up When We Say","Clean, Code-Compliant Work","Early Appointments From 5 AM","Weekend Service Available"];
   document.getElementById('pool').innerHTML = pool.map(x=>`<li>${esc(x)} <span class="lenc">${x.length}</span></li>`).join('') + `<li class="muted">+2 propias de cada grupo</li>`;
   const descs = ["Licensed, bonded & insured electricians. 4.9 stars on Google. Call for a free quote today.","Open 7 days a week, 5 AM to 4 PM. Local Lowell-based team serving all of NW Arkansas.","Fair, honest pricing and clean, code-compliant work. We show up when we say we will."];
   document.getElementById('descs').innerHTML = descs.map(x=>`<li style="margin:4px 0">${esc(x)} <span class="lenc">${x.length}</span></li>`).join('') + `<li class="muted">+1 propia de cada grupo</li>`;
@@ -661,18 +661,18 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
     ['F0','Confirmar área: Siloam Springs, Gentry, Madison','Cliente','todo',false],
     ['F0','Confirmar si instala generadores','Cliente','todo',false],
     ['F0','Número de licencia de Arkansas','Cliente','todo',false],
-    ['F1','/build-campaign: Search NWA con 4 ad groups, en pausa','PMM','todo',false],
-    ['F1','Solo Búsqueda; socios y Display apagados','PMM','todo',false],
-    ['F1','Presencia: Benton + Washington + Huntsville','PMM','todo',false],
-    ['F1','Programación L–D 3:00–14:00 hora de la cuenta (= 5–16 Arkansas)','PMM','todo',false],
-    ['F1','Max. clics con tope $12; $27/día','PMM','todo',false],
-    ['F1','83 keywords en frase + exacta (sin Tesla; ciudades sin "ar"); ninguna broad','PMM','todo',false],
-    ['F1','1 RSA por ad group, H1 pinneado, 15H/4D','PMM','todo',false],
-    ['F1','Extensiones: sitelinks, callouts, snippet, llamada, imágenes','PMM','todo',false],
-    ['F1','Negativas de enrutamiento (NWA, Repair)','PMM','todo',false],
+    ['F1','Search NWA creada y activa (24273708366), 4 ad groups a la home','PMM','done',false],
+    ['F1','Solo Búsqueda; socios y Display apagados','PMM','done',false],
+    ['F1','Presencia: Benton + Washington + Huntsville','PMM','done',false],
+    ['F1','Programación L–D 3:00–14:00 hora de la cuenta (= 5–16 Arkansas)','PMM','done',false],
+    ['F1','Max. clics con tope $12; $27/día','PMM','done',false],
+    ['F1','83 keywords en frase + exacta (sin Tesla; ciudades sin "ar"); ninguna broad','PMM','done',false],
+    ['F1','1 RSA por ad group, H1 pinneado, 15H/4D','PMM','done',false],
+    ['F1','Extensiones: sitelinks, callouts, snippet, llamada (imágenes pendientes)','PMM','done',false],
+    ['F1','Negativas de enrutamiento + listas PMM Universal y nicho','PMM','done',false],
     ['F1','URLs finales verificadas (200, https)','PMM','todo',false],
-    ['F1','Revisión y activación; pausar la campaña actual','Jhombis','todo',true],
-    ['F1','Anuncios aprobados (revisar a las 24 h)','PMM','todo',false],
+    ['F1','Activación decidida; campaña anterior pausada','Jhombis','done',false],
+    ['F1','Anuncios aprobados (en revisión; revisar 24-sep)','PMM','todo',false],
     ['F1','Primera conversión del sitio registrada','PMM','todo',true],
     ['F2','D7: search terms → negativas; keywords sin impresiones identificadas','PMM','todo',false],
     ['F2','D14: search terms; keywords >$100 sin conversión a revisión','PMM','todo',false],

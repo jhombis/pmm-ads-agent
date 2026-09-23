@@ -18,6 +18,8 @@ supuestos:
 
 # Estrategia Google Ads — Pro Phase Electric
 
+> **Ejecutada el 23-sep** (campaña 24273708366, ver `log/2026-09-23-build.md`) con dos desvíos decididos por Jhombis: los 4 ad groups activos desde el día 1 y **todas las URLs finales a la home** hasta que existan las landings; la medición de la Fase 0 se cierra en paralelo.
+>
 > **v4 (23-sep).** Estrategia regenerada con el playbook de analítica como base. Cambios contra v3: proyección de leads por escenarios (la v1–v3 usaba una tasa de conversión de 17–25% tomada de cuentas que cuentan llamadas del anuncio), CPL objetivo y condiciones de paso recalculadas, Reparación con landing propia, medición del playbook en F0, y la decisión de separar ciudades sujeta a volumen mínimo.
 
 ## Datos (antes de la estrategia)

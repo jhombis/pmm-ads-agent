@@ -216,7 +216,7 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
       <dt>MCC</dt><dd class="mono">444-523-7672</dd>
       <dt>Market</dt><dd>Northwest Arkansas · EN</dd>
       <dt>D0</dt><dd class="num">Sep 23, 2026</dd>
-      <dt>Current phase</dt><dd><span class="chip st-run">Phase 0 · in progress</span></dd>
+      <dt>Current phase</dt><dd><span class="chip st-run">Phase 1 · launched Sep 23</span></dd>
       <dt>Updated</dt><dd class="num">Sep 23, 2026</dd>
     </dl>
   </header>
@@ -231,7 +231,7 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
       <div class="kpi"><b>$825</b><span>ad spend/month · ≈ $27/day ($1,500 contract)</span></div>
       <div class="kpi"><b>≤$85</b><span>provisional target CPL (aspirational $40–60)</span></div>
       <div class="kpi"><b>8–13</b><span>leads/month, base scenario (~84 clicks)</span></div>
-      <div class="kpi"><b>Oct 1</b><span>Search NWA launch (Oct 8 if the client edits the site)</span></div>
+      <div class="kpi"><b>Sep 23</b><span>Search NWA launched (ID 24273708366); old campaign paused</span></div>
     </div>
 
     <div class="two">
@@ -513,7 +513,7 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
     ['Mobile PageSpeed score + mobile homepage screenshot', 'A score <40 becomes a blocker. Check the form and call button are visible without scrolling.', 'Jhombis', true],
     ['Manager access to the Business Profile', 'The profile exists (4.9 ★ widget). No access means no location asset.', 'Client', false],
     ['Ticket and margin: panel and EV', 'To set the max CPL before turning on Panels and EV.', 'Client', false],
-    ['/build-campaign: Search NWA, paused', '4 ad groups (2 active), 1 RSA per group, assets, county geo and shared negative lists, via API.', 'PMM', false],
+    ['✓ Done Sep 23: Search NWA created and live', '4 active ad groups, 83 keywords, 1 RSA per group (under review), PMM Universal and niche lists, assets, counties, 3 AM–2 PM account time. All URLs to the homepage. Old campaign paused.', 'PMM', false],
     ['Build the Panels and EV landing pages', 'Target Oct 14 if PMM edits, Oct 21 if the client does.', 'PMM/Client', false]
   ];
   document.getElementById('steps').innerHTML = steps.map((s,i)=>`
@@ -529,8 +529,8 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
   const mname = {'2026-10-01':'Oct','2026-11-01':'Nov','2026-12-01':'Dec','2027-01-01':'Jan 2027'};
   const rows = [
     {k:'F0', label:'P0 Measurement', bars:[{a:'2026-09-23', b:'2026-09-30', t:'P0'},{a:'2026-09-30', b:'2026-10-07', t:'', ghost:true}]},
-    {k:'F1', label:'P1 Launch', bars:[{a:'2026-10-01', b:'2026-10-08', t:'P1'}]},
-    {k:'F2', label:'P2 Cleanup', bars:[{a:'2026-10-08', b:'2026-10-31', t:'D7 · D14 + Panels/EV · D30'}]},
+    {k:'F1', label:'P1 Launch', bars:[{a:'2026-09-23', b:'2026-09-30', t:'P1'}]},
+    {k:'F2', label:'P2 Cleanup', bars:[{a:'2026-09-30', b:'2026-10-23', t:'D7 · D14 · D30'}]},
     {k:'LAND', label:'Landing pages', bars:[{a:'2026-09-23', b:'2026-10-14', t:'Panels, EV, tracking'},{a:'2026-10-14', b:'2026-10-21', t:'', ghost:true}]},
     {k:'F3', label:'P3 Budget/bidding', bars:[{a:'2026-11-01', b:'2026-11-15', t:'budget call'},{a:'2026-11-15', b:'2027-01-05', t:'tCPA only with more spend and CPL ≤$55', ghost:true}]},
     {k:'F4', label:'P4 Remarketing', bars:[], note:'Not realistic: audience < 1,000'},
@@ -553,12 +553,12 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
     {k:'F0', t:'Measurement + containment', w:'Sep 23 → Sep 30 (Oct 7 if the client edits the site)', s:['run','In progress'],
      c:'Website calls + form tested with Tag Assistant; every Phase 0 blocker ✅.',
      i:['Contain the current campaign: negatives, pause broad, $12 CPC cap, 5–4 schedule','Measurement (playbook §7): one phone number, test form, website calls, tel:, Calls from Ads ≥60 s, GCLID','Client: Business Profile, answering process, forwarding number, ticket and margin']},
-    {k:'F1', t:'Search NWA launch', w:'Oct 1 → Oct 8', s:['todo','Pending'],
+    {k:'F1', t:'Search NWA launch', w:'Launched Sep 23 → D7 Sep 30', s:['run','In progress'],
      c:'7 days live, ads approved, ≥1 website conversion.',
-     i:['Search NWA at $27/day, Max. Clicks with $12 cap, 2 active ad groups (NWA + Repair)','Panels and EV created paused','Current campaign paused the same day']},
-    {k:'F2', t:'Cleanup + Panels/EV', w:'D7 Oct 8 · D14 Oct 15 · D30 Oct 31', s:['todo','Pending'],
+     i:['Search NWA (24273708366) at $27/day, Max. Clicks with $12 cap','4 active ad groups, all to the homepage (decision Sep 23)','Old campaign paused the same day']},
+    {k:'F2', t:'Cleanup + Panels/EV', w:'D7 Sep 30 · D14 Oct 7 · D30 Oct 23', s:['todo','Pending'],
      c:'3 reviews done, negatives applied, ≥8 conversions and CPL ≤ $100 trending down.',
-     i:['Search terms → negatives; >$100 spend with no conversion goes to review','Turn on Panels and EV after D14 once their landing pages pass the audit','D30: client sheet of calls → jobs','15+ stable conv. in 30 days → Max. Conversions']},
+     i:['Search terms → negatives; >$100 spend with no conversion goes to review','D7: CTR and QS of Panels and EV to the homepage; pause if they don\u2019t convert until landing pages exist','D30: client sheet of calls → jobs','15+ stable conv. in 30 days → Max. Conversions']},
     {k:'F3', t:'Budget, bidding and tCPA', w:'Decision ~Nov 1–15 · tCPA undated in the base scenario', s:['block','Budget-dependent'],
      c:'Budget increase approved; Max. Conversions at 15+ conv/month; tCPA at ≥30 in 30 days.',
      i:['At $825: ~8–13 leads/month, never reaches 15','Max. Conversions needs ~$1,275/month at $85 CPL','tCPA needs ~$2,550/month at $85 (~$1,650 at $55): ~Jan 5 only with more spend and CPL ≤$55']},
@@ -577,9 +577,9 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
 
   const ags = [
     ['Electrician - NWA','F1',['electrician near me','electricians near me','electrician fayetteville','electrician rogers','electrician springdale','electrician bentonville','licensed electrician','electrician bella vista'],'~1,500*','/'],
-    ['Electrical Repair','F1',['electrical repair near me','circuit breaker repair','outlet repair','wiring repair'],'~112','/residential-electrical-service/'],
-    ['Electrical Panel Upgrade','F2',['electrical panel upgrade','electrical panel replacement','breaker box replacement','200 amp panel upgrade'],'~48','/electrical-panel-upgrade/ (create)'],
-    ['EV Charger Installation','F2',['ev charger installation','home ev charger installation','electric car charger installation','level 2 charger installation'],'~139','/ev-charger-installation/ (create)']
+    ['Electrical Repair','F1',['electrical repair near me','circuit breaker repair','outlet repair','wiring repair'],'~112','/ (decision Sep 23)'],
+    ['Electrical Panel Upgrade','F1',['electrical panel upgrade','electrical panel replacement','breaker box replacement','200 amp panel upgrade'],'~48','/ (own landing pending)'],
+    ['EV Charger Installation','F1',['ev charger installation','home ev charger installation','electric car charger installation','level 2 charger installation'],'~139','/ (own landing pending)']
   ];
   document.getElementById('agrows').innerHTML = ags.map(a=>`
     <tr><td><b>${esc(a[0])}</b></td><td><span class="chip ${a[1]==='F1'?'st-run':'st-pause'}">${a[1]==='F1'?'P1 active':'P2 paused'}</span></td>
@@ -589,11 +589,11 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
   const h1 = [
     ['NWA (+ cities)','{KeyWord:Licensed NWA Electrician}','Licensed Electrician Near You','Northwest Arkansas Electrician'],
     ['Repair','Electrical Repair in NWA','Breaker & Outlet Repair','Electrical Repairs Done Right'],
-    ['Panel (P2)','Electrical Panel Upgrades','Panel Replacement in NWA','200 Amp Panel Upgrades'],
-    ['EV (P2)','EV Charger Installation','Home EV Charger Installers','Level 2 EV Charger Installs']
+    ['Panel','Electrical Panel Upgrades','Panel Replacement in NWA','200 Amp Panel Upgrades'],
+    ['EV','EV Charger Installation','Home EV Charger Installers','Level 2 EV Charger Installs']
   ];
   document.getElementById('h1rows').innerHTML = h1.map(r=>`<tr><td><b>${esc(r[0])}</b></td><td>${r.slice(1).map(x=>`${esc(x)} <span class="lenc">${x.startsWith('{KeyWord:')?x.length-10:x.length}</span>`).join('<br>')}</td></tr>`).join('');
-  const pool = ["Licensed, Bonded & Insured","4.9-Star Rated on Google","Open 7 Days a Week","Get a Free Quote Today","Call (479) 287-3650","Local NWA Electricians","Fair, Honest Pricing","Nextdoor Neighborhood Fave","We Show Up When We Say","Clean, Code-Compliant Work","Early Appointments From 5 AM","Weekend Service Available"];
+  const pool = ["Licensed, Bonded & Insured","4.9-Star Rated on Google","Open 7 Days a Week","Get a Free Quote Today","Talk to a Local Electrician","Local NWA Electricians","Fair, Honest Pricing","Nextdoor Neighborhood Fave","We Show Up When We Say","Clean, Code-Compliant Work","Early Appointments From 5 AM","Weekend Service Available"];
   document.getElementById('pool').innerHTML = pool.map(x=>`<li>${esc(x)} <span class="lenc">${x.length}</span></li>`).join('') + `<li class="muted">+2 specific to each group</li>`;
   const descs = ["Licensed, bonded & insured electricians. 4.9 stars on Google. Call for a free quote today.","Open 7 days a week, 5 AM to 4 PM. Local Lowell-based team serving all of NW Arkansas.","Fair, honest pricing and clean, code-compliant work. We show up when we say we will."];
   document.getElementById('descs').innerHTML = descs.map(x=>`<li style="margin:4px 0">${esc(x)} <span class="lenc">${x.length}</span></li>`).join('') + `<li class="muted">+1 specific to each group</li>`;
@@ -641,18 +641,18 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
     ['F0','Confirm service area: Siloam Springs, Gentry, Madison','Client','todo',false],
     ['F0','Confirm whether they install generators','Client','todo',false],
     ['F0','Arkansas license number','Client','todo',false],
-    ['F1','/build-campaign: Search NWA with 4 ad groups, paused','PMM','todo',false],
-    ['F1','Search Network only; partners and Display off','PMM','todo',false],
-    ['F1','Presence: Benton + Washington + Huntsville','PMM','todo',false],
-    ['F1','Schedule Mon–Sun 3 AM–2 PM account time (= 5 AM–4 PM Arkansas)','PMM','todo',false],
-    ['F1','Max. Clicks with $12 cap; $27/day','PMM','todo',false],
-    ['F1','83 keywords on phrase + exact (no Tesla; cities without "ar"); no broad','PMM','todo',false],
-    ['F1','1 RSA per ad group, pinned H1, 15H/4D','PMM','todo',false],
-    ['F1','Assets: sitelinks, callouts, snippet, call, images','PMM','todo',false],
-    ['F1','Routing negatives (NWA, Repair)','PMM','todo',false],
+    ['F1','Search NWA created and live (24273708366), 4 ad groups to the homepage','PMM','done',false],
+    ['F1','Search Network only; partners and Display off','PMM','done',false],
+    ['F1','Presence: Benton + Washington + Huntsville','PMM','done',false],
+    ['F1','Schedule Mon–Sun 3 AM–2 PM account time (= 5 AM–4 PM Arkansas)','PMM','done',false],
+    ['F1','Max. Clicks with $12 cap; $27/day','PMM','done',false],
+    ['F1','83 keywords on phrase + exact (no Tesla; cities without "ar"); no broad','PMM','done',false],
+    ['F1','1 RSA per ad group, pinned H1, 15H/4D','PMM','done',false],
+    ['F1','Assets: sitelinks, callouts, snippet, call (images pending)','PMM','done',false],
+    ['F1','Routing negatives + PMM Universal and niche lists','PMM','done',false],
     ['F1','Final URLs verified (200, https)','PMM','todo',false],
-    ['F1','Review and enable; pause the current campaign','Jhombis','todo',true],
-    ['F1','Ads approved (check after 24 h)','PMM','todo',false],
+    ['F1','Launch decided; old campaign paused','Jhombis','done',false],
+    ['F1','Ads approved (under review; check Sep 24)','PMM','todo',false],
     ['F1','First website conversion recorded','PMM','todo',true],
     ['F2','D7: search terms → negatives; flag zero-impression keywords','PMM','todo',false],
     ['F2','D14: search terms; keywords >$100 with no conversion to review','PMM','todo',false],

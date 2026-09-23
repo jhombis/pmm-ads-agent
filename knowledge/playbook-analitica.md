@@ -220,6 +220,7 @@ El agente debe declarar los límites antes de que alguien saque conclusiones equ
 | Sep 2026 | Pro Phase Electric | 95% del gasto rastreable en cooperativas de energía, genéricas, competencia y bricolaje | Propuesta de reestructura y negativas |
 | Sep 2026 | Ideal Electric | Popup de otro cliente con teléfono de otro estado; dos números en el sitio | Popup eliminado el 21 sep 2026 |
 | Sep 2026 | Ridge Electric | PMax con $2/día alcanzó su tope mensual; "Website Calls" a cero | Pendiente: historial de cambios y revisión del rastreo |
+| Sep 2026 | Pro Phase Electric | RSA rechazados en validación por **PHONE_NUMBER_IN_AD_TEXT** (headline "Call (479) 287-3650") | Headline reemplazado. **Nunca poner teléfonos en headlines ni descripciones**: el teléfono va en la extensión de llamada |
 | Sep 2026 | Pro Phase Electric | Cuenta en zona horaria del Pacífico con cliente en Arkansas (Central): la programación "5–16" corría 7–18 hora local, fuera del horario de atención | Programación a 3–14 hora de la cuenta el 23 sep 2026. **Verificar siempre `customer.time_zone` contra la zona del cliente** |
 
 ---
