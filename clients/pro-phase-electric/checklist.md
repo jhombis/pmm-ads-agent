@@ -13,23 +13,23 @@ Cuenta 758-301-1023 · campaña actual 24208591381 (Max. clics, se pausa en F1).
 ### Cuenta
 - [x] (PMM) Cuenta en el MCC de PMM — visible como "Premium Local Listings 004049 ($1500 Pro Phase Electric)"
 - [x] (PMM) Facturación activa — la cuenta gasta desde el 11-sep
-- [ ] **B** (PMM) Aplicación automática de recomendaciones DESACTIVADA (verificar)
+- [x] (PMM) Aplicación automática de recomendaciones DESACTIVADA — verificado vía API 23-sep (0 suscripciones)
 - [x] (PMM) Acceso a la API (`google-ads.yaml`) — OK 23-sep. Pasar a variables de entorno para sesiones futuras
 
 ### Contención en la campaña actual
 - [x] (PMM) Quitadas 15 negativas heredadas que bloqueaban servicios o el área (vista, car, estimate, free…) — 22-sep, ver log
-- [ ] **B** (PMM) Importar `data/2026-09-22-negatives-editor.csv` (134 negativas: utilities, competidores, DIY, productos, universal)
-- [ ] (PMM) Pausar las keywords broad "home electrical", "electrical services", "electrical contractors" y "home electrical services"
-- [ ] (PMM) Techo de CPC de $12 (Max. clics)
+- [x] (PMM) 134 negativas aplicadas a nivel campaña vía API — 23-sep
+- [x] (PMM) Pausadas las 4 keywords broad genéricas — 23-sep
+- [x] (PMM) Techo de CPC de $12 (Max. clics) — 23-sep
 - [x] (PMM) Socios de búsqueda y Display apagados; ubicación = Presencia — verificado vía API 23-sep
-- [ ] (PMM) Programación L–D 5:00–16:00 en la campaña actual
+- [ ] (Jhombis) Programación: la cuenta está en hora del Pacífico; el horario actual 5–16 PT = 7–18 en Arkansas. Decidido no cambiarlo por ahora (23-sep)
 
 ### Tracking
 - [ ] **B** (PMM) Google Tag verificado en todas las páginas (el cliente dice que está; confirmar el ID y el acceso)
 - [ ] **B** (PMM) Conversión "Formulario" (Get a Free Quote: home + /contact-us/) con página de gracias o evento, probada con Tag Assistant
 - [ ] **B** (PMM) Conversión "Llamadas desde el sitio" (número de reenvío de Google) creada y probada
 - [ ] (PMM) Conversión "Clic en teléfono" (`tel:`) en móvil
-- [~] (PMM) "Calls from Ads" existe; **verificar duración mínima de 60 s**
+- [~] (PMM) Conversiones existen: Form Fill (primaria), Calls from Ads (30 s), Website Calls (20 s). Form Fill y Website Calls con 0 en 90 días: probar en el sitio. Duración mínima no cambiada (decisión 23-sep)
 - [ ] (PMM) Conversiones secundarias como secundarias (no primarias)
 - [ ] (PMM) GA4 vinculado (Windsor no tiene una propiedad de este dominio conectada)
 - [ ] (PMM) Campos ocultos UTM + GCLID en el formulario
