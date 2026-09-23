@@ -1,0 +1,72 @@
+# Negativas de nicho — pro-phase-electric (lista "pro-phase-electric nicho")
+# término | match | nivel | fuente — generado por /strategy 2026-09-23
+# La universal PMM va en su propia lista; ver 2026-09-22-negatives.txt (bloque universal)
+menards | PHRASE | campaña | nicho (retail NWA)
+electrician salary | PHRASE | campaña | nicho
+electrician school | PHRASE | campaña | nicho
+electrical supply | PHRASE | campaña | nicho
+wire for sale | PHRASE | campaña | nicho
+circuit breaker for sale | PHRASE | campaña | nicho
+electrical engineer | PHRASE | campaña | nicho
+nec | PHRASE | campaña | nicho
+carroll electric | PHRASE | campaña | search terms ($50.46)
+ozarks electric | PHRASE | campaña | search terms
+ozark electric | PHRASE | campaña | search terms ($7.25)
+bentonville electric | PHRASE | campaña | search terms ($10.87)
+bentonville utilities | PHRASE | campaña | competitors
+swepco | PHRASE | campaña | competitors
+entergy | PHRASE | campaña | competitors
+liberty utilities | PHRASE | campaña | competitors
+og&e | PHRASE | campaña | competitors
+electric cooperative | PHRASE | campaña | competitors
+electric coop | PHRASE | campaña | competitors
+power outage | PHRASE | campaña | competitors
+outage | PHRASE | campaña | competitors
+pay my bill | PHRASE | campaña | competitors
+electricity provider | PHRASE | campaña | competitors
+mister sparky | PHRASE | campaña | competitors
+mr sparky | PHRASE | campaña | competitors
+mr electric | PHRASE | campaña | competitors
+mr. electric | PHRASE | campaña | competitors
+epic electric | PHRASE | campaña | search terms ($12.28)
+wireworks | PHRASE | campaña | competitors
+emperial | PHRASE | campaña | competitors
+atlantic electric | PHRASE | campaña | competitors
+cj's electric | PHRASE | campaña | competitors
+cjs electric | PHRASE | campaña | competitors
+blueline electric | PHRASE | campaña | competitors
+alokin | PHRASE | campaña | competitors
+hills electric | PHRASE | campaña | search terms ($8.88)
+abs electrical | PHRASE | campaña | search terms ($10.99)
+arnold & blevins | PHRASE | campaña | search terms ($5.84)
+arnold and blevins | PHRASE | campaña | search terms
+blevins | PHRASE | campaña | search terms
+triway | PHRASE | campaña | search terms ($6.46)
+electrical solutions | PHRASE | campaña | search terms ($6.79)
+streib | PHRASE | campaña | competitors
+true blue electric | PHRASE | campaña | competitors
+enm nwa | PHRASE | campaña | competitors
+nema 14 50 outlet | EXACT | campaña | search terms ($13.33)
+nema 14-50 outlet | EXACT | campaña | search terms
+dc charger for home | EXACT | campaña | search terms ($11.89)
+level 2 ev charger for home | EXACT | campaña | search terms ($10.93)
+home ev charger | EXACT | campaña | search terms ($9.81)
+junction box | PHRASE | campaña | search terms ($11.51)
+old time electrical wiring | EXACT | campaña | search terms ($13.37)
+replacing ceiling fan | EXACT | campaña | search terms ($10.28)
+electrical | EXACT | campaña | search terms ($25.22)
+24 hour | PHRASE | campaña | brief (no 24/7)
+24/7 | PHRASE | campaña | brief (no 24/7)
+after hours | PHRASE | campaña | brief (no 24/7)
+generator | PHRASE | campaña | brief (no ofrece; confirmar)
+generators | PHRASE | campaña | brief (no ofrece; confirmar)
+handyman | PHRASE | campaña | benchmark
+ac unit repair | PHRASE | campaña | benchmark
+# --- Marca propia: fuera de Search no-marca (sin campaña de marca en F1) ---
+prophase | PHRASE | campaña | strategy (marca)
+pro phase | PHRASE | campaña | strategy (marca)
+ppe electric | PHRASE | campaña | strategy (marca)
+# --- Descartadas en el research ---
+emergency electrician | PHRASE | campaña | strategy (no 24/7)
+industrial | PHRASE | campaña | strategy (fuera de foco)
+# Nota: los servicios que el cliente ofrece (ventiladores, timbres, termostatos, detectores, iluminación, outlets) NO se niegan; solo no se pujan en F1.
