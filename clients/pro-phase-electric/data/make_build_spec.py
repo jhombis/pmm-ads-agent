@@ -10,7 +10,7 @@ C = ROOT / 'clients/pro-phase-electric'
 HOME = 'https://prophaseelectricar.com/'
 
 # Copy (headlines/descriptions/keywords/routing) de la estrategia
-g = runpy.run_path('/tmp/claude-0/-home-user-pmm-ads-agent/c155bec5-a14f-5e22-9c13-76002eaf4244/scratchpad/build_strategy.py')
+g = runpy.run_path(str(C / 'data/build_strategy.py'))  # genera ads-search-nwa.md y keywords.csv
 
 # Universal PMM desde knowledge (hasta "Marcas de competidores"), sin términos que chocan con este cliente
 EXCLUDE_UNIVERSAL = {'free',      # el sitio ofrece "Get a Free Quote"
