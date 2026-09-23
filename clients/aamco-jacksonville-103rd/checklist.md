@@ -13,4 +13,9 @@ Se regenera con /roadmap. Por ahora, bloqueantes que salieron de la evaluación:
 - [ ] (PMM) Una sola conversión primaria de llamada (propuesta P1, sin aplicar)
 - [ ] (PMM) Confirmar qué es la conversión "Phone Call" (DEFAULT)
 - [ ] (PMM) Confirmar exclusión de marca en PMax 103rd
-- [ ] (PMM) /audit-landing (dominio bloqueado desde el entorno cloud)
+- [x] (PMM) /audit-landing parcial (2026-09-23) — ver audit-site.md
+- [ ] (PMM) Página de gracias con URL propia + conversión por URL
+- [ ] (PMM) Probar form del subdominio 103rd (0 envíos en 90 días)
+- [ ] (PMM) Eventos clave en GA4 (form_submit, click_tel)
+- [ ] (Cliente) Dominio canónico único para la sede (anuncio, subdominio, GBP)
+- [ ] (PMM) Cerrar N/V de la landing: habilitar dominio en red o captura móvil + PageSpeed

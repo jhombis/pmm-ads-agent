@@ -51,7 +51,7 @@ PENDIENTE: correr `/competitors`.
 - Tag/GA4: GA4 por sede (103rd = 465445685). Auto-tagging activo.
 - Formulario → destino: conversión "Form Fill [Jacksonville 103 Rd]" existe (4 en 90 días). Destino PENDIENTE.
 - Requisitos de política: marca AAMCO registrada; los anuncios usan la marca (franquiciado autorizado). Sin restricciones especiales.
-- **No se pudo auditar la landing**: el proxy de este entorno bloquea `aamco-jacksonvillefl.com`. Correr `/audit-landing` desde un entorno con acceso.
+- Landing: auditoría parcial en [`audit-site.md`](audit-site.md) (11/22 provisional). Sin página de gracias; form del subdominio 103rd sin envíos.
 
 ## LSA (solo US)
 - Aplica: **sí, probable** — "Auto repair shop" / transmisiones está en LSA en Florida. PENDIENTE: confirmar licencia, seguro y si la franquicia lo permite.
