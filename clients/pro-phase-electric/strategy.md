@@ -13,7 +13,7 @@ supuestos:
   - Velocidad móvil y vista móvil del sitio sin verificar (audit-site.md)
   - PMM no tiene acceso al GBP → sin activo de ubicación en F1
   - No instala generadores (se niegan hasta confirmar)
-  - El cliente atiende de 5:00 a 16:00 los 7 días y tiene alguien que contesta en ese horario
+  - El cliente atiende de 7:00 a 18:00 Central los 7 días y tiene alguien que contesta en ese horario
 ---
 
 # Estrategia Google Ads — Pro Phase Electric
@@ -53,13 +53,13 @@ Lectura (playbook §3): mucha IS perdida por presupuesto con gasto bajo = el pre
 - **1 campaña Search**, "Search NWA", con **4 ad groups**: 2 activos en F1 (**Electrician - NWA**, con near me y todas las ciudades, y **Electrical Repair**) y 2 en F2 cuando existan sus landings (**Panel Upgrade** y **EV Charger**). Reemplaza a la actual.
 - **Presupuesto $825/mes ≈ $27/día** en esa campaña. **~84 clics/mes → ~8–13 prospectos en el escenario base.**
 - **Puja: Max. clics con tope de CPC $12** (1 conversión de historial; playbook §5). Pasa a **Max. conversiones** con 15+ conv/mes estables y medición limpia. En el escenario base eso **no ocurre con $825**: el paso real depende de subir la pauta.
-- **1 RSA por ad group**, frase + exacta, cero broad. Presencia en los condados de Benton y Washington + Huntsville, L–D 5:00–16:00.
+- **1 RSA por ad group**, frase + exacta, cero broad. Presencia en los condados de Benton y Washington + Huntsville, L–D 7:00–18:00 Central.
 - **tCPA**: solo con ~30 conv/30d, desde el CPA histórico. Con $825 no se alcanza; con $1,500–1,800 solo si el CPL baja a ≤$55. Sin marca, PMax, Display ni RLSA. LSA en espera.
 
 ## Campañas
 | Campaña | Objetivo | Presupuesto/día F1 | Puja | Geo | Horario |
 |---|---|---|---|---|---|
-| Pro Phase Electric - Search NWA - $1500/mo. - [fecha de lanzamiento] | Llamadas + formularios | $27 (100%) | Max. clics, tope CPC $12 → Max. conversiones con 15+ conv/mes | **Presencia**: condados de Benton y Washington (AR) + Huntsville (AR). Resto excluido | L–D 5:00–16:00 **hora de Arkansas** = **3:00–14:00 en la zona de la cuenta** (America/Los_Angeles) |
+| Pro Phase Electric - Search NWA - $1500/mo. - [fecha de lanzamiento] | Llamadas + formularios | $27 (100%) | Max. clics, tope CPC $12 → Max. conversiones con 15+ conv/mes | **Presencia**: condados de Benton y Washington (AR) + Huntsville (AR). Resto excluido | L–D 7:00–18:00 **hora Central** = **5:00–16:00 en la zona de la cuenta** (America/Los_Angeles) |
 | *(actual)* Pro Phase Electric - ENHPRM Radius - $1500/mo. - 09/01/2026 | — | $27 → **se pausa** el día que sale la nueva | Max. clics (en F0: tope de CPC $12) | — | — |
 
 Configuración fija: solo red de Búsqueda (socios y Display apagados: mezclan tráfico y contaminan la lectura), aplicación automática de recomendaciones apagada, rotación optimizar, idioma EN, sin segmentos de audiencia como exclusión.
@@ -114,13 +114,13 @@ Aplicadas a nivel campaña (listas compartidas cuando se construya con la API):
 ## Copy
 Completo en **`data/ads-search-nwa.md`** (largos validados por script). **1 RSA por ad group** con H1 pinneado a la keyword del grupo y 14 headlines sin pin; los H1 alternativos quedan guardados para un 2.º RSA solo si sube el volumen (con ~3 clics/día un A/B es ruido).
 - **Confianza**: Licensed, Bonded & Insured · 4.9-Star Rated on Google · Nextdoor Neighborhood Fave
-- **Diferenciales**: Open 7 Days a Week · Weekend Service Available · Early Appointments From 5 AM · Fair, Honest Pricing · We Show Up When We Say
+- **Diferenciales**: Open 7 Days a Week · Weekend Service Available · Open 7 Days, 7 AM–6 PM · Fair, Honest Pricing · We Show Up When We Say
 - **Oferta**: Get a Free Quote Today
 - **Local**: Local NWA Electricians · Serving All of NW Arkansas · Rogers, Fayetteville & More
 
 4 descripciones: una del grupo y 3 compartidas (confianza + quote, horario 7 días, precio justo + puntualidad).
 
-Extensiones: llamada (5–16 Central = 3–14 en la cuenta), 5 sitelinks (Free Quote, Reviews, Services, Safety Inspections, Residential; Panel y EV en F2; se quita /portfolio/), 8 callouts, snippet "Service catalog", imágenes propias del portfolio, ubicación cuando haya acceso al GBP.
+Extensiones: llamada (7–18 Central = 5–16 en la cuenta), 5 sitelinks (Free Quote, Reviews, Services, Safety Inspections, Residential; Panel y EV en F2; se quita /portfolio/), 8 callouts, snippet "Service catalog", imágenes propias del portfolio, ubicación cuando haya acceso al GBP.
 **No se usa**: "same day", "24/7", "emergency", número de reseñas ni la marca Tesla.
 
 ## Medición (playbook §7) — va antes de cualquier ajuste de puja
@@ -128,7 +128,7 @@ Extensiones: llamada (5–16 Central = 3–14 en la cuenta), 5 sitelinks (Free Q
 - **Formulario de prueba**: mensaje de gracias, llegada del correo (hoy a un Gmail) y conversión registrada en 24–48 h.
 - **Acciones de conversión**: primarias solo formulario + llamadas ≥60 s (anuncio y sitio). Nada de vistas ni clics como primarias.
 - **Recurso de llamada**: aprobado, no en revisión; filtro de duración en 60 s (no más alto).
-- **Horario de anuncios = horario de atención**: 5:00–16:00 Central, 7 días. La cuenta está en hora del Pacífico: se programa 3:00–14:00 (aplicado en la campaña actual el 23-sep).
+- **Horario de anuncios = horario de atención**: 7:00–18:00 Central, 7 días (orden de pedido). La cuenta está en hora del Pacífico: se programa 5:00–16:00 (verificado en ambas campañas el 23-sep).
 - **Popups y "After Submit"** si el sitio usa Elementor.
 - **Fecha de cada arreglo** registrada en el log, para comparar antes y después.
 
@@ -146,7 +146,7 @@ Extensiones: llamada (5–16 Central = 3–14 en la cuenta), 5 sitelinks (Free Q
 ## Presupuesto y fases
 | Fase | Fechas est. | Total/mes | Qué pasa | Condición para pasar |
 |---|---|---|---|---|
-| **F0 — Medición + contención** | 23-sep → ~30-sep | $825 (campaña actual) | Campaña actual: importar las 134 negativas, pausar "home electrical", "electrical services", "electrical contractors" y "home electrical services", techo de CPC $12, programación 5–16. Medición del playbook §7 (arriba). Pedir acceso al GBP | Formulario + llamadas del sitio **probados con Tag Assistant** (≥1 conversión de prueba en cada acción), un solo teléfono en el sitio, recurso de llamada aprobado |
+| **F0 — Medición + contención** | 23-sep → ~30-sep | $825 (campaña actual) | Campaña actual: importar las 134 negativas, pausar "home electrical", "electrical services", "electrical contractors" y "home electrical services", techo de CPC $12, programación 7–18 Central (5–16 en la cuenta). Medición del playbook §7 (arriba). Pedir acceso al GBP | Formulario + llamadas del sitio **probados con Tag Assistant** (≥1 conversión de prueba en cada acción), un solo teléfono en el sitio, recurso de llamada aprobado |
 | **F1 — Lanzamiento Search NWA** | ~1-oct → ~8-oct | $825 | NWA + Repair, 1 RSA c/u, Max. clics con tope $12. Se pausa la actual. Search terms en D3 y D7 | 7 días activa, anuncios aprobados, ≥1 conversión **del sitio** |
 | **F2 — Limpieza + Paneles/EV** | D7 8-oct · D14 15-oct · D30 31-oct | $825 | Revisiones; activar Panel y EV cuando sus landings pasen /audit-landing | 30 días desde F1, **≥8 conversiones y CPL ≤ $100** con tendencia a la baja |
 | **F3 — Decisión de presupuesto** | ~1–15-nov | Propuesta: $1,500–1,800 | Presentar la matemática al cliente: con $825 el techo es ~8–13 prospectos/mes. Pausar lo que gaste >2× CPL objetivo sin conversión; evaluar separar ciudades (≥50 clics por ciudad) | Aprobación del aumento, o seguir en $825 con Max. clics con tope y revisión mensual |
@@ -176,6 +176,6 @@ Extensiones: llamada (5–16 Central = 3–14 en la cuenta), 5 sitelinks (Free Q
 - **El techo con $825 es bajo**: ~8–13 prospectos/mes en el escenario base. Hay que decírselo al cliente en F1, no esperar a que lo descubra.
 - **CPC**: $9.80 en la última semana con Max. clics sin tope y broad. Con tope de $12 y keywords de ciudad (parte superior $14–46 según Semrush) puede subir o perder impresiones; se revisa en D7.
 - **La conversión es una llamada ≥60 s o un formulario, no un trabajo.** Sin CRM, hoja mensual del cliente con las llamadas que se volvieron trabajo.
-- **No se puede saber desde los datos**: ticket y margen, qué servicios presta realmente (generadores), la cobertura real (Siloam Springs, Gentry), el historial de cambios de la cuenta y si alguien contesta todas las llamadas de 5 a 16.
+- **No se puede saber desde los datos**: ticket y margen, qué servicios presta realmente (generadores), la cobertura real (Siloam Springs, Gentry), el historial de cambios de la cuenta y si alguien contesta todas las llamadas de 7 a 18.
 - **Sin acceso al GBP**: sin activo de ubicación ni Maps vía Ads, contra Mister Sparky con ~2,480 reseñas.
 - **Velocidad móvil sin medir**: si el score es <40, pasa a bloqueante de F1.

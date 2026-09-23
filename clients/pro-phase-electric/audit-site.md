@@ -31,7 +31,7 @@ Cada landing lleva: H1 con el servicio y NWA, el mismo formulario de 4 campos ar
 ## Mejoras (Fase 2–3)
 - [ ] **H1 de la home**: "Electrical Services Done Right" no dice qué ni dónde. Mejor algo como "Licensed Electrician in Northwest Arkansas — Repairs, Panels & EV Chargers" y dejar la frase actual como subtítulo. Ayuda a la experiencia de la landing, hoy *below average* en "electrician".
 - [ ] **Oferta más concreta**: "Get a Free Quote" es genérico. Si el cliente lo sostiene: "Free estimates on panel upgrades & EV chargers", "Open 7 days", "Same-week service".
-- [ ] **Horario**: no aparece en la home. Mostrar "Open 7 days · 5 AM – 4 PM" en la barra superior (es un diferenciador; `competitors.md`) y alinearlo con el GBP.
+- [ ] **Horario**: no aparece en la home. Mostrar "Open 7 days · 7 AM – 6 PM" en la barra superior (es un diferenciador; `competitors.md`) y alinearlo con el GBP.
 - [ ] **Número de licencia de Arkansas** junto al badge Licensed/Bonded/Insured. Agregar años en el negocio y garantía si existen.
 - [ ] **Captcha del formulario**: parece de tipo matemático ("6 + ? ="). Es fricción; cambiarlo por reCAPTCHA v3 o honeypot.
 - [ ] **Email de contacto en Gmail** (barra superior). Un dominio propio (`info@prophaseelectricar.com`) da más confianza.

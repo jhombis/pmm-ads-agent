@@ -37,7 +37,7 @@ plan_en: https://claude.ai/artifact/3KhWsGyQmP8QY9ZLm1zZgk
     - Poner techo de CPC de $12.
     - Apagar socios de búsqueda y Display.
     - Revisar que la ubicación sea "Presencia".
-    - Programación L–D 5:00–16:00 hora de Arkansas = 3:00–14:00 en la cuenta (Pacífico). ✅ 23-sep.
+    - Programación L–D 7:00–18:00 Central = 5:00–16:00 en la cuenta (Pacífico), según la orden de pedido. ✅ 23-sep.
   - *Tracking (PMM, necesita acceso al Tag y al sitio):*
     - Conversión de formulario con página de gracias o evento.
     - "Website calls" con número de reenvío de Google.
@@ -48,7 +48,7 @@ plan_en: https://claude.ai/artifact/3KhWsGyQmP8QY9ZLm1zZgk
     - Medición del playbook §7: **un solo teléfono** en todo el sitio (el de reenvío; hoy (479) 287-3650 en barra, header y hero), formulario de prueba con llegada del correo y conversión registrada en 24–48 h, recurso de llamada aprobado con filtro de 60 s, popups/"After Submit" si es Elementor. Anotar la fecha de cada arreglo.
   - *Cliente:*
     - Acceso de gestor al GBP para PMM.
-    - Decir quién contesta el teléfono de 5 a 16, en cuánto tiempo, y qué pasa con el buzón.
+    - Decir quién contesta el teléfono de 7 a 18 Central, en cuánto tiempo, y qué pasa con el buzón.
     - Aceptar el número de reenvío.
     - Ticket y margen de un cambio de panel y de una instalación EV.
     - Confirmar si cubren Siloam Springs y Gentry, y si instalan generadores.
@@ -70,7 +70,7 @@ plan_en: https://claude.ai/artifact/3KhWsGyQmP8QY9ZLm1zZgk
   - La construye `/build-campaign`, en pausa. Jhombis revisa y activa.
 - **Riesgos**:
   - Presupuesto menor a 3× CPL/día: el aprendizaje va a ser lento y ruidoso. No se juzga antes de 30 días; en semanas 1–3 se tolera un CPL de hasta $80.
-  - Advertencia de operación: si el cliente no contesta en el horario de 5 a 16, se pagan llamadas que nadie atiende (y cuando pase a Max. conversiones, aprenderá de llamadas perdidas).
+  - Advertencia de operación: si el cliente no contesta en el horario de 7 a 18, se pagan llamadas que nadie atiende (y cuando pase a Max. conversiones, aprenderá de llamadas perdidas).
   - Sin el GBP vinculado no hay activo de ubicación.
 
 ## Fase 2 — Limpieza (D7 · D14 · D30) + Paneles y EV
@@ -116,7 +116,7 @@ plan_en: https://claude.ai/artifact/3KhWsGyQmP8QY9ZLm1zZgk
 | Landing `/electrical-panel-upgrade/` | **Bloqueante del ad group Paneles** | PMM o cliente | 14-oct (PMM) / 21-oct (cliente) |
 | Landing `/ev-charger-installation/` | **Bloqueante del ad group EV** | PMM o cliente | 14-oct (PMM) / 21-oct (cliente) |
 | H1 de la home → "Licensed Electrician in Northwest Arkansas…" | Mejora (QS) | PMM o cliente | 08-oct |
-| Horario "Open 7 days · 5 AM–4 PM" en el sitio y el GBP | Mejora | Cliente | 08-oct |
+| Horario "Open 7 days · 7 AM–6 PM" en el sitio y el GBP | Mejora | Cliente | 08-oct |
 | Número de licencia de Arkansas junto al badge | Mejora | Cliente | 15-oct |
 | Captcha matemático → reCAPTCHA v3 o honeypot | Mejora | PMM o cliente | 31-oct |
 | Email propio en lugar de Gmail | Mejora | Cliente | 31-oct |

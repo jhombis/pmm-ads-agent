@@ -44,7 +44,7 @@ estado: onboarding
 - Historial Google Ads: **sí, en el MCC de PMM**. ID de cuenta: **758-301-1023**. **Activa desde 01-sep-2026** (Max. clics, broad, $27/día): $442.75 gastados, 1 conv. Diagnóstico en `benchmark.md`
 
 ## Operación
-- Horario / 24-7: **todos los días (lunes a domingo), 5:00–16:00**, según el cliente. No es 24/7. ⚠️ Yelp y los directorios publican L–V 8:00–17:00: hay que alinear el GBP y los directorios. La programación de anuncios sigue el horario real (5:00–16:00, 7 días)
+- Horario / 24-7: **todos los días (lunes a domingo), 7:00–18:00 hora Central** (orden de pedido: "7am - 6pm Monday - Sunday", zona GMT-6 Central). El "5:00–16:00" que se pasó en el onboarding era el mismo horario visto en hora del Pacífico. No es 24/7. ⚠️ Yelp y los directorios publican L–V 8:00–17:00: hay que alinear el GBP y los directorios. La programación de anuncios sigue el horario real: 7:00–18:00 Central = 5:00–16:00 en la zona de la cuenta (America/Los_Angeles), 7 días
 - Respuesta a leads (quién, tiempo): PENDIENTE
 - Teléfono / call tracking: (479) 287-3650 (público). ¿Acepta número de reenvío de Google?: PENDIENTE
 - CRM (solo referencia): PENDIENTE
@@ -76,7 +76,7 @@ Competidores que reconoce el cliente: PENDIENTE
 - [ ] **Bloqueante**: ticket promedio, margen y tasa de cierre para calcular el CPL máximo. Sin esto /strategy no fija el tCPA objetivo
 - [ ] **Bloqueante**: tracking de llamadas. ¿Acepta número de reenvío? ¿Las llamadas desde anuncios y desde el sitio están configuradas como conversión y probadas con Tag Assistant?
 - [ ] **Bloqueante**: acceso para editar el sitio (CMS) y destino del formulario
-- [ ] GBP: pedir acceso de gestor (el perfil existe); alinear el horario publicado con el real (5–16, 7 días)
+- [ ] GBP: pedir acceso de gestor (el perfil existe); alinear el horario publicado con el real (7:00–18:00, 7 días)
 - [ ] Orden de servicios por rentabilidad; servicio estrella y servicio a evitar
 - [ ] Quién contesta el teléfono y tiempo de respuesta; capacidad de trabajos al mes
 - [ ] Área de servicio exacta (radio o condados)

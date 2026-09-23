@@ -22,7 +22,7 @@ H1 alternativos (para un 2.º RSA si sube el volumen): Licensed Electrician Near
 - Nextdoor Neighborhood Fave (26)
 - We Show Up When We Say (22)
 - Clean, Code-Compliant Work (26)
-- Early Appointments From 5 AM (28)
+- Open 7 Days, 7 AM–6 PM (22)
 - Weekend Service Available (25)
 - Serving All of NW Arkansas (26)
 - Rogers, Fayetteville & More (27)
@@ -30,7 +30,7 @@ H1 alternativos (para un 2.º RSA si sube el volumen): Licensed Electrician Near
 **Descripciones (4):**
 - Local electricians for Fayetteville, Rogers, Springdale, Bentonville & all of NWA. (82)
 - Licensed, bonded & insured electricians. 4.9 stars on Google. Call for a free quote today. (90)
-- Open 7 days a week, 5 AM to 4 PM. Local Lowell-based team serving all of NW Arkansas. (85)
+- Open 7 days a week, 7 AM to 6 PM. Local Lowell-based team serving all of NW Arkansas. (85)
 - Fair, honest pricing and clean, code-compliant work. We show up when we say we will. (84)
 
 ## Electrical Repair — F1
@@ -51,7 +51,7 @@ H1 alternativos (para un 2.º RSA si sube el volumen): Breaker & Outlet Repair (
 - Nextdoor Neighborhood Fave (26)
 - We Show Up When We Say (22)
 - Clean, Code-Compliant Work (26)
-- Early Appointments From 5 AM (28)
+- Open 7 Days, 7 AM–6 PM (22)
 - Weekend Service Available (25)
 - Breakers, Outlets & Wiring (26)
 - Lighting Repair & Installs (26)
@@ -59,7 +59,7 @@ H1 alternativos (para un 2.º RSA si sube el volumen): Breaker & Outlet Repair (
 **Descripciones (4):**
 - Breakers tripping, dead outlets, flickering lights? We find the problem and fix it right. (89)
 - Licensed, bonded & insured electricians. 4.9 stars on Google. Call for a free quote today. (90)
-- Open 7 days a week, 5 AM to 4 PM. Local Lowell-based team serving all of NW Arkansas. (85)
+- Open 7 days a week, 7 AM to 6 PM. Local Lowell-based team serving all of NW Arkansas. (85)
 - Fair, honest pricing and clean, code-compliant work. We show up when we say we will. (84)
 
 ## Electrical Panel Upgrade — F2 (pausado hasta landing)
@@ -80,7 +80,7 @@ H1 alternativos (para un 2.º RSA si sube el volumen): Panel Replacement in NWA 
 - Nextdoor Neighborhood Fave (26)
 - We Show Up When We Say (22)
 - Clean, Code-Compliant Work (26)
-- Early Appointments From 5 AM (28)
+- Open 7 Days, 7 AM–6 PM (22)
 - Weekend Service Available (25)
 - Upgrade to 200 Amp Service (26)
 - Free Panel Upgrade Quotes (25)
@@ -88,7 +88,7 @@ H1 alternativos (para un 2.º RSA si sube el volumen): Panel Replacement in NWA 
 **Descripciones (4):**
 - Upgrade or replace your electrical panel safely and up to code. Free quotes on panel work. (90)
 - Licensed, bonded & insured electricians. 4.9 stars on Google. Call for a free quote today. (90)
-- Open 7 days a week, 5 AM to 4 PM. Local Lowell-based team serving all of NW Arkansas. (85)
+- Open 7 days a week, 7 AM to 6 PM. Local Lowell-based team serving all of NW Arkansas. (85)
 - Fair, honest pricing and clean, code-compliant work. We show up when we say we will. (84)
 
 ## EV Charger Installation — F2 (pausado hasta landing)
@@ -109,7 +109,7 @@ H1 alternativos (para un 2.º RSA si sube el volumen): Home EV Charger Installer
 - Nextdoor Neighborhood Fave (26)
 - We Show Up When We Say (22)
 - Clean, Code-Compliant Work (26)
-- Early Appointments From 5 AM (28)
+- Open 7 Days, 7 AM–6 PM (22)
 - Weekend Service Available (25)
 - Level 2 Home EV Chargers (24)
 - Free EV Charger Quotes (22)
@@ -117,11 +117,11 @@ H1 alternativos (para un 2.º RSA si sube el volumen): Home EV Charger Installer
 **Descripciones (4):**
 - Level 2 EV charger installs for your home or business, done safely and up to code. (82)
 - Licensed, bonded & insured electricians. 4.9 stars on Google. Call for a free quote today. (90)
-- Open 7 days a week, 5 AM to 4 PM. Local Lowell-based team serving all of NW Arkansas. (85)
+- Open 7 days a week, 7 AM to 6 PM. Local Lowell-based team serving all of NW Arkansas. (85)
 - Fair, honest pricing and clean, code-compliant work. We show up when we say we will. (84)
 
 ## Extensiones (nivel campaña)
-**Llamada:** (479) 287-3650. Programación L–D 5:00–16:00. Informes de llamadas activados. Conversión: llamadas ≥60 s.
+**Llamada:** (479) 287-3650. Programación L–D 7:00–18:00 Central (5:00–16:00 hora de la cuenta, Pacífico). Informes de llamadas activados. Conversión: llamadas ≥60 s.
 
 **Sitelinks** (texto ≤25 · descripciones ≤35):
 | Texto | URL | Desc. 1 | Desc. 2 |

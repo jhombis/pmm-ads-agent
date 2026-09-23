@@ -54,7 +54,7 @@ spec = {
         'bidding': {'type': 'TARGET_SPEND', 'cpc_bid_ceiling_usd': 12},
         'geo_presence': [9057047, 9057115, 1013254],   # Benton County AR, Washington County AR, Huntsville AR
         'language': 1000,
-        'schedule_account_tz': {'days': 'ALL', 'start_hour': 3, 'end_hour': 14},  # PT = 5–16 Arkansas
+        'schedule_account_tz': {'days': 'ALL', 'start_hour': 5, 'end_hour': 16},  # PT = 7–18 Central (orden de pedido)
     },
     'shared_negative_lists': {
         'PMM Universal': [[t, 'PHRASE'] for t in universal],

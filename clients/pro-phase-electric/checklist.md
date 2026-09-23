@@ -22,7 +22,7 @@ Cuenta 758-301-1023 · campaña actual 24208591381 (Max. clics, se pausa en F1).
 - [x] (PMM) Pausadas las 4 keywords broad genéricas — 23-sep
 - [x] (PMM) Techo de CPC de $12 (Max. clics) — 23-sep
 - [x] (PMM) Socios de búsqueda y Display apagados; ubicación = Presencia — verificado vía API 23-sep
-- [x] (PMM) Programación corregida: L–D 3:00–14:00 hora de la cuenta (Pacífico) = 5:00–16:00 Arkansas — 23-sep (antes corría 7–18 en Arkansas)
+- [x] (PMM) Programación verificada: L–D 5:00–16:00 hora de la cuenta (Pacífico) = 7:00–18:00 Central, según la orden de pedido — 23-sep (se había movido a 3–14 por error y se revirtió el mismo día)
 
 ### Tracking
 - [ ] **B** (PMM) Google Tag verificado en todas las páginas (el cliente dice que está; confirmar el ID y el acceso)
@@ -51,11 +51,11 @@ Cuenta 758-301-1023 · campaña actual 24208591381 (Max. clics, se pausa en F1).
 - [ ] (PMM) Verificar que `/residential-electrical-service/` hable de reparaciones (landing del grupo Repair en F1)
 
 ### Cliente
-- [ ] **B** (Cliente) Proceso de respuesta: quién contesta de 5 a 16, tiempo de respuesta, qué pasa con el buzón
+- [ ] **B** (Cliente) Proceso de respuesta: quién contesta de 7 a 18 Central, tiempo de respuesta, qué pasa con el buzón
 - [ ] **B** (Cliente) Aceptar el número de reenvío de Google (call tracking)
 - [ ] (Cliente) Acceso de gestor al GBP para PMM (el perfil existe: widget 4.9 ★ en el sitio)
 - [ ] (PMM) GBP vinculado a Google Ads (activo de ubicación), después del acceso
-- [ ] (Cliente) Horario del GBP y los directorios = L–D 5:00–16:00 (hoy publican L–V 8–17)
+- [ ] (Cliente) Horario del GBP y los directorios = L–D 7:00–18:00 (hoy publican L–V 8–17)
 - [ ] (Cliente) Ticket y margen de un cambio de panel y de una instalación EV → CPL máximo (antes de Fase 2)
 - [ ] (Cliente) Confirmar el área: ¿Siloam Springs, Gentry y el oeste de Benton? ¿Madison completo o solo Huntsville?
 - [ ] (Cliente) Confirmar si instala generadores (hoy es negativa)
@@ -66,7 +66,7 @@ Cuenta 758-301-1023 · campaña actual 24208591381 (Max. clics, se pausa en F1).
 - [x] (PMM) Campaña Search NWA creada: ID 24273708366, 4 ad groups **activos**, todas las URLs a la home — 23-sep
 - [x] (PMM) Red: solo Búsqueda; socios y Display apagados
 - [x] (PMM) Ubicación: Presencia; condados de Benton y Washington + Huntsville
-- [x] (PMM) Programación L–D 3:00–14:00 en hora de la cuenta (= 5:00–16:00 Arkansas)
+- [x] (PMM) Programación L–D 5:00–16:00 en hora de la cuenta (= 7:00–18:00 Central)
 - [x] (PMM) Puja: Max. clics con tope de CPC $12; $27/día
 - [x] (PMM) 83 keywords (64 frase + 19 exacta); ninguna broad
 - [x] (PMM) 1 RSA por ad group, H1 pinneado, 15H/4D. Headline con teléfono reemplazado (política PHONE_NUMBER_IN_AD_TEXT)

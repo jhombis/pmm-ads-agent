@@ -22,12 +22,12 @@ SHARED_H = [
     "Nextdoor Neighborhood Fave",
     "We Show Up When We Say",
     "Clean, Code-Compliant Work",
-    "Early Appointments From 5 AM",
+    "Open 7 Days, 7 AM–6 PM",
     "Weekend Service Available",
 ]
 SHARED_D = [
     "Licensed, bonded & insured electricians. 4.9 stars on Google. Call for a free quote today.",
-    "Open 7 days a week, 5 AM to 4 PM. Local Lowell-based team serving all of NW Arkansas.",
+    "Open 7 days a week, 7 AM to 6 PM. Local Lowell-based team serving all of NW Arkansas.",
     "Fair, honest pricing and clean, code-compliant work. We show up when we say we will.",
 ]
 
@@ -121,7 +121,7 @@ for ag in AG:
         kwrows.append([k, v, '', 'comercial', n, '', m, ag['fase']])
 
 EXT = """## Extensiones (nivel campaña)
-**Llamada:** (479) 287-3650. Programación L–D 5:00–16:00. Informes de llamadas activados. Conversión: llamadas ≥60 s.
+**Llamada:** (479) 287-3650. Programación L–D 7:00–18:00 Central (5:00–16:00 hora de la cuenta, Pacífico). Informes de llamadas activados. Conversión: llamadas ≥60 s.
 
 **Sitelinks** (texto ≤25 · descripciones ≤35):
 | Texto | URL | Desc. 1 | Desc. 2 |
