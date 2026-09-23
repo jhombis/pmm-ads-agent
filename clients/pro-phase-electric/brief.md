@@ -4,7 +4,7 @@ slug: pro-phase-electric
 pais: US
 idioma: EN
 nicho: electricista
-actualizado: 2026-09-22
+actualizado: 2026-09-23
 estado: onboarding
 ---
 
@@ -30,8 +30,8 @@ estado: onboarding
   12. Reparación de iluminación
   - Hipótesis para /strategy: panel y EV son los de mayor ticket y más intención; timbres, termostatos y detectores de humo son de ticket bajo y no justifican campaña propia con este presupuesto
 - Servicio estrella / servicio a evitar: PENDIENTE (hipótesis: paneles + EV) / PENDIENTE
-- Diferenciadores: electricistas con licencia (público); 5.0 en varias plataformas y 4.9 con 33 reseñas en otra (público); reseñas destacan puntualidad y precios razonables. Años en el negocio, garantía y financiación: PENDIENTE
-- Ofertas sostenibles: PENDIENTE
+- Diferenciadores: badge "Licensed · Bonded · Insured" en el sitio; Nextdoor Neighborhood Fave 2023; electricistas con licencia (público); 5.0 en varias plataformas y 4.9 con 33 reseñas en otra (público); reseñas destacan puntualidad y precios razonables. Años en el negocio, garantía y financiación: PENDIENTE
+- Ofertas sostenibles: **"Get a Free Quote"** (en el sitio). Ofertas más concretas (estimado gratis de EV y paneles, precio ancla): PENDIENTE
 - Búsqueda de marca: PENDIENTE (probablemente baja; confirmar con Keyword Planner)
 
 ## Objetivo y economía
@@ -48,7 +48,7 @@ estado: onboarding
 - Respuesta a leads (quién, tiempo): PENDIENTE
 - Teléfono / call tracking: (479) 287-3650 (público). ¿Acepta número de reenvío de Google?: PENDIENTE
 - CRM (solo referencia): PENDIENTE
-- GBP: respuesta "No". Lo interpreto como no verificado o sin acceso para PMM (confirmar cuál). Reseñas ~33 (promedio 4.9–5.0, público). Sin GBP vinculado no hay activo de ubicación ni LSA
+- GBP: **existe** (el home muestra un widget de Google con 4.9 ★ y carrusel de reseñas). El "No" de Jhombis se interpreta como **sin acceso para PMM**; hay que pedir acceso de gestor. Reseñas ~33 (promedio 4.9–5.0, público). Sin GBP vinculado no hay activo de ubicación ni LSA
 
 ## Competencia
 Competidores que aparecen en búsqueda orgánica para NWA (no son los que nombró el cliente):
@@ -66,7 +66,7 @@ Competidores que reconoce el cliente: PENDIENTE
 ## Web y tracking
 - Plataforma / quién edita: sitio del cliente (se pauta ahí). CMS y acceso para editar: PENDIENTE
 - Tag/GA4: **sí tiene Google Tag** (confirmado por el cliente). ID, acceso y conversiones configuradas: PENDIENTE; revisar en /audit-landing
-- Formulario → destino: PENDIENTE
+- Formulario → destino: "Get a Free Quote" en la home y /contact-us/ (Name, Email, Phone, How can we help? + captcha). Destino y página de gracias: PENDIENTE. Email público en Gmail
 - Requisitos de política: licencia de electricista de Arkansas; conviene mostrar el número de licencia en el sitio. Número: PENDIENTE
 
 ## LSA (solo US)
@@ -76,7 +76,7 @@ Competidores que reconoce el cliente: PENDIENTE
 - [ ] **Bloqueante**: ticket promedio, margen y tasa de cierre para calcular el CPL máximo. Sin esto /strategy no fija el tCPA objetivo
 - [ ] **Bloqueante**: tracking de llamadas. ¿Acepta número de reenvío? ¿Las llamadas desde anuncios y desde el sitio están configuradas como conversión y probadas con Tag Assistant?
 - [ ] **Bloqueante**: acceso para editar el sitio (CMS) y destino del formulario
-- [ ] GBP: aclarar si "No" es no verificado o sin acceso; pedir acceso de gestor; alinear el horario publicado con el real (5–16, 7 días)
+- [ ] GBP: pedir acceso de gestor (el perfil existe); alinear el horario publicado con el real (5–16, 7 días)
 - [ ] Orden de servicios por rentabilidad; servicio estrella y servicio a evitar
 - [ ] Quién contesta el teléfono y tiempo de respuesta; capacidad de trabajos al mes
 - [ ] Área de servicio exacta (radio o condados)
