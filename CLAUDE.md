@@ -33,14 +33,25 @@ scripts/                  utilidades (API de Google Ads, PageSpeed, etc.)
 | `checklist.md` | /roadmap (crea), /weekly-review (actualiza) | todos |
 | `log/YYYY-MM-DD.md` | /weekly-review | /weekly-review |
 | `data/` | exports CSV/JSON de la API | /weekly-review, /negatives |
+| `log/YYYY-MM-DD-diagnose.md` | /diagnose | /strategy, /weekly-review |
 | `plan-es.html` + `plan-en.html` | cualquier skill que entregue el plan/resumen al cliente | Jhombis, equipo, cliente |
 
 **Regla**: antes de ejecutar cualquier skill sobre un cliente, lee `brief.md` y `checklist.md` de ese cliente. Nunca asumas contexto que no esté en sus archivos. Si un archivo requerido no existe, indica qué skill debe correrse primero.
 
+## Playbook de analítica (complemento para TODAS las cuentas)
+`knowledge/playbook-analitica.md` es el método de diagnóstico y optimización del portafolio, sacado de casos reales del MCC. Aplica a cualquier cuenta, tenga o no carpeta en `clients/` (skill `/diagnose`), y lo usan también `/weekly-review`, `/strategy`, `/audit-landing`, `/negatives` y `/benchmark-interno`. Lo esencial:
+- **Cuentas de bajo volumen** (3–15 clics/día): los marcos publicados para cuentas grandes no aplican tal cual. Antes de proponer estructura, hacer la matemática: clics/día = presupuesto diario ÷ CPC; prospectos = clics × tasa de conversión; inversión real ≠ monto del contrato.
+- **Límite de fragmentación**: <$600/mes → 1 campaña, 2–3 grupos · $600–1,500 → 1 campaña, 3–5 grupos · $1,500–4,000 → 2–3 campañas · >$4,000 → separación completa.
+- **Orden de ejecución**: medición → negativas → estructura → puja → creatividad. Ningún resultado es interpretable con la medición rota.
+- **Desperdicio en dinero y sobre el gasto rastreable** ("$50.46 de $212.89"), nunca en adjetivos. Caída real ≠ comparación contra un pico (usar la mediana de 3–4 meses).
+- **No concluir con bajo volumen**: A/B de anuncios, audiencias en observación o tasas sobre <50 clics son ruido; decirlo.
+- **Reglas del portafolio**: nunca pausar campañas de Display existentes (sostienen la visibilidad del GBP; si gastan de más, se baja su presupuesto); las cuentas de compañeros no entran en informes propios; los informes llevan pie "PMM"; confirmar que la cuenta está en el conector antes de analizarla; nada se escribe en Google Ads sin aprobación explícita con la lista de cambios a la vista, y cada cambio queda con fecha.
+- Cada hallazgo nuevo se agrega al **Registro de casos** del playbook (§11).
+
 ## Estándares no negociables de PMM (aplican a toda cuenta nueva)
 1. **Ubicación: "Presencia" solamente**, nunca "Presencia o interés". Radio o ciudades según el área de servicio real del cliente. Excluir el resto de países. Excepción: turismo o negocios que atraen visitantes de fuera.
-2. **Match type por defecto: concordancia de frase.** Exacta para términos de alto volumen y alta intención. Amplia solo con tCPA maduro, tracking confiable y aprobación explícita de Jhombis.
-3. **Estructura**: una campaña por servicio (o familia de servicios), ad groups por tema/ciudad (STAG). Si el volumen es bajo, agrupar por tema, no forzar SKAG con 0 impresiones.
+2. **Match type por defecto: concordancia de frase.** Exacta para términos de alto volumen y alta intención. Amplia (y AI Max) solo con tCPA maduro, ~50 conversiones limpias acumuladas, tracking confiable y aprobación explícita de Jhombis.
+3. **Estructura**: una campaña por servicio (o familia de servicios), ad groups por tema/ciudad (STAG), **siempre dentro del límite de fragmentación del playbook**. Si el presupuesto o el volumen es bajo, agrupar por tema (ciudades dentro del grupo del servicio, con inserción de keyword), no forzar SKAG ni grupos por ciudad.
 4. **RSA**: mínimo 3 anuncios por ad group. Headline 1 pinneado al término de búsqueda del grupo. Resto rota ofertas/beneficios. 15 headlines, 4 descripciones. Todas las extensiones que apliquen (sitelinks, callouts, snippets, llamada, ubicación, imágenes si son propias y de calidad).
 5. **Negativas**: lista universal de PMM (`knowledge/negativas-universales.md`) aplicada a nivel de cuenta desde el día 1, más negativas por nicho. Excluir competidores como keyword objetivo salvo prueba controlada.
 6. **Puja**: iniciar con Maximizar conversiones (sin tCPA) o Maximizar clics si no hay historial de conversiones. Pasar a tCPA solo con ~30 conversiones en 30 días. Nunca optimizar a clics como estrategia final.
@@ -60,7 +71,7 @@ scripts/                  utilidades (API de Google Ads, PageSpeed, etc.)
 ## Herramientas disponibles
 - **Google Ads API** vía MCC de PMM (developer token ya aprobado). Ver `docs/setup-google-ads-api.md`. Úsala para leer cuentas del MCC, Keyword Planner, crear campañas y exportar search terms.
 - **Semrush MCP**: `paid_search_research`, `competitors_research`, `keyword_research`, `site_audit`, `domain_overview`.
-- **Windsor.ai MCP**: datos históricos de Google Ads para dashboards y comparativas sin gastar cuota de API.
+- **Windsor.ai MCP**: datos históricos de Google Ads para dashboards y comparativas sin gastar cuota de API. Limitaciones conocidas (usar `keyword_text`, no `keyword`; campos de reportes distintos van en llamadas separadas; `budget_amount`/`target_cpa` son valores vigentes, no históricos; search terms cubren solo parte del gasto) en el playbook §2. Cuentas sin carpeta de cliente se diagnostican en `diagnostics/<cuenta>/`.
 - **PageSpeed Insights** (`scripts/pagespeed.py`) y WebFetch para auditar landings.
 - **Meta Ad Library / búsqueda web** solo como referencia de competidores.
 

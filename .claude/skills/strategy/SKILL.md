@@ -21,14 +21,19 @@ Lee `brief.md`, `audit-site.md`, `competitors.md`, `benchmark.md`. Si falta algu
    - **Remarketing / RLSA**: fase 4, no ahora.
    - **PMax**: fase 5 condicionada; escribir explícitamente por qué no ahora.
    - **Display, Video, Demand Gen**: no para servicios locales salvo pedido expreso.
-3. **Estructura**:
+3. **Estructura** — primero la matemática de presupuesto (`knowledge/playbook-analitica.md` §4):
+   - Inversión real en medios (no el monto del contrato): tope mensual = diario × 30.4; **clics/día = diario ÷ CPC**; prospectos/mes = clics/mes × tasa de conversión. Escríbelo en el resumen.
+   - **Límite de fragmentación**, que manda sobre las reglas de abajo: <$600/mes → 1 campaña, 2–3 grupos; $600–1,500 → 1 campaña, 3–5 grupos (contando los de fases futuras); $1,500–4,000 → 2–3 campañas por línea de servicio; >$4,000 → separación completa por servicio, marca y geografía.
+   - Estructura base para oficios locales (playbook §8): (1) servicio principal + "near me" + ciudades; (2) reparación (urgencias solo si el cliente atiende de verdad fuera de horario); (3) trabajo de ticket alto; (4) servicio emergente (EV, generadores) solo si el cliente lo presta.
    - Campaña por servicio (o familia) con presupuesto propio: así el servicio estrella no compite por presupuesto con el que menos interesa.
-   - Ad group por tema (STAG). Servicio × ciudad solo si esa combinación tiene ≥100 búsquedas/mes; si no, un grupo por servicio con inserción de ubicación.
+   - Ad group por tema (STAG). Servicio × ciudad solo si esa combinación tiene ≥100 búsquedas/mes **y** el límite de fragmentación lo permite; si no, las ciudades van en el grupo del servicio con inserción de keyword en el H1 (keywords de ciudad sin sufijo de estado).
    - Prioridad de presupuesto según "servicio estrella" y "servicio a evitar" del brief.
-   - Un ad group "Emergencia/24-7" separado si el nicho lo tiene: intención y CPC distintos.
-4. **Match types**: frase por defecto; exacta para los top 3–5 términos de cada grupo; amplia no.
+   - Un ad group "Emergencia/24-7" separado solo si el cliente atiende de verdad fuera de horario: intención y CPC distintos.
+   - Marca en campaña aparte solo si existe volumen de búsqueda de marca (en un negocio nuevo no lo hay).
+4. **Match types**: frase por defecto; exacta para los top 3–5 términos de cada grupo; amplia y AI Max no, hasta ~50 conversiones limpias acumuladas (playbook §8).
 5. **Presupuesto por fase** con el benchmark:
-   - Fase 1: presupuesto del brief repartido por campaña (% según prioridad), con CPL objetivo = mediana del benchmark.
+   - Fase 1: presupuesto del brief repartido por campaña (% según prioridad), con CPL objetivo = mediana del benchmark. Si el benchmark es bimodal (p. ej. cuentas en Max. clics sin tope contra Max. conversiones), usar el grupo comparable y decirlo.
+   - Declarar los límites de bajo volumen (playbook §9): qué no se podrá concluir con los clics esperados.
    - Regla de aprendizaje: cada campaña necesita ≥3× CPL/día; si no alcanza, consolidar campañas (menos campañas, más ad groups).
    - Fase 3+: reasignación según CPA real.
 6. **Copy**: por ad group, 15 headlines + 4 descripciones en el idioma del mercado, H1 pinneado = término del grupo, usando los diferenciadores y ofertas del brief y los gaps de competitors.md. Extensiones: sitelinks (otros servicios), callouts (diferenciadores), snippets (servicios), llamada, ubicación.

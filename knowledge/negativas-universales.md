@@ -30,6 +30,10 @@ gobierno, alcaldía, permiso, licencia, normativa, abogado, demanda
 porn, xxx, sex, nude, game, games, meme, funny, lyrics, song, movie, film
 juego, juegos, película, canción, letra
 
+## Precio de referencia (playbook §6.5)
+hourly rate, "cost per hour", "average cost", "how much does", "price list", "license requirements"
+(Ojo: "cost" suelto no; las búsquedas "X installation cost" suelen ser comerciales en servicios de ticket alto.)
+
 ## Marcas de competidores
 Se agregan por cuenta en `clients/<slug>/data/negatives-nicho.txt`. Regla: no pujar por competidores salvo prueba controlada con presupuesto separado.
 
@@ -38,6 +42,7 @@ Se agregan por cuenta en `clients/<slug>/data/negatives-nicho.txt`. Regla: no pu
 ## Listas por nicho (agregar a la universal)
 
 ### Towing
+AAA, "roadside assistance" de aseguradoras/terceros (geico, progressive, state farm, allstate), ciudades fuera de la zona real (playbook §6.6).
 junkyard, junk yard, salvage, scrap, "car for cash", "sell my car", "tow truck for sale", "tow truck driver", "tow truck jobs", dmv, impound lot (salvo que el cliente tenga), "tow hitch", "tow bar", "trailer"
 
 ### Plomería / Plumbing
@@ -45,6 +50,16 @@ junkyard, junk yard, salvage, scrap, "car for cash", "sell my car", "tow truck f
 
 ### Electricistas
 "electrician salary", "electrician school", "electrical supply", "wire for sale", "circuit breaker for sale", "electrical engineer", "solar panels for sale" (si no vende), nec code
+
+**Utilities y cooperativas** (la categoría más cara; cambia por mercado, hay que buscar la cooperativa local en cada cuenta — playbook §6.1):
+- Genéricas: cooperative, "electric cooperative", "electric coop", utility, utilities, "pay bill", "pay my bill", outage, "power outage", "power company", "electricity provider", "<ciudad> electric" si la ciudad tiene servicio municipal.
+- Arkansas: "carroll electric", "ozarks electric", swepco, entergy, "bentonville utilities". San Diego: sdge.
+
+**Marcas de producto** (quiere comprar el aparato, no la instalación — playbook §6.2): supercharger, ccs, adapter, generac, leviton, lutron, "harbor breeze", minka, casablanca, siemens, eaton, intermatic, zinsco, sylvania, menards.
+- ⚠️ `tesla` y `wall connector`: solo si la cuenta **no** tiene grupo de instalación EV. Si lo tiene, usar combinaciones de producto ("tesla home charger", "tesla wall connector price") o exacta, y validar contra las keywords.
+
+**DIY e informativas del oficio** (playbook §6.3): "wire size", gauge, diagram, "not working", "what size", "why does", reset.
+- ⚠️ `wiring`, `troubleshooting` y `replace` sueltos chocan con grupos de reparación o de paneles ("wiring repair", "electrical troubleshooting"). Usar "wiring diagram", "how to replace", etc.
 
 ### HVAC
 "hvac school", "hvac salary", "hvac parts", "ac unit for sale", filter, filters, thermostat (si no instala), "energy star"

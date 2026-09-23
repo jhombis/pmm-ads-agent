@@ -16,6 +16,7 @@ description: Busca en el MCC de PMM cuentas del mismo nicho/país y extrae CPC, 
 4. **Keywords top por conversiones** agregadas (anonimizadas por cuenta).
 5. **Negativas** más frecuentes en esas cuentas.
 6. **Si el cliente tiene historial propio**: correr lo mismo sobre su cuenta antigua y compararlo contra el benchmark.
+7. **Lectura** (playbook §3 y §9): comparar contra la mediana de 3–4 meses, no contra el mejor mes; tasas de conversión sobre <50 clics son ruido; `budget_amount` y `target_cpa` son valores vigentes, no históricos; la inversión real puede ser ~40–60% del monto del contrato.
 
 ## Salida: `clients/<slug>/benchmark.md`
 ```markdown

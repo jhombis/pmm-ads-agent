@@ -17,6 +17,9 @@ description: Gestiona negativas: aplica la lista universal PMM y la del nicho a 
 - Match: frase por defecto; exacta para términos cortos que podrían bloquear demasiado (ej. `free` en exacta si el cliente ofrece "free estimate").
 - Nunca agregues una negativa que coincida con una keyword activa del mismo nivel; el script lo valida.
 - Cada aplicación se registra en `log/YYYY-MM-DD.md`.
+- Cubrir siempre las categorías de desperdicio del playbook (`knowledge/playbook-analitica.md` §6): utilities (cambian por mercado; buscar la cooperativa local), marcas de producto, DIY/informativas, competencia (en frase, a nivel campaña), precio de referencia y empleo, y geografía fuera de zona.
+- Términos genéricos de esas listas que chocan con servicios que el cliente sí vende (p. ej. `wiring`, `troubleshooting`, `replace`, `tesla`, `wall connector` en un electricista con grupos de reparación o EV) no van sueltos: se usan combinados con el modificador de producto o DIY (`wiring diagram`, `tesla home charger`) o en exacta, y el conflicto se muestra antes de aplicar.
+- Si el cliente ofrece cotización o diagnóstico gratis, **no** bloquear `free`.
 
 ## Herramientas
 `scripts/negatives.py` (API) o export CSV para Google Ads Editor.

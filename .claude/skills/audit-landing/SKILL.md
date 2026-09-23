@@ -15,6 +15,7 @@ Lee `clients/<slug>/brief.md` (URL, servicios, objetivo, quién edita la web).
 4. **Tracking**: buscar en el HTML `gtag`, `googletagmanager`, `G-`, `AW-`, `fbq`. Anotar qué hay.
 5. **Formulario**: cuántos campos, si está above the fold en móvil, a dónde envía, si tiene página de gracias propia (URL) o solo mensaje inline (afecta conversión de Ads).
 6. **Móvil**: clic para llamar (`tel:`) visible sin scroll; WhatsApp si es Colombia.
+7. **Medición (playbook §7)**, antes que cualquier otra cosa: un solo teléfono en todo el sitio y que sea el número de reenvío de la conversión; formulario de prueba (mensaje de gracias, llegada del correo, conversión registrada en 24–48 h); acciones de conversión activas y si son leads reales o vistas y clics; recursos de llamada no en revisión ni rechazados; filtro de duración de llamada razonable; horario de atención contra programación de anuncios; en Elementor, Templates → Popups y acciones "After Submit" (popups heredados de otro cliente o con otro teléfono). Registrar la fecha de cada arreglo.
 
 ## Rúbrica (puntuar cada ítem 0/1/2)
 | Ítem | 2 = bien | Bloqueante si 0 |
