@@ -5,7 +5,7 @@ pais: US
 idioma: EN
 nicho: taller (transmisiones / auto repair)
 actualizado: 2026-09-23
-estado: evaluacion (cuenta existente, sin cambios en Ads)
+estado: fase 0 (roadmap creado; sin cambios en Ads)
 ---
 
 # Brief — AAMCO 103rd St Jacksonville
