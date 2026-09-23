@@ -1,11 +1,9 @@
 #!/usr/bin/env python3
 """Lista cuentas cliente del MCC con sus etiquetas. Filtra por --nicho y --pais (etiquetas nicho:* / pais:*)."""
 import argparse, csv, sys
-from pathlib import Path
-from google.ads.googleads.client import GoogleAdsClient
+from ads_client import get_client
 
-ROOT = Path(__file__).resolve().parent.parent
-client = GoogleAdsClient.load_from_storage(str(ROOT / "google-ads.yaml"))
+client = get_client()
 svc = client.get_service("GoogleAdsService")
 mcc = client.login_customer_id
 

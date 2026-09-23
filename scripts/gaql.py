@@ -8,13 +8,7 @@ Uso:
 import argparse, csv, json, sys
 from pathlib import Path
 
-try:
-    from google.ads.googleads.client import GoogleAdsClient
-except ImportError:
-    sys.exit("Falta google-ads: pip install google-ads --break-system-packages")
-
-ROOT = Path(__file__).resolve().parent.parent
-CONFIG = ROOT / "google-ads.yaml"
+from ads_client import get_client
 
 
 def flatten(row, prefix=""):
@@ -39,7 +33,7 @@ def main():
     if not query:
         sys.exit("Falta --query o --file")
 
-    client = GoogleAdsClient.load_from_storage(str(CONFIG))
+    client = get_client()
     svc = client.get_service("GoogleAdsService")
     from google.protobuf.json_format import MessageToDict
 
