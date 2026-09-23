@@ -14,14 +14,15 @@ Cuenta 758-301-1023 · campaña actual 24208591381 (Max. clics, se pausa en F1).
 - [x] (PMM) Cuenta en el MCC de PMM — visible como "Premium Local Listings 004049 ($1500 Pro Phase Electric)"
 - [x] (PMM) Facturación activa — la cuenta gasta desde el 11-sep
 - [ ] **B** (PMM) Aplicación automática de recomendaciones DESACTIVADA (verificar)
-- [ ] (PMM) Acceso a la API (`google-ads.yaml`) para /build-campaign; si no hay, usar Windsor + Editor
+- [x] (PMM) Acceso a la API (`google-ads.yaml`) — OK 23-sep. Pasar a variables de entorno para sesiones futuras
 
 ### Contención en la campaña actual
 - [x] (PMM) Quitadas 15 negativas heredadas que bloqueaban servicios o el área (vista, car, estimate, free…) — 22-sep, ver log
 - [ ] **B** (PMM) Importar `data/2026-09-22-negatives-editor.csv` (103 negativas: utilities, competidores, DIY, universal)
 - [ ] (PMM) Pausar las keywords broad "home electrical", "electrical services", "electrical contractors" y "home electrical services"
 - [ ] (PMM) Techo de CPC de $12 (Max. clics)
-- [ ] (PMM) Socios de búsqueda y Display apagados; ubicación = Presencia; programación L–D 5:00–16:00
+- [x] (PMM) Socios de búsqueda y Display apagados; ubicación = Presencia — verificado vía API 23-sep
+- [ ] (PMM) Programación L–D 5:00–16:00 en la campaña actual
 
 ### Tracking
 - [ ] **B** (PMM) Google Tag verificado en todas las páginas (el cliente dice que está; confirmar el ID y el acceso)
