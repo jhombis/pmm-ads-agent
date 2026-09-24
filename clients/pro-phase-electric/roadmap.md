@@ -2,7 +2,7 @@
 cliente: Pro Phase Electric
 slug: pro-phase-electric
 D0: 2026-09-23
-actualizado: 2026-09-23
+actualizado: 2026-09-24
 fase_actual: 1
 plan_es: https://claude.ai/artifact/B6JRbhCt3HNMFq29UeJv36
 plan_en: https://claude.ai/artifact/3KhWsGyQmP8QY9ZLm1zZgk
@@ -135,6 +135,7 @@ plan_en: https://claude.ai/artifact/3KhWsGyQmP8QY9ZLm1zZgk
 - **Primavera–verano**: más paneles (cargas de AC) y EV. Es buen momento para que Paneles y EV ya tengan historia; otra razón para no retrasar sus landings.
 
 ## Historial de cambios
+- 2026-09-24: revisión D2 (`log/2026-09-24.md`): $25.66, 4 clics, 0 conv.; anuncios aprobados; el límite es el ranking (IS perdido 55–72%), no el presupuesto. 11 negativas propuestas. Sin cambios de puja hasta D7.
 - 2026-09-23: creado (D0 = 2026-09-23). Cuenta ya activa desde 01-sep; F0 incluye contención.
 - 2026-09-23: **Search NWA lanzada** (24273708366) con los 4 ad groups activos y todas las URLs a la home; campaña anterior pausada. Fase 0 de medición sigue abierta por decisión de Jhombis. Revisiones D7/D14/D30 → 30-sep, 07-oct, 23-oct.
 - 2026-09-23: estrategia v4 regenerada con el playbook como base: CPC real $9.80 → ~84 clics/mes; proyección por escenarios (base 8–13 prospectos, CPL ~$65–100, objetivo provisional ≤$85); F2 pide ≥8 conv y CPL ≤$100; F3 pasa a ser decisión de presupuesto; tCPA sin fecha en el escenario base; Repair a /residential-electrical-service/; medición §7 en F0; separar ciudades solo con ≥50 clics.

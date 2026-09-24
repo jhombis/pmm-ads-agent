@@ -222,6 +222,7 @@ El agente debe declarar los límites antes de que alguien saque conclusiones equ
 | Sep 2026 | Ridge Electric | PMax con $2/día alcanzó su tope mensual; "Website Calls" a cero | Pendiente: historial de cambios y revisión del rastreo |
 | Sep 2026 | Pro Phase Electric | RSA rechazados en validación por **PHONE_NUMBER_IN_AD_TEXT** (headline "Call (479) 287-3650") | Headline reemplazado. **Nunca poner teléfonos en headlines ni descripciones**: el teléfono va en la extensión de llamada |
 | Sep 2026 | Pro Phase Electric | Cuenta en hora del Pacífico, cliente en Central. El horario del cliente se tomó como "5–16" (que era su 7–18 Central visto en Pacífico) y se movió una programación que estaba bien a 3–14, con "5 AM" escrito en los anuncios. La orden de pedido decía 7am–6pm Central | Revertido el mismo día a 5–16 hora de la cuenta y anuncios corregidos. **Tomar horario y zona horaria de la orden de pedido (no de un mensaje), convertir a `customer.time_zone`, y no escribir horas en los anuncios sin esa confirmación** |
+| Sep 2026 | Pro Phase Electric | "licensed electrician" en frase trajo búsquedas de licencias y journeyman (empleo): 26% de las impresiones del grupo principal en D1–D2, con CTR del grupo en 1% | En electricistas, negar journeyman, "license lookup", "electrician/electrical license" desde el día 1 (agregado a la lista universal) |
 
 ---
 

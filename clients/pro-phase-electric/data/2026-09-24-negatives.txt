@@ -1,0 +1,13 @@
+# Propuesta D2 (24-sep) — Search NWA 24273708366. Aplicar solo con OK de Jhombis vía /negatives.
+# Destino: lista compartida "pro-phase-electric nicho". Formato: término | match | categoría | evidencia
+journeyman | PHRASE | Empleo/licencia | "journeyman electrician", "journeyman electrician license", "electrical journeyman test" (vía "licensed electrician")
+license lookup | PHRASE | Empleo/licencia | "arkansas electrician license lookup", "alabama electrical license lookup"
+electrician license | PHRASE | Empleo/licencia | preventiva, misma familia
+electrical license | PHRASE | Empleo/licencia | preventiva, misma familia
+electric company | PHRASE | Utilities | "electric company bentonville ar"
+electric companies | PHRASE | Utilities | "electric companies in northwest arkansas", "nwa electric companies"
+hill electric | PHRASE | Competidor | "hill electric farmington ar"
+howard jones | PHRASE | Competidor | "howard jones electric rogers ar"
+karstetter | PHRASE | Competidor | "karstetter electric"
+tri cities electric | PHRASE | Competidor | "tri cities electric"
+how much is a breaker box for a house | EXACT | Precio/producto | 1 clic, $7.08 (vía "electrical panel replacement cost")

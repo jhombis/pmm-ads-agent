@@ -49,7 +49,7 @@ junkyard, junk yard, salvage, scrap, "car for cash", "sell my car", "tow truck f
 "plumbing supply", pex, pvc, fittings, "water heater for sale", "plumber salary", "plumbing code", "plumbing school", faucet parts
 
 ### Electricistas
-"electrician salary", "electrician school", "electrical supply", "wire for sale", "circuit breaker for sale", "electrical engineer", "solar panels for sale" (si no vende), nec code
+"electrician salary", "electrician school", journeyman, "license lookup", "electrician license", "electrical license", "electrical supply", "wire for sale", "circuit breaker for sale", "electrical engineer", "solar panels for sale" (si no vende), nec code
 
 **Utilities y cooperativas** (la categoría más cara; cambia por mercado, hay que buscar la cooperativa local en cada cuenta — playbook §6.1):
 - Genéricas: cooperative, "electric cooperative", "electric coop", utility, utilities, "pay bill", "pay my bill", outage, "power outage", "power company", "electricity provider", "<ciudad> electric" si la ciudad tiene servicio municipal.

@@ -2,7 +2,7 @@
 cliente: Pro Phase Electric
 slug: pro-phase-electric
 fase_actual: 1
-actualizado: 2026-09-23
+actualizado: 2026-09-24
 ---
 # Checklist — Pro Phase Electric
 
@@ -76,11 +76,12 @@ Cuenta 758-301-1023 · campaña actual 24208591381 (Max. clics, se pausa en F1).
 - [x] (PMM) Negativas de enrutamiento por ad group (15) + listas compartidas PMM Universal (167) y nicho (97)
 - [ ] (PMM) URLs finales verificadas (200, https): no se pudo con HEAD desde el entorno; confirmar en la aprobación
 - [x] (Jhombis) Activación decidida; campaña anterior 24208591381 pausada — 23-sep
-- [ ] (PMM) Anuncios aprobados (en revisión el 23-sep; revisar el 24-sep)
+- [x] (PMM) Anuncios aprobados — 4 RSA APPROVED el 24-sep, sin avisos de política
 - [ ] (PMM) D7 (30-sep): CTR y QS de Paneles y EV apuntando a la home; si no convierten, pausar hasta tener landing
 - [ ] **B** (PMM) Primera conversión **del sitio** registrada
 
 ## Fase 2 — Limpieza (D7 30-sep · D14 07-oct · D30 23-oct)
+- [ ] D2 (24-sep): 11 negativas propuestas (journeyman/licencias, utilities, 4 competidores, 1 de precio), `data/2026-09-24-negatives.txt` — pendiente OK
 - [ ] D7: search terms revisados, negativas agregadas
 - [ ] D7: keywords sin impresiones identificadas (no pausar aún)
 - [ ] D14: search terms revisados, negativas agregadas
