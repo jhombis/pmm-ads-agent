@@ -2,7 +2,7 @@
 cliente: 290 Tow and Recovery
 slug: 290-tow-recovery
 actualizado: 2026-09-23
-version: 1
+version: 2
 supuestos:
   - Ticket y margen PENDIENTE. El CPL objetivo sale del benchmark del MCC ($14.57 por llamada, rango $11.70–$17.50), no de la economía del cliente.
   - Servicio estrella / servicio a evitar PENDIENTE. Prioridad asumida - towing light/medium > exotic y long-distance > roadside.
@@ -17,7 +17,7 @@ supuestos:
 # Estrategia Google Ads — 290 Tow and Recovery
 
 ## Resumen ejecutivo
-- **1 campaña Search** consolidada ("Search | Towing | Hill Country 40mi") con **7 ad groups por tema**, $27/día (~$825/mes). No hay presupuesto para separar campañas: la regla de aprendizaje pide ≥3× CPL/día = $44/día por campaña.
+- **1 campaña Search** consolidada ("Search | Towing | Hill Country 40mi") con **3 ad groups** (v2, 2026-09-24: se consolidó de 7 a 3), $27/día (~$825/mes). No hay presupuesto para separar campañas: la regla de aprendizaje pide ≥3× CPL/día = $44/día por campaña.
 - **Frase por defecto y exacta en el top de cada grupo. Sin amplia.** Todo el desperdicio de los primeros 6 días (43% del gasto) entró por amplia.
 - **Puja F1**: Maximizar clics con tope de CPC de **$6.50** (mediana Search MCC) hasta tener tracking verificado y ≥15 conversiones. Después, Maximizar conversiones. **tCPA** cuando haya ~30 conversiones en 30 días (estimado: días 45–60).
 - **CPL objetivo: $14.57 por llamada** (rango aceptable $11.70–$17.50). En F1 se espera $18–24 mientras aprende. Proyección: **35–55 llamadas/mes** con 125–165 clics.
@@ -39,24 +39,25 @@ supuestos:
 ### Campaña: Search | Towing | Hill Country 40mi
 Volumen = búsquedas/mes en **EE. UU.** (Semrush) solo para ordenar. El volumen local real es una fracción y está PENDIENTE (Keyword Planner). Exacta = [ ], frase = " ".
 
-| Ad group | Keywords (match) | Vol. est. (US) | Landing | H1 pinneado |
-|---|---|---|---|---|
-| **AG1 Towing Near Me** (núcleo, ~55–60% del gasto esperado) | [tow truck near me], [towing near me], [towing company near me], "tow truck near me", "towing near me", "towing company near me", "towing service near me", "tow service near me", "tow truck company near me", "car towing near me", "tow trucks near me", "car towing service", "tow truck service", "tow my car" | 135k / 110k / 40.5k / 27.1k… | `/` (home, tras ajustar el H1) | Tow Truck Near You - 24/7 |
-| **AG2 Wrecker Service** ("wrecker" es el término de TX; 2 de los 3 clics "ok" de la cuenta fueron wrecker) | [wrecker service near me], "wrecker service near me", "wreckers near me", "wrecker service", "wrecker near me" | 12.1k | `/light-medium-duty-towing/` | Wrecker Service Near You |
-| **AG3 24/7 Emergency Towing** (intención urgente, CPC distinto) | [24 hour towing near me], "24 hour towing near me", "emergency towing", "24 hour tow truck", "24 hour towing", "emergency tow truck", "towing open now" | 2.9k / 1.9k / 590 | `/` | 24 Hour Towing - Call Now |
-| **AG4 Towing + Ciudad** (cada ciudad tiene <100/mes → un solo grupo con inserción de ubicación, no STAG por ciudad) | "towing fredericksburg tx", "tow truck fredericksburg", "fredericksburg towing", "towing kerrville tx", "kerrville towing", "tow truck kerrville tx", "wrecker service kerrville tx", "towing johnson city", "tow truck llano tx", "towing comfort tx", "towing blanco tx" | 10–70 c/u | `/` | {LOCATION(City):Hill Country} Towing |
-| **AG5 Exotic & Flatbed Towing** (ticket alto, CPC bajo, sin competidor local) | [exotic car towing], "exotic car towing", "luxury car towing", "classic car towing", "medium duty towing". "flatbed towing near me" y "flatbed tow truck near me" solo si el cliente confirma el flatbed | 320 / 390 / 720 | `/exotic-vehicle-towing/` (**se lanza en pausa hasta que se arreglen los CTA**) | Exotic Car Towing |
-| **AG6 Long-Distance Towing** (ticket alto; el genérico lo pagan brokers → solo con ancla) | "long distance towing near me", "long distance car towing", "long distance towing fredericksburg", "long distance towing texas", "tow car to san antonio", "tow car to austin" | 260 + variantes | `/local-long-distance-towing/` | Long-Distance Towing |
-| **AG7 Roadside (solo exacta, con tope)** (ticket bajo; 14% del gasto inicial y "car jumper" = $27) | [roadside assistance near me], [roadside service near me], [jump start near me], [flat tire change near me] | 33.1k / 1.3k / 320 | `/roadside-assistance/` | Roadside Assistance Near You |
+**Por qué 3 grupos y no 7 (v2).** $825/mes dan ~125–165 clics. Con 7 grupos serían ~20 clics por grupo al mes y 21 RSA compitiendo, así que ningún grupo junta datos para decidir qué anuncio gana. Además, ciudad, exotic y long-distance tienen volumen local mínimo y quedarían en "bajo volumen de búsqueda". Las 6 cuentas de towing con mejor CPL del MCC usan 1 solo grupo consolidado. La puja es de campaña, así que separar grupos no mejora el CPL; solo se separa lo que necesita otro copy, otra landing o un tope propio.
 
-**Control de presupuesto entre grupos.** Con 1 campaña no hay presupuesto por ad group. La prioridad se controla por match type: AG7 va solo en exacta. **Regla**: si AG7 pasa del 20% del gasto semanal, o AG5/AG6 no generan llamadas en 30 días con más de $100 de gasto, se pausan.
+| Ad group | Keywords (match) | Vol. est. (US) | Landing | H1 pinneado | % gasto esperado |
+|---|---|---|---|---|---|
+| **AG1 Towing** (núcleo: near me + wrecker + 24 h/emergencia + ciudad) | [tow truck near me], [towing near me], [towing company near me], [wrecker service near me], [24 hour towing near me], "tow truck near me", "towing near me", "towing company near me", "towing service near me", "tow service near me", "tow truck company near me", "car towing near me", "tow trucks near me", "car towing service", "tow truck service", "tow my car", "wrecker service near me", "wreckers near me", "wrecker service", "24 hour towing", "24 hour tow truck", "emergency towing", "emergency tow truck", "towing open now", "towing fredericksburg tx", "tow truck fredericksburg", "fredericksburg towing", "towing kerrville tx", "kerrville towing", "tow truck kerrville tx", "wrecker service kerrville tx", "towing johnson city", "tow truck llano tx", "towing comfort tx", "towing blanco tx" | 135k / 110k / 40.5k / 12.1k / 2.9k… (ciudades 10–70 c/u) | `/` (home, tras ajustar el H1) | `{KeyWord:24/7 Towing Near You}`: la inserción de keyword refleja wrecker, 24 hour o ciudad; si pasa de 30 caracteres usa el texto por defecto | ~85% |
+| **AG2 Exotic & Long-Distance** (tickets altos, copy propio) | [exotic car towing], "exotic car towing", "luxury car towing", "classic car towing", "long distance towing near me", "long distance car towing", "long distance towing fredericksburg", "long distance towing texas", "tow car to san antonio", "tow car to austin". "medium duty towing" y "flatbed towing near me" solo si el cliente confirma | 320 / 260 + variantes | **URL final por keyword**: exotic → `/exotic-vehicle-towing/` (esas keywords **en pausa hasta arreglar los CTA**); long-distance → `/local-long-distance-towing/` (URL del anuncio) | Exotic & Long-Distance Towing | ~5–10% |
+| **AG3 Roadside** (solo exacta, con tope; ticket bajo, 14% del gasto inicial y "car jumper" = $27) | [roadside assistance near me], [roadside service near me], [jump start near me], [flat tire change near me] | 33.1k / 1.3k / 320 | `/roadside-assistance/` | Roadside Assistance Near You | ≤10% |
+
+**Control de presupuesto entre grupos.** Con 1 campaña no hay presupuesto por ad group. La prioridad se controla por match type: AG3 va solo en exacta.
+- **Reglas**:
+  - Si AG3 pasa del 20% del gasto semanal, se pausa.
+  - Si AG2 gasta más de $100 sin llamadas en 30 días, se pausa.
+  - Si Keyword Planner no muestra volumen local para AG2, AG2 pasa a F2.
+- **Cuándo volver a separar**: si AG1 supera ~300 clics/mes, o si "wrecker", "24 hour" o alguna ciudad muestra un CTR o CPL muy distinto en search terms. En ese caso, esa variante sale a su propio grupo con H1 fijo.
 
 **Negativas específicas por grupo** (además de la lista de cuenta):
-- AG1 / AG3: "roadside", "jump", "tire" (empujan roadside hacia AG7).
-- AG4: "near me" (evita competir con AG1; ciudad sola).
-- AG5: "cheap", "near me" solo si canibaliza AG1 (revisar en la semana 2).
-- AG6: "shipping", "transport", "carrier" y "enclosed".
-- AG7: "towing", "tow truck" (las búsquedas de grúa van a AG1).
+- AG1: "roadside", "jump", "tire", "exotic", "long distance" (empujan cada búsqueda a su grupo).
+- AG2: "shipping", "transport", "carrier", "enclosed", "cheap".
+- AG3: "towing", "tow truck", "wrecker" (las búsquedas de grúa van a AG1).
 
 ## Keywords descartadas y por qué
 Detalle completo en `data/keywords.csv` (77 términos).
@@ -78,7 +79,7 @@ Detalle completo en `data/keywords.csv` (77 términos).
 | gruas cerca de mi | No hay anuncios en español. Prueba en F3 |
 
 ## Copy
-Completo en **`data/ads-search-towing.md`**: 7 ad groups × 3 RSA, 15 headlines + 4 descripciones cada uno, límites validados.
+Completo en **`data/ads-search-towing.md`**: 3 ad groups × 3 RSA (9 anuncios), 15 headlines + 4 descripciones cada uno, límites validados.
 - **Ángulos**: 24/7 real, **precio claro antes de enganchar / sin cargos ocultos** (gap de la competencia y la queja pública contra Mr. Wrecker), **Navy Veteran Owned** (diferenciador real del sitio), 10% Senior Discount, local de Fredericksburg frente a los números 877 de las redes lead-gen.
 - **Pruebas**: RSA B fija el ángulo precio en la posición 2; RSA C fija el ángulo confianza (veterano).
 - **Assets**: 4 sitelinks (uno por servicio), 8 callouts, snippet de servicios, llamada con número de reenvío. Ubicación: no hasta que exista el GBP. Imágenes: no hasta tener fotos propias.
@@ -87,11 +88,11 @@ Completo en **`data/ads-search-towing.md`**: 7 ad groups × 3 RSA, 15 headlines 
 ## Landings requeridas
 | URL | Existe | Ad groups | Responsable | Bloqueante |
 |---|---|---|---|---|
-| `/` | Sí | AG1, AG3, AG4 | PMM | No. **Cambiar el H1 del hero** a "24/7 Towing & Tow Truck Service in Fredericksburg, TX" y alinear "45-minute radius" con 40 mi (1 h) |
-| `/light-medium-duty-towing/` | Sí | AG2 | PMM | No. Subir los CTA de llamar/cotizar arriba del texto (hoy aparecen tras ~1,400 px en móvil) |
-| `/exotic-vehicle-towing/` | Sí | AG5 | PMM | **Sí**: faltan los CTA (bloque vacío en móvil). AG5 se lanza en pausa hasta arreglarlo |
-| `/local-long-distance-towing/` | Sí | AG6 | PMM | No |
-| `/roadside-assistance/` | Sí | AG7 | PMM | No |
+| `/` | Sí | AG1 | PMM | No. **Cambiar el H1 del hero** a "24/7 Towing & Tow Truck Service in Fredericksburg, TX" y alinear "45-minute radius" con 40 mi (1 h) |
+| `/light-medium-duty-towing/` | Sí | Sitelink | PMM | No. Subir los CTA de llamar/cotizar arriba del texto (hoy aparecen tras ~1,400 px en móvil) |
+| `/exotic-vehicle-towing/` | Sí | AG2 (keywords exotic) | PMM | **Sí**: faltan los CTA (bloque vacío en móvil). Las keywords exotic se lanzan en pausa hasta arreglarlo |
+| `/local-long-distance-towing/` | Sí | AG2 (keywords long-distance) | PMM | No |
+| `/roadside-assistance/` | Sí | AG3 | PMM | No |
 | Página de gracias (`/thank-you/`) | No | Form Fill | PMM | **Sí** para medir el formulario (redirect del formulario Elementor) |
 | Velocidad móvil (LCP 5.7–6.9 s en páginas de servicio) | — | Todas | PMM | No. Mejora de F2: WebP, caché, CSS/JS sin usar |
 
@@ -112,11 +113,11 @@ Completo en **`data/ads-search-towing.md`**: 7 ad groups × 3 RSA, 15 headlines 
 - **Display / Demand Gen / Video**: no para towing local. Denton (MCC) quemó $1,377 en clics basura de Display.
 - **Campaña de marca**: sin búsquedas de marca. Se reevalúa cuando aparezca "290 tow" en los search terms.
 - **Campañas separadas por servicio**: con $27/día, dividir deja cada campaña por debajo de 1× CPL/día y ninguna sale de aprendizaje. Si el fee sube a más de $1,500 de pauta, separar Roadside y Long-distance/Exotic.
-- **STAG por ciudad**: ninguna ciudad pasa de 100 búsquedas/mes.
+- **STAG por ciudad / muchos ad groups**: ninguna ciudad pasa de 100 búsquedas/mes y con ~150 clics/mes cada grupo extra divide los datos de prueba de anuncios. Se consolidó a 3 grupos (v2).
 - **Maximizar conversiones desde el día 1**: sin conversiones verificadas, el algoritmo no tiene señal y con $27/día sube los CPC. Por eso Max clics con tope primero.
 
 ## Riesgos y supuestos
-- **Volumen**: ninguna cuenta small-town del MCC gasta $825/mes (mediana $392). Si al recentrar el radio y quitar la amplia la campaña no gasta $27/día, se abre AG7 a frase o se suma "motorcycle towing", no se vuelve a la amplia. Validar con Keyword Planner (geo 40 mi de 78624) antes de /build-campaign.
+- **Volumen**: ninguna cuenta small-town del MCC gasta $825/mes (mediana $392). Si al recentrar el radio y quitar la amplia la campaña no gasta $27/día, se abre AG3 (roadside) a frase o se suma "motorcycle towing", no se vuelve a la amplia. Validar con Keyword Planner (geo 40 mi de 78624) antes de /build-campaign.
 - **CPL vs. economía**: el CPL máximo del brief (~$14) es provisional (ticket supuesto $175). Si el ticket real es menor, ni la mediana del MCC es rentable. **Confirmar ticket y margen antes de F2.**
 - **Conteo inflado**: las 3 conversiones son primarias. Hay que verificar que la misma llamada no cuente en Calls from Ads y en Website Calls, y usar un umbral de 60 s.
 - **Sin reseñas ni GBP**: el Map Pack (Douglas 157★, Tic Tac 70★, Integrity 89★) se lleva la llamada antes que el anuncio. Crear el GBP es la acción de mayor impacto fuera de Ads.

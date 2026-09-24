@@ -50,12 +50,12 @@ fase_actual: 0
 - **Fecha estimada**: se aplica el 2026-09-30 y pasa la condición el 2026-10-07.
 - **Condición de paso**: la campaña reestructurada lleva 7 días activa, los anuncios están aprobados y hay **≥1 conversión registrada y verificada** (una llamada real que llegó al cliente).
 - **Qué se lanza** (`/build-campaign`, según `strategy.md` F1):
-  - La campaña actual reestructurada: 7 ad groups en frase y exacta, AG5 exotic en pausa hasta arreglar su landing, 3 RSA por grupo y los assets de `data/ads-search-towing.md`.
+  - La campaña actual reestructurada: 3 ad groups en frase y exacta (Towing, Exotic & Long-Distance, Roadside); las keywords exotic quedan en pausa hasta arreglar su landing, 3 RSA por grupo y los assets de `data/ads-search-towing.md`.
   - Puja: Maximizar clics con **tope de CPC de $6.50**, **$27/día**, 24/7.
   - Geo: presencia, radio de 40 mi recentrado en Fredericksburg, con exclusiones del borde de San Antonio.
   - Se eliminan las 10 keywords en amplia.
 - **Riesgos**:
-  - **Volumen**: tras quitar la amplia y recentrar, la campaña puede no gastar $27/día. Si en el D7 gasta menos del 70%, se abre AG7 a frase o se agrega "motorcycle towing". No se vuelve a la amplia.
+  - **Volumen**: tras quitar la amplia y recentrar, la campaña puede no gastar $27/día. Si en el D7 gasta menos del 70%, se abre AG3 (roadside) a frase o se agrega "motorcycle towing". No se vuelve a la amplia.
   - La respuesta a leads todavía no está confirmada: una llamada no atendida de noche es un lead perdido.
 
 ## Fase 2 — Limpieza (D7 · D14 · D30)
@@ -63,8 +63,8 @@ fase_actual: 0
 - **Condición de paso**: las tres revisiones hechas con `/weekly-review`, negativas aplicadas y keywords sin impresiones en 30 días pausadas.
 - **Qué se revisa**:
   - Search terms: vigilar Virginia, San Antonio, equipo, jump starters, transporte y competidores.
-  - Gasto sin conversión por ad group. Regla: pausar AG5 o AG6 si superan $100 sin llamadas.
-  - Porcentaje de AG7 roadside sobre el gasto (tope 20%).
+  - Gasto sin conversión por ad group. Regla: pausar AG2 (exotic y long-distance) si supera $100 sin llamadas.
+  - Porcentaje de AG3 roadside sobre el gasto (tope 20%).
   - CPC real contra el tope.
   - RSA con peor rendimiento por grupo en el D30.
   - Calidad de las llamadas reportada por el cliente en el D30.
@@ -113,9 +113,9 @@ Los ajustes salen de `audit-site.md`. Responsable: PMM.
 
 | Ajuste | Tipo | Fecha |
 |---|---|---|
-| CTA faltantes en `/exotic-vehicle-towing/` | **Bloqueante F0** (AG5) | 2026-09-26 |
+| CTA faltantes en `/exotic-vehicle-towing/` | **Bloqueante F0** (keywords exotic de AG2) | 2026-09-26 |
 | `/thank-you/` + redirect del formulario + campos UTM/GCLID | **Bloqueante F0** | 2026-09-26 |
-| H1 del home: "24/7 Towing & Tow Truck Service in Fredericksburg, TX", y "45-minute radius" → 40 mi | Mejora (landing de AG1/AG3/AG4) | 2026-09-29 |
+| H1 del home: "24/7 Towing & Tow Truck Service in Fredericksburg, TX", y "45-minute radius" → 40 mi | Mejora (landing de AG1) | 2026-09-29 |
 | CTA de llamar/cotizar arriba del texto en las páginas de servicio | Mejora | 2026-10-07 |
 | "Upfront price before we tow / no hidden fees" en el hero y los callouts | Mejora | 2026-10-07 |
 | TDLR # + "Licensed & Insured" visibles (cuando el cliente dé los datos) | Mejora | Al recibir el dato |
@@ -136,8 +136,9 @@ Los ajustes salen de `audit-site.md`. Responsable: PMM.
 - **Fredericksburg Oktoberfest (primer fin de semana de octubre) y temporada de vinerías y turismo de otoño**: más tráfico de visitantes en la Hwy 290 y posibles picos de llamadas de fin de semana. La presencia capta a los turistas varados.
 - **Luces de fin de año (noviembre y diciembre)** y **Spring Break / wildflowers (marzo y abril)**: más turismo, así que más demanda de towing.
 - **Heladas de invierno** (ejemplo: febrero de 2021): pocas pero intensas, con picos de accidentes y jump starts. Si hay alerta de helada, revisar el tope de CPC y la capacidad del cliente.
-- **Verano (junio–agosto)**: el calor provoca averías y sube la demanda de roadside. Vigilar el tope de AG7.
+- **Verano (junio–agosto)**: el calor provoca averías y sube la demanda de roadside. Vigilar el tope de AG3 (roadside).
 - Conclusión: **no hay razón para retrasar la reestructuración**. Octubre es buena ventana para lanzar.
 
 ## Historial de cambios
+- 2026-09-24: estructura consolidada de 7 a 3 ad groups (strategy.md v2).
 - 2026-09-24: creado. D0 = hoy. Cuenta activa desde el 2026-09-17 con la configuración PLL.

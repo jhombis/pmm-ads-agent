@@ -31,7 +31,7 @@ Base: `knowledge/checklists/setup-cuenta.md`, ajustada al cliente. **(B)** = blo
 - [ ] (PMM) Campos ocultos UTM + GCLID en el formulario Elementor
 
 ### Landing (ver audit-site.md)
-- [ ] **(B)** (PMM) CTA "Get a Free Quote" + "Call Now" en `/exotic-vehicle-towing/`. Sin esto, AG5 queda en pausa
+- [ ] **(B)** (PMM) CTA "Get a Free Quote" + "Call Now" en `/exotic-vehicle-towing/`. Sin esto, las keywords exotic de AG2 quedan en pausa
 - [ ] **(B)** (PMM) `/thank-you/` + redirect del formulario
 - [ ] (PMM) H1 del home: "24/7 Towing & Tow Truck Service in Fredericksburg, TX"; "45-minute radius" → 40 mi
 - [ ] (PMM) Validar el volumen local en Keyword Planner (40 mi de 78624) y actualizar `data/keywords.csv`
@@ -42,13 +42,13 @@ Base: `knowledge/checklists/setup-cuenta.md`, ajustada al cliente. **(B)** = blo
 - [ ] (Cliente) Ticket promedio y margen por servicio → recalcular el CPL máximo (hoy ~$14 provisional; benchmark $14.57)
 - [ ] (Cliente) Servicio estrella y servicio a evitar
 - [ ] (Cliente) ¿Atiende Boerne / Fair Oaks Ranch / Bulverde? (decide las exclusiones geo)
-- [ ] (Cliente) ¿Tiene flatbed? ¿Remolca RV y motos? (activa keywords de AG5 y F2)
+- [ ] (Cliente) ¿Tiene flatbed? ¿Remolca RV y motos? (activa keywords de AG2 y F2)
 - [ ] (Cliente) Número de licencia TDLR + seguro (copy y LSA)
 - [ ] (Cliente) Ofertas sostenibles: ¿confirma "upfront price on the phone"?
 - [x] (PMM) Historial de la cuenta leído (2026-09-23, Windsor): 6 días, $165.57, 0 conversiones, 43% de desperdicio
 
 ## Fase 1 — Reestructuración Search (2026-09-30 → 2026-10-07)
-- [ ] (PMM) Campaña reestructurada según `strategy.md`: 7 ad groups, AG5 en pausa hasta arreglar su landing
+- [ ] (PMM) Campaña reestructurada según `strategy.md`: 3 ad groups (AG1 Towing, AG2 Exotic & Long-Distance con URL final por keyword, AG3 Roadside en exacta); keywords exotic en pausa hasta arreglar su landing
 - [ ] (PMM) 10 keywords en amplia de la plantilla PLL eliminadas
 - [ ] (PMM) Ubicación: presencia solamente; radio de 40 mi recentrado en 30.2752, -98.8720; exclusiones de San Antonio según la respuesta del cliente
 - [ ] (PMM) Programación 24/7 (zona horaria de la cuenta: LA)
@@ -62,8 +62,8 @@ Base: `knowledge/checklists/setup-cuenta.md`, ajustada al cliente. **(B)** = blo
 - [ ] **(B)** (PMM) Primera conversión registrada y cruzada con una llamada real del cliente
 
 ## Fase 2 — Limpieza
-- [ ] (PMM) D7 (2026-10-07): search terms → negativas; keywords sin impresiones identificadas; gasto <70% del presupuesto → abrir AG7 a frase
-- [ ] (PMM) D14 (2026-10-14): search terms → negativas; AG5/AG6 con más de $100 y 0 llamadas → pausar; AG7 >20% del gasto → pausar
+- [ ] (PMM) D7 (2026-10-07): search terms → negativas; keywords sin impresiones identificadas; gasto <70% del presupuesto → abrir AG3 (roadside) a frase
+- [ ] (PMM) D14 (2026-10-14): search terms → negativas; AG2 con más de $100 y 0 llamadas → pausar; AG3 >20% del gasto → pausar
 - [ ] (PMM) D14: evaluar el paso a Maximizar conversiones (≥15 conversiones o 14 días con tracking OK y CPC ≤ $7)
 - [ ] (PMM) D30 (2026-10-30): search terms → negativas; keywords con 0 impresiones pausadas; RSA peor por grupo reemplazado
 - [ ] (Cliente) D30: calidad de las llamadas reportada (hoja compartida: llamada → trabajo sí/no → ticket)
@@ -96,7 +96,7 @@ Base: `knowledge/checklists/setup-cuenta.md`, ajustada al cliente. **(B)** = blo
 - [ ] Search terms → negativas
 - [ ] Gasto contra los $825 mensuales
 - [ ] CPL contra el objetivo ($14.57; rango $11.70–$17.50); tendencia 7 d contra 28 d
-- [ ] % de gasto de AG7 roadside y de AG5/AG6
+- [ ] % de gasto de AG3 roadside y de AG2 exotic/long-distance
 - [ ] Anuncios rechazados o limitados
 - [ ] Impression share perdido por presupuesto y por ranking
 - [ ] Calidad de las llamadas reportada por el cliente
