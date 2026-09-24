@@ -86,3 +86,5 @@ Por ad group: headlines, descripciones, extensiones. (Puede ir en `data/ads-<cam
 
 ## Al terminar
 Resume: N campañas, N ad groups, presupuesto por campaña, CPL objetivo, landings faltantes. Siguiente: `/roadmap`.
+
+**Último paso obligatorio: `/informe`**: actualizar y republicar el artefacto del cliente (ES + EN, estilo PMM) en sus mismas URLs y entregar los dos enlaces.

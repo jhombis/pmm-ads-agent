@@ -70,7 +70,8 @@ Si el hallazgo es nuevo o útil para otras cuentas, agrega una fila al **Registr
 - **Nunca propongas pausar campañas de Display** existentes: sostienen la visibilidad del GBP. Si gastan de más, se baja su presupuesto.
 - Las cuentas de compañeros (ayuda puntual) no entran en informes propios.
 
-Si el diagnóstico se entrega como página, usar el estilo PMM (`knowledge/estilo-informes/`, `scripts/informe_html.py new/check`) en ES y EN; el desperdicio por categoría va en `.bar-spend`/`.negbars` con los colores de la guía.
 
 ## Al terminar
 Resume en 3–5 líneas: problema principal con su número, $ desperdiciado sobre el rastreable, primera acción del plan, qué hay que preguntarle al cliente. Siguiente: `/negatives` para lo propuesto; `/onboard` + `/strategy` si la cuenta necesita reestructura.
+
+**Último paso obligatorio: `/informe`**: actualizar y republicar el artefacto del cliente (ES + EN, estilo PMM) en sus mismas URLs y entregar los dos enlaces.

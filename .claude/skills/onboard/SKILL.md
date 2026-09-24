@@ -111,3 +111,5 @@ estado: onboarding
 1. Crea la carpeta desde `clients/_template/` (copia `checklist.md` vacío, `log/`, `data/`).
 2. Resume en 5 líneas: nicho, geo, presupuesto, CPL máximo, pendientes bloqueantes.
 3. Indica el siguiente paso: correr `/audit-landing`, `/competitors` y `/benchmark-interno` (pueden correr en paralelo con subagentes).
+
+**Último paso obligatorio: `/informe`**: actualizar y republicar el artefacto del cliente (ES + EN, estilo PMM) en sus mismas URLs y entregar los dos enlaces.

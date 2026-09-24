@@ -35,3 +35,5 @@ Genera `data/import-google-ads-editor.csv` con el formato de Google Ads Editor (
 
 ## Al terminar
 Resume qué se creó, en qué estado, y las verificaciones que pasaron/fallaron. Actualiza `checklist.md` Fase 1. Siguiente: activar campañas, revisar aprobación de anuncios en 24h, `/weekly-review` a los 7 días.
+
+**Último paso obligatorio: `/informe`**: actualizar y republicar el artefacto del cliente (ES + EN, estilo PMM) en sus mismas URLs y entregar los dos enlaces.

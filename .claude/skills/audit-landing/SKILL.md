@@ -71,3 +71,5 @@ Top keywords orgánicas: ayudan a saber qué términos ya tienen relevancia.
 
 ## Al terminar
 Resume veredicto, bloqueantes y cuántas landings faltan. Siguiente: `/competitors` y `/benchmark-interno` si no corrieron; luego `/strategy`.
+
+**Último paso obligatorio: `/informe`**: actualizar y republicar el artefacto del cliente (ES + EN, estilo PMM) en sus mismas URLs y entregar los dos enlaces.

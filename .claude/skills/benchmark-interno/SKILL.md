@@ -61,3 +61,5 @@ También actualiza `knowledge/benchmarks/<nicho>-<pais>.md` con los agregados (s
 
 ## Al terminar
 Resume rangos de CPL, conversiones esperadas con el presupuesto del brief, y si el presupuesto es suficiente para salir de aprendizaje. Siguiente: `/strategy`.
+
+**Último paso obligatorio: `/informe`**: actualizar y republicar el artefacto del cliente (ES + EN, estilo PMM) en sus mismas URLs y entregar los dos enlaces.

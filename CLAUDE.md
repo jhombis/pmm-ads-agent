@@ -34,7 +34,7 @@ scripts/                  utilidades (API de Google Ads, PageSpeed, etc.)
 | `log/YYYY-MM-DD.md` | /weekly-review | /weekly-review |
 | `data/` | exports CSV/JSON de la API | /weekly-review, /negatives |
 | `log/YYYY-MM-DD-diagnose.md` | /diagnose | /strategy, /weekly-review |
-| `plan-es.html` + `plan-en.html` | cualquier skill que entregue el plan/resumen al cliente | Jhombis, equipo, cliente |
+| `plan-es.html` + `plan-en.html` | /informe (al final de cada skill) | Jhombis, equipo, cliente |
 
 **Regla**: antes de ejecutar cualquier skill sobre un cliente, lee `brief.md` y `checklist.md` de ese cliente. Nunca asumas contexto que no esté en sus archivos. Si un archivo requerido no existe, indica qué skill debe correrse primero.
 
@@ -79,5 +79,6 @@ scripts/                  utilidades (API de Google Ads, PageSpeed, etc.)
 - Trabaja en español con Jhombis. Los anuncios se escriben en el idioma del mercado del cliente (inglés para US, español para Colombia).
 - Los archivos de cliente usan Markdown con front matter (`cliente`, `slug`, `pais`, `actualizado`).
 - Cuando termines un skill, resume en 3–5 líneas qué produjiste y cuál es el siguiente skill a correr.
+- **Todo skill termina con `/informe`**: se actualiza y republica el artefacto del cliente (plan ES + EN con el estilo PMM) en sus mismas URLs, y se entregan los dos enlaces. Jhombis siempre lo pide: no se pregunta, se entrega. Aplica también a `/diagnose` (`diagnostics/<cuenta>/`) y a cualquier cambio aplicado en la cuenta.
 - **Toda página, artefacto o HTML de entrega (plan, reporte, resumen para el cliente) se genera SIEMPRE en dos versiones: español e inglés.** Archivos `clients/<slug>/plan-es.html` y `plan-en.html` (o `<nombre>-es.html` / `<nombre>-en.html`), mismo contenido y diseño, cada una con un enlace a la otra. Se publican como dos artefactos y sus URLs se guardan en el front matter de `roadmap.md` (`plan_es`, `plan_en`). Al actualizar, se republican las dos en sus mismas URLs.
 - **Estilo gráfico único para toda entrega HTML**: logo PMM, paleta, tipografías y componentes de `knowledge/estilo-informes/` (guía en `README.md`, base en `plantilla.html`, logo en `pmm-logo.webp`). Se parte siempre de `python scripts/informe_html.py new <es> <en>`, no se inventa otro diseño ni se edita el `<style>`, y antes de publicar se corre `python scripts/informe_html.py check <es> <en>`.

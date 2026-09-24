@@ -26,3 +26,5 @@ description: Gestiona negativas: aplica la lista universal PMM y la del nicho a 
 
 ## Al terminar
 Resume cuántos términos se aplicaron por nivel y cuáles se descartaron por conflicto.
+
+**Último paso obligatorio: `/informe`**: actualizar y republicar el artefacto del cliente (ES + EN, estilo PMM) en sus mismas URLs y entregar los dos enlaces.

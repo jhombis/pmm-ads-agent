@@ -92,7 +92,8 @@ Una línea por fase con fecha estimada y estado (⏳ pendiente · 🔄 en curso 
 ## Salida 2: `clients/<slug>/checklist.md`
 Copia `knowledge/checklists/setup-cuenta.md`, elimina lo que no aplica (LSA si no es US, PMax si el presupuesto no lo permitirá), agrega las tareas específicas de este cliente (ajustes de landing, pendientes del brief) y pone responsable a cada ítem. Front matter con `fase_actual: 0`.
 
-Si se entrega el plan en HTML (`plan-es.html` / `plan-en.html`), se arma con el estilo PMM: `python scripts/informe_html.py new …`, componentes de `knowledge/estilo-informes/README.md` (fases con color fijo, línea de tiempo, checklist) y `check` antes de publicar.
 
 ## Al terminar
 Resume: D0, fecha estimada de lanzamiento, fecha estimada de tCPA (con el supuesto), si PMax es realista o no y por qué, y los 3 bloqueantes más importantes. Siguiente paso: resolver bloqueantes de Fase 0 y correr `/build-campaign`.
+
+**Último paso obligatorio: `/informe`**: actualizar y republicar el artefacto del cliente (ES + EN, estilo PMM) en sus mismas URLs y entregar los dos enlaces.
