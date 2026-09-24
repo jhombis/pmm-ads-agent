@@ -1,0 +1,560 @@
+<title>Plan 290 Tow &amp; Recovery</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style id="css">
+:root{
+  --bg:#EDF0F3; --surface:#FFFFFF; --surface-2:#F5F7F9; --ink:#162131; --ink-2:#4A5668; --line:#D5DBE2;
+  --accent:#D9481F; --accent-soft:#FBE4DB; --sign:#1D6B47; --sign-soft:#DCEFE4;
+  --warn:#A76A00; --warn-soft:#FBF0D6; --crit:#B3261E; --crit-soft:#F9DEDC; --blue:#1F4E8C; --blue-soft:#DFE8F5;
+  --shadow:0 1px 2px rgba(22,33,49,.06),0 2px 8px rgba(22,33,49,.05);
+  --display:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+  --body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#0F141B; --surface:#161D27; --surface-2:#1C2531; --ink:#E4E8EE; --ink-2:#9AA6B6; --line:#2A3544;
+    --accent:#FF7547; --accent-soft:#3A2119; --sign:#4CC28A; --sign-soft:#15301F;
+    --warn:#E8B04A; --warn-soft:#352914; --crit:#FF8A80; --crit-soft:#3A1B1A; --blue:#7FAEF0; --blue-soft:#172A44;
+    --shadow:none;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#0F141B; --surface:#161D27; --surface-2:#1C2531; --ink:#E4E8EE; --ink-2:#9AA6B6; --line:#2A3544;
+  --accent:#FF7547; --accent-soft:#3A2119; --sign:#4CC28A; --sign-soft:#15301F;
+  --warn:#E8B04A; --warn-soft:#352914; --crit:#FF8A80; --crit-soft:#3A1B1A; --blue:#7FAEF0; --blue-soft:#172A44;
+  --shadow:none;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:15px/1.55 var(--body);margin:0}
+.wrap{max-width:1100px;margin:0 auto;padding-inline:20px;padding-block:0 64px}
+h1,h2,h3{font-family:var(--display);font-weight:700;letter-spacing:.01em;text-wrap:balance;margin:0;line-height:1.1}
+h1{font-size:clamp(34px,6vw,54px)}
+h2{font-size:30px}
+h3{font-size:21px;font-weight:600}
+p{margin:0}
+a{color:var(--blue)}
+code,.mono{font-family:var(--mono);font-size:.88em}
+code{background:var(--surface-2);border:1px solid var(--line);border-radius:4px;padding:0 4px;overflow-wrap:anywhere}
+.eyebrow{font-family:var(--display);font-weight:600;font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2)}
+.muted{color:var(--ink-2)}
+.num{font-variant-numeric:tabular-nums}
+
+/* header */
+.top{padding-block:36px 20px;display:grid;gap:18px}
+.idrow{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center;color:var(--ink-2);font-size:14px}
+.shield{display:inline-grid;place-items:center;width:46px;height:52px;background:var(--blue);color:#fff;font-family:var(--display);font-weight:700;font-size:20px;clip-path:polygon(0 0,100% 0,100% 62%,50% 100%,0 62%);flex:none}
+.brand{display:flex;gap:14px;align-items:center}
+.lede{max-width:70ch;font-size:16.5px}
+
+/* nav */
+nav.jump{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line);margin-inline:-20px;padding-inline:20px}
+nav.jump ul{list-style:none;margin:0;padding:10px 0;display:flex;gap:6px;overflow-x:auto;scrollbar-width:thin}
+nav.jump a{display:block;white-space:nowrap;text-decoration:none;color:var(--ink-2);font-family:var(--display);font-weight:600;font-size:15px;letter-spacing:.05em;text-transform:uppercase;padding:6px 10px;border-radius:6px}
+nav.jump a:hover,nav.jump a:focus-visible{background:var(--surface);color:var(--ink);outline:none}
+
+section{padding-top:44px;scroll-margin-top:56px;display:grid;gap:16px}
+.sechead{display:grid;gap:4px}
+
+/* KPIs */
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+.kpi{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px;display:grid;gap:2px;align-content:start}
+.kpi .v{font-family:var(--display);font-weight:700;font-size:34px;line-height:1.05;font-variant-numeric:tabular-nums}
+.kpi .l{font-size:13px;color:var(--ink-2)}
+
+/* alert */
+.alert{border:1px solid var(--crit);background:var(--crit-soft);border-radius:10px;padding:16px 18px;display:grid;gap:8px}
+.alert h3{color:var(--crit)}
+.alert ul{margin:0;padding-left:20px;display:grid;gap:4px}
+
+/* next steps */
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:10px;counter-reset:s}
+.steps li{counter-increment:s;display:grid;grid-template-columns:36px 1fr;gap:12px;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 14px;align-items:start}
+.steps li::before{content:counter(s);font-family:var(--display);font-weight:700;font-size:22px;width:36px;height:36px;display:grid;place-items:center;border-radius:50%;background:var(--accent);color:#fff}
+.steps b{display:block}
+.steps .meta{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+
+/* chips */
+.chip{display:inline-flex;align-items:center;gap:4px;font-size:12px;font-weight:500;padding:2px 8px;border-radius:999px;border:1px solid var(--line);background:var(--surface-2);color:var(--ink-2);white-space:nowrap}
+.chip.pmm{background:var(--blue-soft);color:var(--blue);border-color:transparent}
+.chip.cli{background:var(--warn-soft);color:var(--warn);border-color:transparent}
+.chip.jh{background:var(--accent-soft);color:var(--accent);border-color:transparent}
+.chip.b{background:var(--crit-soft);color:var(--crit);border-color:transparent;font-weight:600}
+.chip.ok{background:var(--sign-soft);color:var(--sign);border-color:transparent}
+.chip.date{font-family:var(--mono);font-size:11.5px}
+
+/* timeline */
+.phases{display:grid;gap:10px}
+.phase{display:grid;grid-template-columns:64px 1fr;gap:14px;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.phase .badge{width:56px;height:62px;display:grid;place-items:center;font-family:var(--display);font-weight:700;font-size:22px;color:#fff;background:var(--ink-2);clip-path:polygon(0 0,100% 0,100% 62%,50% 100%,0 62%)}
+.phase.now .badge{background:var(--accent)}
+.phase.next .badge{background:var(--blue)}
+.phase.block .badge{background:var(--crit)}
+.phase.side .badge{background:var(--sign)}
+.phase .ph-top{display:flex;flex-wrap:wrap;gap:6px 12px;align-items:baseline;justify-content:space-between}
+.phase .body{display:grid;gap:6px}
+.phase .cond{font-size:14px}
+.phase .cond b{font-weight:600}
+.phase ul{margin:0;padding-left:18px;font-size:14px;display:grid;gap:2px}
+
+/* gantt */
+.gantt-wrap{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px}
+.gantt{min-width:720px;display:grid;grid-template-columns:170px 1fr;row-gap:8px;font-size:13px}
+.gantt .lbl{font-weight:500;align-self:center}
+.gantt .track{position:relative;height:22px;background:var(--surface-2);border-radius:4px}
+.gantt .bar{position:absolute;top:3px;bottom:3px;border-radius:3px;background:var(--blue)}
+.gantt .bar.a{background:var(--accent)} .gantt .bar.g{background:var(--sign)} .gantt .bar.r{background:repeating-linear-gradient(45deg,var(--crit) 0 6px,transparent 6px 10px);border:1px solid var(--crit)}
+.gantt .mk{position:absolute;top:-2px;bottom:-2px;width:3px;margin-left:-1px;background:var(--ink);border-radius:2px}
+.gantt .axis{position:relative;height:18px;color:var(--ink-2);font-family:var(--mono);font-size:11px}
+.gantt .axis span{position:absolute;transform:translateX(-50%);white-space:nowrap}
+.gantt .today{position:absolute;top:0;bottom:0;width:0;border-left:2px dashed var(--accent)}
+
+/* tables */
+.tbl{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:10px}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-family:var(--display);font-weight:600;font-size:14px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2);background:var(--surface-2)}
+tr:last-child td{border-bottom:0}
+td code{white-space:nowrap}
+td.kw{font-family:var(--mono);font-size:12.5px;line-height:1.6;min-width:260px}
+.tbl.narrow table{min-width:560px}
+.tbl.wide table{min-width:860px}
+
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px;display:grid;gap:8px;align-content:start}
+.card ul{margin:0;padding-left:18px;display:grid;gap:3px;font-size:14px}
+.card.no{border-left:4px solid var(--crit)}
+
+details{background:var(--surface);border:1px solid var(--line);border-radius:10px}
+details>summary{cursor:pointer;padding:12px 16px;font-family:var(--display);font-weight:600;font-size:18px;list-style:none;display:flex;justify-content:space-between;gap:10px;align-items:center}
+details>summary::-webkit-details-marker{display:none}
+details>summary::after{content:"+";font-size:22px;color:var(--ink-2)}
+details[open]>summary::after{content:"–"}
+details>summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:10px}
+.dbody{padding:0 16px 16px;display:grid;gap:10px}
+.hl{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:4px 16px;font-size:13.5px;margin:0;padding-left:22px}
+.hl li.pin{font-weight:600;color:var(--accent)}
+.desc{margin:0;padding-left:20px;font-size:13.5px;display:grid;gap:3px}
+.negs{display:flex;flex-wrap:wrap;gap:5px}
+.negs span{font-family:var(--mono);font-size:12px;background:var(--surface-2);border:1px solid var(--line);border-radius:4px;padding:1px 6px}
+.neg-group{display:grid;gap:6px}
+
+.score{display:flex;gap:14px;align-items:center}
+.meter{flex:1;height:12px;background:var(--surface-2);border-radius:6px;overflow:hidden;border:1px solid var(--line)}
+.meter i{display:block;height:100%;background:var(--warn)}
+.dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;vertical-align:middle}
+.s0{background:var(--crit)} .s1{background:var(--warn)} .s2{background:var(--sign)}
+
+/* checklist */
+.cl-bar{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;justify-content:space-between;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 16px}
+.savestate{font-size:13px;color:var(--ink-2)}
+.savestate.pending{color:var(--warn)} .savestate.err{color:var(--crit)} .savestate.ok{color:var(--sign)}
+.toggle{display:inline-flex;gap:8px;align-items:center;font-size:14px;cursor:pointer}
+.cl-sec{background:var(--surface);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.cl-head{display:flex;flex-wrap:wrap;gap:6px 12px;justify-content:space-between;align-items:center;padding:12px 16px;background:var(--surface-2);border-bottom:1px solid var(--line)}
+.cl-head h3{font-size:19px}
+.prog{display:flex;gap:8px;align-items:center;font-size:13px;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.prog .meter{width:120px;flex:none}
+.prog .meter i{background:var(--sign)}
+.cl-group{padding:8px 16px 0;font-family:var(--display);font-weight:600;letter-spacing:.1em;text-transform:uppercase;font-size:13px;color:var(--ink-2)}
+.cl-list{list-style:none;margin:0;padding:6px 8px 10px}
+.cl-item{display:grid;grid-template-columns:28px 1fr;gap:8px;padding:7px 8px;border-radius:6px;align-items:start}
+.cl-item:hover{background:var(--surface-2)}
+.cl-item input{width:18px;height:18px;margin:2px 0 0;accent-color:var(--sign);cursor:pointer}
+.cl-item input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.cl-item label{cursor:pointer;display:grid;gap:4px}
+.cl-item .tags{display:flex;flex-wrap:wrap;gap:5px}
+.cl-item.done .txt{color:var(--ink-2);text-decoration:line-through;text-decoration-color:var(--line)}
+.cl-item.b:not(.done){box-shadow:inset 3px 0 0 var(--crit)}
+.hidden-done .cl-item.done{display:none}
+.foot{margin-top:40px;font-size:13px;color:var(--ink-2);display:grid;gap:4px}
+@media (max-width:560px){
+  .phase{grid-template-columns:1fr}
+  .phase .badge{width:46px;height:50px;font-size:18px}
+  h2{font-size:26px}
+}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+html{scroll-behavior:smooth}
+</style>
+<div class="wrap" id="static">
+<header class="top">
+  <div class="brand"><span class="shield">290</span><div><div class="eyebrow">Plan Google Ads · PMM</div><h1>290 Tow and Recovery</h1></div></div>
+  <div class="idrow">
+    <span>Cuenta <b class="mono">213-019-5545</b> · PLL 004046</span>
+    <span>Fredericksburg, TX 78624 · radio 40 mi</span>
+    <span>Towing light / medium · EN</span>
+    <span>Actualizado <b class="mono">2026-09-24</b></span>
+  </div>
+  <p class="lede">Todo lo decidido hasta hoy: estrategia, estructura de la campaña, anuncios, negativas, fechas por fase y el checklist de ejecución. Las fechas son proyecciones: se pasa de fase solo cuando se cumple la condición de paso.</p>
+</header>
+
+<nav class="jump" aria-label="Secciones">
+  <ul>
+    <li><a href="#resumen">Resumen</a></li>
+    <li><a href="#pasos">Próximos pasos</a></li>
+    <li><a href="#fechas">Fechas</a></li>
+    <li><a href="#campana">Campaña</a></li>
+    <li><a href="#anuncios">Anuncios</a></li>
+    <li><a href="#negativas">Negativas</a></li>
+    <li><a href="#landing">Landing</a></li>
+    <li><a href="#mercado">Mercado</a></li>
+    <li><a href="#checklist">Checklist</a></li>
+    <li><a href="#supuestos">Supuestos</a></li>
+  </ul>
+</nav>
+
+<section id="resumen">
+  <div class="sechead"><div class="eyebrow">Resumen</div><h2>Números que guían el plan</h2></div>
+  <div class="kpis">
+    <div class="kpi"><span class="l">Pauta mensual (fee $1,500)</span><span class="v">$825</span><span class="l">≈ $27/día · 24/7</span></div>
+    <div class="kpi"><span class="l">CPL objetivo (por llamada)</span><span class="v">$14.57</span><span class="l">Aceptable $11.70–$17.50 · mediana MCC</span></div>
+    <div class="kpi"><span class="l">Llamadas esperadas / mes</span><span class="v">35–55</span><span class="l">125–165 clics · conv. ~27%</span></div>
+    <div class="kpi"><span class="l">Campañas / ad groups</span><span class="v">1 / 7</span><span class="l">Search consolidada, frase + exacta</span></div>
+    <div class="kpi"><span class="l">tCPA estimado</span><span class="v">11 nov</span><span class="l">Si hay ≥30 conv. en 30 días</span></div>
+  </div>
+  <div class="alert" role="note">
+    <h3>La cuenta ya está gastando con la plantilla PLL</h3>
+    <ul>
+      <li>Activa desde el <b>17/09</b>: Maximizar clics, 10 keywords en <b>amplia</b>, sin negativas.</li>
+      <li>6 días: <b class="num">$165.57</b>, 14 clics, <b>CPC $11.83</b> (1.8× la mediana del MCC), <b>0 conversiones</b>.</li>
+      <li><b>43% de desperdicio claro</b>: "car jumper", "car dollies", "cheap tow truck", "rv haulers", "what does roadside assistance cover".</li>
+      <li>35% del gasto fue a Fair Oaks Ranch (borde de San Antonio) y solo 7% a Fredericksburg.</li>
+      <li><b>Decisión pendiente (Jhombis):</b> qué hacer con la campaña durante la Fase 0 (dejarla, pausarla o cargar solo negativas). Cada semana así cuesta ~$190 con ~40% de desperdicio.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="pasos">
+  <div class="sechead"><div class="eyebrow">Esta semana · Fase 0</div><h2>Próximos pasos, en orden</h2></div>
+  <ol class="steps">
+    <li><div><b>Decidir qué pasa con la campaña actual mientras dura la Fase 0</b><span class="muted">Dejarla, pausarla o cargar solo las negativas. Es lo único que frena el desperdicio hoy.</span><div class="meta"><span class="chip jh">Jhombis</span><span class="chip date">hoy</span></div></div></li>
+    <li><div><b>Probar las 3 conversiones con Tag Assistant</b><span class="muted">Calls from Ads con umbral de 60 s, Website Calls (clic en <code>tel:</code>) y Form Fill. Confirmar que AW-18397446767 es de esta cuenta y que una llamada no cuenta doble.</span><div class="meta"><span class="chip pmm">PMM</span><span class="chip b">Bloqueante</span><span class="chip date">→ 26/09</span></div></div></li>
+    <li><div><b>Arreglar el sitio: CTA de exotic + página de gracias</b><span class="muted">La página <code>/exotic-vehicle-towing/</code> no muestra botones. Crear <code>/thank-you/</code>, redirect del formulario Elementor y campos UTM/GCLID.</span><div class="meta"><span class="chip pmm">PMM</span><span class="chip b">Bloqueante</span><span class="chip date">→ 26/09</span></div></div></li>
+    <li><div><b>Pedir al cliente lo que falta</b><span class="muted">Quién contesta de noche y en cuánto tiempo; ticket y margen por servicio; si atiende Boerne / Fair Oaks Ranch; si tiene flatbed, RV, motos; licencia TDLR y seguro; si confirma "precio antes de enganchar".</span><div class="meta"><span class="chip cli">Cliente</span><span class="chip b">Respuesta a leads: bloqueante</span><span class="chip date">→ 29/09</span></div></div></li>
+    <li><div><b>Cargar negativas y ajustar la cuenta</b><span class="muted">Lista universal PMM + <code>data/negatives-nicho.txt</code> a nivel de cuenta (vía <code>/negatives</code>). Desactivar la aplicación automática de recomendaciones.</span><div class="meta"><span class="chip pmm">PMM</span><span class="chip b">Bloqueante</span><span class="chip date">→ 29/09</span></div></div></li>
+    <li><div><b>Validar el volumen local en Keyword Planner</b><span class="muted">Geo 40 mi de 78624, con las keywords de <code>data/keywords.csv</code>. Confirma si la campaña puede gastar $27/día sin amplia.</span><div class="meta"><span class="chip pmm">PMM</span><span class="chip date">→ 29/09</span></div></div></li>
+    <li><div><b>Arrancar el Google Business Profile</b><span class="muted">Área de servicio, categoría "Towing service", verificación por video. Desbloquea Maps, reseñas y LSA.</span><div class="meta"><span class="chip cli">Cliente</span><span class="chip date">→ ~15/10</span></div></div></li>
+    <li><div><b>Reestructurar la campaña</b><span class="muted">Con la Fase 0 completa: <code>/build-campaign</code> (requiere API de Google Ads configurada) o manual en la UI/Windsor, según la estructura de abajo.</span><div class="meta"><span class="chip pmm">PMM</span><span class="chip date">30/09</span></div></div></li>
+  </ol>
+</section>
+
+<section id="fechas">
+  <div class="sechead"><div class="eyebrow">Roadmap · D0 = 24/09/2026</div><h2>Fechas y condiciones de paso</h2></div>
+  <div class="gantt-wrap" role="img" aria-label="Cronograma de fases de septiembre 2026 a enero 2027">
+    <div class="gantt" id="gantt">
+      <div></div>
+      <div class="axis"><span style="left:0%">24 sep</span><span style="left:19.3%">14 oct</span><span style="left:38.6%">3 nov</span><span style="left:57.9%">23 nov</span><span style="left:77.2%">13 dic</span><span style="left:96.5%">2 ene</span></div>
+      <div class="lbl">F0 Fundación</div><div class="track"><div class="bar a" style="left:0%;width:4.8%"></div><div class="today" style="left:0%"></div></div>
+      <div class="lbl">F1 Reestructuración</div><div class="track"><div class="bar" style="left:5.8%;width:6.8%"></div></div>
+      <div class="lbl">F2 Limpieza D7·D14·D30</div><div class="track"><div class="bar" style="left:12.6%;width:23.2%"></div><div class="mk" style="left:12.6%"></div><div class="mk" style="left:19.3%"></div><div class="mk" style="left:34.8%"></div></div>
+      <div class="lbl">F3 Max Conv → tCPA</div><div class="track"><div class="bar" style="left:19.3%;width:27.1%"></div><div class="mk" style="left:46.4%"></div></div>
+      <div class="lbl">GBP + LSA</div><div class="track"><div class="bar g" style="left:0%;width:47.3%"></div><div class="mk" style="left:20.3%"></div><div class="mk" style="left:47.3%"></div></div>
+      <div class="lbl">Landing (mejoras)</div><div class="track"><div class="bar g" style="left:0%;width:19.3%"></div></div>
+      <div class="lbl">Revisión PMax (bloqueada)</div><div class="track"><div class="bar r" style="left:94.2%;width:4%"></div></div>
+    </div>
+  </div>
+  <div class="phases">
+    <div class="phase now"><div class="badge">F0</div><div class="body"><div class="ph-top"><h3>Fundación</h3><span class="chip date">24/09 → 29/09</span></div>
+      <p class="cond"><b>Pasa cuando:</b> tracking verificado, CTA de exotic arreglado, página de gracias, negativas cargadas, geo recentrada y proceso de respuesta a leads confirmado.</p>
+      <p class="muted">Estado: en curso. Si el cliente tarda con ticket y geo, se reestructura igual con supuestos marcados.</p></div></div>
+    <div class="phase next"><div class="badge">F1</div><div class="body"><div class="ph-top"><h3>Reestructuración Search</h3><span class="chip date">30/09 → 07/10</span></div>
+      <p class="cond"><b>Pasa cuando:</b> 7 días activa, anuncios aprobados y ≥1 conversión verificada (una llamada real que llegó al cliente).</p>
+      <ul><li>7 ad groups en frase/exacta; AG5 exotic en pausa hasta arreglar su landing.</li><li>Maximizar clics con tope de CPC $6.50 · $27/día · 24/7.</li><li>Si en D7 gasta &lt;70% del presupuesto: abrir AG7 a frase o sumar "motorcycle towing". No volver a la amplia.</li></ul></div></div>
+    <div class="phase"><div class="badge">F2</div><div class="body"><div class="ph-top"><h3>Limpieza</h3><span class="chip date">D7 07/10 · D14 14/10 · D30 30/10</span></div>
+      <p class="cond"><b>Pasa cuando:</b> las 3 revisiones con <code>/weekly-review</code> hechas, negativas aplicadas y keywords sin impresiones en 30 días pausadas.</p>
+      <ul><li>Pausar AG5/AG6 si gastan &gt;$100 sin llamadas · AG7 roadside tope 20% del gasto.</li><li>D30: RSA peor por grupo reemplazado + calidad de llamadas reportada por el cliente.</li></ul></div></div>
+    <div class="phase"><div class="badge">F3</div><div class="body"><div class="ph-top"><h3>Optimización de puja</h3><span class="chip date">Max Conv ~14/10 · tCPA ~11/11</span></div>
+      <p class="cond"><b>Max Conv cuando:</b> ≥15 conv. verificadas o 14 días con tracking OK y CPC ≤ $7. <b>tCPA cuando:</b> ≥30 conv. en 30 días; tCPA = CPL real × 1.1.</p>
+      <p class="muted">Supuesto: $27 ÷ $14.57 = 1.85 conv./día → 21 días mínimo + 2 semanas porque el presupuesto está por debajo de 3× CPL ($44/día). Si no se cumple, no se fuerza: se queda en Max Conv.</p></div></div>
+    <div class="phase block"><div class="badge">F4</div><div class="body"><div class="ph-top"><h3>Remarketing (RLSA)</h3><span class="chip b">Probablemente no califica</span></div>
+      <p class="cond"><b>Pasa cuando:</b> audiencia de visitantes ≥1,000 en 30 días. Con ~150 clics/mes y orgánico ≈ 0, no se alcanza. Towing es compra de emergencia: aporta poco.</p></div></div>
+    <div class="phase block"><div class="badge">F5</div><div class="body"><div class="ph-top"><h3>Performance Max</h3><span class="chip b">Bloqueada · revisar 29/12</span></div>
+      <ul><li>Presupuesto: necesita ~$44/día solo para PMax; la cuenta entera tiene $27.</li><li>Sin assets propios (sitio con fotos de stock), sin GBP, sin reseñas.</li><li>Faltan ≥4 semanas de tCPA estable con ≥30 conv./mes.</li><li>Qué la destraba: pauta ≥$1,300/mes, fotos y video reales, GBP con reseñas.</li></ul></div></div>
+    <div class="phase"><div class="badge">F6</div><div class="body"><div class="ph-top"><h3>Conversiones offline</h3><span class="chip">Futuro</span></div>
+      <p class="cond">Sin CRM. Mínimo útil: una hoja compartida llamada → trabajo sí/no → ticket para medir calidad en el D30.</p></div></div>
+    <div class="phase side"><div class="badge">GBP</div><div class="body"><div class="ph-top"><h3>Pista paralela: GBP + LSA</h3><span class="chip date">GBP ~15/10 · LSA ~12/11</span></div>
+      <ul><li>Cliente crea y verifica el GBP → PMM lo vincula a Ads (activo de ubicación, Maps).</li><li>Campaña de reseñas: los competidores tienen 70–157.</li><li>LSA: solicitud ~15/10 con licencia TDLR, seguro y background check; verificación 2–4 semanas. Presupuesto aparte o de los $825: decide el cliente.</li></ul></div></div>
+  </div>
+</section>
+
+<section id="campana">
+  <div class="sechead"><div class="eyebrow">Estrategia</div><h2>Tipo de campaña y estructura</h2>
+  <p class="muted" style="max-width:75ch">Una sola campaña Search. Con $27/día, dividir por servicio deja cada campaña por debajo de 1× CPL/día y ninguna sale de aprendizaje (la regla pide ≥3× CPL/día ≈ $44). La estructura que mejor rinde en el MCC es justo esta: 1 campaña de radio con pocas keywords de alta intención.</p></div>
+  <div class="tbl narrow"><table>
+    <tbody>
+      <tr><th scope="row">Campaña</th><td>Search | Towing | Hill Country 40mi (se reestructura la existente "ENHPRM Radius"; se puede conservar el nombre PLL)</td></tr>
+      <tr><th scope="row">Objetivo</th><td>Llamadas: Calls from Ads + Website Calls (primarias). Form Fill como apoyo.</td></tr>
+      <tr><th scope="row">Presupuesto</th><td class="num">$27/día (100%) · ~$825/mes</td></tr>
+      <tr><th scope="row">Puja</th><td>F1 Maximizar clics con tope CPC <b>$6.50</b> → F2 Maximizar conversiones → F3 tCPA (CPL real × 1.1)</td></tr>
+      <tr><th scope="row">Geo</th><td><b>Presencia</b> solamente · radio 40 mi <b>recentrado</b> en Fredericksburg (30.2752, -98.8720) · excluir Fair Oaks Ranch, Bulverde, Spring Branch hasta que el cliente confirme</td></tr>
+      <tr><th scope="row">Horario</th><td>24/7 (zona horaria de la cuenta: Los Ángeles → reportes por hora con −2 h)</td></tr>
+      <tr><th scope="row">Redes</th><td>Solo Búsqueda. Sin socios, sin Display. Recomendaciones automáticas apagadas. Rotación optimizar.</td></tr>
+      <tr><th scope="row">Match types</th><td>Frase por defecto, exacta en los términos top. <b>Sin amplia</b> (todo el desperdicio de los primeros 6 días entró por amplia).</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>7 ad groups por tema</h3>
+  <div class="tbl wide"><table>
+    <thead><tr><th>Ad group</th><th>Keywords · [exacta] "frase"</th><th>Landing</th><th>H1 pinneado</th></tr></thead>
+    <tbody>
+      <tr><td><b>AG1 Towing Near Me</b><br><span class="muted">Núcleo, ~55–60% del gasto</span></td><td class="kw">[tow truck near me] [towing near me] [towing company near me] "tow truck near me" "towing near me" "towing company near me" "towing service near me" "tow service near me" "tow truck company near me" "car towing near me" "tow trucks near me" "car towing service" "tow truck service" "tow my car"</td><td><code>/</code></td><td>Tow Truck Near You - 24/7</td></tr>
+      <tr><td><b>AG2 Wrecker Service</b><br><span class="muted">"Wrecker" es el término de TX</span></td><td class="kw">[wrecker service near me] "wrecker service near me" "wreckers near me" "wrecker service" "wrecker near me"</td><td><code>/light-medium-duty-towing/</code></td><td>Wrecker Service Near You</td></tr>
+      <tr><td><b>AG3 24/7 Emergency</b><br><span class="muted">Urgencia, CPC distinto</span></td><td class="kw">[24 hour towing near me] "24 hour towing near me" "emergency towing" "24 hour tow truck" "24 hour towing" "emergency tow truck" "towing open now"</td><td><code>/</code></td><td>24 Hour Towing - Call Now</td></tr>
+      <tr><td><b>AG4 Towing + Ciudad</b><br><span class="muted">&lt;100 búsquedas/ciudad → 1 grupo</span></td><td class="kw">"towing fredericksburg tx" "tow truck fredericksburg" "fredericksburg towing" "towing kerrville tx" "kerrville towing" "tow truck kerrville tx" "wrecker service kerrville tx" "towing johnson city" "tow truck llano tx" "towing comfort tx" "towing blanco tx"</td><td><code>/</code></td><td>{LOCATION(City):Hill Country} Towing</td></tr>
+      <tr><td><b>AG5 Exotic &amp; Flatbed</b><br><span class="muted">Ticket alto, CPC $2.56, sin competidor local</span><br><span class="chip b">En pausa hasta arreglar CTA</span></td><td class="kw">[exotic car towing] "exotic car towing" "luxury car towing" "classic car towing" "medium duty towing" · flatbed solo si el cliente lo confirma</td><td><code>/exotic-vehicle-towing/</code></td><td>Exotic Car Towing</td></tr>
+      <tr><td><b>AG6 Long-Distance</b><br><span class="muted">Solo con ancla geo: el genérico lo pagan brokers</span></td><td class="kw">"long distance towing near me" "long distance car towing" "long distance towing fredericksburg" "long distance towing texas" "tow car to san antonio" "tow car to austin"</td><td><code>/local-long-distance-towing/</code></td><td>Long-Distance Towing</td></tr>
+      <tr><td><b>AG7 Roadside</b><br><span class="muted">Solo exacta · tope 20% del gasto</span></td><td class="kw">[roadside assistance near me] [roadside service near me] [jump start near me] [flat tire change near me]</td><td><code>/roadside-assistance/</code></td><td>Roadside Assistance Near You</td></tr>
+    </tbody>
+  </table></div>
+  <div class="grid2">
+    <div class="card"><h3>Negativas por ad group</h3><ul>
+      <li><b>AG1 / AG3:</b> roadside, jump, tire (empujan a AG7)</li>
+      <li><b>AG4:</b> near me (no competir con AG1)</li>
+      <li><b>AG6:</b> shipping, transport, carrier, enclosed</li>
+      <li><b>AG7:</b> towing, tow truck (van a AG1)</li>
+      <li><b>AG5:</b> cheap; "near me" solo si canibaliza AG1 (revisar semana 2)</li></ul></div>
+    <div class="card"><h3>Reglas de control</h3><ul>
+      <li>AG7 roadside &gt;20% del gasto semanal → pausar.</li>
+      <li>AG5 o AG6 con &gt;$100 y 0 llamadas en 30 días → pausar.</li>
+      <li>Gasto &lt;70% del presupuesto en D7 → abrir AG7 a frase o sumar moto. Nunca volver a amplia.</li>
+      <li>Umbral de llamada 60 s; revisar conteo doble Calls from Ads + Website Calls.</li></ul></div>
+  </div>
+  <h3>Por qué NO (todavía)</h3>
+  <div class="grid2">
+    <div class="card no"><b>Performance Max</b><p class="muted">Sin conversiones verificadas, sin fotos propias, sin GBP y con $27/día. Revisión el 29/12.</p></div>
+    <div class="card no"><b>Concordancia amplia</b><p class="muted">CPC $11.83 y 43% de desperdicio en 6 días. Prueba en F3 solo con aprobación de Jhombis.</p></div>
+    <div class="card no"><b>Display / Demand Gen / Video</b><p class="muted">No para towing local. Una cuenta del MCC quemó $1,377 en clics basura de Display.</p></div>
+    <div class="card no"><b>Campaña de marca</b><p class="muted">No hay búsquedas de "290 tow". Se reevalúa si aparece en search terms.</p></div>
+    <div class="card no"><b>Campañas por servicio / STAG por ciudad</b><p class="muted">Presupuesto insuficiente para separar; ninguna ciudad pasa de 100 búsquedas/mes.</p></div>
+    <div class="card no"><b>Max Conversiones desde el día 1</b><p class="muted">Sin señal verificada, con $27/día sube los CPC. Primero Max clics con tope.</p></div>
+  </div>
+</section>
+
+<section id="anuncios">
+  <div class="sechead"><div class="eyebrow">Copy · EN</div><h2>Anuncios RSA y assets</h2>
+  <p class="muted" style="max-width:75ch">3 RSA por ad group con el mismo set de 15 headlines y 4 descripciones. <b>RSA A</b>: solo H1 pinneado. <b>RSA B</b>: además "Upfront Price Before We Tow" en posición 2 (prueba precio). <b>RSA C</b>: "Navy Veteran Owned &amp; Operated" en posición 2 (prueba confianza). Límites de caracteres validados. Sin teléfono en el texto y sin "licensed / insured" ni TDLR hasta que el cliente los confirme.</p></div>
+  <div style="display:grid;gap:8px"><details><summary><span>AG1 Towing Near Me <span class="muted" style="font-family:var(--body);font-size:13px;font-weight:400">· /light-medium-duty-towing/</span></span></summary><div class="dbody"><div class="eyebrow">15 headlines · el primero va pinneado</div><ol class="hl"><li class="pin">Tow Truck Near You - 24/7</li><li class="">24/7 Local Towing Dispatch</li><li class="">Navy Veteran Owned &amp; Operated</li><li class="">Upfront Price Before We Tow</li><li class="">No Hidden Fees - Ever</li><li class="">Free Quote Over The Phone</li><li class="">10% Senior Discount</li><li class="">Based In Fredericksburg, TX</li><li class="">Serving The Texas Hill Country</li><li class="">Light &amp; Medium-Duty Towing</li><li class="">Call Now For A Fast Quote</li><li class="">Fast Towing When You Need It</li><li class="">Cars, SUVs, Pickups &amp; Vans</li><li class="">Stranded? We&#x27;re On Our Way</li><li class="">Careful, Damage-Free Towing</li></ol><div class="eyebrow">4 descripciones</div><ol class="desc"><li>Local tow truck serving Fredericksburg &amp; the Hill Country 24/7. Call for a fast quote.</li><li>Upfront price on the phone before we hook your car. No hidden fees, no surprises.</li><li>Navy Veteran owned &amp; operated. Light &amp; medium-duty towing for cars, SUVs and pickups.</li><li>Broken down on the road? Call 290 Tow &amp; Recovery now - fast, friendly, professional.</li></ol><p class="muted" style="font-size:13px">Paths: /towing/near-you</p></div></details><details><summary><span>AG2 Wrecker Service <span class="muted" style="font-family:var(--body);font-size:13px;font-weight:400">· /light-medium-duty-towing/</span></span></summary><div class="dbody"><div class="eyebrow">15 headlines · el primero va pinneado</div><ol class="hl"><li class="pin">Wrecker Service Near You</li><li class="">24/7 Local Towing Dispatch</li><li class="">Navy Veteran Owned &amp; Operated</li><li class="">Upfront Price Before We Tow</li><li class="">No Hidden Fees - Ever</li><li class="">Free Quote Over The Phone</li><li class="">10% Senior Discount</li><li class="">Based In Fredericksburg, TX</li><li class="">Serving The Texas Hill Country</li><li class="">Light &amp; Medium-Duty Towing</li><li class="">Call Now For A Fast Quote</li><li class="">Local Wrecker - Fast Response</li><li class="">Hill Country Wrecker Service</li><li class="">Cars, SUVs, Pickups &amp; Vans</li><li class="">Careful, Damage-Free Towing</li></ol><div class="eyebrow">4 descripciones</div><ol class="desc"><li>Hill Country wrecker service 24/7 from Fredericksburg. Call now for a fast quote.</li><li>Upfront price on the phone before we hook your vehicle. No hidden fees, no surprises.</li><li>Navy Veteran owned &amp; operated. Light &amp; medium-duty wrecker service you can trust.</li><li>Stuck or broken down? Call 290 Tow &amp; Recovery now - fast, friendly, professional.</li></ol><p class="muted" style="font-size:13px">Paths: /wrecker/service</p></div></details><details><summary><span>AG3 24/7 Emergency Towing <span class="muted" style="font-family:var(--body);font-size:13px;font-weight:400">· /</span></span></summary><div class="dbody"><div class="eyebrow">15 headlines · el primero va pinneado</div><ol class="hl"><li class="pin">24 Hour Towing - Call Now</li><li class="">24/7 Local Towing Dispatch</li><li class="">Navy Veteran Owned &amp; Operated</li><li class="">Upfront Price Before We Tow</li><li class="">No Hidden Fees - Ever</li><li class="">Free Quote Over The Phone</li><li class="">10% Senior Discount</li><li class="">Based In Fredericksburg, TX</li><li class="">Serving The Texas Hill Country</li><li class="">Light &amp; Medium-Duty Towing</li><li class="">Call Now For A Fast Quote</li><li class="">Emergency Towing Day Or Night</li><li class="">Stranded? We&#x27;re On Our Way</li><li class="">Real People Answer 24/7</li><li class="">Fast Towing When You Need It</li></ol><div class="eyebrow">4 descripciones</div><ol class="desc"><li>Emergency towing 24 hours a day in Fredericksburg &amp; the Hill Country. Call right now.</li><li>Day or night, a real person answers. Upfront price on the phone - no hidden fees.</li><li>Navy Veteran owned &amp; operated. Fast, careful towing for cars, SUVs and pickups.</li><li>Broken down late at night? Call 290 Tow &amp; Recovery - we&#x27;re up and ready to roll.</li></ol><p class="muted" style="font-size:13px">Paths: /24-7/towing</p></div></details><details><summary><span>AG4 Towing + Ciudad <span class="muted" style="font-family:var(--body);font-size:13px;font-weight:400">· /</span></span></summary><div class="dbody"><div class="eyebrow">15 headlines · el primero va pinneado</div><ol class="hl"><li class="pin">{LOCATION(City):Hill Country} Towing</li><li class="">24/7 Local Towing Dispatch</li><li class="">Navy Veteran Owned &amp; Operated</li><li class="">Upfront Price Before We Tow</li><li class="">No Hidden Fees - Ever</li><li class="">Free Quote Over The Phone</li><li class="">10% Senior Discount</li><li class="">Based In Fredericksburg, TX</li><li class="">Serving The Texas Hill Country</li><li class="">Light &amp; Medium-Duty Towing</li><li class="">Call Now For A Fast Quote</li><li class="">Local Tow Truck - Fast Arrival</li><li class="">Kerrville, Comfort &amp; Llano Too</li><li class="">Stranded? We&#x27;re On Our Way</li><li class="">Fast Towing When You Need It</li></ol><div class="eyebrow">4 descripciones</div><ol class="desc"><li>Local towing in Fredericksburg, Kerrville, Johnson City, Llano &amp; nearby. Call 24/7.</li><li>Upfront price on the phone before we hook your car. No hidden fees, no surprises.</li><li>Navy Veteran owned &amp; operated. Light &amp; medium-duty towing you can count on.</li><li>Hill Country local, not a national call center. Call 290 Tow &amp; Recovery now.</li></ol><p class="muted" style="font-size:13px">Paths: /towing/hill-country</p></div></details><details><summary><span>AG5 Exotic &amp; Flatbed Towing <span class="muted" style="font-family:var(--body);font-size:13px;font-weight:400">· /exotic-vehicle-towing/</span></span></summary><div class="dbody"><div class="eyebrow">15 headlines · el primero va pinneado</div><ol class="hl"><li class="pin">Exotic Car Towing</li><li class="">24/7 Local Towing Dispatch</li><li class="">Navy Veteran Owned &amp; Operated</li><li class="">Upfront Price Before We Tow</li><li class="">No Hidden Fees - Ever</li><li class="">Free Quote Over The Phone</li><li class="">10% Senior Discount</li><li class="">Based In Fredericksburg, TX</li><li class="">Serving The Texas Hill Country</li><li class="">Light &amp; Medium-Duty Towing</li><li class="">Call Now For A Fast Quote</li><li class="">Luxury &amp; Classic Car Towing</li><li class="">Low-Clearance Vehicle Experts</li><li class="">Careful, Damage-Free Towing</li><li class="">Sports, Classic &amp; Custom Cars</li></ol><div class="eyebrow">4 descripciones</div><ol class="desc"><li>Exotic, luxury &amp; classic car towing with the care your vehicle deserves. Call 24/7.</li><li>Safe loading for lowered and high-end vehicles. Upfront price before we tow.</li><li>Navy Veteran owned &amp; operated in Fredericksburg, TX. Local, careful and on call 24/7.</li><li>Showroom, shop, event or home - we move your exotic car safely. Get a quote now.</li></ol><p class="muted" style="font-size:13px">Paths: /exotic/towing</p></div></details><details><summary><span>AG6 Long-Distance Towing <span class="muted" style="font-family:var(--body);font-size:13px;font-weight:400">· /local-long-distance-towing/</span></span></summary><div class="dbody"><div class="eyebrow">15 headlines · el primero va pinneado</div><ol class="hl"><li class="pin">Long-Distance Towing</li><li class="">24/7 Local Towing Dispatch</li><li class="">Navy Veteran Owned &amp; Operated</li><li class="">Upfront Price Before We Tow</li><li class="">No Hidden Fees - Ever</li><li class="">Free Quote Over The Phone</li><li class="">10% Senior Discount</li><li class="">Based In Fredericksburg, TX</li><li class="">Serving The Texas Hill Country</li><li class="">Light &amp; Medium-Duty Towing</li><li class="">Call Now For A Fast Quote</li><li class="">Tow Anywhere In Texas</li><li class="">Local &amp; Long-Distance Tows</li><li class="">Moving A Car Across Texas?</li><li class="">Non-Running Vehicles Welcome</li></ol><div class="eyebrow">4 descripciones</div><ol class="desc"><li>Long-distance towing from Fredericksburg to anywhere in Texas. Call for a quote.</li><li>Upfront price on the phone before we tow - no hidden fees, no broker markup.</li><li>Navy Veteran owned &amp; operated. Cars, small trucks &amp; motorcycles moved with care.</li><li>Relocating or bought a car out of town? We handle it door to door. Call today.</li></ol><p class="muted" style="font-size:13px">Paths: /long-distance/towing</p></div></details><details><summary><span>AG7 Roadside (exacta, tope) <span class="muted" style="font-family:var(--body);font-size:13px;font-weight:400">· /roadside-assistance/</span></span></summary><div class="dbody"><div class="eyebrow">15 headlines · el primero va pinneado</div><ol class="hl"><li class="pin">Roadside Assistance Near You</li><li class="">24/7 Local Towing Dispatch</li><li class="">Navy Veteran Owned &amp; Operated</li><li class="">Upfront Price Before We Tow</li><li class="">No Hidden Fees - Ever</li><li class="">Free Quote Over The Phone</li><li class="">10% Senior Discount</li><li class="">Based In Fredericksburg, TX</li><li class="">Serving The Texas Hill Country</li><li class="">Light &amp; Medium-Duty Towing</li><li class="">Call Now For A Fast Quote</li><li class="">Jump Starts &amp; Flat Tires</li><li class="">Stranded? We&#x27;re On Our Way</li><li class="">Real People Answer 24/7</li><li class="">Fast Help When You Need It</li></ol><div class="eyebrow">4 descripciones</div><ol class="desc"><li>24/7 roadside help in Fredericksburg &amp; the Hill Country: jump starts and flat tires.</li><li>Upfront price on the phone before we roll. No membership needed, no hidden fees.</li><li>Navy Veteran owned &amp; operated. Fast, friendly roadside service you can trust.</li><li>Stuck on the side of the road? Call 290 Tow &amp; Recovery - we&#x27;ll get you moving.</li></ol><p class="muted" style="font-size:13px">Paths: /roadside/help</p></div></details></div>
+  <div class="grid2">
+    <div class="card"><h3>Sitelinks</h3><ul>
+      <li><b>Light &amp; Medium-Duty</b> → /light-medium-duty-towing/</li>
+      <li><b>Exotic Car Towing</b> → /exotic-vehicle-towing/</li>
+      <li><b>Long-Distance Towing</b> → /local-long-distance-towing/</li>
+      <li><b>Roadside Assistance</b> → /roadside-assistance/</li></ul></div>
+    <div class="card"><h3>Callouts y snippet</h3>
+      <div class="negs"><span>24/7 Towing Dispatch</span><span>Navy Veteran Owned</span><span>Upfront Pricing</span><span>No Hidden Fees</span><span>Free Phone Quotes</span><span>10% Senior Discount</span><span>Local Fredericksburg Team</span><span>Real People Answer 24/7</span></div>
+      <p class="muted" style="font-size:14px">Snippet "Services": Light-Duty Towing · Medium-Duty Towing · Exotic Car Towing · Long-Distance Towing · Roadside Assistance</p></div>
+    <div class="card"><h3>Llamada, ubicación, imágenes</h3><ul>
+      <li>Llamada: (830) 463-8318 con número de reenvío de Google · umbral 60 s · 24/7</li>
+      <li>Ubicación: cuando exista y se verifique el GBP</li>
+      <li>Imágenes: no hasta tener fotos reales de las grúas</li></ul></div>
+  </div>
+</section>
+
+<section id="negativas">
+  <div class="sechead"><div class="eyebrow">Nivel cuenta</div><h2>Negativas</h2>
+  <p class="muted" style="max-width:75ch">Lista universal PMM (empleo, DIY, gratis, productos, reseñas, legal, adulto) + lista de nicho y cliente. Concordancia de frase. No se excluye "san antonio" suelto porque bloquearía "tow car to san antonio" de AG6.</p></div>
+  <details open><summary>Lista de nicho + cliente · 121 términos</summary><div class="dbody"><div class="neg-group"><div class="eyebrow">Towing (lista de nicho PMM) · 14</div><div class="negs"><span>junkyard</span><span>junk yard</span><span>salvage</span><span>scrap</span><span>car for cash</span><span>sell my car</span><span>tow truck for sale</span><span>tow truck driver</span><span>tow truck jobs</span><span>dmv</span><span>impound lot</span><span>tow hitch</span><span>tow bar</span><span>trailer</span></div></div><div class="neg-group"><div class="eyebrow">Desperdicio real de la cuenta (18–23/09) · 11</div><div class="negs"><span>jumper</span><span>jump starter</span><span>jump box</span><span>battery charger</span><span>dolly</span><span>dollies</span><span>hauler</span><span>haulers</span><span>what does</span><span>cover</span><span>cheap</span></div></div><div class="neg-group"><div class="eyebrow">Equipo / compra de grúas · 7</div><div class="negs"><span>rollback tow truck</span><span>wrecker trucks</span><span>wrecker for sale</span><span>tow truck bed</span><span>wheel lift</span><span>tow straps</span><span>tow rope</span></div></div><div class="neg-group"><div class="eyebrow">Fuera de servicio (el cliente es light/medium) · 8</div><div class="negs"><span>heavy duty</span><span>semi</span><span>semi truck</span><span>18 wheeler</span><span>big rig</span><span>tractor trailer</span><span>bus towing</span><span>rotator</span></div></div><div class="neg-group"><div class="eyebrow">Transporte / brokers (protege long-distance) · 12</div><div class="negs"><span>auto transport</span><span>car shipping</span><span>ship a car</span><span>ship my car</span><span>shipping</span><span>enclosed car transport</span><span>enclosed auto transport</span><span>car carrier</span><span>broker</span><span>uship</span><span>shiply</span><span>montway</span></div></div><div class="neg-group"><div class="eyebrow">Roadside de terceros / seguros · 11</div><div class="negs"><span>aaa</span><span>geico</span><span>progressive</span><span>state farm</span><span>allstate</span><span>insurance roadside</span><span>roadside assistance plan</span><span>roadside assistance program</span><span>freeway service patrol</span><span>roadside assistance number</span><span>roadside assistance phone number</span></div></div><div class="neg-group"><div class="eyebrow">Ticket bajo / CPC alto (F1) · 8</div><div class="negs"><span>fuel delivery</span><span>gas delivery</span><span>ran out of gas</span><span>battery replacement</span><span>battery change</span><span>tire shop</span><span>tire store</span><span>locksmith</span></div></div><div class="neg-group"><div class="eyebrow">Geo fuera de mercado · 19</div><div class="negs"><span>virginia</span><span>va</span><span>22401</span><span>22405</span><span>22407</span><span>culpeper</span><span>stafford</span><span>spotsylvania</span><span>shanks</span><span>tennessee</span><span>tn</span><span>towing san antonio</span><span>tow truck san antonio</span><span>san antonio towing</span><span>san antonio tow truck</span><span>san antonio wrecker</span><span>new braunfels</span><span>austin tx towing</span><span>[towing austin]</span></div></div><div class="neg-group"><div class="eyebrow">Competidores (no pujar) · 27</div><div class="negs"><span>tic tac towing</span><span>douglas towing</span><span>midway wrecker</span><span>mr wrecker</span><span>mr. wrecker</span><span>integrity towing</span><span>five star wrecker</span><span>5 star towing</span><span>5 star wrecker</span><span>jimmy&#x27;s towing</span><span>jimmys towing</span><span>fat boy towing</span><span>jds wrecker</span><span>jds towing</span><span>puncher towing</span><span>chapman wrecker</span><span>river city wrecker</span><span>k and w towing</span><span>kw towing</span><span>k&amp;w towing</span><span>creswell towing</span><span>gator towing</span><span>ej towing</span><span>west central towing</span><span>wimberley towing</span><span>true towing</span><span>24hr towing</span></div></div><div class="neg-group"><div class="eyebrow">Informacional · 4</div><div class="negs"><span>cost per mile</span><span>how much does</span><span>how much is</span><span>price per mile</span></div></div></div></details>
+</section>
+
+<section id="landing">
+  <div class="sechead"><div class="eyebrow">Auditoría del sitio · 290towrecovery.com</div><h2>Landing: 12 / 22, requiere ajustes</h2></div>
+  <div class="score"><div class="meter" aria-hidden="true"><i style="width:54.5%"></i></div><span class="num"><b>12</b>/22</span></div>
+  <div class="grid2">
+    <div class="card"><h3>Funciona</h3><ul>
+      <li>Teléfono en el header y "Click here to call" sin scroll en móvil.</li>
+      <li>Una página por servicio, exotic incluida.</li>
+      <li>Google Tag: GTM-WBX4RZ9K · GA4 G-KH9SFWZK66 · AW-18397446767.</li>
+      <li>WordPress + Elementor Pro: PMM puede editar.</li>
+      <li>"Navy Veteran Owned &amp; Operated", "10% Senior Discount", "Available 24/7".</li></ul></div>
+    <div class="card" style="border-left:4px solid var(--crit)"><h3>Bloqueantes</h3><ul>
+      <li>Conversiones sin verificar con Tag Assistant.</li>
+      <li>Formulario sin página de gracias (mensaje inline de Elementor).</li>
+      <li><code>/exotic-vehicle-towing/</code> sin CTA: bloque vacío en móvil.</li></ul></div>
+    <div class="card"><h3>Mejoras</h3><ul>
+      <li>H1 del home genérico → "24/7 Towing &amp; Tow Truck Service in Fredericksburg, TX".</li>
+      <li>"45-minute radius" → alinear con 40 mi.</li>
+      <li>Subir CTA arriba del texto en páginas de servicio.</li>
+      <li>Cero reseñas; TDLR y seguro no visibles; fotos de stock.</li>
+      <li>"Upfront price before we tow" en el hero.</li>
+      <li>Formulario de 3 campos (Name, Phone, Location).</li></ul></div>
+  </div>
+  <div class="tbl narrow"><table>
+    <thead><tr><th>Página</th><th>Móvil</th><th>LCP</th><th>CLS</th><th>Peso</th><th>Rol</th></tr></thead>
+    <tbody class="num">
+      <tr><td><code>/</code></td><td>55–79</td><td>3.6–6.9 s</td><td>0–0.099</td><td>2.1–2.6 MB</td><td>AG1, AG3, AG4</td></tr>
+      <tr><td><code>/light-medium-duty-towing/</code></td><td>60–69</td><td>3.0–5.9 s</td><td>0.10</td><td>2.5–2.7 MB</td><td>AG2</td></tr>
+      <tr><td><code>/exotic-vehicle-towing/</code></td><td>45</td><td>5.7 s</td><td>0.198</td><td>2.7 MB</td><td>AG5 (pausa)</td></tr>
+      <tr><td><code>/local-long-distance-towing/</code></td><td>59</td><td>5.9 s</td><td>0.098</td><td>2.7 MB</td><td>AG6</td></tr>
+      <tr><td><code>/roadside-assistance/</code></td><td>56–60</td><td>5.7–6.0 s</td><td>0–0.098</td><td>2.7 MB</td><td>AG7</td></tr>
+    </tbody>
+  </table></div>
+  <p class="muted" style="font-size:13.5px">Velocidad: ninguna página baja de 40 (no bloquea), pero con LCP de ~6 s se pierden llamadas con 4G débil en el Hill Country. Fix: WebP, caché, CSS/JS de Elementor sin usar. Objetivo LCP &lt; 3 s.</p>
+</section>
+
+<section id="mercado">
+  <div class="sechead"><div class="eyebrow">Benchmark y competencia</div><h2>Mercado</h2></div>
+  <div class="tbl narrow"><table>
+    <thead><tr><th>Referencia (90 días, Search)</th><th>CPC</th><th>Conv.</th><th>CPL</th></tr></thead>
+    <tbody class="num">
+      <tr><td>MCC towing · mediana (21 cuentas)</td><td>$6.48</td><td>27.3%</td><td>$14.57</td></tr>
+      <tr><td>Pueblos y ciudades pequeñas (5 cuentas)</td><td>$4.48</td><td>34.9%</td><td>$12.84</td></tr>
+      <tr><td>Tier de fee $799–$1,500 (12 cuentas)</td><td>$5.51</td><td>29.4%</td><td>$18.74</td></tr>
+      <tr><td>Metros caras (Phoenix, LA, Tampa…)</td><td>$6.5–$10.9</td><td>14–26%</td><td>$30–$66</td></tr>
+      <tr><td><b>290 Tow · primeros 6 días</b></td><td><b>$11.83</b></td><td>0%</td><td>—</td></tr>
+    </tbody>
+  </table></div>
+  <p class="muted" style="font-size:13.5px">El CPL del MCC es costo por llamada, no por lead calificado. Hay señales de conteo inflado en algunas cuentas (tasas &gt;48%): por eso el umbral de 60 s.</p>
+  <div class="tbl wide"><table>
+    <thead><tr><th>Competidor</th><th>Zona</th><th>Reseñas</th><th>Ángulo</th></tr></thead>
+    <tbody>
+      <tr><td>Douglas Towing</td><td>Fredericksburg</td><td class="num">4.8★ · 157</td><td>Rapidez, precio justo, 24/7</td></tr>
+      <tr><td>Tic Tac Towing</td><td>Fredericksburg</td><td class="num">4.9★ · 70</td><td>Honestidad, dueño presente</td></tr>
+      <tr><td>Integrity Towing</td><td>Kerrville → Fredericksburg</td><td class="num">4.8★ · 89</td><td>Familiar, premio local, páginas por ciudad</td></tr>
+      <tr><td>Midway Wrecker</td><td>Kerrville</td><td>BBB A+</td><td>Desde 1983, local a long distance</td></tr>
+      <tr><td>Mr. Wrecker</td><td>Kerrville</td><td>Mixtas</td><td>Light &amp; medium; queja pública por cobrar $1,000 por &lt;1/4 milla</td></tr>
+      <tr><td>Redes lead-gen (truetowing, 24hr-towing, 1hr…)</td><td>Todo el radio</td><td>—</td><td>Números 877/844, "#1 Towing", sin reseñas</td></tr>
+    </tbody>
+  </table></div>
+  <div class="grid2">
+    <div class="card"><h3>Dónde podemos ganar</h3><ul>
+      <li><b>Precio claro antes de enganchar</b>: nadie lo publica y el miedo al cobro sorpresa existe.</li>
+      <li><b>Exotic y long-distance con ancla local</b>: CPC bajo, sin competidor local visible.</li>
+      <li><b>Número 830 local + veterano</b> frente a los 877 de las redes lead-gen.</li>
+      <li><b>"Wrecker"</b> como variante tejana.</li></ul></div>
+    <div class="card" style="border-left:4px solid var(--warn)"><h3>Amenazas</h3><ul>
+      <li>Cero reseñas y sin GBP: el Map Pack se queda con la llamada antes del anuncio.</li>
+      <li>"towing fredericksburg" lo domina Fredericksburg, <b>Virginia</b>.</li>
+      <li>Términos adyacentes caros: fuel delivery $7.88, accident $8.50, heavy $7+.</li>
+      <li>Ninguna cuenta small-town del MCC gasta $825/mes: riesgo de volumen.</li></ul></div>
+  </div>
+</section>
+
+<section id="checklist">
+  <div class="sechead"><div class="eyebrow">Ejecución</div><h2>Checklist</h2>
+  <p class="muted" style="max-width:75ch">Marca las tareas a medida que se completan. Los cambios se guardan en esta página para quien la abra. La franja roja indica bloqueante de fase. Espejo en el repo: <code>clients/290-tow-recovery/checklist.md</code>.</p></div>
+  <div class="cl-bar">
+    <label class="toggle" for="hide-done"><input type="checkbox" id="hide-done"> Ocultar completadas</label>
+    <span class="savestate" id="savestate" aria-live="polite">Cargando…</span>
+  </div>
+  <div id="cl-root" style="display:grid;gap:12px"></div>
+</section>
+
+<section id="supuestos">
+  <div class="sechead"><div class="eyebrow">Riesgos</div><h2>Supuestos y pendientes del cliente</h2></div>
+  <div class="grid2">
+    <div class="card"><h3>Supuestos del plan</h3><ul>
+      <li>CPL objetivo sale del benchmark del MCC; ticket y margen del cliente <b>pendientes</b> (supuesto $175, 45%).</li>
+      <li>Volumen local no validado en Keyword Planner (sin API en el entorno); se usó volumen nacional de Semrush + search terms reales.</li>
+      <li>Servicio estrella asumido: light/medium &gt; exotic y long-distance &gt; roadside.</li>
+      <li>Radio de 40 mi (el sitio dice "45 minutos"); Boerne y Fair Oaks Ranch sin confirmar.</li>
+      <li>Capacidad de flatbed, RV y moto sin confirmar.</li></ul></div>
+    <div class="card"><h3>Riesgos</h3><ul>
+      <li><b>Volumen</b>: sin amplia, la campaña puede no gastar $27/día.</li>
+      <li><b>Economía</b>: si el ticket real es bajo, ni la mediana del MCC es rentable.</li>
+      <li><b>Respuesta a leads</b>: una llamada no atendida de noche es un lead perdido.</li>
+      <li><b>Conteo inflado</b>: 3 conversiones primarias; verificar que no se dupliquen.</li>
+      <li><b>Zona horaria</b> LA vs. Central en la programación futura.</li></ul></div>
+    <div class="card"><h3>Archivos del cliente</h3><ul class="mono" style="font-size:12.5px">
+      <li>brief.md · audit-site.md</li>
+      <li>competitors.md · benchmark.md</li>
+      <li>strategy.md · roadmap.md · checklist.md</li>
+      <li>data/keywords.csv · data/negatives-nicho.txt</li>
+      <li>data/ads-search-towing.md · data/hist-*.csv</li></ul>
+      <p class="muted" style="font-size:13px">Repo pmm-ads-agent · rama claude/peaceful-gates-6fxn2d</p></div>
+  </div>
+  <div class="foot"><span>Performance Media Marketing · plan preparado el 24/09/2026 para Jhombis.</span><span>Datos: Windsor.ai (cuenta y MCC), Semrush, PageSpeed Insights, búsqueda web.</span></div>
+</section>
+</div>
+<script type="application/json" id="state">{"updated": "2026-09-24", "sections": [{"title": "Fase 0 — Fundación (D0 2026-09-24 → 2026-09-29)", "items": [{"id": "i1", "t": "Cuenta vinculada al MCC de PMM: 213-019-5545, visible en Windsor", "o": "PMM", "b": false, "d": true, "g": "Cuenta"}, {"id": "i2", "t": "Facturación verificada. Está gastando, así que es probable que esté activa; confirmar el método de pago y quién paga (PLL)", "o": "PMM", "b": false, "d": false, "g": "Cuenta"}, {"id": "i3", "t": "Aplicación automática de recomendaciones DESACTIVADA", "o": "PMM", "b": true, "d": false, "g": "Cuenta"}, {"id": "i4", "t": "Red: solo Búsqueda; socios y Display apagados. Ya está así: mantenerlo", "o": "PMM", "b": false, "d": true, "g": "Cuenta"}, {"id": "i5", "t": "Lista universal PMM aplicada a nivel de cuenta (sin excluir \"tow truck\" ni \"towing\")", "o": "PMM", "b": true, "d": false, "g": "Cuenta"}, {"id": "i6", "t": "Lista de nicho + cliente aplicada (`data/negatives-nicho.txt`)", "o": "PMM", "b": true, "d": false, "g": "Cuenta"}, {"id": "i7", "t": "Decidir qué hacer con la campaña actual durante la F0: dejarla, pausarla o cargar solo las negativas", "o": "Jhombis", "b": false, "d": false, "g": "Cuenta"}, {"id": "i8", "t": "Google Tag en todas las páginas: GTM-WBX4RZ9K, G-KH9SFWZK66, AW-18397446767 (auditoría del 2026-09-23)", "o": "PMM", "b": false, "d": true, "g": "Tracking"}, {"id": "i9", "t": "Confirmar que AW-18397446767 corresponde a la cuenta 213-019-5545", "o": "PMM", "b": true, "d": false, "g": "Tracking"}, {"id": "i10", "t": "\"Calls from Ads\" con duración mínima de **60 s**, verificada en la UI", "o": "PMM", "b": true, "d": false, "g": "Tracking"}, {"id": "i11", "t": "\"Website Calls\" (clic en `tel:` desde móvil) probada con Tag Assistant", "o": "PMM", "b": true, "d": false, "g": "Tracking"}, {"id": "i12", "t": "\"Form Fill\" probada con Tag Assistant, disparando en `/thank-you/`", "o": "PMM", "b": true, "d": false, "g": "Tracking"}, {"id": "i13", "t": "Verificar que la misma llamada no cuenta doble (Calls from Ads + Website Calls)", "o": "PMM", "b": true, "d": false, "g": "Tracking"}, {"id": "i14", "t": "Conversiones secundarias (vistas, scroll, direcciones) marcadas como secundarias", "o": "PMM", "b": false, "d": false, "g": "Tracking"}, {"id": "i15", "t": "GA4 vinculado a Ads y audiencia \"Todos los visitantes\" importada", "o": "PMM", "b": false, "d": false, "g": "Tracking"}, {"id": "i16", "t": "Campos ocultos UTM + GCLID en el formulario Elementor", "o": "PMM", "b": false, "d": false, "g": "Tracking"}, {"id": "i17", "t": "CTA \"Get a Free Quote\" + \"Call Now\" en `/exotic-vehicle-towing/`. Sin esto, AG5 queda en pausa", "o": "PMM", "b": true, "d": false, "g": "Landing (ver audit-site.md)"}, {"id": "i18", "t": "`/thank-you/` + redirect del formulario", "o": "PMM", "b": true, "d": false, "g": "Landing (ver audit-site.md)"}, {"id": "i19", "t": "H1 del home: \"24/7 Towing & Tow Truck Service in Fredericksburg, TX\"; \"45-minute radius\" → 40 mi", "o": "PMM", "b": false, "d": false, "g": "Landing (ver audit-site.md)"}, {"id": "i20", "t": "Validar el volumen local en Keyword Planner (40 mi de 78624) y actualizar `data/keywords.csv`", "o": "PMM", "b": false, "d": false, "g": "Landing (ver audit-site.md)"}, {"id": "i21", "t": "Proceso de respuesta a leads: quién contesta de noche y en fin de semana, en cuánto tiempo, qué pasa si no contesta (buzón o desvío)", "o": "Cliente", "b": true, "d": false, "g": "Cliente"}, {"id": "i22", "t": "Call tracking aprobado (número de reenvío de Google). Confirmado en /onboard", "o": "Cliente", "b": false, "d": true, "g": "Cliente"}, {"id": "i23", "t": "Ticket promedio y margen por servicio → recalcular el CPL máximo (hoy ~$14 provisional; benchmark $14.57)", "o": "Cliente", "b": false, "d": false, "g": "Cliente"}, {"id": "i24", "t": "Servicio estrella y servicio a evitar", "o": "Cliente", "b": false, "d": false, "g": "Cliente"}, {"id": "i25", "t": "¿Atiende Boerne / Fair Oaks Ranch / Bulverde? (decide las exclusiones geo)", "o": "Cliente", "b": false, "d": false, "g": "Cliente"}, {"id": "i26", "t": "¿Tiene flatbed? ¿Remolca RV y motos? (activa keywords de AG5 y F2)", "o": "Cliente", "b": false, "d": false, "g": "Cliente"}, {"id": "i27", "t": "Número de licencia TDLR + seguro (copy y LSA)", "o": "Cliente", "b": false, "d": false, "g": "Cliente"}, {"id": "i28", "t": "Ofertas sostenibles: ¿confirma \"upfront price on the phone\"?", "o": "Cliente", "b": false, "d": false, "g": "Cliente"}, {"id": "i29", "t": "Historial de la cuenta leído (2026-09-23, Windsor): 6 días, $165.57, 0 conversiones, 43% de desperdicio", "o": "PMM", "b": false, "d": true, "g": "Cliente"}]}, {"title": "Fase 1 — Reestructuración Search (2026-09-30 → 2026-10-07)", "items": [{"id": "i30", "t": "Campaña reestructurada según `strategy.md`: 7 ad groups, AG5 en pausa hasta arreglar su landing", "o": "PMM", "b": false, "d": false, "g": ""}, {"id": "i31", "t": "10 keywords en amplia de la plantilla PLL eliminadas", "o": "PMM", "b": false, "d": false, "g": ""}, {"id": "i32", "t": "Ubicación: presencia solamente; radio de 40 mi recentrado en 30.2752, -98.8720; exclusiones de San Antonio según la respuesta del cliente", "o": "PMM", "b": false, "d": false, "g": ""}, {"id": "i33", "t": "Programación 24/7 (zona horaria de la cuenta: LA)", "o": "PMM", "b": false, "d": false, "g": ""}, {"id": "i34", "t": "Puja: Maximizar clics con tope de CPC de $6.50, $27/día", "o": "PMM", "b": false, "d": false, "g": ""}, {"id": "i35", "t": "Keywords en frase + exacta para los términos principales, sin amplia", "o": "PMM", "b": false, "d": false, "g": ""}, {"id": "i36", "t": "3 RSA por ad group, H1 pinneado, 15H/4D, fuerza \"Buena\" o superior (`data/ads-search-towing.md`)", "o": "PMM", "b": false, "d": false, "g": ""}, {"id": "i37", "t": "Assets: 4 sitelinks, 8 callouts, snippet de servicios, llamada con número de reenvío. Ubicación cuando exista el GBP", "o": "PMM", "b": false, "d": false, "g": ""}, {"id": "i38", "t": "URLs finales verificadas (200, https, sin redirect)", "o": "PMM", "b": false, "d": false, "g": ""}, {"id": "i39", "t": "Negativas por ad group (ver strategy.md)", "o": "PMM", "b": false, "d": false, "g": ""}, {"id": "i40", "t": "Anuncios aprobados por políticas (revisar 24 h después)", "o": "PMM", "b": false, "d": false, "g": ""}, {"id": "i41", "t": "Primera conversión registrada y cruzada con una llamada real del cliente", "o": "PMM", "b": true, "d": false, "g": ""}]}, {"title": "Fase 2 — Limpieza", "items": [{"id": "i42", "t": "D7 (2026-10-07): search terms → negativas; keywords sin impresiones identificadas; gasto \u003c70% del presupuesto → abrir AG7 a frase", "o": "PMM", "b": false, "d": false, "g": ""}, {"id": "i43", "t": "D14 (2026-10-14): search terms → negativas; AG5/AG6 con más de $100 y 0 llamadas → pausar; AG7 >20% del gasto → pausar", "o": "PMM", "b": false, "d": false, "g": ""}, {"id": "i44", "t": "D14: evaluar el paso a Maximizar conversiones (≥15 conversiones o 14 días con tracking OK y CPC ≤ $7)", "o": "PMM", "b": false, "d": false, "g": ""}, {"id": "i45", "t": "D30 (2026-10-30): search terms → negativas; keywords con 0 impresiones pausadas; RSA peor por grupo reemplazado", "o": "PMM", "b": false, "d": false, "g": ""}, {"id": "i46", "t": "D30: calidad de las llamadas reportada (hoja compartida: llamada → trabajo sí/no → ticket)", "o": "Cliente", "b": false, "d": false, "g": ""}]}, {"title": "Fase 3 — Optimización de puja (tCPA ~2026-11-11)", "items": [{"id": "i47", "t": "≥30 conversiones en 30 días confirmadas", "o": "PMM", "b": false, "d": false, "g": ""}, {"id": "i48", "t": "tCPA = CPL real de 30 días × 1.1 (no el deseado)", "o": "PMM", "b": false, "d": false, "g": ""}, {"id": "i49", "t": "Presupuesto revisado según CPL y capacidad del cliente", "o": "PMM", "b": false, "d": false, "g": ""}, {"id": "i50", "t": "Ajustes por dispositivo evaluados con datos", "o": "PMM", "b": false, "d": false, "g": ""}]}, {"title": "Fase 4 — Remarketing (probablemente no califica por volumen)", "items": [{"id": "i51", "t": "Audiencia de visitantes ≥1,000 en 30 días. Revisar mensualmente en GA4", "o": "PMM", "b": false, "d": false, "g": ""}]}, {"title": "Fase 5 — Performance Max", "items": [{"id": "i52", "t": "Fotos reales de las grúas y del equipo (5+) y un video corto: sirven para PMax y para el sitio", "o": "Cliente", "b": false, "d": false, "g": ""}, {"id": "i53", "t": "Evaluar si el fee permite ≥$1,300/mes de pauta", "o": "Jhombis/PLL", "b": false, "d": false, "g": ""}]}, {"title": "Fase 6 — Conversiones offline (futuro, requiere CRM)", "items": [{"id": "i54", "t": "Registro de trabajos con fecha, hora y teléfono para cruzar con las llamadas", "o": "Cliente", "b": false, "d": false, "g": ""}]}, {"title": "Pista GBP + LSA", "items": [{"id": "i55", "t": "Crear y verificar el GBP (área de servicio, categoría \"Towing service\"). Objetivo: ~2026-10-15", "o": "Cliente", "b": true, "d": false, "g": ""}, {"id": "i56", "t": "Vincular el GBP a Ads y activar el activo de ubicación", "o": "PMM", "b": false, "d": false, "g": ""}, {"id": "i57", "t": "Proceso de reseñas después de cada servicio (los competidores tienen 70–157)", "o": "Cliente", "b": false, "d": false, "g": ""}, {"id": "i58", "t": "Solicitud LSA (licencia TDLR, seguro, background check). Objetivo: ~2026-10-15", "o": "PMM", "b": false, "d": false, "g": ""}, {"id": "i59", "t": "LSA verificado y con presupuesto semanal definido. Objetivo: ~2026-11-12", "o": "PMM", "b": false, "d": false, "g": ""}]}, {"title": "Recurrente (semanal, /weekly-review)", "items": [{"id": "i60", "t": "Search terms → negativas", "o": "", "b": false, "d": false, "g": ""}, {"id": "i61", "t": "Gasto contra los $825 mensuales", "o": "", "b": false, "d": false, "g": ""}, {"id": "i62", "t": "CPL contra el objetivo ($14.57; rango $11.70–$17.50); tendencia 7 d contra 28 d", "o": "", "b": false, "d": false, "g": ""}, {"id": "i63", "t": "% de gasto de AG7 roadside y de AG5/AG6", "o": "", "b": false, "d": false, "g": ""}, {"id": "i64", "t": "Anuncios rechazados o limitados", "o": "", "b": false, "d": false, "g": ""}, {"id": "i65", "t": "Impression share perdido por presupuesto y por ranking", "o": "", "b": false, "d": false, "g": ""}, {"id": "i66", "t": "Calidad de las llamadas reportada por el cliente", "o": "", "b": false, "d": false, "g": ""}, {"id": "i67", "t": "Log en `log/YYYY-MM-DD.md`", "o": "", "b": false, "d": false, "g": ""}]}]}</script>
+<script id="main">
+(function(){
+  var STATIC_SRC = document.getElementById("static").outerHTML;
+  var CSS = document.getElementById("css").textContent;
+  var MAIN = document.getElementById("main").textContent;
+  var S;
+  try { S = JSON.parse(document.getElementById("state").textContent); } catch (e) { S = {sections: []}; }
+  var root = document.getElementById("cl-root");
+  var saveEl = document.getElementById("savestate");
+  var hideDone = document.getElementById("hide-done");
+  var art = null, canWrite = null, timer = null, dirty = false;
+
+  function esc(s){ return String(s).replace(/[&<>"]/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c]; }); }
+  function md(s){ return esc(s).replace(/`([^`]+)`/g, "<code>$1</code>").replace(/\*\*([^*]+)\*\*/g, "<b>$1</b>"); }
+  function ownerChips(o){
+    if (!o) return "";
+    return o.split("/").map(function(x){
+      x = x.trim(); var c = /pmm/i.test(x) ? "pmm" : /cliente/i.test(x) ? "cli" : /jhombis|pll/i.test(x) ? "jh" : "";
+      return '<span class="chip ' + c + '">' + esc(x) + "</span>";
+    }).join("");
+  }
+  function render(){
+    var html = "";
+    S.sections.forEach(function(sec){
+      var total = sec.items.length, done = sec.items.filter(function(i){ return i.d; }).length;
+      var pct = total ? Math.round(done / total * 100) : 0;
+      html += '<div class="cl-sec"><div class="cl-head"><h3>' + esc(sec.title) + '</h3><div class="prog"><div class="meter" aria-hidden="true"><i style="width:' + pct + '%"></i></div><span>' + done + "/" + total + "</span></div></div>";
+      var lastG = null;
+      html += '<ul class="cl-list">';
+      sec.items.forEach(function(it){
+        if (it.g && it.g !== lastG) { html += '</ul><div class="cl-group">' + esc(it.g) + '</div><ul class="cl-list">'; lastG = it.g; }
+        html += '<li class="cl-item' + (it.d ? " done" : "") + (it.b ? " b" : "") + '"><input type="checkbox" id="' + it.id + '" data-id="' + it.id + '"' + (it.d ? " checked" : "") + (canWrite === false ? " disabled" : "") + '><label for="' + it.id + '"><span class="txt">' + md(it.t) + '</span><span class="tags">' + ownerChips(it.o) + (it.b ? '<span class="chip b">Bloqueante</span>' : "") + "</span></label></li>";
+      });
+      html += "</ul></div>";
+    });
+    root.innerHTML = html;
+  }
+  function setSave(cls, txt){ saveEl.className = "savestate " + cls; saveEl.textContent = txt; }
+  function buildDoc(){
+    var json = JSON.stringify(S).replace(/</g, "\\u003c");
+    return '<!doctype html>\n<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">'
+      + "<title>Plan 290 Tow &amp; Recovery</title>"
+      + '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">'
+      + '<style id="css">' + CSS + "</style></head><body>" + STATIC_SRC
+      + '<script type="application/json" id="state">' + json + "</scr" + "ipt>"
+      + '<script id="main">' + MAIN + "</scr" + "ipt></body></html>";
+  }
+  function save(){
+    timer = null;
+    if (!art || canWrite === false) return;
+    var d = new Date(); S.updated = d.toISOString().slice(0, 10);
+    setSave("pending", "Guardando…");
+    art.publish(buildDoc()).then(function(){ setSave("ok", "Guardado"); dirty = false; }, function(err){
+      var code = err && err.code;
+      if (code === "conflict") { setSave("pending", "Otra persona guardó antes; recargando con su versión…"); return; }
+      if (code === "not_writer" || code === "not_granted" || code === "not_declared" || code === "capability_disabled" || code === "consent_required" || code === "capability_removed") {
+        canWrite = false; render(); setSave("", "Vista de solo lectura: no puedes guardar cambios."); return;
+      }
+      if (code === "rate_limited") { setSave("pending", "Muchos cambios seguidos; se guarda en unos segundos."); timer = setTimeout(save, 8000); return; }
+      setSave("err", "No se pudo guardar. Vuelve a marcar una tarea para reintentar.");
+    });
+  }
+  root.addEventListener("change", function(e){
+    var id = e.target && e.target.getAttribute("data-id"); if (!id) return;
+    S.sections.forEach(function(sec){ sec.items.forEach(function(it){ if (it.id === id) it.d = e.target.checked; }); });
+    render();
+    var el = document.getElementById(id); if (el) el.focus();
+    if (!art) { setSave("", "Cambio solo en esta vista (sin guardado disponible aquí)."); return; }
+    dirty = true; setSave("pending", "Cambios sin guardar · se guardan en 3 s");
+    if (timer) clearTimeout(timer); timer = setTimeout(save, 3000);
+  });
+  try { if (sessionStorage.getItem("hideDone") === "1") { hideDone.checked = true; root.classList.add("hidden-done"); } } catch (e) {}
+  hideDone.addEventListener("change", function(){
+    root.classList.toggle("hidden-done", hideDone.checked);
+    try { sessionStorage.setItem("hideDone", hideDone.checked ? "1" : "0"); } catch (e) {}
+  });
+  render();
+  setSave("", "Actualizado " + (S.updated || ""));
+  var tries = 0;
+  (function connect(){
+    if (window.claude && window.claude.use) {
+      window.claude.use("artifact").then(function(ns){
+        art = ns;
+        if (!ns) setSave("", "Actualizado " + (S.updated || "") + " · solo lectura en esta vista");
+      }, function(){ art = null; });
+    } else if (++tries < 15) { setTimeout(connect, 200); }
+    else { setSave("", "Actualizado " + (S.updated || "") + " · los cambios no se guardan en esta vista"); }
+  })();
+})();
+</script>
