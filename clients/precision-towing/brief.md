@@ -15,7 +15,9 @@ estado: onboarding
 
 ## Negocio
 - URL: https://precisiontowingca.com/
+- Razón social / nombre real: **Precision Automotive, Paint & Collision & Towing** (Precision Automotive Inc.). "Precision Towing" es la marca de la landing de PMM. Sitio principal del cliente: https://precisionautomotiveus.com/ (dominio bloqueado desde esta sesión; datos vía búsqueda web).
 - Dirección física: 5212 Lake Isabella Blvd, Lake Isabella, CA 93240 (Kern County). Taller de 17 bahías + towing bajo el mismo techo.
+- Comunidades que declara atender (sitio principal): Lake Isabella, Kernville, Weldon, Bodfish, Wofford Heights, Mountain Mesa, Walker Basin, Twin Oaks. Coincide con el radio de 21 mi.
 - Base y área de servicio (según Jhombis, geotargets a replicar en Google Ads):
   - Radio 21 mi alrededor de Lake Isabella, CA (5212 Lake Isabella Blvd)
   - Radio 8 mi en punto custom 35.674769, -118.033108 (zona Lake Isabella / Kern River Valley)
@@ -30,6 +32,7 @@ estado: onboarding
 - Servicio estrella: Light & Medium-Duty Towing.
 - Servicio a evitar: ninguno declarado explícitamente por el cliente. Auto Repair & Collision queda último en prioridad; por defecto no se le asigna campaña propia en fase 1.
 - Diferenciadores (del sitio): 33 años en Lake Isabella; despacho directo por el propio equipo, sin call center ni dispatch de terceros; taller de 17 bahías y colisión en el mismo lugar; "After-Hours Emergency Towing"; conocimiento local de las carreteras (Kern River, Hwy 178/155).
+- Sellos verificables (sitio principal y directorios): **AAA Approved Auto Repair Facility**, **NAPA AutoCare Center**, **California Gold Seal Smog Check Station**. El sitio principal promete "towing 24 hours a day / 7 days a week". Ninguno de estos sellos aparece en la landing precisiontowingca.com: sumarlos a callouts, snippets y landing.
 - Ofertas sostenibles: "Get A Free Quote" (cotización gratis) es lo único visible en el sitio. Confirmar con el cliente otras (bloque 4).
 - Búsqueda de marca: PENDIENTE (bloque 4). Nota: reseñas mencionan "Precision automotive", posible nombre alterno del taller.
 - Idioma del mercado: inglés (US). Sin contenido en español en el sitio.
@@ -60,22 +63,30 @@ estado: onboarding
 
 ## Operación
 - Horario / 24-7: **Lunes a domingo 7:00 AM – 10:00 PM** (dato de Jhombis, coincide con formato de Google Business Profile). El sitio dice 8 AM – 8 PM y "After-Hours Emergency Towing Available": inconsistencia a corregir en la landing. Programación de anuncios propuesta: 6:30 AM – 10:30 PM todos los días; fuera de esa franja PENDIENTE confirmar si alguien contesta (define si se abre 24/7).
-- Respuesta a leads (quién, tiempo): PENDIENTE. El sitio afirma que atiende el propio equipo (nombres en reseñas: Wes/West Miller, Carolyn en recepción, conductores Matthew y Leroy).
-- Teléfono / call tracking: (760) 606-4160 con click-to-call en header y CTAs. Aceptación de número de reenvío PENDIENTE.
-- CRM (solo referencia): PENDIENTE
-- GBP: PENDIENTE (verificado, N reseñas, acceso). El sitio muestra 8 reseñas de 5 estrellas importadas de Google, varias sobre el taller y no sobre towing.
+- Respuesta a leads (quién, tiempo): PENDIENTE con el cliente. El sitio afirma que atiende el propio equipo (nombres en reseñas: Wes/West Miller, Carolyn en recepción, conductores Matthew y Leroy).
+- Teléfono / call tracking: **sí tiene call tracking**. El (760) 606-4160 de la landing es el número de reenvío; el número real del negocio es **(760) 379-6222** (sitio principal, GBP y directorios). En Ads usar siempre el de tracking; en el activo de ubicación se verá el del GBP.
+- CRM (solo referencia): PENDIENTE con el cliente
+- GBP: perfil "Precision Automotive, Paint & Collision & Towing", **4,8 estrellas con ~850 reseñas** según búsqueda web (verificar en Maps). Acceso de PMM y vinculación a Ads: PENDIENTE. Ojo: el horario publicado en directorios es L–V 7:30 AM–5 PM (horario del taller) mientras Jhombis reporta 7 AM–10 PM diario; unificar en GBP antes de activar el activo de ubicación.
 
 ## Competencia
 | Competidor | URL | Nota |
 |---|---|---|
-| PENDIENTE | | |
+| B&D Towing | yelp.com/biz/b-and-d-towing-lake-isabella-3 | Principal. 4112 Perdue Ave, Lake Isabella, 24 h, desde 2012, 4x4 off-road recovery. 6 variantes de su nombre en search terms de la cuenta. |
+| Lake Isabella Towing | https://www.lakeisabellatowing.us/ | Sitio de dominio genérico "24/7", (760) 474-6825. Probable lead-gen. |
+| Nitro Towing | PENDIENTE | Aparece en search terms con 1 clic. |
+| B&M Towing | PENDIENTE | Aparece en search terms con 1 clic. |
+| A&A Towing and Service | PENDIENTE | Listado en directorios de Lake Isabella. |
+| Kern Valley Auto Body & Towing | PENDIENTE | Listado en directorios; también compite en colisión. |
+| Ibarra's Towing | PENDIENTE | Aparece en search terms sin clic. |
+
+Lista confirmada por el cliente: PENDIENTE (no la conoce Jhombis). /competitors debe validar URLs y descartar los que no anuncian.
 
 ## Web y tracking
 - Plataforma / quién edita: WordPress + Elementor. Quién edita: PENDIENTE (¿PMM o cliente?).
 - Tag/GA4: GTM-NWQH4MVX instalado (contenedor GTM) y gtag de Google Ads AW-18347302928 en el sitio. GA4 no visible en el HTML de la home (puede estar dentro de GTM). Acceso a GTM: PENDIENTE.
 - Formulario → destino: formulario Elementor en /schedule-a-tow/ con campos Name, Phone, Email, Vehicle Year/Make/Model, Service Needed, Pick Up Location, Drop Off Location, Desired Date/Time, Comments (9 campos, largo para una emergencia). Destino probable: amirepair22@gmail.com (email visible en la página). Confirmar. Tras enviar aparece popup "Your Booking Is Not Yet Confirmed — Please give us a call": el formulario no cierra la venta solo, el teléfono es la conversión principal.
 - Home sin formulario: la home solo tiene CTA "Get A Free Quote" → /schedule-a-tow/ y "Call Now". Sin meta description. Candidato a bloqueante en /audit-landing: landing de towing de emergencia sin formulario corto arriba del pliegue.
-- Requisitos de política: towing en California opera bajo permiso de CHP (motor carrier permit / CHP tow rotation). No es restricción de política de Google Ads, pero conviene mostrar licencia y seguro en la landing. PENDIENTE confirmar.
+- Requisitos de política: towing en California opera bajo permiso de CHP (motor carrier permit / CHP tow rotation). No es restricción de política de Google Ads, pero conviene mostrar licencia y seguro en la landing. Licencia y rotación CHP: PENDIENTE con el cliente. Sellos AAA/NAPA/Gold Seal sí son usables ya.
 
 ## LSA (solo US)
 - Aplica: PENDIENTE. Towing es categoría elegible en Local Services Ads en US. Requiere licencia, seguro y background check. Preguntar en bloque 6.
@@ -83,13 +94,15 @@ estado: onboarding
 ## Pendientes
 - [x] Bloque 1 — Identidad (URL, geo, servicios, idioma)
 - [x] Bloque 2 — Objetivo y dinero (ticket, margen y capacidad quedan PENDIENTE con el cliente)
-- [ ] Bloque 3 — Operación (horario confirmado; faltan respuesta a leads, call tracking, CRM, GBP)
-- [ ] Bloque 4 — Competencia y diferenciación
+- [x] Bloque 3 — Operación (horario y call tracking confirmados; respuesta a leads, CRM y acceso a GBP quedan PENDIENTE con el cliente)
+- [x] Bloque 4 — Competencia y diferenciación (competidores desde búsqueda web y search terms; lista del cliente, licencia CHP y ofertas quedan PENDIENTE con el cliente)
 - [ ] Bloque 5 — Web y tracking (parcial desde el sitio: WordPress/Elementor, GTM, AW tag, formulario)
 - [ ] Bloque 6 — LSA (solo si US)
 - [x] AW-18347302928 es propio de la cuenta 753-255-2245 (confirmado por Jhombis)
 - [ ] Confirmar destino real de los envíos del formulario
-- [ ] Unificar horario en la landing (sitio 8–8 vs real 7–10) y aclarar si hay atención fuera de horario
+- [ ] Unificar horario en la landing (sitio 8–8 vs real 7–10 vs GBP L–V 7:30–5) y aclarar si hay atención fuera de horario
+- [ ] Pedir al cliente: quién responde leads y en cuánto tiempo, CRM, acceso a GBP y vínculo con Ads, licencia CHP / motor carrier, ofertas sostenibles, lista de competidores que reconoce
+- [ ] Agregar sellos AAA / NAPA / Gold Seal Smog a la landing y a las extensiones
 - [ ] Pedir al cliente: ticket promedio y margen por servicio, capacidad (camiones/conductores), margen para escalar presupuesto
 - [ ] Confirmar si $1500 es fee total y $825 pauta neta
 - [ ] Crear conversión de formulario (hoy no existe) y pasar keywords a concordancia de frase (hoy todo amplia)
