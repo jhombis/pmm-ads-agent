@@ -1,24 +1,52 @@
-keyword,volumen_us,cpc_semrush,cpc_real_fishhawk,conv_fishhawk_90d,clasificacion,ad_group_propuesto
-tow truck near me,135000,3.96,11.32,6,comercial,Towing Near Me
-towing near me,110000,3.46,9.70,27.7,comercial,Towing Near Me
-towing service near me,27100,3.46,,,comercial,Towing Near Me
-towing company near me,,,14.02,5,comercial,Towing Near Me
-cheap towing near me,14800,3.12,14.50,2,comercial,Towing Near Me
-roadside assistance near me,33100,3.38,11.74,4,comercial,Roadside
-road side assistance,,,11.18,3,comercial,Roadside
-fuel delivery near me,2900,7.88,,,comercial,Roadside
-towing wesley chapel,30,3.98,,,comercial,Towing Near Me (exacta)
-tow truck wesley chapel,20,3.53,,,comercial,Towing Near Me (exacta)
-towing tampa fl,390,3.92,,,comercial-condicional,Solo si radio incluye Tampa
-towing tampa,320,3.92,,,comercial-condicional,Solo si radio incluye Tampa
-tow truck tampa,320,5.57,8.14,0,comercial-condicional,Solo si radio incluye Tampa
-roadside assistance tampa,140,3.79,8.84,0,comercial-condicional,Roadside
-servicio de grua,,,9.25,6.3,comercial-es,Grua ES (si contestan en español)
-grua cerca de mi,,,7.17,4,comercial-es,Grua ES (si contestan en español)
-asistencia en carretera,,,20.37,1,comercial-es,Grua ES (si contestan en español)
-car towing,,,10.03,0,comercial-dudosa,Vigilar
-auto body shop wesley chapel,40,2.00,,,comercial-condicional,Solo si hacen carrocería
-collision repair wesley chapel,40,2.08,,,comercial-condicional,Solo si hacen carrocería
-towing zephyrhills,0,,,,descartar,Sin volumen
-towing dade city,0,,,,descartar,Sin volumen
-towing land o lakes,0,,,,descartar,Sin volumen
+keyword,volumen_us,cpc_semrush,cpc_real_cuenta,conv_cuenta,intencion,servicio,ciudad,match_sugerido,ad_group,accion
+towing near me,110000,3.46,,0,comercial,towing,radio,frase+exacta,Towing Near Me,mantener (hoy frase); agregar exacta
+tow truck near me,135000,3.96,8.75,7,comercial,towing,radio,frase+exacta,Towing Near Me,migrar broad→frase+exacta
+towing company near me,40500,3.36,9.40,7,comercial,towing,radio,frase+exacta,Towing Near Me,migrar broad→frase+exacta
+tow company near me,40500,3.36,,,comercial,towing,radio,frase+exacta,Towing Near Me,nueva
+tow service near me,14800,3.46,7.11,1,comercial,towing,radio,frase,Towing Near Me,reactivar en frase
+towing service near me,27100,3.46,,0,comercial,towing,radio,frase,Towing Near Me,migrar broad→frase
+car towing near me,8100,3.43,,,comercial,towing,radio,frase,Towing Near Me,nueva
+local towing company near me,1600,3.34,,0,comercial,towing,radio,frase,Towing Near Me,migrar broad→frase
+24 hour towing near me,2900,3.14,,,comercial-urgente,towing,radio,frase,Towing Near Me,nueva
+emergency towing near me,1000,3.69,,,comercial-urgente,towing,radio,frase,Towing Near Me,nueva
+flatbed towing near me,720,3.45,,,comercial,towing,radio,frase,Towing Near Me,nueva
+accident towing near me,110,3.81,,,comercial,accident towing,radio,frase,Towing Near Me,nueva
+cheap towing near me,14800,3.12,7.83,2,comercial-precio,towing,radio,frase+exacta,Cheap Towing,migrar broad→frase+exacta
+cheap tow truck near me,5400,3.38,,,comercial-precio,towing,radio,frase,Cheap Towing,nueva
+cheapest towing near me,1600,3.12,11.96,1,comercial-precio,towing,radio,frase,Cheap Towing,nueva (excepción a la universal "cheapest")
+affordable towing near me,1600,3.12,,,comercial-precio,towing,radio,frase,Cheap Towing,nueva
+flat rate towing near me,110,2.69,,,comercial-precio,towing,radio,frase,Cheap Towing,nueva
+tow truck cost near me,110,2.42,,0,comercial-precio,towing,radio,frase,Cheap Towing,migrar broad→frase
+towing cost near me,50,2.61,,,comercial-precio,towing,radio,frase,Cheap Towing,nueva
+roadside assistance near me,33100,3.38,11.74,1,comercial (mezcla aseguradoras),roadside,radio,frase,Roadside Assistance,migrar broad→frase
+jump start service near me,1600,3.02,,,comercial,roadside,radio,frase,Roadside Assistance,nueva
+jump start near me,1300,2.66,,,comercial,roadside,radio,frase,Roadside Assistance,nueva
+flat tire service near me,880,3.05,,,comercial,roadside,radio,frase,Roadside Assistance,nueva
+flat tire change near me,320,3.10,,,comercial,roadside,radio,frase,Roadside Assistance,nueva
+gas delivery near me,590,8.75,,,comercial,roadside,radio,frase,Roadside Assistance,nueva (vigilar CPC)
+fuel delivery near me,2900,7.88,,,comercial,roadside,radio,frase,Roadside Assistance,nueva (vigilar CPC)
+winch out service near me,140,2.10,,,comercial,recovery,radio,frase,Roadside Assistance,nueva
+towing wesley chapel,30,3.98,13.32,1,comercial-local,towing,Wesley Chapel,exacta+frase,Wesley Chapel Towing,nueva
+tow truck wesley chapel,20,3.53,10.07,1,comercial-local,towing,Wesley Chapel,exacta+frase,Wesley Chapel Towing,nueva
+wesley chapel towing,30,3.98,8.68,0,comercial-local,towing,Wesley Chapel,exacta+frase,Wesley Chapel Towing,nueva
+pasco county towing,30,1.76,8.00,0,comercial-local,towing,Pasco,frase,Wesley Chapel Towing,nueva
+towing lutz fl,20,,,,comercial-local,towing,Lutz,frase,Wesley Chapel Towing,nueva
+grua cerca de mi,2900,2.47,,,comercial-es,towing,radio,frase,Grúa ES,condicional
+gruas cerca de mi,6600,2.47,3.17,0,comercial-es,towing,radio,frase,Grúa ES,condicional (hoy removida)
+servicio de grua cerca de mi,1300,2.43,8.19,1,comercial-es,towing,radio,frase+exacta,Grúa ES,condicional; migrar broad→frase
+servicio de grua,880,2.75,5.48,0,comercial-es,towing,radio,frase,Grúa ES,condicional; migrar broad→frase
+servicio de gruas cerca de mi,,,6.04,1,comercial-es,towing,radio,frase,Grúa ES,condicional; migrar broad→frase
+servicio de grua cerca de mi en español,,,6.50,1,rara,towing,radio,—,Grúa ES,PAUSAR
+servicio de grua near me,,,7.24,0,mixta,towing,radio,—,Grúa ES,PAUSAR (duplica)
+Towing Service,,,7.12,0,genérica,towing,—,—,Towing Near Me,PAUSAR broad (frase ya removida tras $99.68 / 0 conv.)
+tow company,,,,0,genérica,towing,—,—,Towing Near Me,pausar (sin near me → atrae búsquedas de marca/ajenas)
+tow truck company,,,,0,genérica,towing,—,—,Towing Near Me,pausar
+tow truck service near me,,,,0,comercial,towing,radio,frase,Towing Near Me,migrar broad→frase
+box truck towing near me,170,5.59,,,comercial-alto-ticket,medium-duty,radio,frase,Medium-Duty (F3),condicional: confirmar capacidad
+medium duty towing,390,3.81,,,comercial-alto-ticket,medium-duty,radio,frase,Medium-Duty (F3),condicional: confirmar capacidad
+auto body shop wesley chapel,40,2.00,,,comercial,collision,Wesley Chapel,frase,Collision (F3),condicional: ¿hacen carrocería?
+collision repair wesley chapel,40,2.08,,,comercial,collision,Wesley Chapel,frase,Collision (F3),condicional: ¿hacen carrocería?
+towing zephyrhills,0,,,,comercial-local,towing,Zephyrhills,—,—,descartar (sin volumen; cubre radio)
+towing dade city,0,,,,comercial-local,towing,Dade City,—,—,descartar (sin volumen; cubre radio)
+towing land o lakes,0,,,,comercial-local,towing,Land O' Lakes,—,—,descartar (sin volumen; cubre radio)
+car lockout near me,390,3.55,,,comercial,lockout,radio,—,—,no: el sitio no ofrece lockout (PENDIENTE)

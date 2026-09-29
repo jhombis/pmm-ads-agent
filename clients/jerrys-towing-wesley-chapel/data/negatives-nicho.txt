@@ -1,0 +1,172 @@
+# Negativas — Jerry's Towing (lista compartida de cuenta "Towing - Nicho")
+# = lista universal PMM (knowledge/negativas-universales.md) CON EXCEPCIONES + nicho towing + competidores + search terms 2026-09-29
+# Concordancia de frase salvo [exacta]. Aplicar vía /negatives tras OK de Jhombis.
+
+## EXCEPCIONES a la lista universal para esta cuenta (NO aplicar estas universales)
+# cheapest          → "cheapest towing near me" convirtió (cuenta y Fishhawk)
+# insurance claim   → accidentes: el cliente puede ayudar con el reclamo (PENDIENTE confirmar)
+# rental / rent     → neutral; se mantiene negativa salvo que ofrezcan auto de reemplazo
+# "phone number"    → no se usa suelta; ver bloque aseguradoras
+
+## Nicho towing — compra/empleo/equipo (no es servicio)
+tow truck for sale
+tow trucks for sale
+used tow truck
+tow truck bed
+wrecker for sale
+rollback for sale
+tow dolly
+tow bar
+tow hitch
+trailer hitch
+tow strap
+tow rope
+towing capacity
+towing mirrors
+tow truck driver
+tow truck driver jobs
+tow truck insurance
+towing business
+towing license
+start a towing
+u haul
+uhaul
+penske
+rent a trailer
+
+## Nicho towing — vehículo remolcado por terceros / impound
+impound
+impounded
+towed my car
+my car was towed
+where was my car towed
+car got towed
+towing enforcement
+private property towing
+repo
+repossession
+
+## Servicios públicos / aseguradoras / clubes
+road ranger
+road rangers
+aaa
+geico roadside
+progressive roadside
+state farm roadside
+allstate roadside
+usaa roadside
+honk roadside
+urgently
+agero
+roadside assistance phone number
+roadside assistance number
+direct auto
+dairyland
+bristol west
+mitsubishi roadside
+pinnacle roadside
+1800 roadside
+triple roadside
+tnt roadside
+extended warranty
+
+## Servicios que no ofrece (confirmar con cliente)
+heavy duty towing
+semi tow
+semi truck towing
+18 wheeler
+rv transport
+rv towing
+motor home
+boat towing
+battery replacement
+tire replacement
+replace tire
+new tires
+tire shop
+jumper cables
+mecánico a domicilio
+mecanico a domicilio
+mecánicos a domicilio
+mechanics that come to you
+car wreckers
+junk car
+cash for cars
+scrap car
+sell my car
+car transport service
+auto transport
+car shipping
+lockout
+locksmith
+
+## Competidores y terceros (estándar PMM #5) — NO incluir "jerry"/"jerrys"
+pasco towing
+sams wrecker
+sams towing
+a super car
+supercar recovery
+eduardo towing
+crockett
+crocketts
+cha cha
+tp towing
+b&d towing
+bd towing
+atlas towing
+knights towing
+superior towing
+guardian towing
+supreme towing
+bravo towing
+greenfield towing
+fletchers towing
+altairis towing
+first choice recovery
+rapid recovery
+active towing
+waypoint auto rescue
+highway rescue
+el monstro towing
+taj towing
+common tow
+eastern tow
+go go tow
+cts towing
+commtow
+abc towing
+a&m towing
+pg towing
+r c towing
+9 second recovery
+billy's auto service
+ralli's towing
+speedy towing
+lift towing
+gerber collision
+caliber collision
+mikes auto body
+walmart auto center
+autopros
+murphys diesel
+true towing
+drive roadside
+24hr towing
+
+## Fuera de área (parche; lo de fondo es geo = Presencia + radio 20 mi)
+farmingdale
+columbus
+ohio
+arizona
+estero
+bradenton
+sarasota
+spring hill
+hernando
+brooksville
+st petersburg
+clearwater
+lakeland
+# plant city (~22 mi): quitar si el radio real lo incluye
+plant city
+orlando
