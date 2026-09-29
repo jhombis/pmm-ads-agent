@@ -54,7 +54,7 @@ Dependen del cliente (pedir vía Jhombis esta semana):
 - [ ] (PMM) Ubicación: Presencia solamente; radio 21 mi + 2 × 8 mi; resto de países excluidos
 - [ ] (PMM) Programación Lun–Dom 6:30–22:30
 - [ ] (PMM) Puja: Maximizar conversiones sin tCPA en ambas
-- [ ] (PMM) 87 keywords en frase; 8 exactas (towing near me, tow truck near me, towing company near me, tow truck company near me, kernville towing, towing lake isabella, lake isabella towing, travel trailer towing service, precision towing, precision automotive lake isabella)
+- [ ] (PMM) 87 keywords (77 frase, 10 exactas) (towing near me, tow truck near me, towing company near me, tow truck company near me, kernville towing, towing lake isabella, lake isabella towing, travel trailer towing service, precision towing, precision automotive lake isabella)
 - [ ] (PMM) Negativas a nivel de ad group aplicadas (cruces AG1/AG3/AG4 y genéricos en Marca) según strategy.md
 - [ ] (PMM) 3 RSA por ad group, H1 pinneada, 15H/4D, fuerza "Buena" o superior; claims condicionados sustituidos si el cliente no confirmó
 - [ ] (PMM) Extensiones: 5 sitelinks, 9 callouts, snippet Services, llamada (760) 606-4160 con reporte, ubicación (si GBP vinculado)
