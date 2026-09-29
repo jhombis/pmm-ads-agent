@@ -28,7 +28,7 @@ estado: activo — prellenado desde la cuenta de Google Ads, sin entrevista /onb
 - Presupuesto mensual: $2,500
 - Ticket promedio / margen: PENDIENTE
 - Capacidad: PENDIENTE
-- **CPL máximo aceptable**: PENDIENTE (falta ticket/margen). Referencia en el MCC (90 días): Sunflower Riverside ~$61, Swan ~$59, Hemet ~$130, Murrieta ~$108
+- **CPL máximo aceptable**: PENDIENTE (falta ticket/margen). Referencia en el MCC (90 días, solo Search): Sunflower Riverside ~$49, Swan ~$59, Hemet ~$130, Murrieta ~$162
 - Historial Google Ads: campaña Search lanzada 2026-08-03 (primer gasto el 2026-08-05)
 
 ## Operación
