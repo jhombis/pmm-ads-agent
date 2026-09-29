@@ -2,7 +2,7 @@
 cliente: Pro Phase Electric
 slug: pro-phase-electric
 fase_actual: 1
-actualizado: 2026-09-24
+actualizado: 2026-09-29
 ---
 # Checklist — Pro Phase Electric
 
@@ -78,10 +78,12 @@ Cuenta 758-301-1023 · campaña actual 24208591381 (Max. clics, se pausa en F1).
 - [x] (Jhombis) Activación decidida; campaña anterior 24208591381 pausada — 23-sep
 - [x] (PMM) Anuncios aprobados — 4 RSA APPROVED el 24-sep, sin avisos de política
 - [ ] (PMM) D7 (30-sep): CTR y QS de Paneles y EV apuntando a la home; si no convierten, pausar hasta tener landing
-- [ ] **B** (PMM) Primera conversión **del sitio** registrada
+- [ ] **B** (PMM) Primera conversión **del sitio** registrada — al 29-sep: Form Fill y Website Calls en 0 desde siempre; 0 llamadas con número de reenvío (log/2026-09-29.md)
+- [ ] (Jhombis/Cliente) Leads reales desde el 23-sep: cuántas llamadas y formularios recibió el cliente y de dónde
+- [ ] (PMM) Conversión secundaria por clic en `tel:` (proxy mientras se arregla el reenvío)
 
 ## Fase 2 — Limpieza (D7 30-sep · D14 07-oct · D30 23-oct)
-- [ ] D2 (24-sep): 11 negativas propuestas (journeyman/licencias, utilities, 4 competidores, 1 de precio), `data/2026-09-24-negatives.txt` — pendiente OK
+- [ ] D2/D6: 25 negativas propuestas (29-sep: +14 competidores y precio) (journeyman/licencias, utilities, 4 competidores, 1 de precio), `data/2026-09-24-negatives.txt` — pendiente OK
 - [ ] D7: search terms revisados, negativas agregadas
 - [ ] D7: keywords sin impresiones identificadas (no pausar aún)
 - [ ] D14: search terms revisados, negativas agregadas
