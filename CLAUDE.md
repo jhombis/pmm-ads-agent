@@ -24,7 +24,7 @@ scripts/                  utilidades (API de Google Ads, PageSpeed, etc.)
 ## Archivos por cliente y quién los escribe
 | Archivo | Lo escribe | Lo lee |
 |---|---|---|
-| `brief.md` | /onboard | todos |
+| `brief.md` | /onboard (entrevista) o /investigar-cliente (sin preguntas) | todos |
 | `audit-site.md` | /audit-landing | /strategy, /roadmap |
 | `competitors.md` | /competitors | /strategy |
 | `benchmark.md` | /benchmark-interno | /strategy, /roadmap |
@@ -32,7 +32,7 @@ scripts/                  utilidades (API de Google Ads, PageSpeed, etc.)
 | `roadmap.md` | /roadmap | /weekly-review |
 | `checklist.md` | /roadmap (crea), /weekly-review (actualiza) | todos |
 | `log/YYYY-MM-DD.md` | /weekly-review | /weekly-review |
-| `data/` | exports CSV/JSON de la API | /weekly-review, /negatives |
+| `data/` | exports CSV/JSON de la API; /investigar-cliente deja account-profile.json, site-scan.json, pagespeed.json | /weekly-review, /negatives, /audit-landing |
 
 **Regla**: antes de ejecutar cualquier skill sobre un cliente, lee `brief.md` y `checklist.md` de ese cliente. Nunca asumas contexto que no esté en sus archivos. Si un archivo requerido no existe, indica qué skill debe correrse primero.
 

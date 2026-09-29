@@ -4,7 +4,8 @@ Agente de Google Ads para Performance Media Marketing. Se usa con Claude Code (o
 
 ## Flujo por cliente nuevo
 ```
-/onboard            → clients/<slug>/brief.md
+/onboard            → clients/<slug>/brief.md  (entrevista)
+/investigar-cliente → clients/<slug>/brief.md  (sin preguntas: web + MCC + Semrush)
 /audit-landing  ┐
 /competitors    ├─ en paralelo → audit-site.md, competitors.md, benchmark.md
 /benchmark-interno ┘
@@ -18,7 +19,7 @@ Agente de Google Ads para Performance Media Marketing. Se usa con Claude Code (o
 ## Primeros pasos
 1. `docs/setup-google-ads-api.md` → crear `google-ads.yaml`.
 2. Etiquetar cuentas del MCC con `nicho:*` y `pais:*`.
-3. Probar con un cliente real: `/onboard`.
+3. Probar con un cliente real: `/onboard`, o `/investigar-cliente <url> [customer id]` si prefieres que lo investigue todo.
 
 ## Dónde está cada cosa
 - `CLAUDE.md`: reglas y estándares PMM. Léelo antes de cambiar cualquier skill.

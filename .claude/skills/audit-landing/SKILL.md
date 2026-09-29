@@ -9,6 +9,7 @@ description: Audita la URL/landing de un cliente para Google Ads (velocidad, ofe
 Lee `clients/<slug>/brief.md` (URL, servicios, objetivo, quién edita la web).
 
 ## Qué hacer
+0. Si ya existen `data/site-scan.json` o `data/pagespeed.json` (los deja /investigar-cliente), reutilízalos y no vuelvas a descargar. Si no existen: `python scripts/site_scan.py <url> > clients/<slug>/data/site-scan.json`.
 1. **Fetch** de la home y de cada página de servicio que exista (WebFetch). Anota título, H1, CTA visibles, teléfono, formulario, prueba social, y si hay páginas por servicio o por ciudad.
 2. **Velocidad**: `python scripts/pagespeed.py <url> --strategy mobile` (requiere `PAGESPEED_API_KEY`, opcional). Si no hay clave, usar WebFetch de `https://pagespeed.web.dev/` no funciona; en ese caso pide a Jhombis el score o estima con tamaño de página.
 3. **Semrush `site_audit`** si el dominio está en un proyecto; si no, `domain_overview` para tráfico orgánico y keywords que ya rankea (sirve para la estrategia).
