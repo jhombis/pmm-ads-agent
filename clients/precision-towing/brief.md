@@ -59,7 +59,7 @@ estado: onboarding
   - Competidor principal detectado por búsquedas: **B&D Towing (Lake Isabella)**, 6 variantes del nombre en search terms.
 
 ## Operación
-- Horario / 24-7: Lunes a domingo 8 AM – 8 PM según el sitio, más "After-Hours Emergency Towing Available". Confirmar si fuera de horario contesta una persona real y en qué franja; define si la programación va a horario + margen o 24/7.
+- Horario / 24-7: **Lunes a domingo 7:00 AM – 10:00 PM** (dato de Jhombis, coincide con formato de Google Business Profile). El sitio dice 8 AM – 8 PM y "After-Hours Emergency Towing Available": inconsistencia a corregir en la landing. Programación de anuncios propuesta: 6:30 AM – 10:30 PM todos los días; fuera de esa franja PENDIENTE confirmar si alguien contesta (define si se abre 24/7).
 - Respuesta a leads (quién, tiempo): PENDIENTE. El sitio afirma que atiende el propio equipo (nombres en reseñas: Wes/West Miller, Carolyn en recepción, conductores Matthew y Leroy).
 - Teléfono / call tracking: (760) 606-4160 con click-to-call en header y CTAs. Aceptación de número de reenvío PENDIENTE.
 - CRM (solo referencia): PENDIENTE
@@ -83,12 +83,13 @@ estado: onboarding
 ## Pendientes
 - [x] Bloque 1 — Identidad (URL, geo, servicios, idioma)
 - [x] Bloque 2 — Objetivo y dinero (ticket, margen y capacidad quedan PENDIENTE con el cliente)
-- [ ] Bloque 3 — Operación (parcial desde el sitio: horario y teléfono)
+- [ ] Bloque 3 — Operación (horario confirmado; faltan respuesta a leads, call tracking, CRM, GBP)
 - [ ] Bloque 4 — Competencia y diferenciación
 - [ ] Bloque 5 — Web y tracking (parcial desde el sitio: WordPress/Elementor, GTM, AW tag, formulario)
 - [ ] Bloque 6 — LSA (solo si US)
 - [x] AW-18347302928 es propio de la cuenta 753-255-2245 (confirmado por Jhombis)
 - [ ] Confirmar destino real de los envíos del formulario
+- [ ] Unificar horario en la landing (sitio 8–8 vs real 7–10) y aclarar si hay atención fuera de horario
 - [ ] Pedir al cliente: ticket promedio y margen por servicio, capacidad (camiones/conductores), margen para escalar presupuesto
 - [ ] Confirmar si $1500 es fee total y $825 pauta neta
 - [ ] Crear conversión de formulario (hoy no existe) y pasar keywords a concordancia de frase (hoy todo amplia)
