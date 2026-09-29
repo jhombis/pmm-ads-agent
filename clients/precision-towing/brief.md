@@ -6,16 +6,16 @@ idioma: EN
 nicho: towing
 mcc_customer_id: 753-255-2245
 actualizado: 2026-09-29
-estado: onboarding
+estado: brief-completo
 ---
 
 # Brief — Precision Towing
 
-> Onboarding en curso. Bloque 1 completo. Datos del sitio confirmados vía fetch de la home y de /schedule-a-tow/ el 2026-09-29. Bloques 2–6 PENDIENTE.
+> Brief cerrado el 2026-09-29 con Jhombis. Fuentes: entrevista, fetch de precisiontowingca.com, Windsor.ai (cuenta 753-255-2245) y búsqueda web. Lo marcado PENDIENTE requiere respuesta del cliente; los bloqueantes están en Pendientes al final.
 
 ## Negocio
 - URL: https://precisiontowingca.com/
-- Razón social / nombre real: **Precision Automotive, Paint & Collision & Towing** (Precision Automotive Inc.). "Precision Towing" es la marca de la landing de PMM. Sitio principal del cliente: https://precisionautomotiveus.com/ (dominio bloqueado desde esta sesión; datos vía búsqueda web).
+- Razón social / nombre real: **Precision Automotive, Paint & Collision & Towing** (Precision Automotive Inc.). "Precision Towing" es la marca usada en Ads. **El sitio para Ads es precisiontowingca.com** (confirmado por Jhombis). El cliente tiene además precisionautomotiveus.com para el taller; no se usa como landing y solo sirvió como fuente de datos (dominio bloqueado desde esta sesión).
 - Dirección física: 5212 Lake Isabella Blvd, Lake Isabella, CA 93240 (Kern County). Taller de 17 bahías + towing bajo el mismo techo.
 - Comunidades que declara atender (sitio principal): Lake Isabella, Kernville, Weldon, Bodfish, Wofford Heights, Mountain Mesa, Walker Basin, Twin Oaks. Coincide con el radio de 21 mi.
 - Base y área de servicio (según Jhombis, geotargets a replicar en Google Ads):
@@ -82,22 +82,29 @@ estado: onboarding
 Lista confirmada por el cliente: PENDIENTE (no la conoce Jhombis). /competitors debe validar URLs y descartar los que no anuncian.
 
 ## Web y tracking
-- Plataforma / quién edita: WordPress + Elementor. Quién edita: PENDIENTE (¿PMM o cliente?).
-- Tag/GA4: GTM-NWQH4MVX instalado (contenedor GTM) y gtag de Google Ads AW-18347302928 en el sitio. GA4 no visible en el HTML de la home (puede estar dentro de GTM). Acceso a GTM: PENDIENTE.
-- Formulario → destino: formulario Elementor en /schedule-a-tow/ con campos Name, Phone, Email, Vehicle Year/Make/Model, Service Needed, Pick Up Location, Drop Off Location, Desired Date/Time, Comments (9 campos, largo para una emergencia). Destino probable: amirepair22@gmail.com (email visible en la página). Confirmar. Tras enviar aparece popup "Your Booking Is Not Yet Confirmed — Please give us a call": el formulario no cierra la venta solo, el teléfono es la conversión principal.
+- Plataforma / quién edita: WordPress + Elementor en precisiontowingca.com. Propietario y quién edita: PENDIENTE con el cliente (no es de PMM según Jhombis). Si PMM no puede editar, los cambios de landing de /audit-landing pasan a ser bloqueantes hasta conseguir acceso.
+- Tag/GA4: GTM-NWQH4MVX instalado (contenedor GTM) y gtag de Google Ads AW-18347302928 (propio de la cuenta 753-255-2245). GA4 no visible en el HTML de la home (puede estar dentro de GTM). Acceso a GTM: PENDIENTE con el cliente.
+- Formulario → destino: formulario Elementor en /schedule-a-tow/ con campos Name, Phone, Email, Vehicle Year/Make/Model, Service Needed, Pick Up Location, Drop Off Location, Desired Date/Time, Comments (9 campos, largo para una emergencia). Destino probable: amirepair22@gmail.com (email visible en la página). PENDIENTE confirmar con el cliente. Tras enviar aparece popup "Your Booking Is Not Yet Confirmed — Please give us a call": el formulario no cierra la venta solo, el teléfono es la conversión principal.
 - Home sin formulario: la home solo tiene CTA "Get A Free Quote" → /schedule-a-tow/ y "Call Now". Sin meta description. Candidato a bloqueante en /audit-landing: landing de towing de emergencia sin formulario corto arriba del pliegue.
 - Requisitos de política: towing en California opera bajo permiso de CHP (motor carrier permit / CHP tow rotation). No es restricción de política de Google Ads, pero conviene mostrar licencia y seguro en la landing. Licencia y rotación CHP: PENDIENTE con el cliente. Sellos AAA/NAPA/Gold Seal sí son usables ya.
 
 ## LSA (solo US)
-- Aplica: PENDIENTE. Towing es categoría elegible en Local Services Ads en US. Requiere licencia, seguro y background check. Preguntar en bloque 6.
+- Aplica: PENDIENTE — towing es categoría elegible en LSA en US y el cliente está en California, pero no se sabe si tiene licencia, seguro y disposición al background check. Se documenta como fase futura en el roadmap; no bloquea Search.
 
 ## Pendientes
+
+**Bloqueantes para lanzar la cuenta reestructurada** (sin esto no se pasa de Fase 0):
+- [ ] Acceso de edición a precisiontowingca.com y a GTM-NWQH4MVX, o confirmación de quién aplica cambios de landing
+- [ ] Confirmar destino del formulario y crear conversión de formulario (hoy no existe)
+- [ ] Ticket promedio y margen por servicio para fijar el CPL máximo (hoy referencia provisional $37)
+
+**Resto:**
 - [x] Bloque 1 — Identidad (URL, geo, servicios, idioma)
 - [x] Bloque 2 — Objetivo y dinero (ticket, margen y capacidad quedan PENDIENTE con el cliente)
 - [x] Bloque 3 — Operación (horario y call tracking confirmados; respuesta a leads, CRM y acceso a GBP quedan PENDIENTE con el cliente)
 - [x] Bloque 4 — Competencia y diferenciación (competidores desde búsqueda web y search terms; lista del cliente, licencia CHP y ofertas quedan PENDIENTE con el cliente)
-- [ ] Bloque 5 — Web y tracking (parcial desde el sitio: WordPress/Elementor, GTM, AW tag, formulario)
-- [ ] Bloque 6 — LSA (solo si US)
+- [x] Bloque 5 — Web y tracking (sitio confirmado; acceso de edición, GTM y destino del formulario PENDIENTE con el cliente)
+- [x] Bloque 6 — LSA (PENDIENTE con el cliente, fase futura)
 - [x] AW-18347302928 es propio de la cuenta 753-255-2245 (confirmado por Jhombis)
 - [ ] Confirmar destino real de los envíos del formulario
 - [ ] Unificar horario en la landing (sitio 8–8 vs real 7–10 vs GBP L–V 7:30–5) y aclarar si hay atención fuera de horario
