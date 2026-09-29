@@ -7,7 +7,7 @@ nicho: towing
 cuenta_google_ads: 523-801-4243
 paquete: ENHPRM Radius - $1500/mo. - 08/06/2026
 actualizado: 2026-09-29
-estado: onboarding
+estado: activa (sirviendo desde 2026-08-22)
 ---
 
 # Brief — Jerry's Auto Body Solutions & Towing Service
@@ -32,11 +32,11 @@ estado: onboarding
 
 ## Objetivo y economía
 - Objetivo primario: llamadas (towing es de urgencia). Formulario como secundario.
-- Paquete: **$1,500/mes (ENHPRM Radius)**. Es el precio del paquete, no la inversión en medios. Las cuentas comparables del MCC con paquetes de $1,399 a $1,800 gastan en ads **$675–790/mes**. **PENDIENTE**: confirmar la inversión real en medios.
+- Paquete: **$1,500/mes (ENHPRM Radius)**. Es el precio del paquete, no la inversión en medios. **Confirmado en la cuenta: presupuesto de $25/día ≈ $760/mes en medios** (septiembre: $693 en 28 días).
 - Ticket promedio / margen: PENDIENTE (referencia de mercado: tow local $95–175, medium-duty $250+).
 - Capacidad: PENDIENTE (número de grúas y choferes).
 - **CPL máximo aceptable**: PENDIENTE hasta tener ticket y tasa de cierre. Supuesto provisional: ticket $125, margen 50% ($62.5), cierre 60%. Con la regla PMM (margen × cierre × 0.3): $62.5 × 0.6 × 0.3 ≈ **$11 de CPL "cómodo"**. El techo de equilibrio sería $37.5. Es más bajo que la mediana del MCC ($15–20), así que hace falta el dato real antes de fijar el tCPA.
-- Historial Google Ads: cuenta 523-801-4243. Según el nombre del paquete, arrancó el **08/06/2026**. **No es visible en Windsor**; hay que conectarla para leer el histórico.
+- Historial Google Ads: cuenta 523-801-4243, conectada en Windsor. Paquete fechado 08/06/2026; **empezó a gastar el 22/08/2026**. 1 campaña Search "ENHPRM Radius", Maximizar conversiones, ad groups EN y ES. Septiembre: 18 conv., CPL de $38.50. Ver `log/2026-09-29.md`.
 
 ## Operación
 - Horario: 24/7 según el sitio. **PENDIENTE**: ¿quién contesta de noche? (define si las campañas corren 24/7 o con horario)
@@ -59,11 +59,11 @@ Competidores orgánicos y de directorio encontrados para "towing Wesley Chapel" 
 ## Web y tracking
 - Plataforma: WordPress + Elementor Pro. Por la fecha de subida del sitio (2026/08), probablemente lo hizo PMM. **PENDIENTE**: confirmar quién edita.
 - Tags encontrados: GTM-5VX6B6KS, Google Ads AW-18347420212, Google tag GT-5DDGBBK6 (vía Site Kit).
-- Conversiones: no se ve un evento de conversión (`send_to`) en el HTML. El formulario muestra un mensaje en la misma página, sin página de gracias. **Verificar con Tag Assistant** (ver `audit-site.md`).
+- Conversiones en la cuenta (todas primarias): **Website Calls, Form Fill, Calls from Ads**. Disparan vía GTM (no aparecen en el HTML). El formulario no tiene página de gracias. **Verificar con Tag Assistant** qué dispara cada una (ver `audit-site.md` y `log/2026-09-29.md`).
 - Requisitos de política: towing en FL requiere registro de wrecker. Se recomienda mostrar "Licensed & Insured" si aplica (PENDIENTE).
 
 ## LSA
 - Towing es una categoría de LSA en US: **verificar elegibilidad** en Pasco/Hillsborough. Requiere GBP, licencia, seguro y background check. Si califica, se arranca en paralelo (el proceso tarda de 2 a 4 semanas).
 
 ## Idioma
-- Mercado EN. En el comparable de Tampa (Fishhawk Towing), las keywords en español ("grua cerca de mi", "servicio de grua") convierten con un CPL parecido. **PENDIENTE**: ¿contestan en español? Si sí, se agrega un ad group ES.
+- Mercado EN. **Ya existe un ad group ES** en la cuenta: $308, 3 conv. (CPL $103) contra $39 en EN. En Fishhawk el español convierte a $19–25, así que el problema probable es la landing solo en inglés. **PENDIENTE**: ¿contestan en español?
