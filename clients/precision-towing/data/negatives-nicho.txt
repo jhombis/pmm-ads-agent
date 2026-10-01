@@ -1,0 +1,295 @@
+# Negativas — Precision Towing (aplicar con /negatives)
+# Nivel: cuenta (lista compartida "Precision - Nicho"), concordancia de frase salvo [exacta].
+# Además aplicar la lista "PMM Universal" (knowledge/negativas-universales.md) con dos EXCEPCIONES para esta cuenta:
+#   - NO aplicar "cheapest" ni "cheap": en el nicho towing convierten (23 cuentas, CVR 34%, CPL $16,59).
+#   - NO aplicar "trailer" de la lista de nicho towing: el cliente sí remolca 5th wheel y travel trailers.
+#   - "license"/"permit" de la sección gobierno: aplicar (no vendemos licencias).
+
+## Competidores locales (Kern River Valley)
+b&d towing
+b & d towing
+b and d towing
+b d towing
+bd towing
+bnd towing
+b n d towing
+band d towing
+b&d tow
+b and d tow
+d&b towing
+d and b towing
+b&d towing & storage
+b&m towing
+b & m towing
+b and m towing
+b m towing
+bm towing
+bnm towing
+b&m tow
+m&b towing
+golden empire towing
+golden empire tow
+golden empire
+goldenempiretow
+inyo towing
+inyo county towing
+inyo tow
+kern valley auto body
+a&a towing
+a & a towing
+a and a towing
+aa towing
+armando towing
+lakeisabellatowing
+760 474 6825
+
+## Competidores Bakersfield / Kern County y marcas ajenas vistas en search terms
+nitro towing
+nitro tow
+nitrotowing
+chinos towing
+chino's towing
+chino towing
+ibarra's towing
+ibarras towing
+ibarra towing
+nobles towing
+noble's towing
+noble towing
+pepe's towing
+pepes towing
+pepe towing
+b&b towing
+b & b towing
+b and b towing
+bb towing
+a&m towing
+a & m towing
+a and m towing
+am towing
+transcend
+kr towing
+k&r towing
+k & r towing
+randy's towing
+randys towing
+payless towing
+cal state towing
+cal-state towing
+lightning recovery
+omars towing
+omar's towing
+rafie's towing
+rafies towing
+murphys diesel
+murphy's diesel
+poly towing
+freddie mac towing
+jb towing
+p & m towing
+p&m towing
+angelos tow
+angelo's towing
+venture towing
+tremont towing
+pioneer towing
+aguiar's towing
+aguiars towing
+mount mesa automotive
+sierra automotive
+last touch collision
+curbsidepro
+mattsoffroadrecovery
+matt's off road recovery
+antelope valley towing
+av towing
+crescenta valley tow
+road rescue network
+roadrescuenetwork
+valley towing co
+valleytowingco
+protowing
+towbest
+4roadservice
+833 652 7455
+
+## Capacidad que el cliente no tiene (heavy duty)
+heavy duty
+heavy duty towing
+heavy towing
+semi
+semi truck
+18 wheeler
+big rig
+tractor trailer
+landoll
+lowboy
+bus towing
+commercial truck towing
+load shift
+cargo shift
+
+## Chatarra / gratis
+free towing
+free tow
+cash for cars
+junk car
+junk cars
+junk car removal
+scrap car
+car scrap
+free rv removal
+abandoned vehicle
+junkyard
+junk yard
+salvage
+sell my car
+we buy
+
+## Aseguradoras, planes y roadside de fabricante
+aaa
+triple a
+aaa towing
+aaa roadside
+geico
+allstate
+progressive
+state farm
+usaa
+farmers insurance
+insurance roadside
+roadside plan
+roadside membership
+membership
+agero
+nsd
+honk
+urgently
+onstar
+toyotacare
+mopar
+carvana
+walmart roadside
+phone number
+customer service number
+
+## Compra / info de trailers, RV y equipo (protege el AG4)
+hitch
+tow hitch
+5th wheel hitch
+gooseneck
+for sale
+used
+dealer
+dealership
+forest river
+no boundaries
+jayco
+keystone
+grand design
+cargo trailer
+enclosed trailer
+toy hauler
+tow dolly
+dolly
+dollies
+hauler
+capacity
+towing capacity
+calculator
+best truck
+best suv
+best pickup
+truck for towing
+how to tow
+first time
+tips
+rental
+u-haul
+uhaul
+trailer brakes
+weight distribution
+wdh
+teardrop
+18 ft trailer
+4x8
+silverado
+f150
+f-150
+ram 1500
+tow bar
+tow strap
+jumper
+jumper cables
+jump starter
+jump box
+battery pack
+battery charger
+portable
+tire shop
+tire place
+discount tire
+big o tires
+tow truck for sale
+wrecker for sale
+rollback for sale
+wheel lift for sale
+tow truck driver
+tow truck jobs
+
+## Fuera de área (la presencia ya lo filtra; refuerzo)
+bakersfield
+tehachapi
+ridgecrest
+california city
+mojave
+delano
+visalia
+porterville
+fresno
+los angeles
+lancaster
+palmdale
+oroville
+palm bay
+florida
+ohio
+texas
+inland empire
+colton
+
+## Servicios no confirmados (quitar cuando el cliente confirme)
+24 hour
+24 hr
+24/7
+24-hour
+overnight
+midnight
+fuel delivery
+gas delivery
+out of gas
+motorcycle
+motorhome
+long distance
+boat
+jet ski
+
+## Precio / info sin landing
+how much
+cost
+prices
+price list
+rates
+estimate calculator
+
+## Taller (sin campaña en fase 1; evita que Search pague clics de mecánica)
+smog
+smog check
+oil change
+brakes
+mechanic
+mechanics
+auto repair
+body shop
+paint
+collision

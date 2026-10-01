@@ -1,0 +1,182 @@
+# Negativas objetivo — AAMCO 103rd (estructura nueva). NO aplicadas.
+# Uso: listas compartidas a nivel de cuenta + negativas cruzadas por campaña.
+# La campaña actual ya tiene 359 negativas. Esta lista es la base limpia para la estructura nueva;
+# /negatives debe cruzarla contra lo existente antes de aplicar.
+# Concordancia: frase salvo que se indique [exacta].
+
+## 1. Universal PMM (knowledge/negativas-universales.md), con AJUSTES para este cliente
+# EXCLUIDOS de la universal para AAMCO (son intención comercial aquí):
+#   free        → bloquearía "free transmission check / free diagnostic". Usar solo "for free", "free parts", "free manual".
+#   review(s), bbb → bloquearían "aamco reviews" (marca con intención). Mantener solo en campañas NO-marca.
+#   warranty    → bloquearía "transmission warranty repair". Revisar con search terms.
+#   parts       → mantener (AAMCO no vende piezas sueltas).
+job
+jobs
+hiring
+career
+careers
+salary
+wages
+apprentice
+resume
+employment
+internship
+"work from home"
+how to
+"how do i"
+diy
+tutorial
+course
+class
+classes
+training
+certification
+school
+manual pdf
+wikipedia
+definition
+meaning
+"what is"
+youtube
+for free
+free parts
+free manual
+donate
+volunteer
+parts
+part
+supplies
+tool
+tools
+kit
+wholesale
+amazon
+ebay
+walmart
+"for sale"
+rental
+rent
+complaint
+complaints
+scam
+lawsuit
+forum
+reddit
+quora
+yelp
+game
+games
+toy
+
+## 2. Nicho taller / transmisiones
+auto parts
+car parts
+oem
+aftermarket
+used cars
+"car for sale"
+dealership
+dealer
+car wash
+detailing
+tint
+body shop
+collision
+dent
+bumper
+paint
+autobody
+auto glass
+windshield
+locksmith
+key replacement
+junkyard
+salvage
+pick a part
+used transmission
+transmission for sale
+transmissions for sale
+buy transmission
+rebuilt transmission for sale
+transmission kit
+transmission parts
+tow hitch
+tires
+tire shop
+flat tire
+mobile mechanic
+recall
+# Oil change: DECISIÓN DEL CLIENTE pendiente. Si no lo quiere como producto de entrada:
+# oil change
+# lube
+# tune up
+
+## 3. Competidores (frase)
+take 5
+jiffy lube
+valvoline
+grease monkey
+firestone
+goodyear
+midas
+meineke
+pep boys
+mavis
+tires plus
+big chief
+tire outlet
+ntb
+monro
+brakes 4 less
+cottman
+shifters
+mr transmission
+american transmission
+mitchell transmission
+duval county transmission
+budget automotive
+everything automotive
+jj's auto
+irish mike
+rpm automotive
+hughes riverside
+tillman auto
+apex automotive
+legacy automotive
+autozone
+advance auto
+o'reilly
+oreilly
+napa
+carmax
+autonation
+coggin
+duval ford
+hanania
+keith pierson
+
+## 4. Cruzadas por sede (solo en campañas 103rd)
+biscayne
+dunn ave
+san jose
+san jose blvd
+atlantic blvd
+blanding
+orange park
+st augustine
+st marys
+# En Biscayne, San Jose y Atlantic: agregar "103rd" y "westside".
+
+## 5. Descartadas en el research (informacional / precio sin intención)
+"how much does it cost to"
+transmission diagram
+transmission types
+what causes transmission
+"can i drive"
+transmission fluid type
+transmission fluid color
+"check transmission fluid"
+
+## 6. Revisar (existen hoy en la campaña y podrían bloquear intención comercial)
+# aaa     → bloquea "aaa approved auto repair"
+# duval   → bloquea "transmission repair duval county"; reemplazar por "duval county transmission" (competidor)

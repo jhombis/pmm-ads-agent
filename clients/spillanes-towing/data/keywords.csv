@@ -1,0 +1,42 @@
+keyword,vol_vt,vol_radio_est,cpc_top_low,cpc_top_high,intencion,servicio,ad_group,match_sugerido,fuente
+towing near me,1000,250,2.55,10.62,comercial,towing,AG1 Towing Near Me,exact+phrase,KP VT 21162 (Windsor) 2026-10-01
+towing company near me,880,220,1.99,7.95,comercial,towing,AG1 Towing Near Me,exact+phrase,KP VT
+towing,880,220,2.83,10.44,comercial (genérico),towing,AG1 Towing Near Me,phrase (towing service / towing company),KP VT
+towing company,480,120,2.50,10.91,comercial,towing,AG1 Towing Near Me,phrase,KP VT
+towing service,320,80,3.13,9.06,comercial,towing,AG1 Towing Near Me,phrase,KP VT
+tow service near me,320,80,2.46,8.68,comercial,towing,AG1 Towing Near Me,phrase,KP VT
+car towing near me,70,18,3.34,10.92,comercial,towing,AG1 Towing Near Me,phrase,KP VT
+local towing company,20,5,,,comercial,towing,AG1 Towing Near Me,phrase,KP VT
+tow truck near me,1600,400,2.50,10.40,comercial,towing,AG3 Tow Truck,exact+phrase,KP VT
+tow truck,720,180,2.55,11.03,comercial (genérico; ojo juguetes/venta),towing,AG3 Tow Truck,phrase (tow truck service/company),KP VT
+tow truck company near me,70,18,2.79,8.98,comercial,towing,AG3 Tow Truck,phrase,KP VT
+tow truck service,40,10,2.22,7.50,comercial,towing,AG3 Tow Truck,phrase,KP VT
+wrecker service near me,40,10,2.66,7.92,comercial,towing,AG3 Tow Truck,phrase,KP VT
+24 hour towing near me,20,5,2.24,8.53,comercial urgente,emergency,AG2 24/7 Emergency Towing,phrase,KP VT
+24 7 towing service,30,8,,,comercial urgente,emergency,AG2 24/7 Emergency Towing,phrase,KP VT
+emergency towing,<20,<5,,,comercial urgente,emergency,AG2 24/7 Emergency Towing,phrase,seed sin volumen KP
+towing burlington vt,30,30,2.05,,comercial local,towing,AG4 Towing Burlington VT,exact+phrase,Semrush US
+towing in burlington,70,70,2.14,,comercial local,towing,AG4 Towing Burlington VT,phrase,Semrush US
+tow truck burlington vt,20,20,1.89,,comercial local,towing,AG4 Towing Burlington VT,phrase,Semrush US
+towing south burlington vt,20,20,,,comercial local,towing,AG4 Towing Burlington VT,phrase,Semrush US
+towing colchester vt / essex vt / williston vt / winooski vt / shelburne vt,10-20 c/u,~60,,,comercial local,towing,AG4 Towing Burlington VT,phrase,Semrush US
+accident towing,<20,<5,3.81 (US),,comercial ticket alto,accident,AG5 Accident & Recovery,phrase,Semrush US 110/mes
+winch out / winch out service,<20,<5,3.00 (US),,comercial ticket alto,recovery,AG5 Accident & Recovery,phrase,Semrush US 90-590/mes
+car stuck in snow / ditch,s/d,estacional,,,comercial estacional (nov-mar),recovery,AG5 Accident & Recovery,phrase,hipótesis: invierno VT
+vehicle recovery / car recovery,<20,<5,4.15 (US),,comercial (ojo ambiguo),recovery,AG5 Accident & Recovery,phrase con car/vehicle,Semrush US
+flatbed tow truck,110,28,1.85,6.56,comercial,flatbed,AG6 Flatbed Towing,phrase,KP VT
+flatbed towing near me,s/d VT,,3.45 (US),,comercial,flatbed,AG6 Flatbed Towing,phrase,Semrush US 720/mes
+roadside assistance,880,220,2.98,8.69,mixta (AAA/aseguradoras),roadside,— (Fase 3 prueba),no en F1,KP VT; CPL MCC $67-154
+road service near me,210,53,1.91,6.22,mixta,roadside,— (Fase 3 prueba),no en F1,KP VT; CPL MCC $21
+emergency roadside assistance near me,170,43,2.49,7.46,mixta,roadside,— (Fase 3 prueba),no en F1,KP VT
+aaa roadside assistance / aaa emergency road service,1000,250,1.37,4.05,competidor/membresía,—,negativa,—,KP VT
+state farm / geico / progressive / allstate / usaa / aarp roadside,50-170 c/u,,,,aseguradora,—,negativa,—,KP VT
+cheap towing near me / $50 towing near me / inexpensive towing,50-170,,4.05,12.63,precio,—,negativa,—,KP VT
+truck towing / semi truck towing / tractor trailer towing,30-720,,,,heavy-duty (no confirmado),—,negativa F1,—,KP VT
+heavy duty towing,30,,,,heavy-duty (no confirmado),—,negativa F1,—,KP VT
+key stuck in ignition / car key jammed,70,,,,informacional/lockout,—,negativa,—,KP VT
+tow yard near me / towing yard,20-30,,,,impound,—,negativa,—,KP VT
+towing prices / towing cost / tow rates,20,5,1.94,6.12,comercial temprana,towing,(neutral: vigilar),—,KP VT
+long distance towing,s/d VT,,4.89 (US),,comercial,transport,(neutral: PENDIENTE cliente),—,Semrush US
+spillane's towing / spillanes towing,170,170,1.88,,marca propia (mayormente impound),—,negativa en genérica; sin campaña de marca,—,Semrush US
+handys towing / greniers / sheehan's / pagan / tailhook / anytime,170-590,,,,competidor,—,negativa,—,Semrush US

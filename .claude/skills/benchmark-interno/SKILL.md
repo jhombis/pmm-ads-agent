@@ -1,6 +1,6 @@
 ---
 name: benchmark-interno
-description: Busca en el MCC de PMM cuentas del mismo nicho/país y extrae CPC, CPL, tasa de conversión y estructura que funcionó. Escribe benchmark.md del cliente y actualiza knowledge/benchmarks/<nicho>.md. Usar tras /onboard o cuando se pida "cuentas similares", "qué CPL manejamos en X".
+description: Busca en el MCC de PMM cuentas del mismo nicho/país y extrae CPC, CPL, tasa de conversión y estructura que funcionó. Escribe benchmark.md del cliente y actualiza knowledge/benchmarks/<nicho>-<pais>.md. Usar tras /onboard o cuando se pida "cuentas similares", "qué CPL manejamos en X".
 ---
 
 # /benchmark-interno — Qué nos ha funcionado en cuentas parecidas
@@ -16,6 +16,7 @@ description: Busca en el MCC de PMM cuentas del mismo nicho/país y extrae CPC, 
 4. **Keywords top por conversiones** agregadas (anonimizadas por cuenta).
 5. **Negativas** más frecuentes en esas cuentas.
 6. **Si el cliente tiene historial propio**: correr lo mismo sobre su cuenta antigua y compararlo contra el benchmark.
+7. **Lectura** (playbook §3 y §9): comparar contra la mediana de 3–4 meses, no contra el mejor mes; tasas de conversión sobre <50 clics son ruido; `budget_amount` y `target_cpa` son valores vigentes, no históricos; la inversión real puede ser ~40–60% del monto del contrato.
 
 ## Salida: `clients/<slug>/benchmark.md`
 ```markdown
@@ -58,5 +59,12 @@ Comparación vs benchmark y diagnóstico de por qué falló o funcionó.
 
 También actualiza `knowledge/benchmarks/<nicho>-<pais>.md` con los agregados (sin nombres de clientes).
 
+**Un solo archivo por nicho y país.** Antes de escribir, revisa si ya existe `knowledge/benchmarks/<nicho>-<pais>.md` (`ls knowledge/benchmarks/`).
+- Si existe, actualízalo: suma la extracción nueva a los rangos o reemplaza las de más de 90 días. No crees una variante (`<nicho>.md`, `<nicho>-us-v2.md`…).
+- Guarda el crudo en `knowledge/benchmarks/raw/<nicho>-<pais>-<fecha>.*`.
+- Si tus datos contradicen una recomendación del archivo, deja la que tenga más cuentas detrás y anota la contradicción.
+
 ## Al terminar
 Resume rangos de CPL, conversiones esperadas con el presupuesto del brief, y si el presupuesto es suficiente para salir de aprendizaje. Siguiente: `/strategy`.
+
+**Último paso obligatorio: `/informe`**: actualizar y republicar el artefacto del cliente (ES + EN, estilo PMM) en sus mismas URLs y entregar los dos enlaces.

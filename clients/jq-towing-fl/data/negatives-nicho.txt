@@ -1,0 +1,133 @@
+# Negativas de nicho + competidores — JQ Towing (FL)
+# Aplicar además de la lista universal PMM (knowledge/negativas-universales.md) a nivel de cuenta.
+# Concordancia de frase salvo [exacta]. Fuente: lista towing PMM + benchmark MCC (towing-us.md) + competitors.md.
+# OJO: la universal incluye "rental/rent", "parts", "tools", "insurance claim" → OK para towing.
+
+## Nicho towing (PMM)
+junkyard
+junk yard
+salvage
+scrap
+car for cash
+sell my car
+tow truck for sale
+tow truck driver
+tow truck jobs
+dmv
+tow hitch
+tow bar
+trailer
+# junk / junk car → negativa mientras el cliente no compre chatarra (PENDIENTE confirmar)
+junk car
+junk cars
+
+## Motor clubs / seguros (benchmark MCC)
+aaa
+triple a
+agero
+honk
+urgently
+geico
+progressive
+state farm
+allstate
+usaa
+nationwide
+good sam
+onstar
+motor club
+membership
+roadside assistance plan
+roadside assistance insurance
+roadside assistance program
+roadside assistance coverage
+life360
+
+## Impound / repo / navegacional
+impound
+tow yard
+tow yards
+tow lot
+towed car
+my car was towed
+find my towed car
+where is my car towed
+city tow
+repo
+repossession
+police
+sheriff
+
+## Renta / equipo / talleres
+u haul
+uhaul
+penske
+ryder
+hertz
+enterprise
+jerr dan
+copart
+mechanic
+auto repair
+car repair
+body shop
+pep boys
+firestone
+tire shop
+tire store
+buy tires
+
+## Precio irreal
+$50 towing
+50 dollar tow
+free towing
+free tow
+
+## Servicios no confirmados (quitar si el cliente los ofrece)
+heavy duty
+semi truck
+semi towing
+18 wheeler
+big rig
+box truck
+rv towing
+motorcycle towing
+golf cart repair
+
+## Competidores locales y agregadores (no pujar)
+muggsuggs
+towing pros of the villages
+carters towing
+carter's towing
+daves towing
+dave's towing
+j&d towing
+jd towing
+j and d towing
+k&j towing
+kj towing
+matos towing
+a2z towing
+a 2 z towing
+central florida wrecker
+seminole towing
+mid florida wrecker
+cantrell
+cantrells
+platinum golf cart
+american golf cart association
+aga golf cart
+24hr cart club
+jrop
+curbside sos
+curbsidesos
+
+## Geo fuera del radio (aparecen como search terms aunque el usuario esté dentro)
+gainesville
+orlando
+tampa
+jacksonville
+dunnellon
+leesburg
+inverness
+crystal river

@@ -1,0 +1,82 @@
+nivel,account_id,account_name,region,campaign,campaign_type,bidding_strategy,spend_90d,clicks,impressions,conversions,cpc,ctr,conv_rate,cpl,active_days,first_day_spend,conv_mes,spend_mes,incluida_benchmark
+cuenta,108-022-5049,A1 Roadside Services LLC,,,,,0,0,0,0,,,,,0,,,,no (sin gasto en 90d)
+cuenta,179-026-2907,Veterans Towing,Georgia,,,MAXIMIZE_CONVERSIONS,2040.49,449,5656,170,4.54,0.0794,0.3786,12.0,90,2026-07-03,57.4,689.0,si
+campaña,179-026-2907,Veterans Towing,Georgia,Veterans Towing - ENHPRM Radius - $1339/mo. - 06/26/2025,SEARCH,MAXIMIZE_CONVERSIONS,2040.49,449,5656,170,4.54,0.0794,0.3786,12.0,,,,,
+cuenta,213-019-5545,290 Tow and Recovery,Texas,,,TARGET_SPEND,387.79,38,340,5,10.2,0.1118,0.1316,77.56,11,2026-09-20,13.8,1072.0,si
+campaña,213-019-5545,290 Tow and Recovery,Texas,290 Tow and Recovery - ENHPRM Radius - $1500/mo. - 09/17/2026,SEARCH,TARGET_SPEND,387.79,38,340,5,10.2,0.1118,0.1316,77.56,,,,,
+cuenta,220-410-9619,Jump Towing LLC,Minnesota,,,TARGET_SPEND,458.97,70,1036,7,6.56,0.0676,0.1,65.57,12,2026-09-17,17.7,1163.0,si
+campaña,220-410-9619,Jump Towing LLC,Minnesota,Jump Towing LLC - ENHPRM Radius - $2500/mo. - 08/11/2026,SEARCH,TARGET_SPEND,458.97,70,1036,7,6.56,0.0676,0.1,65.57,,,,,
+cuenta,281-767-4511,My Pro Am Towing,Michigan,,,MAXIMIZE_CONVERSIONS,3159.21,803,26647,142,3.93,0.0301,0.1768,22.25,90,2026-07-03,48.0,1067.0,si
+campaña,281-767-4511,My Pro Am Towing,Michigan,My Pro Am Towing - ENHPRM Radius - $1800/mo. - 04/14/2026,SEARCH,MAXIMIZE_CONVERSIONS,2655.33,340,5145,100,7.81,0.0661,0.2941,26.55,,,,,
+campaña,281-767-4511,My Pro Am Towing,Michigan,My Pro Am Towing - P. Max - $1800/mo - 06/10/2026,PERFORMANCE_MAX,MAXIMIZE_CONVERSIONS,503.88,463,21502,42,1.09,0.0215,0.0907,12.0,,,,,
+cuenta,369-986-4590,JJ's Towing and Lockouts,Texas (+Chihuahua MX),,,MAXIMIZE_CONVERSIONS,1407.33,419,4919,109,3.36,0.0852,0.2601,12.91,78,2026-07-15,42.5,548.0,si
+campaña,369-986-4590,JJ's Towing and Lockouts,Texas (+Chihuahua MX),JJ's Towing and Lockouts - ENHPRM Radius - $1200/mo. - 06/23/2026,SEARCH,MAXIMIZE_CONVERSIONS,1407.33,419,4919,109,3.36,0.0852,0.2601,12.91,,,,,
+cuenta,373-000-5941,Stokes Towing Company LLC,Arizona,,,MAXIMIZE_CONVERSIONS,757.07,306,13753,24,2.47,0.0222,0.0784,31.54,36,2026-08-16,20.3,639.0,si
+campaña,373-000-5941,Stokes Towing Company LLC,Arizona,Stokes Towing Company LLC - ENHPRM Radius - $1200/mo. - 06/23/2026,SEARCH,MAXIMIZE_CONVERSIONS,687.74,97,1106,23,7.09,0.0877,0.2371,29.9,,,,,
+campaña,373-000-5941,Stokes Towing Company LLC,Arizona,Stokes Towing Company LLC - P. Max - $1200/mo - 09/04/2026,PERFORMANCE_MAX,MAXIMIZE_CONVERSIONS,69.33,209,12647,1,0.33,0.0165,0.0048,69.33,,,,,
+cuenta,373-659-3096,Ken's Auto Tow,Kansas,,,MAXIMIZE_CONVERSIONS,3315.42,549,8679,257.0,6.04,0.0633,0.4681,12.9,89,2026-07-03,87.8,1132.0,si
+campaña,373-659-3096,Ken's Auto Tow,Kansas,Ken's Auto Tow - ENHPRM Radius - $2000/mo. - 06/10/2025,SEARCH,MAXIMIZE_CONVERSIONS,1689.98,243,3410,115.0,6.95,0.0713,0.4733,14.7,,,,,
+campaña,373-659-3096,Ken's Auto Tow,Kansas,Ken's Auto Tow - P. Max - $2000/mo - 07/07/2025,PERFORMANCE_MAX,MAXIMIZE_CONVERSIONS,1625.44,306,5269,142.0,5.31,0.0581,0.4641,11.45,,,,,
+cuenta,425-405-2574,RR Roadside Relief,Oklahoma,,,MAXIMIZE_CONVERSIONS,648.85,94,1689,8,6.9,0.0557,0.0851,81.11,13,2026-09-18,18.7,1517.0,si
+campaña,425-405-2574,RR Roadside Relief,Oklahoma,RR Roadside Relief - ENHPRM Radius - $2250/mo. - 09/15/2026,SEARCH,MAXIMIZE_CONVERSIONS,648.85,94,1689,8,6.9,0.0557,0.0851,81.11,,,,,
+cuenta,484-782-0739,Kritical Towing,California,,,MAXIMIZE_CONVERSIONS,2221.56,196,2729,50,11.33,0.0718,0.2551,44.43,84,2026-07-03,18.1,804.0,si
+campaña,484-782-0739,Kritical Towing,California,Kritical Towing - ENHPRM Radius - $1500/mo. - 05/13/2024,SEARCH,MAXIMIZE_CONVERSIONS,2221.56,196,2729,50,11.33,0.0718,0.2551,44.43,,,,,
+cuenta,497-804-3129,Envy Towing and Recovery Corp,Connecticut,,,MAXIMIZE_CONVERSIONS,286.95,26,348,5,11.04,0.0747,0.1923,57.39,17,2026-07-03,8.9,513.0,si
+campaña,497-804-3129,Envy Towing and Recovery Corp,Connecticut,Envy Towing and Recovery Corp. - ENHPRM Radius - $999/mo. - 05/08/2026,SEARCH,MAXIMIZE_CONVERSIONS,286.95,26,348,5,11.04,0.0747,0.1923,57.39,,,,,
+cuenta,523-801-4243,Jerry's Auto Body Solutions & Towing Service,Florida,,,MAXIMIZE_CONVERSIONS,1072.18,139,1421,22,7.71,0.0978,0.1583,48.74,38,2026-08-22,17.6,858.0,si
+campaña,523-801-4243,Jerry's Auto Body Solutions & Towing Service,Florida,Jerry's Auto Body Solutions & Towing Service - ENHPRM Radius - $1500/mo. - 08/06/2026,SEARCH,MAXIMIZE_CONVERSIONS,1072.18,139,1421,22,7.71,0.0978,0.1583,48.74,,,,,
+cuenta,558-147-4778,California Towing and Transport,California,,,MAXIMIZE_CONVERSIONS,3309.08,583,14197,221.0,5.68,0.0411,0.3791,14.97,90,2026-07-03,74.6,1118.0,si
+campaña,558-147-4778,California Towing and Transport,California,"California Towing - P.Max - $3,000/mo 02/12/24",PERFORMANCE_MAX,MAXIMIZE_CONVERSIONS,2255.01,409,12001,138.68,5.51,0.0341,0.3391,16.26,,,,,
+campaña,558-147-4778,California Towing and Transport,California,"California Towing and Transport - ZETA Heavy Radius - $3,000/mo. - 1/24/2025",SEARCH,MAXIMIZE_CONVERSIONS,1054.07,174,2196,82.32,6.06,0.0792,0.4731,12.8,,,,,
+cuenta,566-892-6004,Beech Grove Towing & Recovery Service,Indiana,,,MAXIMIZE_CONVERSIONS,901.11,200,2585,93,4.51,0.0774,0.465,9.69,89,2026-07-03,31.8,308.0,si
+campaña,566-892-6004,Beech Grove Towing & Recovery Service,Indiana,Beech Grove Towing & Recovery Service - Search Mobile - $899.95/mo. - 12/14/2015,SEARCH,MAXIMIZE_CONVERSIONS,901.11,200,2585,93,4.51,0.0774,0.465,9.69,,,,,
+cuenta,573-306-9698,A & D Towing of Boston LLC,,,,,0,0,0,0,,,,,0,,,,no (sin gasto en 90d)
+cuenta,574-661-0292,Denton Affordable Towing,,,,,0,0,0,0,,,,,0,,,,no (sin gasto en 90d)
+cuenta,583-434-2464,A & D Towing Service,Virginia,,,MAXIMIZE_CONVERSIONS,1171.66,603,5476,140.99,1.94,0.1101,0.2338,8.31,90,2026-07-03,47.6,396.0,si
+campaña,583-434-2464,A & D Towing Service,Virginia,A & D Towing Service  - ENHPRM Radius - $1000/mo. - 11/28/2023,SEARCH,MAXIMIZE_CONVERSIONS,539.0,207,1614,45.0,2.6,0.1283,0.2174,11.98,,,,,
+campaña,583-434-2464,A & D Towing Service,Virginia,A & D Towing Service  - Performance Max - $1000/mo. - 5/31/2024,PERFORMANCE_MAX,MAXIMIZE_CONVERSIONS,632.66,396,3862,96.0,1.6,0.1025,0.2424,6.59,,,,,
+cuenta,584-865-2160,Point A2B Tow N' More,Arizona,,,MAXIMIZE_CONVERSIONS,564.22,72,1395,16,7.84,0.0516,0.2222,35.26,17,2026-07-03,28.6,1009.0,si
+campaña,584-865-2160,Point A2B Tow N' More,Arizona,Point A2B Tow N' More  - ENHPRM Radius - $1500/mo. - 06/22/2026,SEARCH,MAXIMIZE_CONVERSIONS,564.22,72,1395,16,7.84,0.0516,0.2222,35.26,,,,,
+cuenta,617-549-0037,Summit Towing & Roadside,California (Bay Area),,,MAXIMIZE_CONVERSIONS,2335.64,342,6653,58,6.83,0.0514,0.1696,40.27,86,2026-07-03,20.5,826.0,si
+campaña,617-549-0037,Summit Towing & Roadside,California (Bay Area),Summit Towing & Roadside - ENHPRM Radius - $1500/mo. - 06/25/2026,SEARCH,MAXIMIZE_CONVERSIONS,2269.67,293,4422,56,7.75,0.0663,0.1911,40.53,,,,,
+campaña,617-549-0037,Summit Towing & Roadside,California (Bay Area),Summit Towing & Roadside - P. Max - $1500/mo - 08/06/2026,PERFORMANCE_MAX,MAXIMIZE_CONVERSIONS,65.97,49,2231,2,1.35,0.022,0.0408,32.98,,,,,
+cuenta,667-808-6764,Vance Towing,,,,,0,0,0,0,,,,,0,,,,no (sin gasto en 90d)
+cuenta,676-691-8250,Mosby's Towing,Kentucky,,,MAXIMIZE_CONVERSIONS,4357.76,1160,23648,442.0,3.76,0.0491,0.381,9.86,90,2026-07-03,149.3,1472.0,si
+campaña,676-691-8250,Mosby's Towing,Kentucky,Mosby's Towing & Transport LLC - ENHPRM Radius - $2500/mo. - 06/26/2025,SEARCH,MAXIMIZE_CONVERSIONS,3477.44,697,8444,343.33,4.99,0.0825,0.4926,10.13,,,,,
+campaña,676-691-8250,Mosby's Towing,Kentucky,Mosby's Towing & Transport LLC [Heavy Duty] - P. Max - $2500/mo - 08/14/2025,PERFORMANCE_MAX,MAXIMIZE_CONVERSIONS,880.32,463,15204,98.67,1.9,0.0305,0.2131,8.92,,,,,
+cuenta,716-097-5854,Fenix Towing,New York,,,MAXIMIZE_CONVERSIONS,2067.18,456,7332,107,4.53,0.0622,0.2346,19.32,61,2026-07-03,53.3,1030.0,si
+campaña,716-097-5854,Fenix Towing,New York,Fenix Towing - ENHPRM Radius - $1600/mo. - 01/01/2024,SEARCH,MAXIMIZE_CONVERSIONS,1054.15,117,1140,41,9.01,0.1026,0.3504,25.71,,,,,
+campaña,716-097-5854,Fenix Towing,New York,Fenix Towing - P. Max - $1600/mo. - 06/12/2025,PERFORMANCE_MAX,MAXIMIZE_CONVERSIONS,1013.03,339,6192,66,2.99,0.0547,0.1947,15.35,,,,,
+cuenta,719-367-8947,5T Towing and Recovery,New York,,,MAXIMIZE_CONVERSIONS,2213.83,441,6915,138.0,5.02,0.0638,0.3129,16.04,63,2026-07-20,66.6,1068.0,si
+campaña,719-367-8947,5T Towing and Recovery,New York,5T Towing & Recovery - Performance Max - $1800/mo. - 05/02/2025,PERFORMANCE_MAX,MAXIMIZE_CONVERSIONS,1218.73,262,5158,67.0,4.65,0.0508,0.2557,18.19,,,,,
+campaña,719-367-8947,5T Towing and Recovery,New York,5T Towing and Recovery - ENHPRM Radius - $1800/mo. - 01/27/2025,SEARCH,MAXIMIZE_CONVERSIONS,995.1,179,1757,71.0,5.56,0.1019,0.3966,14.02,,,,,
+cuenta,726-988-6211,Pirate Towing,North Carolina,,,MAXIMIZE_CONVERSIONS,749.29,198,1613,54,3.78,0.1228,0.2727,13.88,88,2026-07-03,18.7,259.0,si
+campaña,726-988-6211,Pirate Towing,North Carolina,Pirate Towing - ENHPRM Radius - $799/mo. - 06/11/2025,SEARCH,MAXIMIZE_CONVERSIONS,749.29,198,1613,54,3.78,0.1228,0.2727,13.88,,,,,
+cuenta,742-239-3943,Beachaven Auto Care & Towing,Tennessee,,,MAXIMIZE_CONVERSIONS,1261.31,308,3310,153.0,4.1,0.0931,0.4968,8.24,82,2026-07-03,56.7,468.0,si
+campaña,742-239-3943,Beachaven Auto Care & Towing,Tennessee,Beachaven Auto Care & Towing - Performance Max - $1000/mo. - 5/15/2024,PERFORMANCE_MAX,MAXIMIZE_CONVERSIONS,1261.31,308,3310,153.0,4.1,0.0931,0.4968,8.24,,,,,
+cuenta,753-255-2245,Precision Towing,California,,,MAXIMIZE_CONVERSIONS,1268.3,140,3493,38.0,9.06,0.0401,0.2714,33.38,40,2026-08-17,28.9,964.0,si
+campaña,753-255-2245,Precision Towing,California,Precision Towing - ENHPRM Radius - $1500/mo. - 08/14/2026,SEARCH,MAXIMIZE_CONVERSIONS,1141.79,80,652,30.0,14.27,0.1227,0.375,38.06,,,,,
+campaña,753-255-2245,Precision Towing,California,Precision Towing - P. Max - $1500/mo - 09/04/2026,PERFORMANCE_MAX,MAXIMIZE_CONVERSIONS,126.51,60,2841,8.0,2.11,0.0211,0.1333,15.82,,,,,
+cuenta,770-506-4141,J & S Towing & Recovery,Florida,,,MAXIMIZE_CONVERSIONS,365.22,54,966,6,6.76,0.0559,0.1111,60.87,24,2026-07-03,7.6,463.0,si
+campaña,770-506-4141,J & S Towing & Recovery,Florida,J & S Towing & Recovery - ENHPRM Radius - $799/mo. - 06/23/2026,SEARCH,MAXIMIZE_CONVERSIONS,365.22,54,966,6,6.76,0.0559,0.1111,60.87,,,,,
+cuenta,784-785-1491,Fishhawk Towing,Florida,,,MAXIMIZE_CONVERSIONS,2347.46,388,10180,72.0,6.05,0.0381,0.1856,32.6,58,2026-07-03,37.7,1230.0,si
+campaña,784-785-1491,Fishhawk Towing,Florida,Fishhawk Towing - ENHPRM Radius - $1700/mo. - 11/06/2025,SEARCH,MAXIMIZE_CONVERSIONS,2001.02,217,4164,59.0,9.22,0.0521,0.2719,33.92,,,,,
+campaña,784-785-1491,Fishhawk Towing,Florida,Fishhawk Towing - P. Max - $2100/mo - 03/11/24,PERFORMANCE_MAX,MAXIMIZE_CONVERSIONS,346.44,171,6016,13,2.03,0.0284,0.076,26.65,,,,,
+cuenta,799-783-3693,Mr. Towing,Colorado,,,MAXIMIZE_CONVERSIONS,7292.72,1105,23703,260.0,6.6,0.0466,0.2353,28.05,77,2026-07-03,102.6,2879.0,si
+campaña,799-783-3693,Mr. Towing,Colorado,"Mr. Towing - ENHPRM Radius - $3,550/mo. - 09/18/2024",SEARCH,MAXIMIZE_CONVERSIONS,1024.34,99,1331,21,10.35,0.0744,0.2121,48.78,,,,,
+campaña,799-783-3693,Mr. Towing,Colorado,"Mr. Towing - P. Max - $3,550/mo - 03/04/2025",PERFORMANCE_MAX,MAXIMIZE_CONVERSIONS,6268.38,1006,22372,239.0,6.23,0.045,0.2376,26.23,,,,,
+cuenta,822-393-5903,Spillane's Towing and Recovery,Vermont,,,MAXIMIZE_CONVERSIONS,940.14,79,696,14,11.9,0.1135,0.1772,67.15,24,2026-09-05,17.7,1191.0,si
+campaña,822-393-5903,Spillane's Towing and Recovery,Vermont,Spillane's Towing and Recovery - ENHPRM Radius - $1799/mo. - 08/20/2026,SEARCH,MAXIMIZE_CONVERSIONS,940.14,79,696,14,11.9,0.1135,0.1772,67.15,,,,,
+cuenta,827-578-4891,First Response Towing & Recovery,Georgia,,,TARGET_SPEND,563.52,110,1643,8,5.12,0.067,0.0727,70.44,33,2026-08-17,7.4,519.0,si
+campaña,827-578-4891,First Response Towing & Recovery,Georgia,First Response Towing & Recovery - ENHPRM Radius - $1000/mo. - 08/17/2026,SEARCH,TARGET_SPEND,563.52,110,1643,8,5.12,0.067,0.0727,70.44,,,,,
+cuenta,851-804-7062,Leading Edge Towing,Arizona,,,TARGET_SPEND,1038.69,114,1509,15,9.11,0.0755,0.1316,69.25,64,2026-07-03,7.1,493.0,si
+campaña,851-804-7062,Leading Edge Towing,Arizona,Leading Edge Towing - ENHPRM Radius - $799/mo. - 12/11/2025,SEARCH,TARGET_SPEND,1038.69,114,1509,15,9.11,0.0755,0.1316,69.25,,,,,
+cuenta,889-300-4480,Cook's Towing,Pennsylvania,,,MAXIMIZE_CONVERSIONS,750.51,146,1879,48.0,5.14,0.0777,0.3288,15.64,89,2026-07-03,16.4,256.0,si
+campaña,889-300-4480,Cook's Towing,Pennsylvania,Cook's Towing - ENHPRM Radius - $799/mo. - 09/06/2024,SEARCH,MAXIMIZE_CONVERSIONS,750.51,146,1879,48.0,5.14,0.0777,0.3288,15.64,,,,,
+cuenta,935-440-8113,Grand Valley Towing,Michigan,,,MAXIMIZE_CONVERSIONS,4441.2,880,9135,386.0,5.05,0.0963,0.4386,11.51,90,2026-07-03,130.4,1500.0,si
+campaña,935-440-8113,Grand Valley Towing,Michigan,Grand Valley Towing - ENHPRM Radius - $6599/mo. - 09/07/2023,SEARCH,MAXIMIZE_CONVERSIONS,2756.53,358,3855,105.0,7.7,0.0929,0.2933,26.25,,,,,
+campaña,935-440-8113,Grand Valley Towing,Michigan,Grand Valley Towing - Performance Max - $6599/mo. - 04/19/2024,PERFORMANCE_MAX,MAXIMIZE_CONVERSIONS,1684.67,522,5280,281.0,3.23,0.0989,0.5383,6.0,,,,,
+cuenta,969-181-4858,All Pro Towing,Nevada,,,MAXIMIZE_CONVERSIONS,1329.1,259,3671,83,5.13,0.0706,0.3205,16.01,89,2026-07-03,28.4,454.0,si
+campaña,969-181-4858,All Pro Towing,Nevada,All Pro Towing - ENHPRM Radius - $1000/mo. - 04/22/2025,SEARCH,MAXIMIZE_CONVERSIONS,898.62,158,1717,62,5.69,0.092,0.3924,14.49,,,,,
+campaña,969-181-4858,All Pro Towing,Nevada,All Pro Towing - P. Max - $1000/mo - 05/12/2025,PERFORMANCE_MAX,MAXIMIZE_CONVERSIONS,430.48,101,1954,21,4.26,0.0517,0.2079,20.5,,,,,
+cuenta,993-389-6186,Budget Towing and Recovery,,,,,0,0,0,0,,,,,0,,,,no (sin gasto en 90d)

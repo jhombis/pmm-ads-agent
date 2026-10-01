@@ -1,0 +1,78 @@
+keyword,vol_nacional_us,vol_okc_est,cpc_est_usd,intencion,servicio,ciudad,ad_group,match_sugerido
+towing near me,110000,473,3.46,comercial,towing,OKC metro (near me),AG1 Towing Near Me,exacta+frase
+tow truck near me,135000,580,3.96,comercial,towing,OKC metro (near me),AG1 Towing Near Me,exacta+frase
+towing company near me,40500,174,3.36,comercial,towing,OKC metro (near me),AG1 Towing Near Me,exacta+frase
+tow service near me,14800,64,3.46,comercial,towing,OKC metro (near me),AG1 Towing Near Me,frase
+tow truck service near me,6600,28,4.34,comercial,towing,OKC metro (near me),AG1 Towing Near Me,frase
+car towing near me,8100,35,3.43,comercial,towing,OKC metro (near me),AG1 Towing Near Me,frase
+towing service near me,27100,117,3.46,comercial,towing,OKC metro (near me),AG1 Towing Near Me,frase
+wrecker service near me,12100,52,3.23,comercial,towing,OKC metro (near me),AG1 Towing Near Me,frase
+towing service,368000,1582,3.73,comercial,towing,OKC metro (near me),AG1 Towing Near Me,frase
+car towing service,2400,10,3.92,comercial,towing,OKC metro (near me),AG1 Towing Near Me,frase
+tow truck service,,,,comercial,towing,OKC metro (near me),AG1 Towing Near Me,frase
+towing okc,,320,3.61,comercial,towing,OKC,AG2 Towing OKC & Cities,exacta+frase
+tow truck okc,,320,3.53,comercial,towing,OKC,AG2 Towing OKC & Cities,exacta+frase
+towing oklahoma city,,40,3.17,comercial,towing,OKC,AG2 Towing OKC & Cities,frase
+tow truck oklahoma city,,50,3.53,comercial,towing,OKC,AG2 Towing OKC & Cities,frase
+oklahoma city towing,,50,3.17,comercial,towing,OKC,AG2 Towing OKC & Cities,frase
+okc towing,,20,3.86,comercial,towing,OKC,AG2 Towing OKC & Cities,frase
+towing edmond ok,,140,2.34,comercial,towing,Edmond,AG2 Towing OKC & Cities,frase
+towing norman ok,,70,2.58,comercial,towing,Norman,AG2 Towing OKC & Cities,frase
+tow truck norman ok,,20,4.02,comercial,towing,Norman,AG2 Towing OKC & Cities,frase
+towing moore ok,,20,2.85,comercial,towing,Moore,AG2 Towing OKC & Cities,frase
+tow truck moore ok,,20,3.78,comercial,towing,Moore,AG2 Towing OKC & Cities,frase
+towing yukon ok,,20,3.71,comercial,towing,Yukon,AG2 Towing OKC & Cities,frase
+towing midwest city,,20,3.8,comercial,towing,Midwest City,AG2 Towing OKC & Cities,frase
+24 hour towing near me,2900,12,3.14,comercial urgente,towing,OKC metro (near me),AG3 24/7 Emergency Towing,exacta+frase
+24 hour towing,2900,12,3.3,comercial urgente,towing,OKC metro (near me),AG3 24/7 Emergency Towing,frase
+24/7 towing,1300,6,2.46,comercial urgente,towing,OKC metro (near me),AG3 24/7 Emergency Towing,frase
+emergency towing,1900,8,3.9,comercial urgente,towing,OKC metro (near me),AG3 24/7 Emergency Towing,frase
+emergency towing near me,1000,4,3.69,comercial urgente,towing,OKC metro (near me),AG3 24/7 Emergency Towing,exacta+frase
+tow truck open now,110,0,3.39,comercial urgente,towing,OKC metro (near me),AG3 24/7 Emergency Towing,frase
+cheap towing near me,14800,64,3.12,comercial precio,towing,OKC metro (near me),AG4 Affordable Towing,exacta+frase
+cheap tow truck near me,5400,23,3.38,comercial precio,towing,OKC metro (near me),AG4 Affordable Towing,exacta+frase
+affordable towing,4400,19,2.89,comercial precio,towing,OKC metro (near me),AG4 Affordable Towing,frase
+affordable towing near me,,,,comercial precio,towing,OKC metro (near me),AG4 Affordable Towing,frase
+flatbed towing,1600,7,3.41,comercial,towing,OKC metro (near me),AG5 Flatbed & Motorcycle Towing,frase
+flatbed tow truck near me,320,1,3.72,comercial,towing,OKC metro (near me),AG5 Flatbed & Motorcycle Towing,exacta+frase
+flatbed tow truck,12100,52,3.09,mixta (compra de camión),towing,OKC metro (near me),AG5 Flatbed & Motorcycle Towing,frase + neg 'for sale'
+motorcycle towing,2900,12,2.65,comercial,towing,OKC metro (near me),AG5 Flatbed & Motorcycle Towing,frase
+motorcycle towing near me,1900,8,2.49,comercial,towing,OKC metro (near me),AG5 Flatbed & Motorcycle Towing,exacta+frase
+motorcycle tow,720,3,2.65,comercial,towing,OKC metro (near me),AG5 Flatbed & Motorcycle Towing,frase
+lowered car towing,40,0,2.62,comercial,towing,OKC metro (near me),AG5 Flatbed & Motorcycle Towing,frase
+roadside assistance near me,33100,142,3.38,comercial,roadside,OKC metro (near me),AG6 Roadside Assistance,exacta+frase
+emergency roadside assistance,6600,28,3.69,comercial,roadside,OKC metro (near me),AG6 Roadside Assistance,frase
+24 hour roadside assistance,4400,19,3.29,comercial urgente,roadside,OKC metro (near me),AG6 Roadside Assistance,frase
+roadside assistance okc,,110,3.33,comercial,roadside,OKC,AG6 Roadside Assistance,exacta+frase
+roadside assistance oklahoma city,,10,3.44,comercial,roadside,OKC,AG6 Roadside Assistance,frase
+winch out service,590,3,3.07,comercial,roadside,OKC metro (near me),AG6 Roadside Assistance,frase
+winch out,590,3,2.43,comercial,roadside,OKC metro (near me),AG6 Roadside Assistance,frase
+car stuck in mud,480,2,2.18,mixta,roadside,OKC metro (near me),AG6 Roadside Assistance,frase
+gas delivery near me,590,3,8.75,comercial,roadside,OKC metro (near me),AG6 Roadside Assistance,frase (puja controlada)
+out of gas,390,2,2.47,mixta,roadside,OKC metro (near me),AG6 Roadside Assistance,no pujar sola; 'out of gas help/near me' frase
+tire change near me,14800,64,2.53,mixta (tiendas),tire,OKC metro (near me),AG7 Flat Tire Change,frase
+flat tire change near me,320,1,3.1,comercial,tire,OKC metro (near me),AG7 Flat Tire Change,exacta+frase
+flat tire change,390,2,2.28,comercial,tire,OKC metro (near me),AG7 Flat Tire Change,frase
+mobile tire change,1000,4,2.89,comercial,tire,OKC metro (near me),AG7 Flat Tire Change,frase
+roadside tire change,390,2,3.11,comercial,tire,OKC metro (near me),AG7 Flat Tire Change,frase
+flat tire help,390,2,3.35,comercial,tire,OKC metro (near me),AG7 Flat Tire Change,frase
+car lockout service,2900,12,4.83,comercial,lockout,OKC metro (near me),AG8 Car Lockout,exacta+frase
+car lockout,1900,8,4.48,comercial,lockout,OKC metro (near me),AG8 Car Lockout,frase
+car lockout near me,390,2,3.55,comercial,lockout,OKC metro (near me),AG8 Car Lockout,exacta+frase
+locked keys in car,8100,35,4.72,mixta (DIY),lockout,OKC metro (near me),AG8 Car Lockout,frase + neg 'how to'
+locked out of car,3600,15,4.48,mixta (DIY),lockout,OKC metro (near me),AG8 Car Lockout,frase + neg 'how to'
+jump start near me,1300,6,2.66,comercial,jumpstart,OKC metro (near me),AG9 Jump Start,exacta+frase
+jump start service,1000,4,3.08,comercial,jumpstart,OKC metro (near me),AG9 Jump Start,frase
+car jump start service,260,1,3.13,comercial,jumpstart,OKC metro (near me),AG9 Jump Start,frase
+dead battery jump start,320,1,0.39,mixta,jumpstart,OKC metro (near me),AG9 Jump Start,frase
+grua cerca de mi,2900,12,2.47,comercial,towing-es,OKC metro (near me),AG10 Grúa en Español,exacta+frase
+servicio de grua,880,4,2.75,comercial,towing-es,OKC metro (near me),AG10 Grúa en Español,frase
+asistencia en carretera,390,2,3.78,comercial,roadside-es,OKC metro (near me),AG10 Grúa en Español,frase
+auxilio vial,30,0,3.06,comercial,roadside-es,OKC metro (near me),AG10 Grúa en Español,frase
+roadside assistance,450000,1935,3.76,mixta (planes/aseguradoras),-,OKC metro (near me),DESCARTADA,no — solo con near me/ciudad
+jump start,14800,64,1.07,informacional/producto,-,OKC metro (near me),DESCARTADA,no
+fuel delivery,3600,15,8.03,B2B fleet fueling,-,OKC metro (near me),DESCARTADA,no
+gas delivery,880,4,6.69,B2B/residencial,-,OKC metro (near me),DESCARTADA,no
+tow truck,60500,260,3.51,mixta (compra/empleo/info),-,OKC metro (near me),DESCARTADA,no sola
+aaa roadside call,110,0,1.42,navegacional AAA,-,OKC metro (near me),DESCARTADA,negativa
+towing okc competitor brands,,,,competidor,-,OKC,DESCARTADA,negativa (ver negatives-nicho.txt)
