@@ -65,7 +65,7 @@ estado: onboarding
 - Capacidad (casos/mes): PENDIENTE
 - **CPL máximo aceptable**: **~$60 (supuesto)** = margen $500 por caso × 40% cierre de lead calificado × 0.3. Reemplazar cuando el cliente dé margen real; con servicios completos el margen sube y el CPL máx también.
   - Lectura de presupuesto: $1,500 / $60 ≈ **25 leads/mes** si se cumple el CPL; con CPC $5–10 son ~150–300 clics/mes → necesita tasa de conversión ≥8–15%. Ajustado pero viable con geo reducido.
-- Historial Google Ads: **cuenta 751-429-2721** (de quién es, desde cuándo y resultados: PENDIENTE). Semrush no ve anuncios del dominio nuevo → probablemente histórico de Inland Memorial o cuenta pausada. /benchmark-interno debe leer su histórico.
+- Historial Google Ads: **cuenta 751-429-2721, activa en el MCC de PMM desde 07/05/2026** ("Premium Local Listings 004029 ($2800 …)"). Search ~$1,390/mes, 12.4 conv/mes, CPA $113 (jun–sep); Display ~$31/mes con 0 conv. Cuenta anterior del mismo dueño: Inland Memorial Inc. 934-241-5137 (pausada en ago 2026). Diagnóstico en strategy.md.
 
 ## Operación
 - Horario / 24-7: **24/7 con persona real** → anuncios 24/7 permitidos (estándar #10). Quién contesta de noche (director vs answering service): PENDIENTE.
@@ -87,7 +87,7 @@ estado: onboarding
 - Aplica: PENDIENTE — verificar si la categoría "funeral home" está disponible en LSA para Riverside County (no es categoría habitual de servicios a domicilio). No asumir.
 
 ## Pendientes
-- [ ] **Bloqueante**: acceso a la cuenta 751-429-2721 desde el MCC + contexto (dueño, fechas, qué pasó).
+- [x] Cuenta 751-429-2721 encontrada en el MCC (Windsor). Pendiente: confirmar si "$2800" es facturación total con fee.
 - [ ] **Bloqueante**: tracking — GA4/Google Tag, destino de formularios, aceptación de número de reenvío (sin tracking no se lanza).
 - [ ] **Bloqueante**: GBP nuevo verificado + acceso PMM (activo de ubicación); confirmar que no quede duplicado con la ficha de Inland Memorial.
 - [ ] Precio y contenido del paquete de servicios completos (servicio estrella).
