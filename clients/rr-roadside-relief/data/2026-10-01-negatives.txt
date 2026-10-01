@@ -1,0 +1,291 @@
+# RR Roadside Relief — negativas propuestas 2026-10-01
+# Formato: término | match | nivel
+# Nivel "campaña" = campaña 24255091376 (única campaña). La lista universal debería vivir en lista compartida a nivel de cuenta;
+# Windsor solo permite campaña/ad group, así que se aplica a la campaña y queda pendiente moverla a la lista compartida "PMM Universal" (API/Editor).
+# Validado: 0 conflictos con las 100 keywords activas; 6 candidatas descartadas por estar ya cubiertas por negativas existentes.
+
+## universal-empleo
+jobs | frase | campaña
+career | frase | campaña
+careers | frase | campaña
+salary | frase | campaña
+wage | frase | campaña
+wages | frase | campaña
+resume | frase | campaña
+employment | frase | campaña
+internship | frase | campaña
+work from home | frase | campaña
+empleo | frase | campaña
+vacante | frase | campaña
+salario | frase | campaña
+
+## universal-educacion
+how do i | frase | campaña
+tutorial | frase | campaña
+course | frase | campaña
+training | frase | campaña
+certification | frase | campaña
+school | frase | campaña
+learn | frase | campaña
+manual | frase | campaña
+pdf | frase | campaña
+youtube | frase | campaña
+what is | frase | campaña
+meaning | frase | campaña
+como hacer | frase | campaña
+cómo hacer | frase | campaña
+que es | frase | campaña
+
+## universal-gratis
+volunteer | frase | campaña
+# cheapest | frase | campaña   # CONFIRMAR — la cuenta puja por "cheap towing"
+
+## universal-productos
+parts | frase | campaña
+tools | frase | campaña
+equipment | frase | campaña
+wholesale | frase | campaña
+amazon | frase | campaña
+ebay | frase | campaña
+walmart | frase | campaña
+home depot | frase | campaña
+buy | frase | campaña
+repuestos | frase | campaña
+
+## universal-resenas
+reviews | frase | campaña
+complaint | frase | campaña
+complaints | frase | campaña
+scam | frase | campaña
+lawsuit | frase | campaña
+reddit | frase | campaña
+yelp | frase | campaña
+bbb | frase | campaña
+
+## universal-legal
+lawyer | frase | campaña
+attorney | frase | campaña
+permit | frase | campaña
+code | frase | campaña
+
+## universal-adulto
+porn | frase | campaña
+game | frase | campaña
+games | frase | campaña
+movie | frase | campaña
+song | frase | campaña
+
+## nicho-towing
+junkyard | frase | campaña
+salvage | frase | campaña
+scrap | frase | campaña
+cash for cars | frase | campaña
+sell my car | frase | campaña
+tow truck driver | frase | campaña
+dmv | frase | campaña
+tow hitch | frase | campaña
+tow bar | frase | campaña
+# trailer | frase | campaña   # CONFIRMAR — ¿remolca tráileres?
+
+## competidor
+always towing | frase | campaña
+5 star towing | frase | campaña
+tk towing | frase | campaña
+robertson roadside | frase | campaña
+harringtons | frase | campaña
+harrington's | frase | campaña
+puckett towing | frase | campaña
+oklahoma towing and recovery | frase | campaña
+excel wrecker | frase | campaña
+rpm towing | frase | campaña
+a to z towing | frase | campaña
+head 2 tow | frase | campaña
+bowmans wrecker | frase | campaña
+fat allen | frase | campaña
+mcconnell towing | frase | campaña
+young's towing | frase | campaña
+zoom towing | frase | campaña
+ttr towing | frase | campaña
+vtn towing | frase | campaña
+a&a towing | frase | campaña
+auto works towing | frase | campaña
+metro towing | frase | campaña
+road runner roadside | frase | campaña
+reliable auto | frase | campaña
+rapid auto repair | frase | campaña
+rapid recovery | frase | campaña
+rapid service center | frase | campaña
+918 wrecker | frase | campaña
+quality towing | frase | campaña
+l&a towing | frase | campaña
+carcab | frase | campaña
+car cab | frase | campaña
+pop a lock | frase | campaña
+
+## plan-asistencia
+carshield | frase | campaña
+car shield | frase | campaña
+life 360 | frase | campaña
+life360 | frase | campaña
+dairyland | frase | campaña
+mbusa | frase | campaña
+metropcs | frase | campaña
+metro pcs | frase | campaña
+verizon | frase | campaña
+vz roadside | frase | campaña
+traders roadside | frase | campaña
+kansas motor assist | frase | campaña
+my auto guard | frase | campaña
+cooper care | frase | campaña
+roadside assistance phone number | frase | campaña
+roadside assistance number | frase | campaña
+roadside assistance plans | frase | campaña
+provider network | frase | campaña
+service provider | frase | campaña
+best roadside assistance | frase | campaña
+
+## tienda-llantas
+tire store | frase | campaña
+tire stores | frase | campaña
+tireshop | frase | campaña
+tire places | frase | campaña
+tire place | frase | campaña
+tire center | frase | campaña
+tire station | frase | campaña
+tires near me | exacta | campaña
+used tires | frase | campaña
+cheap tires | frase | campaña
+tire prices | frase | campaña
+tire sizes | frase | campaña
+tire rotation | frase | campaña
+mount and balance | frase | campaña
+mount tires | frase | campaña
+tire mounted | frase | campaña
+inch tires | frase | campaña
+all terrain | frase | campaña
+brands of tires | frase | campaña
+tire replacement | frase | campaña
+spare tires | frase | campaña
+tire town | frase | campaña
+tires plus | frase | campaña
+tire plus | frase | campaña
+r and r tire | frase | campaña
+r n r tire | frase | campaña
+southern tire mart | frase | campaña
+hibdons | frase | campaña
+tires open sunday | frase | campaña
+tires close by | frase | campaña
+llantas cerca de mi | exacta | campaña
+desponchadora | frase | campaña
+
+## retail-taller
+autozone | frase | campaña
+auto zone | frase | campaña
+auto zones | frase | campaña
+midas | frase | campaña
+jiffy lube | frase | campaña
+brakes plus | frase | campaña
+gerber collision | frase | campaña
+aamco | frase | campaña
+transmission | frase | campaña
+auto repair | frase | campaña
+mechanics | frase | campaña
+mecanicos | frase | campaña
+taller | frase | campaña
+harbor freight | frase | campaña
+ramsey automotive | frase | campaña
+a h automotive | frase | campaña
+rss automotive | frase | campaña
+alternator | frase | campaña
+starter | frase | campaña
+wheel bearing | frase | campaña
+wheel bearings | frase | campaña
+oil filter | frase | campaña
+oil leak | frase | campaña
+air conditioning | frase | campaña
+key fob | frase | campaña
+tpms | frase | campaña
+tire pressure monitor | frase | campaña
+
+## producto
+jumper cables | frase | campaña
+jump starter | frase | campaña
+jumpstarter | frase | campaña
+jumpbox | frase | campaña
+jump box | frase | campaña
+battery jumper | frase | campaña
+battery booster | frase | campaña
+arrancador | frase | campaña
+cables para | frase | campaña
+car jack | frase | campaña
+screw plugs | frase | campaña
+car batteries | frase | campaña
+truck battery | frase | campaña
+
+## informacional
+why is my | frase | campaña
+why wont | frase | campaña
+why won't | frase | campaña
+won t | frase | campaña
+what to do | frase | campaña
+what do i do | frase | campaña
+what do you do | frase | campaña
+what makes | frase | campaña
+should i | frase | campaña
+can 911 | frase | campaña
+how do you | frase | campaña
+order of | frase | campaña
+red or black | frase | campaña
+problems | frase | campaña
+stalling | frase | campaña
+jerks | frase | campaña
+overheats | frase | campaña
+hard time starting | frase | campaña
+struggles to start | frase | campaña
+how is a | frase | campaña
+estimate calculator | frase | campaña
+has my car | frase | campaña
+where do they tow | frase | campaña
+para donde se llevan | frase | campaña
+unknown car parked | frase | campaña
+emergency number | frase | campaña
+highway emergency | frase | campaña
+emergency on highway | frase | campaña
+warranty | frase | campaña
+car not cranking | frase | campaña
+lost my car keys | frase | campaña
+motorcycle | exacta | campaña
+motorcycles | exacta | campaña
+motor cycle | exacta | campaña
+vehicle | exacta | campaña
+motorcycle technician | frase | campaña
+tow trailer | frase | campaña
+rv transport | frase | campaña
+5th wheel | frase | campaña
+
+## geo-fuera
+kingman | frase | campaña
+williams az | frase | campaña
+arizona | frase | campaña
+hartford | frase | campaña
+austin | frase | campaña
+denton | frase | campaña
+rogers ar | frase | campaña
+puerto rico | frase | campaña
+kansas | frase | campaña
+texas | frase | campaña
+
+## geo-fuera-ok  — PENDIENTE confirmar área de servicio
+# enid | frase | campaña
+# henryetta | frase | campaña
+# lawton | frase | campaña
+# muskogee | frase | campaña
+
+## dudoso  — NO APLICAR — intención mixta (precio/consulta); revisar con más datos
+# how much is a tow truck | frase | campaña
+# how much does | frase | campaña
+# cost of a tow truck | frase | campaña
+# cuanto cobra | frase | campaña
+# traveling mechanics | frase | campaña
+# rollback tow trucks | frase | campaña
+# wheel lift tow truck | frase | campaña
