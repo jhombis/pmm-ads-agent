@@ -36,6 +36,7 @@ scripts/                  utilidades (API de Google Ads, PageSpeed, etc.)
 | `data/` | exports CSV/JSON de la API; /investigar-cliente deja account-profile.json, site-scan.json, pagespeed.json | /weekly-review, /negatives, /audit-landing |
 | `log/YYYY-MM-DD-diagnose.md` | /diagnose | /strategy, /weekly-review |
 | `plan-es.html` + `plan-en.html` | /informe (al final de cada skill) | Jhombis, equipo, cliente |
+| `clients/informes.json` + `clients/indice-informes.html` | /informe (registro de URLs + índice del equipo, siempre en la misma URL) | equipo |
 
 **Regla**: antes de ejecutar cualquier skill sobre un cliente, lee `brief.md` y `checklist.md` de ese cliente. Nunca asumas contexto que no esté en sus archivos. Si un archivo requerido no existe, indica qué skill debe correrse primero.
 
