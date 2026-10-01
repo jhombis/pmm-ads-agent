@@ -112,7 +112,7 @@ Responsables: PMM · Cliente · Jhombis (decisión).
 ## Recurrente (semanal, /weekly-review)
 - [ ] Search terms → negativas (vigilar competidores nuevos y fuera de área)
 - [ ] Gasto vs presupuesto mensual ($1,500)
-- [ ] CPA vs objetivo ($100 en F1 → $85); tendencia 7d vs 28d
+- [ ] CPA vs objetivo ($100 en F1 → $73 ±20%); tendencia 7d vs 28d
 - [ ] Anuncios rechazados o limitados (ojo con políticas de precios)
 - [ ] Impression share perdido por presupuesto y por ranking
 - [ ] Calidad de leads reportada por el cliente

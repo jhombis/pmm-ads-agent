@@ -45,7 +45,7 @@ funerarias cerca de mi,1900,2.38,comercial,funeral,near me,frase,Fase 2 - Españ
 funeraria cerca de mi,320,2.38,comercial,funeral,near me,frase,Fase 2 - Español,,
 pre need funeral plans,110,4.43,comercial-largo,pre-need,,frase,Fase 3 - Pre-need,"search term: $56 / 1 clic / 1 conv",
 funeral pre planning near me,90,3.74,comercial-largo,pre-need,near me,frase,Fase 3 - Pre-need,,
-cremation cost,12100,2.47,informacional,cremacion,,descartar,,"$384 / 43 clics / 2 conv (broad) = CPA $192",solo vía 'cremation cost near me'
+cremation cost,12100,2.47,comercial-precio (prueba),cremacion,,frase,Affordable,"$384 / 43 clics / 2 conv (broad) = CPA $192 → landing sin precio","prueba: MCC 86 conv a $25; landing /pricing/; pausar si CPA >$150 a 30d"
 how much does cremation cost,8100,2.07,informacional,cremacion,,descartar,,,
 average funeral cost,2900,1.86,informacional,funeral,,descartar,,,
 what to do when someone dies,1600,0.49,informacional,funeral,,descartar,,,

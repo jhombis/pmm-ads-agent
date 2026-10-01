@@ -10,7 +10,7 @@ fase_actual: 0
 
 > **Cuenta activa** (751-429-2721, desde el 07/05/2026). No hay "lanzamiento" desde cero: Fase 0 limpia y verifica sobre la cuenta en vivo **sin pausarla**, y Fase 1 publica la reestructura de `strategy.md`.
 > Inputs faltantes: `audit-site.md` (sitio no auditado) y `benchmark.md` formal. Las fechas de Fase 0 asumen que **el cliente edita el sitio** (+7 días) hasta que /audit-landing diga lo contrario.
-> **Aviso de presupuesto**: $49/día < 3× CPL benchmark ($85 × 3 = $255/día). El aprendizaje será lento, tCPA no es alcanzable con este presupuesto y PMax no califica.
+> **Aviso de presupuesto**: $49/día < 3× CPL benchmark ($73 × 3 = $219/día, `benchmark.md`). El aprendizaje será lento, tCPA no es alcanzable con este presupuesto y PMax no califica.
 
 ## Resumen
 | Fase | Fecha estimada | Estado |
@@ -43,7 +43,7 @@ fase_actual: 0
   8. (PMM) "Clicks to call" y las acciones locales quedan como secundarias (ya lo están). Verificar que no entren en "Conversiones".
   9. (PMM) Recomendaciones automáticas: confirmar que están apagadas. Socios de búsqueda y Display en la campaña Search: apagados.
   10. (Cliente → PMM) Verificar el GBP nuevo y dar acceso a PMM; vincularlo como activo de ubicación. **Desvincular la ficha de Inland Memorial** si estuviera ligada.
-  11. (Cliente) Margen por caso y precio del paquete de servicios completos, para fijar el CPL máximo real. Hoy el supuesto es $60 y el benchmark $85.
+  11. (Cliente) Margen por caso y precio del paquete de servicios completos, para fijar el CPL máximo real. Hoy el supuesto es $60 y el benchmark $73.
   12. (Cliente) Confirmar quién contesta de noche y el tiempo de respuesta a formularios.
   13. (Jhombis) Confirmar el presupuesto ($1,500 de pauta vs "$2800" del nombre de la cuenta) y aprobar sumar Valle Vista, East Hemet y Homeland a la geo.
   14. ✅ `/audit-landing` corrido el 2026-10-01 (11/22). Pendiente: acceso a WordPress para resolver sus bloqueantes.
@@ -76,7 +76,7 @@ fase_actual: 0
 
 ## Fase 3 — Optimización de puja (tCPA)
 - **Fecha estimada**: **no alcanzable con el presupuesto actual.** Checkpoint de reevaluación: **2027-01-15**.
-  - Supuesto: $49/día ÷ CPL benchmark $85 = **0.58 conv/día ≈ 17 conv en 30 días**. El histórico real fue de 7–18.5 conv/mes. Para llegar a 30 en una ventana de 30 días hace falta ~1 conv/día, es decir **~$2,550/mes** a CPA $85.
+  - Supuesto: $49/día ÷ CPL benchmark $73 = **0.67 conv/día ≈ 20 conv en 30 días**. El histórico real fue de 7–18.5 conv/mes. Para llegar a 30 en una ventana de 30 días hace falta ~1 conv/día, es decir **~$2,200/mes** a CPA $73.
   - Estacionalidad a favor: la mortalidad sube entre diciembre y febrero (temporada de gripe), así que el volumen de conversiones puede subir en esa ventana sin aumentar presupuesto. Por eso el checkpoint es a mediados de enero.
 - **Condición de paso**: ≥30 conversiones (llamada ≥90 s + formulario verificado) en ventana de 30 días
 - **Acción**: tCPA = CPA real observado de los últimos 30 días; reajustar presupuesto
@@ -100,7 +100,7 @@ fase_actual: 0
   | Un ciclo de limpieza D30 completo | ⏳ | 2026-11-12 |
   | Assets propios (5+ fotos reales, logo, video) | ❓ | Pedir fotos de capilla e instalaciones al cliente |
   | Landing ≥5% de conversión + antispam | ❓ | /audit-landing |
-  | ≥3× CPA/día de presupuesto | ❌ ($49 vs $255) | — |
+  | ≥3× CPA/día de presupuesto | ❌ ($49 vs $219) | — |
 - **Nota**: las otras funerarias del MCC tienen PMax con CPA de $21–57. Antes de usarlo como argumento, `/benchmark-interno` debe auditar qué conversiones cuentan.
 - **Si no califica**: quedarse en Search + negativas + mejora de landing. Es lo correcto para esta escala.
 

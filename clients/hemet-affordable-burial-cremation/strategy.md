@@ -2,7 +2,7 @@
 cliente: Hemet Affordable Burial and Cremation
 slug: hemet-affordable-burial-cremation
 actualizado: 2026-10-01
-version: 1.1
+version: 1.2
 supuestos:
   - audit-site.md (2026-10-01): sin Google Tag en el sitio; las landings se mapearon en v1.1.
   - Sin competitors.md formal: se usa la competencia del brief + los competidores vistos en search terms.
@@ -17,7 +17,7 @@ supuestos:
 - **No es una cuenta nueva.** La cuenta 751-429-2721 corre desde el 07/05/2026: ~$1,390/mes en Search con 12.4 conv/mes (**CPA $113**), más un Display de $31/mes con 2,000+ clics y **0 conversiones**. Esto es una **reestructuración**, no un lanzamiento.
 - Problemas a corregir: ~50% del gasto en **concordancia amplia**; ~**18% del gasto en términos de competidores e irrelevantes** (Wiefels, Emerson Bartlett, Dearly Beloved, coroner, hospice…); la marca se mezcla con la genérica ($207 en 90 días); el Display es tráfico basura.
 - Propuesta: **2 campañas Search** (genérica consolidada con 4 ad groups + marca), Display pausado, solo frase/exacta, negativas de nicho, geo por las 5 ciudades + 3 zonas no incorporadas.
-- Presupuesto: **$1,500/mes** → genérica $44/día y marca $5/día. **CPL objetivo F1 ≤ $100**; meta F2 = mediana del MCC (**$83 ±20%**).
+- Presupuesto: **$1,500/mes** → genérica $44/día y marca $5/día. **CPL objetivo F1 ≤ $100**; meta F2 = mediana del MCC según `benchmark.md` (**$73 ±20% → $58–88**).
 - **tCPA no es alcanzable con este presupuesto** (hacen falta ~30 conv/30 días y hoy hay ~12). Se mantiene Maximizar conversiones sin tCPA. Se revisa si el presupuesto sube o si el volumen de conversiones se duplica.
 
 ## Diagnóstico de la cuenta actual (90 días, jul–sep 2026)
@@ -42,7 +42,7 @@ supuestos:
 | Murrieta Valley Funeral Home | $1,244 | 6.8 | $182 | $57 |
 | Colton Sunflower (nueva, ago) | $1,378 | 3.5 | $394 | — |
 
-Mediana Search de las cuentas maduras: **~$83**. El PMax "barato" de las otras cuentas requiere auditar qué conversiones cuenta (posible inflación por acciones locales o llamadas cortas) antes de usarlo como referencia. Esto se le encarga a `/benchmark-interno`.
+Mediana Search de las cuentas maduras (abr–sep): ~$83. **`benchmark.md` (90 días, percentiles formales): mediana $73, P25 $58, P75 $164.** El PMax "barato" de las otras cuentas viene sobre todo de "Calls from ads" (incluye llamadas desde Maps); no es comparable con Search.
 
 ## Campañas
 | Campaña | Objetivo | Presupuesto/día F1 | % | Puja inicial | Geo | Horario |
@@ -66,7 +66,7 @@ Configuración: solo red de Búsqueda (sin socios ni Display), presencia, rotaci
 |---|---|---|---|---|
 | **Funeral Home** (estrella) | "funeral home near me", [funeral home near me], "funeral homes near me", "funeral home hemet", [funeral home hemet], "mortuary near me", "mortuary hemet", [mortuary hemet], "funeral services near me", "funeral chapel near me", "memorial service near me", "funeral home san jacinto ca", "funeral home beaumont ca", "funeral home banning ca", "funeral homes" | ~150K nacional (geo local: bajo) | /pricing/ → /funeral-services/ cuando exista | Funeral Home in Hemet, CA |
 | **Cremation** | "cremation services near me", [cremation services near me], "cremation near me", "direct cremation near me", [direct cremation near me], "cremation hemet", [cremation hemet], "cremation hemet ca", "crematory near me", "crematorium near me", "simple cremation near me", "cremation with viewing", "service and cremation" | ~50K nacional | /cremation/ | Cremation Services Hemet |
-| **Affordable** (intención de precio) | "affordable cremation near me", "cheap cremation near me", "low cost cremation near me", "cremation cost near me", "cremation prices near me", "affordable funeral homes near me", "cheapest mortuary near me", "low cost cremation riverside county" | ~7K nacional | /pricing/ | Affordable Cremation Hemet |
+| **Affordable** (intención de precio) | "affordable cremation near me", "cheap cremation near me", "low cost cremation near me", "cremation cost near me", "cremation cost" *(prueba, ver nota)*, "cremation prices near me", "affordable funeral homes near me", "cheapest mortuary near me", "low cost cremation riverside county" | ~7K nacional | /pricing/ | Affordable Cremation Hemet |
 | **Burial** | "burial services near me", [burial services near me], "burial near me", "burial service", "direct burial near me", "affordable burial", "low cost burial services", "burial packages" | ~5K nacional | /burial/ | Burial Services in Hemet |
 
 Negativas específicas por grupo (negativas cruzadas para que cada término caiga en su grupo):
@@ -87,7 +87,8 @@ En la campaña genérica se agregan los términos de marca como negativas, para 
 ## Keywords descartadas y por qué
 | Término / patrón | Motivo |
 |---|---|
-| `cremation cost`, `how much does cremation cost`, `average funeral cost` | Informacional. Con amplia gastó $384 con CPA de $192. Solo se cubre la variante con "near me" |
+| `how much does cremation cost`, `average funeral cost` | Informacional |
+| ~~`cremation cost`~~ → **pasa a prueba en Affordable** | v1.2: en el MCC es el término que más convierte (86 conv a $25 en 2 cuentas, `benchmark.md`). En el cliente dio CPA $192, pero apuntaba a /cremation, que no muestra precios. Se prueba en frase con landing /pricing/; si a los 30 días el CPA supera $150, se pausa |
 | `what to do when someone dies`, `death what to do` | Informacional, CPC bajo y sin intención de contratar |
 | `cremation insurance`, `final expense`, `cremation plans` | Seguros y planes, otro producto |
 | `pre need funeral plans`, `funeral pre planning` | Ciclo largo y volumen bajo. Pasa a Fase 3 con campaña propia |
@@ -126,7 +127,7 @@ Nota de copy: /pricing confirma "Simple Cremation with Private Viewing **$1,495*
 |---|---|---|---|
 | **F0 — Limpieza** (semana 1) | sin cambio | — | Display pausado; amplias pasadas a frase; negativas aplicadas; conversiones verificadas (llamada ≥90 s, form con Tag Assistant); GBP nuevo vinculado |
 | **F1 — Reestructura** (30–45 días) | $1,500 | Genérica $44/día · Marca $5/día | ≥12 conv/mes **y** CPA ≤ $100 **y** desperdicio en search terms <10% del gasto |
-| **F2 — Optimización** | $1,500 (o más si el cliente aprueba) | Reasignar keywords y ad groups según CPA; sumar grupo **Español** si hay personal | CPA ≤ $85 dos meses seguidos; cliente confirma que los leads se convierten en casos (feedback cualitativo, sin CRM) |
+| **F2 — Optimización** | $1,500 (o más si el cliente aprueba) | Reasignar keywords y ad groups según CPA; sumar grupo **Español** si hay personal | CPA ≤ $88 (mediana $73 +20%) dos meses seguidos; cliente confirma que los leads se convierten en casos (feedback cualitativo, sin CRM) |
 | **F3 — Pre-need** | +$300–500 | Campaña Pre-need aparte (otro mensaje, otra landing) | F2 cumplida y landing de pre-planning lista |
 | **F4 — RLSA** | sin cambio | Audiencia de visitantes del sitio en observación sobre la genérica | ≥1,000 usuarios en lista |
 | **F5 — PMax** | evaluar | Ver abajo | 30+ conv/mes con tracking confiable + GBP con reseñas + assets propios |
@@ -139,7 +140,7 @@ Nota de copy: /pricing confirma "Simple Cremation with Private Viewing **$1,495*
 - **LSA**: la categoría "funeral home" no aparece como disponible. Sigue `PENDIENTE` verificarlo; no es bloqueante.
 
 ## Riesgos y supuestos
-1. **CPA objetivo ($85–100) por encima del CPL máximo supuesto ($60).** Si el margen real por caso es de ~$500, la cuenta no es rentable con cremación directa sola. Hace falta el margen real y la mezcla de servicios (un servicio completo deja mucho más margen). Es el pendiente número 1 con el cliente.
+1. **CPA objetivo ($73–100) por encima del CPL máximo supuesto ($60).** Si el margen real por caso es de ~$500, la cuenta no es rentable con cremación directa sola. Hace falta el margen real y la mezcla de servicios (un servicio completo deja mucho más margen). Es el pendiente número 1 con el cliente.
 2. **Calidad de las conversiones**: 70% son "Calls from Ads". Si la duración mínima está en el default, hay llamadas cortas o de comparación de precios contadas como lead. Verificar en F0.
 3. **Ficha de Google nueva** con pocas o ninguna reseña, en la misma dirección que la ficha de Inland Memorial: riesgo de suspensión o duplicado y prueba social débil en Maps.
 4. **CPC alto ($13)**: al quitar la amplia y los términos genéricos caros, el volumen de clics puede caer. Si el gasto queda por debajo del presupuesto, se amplían las variantes en frase antes de volver a la amplia.
