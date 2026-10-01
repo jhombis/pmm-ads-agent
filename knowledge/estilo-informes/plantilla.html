@@ -208,130 +208,465 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
 </style>
 
 <!--
-  PLANTILLA DE INFORMES PMM — ver knowledge/estilo-informes/README.md
-  1. Copiar a clients/<slug>/<nombre>-es.html y <nombre>-en.html (o diagnostics/<cuenta>/…).
-  2. Reemplazar los {{MARCADORES}} y borrar las secciones que no apliquen. No tocar el <style>.
-  3. python scripts/informe_html.py embed <archivo>   → inserta el logo PMM
-     python scripts/informe_html.py check <es> <en>   → valida antes de publicar
+  PLANTILLA DEL INFORME PMM: misma estructura que el plan de referencia
+  (ejemplo completo y lleno: knowledge/estilo-informes/ejemplo-*-es.html / -en.html).
+
+  1. python scripts/informe_html.py new clients/<slug>/plan-es.html clients/<slug>/plan-en.html
+  2. Reemplazar TODOS los {{MARCADORES}}, también los que están dentro de los arrays del <script>.
+     Los arrays traen una fila de ejemplo con la forma exacta: se borra y se ponen las reales.
+  3. Orden fijo de secciones. Una sección sin archivo fuente se borra completa, junto con su enlace
+     del índice y su bloque del <script>. Nunca se rellena con supuestos.
+  4. No tocar el <style> ni los renderizadores del <script>; solo los datos.
+  5. python scripts/informe_html.py check <es> <en>  → tiene que dar OK antes de publicar.
 -->
 <div class="wrap">
   <header class="mast">
     <div>
       <span class="logo"><img src="{{PMM_LOGO}}" alt="Performance Media Marketing"></span>
       <h1>{{CLIENTE}}</h1>
-      <p class="sub">{{SUBTITULO: una frase con qué es este informe y qué decide}}</p>
+      <p class="sub">{{SUBTITULO: Plan de Google Ads: diagnóstico, estrategia, fechas y checklist para llevar la cuenta de X a Y.}}</p>
       <p style="margin-top:8px; font-size:.88rem"><a href="{{URL_OTRO_IDIOMA}}">{{English version → | Versión en español →}}</a></p>
     </div>
     <dl class="meta">
       <dt>Cuenta</dt><dd class="mono">{{000-000-0000}}</dd>
-      <dt>Mercado</dt><dd>{{Ciudad/estado · idioma}}</dd>
-      <dt>Fase actual</dt><dd><span class="chip st-run">{{Fase N}}</span></dd>
+      <dt>MCC</dt><dd class="mono">{{000-000-0000}}</dd>
+      <dt>Mercado</dt><dd>{{Área · idioma}}</dd>
+      <dt>D0</dt><dd class="num">{{DD-mmm-AAAA}}</dd>
+      <dt>Fase actual</dt><dd><span class="chip st-run">{{Fase N · estado}}</span></dd>
       <dt>Actualizado</dt><dd class="num">{{DD-mmm-AAAA}}</dd>
     </dl>
   </header>
 
   <nav class="toc" aria-label="Secciones">
-    <a href="#resumen">Resumen</a><a href="#pasos">Próximos pasos</a><a href="#datos">Datos</a><a href="#fases">Fases</a><a href="#checklist">Checklist</a>
+    <a href="#resumen">Resumen</a><a href="#evolucion">Evolución</a><a href="#pasos">Próximos pasos</a><a href="#fechas">Fechas</a><a href="#estrategia">Estrategia</a><a href="#anuncios">Anuncios</a><a href="#negativas">Negativas</a><a href="#landing">Landing</a><a href="#mercado">Mercado</a><a href="#checklist">Checklist</a><a href="#cliente">Cliente</a><a href="#porque">Por qué no</a>
   </nav>
 
-  <!-- RESUMEN: KPIs (4) + estado + callout de decisión -->
+  <!-- RESUMEN · fuente: brief, strategy, diagnose/log -->
   <section id="resumen">
-    <div class="sec-head"><h2>Resumen</h2><p>{{Una línea de contexto}}</p></div>
+    <div class="sec-head"><h2>Resumen</h2><p>{{Qué es el negocio, dónde, y el objetivo (llamadas / formularios).}}</p></div>
     <div class="kpis">
-      <div class="kpi"><b>{{$825}}</b><span>{{pauta/mes}}</span></div>
-      <div class="kpi"><b>{{≤$85}}</b><span>{{CPL objetivo}}</span></div>
-      <div class="kpi"><b>{{8–13}}</b><span>{{prospectos/mes}}</span></div>
-      <div class="kpi"><b>{{23-sep}}</b><span>{{hito}}</span></div>
+      <div class="kpi"><b>{{$825}}</b><span>{{pauta/mes · ≈ $X/día (contrato $Y)}}</span></div>
+      <div class="kpi"><b>{{≤$85}}</b><span>{{CPL objetivo y de dónde sale}}</span></div>
+      <div class="kpi"><b>{{8–13}}</b><span>{{prospectos/mes, escenario base (~N clics)}}</span></div>
+      <div class="kpi"><b>{{DD-mmm}}</b><span>{{hito: lanzamiento / próxima decisión}}</span></div>
     </div>
+
     <div class="two">
       <div>
-        <p class="eyebrow">Estado de la cuenta</p>
-        <h3 style="margin:6px 0 10px">{{$X gastados, N clics, N conversiones}}</h3>
-        <p>{{Diagnóstico en dinero, sobre el gasto rastreable}}</p>
-        <div class="bar-spend" role="img" aria-label="{{Distribución del gasto}}">
-          <i style="width:40%; background:var(--red)"></i><i style="width:35%; background:var(--orange)"></i><i style="width:25%; background:var(--sky)"></i>
+        <p class="eyebrow">Estado de la cuenta hoy</p>
+        <h3 style="margin:6px 0 10px">{{$X gastados, N clics, N conversiones (al DD-mmm)}}</h3>
+        <p>{{Diagnóstico en dinero y sobre el gasto rastreable: puja, match, anuncios, landing, negativas heredadas.}}</p>
+        <div class="bar-spend" role="img" aria-label="{{Distribución de $X en search terms visibles}}">
+          <i style="width:{{40}}%; background:var(--red)"></i><i style="width:{{35}}%; background:var(--orange)"></i><i style="width:{{25}}%; background:var(--sky)"></i>
         </div>
         <div class="legend">
-          <span style="--c:var(--red)">{{Categoría $}}</span>
-          <span style="--c:var(--orange)">{{Categoría $}}</span>
-          <span style="--c:var(--sky)">{{Categoría $}}</span>
+          <span style="--c:var(--red)">{{Categoría de desperdicio $X}}</span>
+          <span style="--c:var(--orange)">{{Competidores $X}}</span>
+          <span style="--c:var(--sky)">{{Genéricos $X}}</span>
         </div>
+        <p class="muted" style="font-size:.85rem; margin-top:6px">{{Qué no se ve (umbral de privacidad) y aclaraciones de categorías.}}</p>
       </div>
       <div class="callout">
         <h3>La decisión en cinco líneas</h3>
         <ul>
-          <li><b>{{Decisión}}</b> {{porqué en una línea}}</li>
+          <li><b>{{Campañas}}</b> {{qué se crea o conserva y por qué}}</li>
+          <li><b>{{Ad groups}}</b> {{cuántos y por qué (límite de fragmentación)}}</li>
+          <li><b>{{Puja y match}}</b> {{estrategia, tope, match, geo, horario}}</li>
+          <li><b>{{El techo con este presupuesto}}</b> {{prospectos/mes y cuándo se decide subir}}</li>
+          <li><b>{{Qué no se hace}}</b> {{PMax, Display, remarketing, marca, LSA}}</li>
+        </ul>
+      </div>
+    </div>
+    <div style="margin-top:24px">
+      <p class="eyebrow">Matemática de presupuesto (playbook §4)</p>
+      <h3 style="margin:6px 0 10px">{{$X/día ÷ CPC $Y ≈ N clics/día → ~N clics/mes}}</h3>
+      <div class="tbl"><table>
+        <thead><tr><th>Escenario</th><th class="r">Tasa conv.</th><th class="r">Prospectos/mes</th><th class="r">CPL</th><th>Referencia</th></tr></thead>
+        <tbody>
+          <tr><td>Conservador</td><td class="r">{{5%}}</td><td class="r">{{~4}}</td><td class="r">{{~$195}}</td><td>{{Piso de lo sano en servicios locales}}</td></tr>
+          <tr><td><b>Base</b></td><td class="r"><b>{{10–15%}}</b></td><td class="r"><b>{{~8–13}}</b></td><td class="r"><b>{{~$65–100}}</b></td><td>{{Rango sano / benchmark del nicho}}</td></tr>
+          <tr><td>Optimista</td><td class="r">{{25%}}</td><td class="r">{{~21}}</td><td class="r">{{~$39}}</td><td>{{Cuartil superior del MCC}}</td></tr>
+        </tbody>
+      </table></div>
+      <p class="muted" style="font-size:.86rem; margin-top:8px">{{Qué pide cada estrategia de puja en conversiones/mes y cuánta pauta implica.}}</p>
+    </div>
+  </section>
+
+  <!-- EVOLUCION · fuente: último log (weekly-review / diagnose). Borrar si la cuenta no ha corrido. -->
+  <section id="evolucion">
+    <div class="sec-head"><h2>Evolución · {{semana N / D7 / D30}}</h2><p>{{Campaña y periodo. La pregunta que responde esta revisión.}}</p></div>
+    <div class="kpis">
+      <div class="kpi"><b>{{$193.13}}</b><span>{{gasto en N días · % del presupuesto}}</span></div>
+      <div class="kpi"><b>{{19}}</b><span>{{clics · impresiones · CTR}}</span></div>
+      <div class="kpi"><b>{{$10.16}}</b><span>{{CPC promedio y tendencia}}</span></div>
+      <div class="kpi"><b>{{0}}</b><span>{{conversiones · de qué tipo}}</span></div>
+    </div>
+    <div class="two">
+      <div>
+        <p class="eyebrow">{{La causa}}</p>
+        <h3 style="margin:6px 0 10px">{{El hallazgo principal en una frase}}</h3>
+        <div class="bar-spend" role="img" aria-label="{{Visible vs oculto}}"><i style="width:{{10}}%; background:var(--sky)"></i><i style="width:{{90}}%; background:var(--surface-2)"></i></div>
+        <div class="legend"><span style="--c:var(--sky)">{{Visible en search terms $X}}</span><span style="--c:var(--surface-2)">{{Oculto por privacidad $X}}</span></div>
+        <div class="tbl" style="margin-top:14px"><table>
+          <thead><tr><th>Día</th><th class="r">Impr.</th><th class="r">Clics</th><th class="r">Costo</th><th class="r">CPC</th><th class="r">IS</th><th class="r">Perdido ranking</th><th class="r">Perdido presup.</th></tr></thead>
+          <tbody>
+            <tr><td style="white-space:nowrap">{{DD-mmm}}</td><td class="r">{{0}}</td><td class="r">{{0}}</td><td class="r">{{$0.00}}</td><td class="r">{{$0.00}}</td><td class="r">{{0%}}</td><td class="r">{{0%}}</td><td class="r">{{0%}}</td></tr>
+          </tbody>
+        </table></div>
+        <div class="tbl" style="margin-top:14px"><table>
+          <thead><tr><th>Ad group</th><th class="r">Impr.</th><th class="r">Clics</th><th class="r">CTR</th><th class="r">Costo</th><th class="r">% gasto</th></tr></thead>
+          <tbody>
+            <tr><td>{{Ad group}}</td><td class="r">{{0}}</td><td class="r">{{0}}</td><td class="r">{{0%}}</td><td class="r">{{$0.00}}</td><td class="r">{{0%}}</td></tr>
+          </tbody>
+        </table></div>
+        <p class="muted" style="font-size:.86rem; margin-top:8px">{{Search terms visibles, dispositivo, geo.}}</p>
+      </div>
+      <div class="callout">
+        <h3>Diagnóstico</h3>
+        <ul>
+          <li><b>{{Medición:}}</b> {{qué se mide y qué no}}</li>
+          <li><b>{{Volumen:}}</b> {{si con estos clics se puede concluir algo}}</li>
+          <li><b>{{Tráfico:}}</b> {{qué buscan los que hacen clic}}</li>
+          <li><b>{{Puja/CPC:}}</b> {{si hay que tocarla}}</li>
+          <li><b>{{Qué hacer:}}</b> {{1) … 2) … 3) …}}</li>
         </ul>
       </div>
     </div>
   </section>
 
-  <!-- PRÓXIMOS PASOS: número · texto · responsable · estado -->
+  <!-- PASOS · fuente: checklist + último log. Datos en el <script> (steps). -->
   <section id="pasos">
-    <div class="sec-head"><h2>Próximos pasos</h2><p>Los marcados con B bloquean el avance.</p></div>
-    <div class="steps">
-      <div class="step">
-        <span class="n">01</span>
-        <div><b>{{Paso}}</b><p class="d">{{Detalle}}</p></div>
-        <div class="tags"><span class="b-flag">B</span><span class="who">Cliente</span><span class="chip st-todo">Pendiente</span></div>
-      </div>
-      <div class="step">
-        <span class="n">02</span>
-        <div><b>{{Paso}}</b><p class="d">{{Detalle}}</p></div>
-        <div class="tags"><span class="who">PMM</span><span class="chip st-done">Hecho</span></div>
-      </div>
-    </div>
+    <div class="sec-head"><h2>Próximos pasos</h2><p>{{Lo que falta para cerrar la fase actual.}} Los que dicen B bloquean.</p></div>
+    <div class="steps" id="steps"></div>
   </section>
 
-  <!-- DATOS: configuración (cfg) + tabla -->
-  <section id="datos">
-    <div class="sec-head"><h2>{{Estrategia / Datos}}</h2><p>{{Contexto}}</p></div>
+  <!-- FECHAS · fuente: roadmap. Datos en el <script> (timeline + phases). -->
+  <section id="fechas">
+    <div class="sec-head"><h2>Fechas y fases</h2><p>La fecha es proyección; la condición de paso manda. Nunca se avanza "porque ya es la fecha".</p></div>
+    <div class="tl-wrap"><div class="tl" id="timeline"></div></div>
+    <div class="phases" id="phases"></div>
+  </section>
+
+  <!-- ESTRATEGIA · fuente: strategy + build log. Ad groups en el <script> (ags). -->
+  <section id="estrategia">
+    <div class="sec-head"><h2>Estrategia</h2><p>{{Por qué esta estructura, en una línea.}}</p></div>
     <dl class="cfg">
-      <div><dt>Campaña</dt><dd>{{Nombre}}</dd></div>
-      <div><dt>Puja</dt><dd>{{Max. clics, tope CPC $X}}</dd></div>
-      <div><dt>Horario</dt><dd>{{L–D 7:00–18:00 Central (5:00–16:00 hora de la cuenta)}}</dd></div>
+      <div><dt>Campaña</dt><dd>{{Nombre de la campaña}}</dd></div>
+      <div><dt>Tipo</dt><dd>{{Search · solo red de Búsqueda}}</dd></div>
+      <div><dt>Presupuesto</dt><dd class="num">{{$X/día}}</dd></div>
+      <div><dt>Puja</dt><dd>{{Estrategia actual → siguiente y su condición}}</dd></div>
+      <div><dt>Conversiones</dt><dd>{{Qué cuenta como conversión primaria}}</dd></div>
+      <div><dt>Match</dt><dd>{{Frase + exacta · sin broad}}</dd></div>
+      <div><dt>Ubicación</dt><dd>{{Presencia · área}}</dd></div>
+      <div><dt>Horario</dt><dd>{{Horario en hora del cliente (y en hora de la cuenta si difiere)}}</dd></div>
+      <div><dt>Apagado</dt><dd>{{Socios, Display, recomendaciones automáticas}}</dd></div>
     </dl>
     <div class="tbl"><table>
-      <thead><tr><th>{{Columna}}</th><th class="r">{{Número}}</th><th>{{Nota}}</th></tr></thead>
+      <thead><tr><th>Ad group</th><th>Fase</th><th>Keywords principales</th><th class="r">Vol./mes</th><th>Landing</th></tr></thead>
+      <tbody id="agrows"></tbody>
+    </table></div>
+    <p class="muted" style="font-size:.88rem; margin-top:10px">{{Notas de estructura: ciudades, consolidación, inserción de keyword.}}</p>
+
+    <h3 style="margin-top:28px; margin-bottom:10px">Presupuesto por fase</h3>
+    <div class="tbl"><table>
+      <thead><tr><th>Fase</th><th>Total/mes</th><th>Qué pasa</th><th>Condición para pasar</th></tr></thead>
       <tbody>
-        <tr><td>{{Fila}}</td><td class="r">{{$0.00}}</td><td><span class="kw">{{keyword}}</span></td></tr>
+        <tr><td><b>{{F0}}</b> {{nombre}}</td><td class="num">{{$X}}</td><td>{{qué se hace}}</td><td>{{condición}}</td></tr>
       </tbody>
     </table></div>
   </section>
 
-  <!-- FASES: tarjeta por fase con fecha + condición de paso. Colores fijos por fase (README) -->
-  <section id="fases">
-    <div class="sec-head"><h2>Fechas y fases</h2><p>La fecha es proyección; la condición de paso manda.</p></div>
-    <div class="phases">
-      <article class="phase" style="--c:var(--red)">
-        <header><span class="tag"><i class="dot"></i><h3>Fase 0 · {{Medición}}</h3></span><span class="chip st-run">En curso</span></header>
-        <span class="when">{{23-sep → 30-sep}}</span>
-        <div class="cond"><b>Condición de paso</b>{{Condición medible}}</div>
-        <ul><li>{{Tarea}}</li></ul>
-      </article>
-      <article class="phase" style="--c:var(--orange)">
-        <header><span class="tag"><i class="dot"></i><h3>Fase 1 · {{Lanzamiento}}</h3></span><span class="chip st-todo">Pendiente</span></header>
-        <span class="when">{{fechas}}</span>
-        <div class="cond"><b>Condición de paso</b>{{Condición medible}}</div>
-        <ul><li>{{Tarea}}</li></ul>
-      </article>
+  <!-- ANUNCIOS · fuente: data/ads-*.md. H1, pool y descripciones en el <script>. Anuncios y keywords en el idioma del mercado, sin traducir. -->
+  <section id="anuncios">
+    <div class="sec-head"><h2>Anuncios</h2><p>{{N RSA por ad group y por qué. H1 pinneado a la keyword del grupo.}}</p></div>
+    <div class="adgrid">
+      <div class="serp">
+        <div class="spon">Sponsored</div>
+        <div class="url">{{dominio.com/ruta}}</div>
+        <div class="hl">{{Headline 1 | Headline 2 | Headline 3}}</div>
+        <div class="ds">{{Descripción 1. Descripción 2.}}</div>
+      </div>
+    </div>
+    <div class="two" style="margin-top:22px">
+      <div>
+        <h3 style="margin-bottom:8px">H1 pinneado por ad group</h3>
+        <div class="tbl"><table><tbody id="h1rows"></tbody></table></div>
+      </div>
+      <div>
+        <h3 style="margin-bottom:8px">Headlines compartidas</h3>
+        <ul class="pool" id="pool"></ul>
+        <h3 style="margin:16px 0 8px">Descripciones compartidas</h3>
+        <ul style="margin:0; padding-left:1.1em; font-size:.93rem" id="descs"></ul>
+      </div>
+    </div>
+    <div class="callout" style="margin-top:22px">
+      <h3>Extensiones</h3>
+      <ul>
+        <li><b>Llamada</b> {{teléfono, horario}}</li>
+        <li><b>Sitelinks</b>: {{lista}}</li>
+        <li><b>Callouts</b>: {{lista}}</li>
+        <li><b>Snippet</b>: {{lista}}</li>
+        <li><b>Ubicación / imágenes</b>: {{estado}}</li>
+        <li><b>No se promete</b>: {{lo que el cliente no sostiene}}</li>
+      </ul>
     </div>
   </section>
 
-  <!-- CHECKLIST -->
+  <!-- NEGATIVAS · fuente: data/*negatives*. Barras en el <script> (negs). -->
+  <section id="negativas">
+    <div class="sec-head"><h2>Negativas</h2><p>{{Qué se aplicó, qué se quitó y qué está pendiente.}}</p></div>
+    <div class="two" style="margin-top:0">
+      <div>
+        <h3 style="margin-bottom:12px">{{N nuevas (estado)}}</h3>
+        <div class="negbars" id="negbars"></div>
+        <p class="muted" style="font-size:.86rem; margin-top:12px">{{Validación contra keywords activas. Archivo:}} <span class="mono">{{data/AAAA-MM-DD-negatives.txt}}</span></p>
+      </div>
+      <div class="callout">
+        <h3>{{Quitadas / choques evitados}}</h3>
+        <p style="margin-top:8px"><span class="kw">{{negativa}}</span></p>
+        <p style="font-size:.9rem; color:var(--ink-2); margin-top:8px">{{Ejemplos de lo que bloqueaban y qué servicios del cliente NO se niegan.}}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- LANDING · fuente: audit-site + landings/README.md. Rúbrica en el <script> (rub). -->
+  <section id="landing">
+    <div class="sec-head"><h2>Landing</h2><p>{{Score NN/22 y veredicto.}}</p></div>
+    <div class="two" style="margin-top:0">
+      <div>
+        <div class="rub" id="rubric"></div>
+      </div>
+      <div>
+        <h3 style="margin-bottom:8px">Landings que se necesitan</h3>
+        <div class="tbl"><table>
+          <thead><tr><th>URL</th><th>Estado</th><th>Para</th></tr></thead>
+          <tbody>
+            <tr><td class="mono">{{/ruta/}}</td><td><span class="chip st-block">{{Crear | Verificar | Mejora}}</span></td><td>{{Ad group / fase}}</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+    </div>
+    <div style="margin-top:24px">
+      <h3 style="margin-bottom:8px">Landings GoHighLevel · {{fecha}}</h3>
+      <div class="tbl"><table>
+        <thead><tr><th>Página</th><th>Ad group</th><th>QA</th><th>Estado</th></tr></thead>
+        <tbody>
+          <tr><td class="mono">{{slug}}</td><td>{{Ad group}}</td><td><span class="chip st-block">{{N bloqueantes}}</span></td><td><span class="chip st-todo">{{Borrador | Montada | Publicada}}</span></td></tr>
+        </tbody>
+      </table></div>
+      <p class="muted" style="font-size:.86rem; margin-top:8px">{{Qué bloquea el montaje y quién lo resuelve.}}</p>
+    </div>
+  </section>
+
+  <!-- MERCADO · fuente: benchmark + competitors -->
+  <section id="mercado">
+    <div class="sec-head"><h2>Benchmark y competencia</h2><p>{{N cuentas del nicho en el MCC, periodo. La conclusión en una línea.}}</p></div>
+    <div class="tbl"><table>
+      <thead><tr><th>Cuenta</th><th>Mercado</th><th>Puja</th><th class="r">CPC</th><th class="r">Tasa conv.</th><th class="r">CPL</th><th class="r">Conv./mes</th></tr></thead>
+      <tbody>
+        <tr><td>{{A (anonimizada)}}</td><td>{{Mercado}}</td><td>{{Puja}}</td><td class="r">{{$0.00}}</td><td class="r">{{0%}}</td><td class="r"><b>{{$0.00}}</b></td><td class="r">{{0}}</td></tr>
+        <tr><td><b>{{CLIENTE}}</b></td><td>{{Mercado}}</td><td>{{Puja}}</td><td class="r"><b>{{$0.00}}</b></td><td class="r">{{0%}}</td><td class="r"><b>{{$0.00}}</b></td><td class="r">{{—}}</td></tr>
+      </tbody>
+    </table></div>
+
+    <div class="two">
+      <div>
+        <h3 style="margin-bottom:8px">Competidores en {{área}}</h3>
+        <div class="tbl"><table>
+          <thead><tr><th>Competidor</th><th>Reseñas</th><th>Ángulo</th></tr></thead>
+          <tbody>
+            <tr><td>{{Competidor}}</td><td class="num">{{4.8 ★ · N}}</td><td>{{Ángulo / oferta}}</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+      <div class="callout">
+        <h3>Oportunidades</h3>
+        <ul><li><b>{{Oportunidad}}</b> {{por qué}}</li></ul>
+        <h3 style="margin-top:14px">Amenazas</h3>
+        <ul><li>{{Amenaza}}</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHECKLIST · espejo de checklist.md. Datos en el <script> (CL, PHT). -->
   <section id="checklist">
-    <div class="sec-head"><h2>Checklist</h2><p>{{Resumen de avance}}</p></div>
-    <div class="cl-phase" style="--c:var(--red)">
-      <h3><i></i>Fase 0 <small>{{nombre}}</small></h3>
-      <div class="cl-item is-done"><span class="box done"></span><span class="txt">{{Ítem hecho — fecha}}</span><span class="tags"><span class="who">PMM</span></span></div>
-      <div class="cl-item"><span class="box part"></span><span class="txt">{{Ítem parcial}}</span><span class="tags"><span class="who">Cliente</span></span></div>
-      <div class="cl-item"><span class="box"></span><span class="txt">{{Ítem pendiente}}</span><span class="tags"><span class="b-flag">B</span><span class="who">Cliente</span></span></div>
+    <div class="sec-head"><h2>Checklist</h2><p>Espejo de <span class="mono">clients/{{slug}}/checklist.md</span> al {{DD-mmm}}. /weekly-review lo mantiene al día.</p></div>
+    <div class="filters" role="group" aria-label="Filtros">
+      <div class="grp"><span class="lab">Responsable</span><span id="f-who"></span></div>
+      <div class="grp"><span class="lab">Estado</span><span id="f-st"></span></div>
+    </div>
+    <div id="cl"></div>
+  </section>
+
+  <!-- CLIENTE · pendientes del cliente. Preguntas y mensaje en el <script> (qs, msg); el mensaje va en el idioma del cliente. -->
+  <section id="cliente">
+    <div class="sec-head"><h2>Pendientes del cliente</h2><p>{{Lo que hay que pedirle a CLIENTE. Los marcados con B bloquean.}}</p></div>
+    <div class="two" style="margin-top:0">
+      <ol class="qlist" id="qlist"></ol>
+      <div class="callout">
+        <h3>Mensaje listo para enviar ({{EN | ES}})</h3>
+        <p style="font-size:.9rem; color:var(--ink-2)">Para mandarle al cliente por email o texto.</p>
+        <textarea class="copyarea" id="clientmsg" readonly aria-label="Mensaje para el cliente"></textarea>
+        <div style="display:flex; gap:10px; align-items:center; margin-top:8px"><button class="copybtn" id="copybtn" type="button">Copiar mensaje</button><span id="copystate" class="muted" style="font-size:.85rem" aria-live="polite"></span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POR QUÉ NO · fuente: strategy (lo descartado) y riesgos -->
+  <section id="porque">
+    <div class="sec-head"><h2>Por qué no (todavía)</h2></div>
+    <div class="why">
+      <div><h4>Performance Max</h4><p>{{Qué condición no cumple (pmax-cuando-y-como.md).}}</p></div>
+      <div><h4>Broad</h4><p>{{Por qué no todavía.}}</p></div>
+      <div><h4>Display / Demand Gen</h4><p>{{Por qué no.}}</p></div>
+      <div><h4>Campaña de marca</h4><p>{{Volumen de marca y decisión.}}</p></div>
+      <div><h4>Remarketing</h4><p>{{Tamaño de audiencia.}}</p></div>
+      <div><h4>{{Otro descarte del nicho}}</h4><p>{{Por qué.}}</p></div>
+    </div>
+    <div class="callout" style="margin-top:22px">
+      <h3>Riesgos y supuestos</h3>
+      <ul>
+        <li>{{Riesgo o supuesto, con su consecuencia.}}</li>
+      </ul>
     </div>
   </section>
 
   <footer>
     <span>Performance Media Marketing · {{CLIENTE}} · cuenta {{000-000-0000}}</span>
-    <span>{{Fuentes: archivos del repo / periodo de datos}}</span>
+    <span>Fuentes: {{archivos del repo usados y periodo de datos}}</span>
   </footer>
 </div>
-</html>
+
+<script>
+(function(){
+  /* ── Renderizadores: NO editar. Solo cambian los datos de cada bloque. ── */
+  const PH = {
+    F0:{c:'var(--red)', n:'Fase 0'}, F1:{c:'var(--orange)', n:'Fase 1'}, F2:{c:'var(--yellow)', n:'Fase 2'},
+    F3:{c:'var(--green)', n:'Fase 3'}, F4:{c:'var(--sky)', n:'Fase 4'}, F5:{c:'var(--purple)', n:'Fase 5'},
+    F6:{c:'var(--muted)', n:'Fase 6'}, LAND:{c:'var(--blue)', n:'Landing'}, LSA:{c:'var(--muted)', n:'LSA'}
+  };
+  const esc = s => String(s).replace(/[&<>"]/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));
+  const $ = id => document.getElementById(id);
+
+  /* Próximos pasos: [título, detalle, responsable (PMM | Cliente | Jhombis | PMM/Cliente), bloqueante]. Lo hecho va con "✓ Hecho DD-mmm: …" */
+  const steps = [
+    ['{{Paso}}', '{{Detalle en una o dos frases}}', '{{PMM}}', true]
+  ];
+  if ($('steps')) $('steps').innerHTML = steps.map((s,i)=>`
+    <div class="step"><span class="n">${String(i+1).padStart(2,'0')}</span>
+      <div><b>${esc(s[0])}</b><p class="d">${esc(s[1])}</p></div>
+      <div class="tags">${s[3]?'<span class="b-flag" title="Bloqueante">B</span>':''}<span class="who">${esc(s[2])}</span></div>
+    </div>`).join('');
+
+  /* Línea de tiempo: rango, meses visibles, filas (k = clave de PH; bars con ghost:true = fecha alternativa; note = sin fecha) */
+  const start = new Date('{{AAAA-MM-DD inicio}}'), end = new Date('{{AAAA-MM-DD fin}}');
+  const span = end - start;
+  const pct = d => ((new Date(d) - start) / span * 100);
+  const months = ['{{AAAA-MM-01}}'];
+  const mname = {'{{AAAA-MM-01}}':'{{mes}}'};
+  const rows = [
+    {k:'F0', label:'{{F0 Nombre}}', bars:[{a:'{{AAAA-MM-DD}}', b:'{{AAAA-MM-DD}}', t:'{{texto}}'}]},
+    {k:'F4', label:'{{F4 Nombre}}', bars:[], note:'{{Sin fecha: motivo}}'}
+  ];
+  const today = '{{AAAA-MM-DD hoy}}';
+  if ($('timeline')){
+    let h = `<div class="tl-scale">${months.map(m=>`<span style="left:${pct(m)}%">${mname[m]}</span>`).join('')}</div>`;
+    h += rows.map((r,idx)=>`
+      <div class="tl-row"><div class="tl-label"><i style="--c:${PH[r.k].c}"></i>${esc(r.label)}</div>
+        <div class="tl-track">
+          ${idx===0?`<div class="tl-today" style="left:${pct(today)}%"><b>hoy</b></div>`:''}
+          ${r.bars.map(b=>`<div class="tl-bar${b.ghost?' ghost':''}" style="--c:${PH[r.k].c}; left:${pct(b.a)}%; width:${Math.max(pct(b.b)-pct(b.a),1.2)}%">${esc(b.t)}</div>`).join('')}
+          ${(r.marks||[]).map(m=>`<div class="tl-mark" style="left:${pct(m.d)}%"><b>${esc(m.t)}</b></div>`).join('')}
+          ${r.note?`<span class="muted" style="position:absolute; left:${pct(today)+1}%; top:11px; font-size:.8rem">${esc(r.note)}</span>`:''}
+        </div></div>`).join('');
+    $('timeline').innerHTML = h;
+  }
+
+  /* Fases: s = [done|run|todo|block|pause, texto del chip]; c = condición de paso; i = qué incluye */
+  const phases = [
+    {k:'F0', t:'{{Nombre de la fase}}', w:'{{fecha → fecha}}', s:['run','{{En curso}}'],
+     c:'{{Condición de paso}}',
+     i:['{{Qué incluye}}']}
+  ];
+  if ($('phases')) $('phases').innerHTML = phases.map(p=>`
+    <article class="phase">
+      <header><div class="tag"><span class="dot" style="--c:${PH[p.k].c}"></span><h3>${PH[p.k].n} · ${esc(p.t)}</h3></div><span class="chip st-${p.s[0]}">${esc(p.s[1])}</span></header>
+      <div class="when">${esc(p.w)}</div>
+      <div class="cond"><b>Condición de paso</b>${esc(p.c)}</div>
+      <ul>${p.i.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>
+    </article>`).join('');
+
+  /* Ad groups: [nombre, fase activa (F1 = activo), [keywords], volumen/mes, landing] */
+  const ACTIVE = '{{F1}}';
+  const ags = [
+    ['{{Ad group}}','{{F1}}',['{{keyword}}'],'{{~N}}','{{/ruta}}']
+  ];
+  if ($('agrows')) $('agrows').innerHTML = ags.map(a=>`
+    <tr><td><b>${esc(a[0])}</b></td><td><span class="chip ${a[1]===ACTIVE?'st-run':'st-pause'}">${a[1]===ACTIVE?a[1]+' activo':a[1]+' en pausa'}</span></td>
+    <td>${a[2].map(k=>`<span class="kw">${esc(k)}</span>`).join('')}</td><td class="r num">${esc(a[3])}</td><td class="mono">${esc(a[4])}</td></tr>`).join('');
+
+  /* H1 por ad group: [grupo, H1 del RSA, alternativas…]; pool de headlines y descripciones (se muestra el largo de cada una) */
+  const h1 = [
+    ['{{Grupo}}','{{H1 pinneado}}','{{Alternativa}}']
+  ];
+  if ($('h1rows')) $('h1rows').innerHTML = h1.map(r=>`<tr><td><b>${esc(r[0])}</b></td><td>${r.slice(1).map(x=>`${esc(x)} <span class="lenc">${x.startsWith('{KeyWord:')?x.length-10:x.length}</span>`).join('<br>')}</td></tr>`).join('');
+  const pool = ['{{Headline compartida}}'];
+  if ($('pool')) $('pool').innerHTML = pool.map(x=>`<li>${esc(x)} <span class="lenc">${x.length}</span></li>`).join('');
+  const descs = ['{{Descripción compartida}}'];
+  if ($('descs')) $('descs').innerHTML = descs.map(x=>`<li style="margin:4px 0">${esc(x)} <span class="lenc">${x.length}</span></li>`).join('');
+
+  /* Negativas por categoría: [categoría, cantidad, color] */
+  const negs = [['{{Categoría}}', 1, 'var(--orange)']];
+  const negMax = Math.max(...negs.map(n=>n[1]), 1);
+  if ($('negbars')) $('negbars').innerHTML = negs.map(n=>`<div class="negbar"><span>${esc(n[0])}</span><div class="t"><i style="width:${n[1]/negMax*100}%; --c:${n[2]}"></i></div><b class="num" style="text-align:right">${n[1]}</b></div>`).join('');
+
+  /* Rúbrica de landing (audit-site): [ítem, 0 | 1 | 2 | null = sin dato]. 0 marca B. */
+  const rub = [['{{Headline refleja el servicio}}', null]];
+  if ($('rubric')) $('rubric').innerHTML = rub.map(r=>`<div class="rub-row"><span>${esc(r[0])}${r[1]===0?' <span class="b-flag">B</span>':''}</span><span class="pips">${r[1]===null?'<em>SIN DATO</em>':`<i class="${r[1]>=1?'on':''}"></i><i class="${r[1]>=2?'on':''}"></i>`}</span></div>`).join('');
+
+  /* Checklist (espejo de checklist.md): [fase, ítem, responsable, done | part | todo, bloqueante] */
+  const CL = [
+    ['F0','{{Ítem del checklist}}','PMM','todo',true]
+  ];
+  const PHT = {F0:'{{Nombre F0}}', F1:'{{Nombre F1}}'};
+  let fWho='Todos', fSt='Todos';
+  const whoOpts=['Todos','PMM','Cliente','Jhombis'], stOpts=['Todos','Pendientes','Bloqueantes','Hechos'];
+  const KEY = '{{slug}}-filters';
+  function btns(el, opts, cur, set){
+    el.innerHTML = opts.map(o=>`<button type="button" class="fbtn" aria-pressed="${o===cur}" data-v="${esc(o)}">${esc(o)}</button>`).join('');
+    el.querySelectorAll('button').forEach(b=>b.addEventListener('click',()=>{set(b.dataset.v); render();}));
+  }
+  function render(){
+    btns($('f-who'), whoOpts, fWho, v=>{fWho=v; save();});
+    btns($('f-st'), stOpts, fSt, v=>{fSt=v; save();});
+    $('cl').innerHTML = Object.keys(PHT).map(ph=>{
+      const all = CL.filter(x=>x[0]===ph);
+      const done = all.filter(x=>x[3]==='done').length;
+      const items = all.filter(x=>(fWho==='Todos'||x[2]===fWho) &&
+        (fSt==='Todos' || (fSt==='Hechos'&&x[3]==='done') || (fSt==='Pendientes'&&x[3]!=='done') || (fSt==='Bloqueantes'&&x[4]&&x[3]!=='done')));
+      return `<div class="cl-phase"><h3><i style="--c:${PH[ph].c}"></i>${PH[ph].n} · ${esc(PHT[ph])} <small class="num">${done}/${all.length} hechos</small></h3>
+        ${items.length? items.map(x=>`<div class="cl-item${x[3]==='done'?' is-done':''}"><span class="box ${x[3]==='done'?'done':x[3]==='part'?'part':''}" aria-label="${x[3]==='done'?'hecho':x[3]==='part'?'parcial':'pendiente'}"></span><span class="txt">${esc(x[1])}</span><span class="tags">${x[4]?'<span class="b-flag">B</span>':''}<span class="who">${esc(x[2])}</span></span></div>`).join('') : '<p class="empty-note">Nada con estos filtros.</p>'}
+      </div>`;
+    }).join('');
+  }
+  function save(){ try{ localStorage.setItem(KEY, JSON.stringify({fWho,fSt})); }catch(e){} }
+  try{ const s=JSON.parse(localStorage.getItem(KEY)||'null'); if(s){ if(whoOpts.includes(s.fWho)) fWho=s.fWho; if(stOpts.includes(s.fSt)) fSt=s.fSt; } }catch(e){}
+  if ($('cl')) render();
+
+  /* Preguntas al cliente: [html con <b>, bloqueante] y mensaje listo para enviar (idioma del cliente) */
+  const qs = [
+    ['<b>{{Pregunta}}</b> {{detalle}}', true]
+  ];
+  if ($('qlist')) $('qlist').innerHTML = qs.map(q=>`<li>${q[0]} ${q[1]?'<span class="b-flag">B</span>':''}</li>`).join('');
+  const msg = `{{Mensaje para el cliente, numerado, listo para copiar}}`;
+  const ta = $('clientmsg');
+  if (ta){
+    ta.value = msg;
+    $('copybtn').addEventListener('click', ()=>{
+      const st = $('copystate');
+      const fallback = ()=>{ ta.focus(); ta.select(); st.textContent = 'Texto seleccionado: usa Ctrl/Cmd + C.'; };
+      try{ navigator.clipboard.writeText(msg).then(()=>{ st.textContent = 'Copiado.'; }, fallback); }catch(e){ fallback(); }
+    });
+  }
+})();
+</script>

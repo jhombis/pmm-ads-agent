@@ -6,7 +6,9 @@
       Reemplaza {{PMM_LOGO}} por el logo PMM en base64 (el artefacto no puede cargar archivos locales).
   python scripts/informe_html.py check <es.html> <en.html>
       Valida antes de publicar: logo, tokens de color, modo oscuro, pie PMM, enlace cruzado
-      entre idiomas y que no queden {{MARCADORES}}.
+      entre idiomas, que no queden {{MARCADORES}}, que las secciones sigan el orden del plan de
+      referencia (Pro Phase Electric), que ES y EN tengan las mismas secciones y que no se hayan
+      colado datos del ejemplo en el informe de otro cliente.
 """
 import base64, re, sys
 from pathlib import Path
@@ -15,6 +17,13 @@ ROOT = Path(__file__).resolve().parents[1]
 STYLE = ROOT / 'knowledge/estilo-informes'
 LOGO = STYLE / 'pmm-logo.webp'
 TEMPLATE = STYLE / 'plantilla.html'
+# Orden de secciones del plan de referencia (ejemplo-pro-phase-*.html). Se pueden omitir las que no
+# tengan archivo fuente, pero no reordenar ni inventar otras sin agregarlas antes a la plantilla.
+SECTIONS = ['resumen', 'evolucion', 'pasos', 'fechas', 'estrategia', 'anuncios', 'negativas',
+            'landing', 'mercado', 'checklist', 'cliente', 'porque']
+REQUIRED = ['resumen', 'pasos', 'checklist']
+# Datos del ejemplo que no deben aparecer en el informe de otro cliente (copiar y pegar del ejemplo)
+EXAMPLE_LEAKS = ['Pro Phase', '758-301-1023', 'prophaseelectricar', 'ppe-filters']
 
 
 def logo_uri():
@@ -62,6 +71,23 @@ def check(es, en):
         left = sorted(set(re.findall(r'\{\{[^}]+\}\}', s)))
         if left:
             errs.append(f'marcadores sin reemplazar: {", ".join(left[:5])}' + (' …' if len(left) > 5 else ''))
+        ids = re.findall(r'<section id="([a-z0-9-]+)"', s)
+        unknown = [i for i in ids if i not in SECTIONS]
+        if unknown:
+            errs.append(f'secciones fuera de la plantilla: {", ".join(unknown)} (agregarlas antes a plantilla.html y a SECTIONS)')
+        known = [i for i in ids if i in SECTIONS]
+        if known != sorted(known, key=SECTIONS.index):
+            errs.append('las secciones no siguen el orden del plan de referencia: ' + ' → '.join(SECTIONS))
+        missing = [i for i in REQUIRED if i not in ids]
+        if missing:
+            errs.append(f'faltan secciones obligatorias: {", ".join(missing)}')
+        if ids != re.findall(r'<section id="([a-z0-9-]+)"', Path(other).read_text()):
+            errs.append(f'no tiene las mismas secciones que {Path(other).name}')
+        h1 = re.search(r'<h1>(.*?)</h1>', s, re.S)
+        if h1 and 'Pro Phase' not in h1.group(1):
+            leaks = [x for x in EXAMPLE_LEAKS if x in s]
+            if leaks:
+                errs.append(f'quedan datos del ejemplo de Pro Phase: {", ".join(leaks)}')
         if not re.search(r'href="https://claude\.ai/(code/)?artifact/[^"]+"', s):
             errs.append(f'sin enlace a la otra versión ({Path(other).name}); poner su URL de artefacto')
         print(f'{path}: ' + ('OK' if not errs else 'ERRORES'))

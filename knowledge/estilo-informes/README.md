@@ -1,10 +1,10 @@
 # Estilo de informes PMM
 
-Todo informe, plan o resumen en HTML que salga del agente (planes de cliente, `/weekly-review`, `/diagnose`, reportes para el cliente) usa **este estilo**: logo PMM, paleta, tipografías y componentes de `plantilla.html`. La referencia viva es el plan de Pro Phase Electric (`clients/pro-phase-electric/plan-es.html`).
+Todo informe, plan o resumen en HTML que salga del agente (planes de cliente, `/weekly-review`, `/diagnose`, reportes para el cliente) usa **este estilo**: logo PMM, paleta, tipografías y componentes de `plantilla.html`. **La referencia es el plan de Pro Phase Electric** (`ejemplo-pro-phase-es.html` / `-en.html` en esta carpeta, copia fija de la versión aprobada). Todo informe nuevo tiene que verse como ese: las mismas 12 secciones en el mismo orden, los mismos componentes y el mismo nivel de detalle. `plantilla.html` es ese mismo plan con los datos cambiados por `{{MARCADORES}}`.
 
 ## Flujo
 1. `python scripts/informe_html.py new clients/<slug>/<nombre>-es.html clients/<slug>/<nombre>-en.html`: copia la plantilla con el logo ya insertado.
-2. Llenar los `{{MARCADORES}}` y borrar las secciones que no apliquen. Se pueden agregar secciones, siempre con los componentes de abajo. **No se edita el `<style>`**; si un informe necesita un componente nuevo, se agrega primero a la plantilla y a esta guía.
+2. Llenar los `{{MARCADORES}}`, incluidos los de los arrays del `<script>`, y borrar solo las secciones sin archivo fuente. No se reordenan ni se agregan secciones sueltas: si hace falta una nueva, se agrega primero a la plantilla, a esta guía y a `SECTIONS` en `scripts/informe_html.py`. **No se edita el `<style>`**.
 3. Publicar las dos versiones como artefactos, poner en cada una la URL de la otra y republicar. Guardar las URLs en el front matter (`plan_es`/`plan_en` en `roadmap.md` o el archivo que corresponda).
 4. `python scripts/informe_html.py check <es> <en>` debe dar OK antes de la publicación final. Al actualizar, se republican las dos en sus mismas URLs.
 
