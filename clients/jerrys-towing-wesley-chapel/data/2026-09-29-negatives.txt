@@ -1,0 +1,107 @@
+# Propuesta de negativas — Jerry's Towing — 2026-09-29
+# Fuente: search terms 2026-08-22 → 2026-09-28 (Windsor). NO APLICAR sin OK de Jhombis → /negatives
+# Nivel: lista compartida de cuenta salvo que se indique. Concordancia de frase salvo [exacta].
+
+## 1. Servicio público gratuito (FDOT Road Rangers) — gastó $23.91 / 3 clics
+road ranger
+road rangers
+
+## 2. Buscan a su aseguradora / club (quieren el número de su proveedor, no una grúa local)
+roadside assistance phone number
+roadside assistance number
+direct auto towing number
+# ojo: NO usar "phone number" suelto → bloquearía "towing service phone number" (intención válida)
+direct auto
+dairyland
+bristol west
+mitsubishi roadside
+pinnacle roadside
+1800 roadside
+triple roadside
+tnt roadside
+extended warranty
+
+## 3. Competidores (estándar PMM #5) — los que ya generaron clic primero
+pasco towing
+sams wrecker
+sams towing
+a super car
+supercar recovery
+eduardo towing
+crockett
+crocketts
+cha cha
+tp towing
+b&d towing
+atlas towing
+knights towing
+superior towing
+guardian towing
+supreme towing
+bravo towing
+greenfield towing
+fletchers towing
+altairis towing
+first choice recovery
+rapid recovery
+active towing
+waypoint auto rescue
+highway rescue
+el monstro towing
+taj towing
+common tow
+eastern tow
+go go tow
+cts towing
+commtow
+abc towing
+a&m towing
+pg towing
+r c towing
+9 second recovery
+billy's auto service
+ralli's towing
+speedy towing
+lift towing
+# (no negativizar "jerry" / "jerrys": es la marca del cliente)
+
+## 4. Talleres / retail / carrocería de terceros
+gerber collision
+caliber collision
+mikes auto body
+walmart auto center
+autopros
+murphys diesel
+
+## 5. Fuera de área (el arreglo de fondo es geo = "Presencia"; esto es un parche)
+farmingdale
+columbus
+ohio
+arizona
+estero
+bradenton
+spring hill
+hernando
+st petersburg
+lakeland
+# Brandon / Valrico: dependen del radio real → PENDIENTE confirmar área de servicio
+
+## 6. Servicios que el sitio no ofrece (confirmar con el cliente antes de aplicar)
+rv transport
+motor home
+semi tow
+battery replacement
+tire replacement
+replace tire
+jumper cables
+mecánico a domicilio
+mecanico a domicilio
+mecánicos a domicilio
+mechanics that come to you
+car wreckers
+# motorcycle towing / trailer towing: PENDIENTE (¿los hacen?)
+
+## Revisar, NO negativizar todavía
+# "how much does a tow truck cost", "towing service cost near me" → intención de precio, compran. Mantener.
+# "guincho near me" (portugués) → intención válida; vigilar.
+# "ponchera a domicilio" / "pinchazo cerca de mi" → cambio de llanta sí lo hacen; vigilar.
