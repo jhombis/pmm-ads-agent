@@ -10,7 +10,10 @@ actualizado: 2026-10-01
 - [ ] Confirmar área de servicio real (¿solo OKC metro?) y corregir ubicación a "Presencia"
 - [ ] Pasar las ~100 keywords de amplia a frase/exacta (estándar PMM #2)
 - [ ] Aplicar `data/2026-10-01-negatives.txt` (239 términos, propuesta lista — esperando OK de Jhombis)
-- [ ] Confirmar con cliente si hace cambio de llanta en sitio → resolver conflicto negativa `[tire change near me]` vs keyword activa
+- [ ] **Quitar negativas que bloquean llantas**: la web confirma tire changes. Quitar `[tire change near me]`, `tire repair near me`, `flat tire service`, `flat tire service near me`, `mobile`, `tire change service near me`, `Flat tire repair`
 - [ ] Revisar negativas amplias de una palabra existentes (quick, budget, discount, marcas de autos…)
 - [ ] Verificar "Calls from Ads": duración mínima de llamada y si cuentan llamadas mal dirigidas
-- [ ] Auditar landing rrroadsiderelief.com (bloqueada desde este entorno)
+- [x] Auditar landing → `audit-site.md` 10/22
+- [ ] Formulario de 4 campos arriba en home y páginas de servicio (bloqueante landing)
+- [ ] Medir PageSpeed móvil + comprimir logo 676 KB / headers + caché (bloqueante si score < 40)
+- [ ] Verificar doble tag Site Kit + GTM y que AW-18397439627 sea de la cuenta 425-405-2574

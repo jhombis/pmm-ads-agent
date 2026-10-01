@@ -13,11 +13,11 @@ estado: activo — brief preliminar (investigación sin entrevista)
 > Brief preliminar armado con datos del MCC (vía Windsor.ai) y búsqueda web. Todo lo marcado `PENDIENTE` hay que confirmarlo con Jhombis/cliente en `/onboard`. La cuenta **ya está corriendo**, así que esto no es un alta en frío.
 
 ## Negocio
-- URL: https://rrroadsiderelief.com/ (final URL de los anuncios). No se pudo abrir desde este entorno (bloqueada por proxy) y no aparece indexada en la búsqueda web → **PENDIENTE** `/audit-landing`.
-- Base y área de servicio: **inferida Oklahoma City metro** (search terms con OKC, Norman, Moore, Yukon, Edmond, Choctaw, Bethany; keyword "roadside assistance okc"). Campaña tipo "Radius". Radio exacto **PENDIENTE**.
-- Servicios (inferidos de keywords, no confirmados): roadside assistance, towing, cambio de llanta / tire service móvil, jump start, motorcycle towing. Lockout no está en keywords. Orden de rentabilidad **PENDIENTE**.
+- URL: https://rrroadsiderelief.com/ (final URL de todos los anuncios = home). WordPress + Elementor, sitio nuevo (sep-2026). Ver `audit-site.md` (10/22, requiere ajustes).
+- Base y área de servicio: **Oklahoma City** (confirmado en la web: "anywhere in Oklahoma City"). Search terms también de Norman, Moore, Yukon, Edmond, Choctaw, Bethany. Radio exacto **PENDIENTE**.
+- Servicios (confirmados en la web): **light & medium-duty towing** con flatbeds (incluye lowered cars y motocicletas) y **roadside assistance**: tire changes, lockout, fuel delivery, jumpstarts, winch outs. Lockout, fuel y winch out no tienen keywords. Orden de rentabilidad **PENDIENTE**.
 - Servicio estrella / servicio a evitar: PENDIENTE
-- Diferenciadores: PENDIENTE
+- Diferenciadores (web): 24/7, flota de 3 flatbeds, 10 años de experiencia combinada, remolque seguro de autos bajos y motos. Sin licencia/seguro visibles.
 - Ofertas sostenibles: PENDIENTE (search term "$50 towing service near me" convirtió → ¿tienen tarifa base?)
 - Búsqueda de marca: PENDIENTE (no hay búsquedas de marca en 30 días)
 - Ojo homónimos: existen otras "Roadside Relief" en Florissant MO, Otis OR, Hollywood FL y "Randy's Roadside Relief" en Pottsville PA. Ninguna es este cliente; cuidar al revisar GBP/reseñas.
@@ -50,9 +50,9 @@ estado: activo — brief preliminar (investigación sin entrevista)
 8. **Pacing bajo + IS 17%**: gasta ~58% del presupuesto con IS bajo → el límite no es presupuesto sino ranking/puja. Estrategia de puja actual **PENDIENTE** de revisar (no expuesta en Windsor).
 
 ## Operación
-- Horario / 24-7: PENDIENTE (las keywords usan "24 hour"; confirmar capacidad real nocturna)
+- Horario / 24-7: la web dice "Available 24/7". Confirmar que alguien contesta de noche.
 - Respuesta a leads (quién, tiempo): PENDIENTE
-- Teléfono / call tracking: hay call asset con conversiones de llamada; número PENDIENTE
+- Teléfono / call tracking: (405) 536-9093 (web). Call asset con conversiones "Calls from Ads"; sin call tracking en la web. Email: rraysautorecovery@gmail.com
 - CRM (solo referencia): PENDIENTE
 - GBP: PENDIENTE (no encontrado en búsqueda web)
 
@@ -66,9 +66,9 @@ estado: activo — brief preliminar (investigación sin entrevista)
 | Excel Wrecker (Moore), RPM Towing OKC, Elite Towing OKC | — | impresiones |
 
 ## Web y tracking
-- Plataforma / quién edita: PENDIENTE
-- Tag/GA4: hay conversión "Form Fill" activa → existe tag; no está en las propiedades GA4 conectadas a Windsor. PENDIENTE verificar con Tag Assistant.
-- Formulario → destino: PENDIENTE
+- Plataforma / quién edita: WordPress 7.1 + Elementor Pro 4.2 + Site Kit. Quién edita: PENDIENTE
+- Tag/GA4: Site Kit (`GT-PHCMTZJ8`, `AW-18397439627`) + GTM `GTM-TS99RXK7`. Riesgo de doble conteo; verificar con Tag Assistant.
+- Formulario → destino: Elementor. /schedule-a-tow/ tiene 9 campos; las páginas internas tienen 4 campos al pie. Mensaje inline, sin URL de gracias. Destino del email PENDIENTE.
 - Requisitos de política: PENDIENTE (licencia de grúa OK / USDOT si aplica)
 
 ## LSA (solo US)
@@ -80,4 +80,4 @@ estado: activo — brief preliminar (investigación sin entrevista)
 - [ ] Horario real / 24-7 y quién contesta
 - [ ] Acceso a GBP y número de reseñas
 - [ ] Revisar estrategia de puja y config de ubicación directamente en la cuenta (API)
-- [ ] `/audit-landing` sobre rrroadsiderelief.com
+- [x] `/audit-landing` → `audit-site.md` (2026-10-01)

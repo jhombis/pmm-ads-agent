@@ -164,7 +164,7 @@ tire mounted | frase | campaña
 inch tires | frase | campaña
 all terrain | frase | campaña
 brands of tires | frase | campaña
-tire replacement | frase | campaña
+# tire replacement | frase | campaña   # RETIRADA: la web confirma tire changes ('flat tire replacement' es intención válida)
 spare tires | frase | campaña
 tire town | frase | campaña
 tires plus | frase | campaña
