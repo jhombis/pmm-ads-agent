@@ -1,0 +1,736 @@
+120 | BROAD
+2003 tacoma rear led tail light | EXACT
+90 toyotya pickup led lights sets | EXACT
+a and e | BROAD
+a&e | BROAD
+aaa | PHRASE
+ab | PHRASE
+abc | BROAD
+abc | PHRASE
+about | BROAD
+absolute | BROAD
+ace electric | EXACT
+act of | BROAD
+act | BROAD
+action electric | EXACT
+action | BROAD
+adams | PHRASE
+adb | PHRASE
+advertising | BROAD
+agreement | BROAD
+Alabama | BROAD
+alarm | BROAD
+alarms | BROAD
+Alaska | BROAD
+all | BROAD
+alliant | BROAD
+alliant | PHRASE
+allphase | PHRASE
+always on electric | EXACT
+ampro | PHRASE
+anderson | BROAD
+andrew | PHRASE
+ap | PHRASE
+Appliance | BROAD
+application | BROAD
+applications | BROAD
+apply | BROAD
+apprentice | BROAD
+apprenticeship | BROAD
+architect | BROAD
+Arizona | BROAD
+art | BROAD
+ask a | BROAD
+aspen | PHRASE
+aspired | PHRASE
+assembly | BROAD
+association | BROAD
+associations | BROAD
+atlas | BROAD
+audio | BROAD
+Aura | BROAD
+auto | BROAD
+automobile | BROAD
+automotive | BROAD
+avi | BROAD
+axis | BROAD
+b & b | PHRASE
+b and b electric | EXACT
+b&b | PHRASE
+baby | BROAD
+backup | BROAD
+banner | BROAD
+Bar | BROAD
+bargain | BROAD
+Barnes | BROAD
+barnett | BROAD
+barrett | PHRASE
+bart | PHRASE
+basic | BROAD
+basin | BROAD
+battery | BROAD
+bay | BROAD
+become | BROAD
+Bemis | BROAD
+bids | BROAD
+big dog electric llc | EXACT
+Big dog | BROAD
+Bill | BROAD
+bishop | BROAD
+black | BROAD
+blanket | BROAD
+blog | BROAD
+blue streak electric | EXACT
+board | BROAD
+bong | BROAD
+book | BROAD
+books | BROAD
+brass | BROAD
+briar | BROAD
+bright led light strip kits | EXACT
+brightest led light | EXACT
+brightest led offroad lights | EXACT
+build | BROAD
+bulb | BROAD
+bulbs | BROAD
+burn | BROAD
+burner | BROAD
+business | BROAD
+buy | BROAD
+buzz electric | EXACT
+cabinet | BROAD
+cabinets | BROAD
+California | BROAD
+cam | PHRASE
+camera | BROAD
+can i | BROAD
+canyon | BROAD
+capacity | BROAD
+capital | BROAD
+career | BROAD
+careers | BROAD
+carroll | BROAD
+carter | BROAD
+casa linda | BROAD
+case studies | BROAD
+case study | BROAD
+casper | PHRASE
+cast iron | BROAD
+castle | BROAD
+cctv | BROAD
+cd | BROAD
+Ced | BROAD
+cedar rapids electric company | EXACT
+center | BROAD
+certification | BROAD
+ces electric supply | EXACT
+ces montrose | EXACT
+cg | BROAD
+cheap | BROAD
+clark | BROAD
+class | BROAD
+classes | BROAD
+cleaner | BROAD
+cleaning | BROAD
+clear | BROAD
+clearance | BROAD
+close out | BROAD
+close outs | BROAD
+closeout | BROAD
+closeouts | BROAD
+club | BROAD
+clubs | BROAD
+cobra | BROAD
+code | BROAD
+colima | BROAD
+colima's | BROAD
+colimas | BROAD
+college | BROAD
+colleges | BROAD
+collins | BROAD
+com | BROAD
+common | BROAD
+community | BROAD
+compare prices | BROAD
+compare | BROAD
+comparison | BROAD
+complaint | BROAD
+complaints | BROAD
+compliance | BROAD
+computer repair | BROAD
+computer | BROAD
+computers | BROAD
+concrete | BROAD
+condensate | BROAD
+Connecticut | BROAD
+connection fee | BROAD
+consultants | BROAD
+consulting | BROAD
+continuing education | BROAD
+continuing education | PHRASE
+cookware | BROAD
+corey | PHRASE
+corgi | BROAD
+cost to | BROAD
+costs | BROAD
+coupling | BROAD
+course | BROAD
+courses | BROAD
+cover | BROAD
+crack | BROAD
+cracks | BROAD
+craft | BROAD
+crafts | BROAD
+create | BROAD
+creating | BROAD
+crossroads | PHRASE
+crown | BROAD
+crum | PHRASE
+cslb | BROAD
+custom | BROAD
+cuttable led rope light | EXACT
+cws | PHRASE
+d&l electric | EXACT
+dating | BROAD
+dave | BROAD
+david's | PHRASE
+death | BROAD
+deck building | BROAD
+definition | BROAD
+degree | BROAD
+Delaware | BROAD
+demand | BROAD
+Department | BROAD
+desktop | BROAD
+developer | BROAD
+developers | BROAD
+dewar | PHRASE
+dewitt | PHRASE
+diagram | BROAD
+diamond | BROAD
+dictionary | BROAD
+digital | BROAD
+dimensions | BROAD
+directory | BROAD
+discount | BROAD
+discounted | BROAD
+discounts | BROAD
+disk | BROAD
+dixie | PHRASE
+diy | BROAD
+dj lights led | EXACT
+do it yourself | BROAD
+dora | PHRASE
+download | BROAD
+downloads | BROAD
+drywall | BROAD
+dsa | BROAD
+ducey | PHRASE
+Ducey's | BROAD
+dummies | BROAD
+dunhill | BROAD
+durgin electric | EXACT
+dusk to dawn lights | EXACT
+dvd | BROAD
+E c | BROAD
+earn money | BROAD
+earn | BROAD
+earnest electrical contractors llc | EXACT
+easy money | BROAD
+edgar electric | EXACT
+education | BROAD
+edwards electric | EXACT
+efficiency | BROAD
+electrcai charger led flash light | EXACT
+electrical hourly rate | EXACT
+electrical supply grand junction colorado | EXACT
+electrical supply grand junction | EXACT
+electrical supply house near me | EXACT
+electrical supply montrose co | EXACT
+electrician van | EXACT
+electricity company near me | EXACT
+electronics | BROAD
+Elite | BROAD
+ellis | PHRASE
+emergency | BROAD
+emmons | BROAD
+empire | PHRASE
+employee | BROAD
+employer | BROAD
+employment | BROAD
+empresa de luz eléctrica | EXACT
+encore | PHRASE
+erickson | BROAD
+error | BROAD
+exam | BROAD
+example | BROAD
+examples | BROAD
+excavation | BROAD
+excel | PHRASE
+exhaust | BROAD
+exp electrical | EXACT
+export | BROAD
+exporter | BROAD
+exporters | BROAD
+express | BROAD
+faucet | BROAD
+faucets | BROAD
+federal | BROAD
+Feit | BROAD
+file | BROAD
+files | BROAD
+firehouse | BROAD
+fischer electric | EXACT
+fischer | BROAD
+fisher | BROAD
+fishers | PHRASE
+fixtures | BROAD
+flexible | BROAD
+floor | BROAD
+flooring | BROAD
+Florida | BROAD
+for hire | BROAD
+forum | BROAD
+foundation | BROAD
+fox's electrical | EXACT
+franklin | BROAD
+freeware | BROAD
+friends | BROAD
+fsg electric | EXACT
+fun | BROAD
+fx luminaire path lights | EXACT
+galvanized | BROAD
+game | BROAD
+games | BROAD
+ganzer | PHRASE
+gas | BROAD
+gem | BROAD
+general | BROAD
+george | BROAD
+Georgia usa | BROAD
+gift | BROAD
+gifts | BROAD
+girls | BROAD
+gjt | BROAD
+glenwood springs electric company | EXACT
+gmmi | BROAD
+gnu | BROAD
+government | BROAD
+grand junction electrical supply | EXACT
+grand river electric | EXACT
+green | BROAD
+griffith | PHRASE
+grohe | BROAD
+guide | BROAD
+guides | BROAD
+gunnison | PHRASE
+guy | BROAD
+guzman | PHRASE
+h&s | PHRASE
+hack | BROAD
+hacks | BROAD
+hand made | BROAD
+handmade | BROAD
+hard | BROAD
+hardware | BROAD
+hate | BROAD
+Hawaii | BROAD
+hde | PHRASE
+heating | BROAD
+helper | BROAD
+henning | PHRASE
+henry | BROAD
+hiller | BROAD
+hines | PHRASE
+hiring | BROAD
+history | BROAD
+hobby | BROAD
+holiday | BROAD
+home business | BROAD
+home depot | BROAD
+home standby generator repair | EXACT
+Homelife | BROAD
+homemade | BROAD
+hometown | PHRASE
+hooper electric | EXACT
+hooper | BROAD
+hose | BROAD
+hosting | BROAD
+houchin | PHRASE
+how do i | PHRASE
+how do you | PHRASE
+how do | BROAD
+how do | PHRASE
+how to be a | PHRASE
+how to start a | PHRASE
+how to | BROAD
+how to | PHRASE
+how | BROAD
+hvac | BROAD
+i t s | BROAD
+Idaho | BROAD
+idea | BROAD
+ideas | BROAD
+illegal | BROAD
+Illinois | BROAD
+import | BROAD
+importer | BROAD
+importers | BROAD
+improvement | BROAD
+independent | BROAD
+Indiana | BROAD
+indictment | BROAD
+inexpensive | BROAD
+info | BROAD
+information | BROAD
+institute | BROAD
+instructions | BROAD
+insurance | BROAD
+intern | BROAD
+internet | BROAD
+interns | BROAD
+internship | BROAD
+internships | BROAD
+Iowa | BROAD
+is | BROAD
+issues | BROAD
+j d | PHRASE
+j&a | PHRASE
+j&m | PHRASE
+jc | PHRASE
+jim | BROAD
+jm | PHRASE
+jmj electrical services | EXACT
+job | BROAD
+jobs | BROAD
+joint | BROAD
+jones | BROAD
+journal | BROAD
+journals | BROAD
+journeyman electrician | EXACT
+journeyman | BROAD
+just | BROAD
+justin | BROAD
+Kansas | BROAD
+kc | PHRASE
+kelly | BROAD
+kenny | PHRASE
+Kentucky | BROAD
+kerstetter | PHRASE
+kessler | PHRASE
+key | BROAD
+knight | PHRASE
+kohler | BROAD
+Lamp | BROAD
+laptop | BROAD
+lassiter electric | EXACT
+law | BROAD
+laws | BROAD
+leads | BROAD
+learn | BROAD
+led 120v light | EXACT
+led blue blinking lights | EXACT
+led light strips | EXACT
+led lights | EXACT
+led motorcycle trailer lights | EXACT
+led strip lights amazon | EXACT
+led strip lights for camper awning | EXACT
+led strip lights | EXACT
+legal | BROAD
+legislation | BROAD
+libraries | BROAD
+library | BROAD
+lic | BROAD
+License | BROAD
+licos | PHRASE
+light strips montrose co | EXACT
+lighting stores in montrose co | EXACT
+liner | BROAD
+lining | BROAD
+liquid | BROAD
+liquidation | BROAD
+liquidations | BROAD
+liquidator | BROAD
+liquidators 12 volt | BROAD
+liscense | BROAD
+location | BROAD
+Louisiana | BROAD
+love | BROAD
+low voltage | BROAD
+lux electric | EXACT
+mac | BROAD
+machine | BROAD
+machines | BROAD
+magazine | BROAD
+magazines | BROAD
+magnum | BROAD
+Maine | BROAD
+make money | BROAD
+make | BROAD
+making money | BROAD
+making | BROAD
+manhole | BROAD
+manufacturer | BROAD
+map | BROAD
+maps | BROAD
+martin | BROAD
+Maryland | BROAD
+Massachusetts | BROAD
+material | BROAD
+may i | PHRASE
+mcatlin | PHRASE
+mcclain | PHRASE
+mcclain's electric | EXACT
+measurement | BROAD
+mechanical | BROAD
+meerschaum | BROAD
+merit | PHRASE
+merritt | BROAD
+metrics | BROAD
+Michigan | BROAD
+microsoft | BROAD
+mike | PHRASE
+miller | BROAD
+Minnesota | BROAD
+mira | BROAD
+mirrors with led lights | EXACT
+Mississippi | BROAD
+Missouri | BROAD
+mj | BROAD
+mobile led lights for paintings | EXACT
+model | BROAD
+models | BROAD
+moen | BROAD
+money | BROAD
+Montana | BROAD
+moonlake | PHRASE
+moore | BROAD
+morlan | BROAD
+morris | PHRASE
+motion sensor outdoor lights | EXACT
+motor | BROAD
+mountaineer | PHRASE
+movies | BROAD
+mp3 | BROAD
+mpeg | BROAD
+mpg | BROAD
+music | BROAD
+my | BROAD
+native electric | EXACT
+navopache | PHRASE
+nc | BROAD
+Nebraska | BROAD
+network | BROAD
+networking | BROAD
+Nevada | BROAD
+New Hampshire | BROAD
+New Jersey | BROAD
+New Mexico | BROAD
+new york | BROAD
+news | BROAD
+nice | PHRASE
+North Carolina | BROAD
+North Dakota | BROAD
+Nova | BROAD
+o dwyer | PHRASE
+oatey | BROAD
+odd lots | BROAD
+odd lots | PHRASE
+odor | BROAD
+Ohio | BROAD
+Oklahoma | BROAD
+on demand | BROAD
+on the | BROAD
+online | BROAD
+open source | PHRASE
+opportunities | BROAD
+opportunity | BROAD
+Oregon | BROAD
+organ | BROAD
+outdoor lights led | EXACT
+overstock | BROAD
+pan | BROAD
+par | BROAD
+park | BROAD
+parker electric company | EXACT
+parts | BROAD
+pat | BROAD
+pay | BROAD
+pc | BROAD
+pederson | PHRASE
+Pennsylvania | BROAD
+performance | BROAD
+peterson | BROAD
+pex | BROAD
+phoenix electrical | EXACT
+photographer | BROAD
+photography | BROAD
+photos | BROAD
+pic | BROAD
+pics | BROAD
+picture | BROAD
+pictures | BROAD
+pinnacle | BROAD
+pinnacle | PHRASE
+pit | BROAD
+plan | BROAD
+plans | BROAD
+plastic | BROAD
+plastics | BROAD
+plunger | BROAD
+plus | BROAD
+pm led brake light | EXACT
+portable | BROAD
+position | BROAD
+positions | BROAD
+powersource | PHRASE
+premier | BROAD
+prices | BROAD
+prime | PHRASE
+probst | PHRASE
+proctor | BROAD
+procurement | BROAD
+protest | BROAD
+public domain | PHRASE
+qed electric | EXACT
+r & a | PHRASE
+rac electric | EXACT
+rasmussen | PHRASE
+rea | PHRASE
+recruiter | BROAD
+recruiting | BROAD
+reeves | PHRASE
+regulation | BROAD
+regulations | BROAD
+remainder | BROAD
+remainders | BROAD
+remains | BROAD
+research | BROAD
+resume | BROAD
+resumes | BROAD
+retro fit led f150 lights | EXACT
+return | BROAD
+returned | BROAD
+returns | BROAD
+review | BROAD
+reviews | BROAD
+rexall electric | EXACT
+rexall | BROAD
+rexel electric | EXACT
+Rhode Island | BROAD
+rigide led offroad lights | EXACT
+riley | BROAD
+riley | PHRASE
+rmk | PHRASE
+roadtechs | PHRASE
+roberts | PHRASE
+roop electric co ltd | EXACT
+rss | BROAD
+rules | BROAD
+russell | BROAD
+ryan | BROAD
+s&c | PHRASE
+sack | BROAD
+salaries | BROAD
+salary | BROAD
+sample | BROAD
+samples | BROAD
+school | BROAD
+schools | BROAD
+seminar | BROAD
+seminars | BROAD
+send | BROAD
+sending | BROAD
+serial | BROAD
+serials | BROAD
+shareware | BROAD
+shortcut | BROAD
+shortcuts | BROAD
+show me | PHRASE
+slb electrical fitting | EXACT
+smith | PHRASE
+solar | BROAD
+sons | BROAD
+South Carolina | BROAD
+South Dakota | BROAD
+specifications | BROAD
+specs | BROAD
+standards | BROAD
+starlite led lights | EXACT
+start | BROAD
+starting | BROAD
+statistics | BROAD
+stats | BROAD
+stewart | PHRASE
+studies | BROAD
+study | BROAD
+sturgeon | PHRASE
+success stories | PHRASE
+success story | PHRASE
+suck | BROAD
+sucks | BROAD
+summit electrical company | EXACT
+sun electric | EXACT
+Supply | BROAD
+taller | BROAD
+technique | BROAD
+template | BROAD
+templates | BROAD
+Tennessee | BROAD
+Texas | BROAD
+tgi electrical | EXACT
+tiger | PHRASE
+tip | BROAD
+tips | BROAD
+tom | PHRASE
+toms | PHRASE
+tool | BROAD
+tools | BROAD
+toy | BROAD
+toys | BROAD
+train | BROAD
+training | BROAD
+triple a | PHRASE
+tutorial | BROAD
+tutorials | BROAD
+type | BROAD
+union | BROAD
+university | BROAD
+used | BROAD
+Utah | BROAD
+utilitech | BROAD
+Utilities | BROAD
+Vermont | BROAD
+video | BROAD
+videos | BROAD
+vigilante | PHRASE
+Virginia | BROAD
+vob | BROAD
+Volt | BROAD
+wage | BROAD
+wages | BROAD
+ward | PHRASE
+warez | BROAD
+warranty | BROAD
+wesley | PHRASE
+West Virginia | BROAD
+what are | PHRASE
+what is | PHRASE
+what | BROAD
+what | PHRASE
+white paper | PHRASE
+white papers | PHRASE
+White star | BROAD
+White | BROAD
+whitestar | PHRASE
+wholesale | BROAD
+william | PHRASE
+williams | PHRASE
+willow creek electric | EXACT
+Wisconsin | BROAD
+Wyoming | BROAD
+xcel | BROAD
+xml | BROAD
+xp | BROAD
+yc1953 led lights | EXACT
+yvea craig | EXACT

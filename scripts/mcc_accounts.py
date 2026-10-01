@@ -1,16 +1,15 @@
 #!/usr/bin/env python3
-"""Lista cuentas cliente del MCC con sus etiquetas. Filtra por --nicho y --pais (etiquetas nicho:* / pais:*)."""
+"""Lista cuentas cliente del MCC con sus etiquetas. Filtra por --nicho y --pais (etiquetas nicho:* / pais:*)
+y por --buscar (texto en el nombre de la cuenta, sin distinguir mayúsculas)."""
 import argparse, csv, sys
-from pathlib import Path
-from google.ads.googleads.client import GoogleAdsClient
+from ads_client import get_client
 
-ROOT = Path(__file__).resolve().parent.parent
-client = GoogleAdsClient.load_from_storage(str(ROOT / "google-ads.yaml"))
+client = get_client()
 svc = client.get_service("GoogleAdsService")
 mcc = client.login_customer_id
 
 ap = argparse.ArgumentParser()
-ap.add_argument("--nicho"); ap.add_argument("--pais")
+ap.add_argument("--nicho"); ap.add_argument("--pais"); ap.add_argument("--buscar")
 a = ap.parse_args()
 
 q = """SELECT customer_client.id, customer_client.descriptive_name,
@@ -28,4 +27,5 @@ for b in svc.search_stream(customer_id=mcc, query=q):
         tags = [labels.get(l, l) for l in c.applied_labels]
         if a.nicho and f"nicho:{a.nicho}" not in tags: continue
         if a.pais and f"pais:{a.pais}" not in tags: continue
+        if a.buscar and a.buscar.lower() not in c.descriptive_name.lower(): continue
         w.writerow([c.id, c.descriptive_name, c.currency_code, ";".join(tags)])

@@ -9,12 +9,14 @@ description: Audita la URL/landing de un cliente para Google Ads (velocidad, ofe
 Lee `clients/<slug>/brief.md` (URL, servicios, objetivo, quién edita la web).
 
 ## Qué hacer
+0. Si ya existen `data/site-scan.json` o `data/pagespeed.json` (los deja /investigar-cliente), reutilízalos y no vuelvas a descargar. Si no existen: `python scripts/site_scan.py <url> > clients/<slug>/data/site-scan.json`.
 1. **Fetch** de la home y de cada página de servicio que exista (WebFetch). Anota título, H1, CTA visibles, teléfono, formulario, prueba social, y si hay páginas por servicio o por ciudad.
 2. **Velocidad**: `python scripts/pagespeed.py <url> --strategy mobile` (requiere `PAGESPEED_API_KEY`, opcional). Si no hay clave, usar WebFetch de `https://pagespeed.web.dev/` no funciona; en ese caso pide a Jhombis el score o estima con tamaño de página.
 3. **Semrush `site_audit`** si el dominio está en un proyecto; si no, `domain_overview` para tráfico orgánico y keywords que ya rankea (sirve para la estrategia).
 4. **Tracking**: buscar en el HTML `gtag`, `googletagmanager`, `G-`, `AW-`, `fbq`. Anotar qué hay.
 5. **Formulario**: cuántos campos, si está above the fold en móvil, a dónde envía, si tiene página de gracias propia (URL) o solo mensaje inline (afecta conversión de Ads).
 6. **Móvil**: clic para llamar (`tel:`) visible sin scroll; WhatsApp si es Colombia.
+7. **Medición (playbook §7)**, antes que cualquier otra cosa: un solo teléfono en todo el sitio y que sea el número de reenvío de la conversión; formulario de prueba (mensaje de gracias, llegada del correo, conversión registrada en 24–48 h); acciones de conversión activas y si son leads reales o vistas y clics; recursos de llamada no en revisión ni rechazados; filtro de duración de llamada razonable; horario de atención contra programación de anuncios; en Elementor, Templates → Popups y acciones "After Submit" (popups heredados de otro cliente o con otro teléfono). Registrar la fecha de cada arreglo.
 
 ## Rúbrica (puntuar cada ítem 0/1/2)
 | Ítem | 2 = bien | Bloqueante si 0 |
@@ -70,3 +72,5 @@ Top keywords orgánicas: ayudan a saber qué términos ya tienen relevancia.
 
 ## Al terminar
 Resume veredicto, bloqueantes y cuántas landings faltan. Siguiente: `/competitors` y `/benchmark-interno` si no corrieron; luego `/strategy`.
+
+**Último paso obligatorio: `/informe`**: actualizar y republicar el artefacto del cliente (ES + EN, estilo PMM) en sus mismas URLs y entregar los dos enlaces.

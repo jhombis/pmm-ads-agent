@@ -1,0 +1,5 @@
+# fuente: Windsor.ai google_ads, cuenta 213-019-5545, extraido 2026-09-23. Umbral de duracion de llamada: no expuesto por Windsor.
+name,type,category,counting,primary,status,click_lookback_days
+Calls from Ads,AD_CALL,PHONE_CALL_LEAD,ONE_PER_CLICK,true,ENABLED,30
+Website Calls,WEBSITE_CALL,PHONE_CALL_LEAD,ONE_PER_CLICK,true,ENABLED,30
+Form Fill,WEBPAGE,SUBMIT_LEAD_FORM,ONE_PER_CLICK,true,ENABLED,90

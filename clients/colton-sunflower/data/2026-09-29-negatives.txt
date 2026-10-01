@@ -1,0 +1,98 @@
+# Colton Sunflower — negativas propuestas 2026-09-29
+# formato: término | match | nivel   (nivel campaña = equivale a cuenta: hay 1 sola campaña, id 24095361792)
+# Solo cubre lo que las 466 negativas actuales NO bloquean. Frase por defecto (los plurales no se cubren solos).
+## A. Obituarios / muertes recientes / eventos de hoy
+recent deaths | PHRASE | campaña
+recent death | PHRASE | campaña
+deaths today | PHRASE | campaña
+death in | PHRASE | campaña
+obits | PHRASE | campaña
+obituarios | PHRASE | campaña
+funerals today | PHRASE | campaña
+funeral today | PHRASE | campaña
+funeral services today | PHRASE | campaña
+funerals this weekend | PHRASE | campaña
+passed away | PHRASE | campaña
+## B. Mascotas (hoy solo están "dog", "pet" y "cat cremation"; no bloquean los plurales)
+dogs | PHRASE | campaña
+cats | PHRASE | campaña
+pets | PHRASE | campaña
+## C. Productos / parcelas / terceros
+burial plot | PHRASE | campaña
+burial plots | PHRASE | campaña
+cremation plot | PHRASE | campaña
+niche for sale | PHRASE | campaña
+nichos | PHRASE | campaña
+cremation box | PHRASE | campaña
+cremation boxes | PHRASE | campaña
+diamonds | PHRASE | campaña
+flower arrangements | PHRASE | campaña
+reception venues | PHRASE | campaña
+funeral website | PHRASE | campaña
+graveyards | PHRASE | campaña
+tree pod | PHRASE | campaña
+## D. Informacional / promedios / ayudas
+average | PHRASE | campaña
+meaning | PHRASE | campaña
+things to do | PHRASE | campaña
+checklist | PHRASE | campaña
+what do they do | PHRASE | campaña
+cost breakdown | PHRASE | campaña
+funeral expenses | PHRASE | campaña
+burial expense | PHRASE | campaña
+assistance | PHRASE | campaña
+reimbursement | PHRASE | campaña
+benefits | PHRASE | campaña
+transport a body | PHRASE | campaña
+cheapest way | PHRASE | campaña
+in california | PHRASE | campaña
+## E. Español informacional — NO APLICADO (pendiente: ¿atienden en español?)
+cuanto cuesta | PHRASE | campaña
+cuánto cuesta | PHRASE | campaña
+cuanto sale | PHRASE | campaña
+cuanto vale | PHRASE | campaña
+costo | PHRASE | campaña
+precio de | PHRASE | campaña
+planes funerarios | PHRASE | campaña
+cadáveres | PHRASE | campaña
+velatorio | PHRASE | campaña
+estados unidos | PHRASE | campaña
+usa | PHRASE | campaña
+## F. Fuera del área
+chicago | PHRASE | campaña
+idaho | PHRASE | campaña
+boise | PHRASE | campaña
+nc | PHRASE | campaña
+north carolina | PHRASE | campaña
+las vegas | PHRASE | campaña
+long beach | PHRASE | campaña
+compton | PHRASE | campaña
+palm desert | PHRASE | campaña
+victorville | PHRASE | campaña
+apple valley | PHRASE | campaña
+high desert | PHRASE | campaña
+upland | PHRASE | campaña
+## G. Competidores vistos en search terms
+presidio | PHRASE | campaña
+meadow memorials | PHRASE | campaña
+meadows memorial | PHRASE | campaña
+cortner | PHRASE | campaña
+cortners | PHRASE | campaña
+emerson | PHRASE | campaña
+emmerson | PHRASE | campaña
+serenity | PHRASE | campaña
+harrison ross | PHRASE | campaña
+pickett | PHRASE | campaña
+summers funeral | PHRASE | campaña
+smith funeral | PHRASE | campaña
+todds | PHRASE | campaña
+dobbling | PHRASE | campaña
+coastal cremation | PHRASE | campaña
+calvary | PHRASE | campaña
+cypress chapel | PHRASE | campaña
+lighthouse | PHRASE | campaña
+worldwide family | PHRASE | campaña
+montecito | PHRASE | campaña
+128 n riverside ave | PHRASE | campaña
+## H. Competidor que hoy es keyword (requiere pausar 3 keywords primero)
+family funeral chapel | PHRASE | campaña

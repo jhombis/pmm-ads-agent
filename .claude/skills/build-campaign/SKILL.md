@@ -21,11 +21,11 @@ description: Crea en Google Ads (vía API) las campañas, ad groups, keywords, n
 2. Por campaña de `strategy.md`:
    - Tipo Search; red: solo búsqueda; sin socios; sin Display.
    - Presupuesto diario de Fase 1.
-   - Puja: MAXIMIZE_CONVERSIONS sin target (o MAXIMIZE_CLICKS si el brief dice sin historial y así lo aprobó Jhombis).
+   - Puja según estándar 6 / playbook §5: MAXIMIZE_CLICKS con `cpc_bid_ceiling` si la cuenta es nueva o tiene <15 conv/mes; MAXIMIZE_CONVERSIONS sin target con 15+ estables.
    - Geo: ubicaciones del brief con `positive_geo_target_type = PRESENCE`; excluir países no objetivo.
-   - Idioma; programación de anuncios; rotación OPTIMIZE.
+   - Idioma; programación de anuncios **en la zona horaria de la cuenta** (leer `customer.time_zone` y convertir el horario del cliente); rotación OPTIMIZE.
    - Ad groups con keywords y match types de `data/keywords.csv`.
-   - 3 RSA por grupo desde `data/ads-*.md`, H1 pinneado.
+   - RSA desde `data/ads-*.md`, H1 pinneado: 1 por grupo (máx. 2) si la pauta es <$1,500/mes; 3 si es mayor.
    - Extensiones: sitelinks, callouts, snippets, llamada, ubicación (vinculación GBP).
 3. Verificación post-creación (GAQL): leer cada campaña y confirmar los 9 ajustes del playbook. Escribir resultado en `log/YYYY-MM-DD-build.md`.
 4. Verificar URLs finales con HEAD request (200, sin redirect).
@@ -35,3 +35,5 @@ Genera `data/import-google-ads-editor.csv` con el formato de Google Ads Editor (
 
 ## Al terminar
 Resume qué se creó, en qué estado, y las verificaciones que pasaron/fallaron. Actualiza `checklist.md` Fase 1. Siguiente: activar campañas, revisar aprobación de anuncios en 24h, `/weekly-review` a los 7 días.
+
+**Último paso obligatorio: `/informe`**: actualizar y republicar el artefacto del cliente (ES + EN, estilo PMM) en sus mismas URLs y entregar los dos enlaces.

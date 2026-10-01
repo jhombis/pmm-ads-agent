@@ -1,0 +1,219 @@
+{
+  "idioma": "en",
+  "nicho": "electrician",
+  "negocio": {
+    "nombre": "Pro Phase Electric",
+    "telefono": "+14792873650",
+    "telefono_display": "(479) 287-3650",
+    "direccion": {
+      "calle": "5173 Accident Rd",
+      "ciudad": "Lowell",
+      "region": "AR",
+      "cp": "72745",
+      "pais": "US"
+    },
+    "licencia": "",
+    "horario": "Open 7 days, 7 AM–6 PM",
+    "horario_schema": "Mo-Su 07:00-18:00",
+    "rating": {
+      "valor": "4.9",
+      "total": "",
+      "fuente": "on Google"
+    },
+    "logo_url": "",
+    "url_sitio": "https://prophaseelectricar.com/",
+    "gbp_url": "",
+    "schema_type": "Electrician"
+  },
+  "marca": {
+    "primario": "#1f2937",
+    "acento": "#f5c518",
+    "texto": "#111827",
+    "fondo": "#ffffff"
+  },
+  "confianza": [
+    {
+      "titulo": "4.9★ on Google",
+      "texto": "Rated by NWA homeowners"
+    },
+    {
+      "titulo": "Licensed · Bonded · Insured",
+      "texto": "Arkansas electricians"
+    },
+    {
+      "titulo": "Open 7 days",
+      "texto": "7 AM–6 PM, weekends too"
+    },
+    {
+      "titulo": "Nextdoor Fave 2023",
+      "texto": "Neighborhood Favorite"
+    }
+  ],
+  "resenas": {
+    "h2": "",
+    "items": []
+  },
+  "zona": {
+    "h2": "Serving Northwest Arkansas",
+    "texto": "Based in Lowell and working across Benton and Washington counties, including:",
+    "ciudades": [
+      "Lowell",
+      "Rogers",
+      "Bentonville",
+      "Bella Vista",
+      "Springdale",
+      "Fayetteville",
+      "Centerton",
+      "West Fork",
+      "Huntsville"
+    ],
+    "mapa_embed_url": ""
+  },
+  "ghl": {
+    "form_id": "",
+    "form_name": "LP Electrician NWA",
+    "form_height": 520,
+    "form_embed_html": "",
+    "chat_widget_html": ""
+  },
+  "tracking": {
+    "gtm_id": "",
+    "google_ads_id": "AW-18410300787",
+    "conversion_label_form": "",
+    "conversion_label_call": "",
+    "ga4_id": ""
+  },
+  "legal": {
+    "privacidad_url": ""
+  },
+  "pagina": {
+    "slug": "electrician-northwest-arkansas",
+    "url_final": "https://go.prophaseelectricar.com/electrician-northwest-arkansas",
+    "servicio": "Residential Electrician",
+    "ciudad": "Northwest Arkansas",
+    "keyword_principal": "electrician northwest arkansas",
+    "keywords_secundarias": [
+      "electrician near me",
+      "licensed electrician",
+      "electrician rogers",
+      "electrician fayetteville",
+      "electrician springdale",
+      "electrician bentonville"
+    ],
+    "title": "Licensed Electrician in Northwest Arkansas | Pro Phase",
+    "meta_description": "Licensed, bonded & insured electrician in Northwest Arkansas. Repairs, panels, EV chargers and lighting. Open 7 days. Get a free quote.",
+    "og_image": "",
+    "indexar": false,
+    "ad_group": "Electrician - NWA"
+  },
+  "hero": {
+    "h1": "Licensed Electrician in Northwest Arkansas",
+    "subtitulo": "Repairs, upgrades and new installs for NWA homes, from a tripping breaker or a dead outlet to a new panel or EV charger.",
+    "oferta": "Free quotes · Open 7 days, 7 AM–6 PM",
+    "bullets": [
+      "Licensed, bonded & insured",
+      "4.9★ rated on Google",
+      "Local team based in Lowell"
+    ],
+    "cta_llamar": "Call Now",
+    "cta_form": "Get a Free Quote",
+    "form_titulo": "Get a Free Quote",
+    "form_nota": "Tell us what you need. We reply during business hours, 7 days a week.",
+    "imagen": {}
+  },
+  "incluye": {
+    "h2": "Electrical Services for NWA Homes",
+    "intro": "One licensed team for the jobs most homes need sooner or later.",
+    "items": [
+      {
+        "titulo": "Repairs & Troubleshooting",
+        "texto": "Breakers that trip, outlets or switches that stopped working, flickering lights and wiring problems found and fixed."
+      },
+      {
+        "titulo": "Panels, Outlets & Upgrades",
+        "texto": "Electrical panel upgrades, new circuits and 240V outlets, so your home handles today’s appliances safely."
+      },
+      {
+        "titulo": "Lighting, Fans & Smart Home",
+        "texto": "Ceiling fans, light fixtures, smoke detectors, thermostats and video doorbells installed the right way."
+      }
+    ]
+  },
+  "por_que": {
+    "h2": "Why NWA Homeowners Choose Pro Phase",
+    "items": [
+      {
+        "titulo": "Weekends included",
+        "texto": "We work 7 days a week, 7 AM to 6 PM. Many local electricians only book Monday to Friday."
+      },
+      {
+        "titulo": "Local, not a franchise",
+        "texto": "A Lowell-based team that knows NWA homes, from older Fayetteville houses to new builds in Bentonville and Centerton."
+      },
+      {
+        "titulo": "Fair, honest pricing",
+        "texto": "Free quote first, so you know the price before any work starts. Customers mention our punctuality and reasonable prices."
+      }
+    ]
+  },
+  "proceso": {
+    "h2": "How It Works",
+    "pasos": [
+      {
+        "titulo": "Call or send the form",
+        "texto": "Tell us what you need and where you are in NWA."
+      },
+      {
+        "titulo": "Get your free quote",
+        "texto": "A licensed electrician reviews the job and gives you a price before any work starts."
+      },
+      {
+        "titulo": "Done right",
+        "texto": "We schedule a day that works for you, weekends included."
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "q": "What areas do you serve?",
+        "a": "We are based in Lowell and serve Rogers, Bentonville, Bella Vista, Springdale, Fayetteville, Centerton, West Fork, Huntsville and nearby Northwest Arkansas communities."
+      },
+      {
+        "q": "Are you licensed and insured?",
+        "a": "Yes. Pro Phase Electric is licensed, bonded and insured."
+      },
+      {
+        "q": "Do you work on weekends?",
+        "a": "Yes. We are open 7 days a week, from 7 AM to 6 PM, Saturdays and Sundays included."
+      },
+      {
+        "q": "Do you offer emergency service at night?",
+        "a": "No. We are not a 24/7 service. Call us between 7 AM and 6 PM any day of the week and we will schedule your job."
+      },
+      {
+        "q": "How much does an electrician cost?",
+        "a": "It depends on the job. Tell us what you need and we will give you a free quote before any work starts."
+      }
+    ]
+  },
+  "cta_final": {
+    "h2": "Need a Licensed Electrician in NWA?",
+    "texto": "Call now or request a free quote. We are open 7 days a week."
+  },
+  "gracias": {
+    "slug": "electrician-northwest-arkansas-thank-you",
+    "h1": "Thanks — we got your request",
+    "texto": "Our team will contact you during business hours (7 AM–6 PM, 7 days a week). Need us sooner? Call (479) 287-3650.",
+    "pasos": [
+      {
+        "titulo": "We review your request",
+        "texto": "We check the details you sent."
+      },
+      {
+        "titulo": "We contact you",
+        "texto": "By phone or text to set up your free quote."
+      }
+    ]
+  }
+}

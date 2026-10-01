@@ -57,3 +57,5 @@ Guarda los datos crudos en `clients/<slug>/data/competitors-keywords.csv`.
 
 ## Al terminar
 Resume 3 oportunidades y 2 amenazas. Siguiente: `/strategy` (cuando audit y benchmark estén listos).
+
+**Último paso obligatorio: `/informe`**: actualizar y republicar el artefacto del cliente (ES + EN, estilo PMM) en sus mismas URLs y entregar los dos enlaces.

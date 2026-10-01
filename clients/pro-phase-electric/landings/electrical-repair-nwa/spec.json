@@ -1,0 +1,220 @@
+{
+  "idioma": "en",
+  "nicho": "electrician",
+  "negocio": {
+    "nombre": "Pro Phase Electric",
+    "telefono": "+14792873650",
+    "telefono_display": "(479) 287-3650",
+    "direccion": {
+      "calle": "5173 Accident Rd",
+      "ciudad": "Lowell",
+      "region": "AR",
+      "cp": "72745",
+      "pais": "US"
+    },
+    "licencia": "",
+    "horario": "Open 7 days, 7 AM–6 PM",
+    "horario_schema": "Mo-Su 07:00-18:00",
+    "rating": {
+      "valor": "4.9",
+      "total": "",
+      "fuente": "on Google"
+    },
+    "logo_url": "",
+    "url_sitio": "https://prophaseelectricar.com/",
+    "gbp_url": "",
+    "schema_type": "Electrician"
+  },
+  "marca": {
+    "primario": "#1f2937",
+    "acento": "#f5c518",
+    "texto": "#111827",
+    "fondo": "#ffffff"
+  },
+  "confianza": [
+    {
+      "titulo": "4.9★ on Google",
+      "texto": "Rated by NWA homeowners"
+    },
+    {
+      "titulo": "Licensed · Bonded · Insured",
+      "texto": "Arkansas electricians"
+    },
+    {
+      "titulo": "Open 7 days",
+      "texto": "7 AM–6 PM, weekends too"
+    },
+    {
+      "titulo": "Nextdoor Fave 2023",
+      "texto": "Neighborhood Favorite"
+    }
+  ],
+  "resenas": {
+    "h2": "",
+    "items": []
+  },
+  "zona": {
+    "h2": "Serving Northwest Arkansas",
+    "texto": "Based in Lowell and working across Benton and Washington counties, including:",
+    "ciudades": [
+      "Lowell",
+      "Rogers",
+      "Bentonville",
+      "Bella Vista",
+      "Springdale",
+      "Fayetteville",
+      "Centerton",
+      "West Fork",
+      "Huntsville"
+    ],
+    "mapa_embed_url": ""
+  },
+  "ghl": {
+    "form_id": "",
+    "form_name": "LP Electrical Repair",
+    "form_height": 520,
+    "form_embed_html": "",
+    "chat_widget_html": ""
+  },
+  "tracking": {
+    "gtm_id": "",
+    "google_ads_id": "AW-18410300787",
+    "conversion_label_form": "",
+    "conversion_label_call": "",
+    "ga4_id": ""
+  },
+  "legal": {
+    "privacidad_url": ""
+  },
+  "pagina": {
+    "slug": "electrical-repair-nwa",
+    "url_final": "https://go.prophaseelectricar.com/electrical-repair-nwa",
+    "servicio": "Electrical Repair",
+    "ciudad": "Northwest Arkansas",
+    "keyword_principal": "electrical repair",
+    "keywords_secundarias": [
+      "electrical repair near me",
+      "circuit breaker repair",
+      "outlet repair",
+      "circuit breaker replacement",
+      "wiring repair",
+      "lighting repair near me",
+      "breaker box repair"
+    ],
+    "title": "Electrical Repair in NWA | Breakers, Outlets & Wiring",
+    "meta_description": "Electrical repair in Northwest Arkansas: breakers, outlets, wiring and lighting fixed by licensed electricians. Open 7 days, free quotes.",
+    "og_image": "",
+    "indexar": false,
+    "ad_group": "Electrical Repair"
+  },
+  "hero": {
+    "h1": "Electrical Repair in Northwest Arkansas",
+    "subtitulo": "Breaker keeps tripping? Outlet not working? Lights flickering? Our licensed electricians find the cause and fix it right.",
+    "oferta": "Free repair quotes · Open 7 days",
+    "bullets": [
+      "Licensed, bonded & insured",
+      "4.9★ rated on Google",
+      "Weekend appointments"
+    ],
+    "cta_llamar": "Call Now",
+    "cta_form": "Get a Free Quote",
+    "form_titulo": "Get a Free Repair Quote",
+    "form_nota": "Describe the problem. We reply during business hours, 7 days a week.",
+    "imagen": {}
+  },
+  "incluye": {
+    "h2": "Repairs We Handle Every Week",
+    "intro": "Most electrical problems start small. Fixing them early keeps your home safe.",
+    "items": [
+      {
+        "titulo": "Circuit Breakers",
+        "texto": "Breakers that trip again and again, won’t reset or feel warm: we test the circuit and repair or replace the breaker."
+      },
+      {
+        "titulo": "Outlets & Switches",
+        "texto": "Dead, loose, scorched or sparking outlets and switches replaced, including GFCI outlets for kitchens, baths and outdoors."
+      },
+      {
+        "titulo": "Wiring & Lighting",
+        "texto": "Flickering or dimming lights, buzzing fixtures and faulty wiring traced to the source and repaired."
+      }
+    ]
+  },
+  "por_que": {
+    "h2": "Why Call Pro Phase for Repairs",
+    "items": [
+      {
+        "titulo": "Weekends included",
+        "texto": "We work 7 days a week, 7 AM to 6 PM. Many local electricians only book Monday to Friday."
+      },
+      {
+        "titulo": "Local, not a franchise",
+        "texto": "A Lowell-based team that knows NWA homes, from older Fayetteville houses to new builds in Bentonville and Centerton."
+      },
+      {
+        "titulo": "Fair, honest pricing",
+        "texto": "Free quote first, so you know the price before any work starts. Customers mention our punctuality and reasonable prices."
+      }
+    ]
+  },
+  "proceso": {
+    "h2": "How It Works",
+    "pasos": [
+      {
+        "titulo": "Call or send the form",
+        "texto": "Tell us what you need and where you are in NWA."
+      },
+      {
+        "titulo": "Get your free quote",
+        "texto": "A licensed electrician reviews the job and gives you a price before any work starts."
+      },
+      {
+        "titulo": "Done right",
+        "texto": "We schedule a day that works for you, weekends included."
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "q": "Why does my breaker keep tripping?",
+        "a": "Usually an overloaded circuit, a short or a failing breaker. A licensed electrician can test the circuit and tell you which one it is."
+      },
+      {
+        "q": "Is a warm or sparking outlet dangerous?",
+        "a": "It can be. Stop using it and have it checked. Heat and sparks are signs of a loose connection or damaged wiring."
+      },
+      {
+        "q": "Do you repair on weekends?",
+        "a": "Yes. We are open 7 days a week, from 7 AM to 6 PM."
+      },
+      {
+        "q": "Do you offer 24-hour emergency repairs?",
+        "a": "No. We are not a 24/7 service. Call us between 7 AM and 6 PM any day and we will schedule the repair."
+      },
+      {
+        "q": "How much does an electrical repair cost?",
+        "a": "It depends on what is causing the problem. We give you a free quote before any work starts."
+      }
+    ]
+  },
+  "cta_final": {
+    "h2": "Electrical Problem at Home?",
+    "texto": "Call now or send the form for a free repair quote."
+  },
+  "gracias": {
+    "slug": "electrical-repair-nwa-thank-you",
+    "h1": "Thanks — we got your request",
+    "texto": "Our team will contact you during business hours (7 AM–6 PM, 7 days a week). Need us sooner? Call (479) 287-3650.",
+    "pasos": [
+      {
+        "titulo": "We review your request",
+        "texto": "We check the details you sent."
+      },
+      {
+        "titulo": "We contact you",
+        "texto": "By phone or text to set up your free quote."
+      }
+    ]
+  }
+}
