@@ -4,6 +4,8 @@ slug: jq-towing-fl
 D0: 2026-10-01
 actualizado: 2026-10-01
 fase_actual: 0
+plan_es: https://claude.ai/artifact/48Lm7JkvRJCd57bqFy4B6Y
+plan_en: https://claude.ai/artifact/4FBZLakgJxvFVybD57csmC
 ---
 
 # Roadmap — JQ Towing (Belleview / Ocala, FL)
@@ -120,3 +122,4 @@ fase_actual: 0
 
 ## Historial de cambios
 - 2026-10-01: creado.
+- 2026-10-01: plan ES/EN publicado (/informe).
