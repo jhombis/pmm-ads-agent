@@ -1,46 +1,49 @@
 ---
 nicho: towing
 pais: US
-cuentas: 28 (20 maduras con ≥30 conv/90d)
-periodo: últimos 90 días (2026-07-01 → 2026-09-28)
-fuente: Windsor.ai
-actualizado: 2026-09-29
+cuentas: 30 (23 maduras: ≥$700 gasto y ≥15 conv. en 90d)
+periodo: últimos 90 días (2026-07-03 → 2026-10-01)
+actualizado: 2026-10-01
+fuente: Windsor.ai (google_ads)
 ---
-# Benchmark towing US — MCC PMM
-
-## Cuentas maduras (n=20)
+## Cuentas maduras (n=23)
 | Métrica | P25 | Mediana | P75 |
 |---|---|---|---|
-| CPC | $4.00 | $4.87 | $6.01 |
-| CTR | 4.7% | 6.6% | 8.4% |
-| Tasa conv. | 23.8% | 28.1% | 39.1% |
-| CPL | $11.52 | $14.59 | $26.29 |
-| Conv./mes | 20 | 42 | 70 |
-| Gasto medios/mes | $399 | $711 | $1,085 |
+| CPC | $4.02 | $5.05 | $6.33 |
+| CTR | 4.8% | 7.1% | 8.2% |
+| Tasa conv. | 21% | 27% | 38% |
+| CPL | $12.45 | $16.01 | $32.07 |
+| Conv./mes | 17 | 36 | 54 |
+| Presupuesto/mes (gasto) | $374 | $680 | $918 |
+| IS búsqueda | 22% | 27% | 32% |
 
-## Todas (n=28)
+## Todas las cuentas (n=30, incluye altas 2026)
 | Métrica | P25 | Mediana | P75 |
 |---|---|---|---|
-| CPC | $4.23 | $5.16 | $7.28 |
-| CPL | $12.67 | $19.99 | $43.02 |
-| Conv./mes | 6 | 26 | 50 |
+| CPC | $4.51 | $5.41 | $6.88 |
+| CPL | $13.15 | $25.15 | $47.66 |
+| Conv./mes | 5.8 | 21.7 | 47.2 |
 
-## Paquete vs medios
-Paquetes ENHPRM de $1,399–1,800 → $675–790/mes en medios.
+- Altas de 2026 en sus primeros 1–3 meses: CPL de $57–81.
+- CPL de Search puro en el cuartil superior: mediana ≈ $12.90. PMax reporta $6–11 (incluye acciones de Maps).
 
 ## Estructura que mejor funciona
-Una campaña Search "ENHPRM Radius" con 5–10 keywords genéricas "near me" (towing / tow truck / roadside / cheap towing) + ad group en español en mercados hispanos. Las cuentas del MCC usan broad match; está pendiente decidir si se migra a frase (estándar PMM).
+- 1 campaña Search "ENHPRM Radius" con Maximizar conversiones (sin tCPA en ninguna cuenta).
+- PMax agregado tras 6–12 meses de Search estable, en 4 de las 8 mejores cuentas.
+- Todo el MCC towing usa BROAD. La diferencia la hace la keyword que concentra el gasto: "towing near me" (CPL ~$13) contra "roadside assistance" (CPL $67–154).
 
-## Keywords top por conversiones (agregado, cuenta de FL)
-towing near me · tow truck near me · towing company near me · roadside assistance near me · servicio de grua · grua cerca de mi
+## Keywords top por conversiones (agregado)
+1. towing near me (broad): 126 conv., CPL $13.9, presente en 9 cuentas
+2. marca propia (exact): CPL ~$14
+3. towing company near me / tow truck company: CPL $15–29
+4. road service near me: CPL $21
+5. tow truck (broad): CPL $51
+6. roadside assistance (cualquier variante, broad): CPL $67–154. **Evitar como keyword principal**
 
 ## Negativas que más gasto ahorraron
-Nombres de aseguradoras/clubes + "phone number", retail ("walmart auto center"), precios irreales ("$40 towing"), marcas de competidores.
+Pendiente: requiere GAQL sobre `campaign_criterion` negativo (no disponible en Windsor).
 
 ## Errores comunes vistos en cuentas del P25
-- Tasas de conversión de 40–50% → probablemente cuentan clics en teléfono o llamadas cortas como primarias. CPL subestimado.
-- Fuga geográfica (search terms de ciudades a 100+ millas) → revisar "Presencia" y broad match.
-- Cuentas con <5 conv./mes y CPC >$9 (P25): presupuesto de medios <$350/mes en mercados caros; no salen de la fase de aprendizaje.
-
-## Nota de mercado
-Tampa/FL: CPC de Search "near me" ~$10 (el doble de la mediana del MCC). El promedio de cuenta lo baja PMax.
+- Gasto concentrado en "roadside assistance" broad (compite con AAA, aseguradoras, CAA).
+- Marca propia y competidores pagados dentro de la campaña genérica.
+- Tasas de conversión <10%, que apuntan a tracking de llamadas roto o tráfico de bajo ticket (lockout, llantas).
