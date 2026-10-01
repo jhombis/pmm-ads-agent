@@ -24,7 +24,7 @@ scripts/                  utilidades (API de Google Ads, PageSpeed, etc.)
 ## Archivos por cliente y quién los escribe
 | Archivo | Lo escribe | Lo lee |
 |---|---|---|
-| `brief.md` | /onboard | todos |
+| `brief.md` | /onboard (entrevista) o /investigar-cliente (sin preguntas) | todos |
 | `audit-site.md` | /audit-landing | /strategy, /roadmap |
 | `competitors.md` | /competitors | /strategy |
 | `benchmark.md` | /benchmark-interno | /strategy, /roadmap |
@@ -33,7 +33,7 @@ scripts/                  utilidades (API de Google Ads, PageSpeed, etc.)
 | `checklist.md` | /roadmap (crea), /weekly-review (actualiza) | todos |
 | `landings/<pagina>/` | /landing-ghl (spec.json + código para GoHighLevel) | /build-campaign (URLs finales) |
 | `log/YYYY-MM-DD.md` | /weekly-review | /weekly-review |
-| `data/` | exports CSV/JSON de la API | /weekly-review, /negatives |
+| `data/` | exports CSV/JSON de la API; /investigar-cliente deja account-profile.json, site-scan.json, pagespeed.json | /weekly-review, /negatives, /audit-landing |
 | `log/YYYY-MM-DD-diagnose.md` | /diagnose | /strategy, /weekly-review |
 | `plan-es.html` + `plan-en.html` | /informe (al final de cada skill) | Jhombis, equipo, cliente |
 
@@ -83,4 +83,4 @@ scripts/                  utilidades (API de Google Ads, PageSpeed, etc.)
 - Cuando termines un skill, resume en 3–5 líneas qué produjiste y cuál es el siguiente skill a correr.
 - **Todo skill termina con `/informe`**: se actualiza y republica el artefacto del cliente (plan ES + EN con el estilo PMM) en sus mismas URLs, y se entregan los dos enlaces. Jhombis siempre lo pide: no se pregunta, se entrega. Aplica también a `/diagnose` (`diagnostics/<cuenta>/`) y a cualquier cambio aplicado en la cuenta.
 - **Toda página, artefacto o HTML de entrega (plan, reporte, resumen para el cliente) se genera SIEMPRE en dos versiones: español e inglés.** Archivos `clients/<slug>/plan-es.html` y `plan-en.html` (o `<nombre>-es.html` / `<nombre>-en.html`), mismo contenido y diseño, cada una con un enlace a la otra. Se publican como dos artefactos y sus URLs se guardan en el front matter de `roadmap.md` (`plan_es`, `plan_en`). Al actualizar, se republican las dos en sus mismas URLs.
-- **Estilo gráfico único para toda entrega HTML**: logo PMM, paleta, tipografías y componentes de `knowledge/estilo-informes/` (guía en `README.md`, base en `plantilla.html`, logo en `pmm-logo.webp`). Se parte siempre de `python scripts/informe_html.py new <es> <en>`, no se inventa otro diseño ni se edita el `<style>`, y antes de publicar se corre `python scripts/informe_html.py check <es> <en>`.
+- **Estilo gráfico único para toda entrega HTML**: logo PMM, paleta, tipografías y componentes de `knowledge/estilo-informes/` (guía en `README.md`, base en `plantilla.html`, logo en `pmm-logo.webp`). Se parte siempre de `python scripts/informe_html.py new <es> <en>`, no se inventa otro diseño ni se edita el `<style>`, y antes de publicar se corre `python scripts/informe_html.py check <es> <en>`. (Las landings de `/landing-ghl` son para el cliente final y no usan este estilo.)
