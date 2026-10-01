@@ -1,0 +1,373 @@
+<title>Informe Colton Sunflower</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: informe interno — misma identidad que el plan; columna de lectura con nav lateral en desktop */
+:root {
+  --bg: #f6f6f3;
+  --surface: #ffffff;
+  --ink: #1d2226;
+  --muted: #5d666d;
+  --line: #dcdfdc;
+  --accent: #b07a12;      /* girasol apagado */
+  --accent-soft: #f4ead2;
+  --ok: #2f7a4a;
+  --ok-soft: #dcefe2;
+  --warn: #a35f00;
+  --warn-soft: #fbe8cc;
+  --bad: #a83a32;
+  --bad-soft: #f6dcd9;
+  --info-soft: #e3e9ef;
+  --f-display: "Spectral", Georgia, "Times New Roman", serif;
+  --f-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #15191c; --surface: #1d2226; --ink: #e8e9e6; --muted: #9aa3a9; --line: #2f363b;
+    --accent: #e0aa45; --accent-soft: #3a2f17;
+    --ok: #6cc28c; --ok-soft: #1d3326; --warn: #f0a94a; --warn-soft: #3b2c15; --bad: #ef8a80; --bad-soft: #3d2120; --info-soft: #24303a;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #15191c; --surface: #1d2226; --ink: #e8e9e6; --muted: #9aa3a9; --line: #2f363b;
+  --accent: #e0aa45; --accent-soft: #3a2f17;
+  --ok: #6cc28c; --ok-soft: #1d3326; --warn: #f0a94a; --warn-soft: #3b2c15; --bad: #ef8a80; --bad-soft: #3d2120; --info-soft: #24303a;
+  color-scheme: dark;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body { background: var(--bg); color: var(--ink); font: 15px/1.6 var(--f-body); }
+.wrap { max-width: 1180px; margin: 0 auto; padding-inline: 20px; padding-block: 28px 64px; display: grid; grid-template-columns: 210px minmax(0, 1fr); gap: 40px; }
+@media (max-width: 880px) { .wrap { grid-template-columns: minmax(0, 1fr); gap: 20px; padding-inline: 16px; } nav.toc { display: none; } }
+nav.toc { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 24px); align-self: start; display: flex; flex-direction: column; gap: 2px; font-size: 13px; }
+nav.toc a { color: var(--muted); text-decoration: none; padding: 4px 10px; border-left: 2px solid transparent; }
+nav.toc a:hover, nav.toc a:focus-visible { color: var(--ink); border-left-color: var(--accent); outline: none; }
+nav.toc .toc-title { font: 600 11px/1 var(--f-body); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); padding: 0 10px 10px; }
+main { min-width: 0; display: flex; flex-direction: column; gap: 44px; }
+h1, h2, h3 { font-family: var(--f-display); text-wrap: balance; line-height: 1.2; margin: 0; }
+h1 { font-size: clamp(28px, 4vw, 40px); font-weight: 700; }
+h2 { font-size: 24px; font-weight: 600; }
+h3 { font-size: 17px; font-weight: 600; }
+p { margin: 0; max-width: 72ch; }
+.eyebrow { font: 600 11px/1 var(--f-body); letter-spacing: .09em; text-transform: uppercase; color: var(--accent); }
+section { display: flex; flex-direction: column; gap: 14px; scroll-margin-top: 20px; }
+.lede { color: var(--muted); font-size: 16px; }
+.meta { display: flex; flex-wrap: wrap; gap: 6px 18px; font: 13px/1.5 var(--f-mono); color: var(--muted); }
+.meta b { color: var(--ink); font-weight: 500; }
+.mono { font-family: var(--f-mono); font-size: .92em; }
+.num { font-variant-numeric: tabular-nums; }
+a { color: var(--accent); }
+
+/* KPI strip */
+.kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+@media (max-width: 700px) { .kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.kpi { background: var(--surface); padding: 14px 16px; display: flex; flex-direction: column; gap: 4px; }
+.kpi .label { font-size: 12px; color: var(--muted); }
+.kpi .value { font: 600 26px/1.1 var(--f-mono); font-variant-numeric: tabular-nums; }
+.kpi .value.bad { color: var(--bad); }
+.kpi .ref { font-size: 12px; color: var(--muted); }
+
+/* Callout */
+.callout { background: var(--accent-soft); border-radius: 8px; padding: 14px 16px; display: flex; flex-direction: column; gap: 6px; }
+.callout strong { font-weight: 600; }
+
+/* Pills */
+.pill { display: inline-block; font: 500 11px/1 var(--f-body); letter-spacing: .02em; padding: 4px 8px; border-radius: 999px; white-space: nowrap; }
+.pill.ok { background: var(--ok-soft); color: var(--ok); }
+.pill.warn { background: var(--warn-soft); color: var(--warn); }
+.pill.bad { background: var(--bad-soft); color: var(--bad); }
+.pill.info { background: var(--info-soft); color: var(--muted); }
+
+/* Tables */
+.tbl { overflow-x: auto; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; font-size: 13.5px; }
+th, td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font: 600 11px/1.3 var(--f-body); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); background: var(--bg); white-space: nowrap; }
+tr:last-child td { border-bottom: 0; }
+td.n, th.n { text-align: right; font-family: var(--f-mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+tr.hl td { background: var(--accent-soft); }
+
+/* Steps (Next actions) */
+.steps { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; counter-reset: s; }
+.steps li { counter-increment: s; display: grid; grid-template-columns: 34px minmax(0, 1fr); gap: 12px; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; }
+.steps li::before { content: counter(s); font: 600 15px/30px var(--f-mono); width: 30px; height: 30px; text-align: center; border-radius: 50%; background: var(--accent-soft); color: var(--accent); }
+.steps .t { font-weight: 600; }
+.steps .d { color: var(--muted); font-size: 14px; }
+.steps .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+
+/* Timeline */
+.timeline { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 16px; overflow-x: auto; }
+.tl-inner { min-width: 640px; display: grid; grid-template-columns: 170px minmax(0, 1fr); row-gap: 10px; column-gap: 12px; align-items: center; }
+.tl-axis { position: relative; height: 18px; font: 11px/1 var(--f-mono); color: var(--muted); }
+.tl-axis span { position: absolute; top: 0; transform: translateX(-50%); white-space: nowrap; }
+.tl-axis span:first-child { transform: none; }
+.tl-label { font-size: 13px; line-height: 1.3; }
+.tl-label small { display: block; color: var(--muted); font: 11px/1.3 var(--f-mono); }
+.tl-track { position: relative; height: 22px; background: repeating-linear-gradient(90deg, transparent 0 calc(33.33% - 1px), var(--line) calc(33.33% - 1px) 33.33%); border-radius: 4px; }
+.tl-bar { position: absolute; top: 3px; height: 16px; border-radius: 4px; background: var(--accent); }
+.tl-bar.now { background: var(--accent); }
+.tl-bar.next { background: color-mix(in srgb, var(--accent) 55%, var(--surface)); }
+.tl-bar.maybe { background: transparent; border: 1.5px dashed var(--muted); }
+.tl-bar.season { background: var(--info-soft); top: 0; height: 22px; }
+.tl-dot { position: absolute; top: 4px; width: 14px; height: 14px; margin-left: -7px; border-radius: 50%; background: var(--surface); border: 2px solid var(--accent); }
+.tl-today { position: absolute; top: -4px; bottom: -4px; width: 2px; background: var(--bad); }
+
+/* Phase cards */
+.phases { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+@media (max-width: 760px) { .phases { grid-template-columns: minmax(0, 1fr); } }
+.phase { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.phase header { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.phase .when { font: 12px/1.4 var(--f-mono); color: var(--muted); }
+.phase .cond { font-size: 13.5px; }
+.phase .cond b { font-weight: 600; }
+.phase ul { margin: 0; padding-left: 18px; font-size: 13.5px; color: var(--muted); display: flex; flex-direction: column; gap: 2px; }
+
+/* Two-col lists */
+.cols { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+@media (max-width: 760px) { .cols { grid-template-columns: minmax(0, 1fr); } }
+.box { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.box ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 4px; font-size: 14px; }
+
+/* Copy */
+details { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; }
+details + details { margin-top: 8px; }
+summary { cursor: pointer; padding: 12px 16px; font-weight: 600; display: flex; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+summary .mono { color: var(--muted); font-weight: 400; }
+.copy { padding: 0 16px 16px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+@media (max-width: 760px) { .copy { grid-template-columns: minmax(0, 1fr); } }
+.copy ol { margin: 0; padding-left: 22px; font-size: 13.5px; display: flex; flex-direction: column; gap: 2px; }
+.copy ol li.pin { font-weight: 600; }
+.copy ol li.pin::after { content: " · pin 1"; font: 11px var(--f-mono); color: var(--accent); }
+.copy h4 { margin: 0 0 6px; font: 600 11px/1 var(--f-body); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+
+/* Checklist */
+.check-status { font-size: 13px; color: var(--muted); display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.progress { height: 6px; background: var(--line); border-radius: 999px; overflow: hidden; flex: 1 1 160px; max-width: 320px; }
+.progress span { display: block; height: 100%; background: var(--ok); width: 0; transition: width .3s; }
+.check-group { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+.check-group h3 { padding: 12px 16px; border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; gap: 10px; align-items: baseline; flex-wrap: wrap; font-size: 16px; }
+.check-group h3 .count { font: 12px var(--f-mono); color: var(--muted); }
+.check-item { display: grid; grid-template-columns: 22px minmax(0, 1fr) auto; gap: 10px; align-items: start; padding: 9px 16px; border-bottom: 1px solid var(--line); font-size: 14px; }
+.check-item:last-child { border-bottom: 0; }
+.check-item input { width: 18px; height: 18px; margin: 2px 0 0; accent-color: var(--ok); cursor: pointer; }
+.check-item input:disabled { cursor: default; }
+.check-item label { cursor: pointer; }
+.check-item.done label { color: var(--muted); text-decoration: line-through; text-decoration-color: var(--line); }
+.check-item .who { font: 11px/1.6 var(--f-mono); color: var(--muted); white-space: nowrap; }
+.check-item .blk { color: var(--bad); font-weight: 600; margin-right: 4px; }
+.check-groups { display: flex; flex-direction: column; gap: 12px; }
+.note { font-size: 13px; color: var(--muted); }
+footer { font-size: 12px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 16px; }
+
+ul.box{margin:0}
+.steps.plain li{grid-template-columns:minmax(0,1fr)}
+.steps.plain li::before{display:none}
+</style>
+
+<div class="wrap">
+  <nav class="toc" aria-label="Secciones">
+    <div class="toc-title">Informe</div>
+    <a href="#resumen">Resumen</a>
+    <a href="#cifras">Cifras</a>
+    <a href="#hallazgos">Hallazgos</a>
+    <a href="#cambios">Cambios aplicados</a>
+    <a href="#decisiones">Decisiones pendientes</a>
+    <a href="#riesgos">Riesgos</a>
+    <a href="#trabajo">Trabajo pendiente</a>
+    <a href="#avance">Avance</a>
+    <a href="#limites">Límites de los datos</a>
+    <a href="#archivos">Archivos</a>
+  </nav>
+  <main>
+    <header style="display:flex;flex-direction:column;gap:12px">
+      <div class="eyebrow">Informe interno PMM · 1 de octubre de 2026</div>
+      <h1>Colton Sunflower: diagnóstico y estado del rescate</h1>
+      <p class="lede">Para Jhombis y el equipo. Resume lo que encontramos entre el 29 de septiembre y el 1 de octubre, lo que ya cambiamos en la cuenta y lo que falta decidir. El plan operativo, con el checklist compartido, está en <a href="https://claude.ai/artifact/74WA8FWCjHGkiYPWh8h8fy">Plan Colton Sunflower</a>.</p>
+      <div class="meta">
+        <span>Cuenta <b>151-776-2744</b></span>
+        <span>Campaña <b>24095361792</b> (Search)</span>
+        <span>Activa desde <b>2026-08-03</b></span>
+        <span>Presupuesto <b>$49/día</b></span>
+        <span>Datos hasta <b>2026-09-30</b></span>
+      </div>
+    </header>
+
+    <section id="resumen">
+      <div class="eyebrow">En cinco puntos</div>
+      <h2>Resumen</h2>
+      <div class="callout">
+        <p><strong>La cuenta paga ~$394 por conversión; las funerarias del MCC, ~$73.</strong> El CPC y el CTR están en rango. Lo que está roto es la tasa de conversión: 1.5% contra 9.7%.</p>
+      </div>
+      <ul class="steps plain">
+        <li><div><div class="t">Causa raíz: puja + match + landing + tracking</div><div class="d">Maximizar clics con ~70% de keywords en amplia. Cerca del 80% del gasto visible se fue en búsquedas sin intención (obituarios, Costco, mascotas, competidores). La home es URL final y no tiene formulario, y el formulario no se mide.</div></div></li>
+        <li><div><div class="t">Ya contuvimos el desperdicio</div><div class="d">76 negativas de frase y 3 keywords del competidor pausadas. Eso cubre ~71% del gasto basura que seguía pasando.</div></div></li>
+        <li><div><div class="t">El cliente tiene buena oferta</div><div class="d">Precios publicados ($1,175 cremación, $1,995 entierro), crematorio propio, licencia FD2479 y 24/7. Frente a Meadow y After ($995 online), el ángulo es "nunca sale de nuestro cuidado".</div></div></li>
+        <li><div><div class="t">Hay un problema de grupo</div><div class="d">El sitio usa un email de Murrieta Valley FH y comparte dirección con Sunflower Crematory. Sunflower Riverside e Inland Memorial convierten con términos de San Bernardino. Tres o cuatro cuentas del MCC pueden estar pujando entre sí.</div></div></li>
+        <li><div><div class="t">Objetivo: relanzar el 15 de octubre</div><div class="d">Con Form Fill medido, la estructura de 5 grupos y Max conversiones. Meta de F1: CPL $73, ~20 conv/mes con el mismo presupuesto. tCPA y PMax no son realistas con $49/día.</div></div></li>
+      </ul>
+    </section>
+
+    <section id="cifras">
+      <div class="eyebrow">Números</div>
+      <h2>Cifras clave</h2>
+      <div class="kpis">
+        <div class="kpi"><span class="label">Gasto desde el lanzamiento</span><span class="value num">$2,757</span><span class="ref">5 ago – 30 sep</span></div>
+        <div class="kpi"><span class="label">Conversiones</span><span class="value num">7</span><span class="ref">5 Website Calls · 2 Calls from Ads · 0 Form</span></div>
+        <div class="kpi"><span class="label">Costo por conversión</span><span class="value bad num">$394</span><span class="ref">Mediana MCC: $73</span></div>
+        <div class="kpi"><span class="label">Últimos 7 días</span><span class="value bad num">$495 · 0</span><span class="ref">gasto · conversiones</span></div>
+      </div>
+      <div class="tbl"><table>
+        <thead><tr><th>Métrica</th><th class="n">7d</th><th class="n">28d</th><th class="n">Desde lanzamiento</th><th class="n">Mediana MCC</th></tr></thead>
+        <tbody>
+          <tr><td>Gasto</td><td class="n">$494.53</td><td class="n">$1,398.41</td><td class="n">$2,756.63</td><td class="n">$1,029/mes</td></tr>
+          <tr><td>Clics</td><td class="n">75</td><td class="n">221</td><td class="n">464</td><td class="n">—</td></tr>
+          <tr><td>CTR</td><td class="n">9.2%</td><td class="n">8.2%</td><td class="n">7.8%</td><td class="n">8.1%</td></tr>
+          <tr><td>CPC</td><td class="n">$6.59</td><td class="n">$6.33</td><td class="n">$5.94</td><td class="n">$8.64</td></tr>
+          <tr><td>Conversiones</td><td class="n">0</td><td class="n">3</td><td class="n">7</td><td class="n">10/mes</td></tr>
+          <tr class="hl"><td>Tasa de conversión</td><td class="n">0%</td><td class="n">1.4%</td><td class="n">1.5%</td><td class="n">9.7%</td></tr>
+          <tr class="hl"><td>CPA</td><td class="n">—</td><td class="n">$466</td><td class="n">$394</td><td class="n">$73</td></tr>
+          <tr><td>Impression share</td><td class="n">40%</td><td class="n">34%</td><td class="n">33%</td><td class="n">—</td></tr>
+          <tr><td>IS perdido por ranking</td><td class="n">55%</td><td class="n">52%</td><td class="n">53%</td><td class="n">—</td></tr>
+          <tr><td>IS perdido por presupuesto</td><td class="n">4%</td><td class="n">15%</td><td class="n">15%</td><td class="n">—</td></tr>
+        </tbody>
+      </table></div>
+      <p class="note">Septiembre: $1,457 gastados con un presupuesto de $49/día (~$1,490/mes), aunque la campaña se llama "$2,500/mo". Del 18 al 21 de septiembre no hubo gasto.</p>
+    </section>
+
+    <section id="hallazgos">
+      <div class="eyebrow">Ordenados por dinero</div>
+      <h2>Hallazgos</h2>
+      <div class="tbl"><table>
+        <thead><tr><th>#</th><th>Hallazgo</th><th class="n">Dinero en juego</th><th>Estado</th></tr></thead>
+        <tbody>
+          <tr><td class="mono">1</td><td><b>Search terms sin intención comercial.</b> De $1,352 visibles: informacional $315, competidores y fuera del área $311, productos $227, obituarios $176, mascotas $50. Solo $273 eran comerciales locales.</td><td class="n">~$1,080</td><td><span class="pill ok">Contenido</span></td></tr>
+          <tr><td class="mono">2</td><td><b>Amplia + Maximizar clics.</b> Las 9 keywords amplias con más gasto suman ~$1,660 y 3 conversiones. Ejemplos: "funeral home near me" $329 con 1 conv; "funeral" $274 con 0.</td><td class="n">~$1,660</td><td><span class="pill warn">Propuesto</span></td></tr>
+          <tr><td class="mono">3</td><td><b>Formulario sin medir y home sin formulario.</b> Elementor muestra un mensaje en la página (no hay /thank-you/). Las cuentas hermanas sí miden Form Fill.</td><td class="n">Señal de puja</td><td><span class="pill bad">Bloqueante</span></td></tr>
+          <tr><td class="mono">4</td><td><b>Negativas viejas que bloquean demanda buena.</b> <span class="mono">how</span> frena "how much does cremation cost" (8.1k/mes) y "how much is cremation" (3.6k); <span class="mono">Fontana</span> frena una ciudad del radio (210/mes).</td><td class="n">Demanda perdida</td><td><span class="pill warn">Propuesto</span></td></tr>
+          <tr><td class="mono">5</td><td><b>Pujábamos por un competidor:</b> "family funeral chapel" en amplia, en 3 keywords.</td><td class="n">$104 · 0 conv</td><td><span class="pill ok">Pausado</span></td></tr>
+          <tr><td class="mono">6</td><td><b>RSA por debajo del estándar:</b> 2 / 1 / 2 anuncios por grupo. El RSA 819740188547 tiene 68 clics y 0 conversiones; el otro de su grupo, 46 clics y 2.</td><td class="n">—</td><td><span class="pill warn">Propuesto</span></td></tr>
+          <tr><td class="mono">7</td><td><b>~55 keywords con 0 impresiones</b> y una duplicada ("cremation burial near me" en dos grupos).</td><td class="n">—</td><td><span class="pill warn">Propuesto</span></td></tr>
+        </tbody>
+      </table></div>
+    </section>
+
+    <section id="cambios">
+      <div class="eyebrow">Registro</div>
+      <h2>Cambios aplicados en la cuenta</h2>
+      <p>Todo lo demás está propuesto y no se ha tocado. No cambiamos puja, presupuesto, geo ni anuncios.</p>
+      <div class="tbl"><table>
+        <thead><tr><th>Fecha</th><th>Cambio</th><th>Detalle</th><th>Cómo revertir</th></tr></thead>
+        <tbody>
+          <tr><td class="mono">2026-10-01</td><td>Pausa de 3 keywords</td><td class="mono">299902827765 "family funeral chapel" (Funeral Home) · 76935177927 "family funeral chapel and cremation" · 871653600639 "family funeral chapel &amp; cremation" (Cremation Services)</td><td>Reactivar por criterion id</td></tr>
+          <tr><td class="mono">2026-10-01</td><td>76 negativas de frase a nivel campaña</td><td>Obituarios 11 · mascotas 3 · productos 13 · informacionales 14 · fuera del área 13 · competidores 22. Verificado: 96 negativas de frase en la campaña (20 previas + 76).</td><td>Lista en <span class="mono">data/2026-09-29-negatives.txt</span></td></tr>
+        </tbody>
+      </table></div>
+      <p class="note">Herramienta usada: Windsor.ai (escritura en Google Ads). Las 466 negativas que ya existían no se tocaron.</p>
+    </section>
+
+    <section id="decisiones">
+      <div class="eyebrow">Para Jhombis</div>
+      <h2>Decisiones pendientes</h2>
+      <div class="tbl"><table>
+        <thead><tr><th>Decisión</th><th>Recomendación</th><th>Por qué</th><th>Plazo</th></tr></thead>
+        <tbody>
+          <tr><td>Quitar las negativas amplias <span class="mono">how</span>, <span class="mono">Fontana</span>, <span class="mono">online</span></td><td><span class="pill ok">Sí</span></td><td>Desbloquea las búsquedas de precio, que son la mejor keyword de Sunflower Riverside ($44 CPA)</td><td class="mono">antes del 15 oct</td></tr>
+          <tr><td>Reestructurar en 5 grupos con frase y exacta</td><td><span class="pill ok">Sí</span></td><td>Corta la amplia que, con Max clics, compra el tráfico más barato y peor</td><td class="mono">antes del 15 oct</td></tr>
+          <tr><td>Pasar a Maximizar conversiones</td><td><span class="pill ok">Sí, después de Form Fill</span></td><td>Las 5 funerarias del MCC que convierten la usan</td><td class="mono">15 oct</td></tr>
+          <tr><td>Aplicar 5 negativas nuevas</td><td><span class="pill ok">Sí</span></td><td>riverside national, aaron's, torrance, water cremation, santana</td><td class="mono">ya</td></tr>
+          <tr><td>Zonas entre Colton, Sunflower Riverside e Inland Memorial</td><td><span class="pill warn">Definir</span></td><td>Las tres pujan o convierten en San Bernardino</td><td class="mono">antes del 15 oct</td></tr>
+          <tr><td>Campaña de marca $5/día</td><td><span class="pill info">Si la marca es "Colton Funeral Home"</span></td><td>390 búsquedas/mes; el sitio está en posición 43 orgánica</td><td class="mono">F1</td></tr>
+          <tr><td>Presupuesto $2,500</td><td><span class="pill info">No subir aún</span></td><td>El problema es eficiencia. Subir solo con CPA ≤ $87 durante 2 revisiones</td><td class="mono">F2b</td></tr>
+          <tr><td>Grupo en español</td><td><span class="pill info">Si el cliente atiende en español</span></td><td>En Hemet convierten "funeraria cerca de mi" y búsquedas de precio en español</td><td class="mono">F2</td></tr>
+        </tbody>
+      </table></div>
+    </section>
+
+    <section id="riesgos">
+      <div class="eyebrow">Atención</div>
+      <h2>Riesgos</h2>
+      <div class="cols">
+        <div class="box"><h3>Del negocio</h3><ul>
+          <li><b>Canibalización interna.</b> Si Colton, Murrieta Valley, Inland Memorial y Sunflower son del mismo grupo, el cliente paga más por pujar contra sí mismo.</li>
+          <li><b>Precio:</b> $1,175 contra $995 de Meadow y After en los términos de precio.</li>
+          <li><b>Sin reseñas visibles</b> en el sitio; Meadow anuncia 5 estrellas.</li>
+        </ul></div>
+        <div class="box"><h3>De la operación</h3><ul>
+          <li><b>Alguien más edita la cuenta:</b> en septiembre hay keywords removidas que no tocamos, incluida "cremation places near me", con 1 conversión.</li>
+          <li><b>Nombre vs presupuesto:</b> la campaña dice $2,500/mo y el diario da $1,490/mes. Si el cliente paga $2,500 de pauta, hay una diferencia que explicar.</li>
+          <li><b>Aprendizaje lento:</b> con ~0.7 conv/día, Max conversiones tardará 1–2 semanas en estabilizarse. No tocar la puja en ese período.</li>
+        </ul></div>
+      </div>
+    </section>
+
+    <section id="trabajo">
+      <div class="eyebrow">Quién hace qué</div>
+      <h2>Trabajo pendiente</h2>
+      <div class="tbl"><table>
+        <thead><tr><th>Tarea</th><th>Responsable</th><th class="n">Esfuerzo</th><th>Bloquea</th></tr></thead>
+        <tbody>
+          <tr><td>Página /thank-you/, redirect del formulario y conversión Form Fill</td><td>PMM (WordPress)</td><td class="n">1–2 h</td><td>Cambio de puja</td></tr>
+          <tr><td>Formulario arriba en /, /cremation/ y /pricing/; email y mensaje opcionales</td><td>PMM o cliente</td><td class="n">2–3 h</td><td>Relanzamiento</td></tr>
+          <tr><td>Verificar Calls from Ads ≥60 s, red solo Búsqueda, autoaplicación OFF, tag AW</td><td>PMM</td><td class="n">30 min</td><td>Relanzamiento</td></tr>
+          <tr><td>Reestructura, negativas, 3 RSA por grupo y extensiones</td><td>Claude, tras OK</td><td class="n">1 sesión</td><td>Relanzamiento</td></tr>
+          <tr><td>Radio, ticket, margen, capacidad, idioma y horario</td><td>Jhombis / cliente</td><td class="n">1 llamada</td><td>CPL real</td></tr>
+          <tr><td>Score de PageSpeed móvil</td><td>PMM</td><td class="n">5 min</td><td>—</td></tr>
+          <tr><td>Etiquetar las cuentas funerarias del MCC (nicho:funeral, pais:US)</td><td>PMM</td><td class="n">15 min</td><td>Benchmarks futuros</td></tr>
+        </tbody>
+      </table></div>
+    </section>
+
+    <section id="avance">
+      <div class="eyebrow">Roadmap</div>
+      <h2>Avance</h2>
+      <div class="tbl"><table>
+        <thead><tr><th>Fase</th><th>Fecha</th><th>Estado</th><th>Avance</th></tr></thead>
+        <tbody>
+          <tr><td>F0 · Rescate</td><td class="mono">1 – 15 oct</td><td><span class="pill warn">En curso</span></td><td>4 de 19 tareas; 0 de 10 bloqueantes</td></tr>
+          <tr><td>F1 · Relanzamiento</td><td class="mono">15 – 22 oct</td><td><span class="pill info">Pendiente</span></td><td>—</td></tr>
+          <tr><td>F2 · Limpieza</td><td class="mono">22 oct · 29 oct · 14 nov</td><td><span class="pill info">Pendiente</span></td><td>—</td></tr>
+          <tr><td>F3 · tCPA</td><td class="mono">no antes del 13 dic</td><td><span class="pill bad">Improbable</span></td><td>Exige CPA ≤ $50 con este presupuesto</td></tr>
+          <tr><td>F5 · PMax</td><td class="mono">—</td><td><span class="pill bad">No califica</span></td><td>Falla en las 5 condiciones</td></tr>
+        </tbody>
+      </table></div>
+      <p class="note">Próxima revisión: <b>8 de octubre</b>. Se mide si el gasto basura bajó con las negativas. Con las del 1 de octubre, el 62% del gasto visible de la última semana ya habría quedado bloqueado.</p>
+    </section>
+
+    <section id="limites">
+      <div class="eyebrow">Transparencia</div>
+      <h2>Límites de los datos</h2>
+      <ul class="box" style="padding-left:34px">
+        <li>Google Ads se leyó con Windsor.ai, no con la API (no hay credenciales de la API en esta sesión).</li>
+        <li>Los search terms visibles cubren ~$1,350 de $2,757 de gasto. El resto Google no lo muestra.</li>
+        <li>PageSpeed no se midió: no hay clave de API y el navegador no valida el certificado del sitio a través del proxy. La velocidad es una estimación por peso.</li>
+        <li>Semrush casi no tiene datos de anuncios locales; solo "cremation san bernardino" tiene historial (nov 2025).</li>
+        <li>El benchmark usa 5 cuentas; una es de Tucson y otra gasta poco en Search. Los percentiles son orientativos.</li>
+        <li>El brief no viene de una entrevista: ticket, margen, capacidad e idioma siguen pendientes.</li>
+      </ul>
+    </section>
+
+    <section id="archivos">
+      <div class="eyebrow">Repo pmm-ads-agent · rama claude/admiring-dirac-2soodx</div>
+      <h2>Archivos</h2>
+      <div class="tbl"><table>
+        <thead><tr><th>Archivo</th><th>Contenido</th></tr></thead>
+        <tbody>
+          <tr><td class="mono">clients/colton-sunflower/brief.md</td><td>Datos del negocio (prellenado desde la cuenta y el sitio)</td></tr>
+          <tr><td class="mono">strategy.md · roadmap.md · checklist.md</td><td>Estrategia v1.2, fases con fechas y condiciones, checklist</td></tr>
+          <tr><td class="mono">audit-site.md · competitors.md · benchmark.md</td><td>Auditoría 12/22, competencia, benchmark de 90 días</td></tr>
+          <tr><td class="mono">log/2026-09-29.md · log/2026-10-01.md</td><td>Investigación inicial; revisión semanal y registro de negativas</td></tr>
+          <tr><td class="mono">data/</td><td>keywords.csv, ads-search.md, listas de negativas, competitors-keywords.csv</td></tr>
+          <tr><td class="mono">knowledge/benchmarks/funeraria-us.md</td><td>Benchmark del nicho sin nombres de clientes</td></tr>
+        </tbody>
+      </table></div>
+    </section>
+
+    <footer>Informe preparado por Claude para PMM con datos al 30 de septiembre de 2026. Uso interno: incluye cifras de otras cuentas del MCC; no reenviar al cliente.</footer>
+  </main>
+</div>
