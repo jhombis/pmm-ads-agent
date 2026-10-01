@@ -17,7 +17,7 @@ fase_actual: 0
 | 0 — Rescate / fundación | 2026-10-01 → 2026-10-15 | 🔄 en curso |
 | 1 — Relanzamiento con nueva estructura + Max conv. | 2026-10-15 → 2026-10-22 | ⏳ |
 | 2 — Limpieza D7 · D14 · D30 | 2026-10-22 · 2026-10-29 · 2026-11-14 | ⏳ |
-| 3 — tCPA | No antes de ~2026-12-29; **improbable con $49/día** | ⏳ |
+| 3 — tCPA | No antes de ~2026-12-13; **improbable con $49/día** | ⏳ |
 | 4 — Remarketing (RLSA observación) | Evaluar 2026-11-14 | ⏳ |
 | 5 — Performance Max | No realista con el presupuesto actual | ⛔ |
 | 6 — Conversiones offline | Fuera de alcance | — |
@@ -56,9 +56,9 @@ fase_actual: 0
 - **Qué se revisa**: search terms (sobre todo grupos de precio y "near me"), gasto sin conversión > $200 por keyword, peor RSA por grupo, IS perdido por ranking (hoy 55%) y calidad de leads reportada por el cliente.
 
 ## Fase 3 — Optimización de puja (tCPA)
-- **Fecha estimada**: **no antes de ~2026-12-29**.
-  - Cálculo: $49/día ÷ $100 CPL = 0.49 conv/día, es decir ~61 días hasta 30 conv; +2 semanas porque el presupuesto es menor a 3× CPL/día. Contado desde el 2026-10-15.
-  - Ojo: tCPA pide **30 conv dentro de una ventana de 30 días**. Con $1,490/mes eso exige CPA ≤ $50 (hoy el mejor del MCC es $60). Con $2,500/mes exigiría CPA ≤ $83.
+- **Fecha estimada**: **no antes de ~2026-12-13**.
+  - Cálculo (benchmark 90d, CPL mediana $73): $49/día ÷ $73 = 0.67 conv/día, es decir ~45 días hasta 30 conv; +2 semanas porque el presupuesto es menor a 3× CPL/día (3 × $73 = $219). Contado desde el 2026-10-15.
+  - Ojo: tCPA pide **30 conv dentro de una ventana de 30 días**. Con $1,490/mes eso exige CPA ≤ $50 (P25 del nicho: $58). Con $2,500/mes exigiría CPA ≤ $83, que sí es alcanzable.
 - **Condición de paso**: ≥30 conversiones en ventana de 30 días con tracking verificado.
 - **Acción**: tCPA = CPA real observado; reajustar presupuesto.
 - **Si no se cumple**: es lo esperado con este presupuesto. Se queda en **Maximizar conversiones**, que es lo que usan las 4 hermanas con buen CPA. **No forzar tCPA con menos datos.** Si la conversión de la landing es <5%, priorizar la pista Landing.
@@ -94,5 +94,6 @@ fase_actual: 0
 - La mortalidad en EE. UU. sube en invierno (dic–feb), así que la demanda funeraria también. **Conviene salir de la Fase 1–2 antes de diciembre** para que Max conversiones ya haya aprendido cuando suba el volumen. Es una razón más para no alargar la Fase 0.
 
 ## Historial de cambios
+- 2026-10-01: CPL benchmark ajustado a $73 (benchmark.md); fecha de tCPA recalculada.
 - 2026-10-01: pista Landing actualizada con audit-site.md.
 - 2026-10-01: creado. D0 = 2026-10-01 (cuenta heredada activa desde 2026-08-03). Ya hechos antes del roadmap: 76 negativas y 3 keywords del competidor pausadas.

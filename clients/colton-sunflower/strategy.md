@@ -2,11 +2,10 @@
 cliente: Colton Sunflower Burial and Cremation
 slug: colton-sunflower
 actualizado: 2026-10-01
-version: 1.1
+version: 1.2
 supuestos:
   - audit-site.md hecho el 2026-10-01 (12/22): landings y claims actualizados en v1.1.
-  - Sin competitors.md: competidores tomados de search terms y Semrush.
-  - Sin benchmark.md formal: se usan 4 funerarias del MCC (Search, últimos 30d).
+  - competitors.md y benchmark.md hechos el 2026-10-01 (v1.2: CPL objetivo ajustado a la mediana de 90d).
   - Brief sin entrevista: ticket, margen, capacidad, idioma, mascotas, 24/7 y relación con Inland Memorial están PENDIENTES.
   - Presupuesto: se planifica con el diario actual ($49 ≈ $1,490/mes). El nombre de la campaña dice $2,500/mes; falta confirmar si incluye fee.
   - Volúmenes de Semrush (US). Los "near me" son nacionales: el volumen local es una fracción.
@@ -17,8 +16,9 @@ supuestos:
 ## Resumen ejecutivo
 - La cuenta **ya está activa** (desde 2026-08-03). Esto no es un lanzamiento, es un **rescate**: CPA de $466 en 28d contra ~$100 de sus hermanas del MCC.
 - **1 campaña Search** (se mantiene la actual para no perder historial) con **5 ad groups**. Opcionalmente, 1 campaña de marca de $5/día si se confirma la marca.
-- Presupuesto: $49/día ($1,490/mes). **CPL objetivo F1: $100** (mediana MCC). Se esperan ~15 conv/mes.
+- Presupuesto: $49/día ($1,490/mes). **CPL objetivo F1: $73** (mediana Search 90d del MCC; rango $58–87). Se esperan ~20 conv/mes. **La causa raíz es la tasa de conversión: 1.5% contra 9.7% del nicho**, no el CPC.
 - Puja: **Maximizar conversiones** (sin tCPA) una vez medido Form Fill. Con este presupuesto, **tCPA no llega** (requiere ~30 conv/mes, es decir CPA ≤ $50). Se reevalúa en F3.
+- Ángulo vs competencia online ($995 de Meadow/After): **crematorio propio, "never leaves our care"**, witness cremation y capilla local (ver competitors.md).
 - Lo que más pesa: matar el desperdicio (negativas, ya en curso), pasar de amplia + Max clics a frase/exacta + Max conv, y desbloquear la demanda de precio que hoy bloquean las negativas "how" y "Fontana".
 
 ## Benchmark usado (Search, últimos 30d)
@@ -99,8 +99,8 @@ Completo en `data/ads-search.md`: 5 grupos × 15 headlines + 4 descripciones, co
 | Fase | Total/mes | Por campaña | Condición para pasar |
 |---|---|---|---|
 | F0 Rescate (oct 1–15) | $1,490 | Search 100% | Form Fill medido y probado; negativas "how", "Fontana" y "online" corregidas; estructura de 5 grupos con frase/exacta; 3 RSA por grupo |
-| F1 Max conversiones (aprendizaje, ~4–6 sem.) | $1,490 | Search 90% / Marca 10% (si aplica) | 30d con ≥10 conv. y CPA ≤ $150 |
-| F2 Optimización | $1,490 → $2,500 si se confirma neto | Más peso a los grupos de cremación según CPA | CPA 30d ≤ $100 durante 2 revisiones seguidas → subir presupuesto |
+| F1 Max conversiones (aprendizaje, ~4–6 sem.) | $1,490 | Search 90% / Marca 10% (si aplica) | 30d con ≥10 conv., CPA ≤ $150 y tasa de conversión ≥ 5% |
+| F2 Optimización | $1,490 → $2,500 si se confirma neto | Más peso a cremación según CPA; nuevos grupos **Veteran Cremation** y **Pre-Planning**; prueba de "cremation cost" en amplia (OK de Jhombis) | CPA 30d ≤ $87 (P50 +20%) durante 2 revisiones seguidas → subir presupuesto |
 | F3 tCPA / PMax | ≥ $2,500 | — | ≥30 conv/30d con tracking confiable (con $1,490 exige CPA ≤ $50; poco probable) |
 
 ## Por qué NO (todavía)

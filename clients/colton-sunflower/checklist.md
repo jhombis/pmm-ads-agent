@@ -39,6 +39,9 @@ Eliminado de la base: solicitud LSA (la categoría no aplica) y la Fase 5 PMax (
 - [x] Claims del copy confirmados en el sitio (2026-10-01)
 - [ ] (Cliente) Cambiar el email de contacto @murrietavalleyfh.com por uno de coltonfuneral.com
 - [ ] (Jhombis) Confirmar si Colton Sunflower es del grupo Murrieta Valley FH (cliente PMM)
+- [ ] ⚠️ (Jhombis) Definir zonas entre Colton, Sunflower Riverside e Inland Memorial: las tres convierten o pujan en San Bernardino
+- [ ] (PMM) Etiquetar las cuentas funerarias del MCC con nicho:funeral / pais:US
+- [ ] (Cliente) Conseguir y mostrar reseñas de Google: Meadow anuncia 5 estrellas
 
 ## Fase 1 — Relanzamiento
 - [x] Campaña Search existente (se reestructura, no se crea de cero)
@@ -99,3 +102,4 @@ Eliminado de la base: solicitud LSA (la categoría no aplica) y la Fase 5 PMax (
 - [x] 2026-09-29 Investigación inicial + brief prellenado — Claude
 - [x] 2026-10-01 76 negativas + 3 keywords del competidor pausadas — Claude
 - [x] 2026-10-01 Weekly review + strategy v1 — Claude
+- [x] 2026-10-01 /audit-landing, /competitors, /benchmark-interno — Claude
