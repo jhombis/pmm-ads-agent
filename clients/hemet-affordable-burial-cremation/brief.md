@@ -5,24 +5,26 @@ pais: US
 idioma: EN
 nicho: funeraria / cremación
 actualizado: 2026-10-01
-estado: pre-brief (investigación externa, sin entrevista)
+estado: onboarding
 ---
 
 # Brief — Hemet Affordable Burial and Cremation
 
-> **Pre-brief.** Armado solo con fuentes públicas + Semrush, sin entrevista al cliente. Lo no confirmado está marcado `PENDIENTE` o `(sin confirmar)`. Falta completar con `/onboard` (bloques 2, 3 y 5 casi completos).
+> Fuentes públicas + Semrush (2026-10-01) + entrevista /onboard con Jhombis (2026-10-01). Lo no confirmado está marcado `PENDIENTE` o `(sin confirmar)`.
 > Nota: el sitio `hemetaffordablecremation.com` está bloqueado por el proxy de este entorno; los datos del sitio vienen de snippets de búsqueda. Revalidar en `/audit-landing`.
 
 ## Hallazgo clave: es un rebrand de Inland Memorial Harford Chapel
+- **Confirmado por Jhombis: mismo dueño.** Opera con **GBP nuevo** (separado de la ficha de Inland Memorial).
 - Misma dirección: **120 N. Buena Vista St., Hemet, CA 92543** · Tel. **(951) 658-3288**.
 - La página de Facebook (ID `61554293302298`) aparece indexada con ambos nombres: "Inland Memorial Funeral Care, Inc. – Hemet" y "Hemet Affordable Burial and Cremation".
 - Harford Chapel: funeraria más antigua del valle Hemet/San Jacinto (desde 1926); Inland Memorial la opera desde 1998. Por eso el sitio dice "historic chapel… over 100 years".
 - Licencias vistas: **FD#2240** (Inland Memorial Harford Chapel) y **FD#2486** (Hemet Affordable Burial and Cremation) (sin confirmar cuál está vigente).
-- **Riesgo de reputación**: el listado de Inland Memorial Harford Chapel tiene ~**3.6★ / 29 reseñas** en Google (otro directorio: 3.5★ / 11), con quejas de comunicación y "cambio de administración". Hay que saber si el GBP nuevo es otra ficha (0 reseñas) o la misma renombrada. Influye directo en CTR y conversión de la extensión de ubicación y Maps.
+- **Reputación**: la ficha vieja de Inland Memorial tiene ~3.6★ / 29 reseñas con quejas de comunicación. Como se usa **GBP nuevo**, no arrastramos esas reseñas, pero la ficha nueva probablemente arranca con pocas o ninguna → prueba social débil en Maps/ubicación. Conseguir reseñas en la ficha nueva es tarea de Fase 0. Ojo: ambas fichas comparten dirección; riesgo de que Google las marque como duplicadas → verificar que la vieja esté cerrada/movida correctamente.
 
 ## Negocio
 - URL: https://hemetaffordablecremation.com/
-- Base y área de servicio: Hemet, CA. Sitio dice "Hemet, San Jacinto and nearby communities"; el paquete de entierro incluye traslado **dentro de 30 millas** → radio propuesto inicial: Hemet + San Jacinto + Winchester, Homeland, Valle Vista, Menifee/Sun City, Perris, Beaumont/Banning (validar con el cliente). PENDIENTE confirmar.
+- Base y área de servicio (**confirmada**): Hemet, CA. Segmentación por ciudades: **Hemet, San Jacinto, Winchester, Beaumont, Banning** (California, EE.UU.), solo presencia.
+  - Nota: Valle Vista, East Hemet y Homeland son áreas no incorporadas pegadas a Hemet que no caen dentro del límite de la ciudad; proponer agregarlas en /strategy (mismo mercado, cero costo de cobertura).
 - Instalaciones (de la operación Inland Memorial): capilla, sala de velación privada, salón de recepción de 60 personas, **crematorio propio** (sin confirmar si sigue activo).
 - Servicios y precios públicos:
   | Servicio | Precio | Incluye |
@@ -30,7 +32,8 @@ estado: pre-brief (investigación externa, sin entrevista)
   | Simple (direct) cremation | **$1,095** | Servicios básicos, conferencia de arreglos, traslado, almacenamiento, cremación, urna polímero, permiso |
   | Direct burial | **$1,995** | Traslado ≤30 mi, refrigeración ≤5 días, equipo y personal, permiso, transporte a cementerio ≤30 mi, ataúd metálico "Apollo Black" (no incluye cementerio/apertura de fosa) |
   | Servicios completos / velación / pre-need / ship-out-in | PENDIENTE | Inland Memorial los ofrecía |
-- Servicio estrella / servicio a evitar: PENDIENTE (hipótesis: cremación directa = volumen; entierro directo = diferenciador, casi nadie publica precio de entierro en el valle).
+- Servicio estrella / servicio a evitar: **estrella = servicios completos** (velación/capilla + entierro o cremación; precio PENDIENTE). Servicio a evitar: PENDIENTE.
+  - Tensión a resolver en /strategy: la demanda de búsqueda está en cremación/"near me"; "servicios completos" casi no se busca como tal (se busca "funeral home"). Con $1,500/mes la entrada probable es cremación/entierro directo + "funeral home", y la venta de servicio completo ocurre en la llamada.
 - Diferenciadores (según sitio): familiar, licenciado, precio transparente, "sin upselling", tarifas de terceros explicadas por adelantado, capilla histórica.
 - Ofertas sostenibles: PENDIENTE (¿plan de pagos? ¿precio igualado? ¿pre-need con precio congelado?).
 - Búsqueda de marca: baja. "inland memorial hemet" 20/mes; marca nueva sin volumen medible. Campaña de marca no prioritaria.
@@ -56,19 +59,20 @@ estado: pre-brief (investigación externa, sin entrevista)
 **Lectura**: con $1,095 el cliente **no es el más barato** (está entre los "$980 todo incluido" y Miller-Jones $1,295). El ángulo "affordable" solo funciona si comunica **local + capilla propia + precio todo incluido claro**; si compite solo por precio, pierde contra $439/$980. El entierro directo a $1,995 es el mensaje diferencial más fuerte.
 
 ## Objetivo y economía
-- Objetivo primario: PENDIENTE (hipótesis: **llamadas**; en el sector funerario la mayoría de los casos "at-need" llaman de inmediato).
-- Presupuesto mensual: PENDIENTE
-- Ticket promedio / margen: tickets públicos $1,095 / $1,995 + adicionales (urnas, certificados de defunción, velación). Margen PENDIENTE.
+- Objetivo primario: **llamadas + formularios** (ambos como conversión primaria).
+- Presupuesto mensual: **$1,500 USD/mes** (~$49/día). Margen para escalar: PENDIENTE.
+- Ticket promedio / margen: tickets públicos $1,095 (cremación) / $1,995 (entierro) / servicios completos PENDIENTE, + adicionales (urnas, certificados, velación). Margen PENDIENTE.
 - Capacidad (casos/mes): PENDIENTE
-- **CPL máximo aceptable**: PENDIENTE de margen. Referencia de trabajo: si el margen neto por cremación directa fuera ~$500 y la tasa de cierre de llamada calificada ~40%, CPL máx ≈ $500 × 0.4 × 0.3 ≈ **$60** (supuesto, reemplazar con datos reales).
-- Historial Google Ads: Semrush muestra **0 keywords pagadas** para el dominio. PENDIENTE confirmar si Inland Memorial tuvo cuenta (ID) para /benchmark-interno.
+- **CPL máximo aceptable**: **~$60 (supuesto)** = margen $500 por caso × 40% cierre de lead calificado × 0.3. Reemplazar cuando el cliente dé margen real; con servicios completos el margen sube y el CPL máx también.
+  - Lectura de presupuesto: $1,500 / $60 ≈ **25 leads/mes** si se cumple el CPL; con CPC $5–10 son ~150–300 clics/mes → necesita tasa de conversión ≥8–15%. Ajustado pero viable con geo reducido.
+- Historial Google Ads: **cuenta 751-429-2721** (de quién es, desde cuándo y resultados: PENDIENTE). Semrush no ve anuncios del dominio nuevo → probablemente histórico de Inland Memorial o cuenta pausada. /benchmark-interno debe leer su histórico.
 
 ## Operación
-- Horario / 24-7: PENDIENTE — **crítico**: los fallecimientos ocurren a cualquier hora; si no hay quien conteste 24/7, la programación debe limitarse.
+- Horario / 24-7: **24/7 con persona real** → anuncios 24/7 permitidos (estándar #10). Quién contesta de noche (director vs answering service): PENDIENTE.
 - Respuesta a leads (quién, tiempo): PENDIENTE
 - Teléfono / call tracking: (951) 658-3288; aceptación de número de reenvío PENDIENTE
 - CRM (solo referencia): PENDIENTE
-- GBP: PENDIENTE — ¿ficha nueva o renombrada? ¿reseñas? ¿acceso PMM? (ver riesgo de reputación arriba)
+- GBP: **ficha nueva** (separada de Inland Memorial). Verificada / reseñas / acceso PMM: PENDIENTE.
 
 ## Web y tracking
 - Plataforma / quién edita: PENDIENTE
@@ -83,15 +87,16 @@ estado: pre-brief (investigación externa, sin entrevista)
 - Aplica: PENDIENTE — verificar si la categoría "funeral home" está disponible en LSA para Riverside County (no es categoría habitual de servicios a domicilio). No asumir.
 
 ## Pendientes
-- [ ] **Bloqueante**: confirmar relación legal con Inland Memorial (misma empresa, licencia vigente FD#2240 vs FD#2486) y ficha GBP a usar.
-- [ ] **Bloqueante**: horario real de atención telefónica / 24-7.
-- [ ] **Bloqueante**: presupuesto mensual, margen por servicio, capacidad de casos/mes → CPL máximo.
-- [ ] Objetivo primario (llamadas vs formularios) y quién contesta.
-- [ ] Historial de Google Ads (de Inland Memorial o del dominio nuevo).
-- [ ] Acceso a sitio, GA4/Tag, GBP.
-- [ ] Área de servicio exacta (radio 30 mi vs ciudades).
-- [ ] Ofertas sostenibles (plan de pagos, pre-need, igualación de precio).
-- [ ] Verificar GPL publicado online (cumplimiento CA).
+- [ ] **Bloqueante**: acceso a la cuenta 751-429-2721 desde el MCC + contexto (dueño, fechas, qué pasó).
+- [ ] **Bloqueante**: tracking — GA4/Google Tag, destino de formularios, aceptación de número de reenvío (sin tracking no se lanza).
+- [ ] **Bloqueante**: GBP nuevo verificado + acceso PMM (activo de ubicación); confirmar que no quede duplicado con la ficha de Inland Memorial.
+- [ ] Precio y contenido del paquete de servicios completos (servicio estrella).
+- [ ] Margen real por servicio y capacidad de casos/mes → recalcular CPL máximo (hoy supuesto $60).
+- [ ] Quién contesta de noche (director vs answering service).
+- [ ] Plataforma del sitio y quién lo edita.
+- [ ] Ofertas sostenibles (plan de pagos, igualación de precio, pre-need con precio congelado) y competidores que reconoce el cliente.
+- [ ] Licencia vigente (FD#2240 vs FD#2486) y GPL publicado online (cumplimiento CA).
+- [ ] LSA: verificar si la categoría aplica en Riverside County.
 - [ ] Revalidar todo lo del sitio en /audit-landing (no se pudo leer directo).
 
 ## Fuentes
@@ -106,4 +111,5 @@ estado: pre-brief (investigación externa, sin entrevista)
 - https://www.after.com/cities/hemet-cremation
 - https://www.parting.com/funeral-home/ca/hemet/miller-jones-mortuary-crematory-hemet-ca-92543/
 - https://www.funeralocity.com/funeral-homes/ca/hemet/hemet-valley-mortuary-8593
+- Entrevista /onboard con Jhombis, 2026-10-01
 - Semrush (db us, 2026-10-01): domain_rank, phrase_these, phrase_adwords_historical
