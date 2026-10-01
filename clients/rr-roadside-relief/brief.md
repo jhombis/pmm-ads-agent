@@ -24,30 +24,30 @@ estado: activo — brief preliminar (investigación sin entrevista)
 
 ## Objetivo y economía
 - Objetivo primario: llamadas (7 de 8 conversiones son "Calls from Ads")
-- Presupuesto mensual: **$2,250/mes** (según nombre de cuenta y campaña) ≈ $74/día
+- Presupuesto mensual: **$2,250/mes es el precio del paquete** (nombre de cuenta/campaña), no el gasto en pauta. En el MCC, el gasto real es ~44% del paquete (mediana). RR gasta ≈ $43/día ≈ $1,300/mes. Presupuesto de pauta real: PENDIENTE confirmar.
 - Ticket promedio / margen: PENDIENTE
 - Capacidad (leads o trabajos/mes): PENDIENTE
-- **CPL máximo aceptable**: PENDIENTE (falta ticket y tasa de cierre)
+- **CPL máximo aceptable**: PENDIENTE (falta ticket y tasa de cierre). Referencia del benchmark: ≤ $45 en mes 1–2 y $12–18 (máx. $23) desde el mes 3.
 - Historial Google Ads: cuenta **425-405-2574** ("Premium Local Listings 004045 ($2250 RR Roadside Relief)"), producto ENHPRM de PMM. Ver resumen abajo.
 
 ## Estado de la cuenta (15-sep → 1-oct 2026)
 | Métrica | Valor |
 |---|---|
 | Campañas | 1 Search: "RR Roadside Relief - ENHPRM Radius - $2250/mo. - 09/15/2026", 1 ad group ("Ad group 1") |
-| Gasto | $648.85 (≈$43/día vs $74/día presupuestado → pacing ~58%) |
+| Gasto | $648.85 (≈$43/día ≈ $1,300/mes, 58% del paquete: normal en ENHPRM) |
 | Clics / Impr. | 94 / 1,689 · CPC $6.90 |
 | Conversiones | 8 (7 Calls from Ads, 1 Form Fill) · CPA $81 |
-| Search IS | 17.4% |
+| Search IS | 17.4% (perdido por ranking 62%, por presupuesto 19%) · puja: Maximizar conversiones · geo: Presencia |
 
 ### Hallazgos (ordenados por impacto en dinero)
 1. **Las ~100 keywords activas están en amplia** (37 con impresiones en 30 d) (viola estándar PMM #2). Consecuencia directa:
 2. **≈$184 de $340 de gasto visible en search terms (54%) fue desperdicio**: competidores ($62: Puckett's, 5 Star, TK, Always, Robertson, Harrington's Tire), tiendas de llantas / montaje ($41: Michelin, "nearest tire store", "tire service near me"), planes de asistencia de aseguradoras y fabricantes ($37: Lincoln, Bridgestone, ARP, CarShield, "roadside assistance phone number"), irrelevantes ($25: "reliable auto phone number", "reeds transmission", "highway emergency number"), informacionales ($12). Detalle en `data/2026-10-01-search-terms-con-gasto-30d.csv`.
 3. **Conversiones sospechosas**: 2 de las 8 vienen de "lincoln roadside assistance" y "harringtons tire choctaw" → probablemente llamadas mal dirigidas (gente buscando otro negocio). Revisar umbral de duración de "Calls from Ads" y escuchar/confirmar con cliente. El CPA real de leads calificados es peor que $81.
-4. **Fuga geográfica**: impresiones en Tulsa, Wichita KS, Stillwater, Enid, Tahlequah, Kingman AZ (con clic), Williams AZ, Hartford CT, Austin TX, Rogers AR, Puerto Rico. Indica "Presencia o interés" y/o radio muy amplio → pasar a **Presencia** (estándar #1).
+4. **Fuga geográfica**: impresiones en Tulsa, Wichita KS, Stillwater, Enid, Tahlequah, Kingman AZ (con clic), Williams AZ, Hartford CT, Austin TX, Rogers AR, Puerto Rico. La campaña **ya está en Presencia**; la fuga viene de un radio amplio o de gente de paso. Revisar el radio y negativizar ciudades fuera de área.
 5. **Negativas**: ya hay 458 de campaña (plantilla ENHPRM, en amplia), pero siguen colándose "how do i change a tire", "jump starter", "walmart tire center", "autozone" → lista universal PMM no aplicada o incompleta.
 6. **Estructura**: un solo ad group mezclando towing, roadside y tire service; no hay H1 pinneado por tema posible. Propuesta para `/strategy`: campañas/ad groups Towing · Roadside (jump/lockout/fuel) · Mobile Tire.
 7. **Demanda en español** real (gruas, servicio de grúa en español — convirtió). Evaluar ad group ES si el cliente atiende en español.
-8. **Pacing bajo + IS 17%**: gasta ~58% del presupuesto con IS bajo → el límite no es presupuesto sino ranking/puja. Estrategia de puja actual **PENDIENTE** de revisar (no expuesta en Windsor).
+8. **IS 17%, con 62% perdido por ranking** (las mejores cuentas de towing del MCC pierden 9–30%). El freno es calidad (QS/landing/relevancia), no presupuesto. Puja: Maximizar conversiones (OK). Ver `benchmark.md`.
 
 ## Operación
 - Horario / 24-7: la web dice "Available 24/7". Confirmar que alguien contesta de noche.
