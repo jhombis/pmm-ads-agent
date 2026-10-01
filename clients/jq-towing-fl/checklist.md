@@ -8,6 +8,9 @@ actualizado: 2026-10-01
 
 ## Pendientes bloqueantes de onboarding (2026-10-01)
 - [ ] Aceptación de call tracking (número de reenvío) — **sin esto no se lanza**
-- [ ] ID de la cuenta previa de Google Ads en el MCC (para /benchmark-interno)
+- [x] ID de la cuenta previa: 986-810-9972
+- [ ] Conectar 986-810-9972 a Windsor (o configurar API) para leer su historial y Auction Insights
 - [ ] Ticket promedio, margen y tasa de cierre → CPL máximo (bloquea /strategy)
 - [ ] Verificar Tag/GA4 y destino del formulario con Tag Assistant (/audit-landing)
+- [ ] Permitir jqtowingfl.com en Network access del entorno y re-correr /audit-landing (sitio sin auditar)
+- [ ] Definir acción de conversión de llamada con umbral ≥60s (el MCC cuenta llamadas cortas → CPL inflado)

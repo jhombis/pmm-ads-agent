@@ -29,7 +29,7 @@ estado: onboarding
 - Ticket promedio / margen: PENDIENTE
 - Capacidad (leads o trabajos/mes): PENDIENTE
 - **CPL máximo aceptable**: PENDIENTE — falta ticket, margen y tasa de cierre. Fórmula: margen × cierre × 0.3
-- Historial Google Ads: **tiene cuenta previa, ya en el MCC de PMM**. ID: PENDIENTE
+- Historial Google Ads: **cuenta previa 986-810-9972 en el MCC**. No conectada a Windsor → histórico PENDIENTE
 
 ## Operación
 - Horario / 24-7: **24/7 real** (alguien contesta) → programación 24/7 permitida
@@ -78,7 +78,7 @@ Lectura:
 
 ## Pendientes
 - [ ] **Call tracking**: aceptación del número de reenvío (bloqueante para lanzar)
-- [ ] **ID de la cuenta previa** en el MCC (bloquea /benchmark-interno sobre su histórico)
+- [ ] Conectar 986-810-9972 a Windsor o API (histórico + Auction Insights)
 - [ ] **Ticket, margen y tasa de cierre** → CPL máximo (bloquea /strategy)
 - [ ] Lista exacta de servicios (¿golf cart, heavy duty, junk car?)
 - [ ] Diferenciadores y ofertas sostenibles (tiempo de llegada, precio fijo, años)
