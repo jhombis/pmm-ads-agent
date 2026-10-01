@@ -4,6 +4,8 @@ slug: rr-roadside-relief
 D0: 2026-10-01
 actualizado: 2026-10-01
 fase_actual: 0
+plan_es: https://claude.ai/artifact/RHUHPWofMcvYwJUfH4uZcf
+plan_en: https://claude.ai/artifact/KpYB2DXW2n6xFLunVfhimH
 ---
 
 # Roadmap — RR Roadside Relief
