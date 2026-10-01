@@ -5,8 +5,8 @@ actualizado: 2026-10-01
 version: 1.2
 supuestos:
   - audit-site.md (2026-10-01): sin Google Tag en el sitio; las landings se mapearon en v1.1.
-  - Sin competitors.md formal: se usa la competencia del brief + los competidores vistos en search terms.
-  - Sin benchmark.md formal: benchmark leído directo del MCC vía Windsor (5 cuentas funerarias, abr–sep 2026), ver abajo.
+  - competitors.md (2026-10-01): Semrush nacional y cuota agotada; falta Auction Insights.
+  - benchmark.md (2026-10-01): 5 cuentas del MCC vía Windsor, CPL mediana $73.
   - Margen real y precio de servicios completos PENDIENTES: CPL máximo del brief ($60) es un supuesto.
   - Personal hispanohablante sin confirmar: el grupo en español queda para Fase 2.
 ---
@@ -65,7 +65,7 @@ Configuración: solo red de Búsqueda (sin socios ni Display), presencia, rotaci
 | Ad group | Keywords (match) | Vol. est. (US) | Landing | H1 pinneado |
 |---|---|---|---|---|
 | **Funeral Home** (estrella) | "funeral home near me", [funeral home near me], "funeral homes near me", "funeral home hemet", [funeral home hemet], "mortuary near me", "mortuary hemet", [mortuary hemet], "funeral services near me", "funeral chapel near me", "memorial service near me", "funeral home san jacinto ca", "funeral home beaumont ca", "funeral home banning ca", "funeral homes" | ~150K nacional (geo local: bajo) | /pricing/ → /funeral-services/ cuando exista | Funeral Home in Hemet, CA |
-| **Cremation** | "cremation services near me", [cremation services near me], "cremation near me", "direct cremation near me", [direct cremation near me], "cremation hemet", [cremation hemet], "cremation hemet ca", "crematory near me", "crematorium near me", "simple cremation near me", "cremation with viewing", "service and cremation" | ~50K nacional | /cremation/ | Cremation Services Hemet |
+| **Cremation** | "cremation services near me", [cremation services near me], "cremation near me", "direct cremation near me", [direct cremation near me], "direct cremation" *(v1.2, /competitors)*, "cremation hemet", [cremation hemet], "cremation hemet ca", "crematory near me", "crematorium near me", "simple cremation near me", "cremation with viewing", "service and cremation" | ~50K nacional | /cremation/ | Cremation Services Hemet |
 | **Affordable** (intención de precio) | "affordable cremation near me", "cheap cremation near me", "low cost cremation near me", "cremation cost near me", "cremation cost" *(prueba, ver nota)*, "cremation prices near me", "affordable funeral homes near me", "cheapest mortuary near me", "low cost cremation riverside county" | ~7K nacional | /pricing/ | Affordable Cremation Hemet |
 | **Burial** | "burial services near me", [burial services near me], "burial near me", "burial service", "direct burial near me", "affordable burial", "low cost burial services", "burial packages" | ~5K nacional | /burial/ | Burial Services in Hemet |
 
@@ -138,6 +138,13 @@ Nota de copy: /pricing confirma "Simple Cremation with Private Viewing **$1,495*
 - **Display**: 0 conversiones con 2,000+ clics. Para un servicio local de este tipo, el Display es ruido.
 - **Campaña por servicio**: el presupuesto no alcanza para que cada campaña salga del aprendizaje (ver arriba).
 - **LSA**: la categoría "funeral home" no aparece como disponible. Sigue `PENDIENTE` verificarlo; no es bloqueante.
+
+## Insumos de competencia (v1.2, `competitors.md`)
+- **24/7 con persona real** es diferencial frente a San Jacinto Valley Mortuary ($439, atiende de 9 a 5 y no tiene answering service). Se pinnea en el RSA C y no se baja la puja de noche.
+- **Entierro directo a $1,995**: ningún competidor local publica un precio comparable. Es el ángulo menos disputado.
+- **Amenaza en precio**: Dearly Beloved (Hemet, cremación directa $945–995, 5.0★ con 21 reseñas en Yelp, 24 h, familiar) y otros 3 jugadores entre $980 y $995. No anunciar "lowest price". Diferenciar con precio **todo incluido** (traslado, permiso y urna), entierro directo y capilla histórica. Vigilar aparte el CPA del grupo Affordable.
+- Neptune ofrece "0% financing": **preguntar al cliente si puede ofrecer plan de pagos** (pendiente en el brief).
+- Semrush no muestra funerarias locales pujando. El CPC de $13 parece venir de la amplia, no de competencia local. **Validar con Auction Insights** de la cuenta antes de la Fase 1.
 
 ## Riesgos y supuestos
 1. **CPA objetivo ($73–100) por encima del CPL máximo supuesto ($60).** Si el margen real por caso es de ~$500, la cuenta no es rentable con cremación directa sola. Hace falta el margen real y la mezcla de servicios (un servicio completo deja mucho más margen). Es el pendiente número 1 con el cliente.
