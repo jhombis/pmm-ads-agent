@@ -27,3 +27,19 @@ all ark electric | PHRASE | Competidor | 1 impr.
 cost of a circuit breaker | EXACT | Precio/producto | 1 impr.
 how much is a new breaker | EXACT | Precio/producto | 1 impr.
 # Enrutamiento (no negativa de cuenta): en Electrical Repair, cambiar la negativa "breaker box" por "breaker box replacement" y agregar la keyword "breaker box repair" (frase)
+# --- Agregado 01-oct: términos nuevos con impresiones 29-sep–01-oct ---
+3d electric | PHRASE | Competidor | 1 impr.
+5 star electrical | PHRASE | Competidor | 2 impr.
+all star electric | PHRASE | Competidor/geo | "all star electric grove ok" (Oklahoma)
+be a light electric | PHRASE | Competidor | 2 impr.
+cjs electrical | PHRASE | Competidor | "cjs electrical services"
+electricteam | PHRASE | Competidor | "contracts electricteam net" (4 impr.)
+fleming electric | PHRASE | Competidor | "fleming electric arkansas"
+franklin ac | PHRASE | Competidor | "franklin ac plumbing & electrical" (3 impr.)
+paschal | PHRASE | Competidor | "services offered by paschal air plumbing & electric"
+prime electric | PHRASE | Competidor | "prime electric fayetteville ar"
+smith electrical | PHRASE | Competidor | "smith electrical service rogers arkansas"
+tanner garrison | PHRASE | Competidor | "tanner garrison electrician"
+warranty electric | PHRASE | Competidor | 4 impr. (competidor del brief)
+residential wireman | PHRASE | Empleo/licencia | 1 impr.
+electrician per hour | PHRASE | Precio de referencia | "how much is an electrician per hour"
