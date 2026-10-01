@@ -30,7 +30,9 @@ estado: onboarding
 - Ticket promedio / margen: PENDIENTE
 - Capacidad (leads o trabajos/mes): PENDIENTE
 - **CPL máximo aceptable**: PENDIENTE. Se calcula como margen por trabajo × tasa de cierre estimada × 0.3, y hoy falta el ticket/margen.
-- Historial Google Ads: **sí tuvo cuenta**. ID, fechas y resultados PENDIENTE (lo necesita /benchmark-interno).
+- Historial Google Ads:
+  - **Cuenta activa en el MCC de PMM: 220-410-9619** ("Premium Local Listings 004042 ($1500 Jump Towing LLC)"), gastando desde ~2026-09-14. Al 30-sep: $459, 70 clics, 7 conv., CPL $65.57. Puja Maximizar clics, keywords broad, un ad group en español y search terms de fuera de MN. Ver benchmark.md.
+  - Cuenta previa a PMM: no está en el MCC; ID PENDIENTE.
 
 ## Operación
 - Horario: lun–vie 6:00–18:00, sáb 6:00–15:30, **domingo cerrado**. **No es 24/7.** La programación de anuncios se ajusta a ese horario, así que se pierde la demanda nocturna y dominical, que en remolque es una parte grande.
@@ -73,11 +75,12 @@ Detectados en búsqueda web, sin confirmar con el cliente:
 - Aplica: PENDIENTE. Hay que verificar en el panel de LSA si la categoría Towing está disponible para el área de Minneapolis. Requiere GBP, seguro y background check.
 
 ## Pendientes
+- [ ] **(decisión Jhombis, urgente)** La cuenta 220-410-9619 está gastando sin cumplir la Fase 0. Hay que decidir si se pausa o se corrige en caliente: Maximizar conversiones, phrase, quitar el ad group en español, negativas universales, geo por Presencia a 10 mi.
 - [ ] **(bloqueante)** Ticket promedio y margen, para calcular el CPL máximo
 - [ ] **(bloqueante)** Teléfono principal y aprobación de call tracking (número de reenvío)
 - [ ] **(bloqueante)** Verificar que el Google Tag y la conversión de llamada funcionen en jumptowing.com (Tag Assistant)
 - [ ] **(bloqueante)** Auditar jumptowing.com con /audit-landing desde un entorno con acceso al dominio
-- [ ] ID de la cuenta anterior de Google Ads y qué pasó
+- [ ] ID de la cuenta anterior a PMM (si existe) y qué pasó
 - [ ] Estado de GBP: verificado, reseñas, acceso para PMM
 - [ ] Lista exacta de servicios de roadside
 - [ ] Quién contesta las llamadas y en cuánto tiempo; capacidad de trabajos/mes
