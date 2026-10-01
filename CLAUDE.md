@@ -31,6 +31,7 @@ scripts/                  utilidades (API de Google Ads, PageSpeed, etc.)
 | `strategy.md` | /strategy | /roadmap, /build-campaign |
 | `roadmap.md` | /roadmap | /weekly-review |
 | `checklist.md` | /roadmap (crea), /weekly-review (actualiza) | todos |
+| `landings/<pagina>/` | /landing-ghl (spec.json + código para GoHighLevel) | /build-campaign (URLs finales) |
 | `log/YYYY-MM-DD.md` | /weekly-review | /weekly-review |
 | `data/` | exports CSV/JSON de la API; /investigar-cliente deja account-profile.json, site-scan.json, pagespeed.json | /weekly-review, /negatives, /audit-landing |
 
@@ -60,6 +61,7 @@ scripts/                  utilidades (API de Google Ads, PageSpeed, etc.)
 - **Google Ads API** vía MCC de PMM (developer token ya aprobado). Ver `docs/setup-google-ads-api.md`. Úsala para leer cuentas del MCC, Keyword Planner, crear campañas y exportar search terms.
 - **Semrush MCP**: `paid_search_research`, `competitors_research`, `keyword_research`, `site_audit`, `domain_overview`.
 - **Windsor.ai MCP**: datos históricos de Google Ads para dashboards y comparativas sin gastar cuota de API.
+- **GoHighLevel**: landings por servicio generadas con `/landing-ghl` (`scripts/landing_build.py`), montaje en `docs/setup-gohighlevel.md`.
 - **PageSpeed Insights** (`scripts/pagespeed.py`) y WebFetch para auditar landings.
 - **Meta Ad Library / búsqueda web** solo como referencia de competidores.
 
