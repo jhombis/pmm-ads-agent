@@ -2,9 +2,9 @@
 cliente: Hemet Affordable Burial and Cremation
 slug: hemet-affordable-burial-cremation
 actualizado: 2026-10-01
-version: 1
+version: 1.1
 supuestos:
-  - Sin audit-site.md: el sitio está bloqueado por el proxy del entorno; URLs de landing por confirmar en /audit-landing.
+  - audit-site.md (2026-10-01): sin Google Tag en el sitio; las landings se mapearon en v1.1.
   - Sin competitors.md formal: se usa la competencia del brief + los competidores vistos en search terms.
   - Sin benchmark.md formal: benchmark leído directo del MCC vía Windsor (5 cuentas funerarias, abr–sep 2026), ver abajo.
   - Margen real y precio de servicios completos PENDIENTES: CPL máximo del brief ($60) es un supuesto.
@@ -64,10 +64,10 @@ Configuración: solo red de Búsqueda (sin socios ni Display), presencia, rotaci
 
 | Ad group | Keywords (match) | Vol. est. (US) | Landing | H1 pinneado |
 |---|---|---|---|---|
-| **Funeral Home** (estrella) | "funeral home near me", [funeral home near me], "funeral homes near me", "funeral home hemet", [funeral home hemet], "mortuary near me", "mortuary hemet", [mortuary hemet], "funeral services near me", "funeral chapel near me", "memorial service near me", "funeral home san jacinto ca", "funeral home beaumont ca", "funeral home banning ca", "funeral homes" | ~150K nacional (geo local: bajo) | /funeral-services (PENDIENTE) | Funeral Home in Hemet, CA |
-| **Cremation** | "cremation services near me", [cremation services near me], "cremation near me", "direct cremation near me", [direct cremation near me], "cremation hemet", [cremation hemet], "cremation hemet ca", "crematory near me", "crematorium near me", "simple cremation near me", "cremation with viewing", "service and cremation" | ~50K nacional | /cremation (PENDIENTE) | Cremation Services Hemet |
-| **Affordable** (intención de precio) | "affordable cremation near me", "cheap cremation near me", "low cost cremation near me", "cremation cost near me", "cremation prices near me", "affordable funeral homes near me", "cheapest mortuary near me", "low cost cremation riverside county" | ~7K nacional | /price-list (GPL, PENDIENTE) | Affordable Cremation Hemet |
-| **Burial** | "burial services near me", [burial services near me], "burial near me", "burial service", "direct burial near me", "affordable burial", "low cost burial services", "burial packages" | ~5K nacional | /burial (PENDIENTE) | Burial Services in Hemet |
+| **Funeral Home** (estrella) | "funeral home near me", [funeral home near me], "funeral homes near me", "funeral home hemet", [funeral home hemet], "mortuary near me", "mortuary hemet", [mortuary hemet], "funeral services near me", "funeral chapel near me", "memorial service near me", "funeral home san jacinto ca", "funeral home beaumont ca", "funeral home banning ca", "funeral homes" | ~150K nacional (geo local: bajo) | /pricing/ → /funeral-services/ cuando exista | Funeral Home in Hemet, CA |
+| **Cremation** | "cremation services near me", [cremation services near me], "cremation near me", "direct cremation near me", [direct cremation near me], "cremation hemet", [cremation hemet], "cremation hemet ca", "crematory near me", "crematorium near me", "simple cremation near me", "cremation with viewing", "service and cremation" | ~50K nacional | /cremation/ | Cremation Services Hemet |
+| **Affordable** (intención de precio) | "affordable cremation near me", "cheap cremation near me", "low cost cremation near me", "cremation cost near me", "cremation prices near me", "affordable funeral homes near me", "cheapest mortuary near me", "low cost cremation riverside county" | ~7K nacional | /pricing/ | Affordable Cremation Hemet |
+| **Burial** | "burial services near me", [burial services near me], "burial near me", "burial service", "direct burial near me", "affordable burial", "low cost burial services", "burial packages" | ~5K nacional | /burial/ | Burial Services in Hemet |
 
 Negativas específicas por grupo (negativas cruzadas para que cada término caiga en su grupo):
 - Funeral Home: `cremation`, `burial`, `cheap`, `cheapest`, `affordable`, `low cost`.
@@ -107,13 +107,19 @@ En `data/ads-search.md`: 5 grupos × 15 headlines + 4 descripciones (EN, límite
 - **No** se menciona Inland Memorial (reputación mixta) ni el número FD hasta confirmar cuál está vigente. Los precios deben coincidir con el GPL.
 
 ## Landings requeridas
+Actualizado con `audit-site.md` (2026-10-01).
 | URL | Existe | Responsable | Bloqueante |
 |---|---|---|---|
-| /funeral-services (servicios completos: capilla, velación, recepción, precio desde) | PENDIENTE (/audit-landing) | Cliente / PMM | Sí, para que el grupo estrella apunte a algo distinto de la home. Mientras tanto, la home |
-| /cremation (simple $1,095 + cremación con velación) | PENDIENTE | Cliente / PMM | No (temporal: home) |
-| /burial (directo $1,995 + tradicional) | PENDIENTE | Cliente / PMM | No (temporal: home) |
-| /price-list (GPL publicado, exigido por CA B&P §7685) | PENDIENTE | Cliente | **Sí**: cumplimiento legal y landing del grupo Affordable |
-| Thank-you page con conversión de formulario | PENDIENTE | PMM | **Sí**: verificar con Tag Assistant (estándar #7) |
+| **Google Tag + página de gracias + número de reenvío** en todo el sitio | ❌ | PMM (acceso a WordPress) | **Sí, crítico**: hoy no se mide nada del sitio |
+| /cremation/ | ✅ (sin precio, formulario abajo) | Cliente / PMM | No; agregar precio y subir el formulario (mejora) |
+| /burial/ | ✅ (sin precio) | Cliente / PMM | No; igual que /cremation |
+| /pricing/ | ✅ (11 paquetes, sin H1 ni formulario) | Cliente / PMM | No; landing temporal de Funeral Home y Affordable |
+| GPL (PDF 2026-03-25) | ✅ | Cliente | Cumple CA B&P §7685 |
+| /funeral-services/ (servicios completos, fotos reales) | ❌ | Cliente / PMM | No (temporal: /pricing/); prioridad F2 |
+| /veterans/ | ❌ | Cliente / PMM | No; habilita un ad group futuro de veteranos |
+| Home como landing | ✅ pero sin H1 ni formulario | — | Solo para la campaña Brand |
+
+Nota de copy: /pricing confirma "Simple Cremation with Private Viewing **$1,495**". El headline "Cremation With Viewing" del grupo Cremation puede llevar ese precio.
 
 ## Presupuesto por fase
 | Fase | Total/mes | Por campaña | Condición para pasar |

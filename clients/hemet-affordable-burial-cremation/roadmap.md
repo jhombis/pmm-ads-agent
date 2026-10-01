@@ -30,6 +30,7 @@ fase_actual: 0
 ## Fase 0 — Fundación / limpieza (sobre cuenta en vivo)
 - **Fecha estimada**: 2026-10-01 → 2026-10-12 (D0+11; +7 días si el cliente tarda en el sitio o el GBP → 2026-10-19)
 - **Condición de paso**: todas las tareas bloqueantes de Fase 0 en `checklist.md` ✅
+- **Tarea crítica (día 1)**: `audit-site.md` encontró que **el sitio no tiene Google Tag**. Form Fill y Website Calls no registran desde mediados de septiembre, y la puja automática solo ve las llamadas desde el anuncio. Instalar el tag, el número de reenvío y la página de gracias (PMM, ~3 h con acceso a WordPress).
 - **Tareas — quick wins (aplicar ya, PMM, día 1–2)**. Cortan unos $230/mes de desperdicio sin esperar al resto:
   1. (PMM) Pausar "Responsive Display" ($31/mes, 0 conv).
   2. (PMM) Aplicar la lista "PMM Universal" **sin** `cheapest`, `county` ni `rental` (ver `data/negatives-nicho.txt`) más la lista de nicho "Funeral - Hemet" a nivel de cuenta.
@@ -45,7 +46,7 @@ fase_actual: 0
   11. (Cliente) Margen por caso y precio del paquete de servicios completos, para fijar el CPL máximo real. Hoy el supuesto es $60 y el benchmark $85.
   12. (Cliente) Confirmar quién contesta de noche y el tiempo de respuesta a formularios.
   13. (Jhombis) Confirmar el presupuesto ($1,500 de pauta vs "$2800" del nombre de la cuenta) y aprobar sumar Valle Vista, East Hemet y Homeland a la geo.
-  14. (PMM) Correr `/audit-landing` cuando haya acceso al sitio.
+  14. ✅ `/audit-landing` corrido el 2026-10-01 (11/22). Pendiente: acceso a WordPress para resolver sus bloqueantes.
 - **Riesgos**:
   - El GBP nuevo comparte dirección con la ficha de Inland Memorial: riesgo de suspensión o de duplicado. Si se suspende, Fase 1 sale sin activo de ubicación.
   - Subir la duración mínima de llamada va a "bajar" las conversiones reportadas. Es esperado: corrige la señal, no empeora la cuenta.
@@ -108,9 +109,9 @@ fase_actual: 0
 
 ## Pista paralela — Landing
 - **Bloqueantes (Fase 0, fecha 2026-10-12)**:
-  - (Cliente) **GPL publicado online** (exigido por CA B&P §7685); de paso sirve de landing del grupo Affordable.
-  - (PMM) Página de gracias del formulario con la conversión verificada.
-  - (PMM) Correr `/audit-landing`: velocidad móvil, formulario, clic para llamar, prueba social.
+  - ✅ GPL publicado (PDF 2026-03-25).
+  - (PMM) **Google Tag** en todo el sitio, número de reenvío y página de gracias con la conversión verificada (audit-site.md).
+  - (PMM) Sacar la home de las URLs finales de los grupos genéricos.
 - **Mejoras (Fase 2–3, objetivo 2026-11-12)**:
   - (Cliente / PMM) Landing de **servicios completos** con precio "desde", fotos reales de la capilla, sala de velación y salón de recepción. Es el servicio estrella y hoy no tiene página dedicada confirmada.
   - (Cliente / PMM) Landings /cremation y /burial con el término en el H1.
@@ -134,3 +135,4 @@ fase_actual: 0
 
 ## Historial de cambios
 - 2026-10-01: creado (D0 = 2026-10-01).
+- 2026-10-01: /audit-landing → Google Tag ausente pasa a tarea crítica del día 1; GPL ✅; landings mapeadas.

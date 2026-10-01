@@ -25,14 +25,20 @@ estado: onboarding
 - URL: https://hemetaffordablecremation.com/
 - Base y área de servicio (**confirmada**): Hemet, CA. Segmentación por ciudades: **Hemet, San Jacinto, Winchester, Beaumont, Banning** (California, EE.UU.), solo presencia.
   - Nota: Valle Vista, East Hemet y Homeland son áreas no incorporadas pegadas a Hemet que no caen dentro del límite de la ciudad; proponer agregarlas en /strategy (mismo mercado, cero costo de cobertura).
-- Instalaciones (de la operación Inland Memorial): capilla, sala de velación privada, salón de recepción de 60 personas, **crematorio propio** (sin confirmar si sigue activo).
+- Instalaciones: capilla histórica, sala de velación, salón de recepción (GPL: reception services $495). **La cremación se hace en Sunflower Crematory** (tercero, no propio; confirmado en /pricing). Posible relación con las cuentas Sunflower del MCC: confirmar.
 - Servicios y precios públicos:
   | Servicio | Precio | Incluye |
   |---|---|---|
   | Simple (direct) cremation | **$1,095** | Servicios básicos, conferencia de arreglos, traslado, almacenamiento, cremación, urna polímero, permiso |
   | Direct burial | **$1,995** | Traslado ≤30 mi, refrigeración ≤5 días, equipo y personal, permiso, transporte a cementerio ≤30 mi, ataúd metálico "Apollo Black" (no incluye cementerio/apertura de fosa) |
-  | Servicios completos / velación / pre-need / ship-out-in | PENDIENTE | Inland Memorial los ofrecía |
-- Servicio estrella / servicio a evitar: **estrella = servicios completos** (velación/capilla + entierro o cremación; precio PENDIENTE). Servicio a evitar: PENDIENTE.
+  | Simple cremation with private viewing | $1,495 | Simple + velación privada 1 h (≤15 personas) |
+  | Cremation with memorial service | $2,600 | Simple + servicio memorial ≤2 h |
+  | Traditional service followed by cremation | $2,795 | Embalsamado, velación/servicio, ataúd de alquiler |
+  | Graveside service (burial) | $2,495 | Servicio en cementerio + ataúd metálico |
+  | Traditional service with burial | $2,995 | Velación + servicio + ataúd metálico |
+  | Veteran packages | $1,250 / $2,500 / $4,000 | Urna con bandera, honores militares, cementerio nacional |
+  | Ship-out / ship-in | $1,995 / $1,795 | GPL |
+- Servicio estrella / servicio a evitar: **estrella = servicios completos** ($2,495–$2,995 según /pricing). Servicio a evitar: PENDIENTE.
   - Tensión a resolver en /strategy: la demanda de búsqueda está en cremación/"near me"; "servicios completos" casi no se busca como tal (se busca "funeral home"). Con $1,500/mes la entrada probable es cremación/entierro directo + "funeral home", y la venta de servicio completo ocurre en la llamada.
 - Diferenciadores (según sitio): familiar, licenciado, precio transparente, "sin upselling", tarifas de terceros explicadas por adelantado, capilla histórica.
 - Ofertas sostenibles: PENDIENTE (¿plan de pagos? ¿precio igualado? ¿pre-need con precio congelado?).
@@ -75,11 +81,11 @@ estado: onboarding
 - GBP: **ficha nueva** (separada de Inland Memorial). Verificada / reseñas / acceso PMM: PENDIENTE.
 
 ## Web y tracking
-- Plataforma / quién edita: PENDIENTE
-- Tag/GA4: PENDIENTE (verificar en /audit-landing)
-- Formulario → destino: PENDIENTE
+- Plataforma / quién edita: **WordPress + Elementor + LiteSpeed Cache**; quién edita: PENDIENTE
+- Tag/GA4: **❌ ninguno en el sitio** (audit-site.md 2026-10-01). Form Fill y Website Calls sin registros desde mediados de septiembre.
+- Formulario → destino: formulario de Elementor (Name, Phone, Email, Message) con reCAPTCHA, mensaje en la misma página (sin página de gracias); destino del email PENDIENTE
 - Requisitos de política / legales:
-  - **FTC Funeral Rule** y **California Business & Professions Code §7685** (desde 2019 las funerarias con sitio web deben publicar su General Price List online) → verificar que el GPL esté publicado; anuncios con precio deben coincidir con el GPL.
+  - **FTC Funeral Rule** y **California B&P §7685**: ✅ GPL publicado (PDF del 2026-03-25); los precios de direct cremation ($1,095) y direct burial ($1,995) coinciden con los anuncios.
   - Mostrar número de licencia FD en sitio y, idealmente, en anuncios.
   - Anuncios: tono sobrio; evitar urgencia agresiva tipo "oferta limitada".
 
@@ -90,14 +96,14 @@ estado: onboarding
 - [x] Cuenta 751-429-2721 encontrada en el MCC (Windsor). Pendiente: confirmar si "$2800" es facturación total con fee.
 - [ ] **Bloqueante**: tracking — GA4/Google Tag, destino de formularios, aceptación de número de reenvío (sin tracking no se lanza).
 - [ ] **Bloqueante**: GBP nuevo verificado + acceso PMM (activo de ubicación); confirmar que no quede duplicado con la ficha de Inland Memorial.
-- [ ] Precio y contenido del paquete de servicios completos (servicio estrella).
+- [x] Paquetes de servicios completos: publicados en /pricing ($2,495–$2,995).
 - [ ] Margen real por servicio y capacidad de casos/mes → recalcular CPL máximo (hoy supuesto $60).
 - [ ] Quién contesta de noche (director vs answering service).
-- [ ] Plataforma del sitio y quién lo edita.
+- [ ] Quién edita el sitio (WordPress/Elementor) y acceso de PMM para instalar el tag.
 - [ ] Ofertas sostenibles (plan de pagos, igualación de precio, pre-need con precio congelado) y competidores que reconoce el cliente.
-- [ ] Licencia vigente (FD#2240 vs FD#2486) y GPL publicado online (cumplimiento CA).
+- [x] Licencia vigente FD2486 (sitio) y GPL publicado online.
 - [ ] LSA: verificar si la categoría aplica en Riverside County.
-- [ ] Revalidar todo lo del sitio en /audit-landing (no se pudo leer directo).
+- [x] /audit-landing corrido (2026-10-01): 11/22, falta Google Tag.
 
 ## Fuentes
 - https://hemetaffordablecremation.com/ (vía snippets de búsqueda)

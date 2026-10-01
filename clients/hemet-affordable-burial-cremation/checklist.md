@@ -11,6 +11,9 @@ Responsables: PMM · Cliente · Jhombis (decisión).
 
 ## Fase 0 — Fundación / limpieza (bloqueante para Fase 1) · meta 2026-10-12
 ### Quick wins (día 1–2)
+- [ ] (PMM) **CRÍTICO: instalar el Google Tag (AW-) en todo el sitio** (WordPress). Hoy no hay ninguno (audit-site.md)
+- [ ] (PMM) Snippet de número de reenvío (Website Calls) funcionando con gclid
+- [ ] (PMM) Formulario de Elementor → redirección a /thank-you/ con la conversión Form Fill
 - [ ] (PMM) Pausar "Responsive Display - $300/mo" (0 conv en 90 días)
 - [ ] (PMM) Lista "PMM Universal" aplicada a nivel de cuenta **sin** `cheapest`, `county` ni `rental`
 - [ ] (PMM) Lista de nicho "Funeral - Hemet" (`data/negatives-nicho.txt`) aplicada a nivel de cuenta
@@ -34,12 +37,15 @@ Responsables: PMM · Cliente · Jhombis (decisión).
 - [ ] (PMM) GBP nuevo vinculado como activo de ubicación; ficha de Inland Memorial desvinculada
 - [ ] (Cliente) Ficha de Inland Memorial cerrada o diferenciada correctamente (evitar duplicado en la misma dirección)
 ### Landing (ver pista Landing del roadmap)
-- [ ] (PMM) `/audit-landing` corrido y bloqueantes resueltos
-- [ ] (Cliente) GPL publicado online (CA B&P §7685); precios de anuncios = GPL
-- [ ] (PMM) Página de gracias del formulario operativa
+- [x] (PMM) `/audit-landing` corrido (2026-10-01, 11/22)
+- [ ] (PMM) Bloqueantes de audit-site.md resueltos (tag, página de gracias, reenvío, sin tráfico a la home)
+- [x] (Cliente) GPL publicado online (PDF 2026-03-25); los precios de los anuncios coinciden
+- [ ] (PMM) Score PageSpeed móvil real (la API devolvió 429 por cuota agotada)
 ### Operación y negocio
 - [ ] (Cliente) Quién contesta de noche (director vs answering service) y tiempo de respuesta a formularios
-- [ ] (Cliente) Margen por caso + precio del paquete de servicios completos → CPL máximo real (hoy supuesto $60)
+- [x] (Cliente) Precios de servicios completos publicados en /pricing ($2,495–$2,995)
+- [ ] (Cliente) Margen por caso por tipo de servicio → CPL máximo real (hoy supuesto $60)
+- [ ] (Jhombis) Confirmar relación con Sunflower Crematory / cuentas Sunflower del MCC (posible competencia en la misma subasta)
 - [ ] (Cliente) Capacidad de casos/mes
 - [ ] (Jhombis) Presupuesto confirmado: $1,500 de pauta vs "$2800" del nombre de la cuenta
 - [ ] (Jhombis) Aprobar agregar Valle Vista, East Hemet y Homeland a la geo
@@ -96,7 +102,9 @@ Responsables: PMM · Cliente · Jhombis (decisión).
 
 ## Pistas paralelas
 - [ ] (Cliente / PMM) Landing de servicios completos con precio "desde" y fotos reales · 2026-11-12
-- [ ] (Cliente / PMM) Landings /cremation y /burial con el término en el H1 · 2026-11-12
+- [ ] (Cliente / PMM) /cremation y /burial: H1 con ciudad, precios arriba, formulario arriba, email opcional · 2026-11-12
+- [ ] (Cliente) Testimonios en las páginas de servicio · 2026-11-12
+- [ ] (Cliente / PMM) Landing /veterans/ (paquetes de $1,250 / $2,500 / $4,000) · F2–F3
 - [ ] (Cliente) 10 reseñas en el GBP nuevo · 2026-12-31
 - [ ] (Cliente) Fotos reales de capilla e instalaciones (para extensiones de imagen y una futura PMax)
 - [ ] (PMM) Ad group en español "Funeraria" · desde 2026-11-12, solo si hay personal hispanohablante
