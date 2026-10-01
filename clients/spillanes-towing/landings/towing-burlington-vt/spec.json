@@ -1,0 +1,229 @@
+{
+  "idioma": "en",
+  "nicho": "towing",
+  "negocio": {
+    "nombre": "Spillane's Towing & Recovery",
+    "telefono": "+18022163105",
+    "telefono_display": "(802) 216-3105",
+    "direccion": {
+      "calle": "7 Commerce Ave",
+      "ciudad": "South Burlington",
+      "region": "VT",
+      "cp": "05403",
+      "pais": "US"
+    },
+    "licencia": "",
+    "horario": "Available 24/7",
+    "horario_schema": "Mo-Su 00:00-23:59",
+    "rating": {
+      "valor": "",
+      "total": "",
+      "fuente": ""
+    },
+    "logo_url": "https://spillanestowingrecovery.com/wp-content/uploads/2026/08/logo-crop.png",
+    "url_sitio": "https://www.spillanestowingandrecovery.com",
+    "gbp_url": "",
+    "schema_type": "AutomotiveBusiness"
+  },
+  "marca": {
+    "primario": "#2a3b8e",
+    "acento": "#e61123",
+    "texto": "#111827",
+    "fondo": "#ffffff"
+  },
+  "pagina": {
+    "slug": "towing-burlington-vt",
+    "url_final": "https://go.spillanestowingrecovery.com/towing-burlington-vt",
+    "servicio": "Towing",
+    "ciudad": "Burlington",
+    "keyword_principal": "towing near me",
+    "keywords_secundarias": [
+      "tow truck near me",
+      "towing company near me",
+      "towing burlington vt",
+      "24 hour towing"
+    ],
+    "title": "Towing Near You in Burlington, VT | 24/7 Tow Truck",
+    "meta_description": "24/7 towing near you in Burlington and South Burlington, VT. Local tow trucks and flatbeds from Spillane's, serving Chittenden County for 50+ years.",
+    "og_image": "",
+    "indexar": false
+  },
+  "hero": {
+    "h1": "24/7 Towing Near You in Burlington, VT",
+    "subtitulo": "Breakdowns, dead cars, accidents and vehicles that won't start. A local tow truck from our South Burlington yard, day or night.",
+    "oferta": "",
+    "bullets": [
+      "Local South Burlington crew, not a call center",
+      "21 trucks, including 16 flatbeds",
+      "Serving Chittenden County for 50+ years"
+    ],
+    "cta_llamar": "Call Now",
+    "cta_form": "Request a Tow",
+    "form_titulo": "Request a Tow",
+    "form_nota": "Tell us where you are and what you drive. For the fastest help, call.",
+    "imagen": {}
+  },
+  "confianza": [
+    {
+      "titulo": "24/7 dispatch",
+      "texto": "Day or night, every day"
+    },
+    {
+      "titulo": "21-truck fleet",
+      "texto": "1 wrecker, 16 flatbeds, 4 service trucks"
+    },
+    {
+      "titulo": "50+ years",
+      "texto": "Serving Chittenden County"
+    },
+    {
+      "titulo": "Local yard",
+      "texto": "7 Commerce Ave, South Burlington"
+    }
+  ],
+  "incluye": {
+    "h2": "Towing Services in Burlington and South Burlington",
+    "intro": "One call covers the situations where your car can't drive itself.",
+    "items": [
+      {
+        "titulo": "Breakdowns and dead cars",
+        "texto": "Car won't start or quit on the road? We tow cars, SUVs and light trucks to your home, your mechanic, the dealership or our own shop."
+      },
+      {
+        "titulo": "Accident towing",
+        "texto": "After a collision we clear the vehicle from the scene and take it where your insurer or body shop needs it."
+      },
+      {
+        "titulo": "Flatbed towing",
+        "texto": "AWD, low-clearance and luxury vehicles ride on a flatbed so the drivetrain isn't dragged."
+      }
+    ]
+  },
+  "por_que": {
+    "h2": "Why Drivers Call Spillane's",
+    "items": [
+      {
+        "titulo": "More trucks on the road",
+        "texto": "With a wrecker, 16 flatbeds and 4 light service trucks, we have the capacity to send a truck when smaller operations are tied up."
+      },
+      {
+        "titulo": "A local crew, not a call center",
+        "texto": "Your call goes to a towing company in South Burlington, not to a national dispatcher that resells the job to whoever is free."
+      },
+      {
+        "titulo": "Tow and repair in one place",
+        "texto": "Our South Burlington facility has service bays, so we can tow your car to our own shop if you need the repair too."
+      }
+    ]
+  },
+  "proceso": {
+    "h2": "How It Works",
+    "pasos": [
+      {
+        "titulo": "Call or send the form",
+        "texto": "Tell us where you are, what you drive and where it needs to go."
+      },
+      {
+        "titulo": "We dispatch a truck",
+        "texto": "We send a truck from our South Burlington yard and keep you posted on the phone."
+      },
+      {
+        "titulo": "Towed where you need it",
+        "texto": "Home, your mechanic, the dealership or our own service bays."
+      }
+    ]
+  },
+  "resenas": {
+    "h2": "What Our Customers Say",
+    "items": [
+      {
+        "texto": "They did a great job getting my car to the dealership. Very personable and considerate. Brookes also gave me a ride down the street to my house and cut me a deal on the initial service before the tow. Overall great experience for an unfortunate situation",
+        "autor": "Ethan R.",
+        "fuente": "Customer review published on spillanestowingrecovery.com",
+        "estrellas": 5
+      },
+      {
+        "texto": "Very happy with their service. Steve was particularly helpful. They helped tow my car and will help with the auto repair too.",
+        "autor": "Vineeta J.",
+        "fuente": "Customer review published on spillanestowingandrecovery.com",
+        "estrellas": 5
+      }
+    ]
+  },
+  "zona": {
+    "h2": "Towing Across Chittenden County",
+    "texto": "Dispatched from our yard at 7 Commerce Ave, South Burlington, to:",
+    "ciudades": [
+      "Burlington",
+      "South Burlington",
+      "Winooski",
+      "Essex Junction",
+      "Essex",
+      "Williston",
+      "Colchester",
+      "Shelburne",
+      "Jericho"
+    ],
+    "mapa_embed_url": ""
+  },
+  "faq": {
+    "items": [
+      {
+        "q": "Do you tow at night and on weekends?",
+        "a": "Yes. Spillane's dispatches tow trucks 24/7, including nights, weekends and holidays."
+      },
+      {
+        "q": "How much does a tow cost?",
+        "a": "It depends on the vehicle, the distance and the situation, like a winch-out or an accident. Call us with your location and we'll walk you through it."
+      },
+      {
+        "q": "What areas do you cover?",
+        "a": "Burlington, South Burlington, Winooski, Essex, Essex Junction, Williston, Colchester, Shelburne and Jericho, dispatched from 7 Commerce Ave."
+      },
+      {
+        "q": "Can you tow my AWD or low car?",
+        "a": "Yes. We run 16 flatbeds, which carry the whole vehicle off the ground."
+      },
+      {
+        "q": "Where can you take my car?",
+        "a": "Wherever you need it: home, your mechanic, the dealership, or our own service bays in South Burlington if you want us to fix it."
+      }
+    ]
+  },
+  "cta_final": {
+    "h2": "Stuck Somewhere in Chittenden County? Call Now.",
+    "texto": "A local Spillane's tow truck is ready to head your way."
+  },
+  "gracias": {
+    "slug": "towing-burlington-vt-thank-you",
+    "h1": "Thanks, we got your request",
+    "texto": "Our dispatcher will call you back. If your car is blocking traffic or you're somewhere unsafe, call us right now.",
+    "pasos": [
+      {
+        "titulo": "We review your request",
+        "texto": "A dispatcher checks your location and vehicle."
+      },
+      {
+        "titulo": "We call you",
+        "texto": "To confirm the tow and send a truck."
+      }
+    ]
+  },
+  "ghl": {
+    "form_id": "",
+    "form_name": "Towing Burlington Lead",
+    "form_height": 520,
+    "form_embed_html": "",
+    "chat_widget_html": ""
+  },
+  "tracking": {
+    "gtm_id": "",
+    "google_ads_id": "",
+    "conversion_label_form": "",
+    "conversion_label_call": "",
+    "ga4_id": ""
+  },
+  "legal": {
+    "privacidad_url": "https://spillanestowingrecovery.com/privacy-policy/"
+  }
+}

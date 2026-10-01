@@ -87,6 +87,16 @@ Base: `knowledge/checklists/setup-cuenta.md`, adaptada a una **cuenta ya activa*
 - [ ] (PMM + Cliente) Oferta concreta en hero y anuncios (tras confirmación)
 - [ ] (Cliente → PMM) 4–6 reseñas reales con ciudad + fotos de flota en la landing: 2026-11-12
 
+## Pista Landing GHL (`landings/README.md`)
+- [ ] (Jhombis) Confirmar el dominio de las landings GHL (propuesto: go.spillanestowingrecovery.com)
+- [ ] (Cliente/PMM) CNAME del subdominio a GHL y SSL activo
+- [ ] (PMM) Formulario GHL (≤4 campos + ocultos gclid/utm_source/utm_campaign/utm_term) → `ghl.form_id` en los 3 specs y regenerar — **bloqueante QA**
+- [ ] (PMM) Conversión de formulario: GTM (`tracking.gtm_id`) o AW-ID + label → regenerar — **bloqueante QA**
+- [ ] (PMM) Conversión por clic en llamada (`conversion_label_call` o GTM)
+- [ ] (PMM) Montar towing, accident-towing-winch-out y flatbed-towing + sus páginas de gracias en GHL
+- [ ] (PMM) Verificación §7 de setup-gohighlevel.md (gclid de prueba, Tag Assistant, PageSpeed ≥70)
+- [ ] (PMM) Actualizar las URLs finales en strategy.md cuando estén publicadas
+
 ## Pista Reputación
 - [ ] (Cliente) Pedido de reseña por SMS o QR a cada trabajo voluntario: desde 2026-10-13
 - [ ] (PMM) Responder reseñas negativas en el GBP (requiere acceso)

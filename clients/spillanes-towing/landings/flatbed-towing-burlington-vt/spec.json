@@ -1,0 +1,228 @@
+{
+  "idioma": "en",
+  "nicho": "towing",
+  "negocio": {
+    "nombre": "Spillane's Towing & Recovery",
+    "telefono": "+18022163105",
+    "telefono_display": "(802) 216-3105",
+    "direccion": {
+      "calle": "7 Commerce Ave",
+      "ciudad": "South Burlington",
+      "region": "VT",
+      "cp": "05403",
+      "pais": "US"
+    },
+    "licencia": "",
+    "horario": "Available 24/7",
+    "horario_schema": "Mo-Su 00:00-23:59",
+    "rating": {
+      "valor": "",
+      "total": "",
+      "fuente": ""
+    },
+    "logo_url": "https://spillanestowingrecovery.com/wp-content/uploads/2026/08/logo-crop.png",
+    "url_sitio": "https://www.spillanestowingandrecovery.com",
+    "gbp_url": "",
+    "schema_type": "AutomotiveBusiness"
+  },
+  "marca": {
+    "primario": "#2a3b8e",
+    "acento": "#e61123",
+    "texto": "#111827",
+    "fondo": "#ffffff"
+  },
+  "pagina": {
+    "slug": "flatbed-towing-burlington-vt",
+    "url_final": "https://go.spillanestowingrecovery.com/flatbed-towing-burlington-vt",
+    "servicio": "Flatbed Towing",
+    "ciudad": "Burlington",
+    "keyword_principal": "flatbed towing",
+    "keywords_secundarias": [
+      "flatbed tow truck near me",
+      "awd towing",
+      "flatbed towing near me"
+    ],
+    "title": "Flatbed Towing in Burlington, VT | 16 Flatbeds 24/7",
+    "meta_description": "Flatbed towing in Burlington, VT for AWD, low-clearance and luxury cars. Spillane's runs 16 flatbeds from South Burlington, available 24/7.",
+    "og_image": "",
+    "indexar": false
+  },
+  "hero": {
+    "h1": "Flatbed Towing Near You in Burlington, VT",
+    "subtitulo": "AWD, low-clearance, luxury and damaged vehicles ride fully on the bed, with no wheels on the road and no wear on the drivetrain.",
+    "oferta": "",
+    "bullets": [
+      "16 flatbeds in our fleet",
+      "Local South Burlington crew",
+      "Available 24/7"
+    ],
+    "cta_llamar": "Call Now",
+    "cta_form": "Request a Flatbed",
+    "form_titulo": "Request a Flatbed",
+    "form_nota": "Tell us the vehicle and where it needs to go. For the fastest help, call.",
+    "imagen": {}
+  },
+  "confianza": [
+    {
+      "titulo": "24/7 dispatch",
+      "texto": "Day or night, every day"
+    },
+    {
+      "titulo": "21-truck fleet",
+      "texto": "1 wrecker, 16 flatbeds, 4 service trucks"
+    },
+    {
+      "titulo": "50+ years",
+      "texto": "Serving Chittenden County"
+    },
+    {
+      "titulo": "Local yard",
+      "texto": "7 Commerce Ave, South Burlington"
+    }
+  ],
+  "incluye": {
+    "h2": "When You Need a Flatbed",
+    "intro": "Some vehicles shouldn't be towed with wheels on the road.",
+    "items": [
+      {
+        "titulo": "AWD and 4WD vehicles",
+        "texto": "Towing an all-wheel-drive car on two wheels can damage the drivetrain. A flatbed carries all four off the ground."
+      },
+      {
+        "titulo": "Low-clearance and luxury cars",
+        "texto": "Sports cars and lowered vehicles are loaded carefully so nothing scrapes."
+      },
+      {
+        "titulo": "Damaged or non-rolling vehicles",
+        "texto": "Cars after an accident or with locked wheels go on the bed instead of being dragged."
+      }
+    ]
+  },
+  "por_que": {
+    "h2": "Why Drivers Call Spillane's",
+    "items": [
+      {
+        "titulo": "More trucks on the road",
+        "texto": "With a wrecker, 16 flatbeds and 4 light service trucks, we have the capacity to send a truck when smaller operations are tied up."
+      },
+      {
+        "titulo": "A local crew, not a call center",
+        "texto": "Your call goes to a towing company in South Burlington, not to a national dispatcher that resells the job to whoever is free."
+      },
+      {
+        "titulo": "Tow and repair in one place",
+        "texto": "Our South Burlington facility has service bays, so we can tow your car to our own shop if you need the repair too."
+      }
+    ]
+  },
+  "proceso": {
+    "h2": "How It Works",
+    "pasos": [
+      {
+        "titulo": "Call or send the form",
+        "texto": "Tell us the vehicle, where it is and where it needs to go."
+      },
+      {
+        "titulo": "We send a flatbed",
+        "texto": "One of our 16 flatbeds heads out from South Burlington."
+      },
+      {
+        "titulo": "Delivered safely",
+        "texto": "Home, your mechanic, the dealership or our own service bays."
+      }
+    ]
+  },
+  "resenas": {
+    "h2": "What Our Customers Say",
+    "items": [
+      {
+        "texto": "They did a great job getting my car to the dealership. Very personable and considerate. Brookes also gave me a ride down the street to my house and cut me a deal on the initial service before the tow. Overall great experience for an unfortunate situation",
+        "autor": "Ethan R.",
+        "fuente": "Customer review published on spillanestowingrecovery.com",
+        "estrellas": 5
+      },
+      {
+        "texto": "Very happy with their service. Steve was particularly helpful. They helped tow my car and will help with the auto repair too.",
+        "autor": "Vineeta J.",
+        "fuente": "Customer review published on spillanestowingandrecovery.com",
+        "estrellas": 5
+      }
+    ]
+  },
+  "zona": {
+    "h2": "Towing Across Chittenden County",
+    "texto": "Dispatched from our yard at 7 Commerce Ave, South Burlington, to:",
+    "ciudades": [
+      "Burlington",
+      "South Burlington",
+      "Winooski",
+      "Essex Junction",
+      "Essex",
+      "Williston",
+      "Colchester",
+      "Shelburne",
+      "Jericho"
+    ],
+    "mapa_embed_url": ""
+  },
+  "faq": {
+    "items": [
+      {
+        "q": "Why does my AWD car need a flatbed?",
+        "a": "Towing an AWD vehicle with two wheels on the ground can strain the drivetrain. A flatbed lifts the whole car."
+      },
+      {
+        "q": "Do you have a flatbed available now?",
+        "a": "We run 16 flatbeds, so there's a good chance one is nearby. Call and we'll tell you when it can get to you."
+      },
+      {
+        "q": "Can you move a car that doesn't roll?",
+        "a": "Yes. Damaged vehicles and cars with locked wheels are winched onto the bed."
+      },
+      {
+        "q": "What areas do you cover?",
+        "a": "Burlington, South Burlington, Winooski, Essex, Essex Junction, Williston, Colchester, Shelburne and Jericho."
+      },
+      {
+        "q": "How much does flatbed towing cost?",
+        "a": "It depends on the vehicle and the distance. Call us with the details and we'll walk you through it."
+      }
+    ]
+  },
+  "cta_final": {
+    "h2": "Need a Flatbed in Chittenden County? Call Now.",
+    "texto": "One of Spillane's 16 flatbeds is ready to head your way."
+  },
+  "gracias": {
+    "slug": "flatbed-towing-burlington-vt-thank-you",
+    "h1": "Thanks, we got your request",
+    "texto": "Our dispatcher will call you back. For the fastest help, call us now.",
+    "pasos": [
+      {
+        "titulo": "We review your request",
+        "texto": "A dispatcher checks the vehicle and route."
+      },
+      {
+        "titulo": "We call you",
+        "texto": "To confirm the tow and send a flatbed."
+      }
+    ]
+  },
+  "ghl": {
+    "form_id": "",
+    "form_name": "Flatbed Towing Lead",
+    "form_height": 520,
+    "form_embed_html": "",
+    "chat_widget_html": ""
+  },
+  "tracking": {
+    "gtm_id": "",
+    "google_ads_id": "",
+    "conversion_label_form": "",
+    "conversion_label_call": "",
+    "ga4_id": ""
+  },
+  "legal": {
+    "privacidad_url": "https://spillanestowingrecovery.com/privacy-policy/"
+  }
+}

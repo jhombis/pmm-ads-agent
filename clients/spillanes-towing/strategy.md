@@ -82,6 +82,8 @@ Completo en `data/ads-search.md`: 3 RSA por ad group, 15 headlines (1 pinneada +
 - **Extensiones**: 4 sitelinks, 8 callouts, snippet de servicios, llamada, ubicación (requiere acceso al GBP) e imágenes de flota propia.
 
 ## Landings requeridas
+> 2026-10-01: las 3 landings de servicio están generadas para GoHighLevel en `landings/` (borradores, noindex) con URLs propuestas en `go.spillanestowingrecovery.com`: `/towing-burlington-vt` (AG1–AG4), `/accident-towing-winch-out-burlington-vt` (AG5), `/flatbed-towing-burlington-vt` (AG6). Cuando estén montadas, reemplazan las rutas `/towing/`, `/accident-recovery/` y `/flatbed-towing/` de esta tabla.
+
 | URL | Existe | Responsable | Bloqueante |
 |---|---|---|---|
 | `/` arreglada: H1 con servicio y zona, form de 3 campos arriba, quitar el link al GBP | Sí (con fallas) | PMM | **Sí** (auditoría: bloqueantes 1–2) |
