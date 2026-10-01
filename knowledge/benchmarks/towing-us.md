@@ -1,14 +1,17 @@
 ---
 nicho: towing
 pais: US
-cuentas: 21–30 por extracción (20–23 maduras)
+cuentas: 21–31 por extracción (19–23 maduras)
 periodo: últimos 90 días, extracciones del 2026-09-23 al 2026-10-01 (jun–oct 2026) + 12 meses de control
 actualizado: 2026-10-01
-fuente: Windsor.ai (google_ads). Consolidado de 5 extracciones hechas para 290 Tow, Precision Towing, Jerry's Towing, Spillane's y RR Roadside. Crudos en raw/
+fuente: Windsor.ai (google_ads). Consolidado de 7 extracciones hechas para 290 Tow, Precision Towing, Jerry's Towing, Spillane's, RR Roadside, JQ Towing y Jump Towing. Crudos en raw/. Cuentas identificadas por nombre (towing, tow, roadside, recovery) porque el MCC aún no tiene etiquetas nicho:/pais:
 ---
 # Benchmark towing US — MCC PMM (consolidado)
 
-Cinco sesiones sacaron este benchmark por separado sobre casi las mismas cuentas, y los números coinciden. Por eso cada métrica se da como **rango entre extracciones** en lugar de recalcular percentiles. Para un cliente nuevo, usa la columna de **mediana** de la tabla de cuentas maduras y la de **cohorte nueva** en sus primeros 60 días.
+Siete sesiones sacaron este benchmark por separado sobre casi las mismas cuentas, y los números coinciden. Por eso cada métrica se da como **rango entre extracciones** en lugar de recalcular percentiles. Qué columna usar para un cliente nuevo:
+- **CPL objetivo inicial de una cuenta nueva solo Search**: la mediana de *Solo Search* ($26–32) ±20% → **$21–38**.
+- **Mes 1**: espera la cohorte nueva (~$51–63).
+- **Meta a 6 meses**: la mediana de las cuentas maduras ($15–16).
 
 **Qué es "conversión" aquí**: el 70–100% son llamadas ("Calls from Ads" ≈ 86% del total, llamadas desde la web ≈ 9,5%, formularios ≈ 4,6%). El CPL es **costo por llamada**, no por lead calificado.
 
@@ -25,7 +28,11 @@ Cinco sesiones sacaron este benchmark por separado sobre casi las mismas cuentas
 
 CPL en el P25 = el mejor cuartil (el más bajo).
 
-**Solo Search** (n=26, 2026-09-29): CPC $5,14 / $7,04 / $8,98 · CVR 19,5% / 26,3% / 38,5% · CPL $13,45 / $26,15 / $46,72.
+**Solo Search** (24–30 cuentas): CPC $5,14–7,02 en la mediana · CVR 19,5% / 26% / 38,5% · **CPL $13,45–14,14 / $25,98–31,91 / $41,51–55,24**. El agregado da Search $19,23–19,30 contra PMax $13,22–13,43.
+
+**Solo PMax** (13 cuentas): CPL $8,92 / $15,35 / $18,19. Incluye las llamadas de Maps/GBP.
+
+**Impression share de Search**: mediana del 26%, con ~30% perdido por presupuesto y ~35% por ranking. Ninguna cuenta satura la demanda: en lo observado, más presupuesto escala casi linealmente.
 
 **12 meses** (21 cuentas): CPC $4,03 / $4,44 / $5,49 · CVR 21% / 29% / 35% · CPL $10,43 / $15,13 / $28,63.
 
@@ -39,7 +46,7 @@ CPL en el P25 = el mejor cuartil (el más bajo).
 ## Cohorte nueva (expectativa para un lanzamiento)
 | Cohorte | CPL | CPC | CVR |
 |---|---|---|---|
-| Meses 1–2 | mediana ≈ $51–63 (rango $31–81) | ≈ $7,6 | ≈ 19% |
+| Meses 1–2 (<60 días) | mediana ≈ $51–63 (P25 $35, P75 $68; rango $31–81) | $7,3–7,6 | 14–19% |
 | Search con ≥6 meses | mediana $14,57 (P25 $12,80, P75 $27,87) | $5,96 | 36,7% |
 
 Una cuenta nueva arranca con un CPL 3–4 veces el de una madura. La brecha está en la tasa de conversión, no en el CPC. Lo esperable:
@@ -65,12 +72,14 @@ El "$X/mo" del nombre de la cuenta es el precio del paquete (incluye el fee). Lo
 | Paquete de $799–1.500 (12 cuentas) | $5,51 | 29,4% | $18,74 |
 | Metro bilingüe de Texas (1 cuenta) | $3,32 | 26,8% | $12,38 |
 | Metros caras (Phoenix, LA, Bay Area, Tampa, Colorado Springs) | $6,5–10,9 | 14–26% | $30–66 |
+| Florida (3 cuentas, agregado) | $6,51 | 17% | $37,8 |
 
 En Tampa/FL, el CPC de "near me" en Search ronda los $10. El promedio de la cuenta sale más bajo porque lo baja PMax.
 
 ## Estructura que mejor funciona (cuartil superior, CPL $8–13)
 - **1 campaña Search de radio** ("ENHPRM Radius") con **1 ad group consolidado y 5–16 keywords**. Dos o tres términos hacen el 80% del volumen. Ninguna cuenta top usa SKAG.
-- En mercados hispanos, un ad group separado en español.
+- En mercados hispanos (TX, CA, FL), un ad group separado en español. Fuera de ellos gasta sin convertir.
+- Con $10–25/día ya se logra un CPL de $13, siempre que la cuenta sea madura y use Maximizar conversiones.
 - **Puja: Maximizar conversiones** en todas las cuentas top, sin tCPA en la mayoría (4 cuentas con tCPA de $12–15, todas en la mitad buena).
   - Maximizar clics: las 3 cuentas que lo usan tienen un CPL de $70–83.
   - Puja por impression share: CPL de $27,68.
@@ -82,7 +91,9 @@ En Tampa/FL, el CPC de "near me" en Search ronda los $10. El promedio de la cuen
   | Frase | 7 | $17,36 | 32,1% |
   | Exacta | 2 | $18,36 | 40,8% |
 
-  El 23% del gasto de Search del nicho ($5.166) se fue en términos de búsqueda con 0 conversiones. **Los datos respaldan frase por defecto para cuentas nuevas** (estándar PMM n.º 2).
+  Otra extracción (31 cuentas) dio exacta $18,0 · amplia $21,2 · frase $24,9. **Las diferencias de CPL entre match types son chicas y cambian de signo según la extracción.** Lo que sí es consistente es el desperdicio en amplia: el 23% del gasto de Search del nicho ($5.166) se fue en términos con 0 conversiones, sobre todo competidores, otras ciudades y servicios no ofrecidos.
+
+  La razón para usar **frase por defecto** en cuentas nuevas (estándar PMM n.º 2) es controlar ese desperdicio, no esperar un CPL más bajo. La marca propia en exacta convierte a ~$7–14.
 - **Keywords de ciudad** ("tow truck / towing + ciudad + estado"): CPL ≈ $8.
 - **PMax**: está en 4–5 de las 7–8 mejores cuentas, siempre después de 6–12 meses de Search estable.
   - Reporta un CPL de $6–14, pero incluye acciones de Maps y la calidad de esas conversiones no está validada.
@@ -131,20 +142,24 @@ Windsor no expone las listas de negativas. Esto sale de términos con gasto y 0 
 |---|---|---|---|---|---|
 | Aseguradoras, motor clubs y planes de fabricante | aaa, geico, allstate, progressive, state farm, usaa, carvana, toyotacare, mopar, onstar, lincoln, bridgestone, carshield, bristol west, root, caa, road ranger, freeway assistance | $257 | $32 / 18% | $199 | siempre |
 | "phone number" / "número de teléfono" | — | $347 | $43 / 13% | $250 | siempre |
-| Batería y jump start como producto | car jumper, jump starter, jump box, battery pack, battery change | $406 | $45 / 14% | $336 | siempre |
-| Gasolina | ran out of gas, emergency gas | $119 | $60 | $95 | siempre |
+| Batería y jump start como **producto** | car jumper, jump starter, jump box, battery pack, battery change/replacement | $406 | $45 / 14% | $336 | siempre |
+| Gasolina, jump o lockout como **servicio** | ran out of gas, emergency gas, need a jump, jump start, lockout | $119 (gasolina) | $60 | $95 | **solo si el cliente no ofrece roadside**; si lo ofrece, son servicios válidos |
 | Tiendas de llantas | tire shop, tire place, discount tire, big o tires | — | tema llantas $520, $27 | — | mantener "flat tire" si hay roadside |
 | Compra o alquiler de trailers y RV | for sale, rental, hitch, dolly, hauler, toy hauler, cargo trailer, moving | $80 | $80 | — | siempre |
 | Long distance towing | — | $46 | 1 conv. | — | salvo cobertura interestatal |
 | Motorcycle towing | — | $68 | $23 | — | salvo que tenga el equipo |
 | Junk, cash for cars, salvage, scrap, we buy | — | $51 | — | — | siempre |
-| Impound, repo, "car was towed", tow yard / lot | — | — | — | — | siempre |
+| Impound, repo, "car was towed", tow yard / lot | find my towed car, police | — | — | — | siempre |
+| Renta, equipo y transporte | u haul, penske, ryder, hertz, enterprise, jerr dan, copart, parts, car hauler, auto transportation, car delivery service, flatbed equipment | — | — | — | siempre |
+| Talleres | mechanic, car repair, shop, pep boys, firestone | — | — | — | siempre |
+| Marcas de auto y dealer | ford, chevy, toyota, honda, tesla, dealer, carmax | — | — | — | siempre (plantilla) |
+| Ciudades o estados fuera del área | "towing arizona", ciudades vecinas fuera del radio | — | — | — | por cuenta |
 | Empleo y DIY | — | — | — | — | siempre (lista universal) |
-| Informacionales | "why won't my car start" | — | — | — | siempre |
+| Informacionales | "why won't my car start", "average tow cost", "tow truck backing up" | — | — | — | siempre |
 
 - **Competidores locales por nombre**: es el desperdicio recurrente más grande y aparece en todas las cuentas con amplia. La lista se arma por cuenta.
 - **Idiomas sin anuncio** (coreano; español si no hay ad group ES), en mercados metro.
-- **Plantilla ENHPRM**: ~450 negativas en amplia.
+- **Plantilla base del MCC**: ~190 términos a nivel campaña (presente en 28 de 31 cuentas); la versión ENHPRM tiene ~450 en amplia. Con esa lista aplicada, el desperdicio residual viene sobre todo de competidores locales, ciudades fuera del área y "grua" suelto.
 
 ## Errores comunes en las cuentas del P25
 - **Maximizar clics o puja por IS** como estrategia sostenida: CPL de $70–83.
@@ -154,11 +169,14 @@ Windsor no expone las listas de negativas. Esto sale de términos con gasto y 0 
 - **Metro cara con presupuesto de paquete bajo**: CPC de $7–11+, CPL de $38–66, menos de 10 llamadas al mes y la cuenta no sale de aprendizaje. Si el CPC supera $9 en los primeros meses, agregar keywords de ciudad.
 - **IS perdido por ranking mayor al 40%**: la landing o el Quality Score son débiles.
 - **Display prendido en Search**: miles de clics basura.
+- **1 ad group en amplia con 50–100 keywords** sin historial de conversiones.
+- **Ad group en español fuera de mercados hispanos.**
+- **Geo filtrando fuera del país**: gasto en México o Canadá en cuentas de US. Usar "Presencia".
 - **Marca propia mezclada con genéricos** en el mismo ad group: infla la CVR aparente y esconde el CPL real de los genéricos. Pujar por competidores sin control es otro gasto con 0 conversiones.
 - **Fuga geográfica**: búsquedas de ciudades a más de 100 millas. Revisar "Presencia" y amplia.
 - **Conteo de conversiones inflado**: con más conversiones que clics, o una CVR de Search ≥ 40–50%, probablemente se cuentan como primarias las llamadas repetidas o cortas, o los clics en el teléfono. Antes de usar el CPL para decidir:
-  - verificar que el umbral de duración sea de 60–90 s
-  - verificar qué acciones son primarias
+  - verificar que el umbral de duración sea de 60–90 s; hay cuentas con llamadas web de 20 s
+  - verificar qué acciones son primarias; algunas cuentas tienen llamada y formulario como primarias a la vez
 
   La CVR baja (<10%) apunta a lo contrario: tracking de llamadas roto o tráfico de ticket bajo (lockout, llantas).
 
