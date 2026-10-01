@@ -40,11 +40,11 @@ estado: activo — brief preliminar (investigación sin entrevista)
 | Search IS | 17.4% |
 
 ### Hallazgos (ordenados por impacto en dinero)
-1. **Las 37 keywords están en amplia** (viola estándar PMM #2). Consecuencia directa:
+1. **Las ~100 keywords activas están en amplia** (37 con impresiones en 30 d) (viola estándar PMM #2). Consecuencia directa:
 2. **≈$184 de $340 de gasto visible en search terms (54%) fue desperdicio**: competidores ($62: Puckett's, 5 Star, TK, Always, Robertson, Harrington's Tire), tiendas de llantas / montaje ($41: Michelin, "nearest tire store", "tire service near me"), planes de asistencia de aseguradoras y fabricantes ($37: Lincoln, Bridgestone, ARP, CarShield, "roadside assistance phone number"), irrelevantes ($25: "reliable auto phone number", "reeds transmission", "highway emergency number"), informacionales ($12). Detalle en `data/2026-10-01-search-terms-con-gasto-30d.csv`.
 3. **Conversiones sospechosas**: 2 de las 8 vienen de "lincoln roadside assistance" y "harringtons tire choctaw" → probablemente llamadas mal dirigidas (gente buscando otro negocio). Revisar umbral de duración de "Calls from Ads" y escuchar/confirmar con cliente. El CPA real de leads calificados es peor que $81.
 4. **Fuga geográfica**: impresiones en Tulsa, Wichita KS, Stillwater, Enid, Tahlequah, Kingman AZ (con clic), Williams AZ, Hartford CT, Austin TX, Rogers AR, Puerto Rico. Indica "Presencia o interés" y/o radio muy amplio → pasar a **Presencia** (estándar #1).
-5. **Sin negativas efectivas**: aparecen "how do i change a tire", "jump starter", "walmart tire center", "autozone" → lista universal PMM no aplicada o incompleta.
+5. **Negativas**: ya hay 458 de campaña (plantilla ENHPRM, en amplia), pero siguen colándose "how do i change a tire", "jump starter", "walmart tire center", "autozone" → lista universal PMM no aplicada o incompleta.
 6. **Estructura**: un solo ad group mezclando towing, roadside y tire service; no hay H1 pinneado por tema posible. Propuesta para `/strategy`: campañas/ad groups Towing · Roadside (jump/lockout/fuel) · Mobile Tire.
 7. **Demanda en español** real (gruas, servicio de grúa en español — convirtió). Evaluar ad group ES si el cliente atiende en español.
 8. **Pacing bajo + IS 17%**: gasta ~58% del presupuesto con IS bajo → el límite no es presupuesto sino ranking/puja. Estrategia de puja actual **PENDIENTE** de revisar (no expuesta en Windsor).
