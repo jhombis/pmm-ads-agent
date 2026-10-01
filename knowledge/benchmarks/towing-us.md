@@ -33,7 +33,7 @@ fuente: Windsor.ai (google_ads)
 - Todo el MCC towing usa BROAD. La diferencia la hace la keyword que concentra el gasto: "towing near me" (CPL ~$13) contra "roadside assistance" (CPL $67–154).
 
 ## Keywords top por conversiones (agregado)
-1. towing near me (broad): 124 conv., CPL $13.3, presente en 8 cuentas
+1. towing near me (broad): 126 conv., CPL $13.9, presente en 9 cuentas
 2. marca propia (exact): CPL ~$14
 3. towing company near me / tow truck company: CPL $15–29
 4. road service near me: CPL $21

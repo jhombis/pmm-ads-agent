@@ -48,14 +48,14 @@ Spillane's arranca peor que los pares en el mes 1. El caso A muestra que un mes 
 ## Lo que hacen las cuentas que mejor rinden
 - **Estructura**: plantilla PMM "ENHPRM Radius", 1 campaña Search por cuenta con radio. 4 de las 8 del cuartil superior suman **PMax** una vez estable (aprox. 6–12 meses después del alta de Search).
 - **Puja**: todas en **Maximizar conversiones sin tCPA**. Nadie pasó a tCPA, ni siquiera con 100+ conv./mes. Oportunidad a evaluar en `/strategy`.
-- **Match types**: **todo el MCC towing está en BROAD**, incluido el cuartil superior. La diferencia no es el match type sino **qué keyword absorbe el gasto**: en las mejores cuentas es **"towing near me"** (Mosby's equivalente: $991 → 88 conv., CPL $11.3; otra: $387 → 31 conv., CPL $12.5). En Spillane's es **"roadside assistance"** ($677 → 10 conv., CPL $67.7).
+- **Match types**: **todo el MCC towing está en BROAD**, incluido el cuartil superior. La diferencia no es el match type sino **qué keyword absorbe el gasto**: en las mejores cuentas es **"towing near me"** (cuenta B: $991 → 88 conv., CPL $11.3; cuenta A: $387 → 31 conv., CPL $12.5). En Spillane's es **"roadside assistance"** ($677 → 10 conv., CPL $67.7).
 - **Geo**: radio alrededor de la base (plantilla "Radius"). Presencia vs. interés no se pudo leer por Windsor: verificar en la UI.
 - **Extensiones, programación, presupuestos por campaña**: no disponibles en Windsor. Pendiente cuando esté la API.
 
 ## Keywords que más convierten en el nicho (agregado, 90d, gasto > $30)
 | Keyword | Match | Gasto | Conv. | CPL | Cuentas |
 |---|---|---|---|---|---|
-| towing near me | BROAD | $1,647 | 124 | $13.3 | 8 |
+| towing near me | BROAD | $1,748 | 126 | $13.9 | 9 |
 | tow truck | BROAD | $257 | 5 | $51.3 | 1 |
 | [marca propia] | EXACT | $115 | 8 | $14.4 | 1 |
 | tow truck company (near me) | BROAD | $87 | 3 | $29 | 2 |
