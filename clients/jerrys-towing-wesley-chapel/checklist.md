@@ -30,7 +30,7 @@ Fase 5 (PMax) eliminada: no califica con este presupuesto (ver `roadmap.md`).
 - ⬜ (PMM) Campos ocultos UTM + GCLID en el formulario
 
 ### Negativas
-- ⬜ **[B]** (PMM) Lista universal PMM aplicada a nivel de cuenta, **con las excepciones** de este cliente (cheapest, insurance claim, "phone number" suelto) → `data/negatives-nicho.txt` · *requiere OK de Jhombis*
+- ⬜ **[B]** (PMM) Lista universal PMM aplicada a nivel de cuenta, **con las excepciones** de este cliente (cheapest, insurance claim, "phone number" suelto, county) → `data/negatives-nicho.txt` · *requiere OK de Jhombis*
 - ⬜ **[B]** (PMM) Lista del nicho + competidores + fuera de área aplicada (mismo archivo) · *requiere OK*
 - ⬜ (PMM) Negativas a nivel de ad group para que los grupos no se crucen (`strategy.md`)
 
@@ -66,7 +66,8 @@ Fase 5 (PMax) eliminada: no califica con este presupuesto (ver `roadmap.md`).
 - ⬜ Renombrar "Ad group 2 - Spanish" → **Grúa ES**; frase; activar o pausar según la regla
 - ⬜ Programación de anuncios según la respuesta del cliente (24/7 o 6:00–23:00)
 - ✅ Puja: Maximizar conversiones (sin tCPA) *(confirmado)*
-- ⬜ 3 RSA por ad group, H1 pinneado, 15H/4D, fuerza "Buena" o superior (`data/ads-search.md`) *(hoy: 1 RSA por grupo, GOOD / EXCELLENT)*
+- ⬜ Si la medición limpia deja <15 conv./mes → Maximizar clics con tope de CPC de $10 (CLAUDE.md #6)
+- ⬜ 1 RSA por ad group (máx. 2, CLAUDE.md #4), H1 pinneado, 15H/4D, fuerza "Buena" o superior (variante A de `data/ads-search.md`) *(hoy: 1 RSA por grupo, GOOD / EXCELLENT)*
 - ⬜ Extensiones: 4 sitelinks, 8 callouts, snippet de Servicios, llamada, ubicación (si hay GBP)
 - ⬜ URLs finales verificadas (200, https, sin redirect)
 - ✅ Presupuesto diario $25 *(confirmado)*
@@ -83,7 +84,7 @@ Fase 5 (PMax) eliminada: no califica con este presupuesto (ver `roadmap.md`).
 - ⬜ D14: keywords con gasto mayor a $80 y 0 conversiones marcadas para revisión
 - ⬜ D30: search terms revisados, negativas agregadas
 - ⬜ D30: keywords con 0 impresiones en 30 días pausadas
-- ⬜ D30: el RSA con peor rendimiento por grupo reemplazado; RSA antiguos de la plantilla pausados
+- ⬜ D30: en Towing Near Me, pausar el peor de los 2 RSA solo si la diferencia es clara (con <50 clics es ruido)
 - ⬜ D30: reporte de calidad de leads del cliente recibido (≥50% reales)
 - ⬜ Vigilar la hora 5 (clics sin conversión) y el gasto diario menor a $20
 

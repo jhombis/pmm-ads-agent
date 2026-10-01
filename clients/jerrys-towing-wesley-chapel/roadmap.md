@@ -4,6 +4,8 @@ slug: jerrys-towing-wesley-chapel
 D0: 2026-10-01
 actualizado: 2026-10-01
 fase_actual: 0
+plan_es: https://claude.ai/artifact/4BPtSrAmvJSYaeFhXCKvBE
+plan_en: https://claude.ai/artifact/7SLqmrgbKmMYWC8AaPtjDC
 ---
 
 # Roadmap — Jerry's Auto Body Solutions & Towing Service
@@ -51,7 +53,7 @@ fase_actual: 0
 - **Qué se lanza** (sobre la campaña existente, sin crear otra):
   - Campaña renombrada a *Towing - Search - Radius*, $25/día, Maximizar conversiones, solo búsqueda, Presencia + 20 mi.
   - Ad groups: Towing Near Me (el actual "Ad group 1", renombrado), Cheap Towing, Roadside Assistance y Wesley Chapel Towing. Grúa ES queda activa solo si se cumple la regla.
-  - Broad → frase + exacta. Pausar 5 keywords genéricas. 3 RSA nuevas por grupo (`data/ads-search.md`) conviviendo con las actuales hasta 1,000 impresiones.
+  - Broad → frase + exacta. Pausar 5 keywords genéricas. 1 RSA nueva por grupo (variante A de `data/ads-search.md`; máx. 2 con la actual), según CLAUDE.md #4.
   - Extensiones: sitelinks, callouts, snippet, llamada. Ubicación solo si hay GBP.
 - **Riesgos**:
   - Mover keywords entre grupos y cambiar match type hace que Maximizar conversiones vuelva a aprender: esperar 1–2 semanas de CPL inestable. No reaccionar antes del D14.
@@ -78,7 +80,7 @@ fase_actual: 0
   - **Escenario con upgrade**: si el **2026-12-01** el paquete sube a ~$35/día en medios y el CPL está en ~$30 → ~35 conv./30 d. Con la regla de 30 días con datos + 2 semanas de margen, **tCPA alrededor del 2027-01-15**.
 - **Condición de paso**: ≥30 conversiones en una ventana de 30 días, con tracking verificado y calidad de lead confirmada.
 - **Acción**: tCPA = CPA real observado (no el deseado), presupuesto ajustado a la capacidad del cliente.
-- **Si no se cumple**: quedarse en Maximizar conversiones. **No forzar tCPA con 20 conv./mes.** Si la conversión de la landing está por debajo del 5% (hoy está en ~21%, así que no es el problema), revisar landing; si no, el limitante es el presupuesto → propuesta comercial de upgrade con datos de la Fase 2.
+- **Si no se cumple**: quedarse en Maximizar conversiones (o en Maximizar clics con tope de $10 si la medición limpia deja <15 conv./mes). **No forzar tCPA con 20 conv./mes.** Si la conversión de la landing está por debajo del 5% (hoy está en ~21%, así que no es el problema), revisar landing; si no, el limitante es el presupuesto → propuesta comercial de upgrade con datos de la Fase 2.
 
 ## Fase 4 — Remarketing
 - **Fecha estimada**: **no realista a corto plazo.** El tráfico pagado es de ~90 clics/mes y el orgánico del dominio es nuevo (08/2026), así que la audiencia de visitantes no llega a 1,000 en 30 días. Además, en towing el remarketing aporta poco: la necesidad es inmediata y no se reconsidera.
@@ -126,4 +128,6 @@ fase_actual: 0
 - **Fiestas (Thanksgiving, Navidad)**: más tráfico en la I-75 → más llamadas de roadside y towing.
 
 ## Historial de cambios
+- 2026-10-01: plan HTML ES + EN publicado con /informe (URLs en el front matter).
+- 2026-10-01: RSA a 1 por grupo (máx. 2) y puja condicionada a la medición, por las reglas nuevas de CLAUDE.md (#4, #6).
 - 2026-10-01: creado (D0 = 2026-10-01). Cuenta activa desde el 22/08; la Fase 0 corre con la campaña en vivo.

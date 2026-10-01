@@ -7,6 +7,7 @@
 # insurance claim   → accidentes: el cliente puede ayudar con el reclamo (PENDIENTE confirmar)
 # rental / rent     → neutral; se mantiene negativa salvo que ofrezcan auto de reemplazo
 # "phone number"    → no se usa suelta; ver bloque aseguradoras
+# county            → bloquearía "pasco county towing" (ad group Wesley Chapel Towing); se usan "city of" y el resto del bloque gobierno
 
 ## Nicho towing — compra/empleo/equipo (no es servicio)
 tow truck for sale

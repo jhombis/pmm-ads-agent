@@ -1,8 +1,8 @@
 ---
 cliente: Jerry's Auto Body Solutions & Towing Service
 slug: jerrys-towing-wesley-chapel
-actualizado: 2026-09-29
-version: 1
+actualizado: 2026-10-01
+version: 1.1
 supuestos:
   - Ticket promedio, margen y tasa de cierre desconocidos → CPL objetivo tomado del benchmark (Fishhawk + MCC), no de la economía del cliente
   - Radio real de servicio desconocido → se propone 20 mi desde 3645 New River Rd
@@ -21,7 +21,8 @@ supuestos:
 - **1 campaña Search** (la actual, renombrada) con **4 ad groups activos + 1 condicional** (Grúa ES). Sin marca, sin PMax, sin Display.
 - **Presupuesto: $25/día (~$760/mes)**, que es el del paquete de $1,500. No alcanza para más de una campaña (regla de 3× CPL/día = $115/día por campaña).
 - **CPL objetivo: $30–40** en la Fase 1 (actual: $38.50 en 28 días; Fishhawk Search: ~$31). Meta de la Fase 2: **≤ $30**.
-- Puja: **Maximizar conversiones** sin tCPA. **tCPA no es alcanzable** con este presupuesto (~20 conv./mes a $38). Para 30 conv./mes con CPL de $30 hace falta **~$30/día en medios**.
+- Puja: **Maximizar conversiones** sin tCPA, **condicionado a la medición** (CLAUDE.md #6): si al verificar las conversiones quedan <15 conv./mes reales (p. ej. si "Website Calls" es un clic en `tel:`), se pasa a **Maximizar clics con tope de CPC de $10** hasta volver a 15+. **tCPA no es alcanzable** con este presupuesto (~20 conv./mes a $38). Para 30 conv./mes con CPL de $30 hace falta **~$30/día en medios**.
+- RSA: **1 por ad group (máx. 2)** (CLAUDE.md #4: <$1,500/mes de pauta; con ~90 clics/mes un A/B es ruido).
 - Match: **frase por defecto + exacta en los 3–4 términos top**. Se migran las 13 keywords en broad.
 
 ## Campañas
@@ -63,7 +64,7 @@ supuestos:
 3. Renombrar "Ad group 1 - English" → **Towing Near Me** (conserva su historial). Agregar en frase y exacta las que hoy están en broad, en el mismo momento **pausar la versión broad** (no dejar duplicados compitiendo).
 4. Crear los ad groups **Cheap Towing**, **Roadside Assistance** y **Wesley Chapel Towing**. Mover `cheap towing near me` y `roadside assistance near me` a sus grupos (pausar en el grupo 1).
 5. Renombrar "Ad group 2 - Spanish" → **Grúa ES**, migrar a frase y pausar según la regla de activación.
-6. RSA: 3 por grupo (`data/ads-search.md`). Los RSA actuales se dejan corriendo hasta que los nuevos junten 1,000 impresiones; después se pausa el peor.
+6. RSA: **1 por ad group** (la variante A de `data/ads-search.md`). Towing Near Me conserva además su RSA actual (fuerza GOOD), máx. 2; Grúa ES conserva el suyo (EXCELLENT). Las variantes B y C quedan de reserva para cuando el volumen permita comparar.
 7. Geo: verificar Presencia y radio de 20 mi. Idioma: inglés + español (el grupo ES lo necesita).
 
 ## Keywords descartadas y por qué
@@ -79,7 +80,7 @@ supuestos:
 Detalle en `data/keywords.csv`.
 
 ## Copy
-En `data/ads-search.md`: 3 RSA por ad group (ángulos rapidez / precio / confianza), 15 headlines + 4 descripciones cada una, límites validados por script. Grúa ES en español.
+En `data/ads-search.md`: 3 variantes por ad group (ángulos rapidez / precio / confianza), 15 headlines + 4 descripciones cada una, límites validados por script. **Se activa 1 por grupo (la A); máx. 2** (CLAUDE.md #4). Grúa ES en español.
 Extensiones: 4 sitelinks, 8 callouts, snippet de Servicios (7), llamada (813) 381-0435, logo y nombre del negocio. **Ubicación: bloqueada hasta tener el GBP.**
 No se usan "licensed & insured", ETA, reseñas ni años de experiencia hasta que el cliente los confirme.
 
@@ -112,6 +113,7 @@ No se usan "licensed & insured", ETA, reseñas ni años de experiencia hasta que
 - **tCPA:** ~20 conv./mes como techo con el presupuesto actual.
 
 ## Riesgos y supuestos
+- **Negativas universales con excepciones:** "cheapest", "insurance claim", "phone number" suelto y "county" (bloquearía "pasco county towing") no se aplican en esta cuenta; detalle en `data/negatives-nicho.txt`.
 - **Economía del cliente:** con un ticket supuesto de $125 y margen del 50%, el CPL "cómodo" es de ~$11 y el de equilibrio ~$37. **Un CPL de $30–40 puede no ser rentable** si el cliente cobra tows locales baratos. Conseguir ticket y tasa de cierre es la prioridad comercial.
 - **Tracking:** si "Website Calls" resulta ser un clic en el teléfono, el CPL real es peor que $38.50 y Maximizar conversiones está optimizando hacia clics.
 - **Sin GBP ni reseñas:** peor CTR en Maps y en la landing, y sin LSA. El 52% de IS perdido por ranking no se resuelve solo con pujas.

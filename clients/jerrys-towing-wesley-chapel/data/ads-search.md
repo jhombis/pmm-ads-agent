@@ -7,7 +7,7 @@ actualizado: 2026-09-29
 
 # Anuncios — Towing Search
 
-Reglas aplicadas: 3 RSA por ad group; H1 pinneado = término del grupo (distinto en cada RSA); el resto rota. Cada RSA abre con un ángulo distinto (A rapidez, B precio, C confianza) para poder comparar. Solo se usan afirmaciones que están en el sitio o en el brief. **No se usan** "licensed & insured", tiempos de llegada (ETA), cantidad de reseñas ni años de experiencia hasta que el cliente los confirme; cuando lleguen, reemplazan a los headlines de menor rendimiento.
+Reglas aplicadas: 3 variantes escritas por ad group, **se activa 1 (la A) — máx. 2** por CLAUDE.md #4 (<$1,500/mes de pauta); H1 pinneado = término del grupo (distinto en cada RSA); el resto rota. Cada RSA abre con un ángulo distinto (A rapidez, B precio, C confianza) para poder comparar. Solo se usan afirmaciones que están en el sitio o en el brief. **No se usan** "licensed & insured", tiempos de llegada (ETA), cantidad de reseñas ni años de experiencia hasta que el cliente los confirme; cuando lleguen, reemplazan a los headlines de menor rendimiento.
 Límites validados por script: headlines ≤30, descripciones ≤90, sitelinks ≤25, callouts ≤25.
 
 ## Ad group: Towing Near Me
