@@ -7,5 +7,5 @@ torrance | PHRASE | campaña
 water cremation | PHRASE | campaña
 santana | PHRASE | campaña
 # Verificar con el cliente antes:
-# prepaid | PHRASE | campaña      <- solo si NO vende planes preneed
+# prepaid  -> NO: el cliente vende pre-planning (ver /pre-planning/)
 # funerales | PHRASE | campaña    <- depende de si atienden en español (grupo E pendiente)

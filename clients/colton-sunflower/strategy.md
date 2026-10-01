@@ -2,9 +2,9 @@
 cliente: Colton Sunflower Burial and Cremation
 slug: colton-sunflower
 actualizado: 2026-10-01
-version: 1
+version: 1.1
 supuestos:
-  - Sin audit-site.md: el proxy bloqueó coltonfuneral.com. Se asume que /cremation/ es la mejor landing de cremación y la home la de funeral/entierro.
+  - audit-site.md hecho el 2026-10-01 (12/22): landings y claims actualizados en v1.1.
   - Sin competitors.md: competidores tomados de search terms y Semrush.
   - Sin benchmark.md formal: se usan 4 funerarias del MCC (Search, últimos 30d).
   - Brief sin entrevista: ticket, margen, capacidad, idioma, mascotas, 24/7 y relación con Inland Memorial están PENDIENTES.
@@ -45,10 +45,10 @@ Patrón: todas las que convierten usan Maximizar conversiones, y su mejor keywor
 | Ad group | Keywords (match) | Vol. est. | Landing | H1 pinneado |
 |---|---|---|---|---|
 | **Cremation - Direct & Affordable** (renombrar el actual "Cremation Services") | [cremation near me], [cremation services near me], [direct cremation near me], [cremation san bernardino], "cremation services", "direct cremation", "crematorium near me", "simple cremation", "affordable/cheap/low cost cremation near me", "cremation services san bernardino", "cremation fontana", "cremation redlands", "colton cremation" | Alto (nacional 18k+); local bajo | /cremation/ | Cremation Services Near You |
-| **Cremation - Cost & Prices** (nuevo) | "cremation cost", "cremation cost near me", "cremation prices near me", "how much does cremation cost", "how much is cremation" | Alto | /cremation/ (ideal: sección de precios) | Cremation Cost in Your Area |
+| **Cremation - Cost & Prices** (nuevo) | "cremation cost", "cremation cost near me", "cremation prices near me", "how much does cremation cost", "how much is cremation" | Alto | **/pricing/** (existe, con 7 paquetes; falta formulario) | Cremation Cost in Your Area |
 | **Cremation With Service** (nuevo) | "cremation with memorial service", "cremation with viewing", "funeral and cremation services", "service and cremation" | Medio | /cremation/ | Cremation With Memorial |
 | **Funeral Home** (actual) | [funeral home near me], [funeral homes near me], "mortuary near me", "funeral homes in colton ca", "funeral homes in san bernardino ca", "funeral home san bernardino", "mortuary san bernardino", "funeral homes in fontana ca", "funeral homes in rialto ca", "funeral homes in redlands ca", "affordable funeral homes near me", "funeral packages", "funeral home prices" | Alto | / | Funeral Home in Colton, CA |
-| **Burial Services** (actual) | [burial services near me], "direct burial", "direct burial near me", "burial services", "affordable burial" | Medio | / (ideal: /burial/) | Burial Services Near You |
+| **Burial Services** (actual) | [burial services near me], "direct burial", "direct burial near me", "burial services", "affordable burial" | Medio | **/burial/** | Burial Services Near You |
 
 Detalle con volumen y CPC en `data/keywords.csv`.
 
@@ -83,16 +83,17 @@ No pujar por [sunflower cremation] si corresponde a Sunflower Riverside (cliente
 | funeraria cerca de mi (320) | Condicional: solo si atienden en español |
 
 ## Copy
-Completo en `data/ads-search.md`: 5 grupos × 15 headlines + 4 descripciones, con límites de caracteres validados, más extensiones. Los claims marcados `[C]` no se publican sin confirmación del cliente: family-owned, 24/7, on-site crematory, licencias, precio desde $X.
+Completo en `data/ads-search.md`: 5 grupos × 15 headlines + 4 descripciones, con límites de caracteres validados, más extensiones. **Actualización 2026-10-01:** el sitio confirma family-owned, 24/7, crematorio propio, licencia FD2479, no hidden fees y los precios ($1,175 cremación, $1,995 entierro). Esos claims ya no llevan `[C]`. Nuevo ad group candidato para F2: **Veteran Cremation** ($1,350 / $2,800).
 
 ## Landings requeridas
 | URL | Existe | Responsable | Bloqueante |
 |---|---|---|---|
 | coltonfuneral.com/ | Sí (URL final actual) | Cliente/PMM | No, pero falta auditar (proxy) |
 | coltonfuneral.com/cremation/ | Sí (URL final actual, 3 conv.) | Cliente/PMM | No, pero falta auditar |
-| Sección o página de **precios de cremación** | Desconocido | Cliente | Sí, para el grupo Cost & Prices: si el anuncio promete precio, la landing tiene que mostrarlo |
-| /burial/ | Desconocido | Cliente | No (fallback: home) |
-| Formulario medido (Form Fill) | No se mide | PMM | **Sí**: sin esto no se pasa a Max conversiones |
+| /pricing/ | **Sí** (Simple Cremation $1,175, Direct Burial $1,995, veteranos) | PMM/Cliente | Falta formulario |
+| /burial/ | **Sí** | PMM/Cliente | No (formulario al pie) |
+| Página de gracias + Form Fill | **No** (Elementor inline; /thank-you/ 404) | PMM | **Sí**: sin esto no se pasa a Max conversiones |
+| Formulario arriba en / , /cremation/, /pricing/ | No | PMM/Cliente | **Sí** (ver audit-site.md) |
 
 ## Presupuesto por fase
 | Fase | Total/mes | Por campaña | Condición para pasar |

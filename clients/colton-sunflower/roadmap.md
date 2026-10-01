@@ -21,7 +21,7 @@ fase_actual: 0
 | 4 — Remarketing (RLSA observación) | Evaluar 2026-11-14 | ⏳ |
 | 5 — Performance Max | No realista con el presupuesto actual | ⛔ |
 | 6 — Conversiones offline | Fuera de alcance | — |
-| Pista Landing | 2026-10-01 → 2026-10-15 (auditoría) | ⛔ (proxy) |
+| Pista Landing | 2026-10-01 → 2026-10-15 (bloqueantes) · F2–3 (mejoras) | 🔄 auditada 12/22 |
 | Pista LSA | No aplica (verificar) | — |
 
 ## Fase 0 — Rescate / fundación
@@ -83,9 +83,9 @@ fase_actual: 0
 - **Estado**: fuera de alcance (sin CRM). Interim: pedir al cliente que marque mensualmente cuáles llamadas fueron servicios contratados.
 
 ## Pista paralela — Landing
-- (PMM) **2026-10-08**: correr `/audit-landing` desde un entorno con acceso a coltonfuneral.com (el proxy lo bloquea aquí). ⚠️ bloqueante de Fase 0 solo en lo que toca al tracking (Form Fill).
-- (Cliente) **Fase 1–2**: página o sección de **precios de cremación**, necesaria para el grupo Cost & Prices. Hasta que exista, ese grupo apunta a /cremation/ con copy que invita a llamar por precios, sin prometer un precio publicado.
-- (Cliente) **Fase 2–3**: página /burial/; anti-spam en el formulario (necesario si algún día se va a PMax).
+- ✅ 2026-10-01 `/audit-landing`: 12/22, **requiere ajustes**. El sitio ya tiene /pricing/ con precios ($1,175 / $1,995) y /burial/.
+- ⚠️ Fase 0 (PMM, ~4 h): página /thank-you/ + redirect del formulario (Form Fill medible), formulario arriba en /, /cremation/ y /pricing/, Email y Mensaje opcionales.
+- Fase 2–3: reseñas de Google en el sitio, H1, botón de llamada sticky en móvil, caché de página (TTFB 1.3–3.5 s). Ya hay reCAPTCHA (sirve para PMax si algún día califica).
 
 ## Pista paralela — LSA
 - No aplica: las funerarias no figuran en las categorías de LSA que conocemos. (PMM) Verificar en la UI de LSA antes de descartarlo del todo.
@@ -94,4 +94,5 @@ fase_actual: 0
 - La mortalidad en EE. UU. sube en invierno (dic–feb), así que la demanda funeraria también. **Conviene salir de la Fase 1–2 antes de diciembre** para que Max conversiones ya haya aprendido cuando suba el volumen. Es una razón más para no alargar la Fase 0.
 
 ## Historial de cambios
+- 2026-10-01: pista Landing actualizada con audit-site.md.
 - 2026-10-01: creado. D0 = 2026-10-01 (cuenta heredada activa desde 2026-08-03). Ya hechos antes del roadmap: 76 negativas y 3 keywords del competidor pausadas.
