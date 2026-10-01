@@ -1,4 +1,5 @@
 {
+  "layout": "v2",
   "idioma": "en",
   "nicho": "towing",
   "negocio": {
@@ -58,27 +59,32 @@
       "Local South Burlington company for 50+ years"
     ],
     "cta_llamar": "Call Now",
-    "cta_form": "Request Recovery",
+    "cta_form": "Request Service",
     "form_titulo": "Request Recovery",
     "form_nota": "If you're on the road or the scene isn't safe, call us instead.",
-    "imagen": {}
+    "imagen": {
+      "src": "https://spillanestowingrecovery.com/wp-content/uploads/2026/08/spillanes-header.jpg",
+      "alt": "Spillane's Towing & Recovery truck",
+      "ancho": 1920,
+      "alto": 760
+    },
+    "badge": "24/7 Accident & Recovery"
   },
   "confianza": [
     {
       "titulo": "24/7 dispatch",
-      "texto": "Day or night, every day"
+      "texto": "Day or night, every day",
+      "icono": "clock"
     },
     {
       "titulo": "21-truck fleet",
-      "texto": "1 wrecker, 16 flatbeds, 4 service trucks"
+      "texto": "Incl. 16 flatbeds",
+      "icono": "truck"
     },
     {
       "titulo": "50+ years",
-      "texto": "Serving Chittenden County"
-    },
-    {
-      "titulo": "Local yard",
-      "texto": "7 Commerce Ave, South Burlington"
+      "texto": "Local to Chittenden County",
+      "icono": "calendar"
     }
   ],
   "incluye": {
@@ -86,16 +92,24 @@
     "intro": "For the jobs a standard tow can't handle.",
     "items": [
       {
-        "titulo": "Accident towing",
-        "texto": "We clear the vehicle from the scene with care and take it to the body shop, your insurer's lot or our own facility."
+        "titulo": "Accident Towing",
+        "texto": "Vehicle cleared from the scene with care and towed to the body shop or your insurer's lot.",
+        "icono": "crash"
       },
       {
-        "titulo": "Winch-outs",
-        "texto": "Slid into a ditch, a snowbank or soft ground? We winch the vehicle back onto solid road without adding damage."
+        "titulo": "Winch-Outs",
+        "texto": "Pulled out of a ditch or soft ground without adding damage.",
+        "icono": "hook"
       },
       {
-        "titulo": "4x4 and off-road recovery",
-        "texto": "Trucks and SUVs stuck on trails, fields or job sites, recovered and towed out."
+        "titulo": "Snowbank Recovery",
+        "texto": "Slid off the road in a Vermont storm? Our crews handle it day and night.",
+        "icono": "snow"
+      },
+      {
+        "titulo": "4x4 & Off-Road Recovery",
+        "texto": "Trucks and SUVs stuck on trails, fields or job sites, recovered and towed out.",
+        "icono": "truck"
       }
     ]
   },
@@ -104,17 +118,26 @@
     "items": [
       {
         "titulo": "More trucks on the road",
-        "texto": "With a wrecker, 16 flatbeds and 4 light service trucks, we have the capacity to send a truck when smaller operations are tied up."
+        "texto": "A wrecker, 16 flatbeds and 4 light service trucks, so a truck is free when smaller operations are tied up.",
+        "icono": "truck"
       },
       {
-        "titulo": "A local crew, not a call center",
-        "texto": "Your call goes to a towing company in South Burlington, not to a national dispatcher that resells the job to whoever is free."
+        "titulo": "Local, not a call center",
+        "texto": "Your call goes to a towing company in South Burlington, not a national dispatcher.",
+        "icono": "users"
       },
       {
         "titulo": "Tow and repair in one place",
-        "texto": "Our South Burlington facility has service bays, so we can tow your car to our own shop if you need the repair too."
+        "texto": "Our facility has service bays, so we can fix your car after the tow.",
+        "icono": "wrench"
+      },
+      {
+        "titulo": "Proudly local",
+        "texto": "Serving Burlington, Essex, Colchester, Williston and nearby towns for 50+ years.",
+        "icono": "pin"
       }
-    ]
+    ],
+    "intro": "Local, well-equipped and ready around the clock."
   },
   "proceso": {
     "h2": "How It Works",
@@ -148,7 +171,8 @@
         "fuente": "Customer review published on spillanestowingandrecovery.com",
         "estrellas": 5
       }
-    ]
+    ],
+    "intro": "Real customers, real tows around Burlington."
   },
   "zona": {
     "h2": "Towing Across Chittenden County",
@@ -164,7 +188,7 @@
       "Shelburne",
       "Jericho"
     ],
-    "mapa_embed_url": ""
+    "mapa_embed_url": "https://maps.google.com/maps?q=Chittenden%20County%2C%20VT&z=10&output=embed"
   },
   "faq": {
     "items": [
@@ -188,11 +212,13 @@
         "q": "How much does a winch-out cost?",
         "a": "It depends on how the vehicle is stuck and how far it needs to go. Call us with the details and we'll walk you through it."
       }
-    ]
+    ],
+    "h2": "Frequently Asked Questions"
   },
   "cta_final": {
-    "h2": "Off the Road or After a Crash? Call Now.",
-    "texto": "Spillane's recovery team is ready to head your way."
+    "h2": "We're Here 24/7.",
+    "texto": "Fast, local towing from South Burlington. Call now or request service online.",
+    "kicker": "Off the road or after a crash?"
   },
   "gracias": {
     "slug": "accident-towing-winch-out-burlington-vt-thank-you",
@@ -225,5 +251,8 @@
   },
   "legal": {
     "privacidad_url": "https://spillanestowingrecovery.com/privacy-policy/"
+  },
+  "topbar": {
+    "texto": "24/7 Towing & Recovery · Serving Chittenden County, VT"
   }
 }

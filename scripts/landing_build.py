@@ -5,6 +5,12 @@ Uso:
   python scripts/landing_build.py clients/<slug>/landings/<pagina>/spec.json
   python scripts/landing_build.py clients/<slug>/landings            # todas las páginas del cliente
 
+Layouts: por defecto (hero con formulario arriba) o "layout": "v2" en spec.json (barra fija de llamada, header con
+navegación, hero con imagen y 2 CTA, reseñas arriba, servicios con íconos, por qué, zona con mapa, FAQ en 2 columnas,
+CTA final oscuro con el formulario). v2 usa además: topbar.texto, hero.badge, confianza[].icono, incluye.items[].icono,
+por_que.items[].icono y cta_final.kicker. Íconos: truck, flatbed, clock, shield, users, star, pin, hook, crash, snow,
+wrench, calendar.
+
 Salida en la carpeta del spec:
   ghl-body.html          → GHL: elemento "Custom Code" (página en blanco, ancho completo)
   ghl-head.html          → GHL: Settings de la página → Head Tracking Code
@@ -217,6 +223,8 @@ def call_tracking_js(s):
 
 
 def body(s):
+    if s.get("layout") == "v2":
+        return body_v2(s)
     t = TXT[s.get("idioma", "en")]
     h = s.get("hero", {})
     neg = s.get("negocio", {})
@@ -275,6 +283,181 @@ def body(s):
     out.append(footer(s, t))
     out.append(f'<nav class="pmm-sticky">{call_btn(s, t, numero=False)}'
                f'<a class="pmm-btn pmm-btn-ghost" href="#pmm-form">{e(t["quote"])}</a></nav>')
+    out.append(call_tracking_js(s))
+    if g(s, "ghl.chat_widget_html"):
+        out.append(g(s, "ghl.chat_widget_html"))
+    out.append("</div>")
+    return "\n".join(x for x in out if x)
+
+
+# ── Layout v2 ("layout": "v2" en spec.json) ─────────────────────────────────────────────────────────
+# Estructura de landing de servicio urgente (referencia aprobada por Jhombis, oct-2026):
+# barra fija de llamada → header con navegación → hero (badge, H1, íconos de confianza, 2 CTA, imagen)
+# → reseñas → servicios con íconos → por qué elegirnos → zona con mapa → FAQ en 2 columnas
+# → CTA final oscuro con formulario corto → footer. El layout por defecto no cambia.
+TXT_V2 = {
+    "en": {"nav": [("pmm-services", "Services"), ("pmm-area", "Service Area"), ("pmm-why", "About"), ("pmm-faq", "FAQ")],
+           "request": "Request Service", "services": "Our Services", "why": "Why Choose Us", "final_kicker": "Need help now?"},
+    "es": {"nav": [("pmm-services", "Servicios"), ("pmm-area", "Zona"), ("pmm-why", "Nosotros"), ("pmm-faq", "Preguntas")],
+           "request": "Solicitar servicio", "services": "Nuestros servicios", "why": "Por qué elegirnos", "final_kicker": "¿Necesitas ayuda ya?"},
+}
+ICONS = {  # trazos simples 24×24, sin librerías
+    "truck": '<path d="M3 16V7h10v9M13 10h4l3 3v3h-7M3 16h1m4 0h5m4 0h3"/><circle cx="6.5" cy="16.5" r="1.8"/><circle cx="17.5" cy="16.5" r="1.8"/>',
+    "flatbed": '<path d="M2 15h13l3-5h3v5M2 15v2h19v-2M5 12h8v3H5z"/><circle cx="6" cy="18" r="1.6"/><circle cx="17" cy="18" r="1.6"/>',
+    "clock": '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+    "shield": '<path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/>',
+    "users": '<circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.4"/><path d="M15.5 14.2c2.9.2 5.5 2.7 5.5 5.8"/>',
+    "star": '<path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/>',
+    "pin": '<path d="M12 21s-7-6.1-7-11a7 7 0 0114 0c0 4.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/>',
+    "hook": '<path d="M12 3v9a4 4 0 11-4-4"/><path d="M9 3h6"/>',
+    "crash": '<path d="M4 15l2-5h8l3 5v3H4z"/><circle cx="7.5" cy="18" r="1.5"/><circle cx="15" cy="18" r="1.5"/><path d="M18 4l1.5 3M21 6.5l-3 .5M16 5l.5 2.5"/>',
+    "snow": '<path d="M12 2v20M4.9 6l14.2 12M19.1 6L4.9 18"/>',
+    "wrench": '<path d="M14.7 6.3a4 4 0 015 5L12 19l-4 1 1-4 7.7-7.7a4 4 0 01-2-2z"/>',
+    "calendar": '<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/>',
+}
+
+
+def icon(name, size=28):
+    p = ICONS.get(name or "", ICONS["star"])
+    return (f'<svg class="pmm-ic" width="{size}" height="{size}" viewBox="0 0 24 24" fill="none" stroke="currentColor" '
+            f'stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{p}</svg>')
+
+
+CSS_V2 = """
+.pmm-v2 .pmm-callbar{position:sticky;top:0;z-index:60;background:var(--p);color:#fff;font-size:14px}
+.pmm-v2 .pmm-callbar .pmm-w{display:flex;align-items:center;justify-content:center;gap:10px 22px;flex-wrap:wrap;min-height:44px;padding-top:6px;padding-bottom:6px}
+.pmm-v2 .pmm-callbar a{color:#fff;font-weight:800;font-size:17px;text-decoration:none;display:inline-flex;align-items:center;gap:8px}
+.pmm-v2 .pmm-callbar span{opacity:.85;font-size:13px}
+.pmm-v2 .pmm-nav{background:#111827;color:#fff}
+.pmm-v2 .pmm-nav .pmm-w{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px}
+.pmm-v2 .pmm-nav .pmm-logo{background:#fff;border-radius:8px;padding:4px 8px;color:var(--t)}
+.pmm-v2 .pmm-nav .pmm-links{display:none;gap:22px;font-size:15px}
+.pmm-v2 .pmm-nav .pmm-links a{color:#fff;text-decoration:none;opacity:.9}
+.pmm-v2 .pmm-nav .pmm-req{border:2px solid #fff;color:#fff;border-radius:8px;padding:9px 14px;font-weight:700;text-decoration:none;font-size:15px}
+.pmm-v2 .pmm-hero{background:#fff;padding:28px 0 0;overflow:hidden}
+.pmm-v2 .pmm-hero .pmm-w{grid-template-columns:1fr;gap:18px}
+.pmm-v2 .pmm-kicker{display:inline-block;background:var(--p);color:#fff;font-weight:800;font-size:13px;letter-spacing:.06em;text-transform:uppercase;border-radius:999px;padding:6px 14px;margin-bottom:14px}
+.pmm-v2 .pmm-hero h1{font-size:clamp(32px,6vw,54px);text-transform:none}
+.pmm-v2 .pmm-tico{display:grid;grid-template-columns:1fr 1fr;gap:12px 18px;margin:4px 0 22px}
+.pmm-v2 .pmm-tico div{display:flex;gap:10px;align-items:flex-start;font-size:14px;line-height:1.3}
+.pmm-v2 .pmm-tico b{display:block;font-size:15px}
+.pmm-v2 .pmm-ic{flex:none;color:var(--p)}
+.pmm-v2 .pmm-heroimg{margin:0;border-radius:14px 14px 0 0;max-height:300px}
+.pmm-v2 .pmm-heroimg img{width:100%%;height:100%%;max-height:300px;object-fit:cover}
+.pmm-v2 .pmm-sec{padding:44px 0}
+.pmm-v2 .pmm-sec h2{text-align:center}
+.pmm-v2 .pmm-sec .pmm-lead{text-align:center;margin-left:auto;margin-right:auto}
+.pmm-v2 .pmm-svc{display:grid;gap:14px;grid-template-columns:1fr 1fr}
+.pmm-v2 .pmm-svc .pmm-card{text-align:center;padding:18px 14px}
+.pmm-v2 .pmm-svc .pmm-ic{color:var(--p);margin:0 auto 8px;display:block}
+.pmm-v2 .pmm-svc h3{font-size:17px;margin-bottom:4px}
+.pmm-v2 .pmm-svc p{font-size:14px;color:var(--mut)}
+.pmm-v2 .pmm-whyrow{display:grid;gap:16px;grid-template-columns:1fr}
+.pmm-v2 .pmm-whyrow div{display:flex;gap:12px;align-items:flex-start}
+.pmm-v2 .pmm-whyrow b{display:block}.pmm-v2 .pmm-whyrow p{font-size:14px;color:var(--mut)}
+.pmm-v2 .pmm-area{display:grid;gap:18px;grid-template-columns:1fr;align-items:start}
+.pmm-v2 .pmm-area .pmm-map{margin-top:0}
+.pmm-v2 .pmm-area ul{list-style:none;display:grid;gap:8px;grid-template-columns:1fr 1fr}
+.pmm-v2 .pmm-area li{display:flex;gap:10px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-weight:600}
+.pmm-v2 .pmm-faq{display:grid;gap:0 28px;grid-template-columns:1fr}
+.pmm-v2 .pmm-final2{background:#0f1a3d;color:#fff;padding:44px 0}
+.pmm-v2 .pmm-final2 .pmm-w{display:grid;gap:24px;grid-template-columns:1fr;align-items:center}
+.pmm-v2 .pmm-final2 small{text-transform:uppercase;letter-spacing:.08em;opacity:.8;font-weight:700}
+.pmm-v2 .pmm-final2 h2{font-size:clamp(30px,5vw,46px);color:#fff;margin:6px 0 10px;text-align:left}
+.pmm-v2 .pmm-final2 p{opacity:.9;margin-bottom:18px}
+.pmm-v2 .pmm-final2 .pmm-card{color:var(--t)}
+.pmm-v2 .pmm-final2 .pmm-card h2{color:var(--t);font-size:22px;margin:0 0 4px;text-align:left}
+.pmm-v2 .pmm-final2 .pmm-card p{opacity:1;margin-bottom:10px}
+.pmm-v2 .pmm-revs{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.pmm-v2 .pmm-foot{background:#111827;color:#cbd5e1;border-top:0;padding:28px 0}
+.pmm-v2 .pmm-foot a{color:#fff}
+@media(min-width:860px){
+.pmm-v2 .pmm-nav .pmm-links{display:flex}
+.pmm-v2 .pmm-hero{padding-top:40px}
+.pmm-v2 .pmm-hero .pmm-w{grid-template-columns:1.05fr .95fr;align-items:center}
+.pmm-v2 .pmm-heroimg{border-radius:14px;max-height:none;margin-bottom:36px}
+.pmm-v2 .pmm-heroimg img{max-height:420px}
+.pmm-v2 .pmm-tico{grid-template-columns:repeat(3,1fr)}
+.pmm-v2 .pmm-svc{grid-template-columns:repeat(4,1fr)}
+.pmm-v2 .pmm-whyrow{grid-template-columns:repeat(4,1fr)}
+.pmm-v2 .pmm-area{grid-template-columns:1.3fr 1fr}
+.pmm-v2 .pmm-area ul{grid-template-columns:1fr}
+.pmm-v2 .pmm-faq{grid-template-columns:1fr 1fr}
+.pmm-v2 .pmm-final2 .pmm-w{grid-template-columns:1.1fr .9fr}}
+"""
+
+
+def body_v2(s):
+    t, t2 = TXT[s.get("idioma", "en")], TXT_V2[s.get("idioma", "en")]
+    h, neg = s.get("hero", {}), s.get("negocio", {})
+    tel = g(s, "negocio.telefono")
+    m = {"primario": "#0b5cab", "acento": "#e8590c", "texto": "#111827", "fondo": "#ffffff"}
+    m.update({k: v for k, v in (s.get("marca") or {}).items() if k in m and v})
+    out = [f'<div class="pmm-lp pmm-v2">{css(s)}<style>' + " ".join(l.strip() for l in (CSS_V2 % m).splitlines()) + "</style>"]
+    # 1. Barra fija de llamada
+    out.append(f'<div class="pmm-callbar"><div class="pmm-w"><a href="{e(tel_href(tel))}" data-pmm-call>{PHONE_SVG}'
+               f'{e(h.get("cta_llamar") or t["call"])} {e(neg.get("telefono_display", tel))}</a>'
+               + (f'<span>{e(g(s, "topbar.texto"))}</span>' if g(s, "topbar.texto") else "") + "</div></div>")
+    # Header con navegación
+    logo = (f'<img src="{e(neg["logo_url"])}" alt="{e(neg.get("nombre"))}" width="150" height="40" style="max-height:40px;width:auto">'
+            if neg.get("logo_url") else e(neg.get("nombre")))
+    out.append(f'<header class="pmm-nav"><div class="pmm-w"><span class="pmm-logo">{logo}</span><nav class="pmm-links">'
+               + "".join(f'<a href="#{i}">{e(n)}</a>' for i, n in t2["nav"])
+               + f'</nav><a class="pmm-req" href="#pmm-form">{e(h.get("cta_form") or t2["request"])}</a></div></header>')
+    # 2. Hero
+    img = h.get("imagen") or {}
+    tico = "".join(f'<div>{icon(c.get("icono"), 26)}<span><b>{e(c.get("titulo"))}</b>{e(c.get("texto"))}</span></div>'
+                   for c in (s.get("confianza") or [])[:3])
+    out.append('<section class="pmm-hero"><div class="pmm-w"><div>'
+               + (f'<span class="pmm-kicker">{e(h["badge"])}</span>' if h.get("badge") else "")
+               + f'<h1>{e(h.get("h1"))}</h1>'
+               + (f'<p class="pmm-sub">{e(h.get("subtitulo"))}</p>' if h.get("subtitulo") else "")
+               + (f'<div class="pmm-offer">{e(h.get("oferta"))}</div>' if h.get("oferta") else "")
+               + (f'<div class="pmm-tico">{tico}</div>' if tico else "")
+               + '<div class="pmm-ctas">' + call_btn(s, t, label=h.get("cta_llamar"))
+               + f'<a class="pmm-btn pmm-btn-ghost" href="#pmm-form">{e(h.get("cta_form") or t2["request"])} →</a></div></div>'
+               + (f'<div class="pmm-heroimg"><img src="{e(img["src"])}" alt="{e(img.get("alt"))}" width="{e(img.get("ancho", 1200))}" '
+                  f'height="{e(img.get("alto", 800))}" fetchpriority="high"></div>' if img.get("src") else "")
+               + "</div></section>")
+    # 3. Reseñas arriba
+    revs = [x for x in (s.get("resenas") or {}).get("items", []) if x.get("texto")]
+    if revs:
+        cards = "".join(f'<div class="pmm-card pmm-rev"><span class="pmm-stars">{"★" * int(x.get("estrellas", 5))}</span>'
+                        f'<p>“{e(x["texto"])}”</p><small><b>{e(x.get("autor"))}</b>{" · " + e(x["fuente"]) if x.get("fuente") else ""}</small></div>'
+                        for x in revs)
+        out.append(section(s["resenas"].get("h2"), s["resenas"].get("intro"), f'<div class="pmm-revs">{cards}</div>'))
+    # 4. Servicios con íconos
+    inc = s.get("incluye") or {}
+    if inc.get("items"):
+        cards = "".join(f'<div class="pmm-card">{icon(i.get("icono"), 40)}<h3>{e(i.get("titulo"))}</h3><p>{e(i.get("texto"))}</p></div>'
+                        for i in inc["items"])
+        out.append(section(inc.get("h2") or t2["services"], inc.get("intro"), f'<div class="pmm-svc">{cards}</div>', True, "pmm-services"))
+    # 5. Por qué elegirnos
+    pq = s.get("por_que") or {}
+    if pq.get("items"):
+        row = "".join(f'<div>{icon(i.get("icono"), 32)}<span><b>{e(i.get("titulo"))}</b><p>{e(i.get("texto"))}</p></span></div>'
+                      for i in pq["items"])
+        out.append(section(pq.get("h2") or t2["why"], pq.get("intro"), f'<div class="pmm-whyrow">{row}</div>', False, "pmm-why"))
+    # 6. Zona con mapa
+    z = s.get("zona") or {}
+    if z.get("ciudades"):
+        mapa = (f'<div class="pmm-map"><iframe src="{e(z["mapa_embed_url"])}" loading="lazy" title="{e(z.get("h2") or t["area"])}" '
+                'referrerpolicy="no-referrer-when-downgrade"></iframe></div>') if z.get("mapa_embed_url") else ""
+        lista = '<ul>' + "".join(f'<li>{icon("pin", 20)}{e(c)}</li>' for c in z["ciudades"]) + "</ul>"
+        out.append(section(z.get("h2") or t["area"], z.get("texto"), f'<div class="pmm-area">{mapa}{lista}</div>', True, "pmm-area"))
+    # 7. FAQ en 2 columnas
+    f = s.get("faq") or {}
+    if f.get("items"):
+        out.append(section(f.get("h2") or t["faq"], None, '<div class="pmm-faq">' + "".join(
+            f'<details><summary>{e(q.get("q"))}</summary><p>{e(q.get("a"))}</p></details>' for q in f["items"]) + "</div>",
+            False, "pmm-faq"))
+    # 8. CTA final oscuro con formulario corto
+    c = s.get("cta_final") or {}
+    out.append(f'<section class="pmm-final2"><div class="pmm-w"><div><small>{e(c.get("kicker") or t2["final_kicker"])}</small>'
+               f'<h2>{e(c.get("h2") or h.get("h1"))}</h2>' + (f'<p>{e(c.get("texto"))}</p>' if c.get("texto") else "")
+               + call_btn(s, t, label=h.get("cta_llamar")) + "</div>" + form_block(s, t) + "</div></section>")
+    # 9. Footer
+    out.append(footer(s, t))
     out.append(call_tracking_js(s))
     if g(s, "ghl.chat_widget_html"):
         out.append(g(s, "ghl.chat_widget_html"))

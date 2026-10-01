@@ -37,6 +37,10 @@ description: Diseña landing pages por servicio listas para GoHighLevel (código
    - Nunca las dos cosas a la vez: se duplicarían las conversiones.
 8. **Formulario**: siempre el formulario nativo de GHL (`ghl.form_id`), con campos ocultos `gclid`, `utm_source`, `utm_campaign` y `utm_term`. El código pasa los parámetros de la URL al iframe. Si el cliente usa un dominio white-label para los formularios, pega su código de inserción en `ghl.form_embed_html`.
 
+## Layouts
+- **Por defecto**: hero con el formulario arriba (cumple el punto 4 tal cual).
+- **`"layout": "v2"`**: estructura de servicio urgente aprobada por Jhombis (oct-2026): barra fija de llamada, header con navegación, hero con imagen + 2 CTA, reseñas arriba, servicios con íconos, por qué elegirnos, zona con mapa, FAQ en 2 columnas, CTA final oscuro con el formulario y footer. El formulario queda abajo (el botón del hero baja hasta él); usarlo cuando la conversión principal es la llamada. Campos extra en `scripts/landing_build.py`.
+
 ## Pasos
 1. **Inventario de páginas**: lista `servicio → keyword principal → slug → URL final → ¿indexar?` y muéstrala en 1 tabla antes de escribir. Si Jhombis no corrige, sigue.
 2. **Spec por página**: copia `knowledge/landing-ghl/spec-ejemplo.json` a `clients/<slug>/landings/<slug-pagina>/spec.json`, borra `_nota` y completa todo. Copy:

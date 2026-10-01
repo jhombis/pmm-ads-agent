@@ -17,7 +17,7 @@
 - [x] Cada reseña indica su fuente (no inventadas)
 - [ ] Oferta concreta en el hero
 - [x] FAQ (contenido + schema)
-- [x] Contenido suficiente para indexar (636 palabras; ≥400 o noindex)
+- [x] Contenido suficiente para indexar (581 palabras; ≥400 o noindex)
 - [x] Todas las imágenes con alt
-- [x] Peso del bloque body 13 KB (<60 KB)
+- [x] Peso del bloque body 22 KB (<60 KB)
 - [x] Página de gracias definida

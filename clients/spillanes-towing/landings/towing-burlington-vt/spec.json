@@ -1,4 +1,5 @@
 {
+  "layout": "v2",
   "idioma": "en",
   "nicho": "towing",
   "negocio": {
@@ -58,27 +59,32 @@
       "Serving Chittenden County for 50+ years"
     ],
     "cta_llamar": "Call Now",
-    "cta_form": "Request a Tow",
+    "cta_form": "Request Service",
     "form_titulo": "Request a Tow",
     "form_nota": "Tell us where you are and what you drive. For the fastest help, call.",
-    "imagen": {}
+    "imagen": {
+      "src": "https://spillanestowingrecovery.com/wp-content/uploads/2026/08/spillanes-header.jpg",
+      "alt": "Spillane's Towing & Recovery truck",
+      "ancho": 1920,
+      "alto": 760
+    },
+    "badge": "24/7 Towing Service"
   },
   "confianza": [
     {
       "titulo": "24/7 dispatch",
-      "texto": "Day or night, every day"
+      "texto": "Day or night, every day",
+      "icono": "clock"
     },
     {
       "titulo": "21-truck fleet",
-      "texto": "1 wrecker, 16 flatbeds, 4 service trucks"
+      "texto": "Incl. 16 flatbeds",
+      "icono": "truck"
     },
     {
       "titulo": "50+ years",
-      "texto": "Serving Chittenden County"
-    },
-    {
-      "titulo": "Local yard",
-      "texto": "7 Commerce Ave, South Burlington"
+      "texto": "Local to Chittenden County",
+      "icono": "calendar"
     }
   ],
   "incluye": {
@@ -86,16 +92,24 @@
     "intro": "One call covers the situations where your car can't drive itself.",
     "items": [
       {
-        "titulo": "Breakdowns and dead cars",
-        "texto": "Car won't start or quit on the road? We tow cars, SUVs and light trucks to your home, your mechanic, the dealership or our own shop."
+        "titulo": "Breakdowns & Dead Cars",
+        "texto": "Won't start or quit on the road? We tow cars, SUVs and light trucks wherever you need.",
+        "icono": "truck"
       },
       {
-        "titulo": "Accident towing",
-        "texto": "After a collision we clear the vehicle from the scene and take it where your insurer or body shop needs it."
+        "titulo": "Accident Towing",
+        "texto": "We clear the vehicle from the scene and take it to your body shop or insurer's lot.",
+        "icono": "crash"
       },
       {
-        "titulo": "Flatbed towing",
-        "texto": "AWD, low-clearance and luxury vehicles ride on a flatbed so the drivetrain isn't dragged."
+        "titulo": "Flatbed Towing",
+        "texto": "AWD, low-clearance and luxury cars ride fully on the bed.",
+        "icono": "flatbed"
+      },
+      {
+        "titulo": "Winch-Outs",
+        "texto": "Stuck in a ditch, snowbank or soft ground? We pull you back onto the road.",
+        "icono": "hook"
       }
     ]
   },
@@ -104,17 +118,26 @@
     "items": [
       {
         "titulo": "More trucks on the road",
-        "texto": "With a wrecker, 16 flatbeds and 4 light service trucks, we have the capacity to send a truck when smaller operations are tied up."
+        "texto": "A wrecker, 16 flatbeds and 4 light service trucks, so a truck is free when smaller operations are tied up.",
+        "icono": "truck"
       },
       {
-        "titulo": "A local crew, not a call center",
-        "texto": "Your call goes to a towing company in South Burlington, not to a national dispatcher that resells the job to whoever is free."
+        "titulo": "Local, not a call center",
+        "texto": "Your call goes to a towing company in South Burlington, not a national dispatcher.",
+        "icono": "users"
       },
       {
         "titulo": "Tow and repair in one place",
-        "texto": "Our South Burlington facility has service bays, so we can tow your car to our own shop if you need the repair too."
+        "texto": "Our facility has service bays, so we can fix your car after the tow.",
+        "icono": "wrench"
+      },
+      {
+        "titulo": "Proudly local",
+        "texto": "Serving Burlington, Essex, Colchester, Williston and nearby towns for 50+ years.",
+        "icono": "pin"
       }
-    ]
+    ],
+    "intro": "Local, well-equipped and ready around the clock."
   },
   "proceso": {
     "h2": "How It Works",
@@ -148,7 +171,8 @@
         "fuente": "Customer review published on spillanestowingandrecovery.com",
         "estrellas": 5
       }
-    ]
+    ],
+    "intro": "Real customers, real tows around Burlington."
   },
   "zona": {
     "h2": "Towing Across Chittenden County",
@@ -164,7 +188,7 @@
       "Shelburne",
       "Jericho"
     ],
-    "mapa_embed_url": ""
+    "mapa_embed_url": "https://maps.google.com/maps?q=Chittenden%20County%2C%20VT&z=10&output=embed"
   },
   "faq": {
     "items": [
@@ -188,11 +212,13 @@
         "q": "Where can you take my car?",
         "a": "Wherever you need it: home, your mechanic, the dealership, or our own service bays in South Burlington if you want us to fix it."
       }
-    ]
+    ],
+    "h2": "Frequently Asked Questions"
   },
   "cta_final": {
-    "h2": "Stuck Somewhere in Chittenden County? Call Now.",
-    "texto": "A local Spillane's tow truck is ready to head your way."
+    "h2": "We're Here 24/7.",
+    "texto": "Fast, local towing from South Burlington. Call now or request service online.",
+    "kicker": "Need a tow now?"
   },
   "gracias": {
     "slug": "towing-burlington-vt-thank-you",
@@ -225,5 +251,8 @@
   },
   "legal": {
     "privacidad_url": "https://spillanestowingrecovery.com/privacy-policy/"
+  },
+  "topbar": {
+    "texto": "24/7 Towing & Recovery · Serving Chittenden County, VT"
   }
 }
