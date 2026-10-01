@@ -4,6 +4,8 @@ slug: spillanes-towing
 D0: 2026-10-01
 actualizado: 2026-10-01
 fase_actual: 0
+plan_es: https://claude.ai/artifact/5jRVHYZDmtkZjJ5NY8SZP5
+plan_en: https://claude.ai/artifact/EKPVNm3B52xtdNnq9aL9w7
 ---
 
 # Roadmap — Spillane's Towing & Recovery
@@ -141,3 +143,4 @@ fase_actual: 0
 
 ## Historial de cambios
 - 2026-10-01: creado (D0 = 2026-10-01).
+- 2026-10-01: plan ES/EN rehecho con la plantilla PMM (`plan-es.html`, `plan-en.html`) y republicado en las mismas URLs.
