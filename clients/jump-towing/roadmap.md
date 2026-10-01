@@ -4,6 +4,8 @@ slug: jump-towing
 D0: 2026-10-01
 actualizado: 2026-10-01
 fase_actual: 0
+plan_es: https://claude.ai/artifact/G41fXXn8ejrpzJN7JykQu5
+plan_en: https://claude.ai/artifact/U2e1QfnLLPYpek6vs2bGpn
 ---
 
 # Roadmap — Jump Towing LLC
