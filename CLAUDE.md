@@ -31,6 +31,7 @@ scripts/                  utilidades (API de Google Ads, PageSpeed, etc.)
 | `strategy.md` | /strategy | /roadmap, /build-campaign |
 | `roadmap.md` | /roadmap | /weekly-review |
 | `checklist.md` | /roadmap (crea), /weekly-review (actualiza) | todos |
+| `landings/<pagina>/` | /landing-ghl (spec.json + código para GoHighLevel) | /build-campaign (URLs finales) |
 | `log/YYYY-MM-DD.md` | /weekly-review | /weekly-review |
 | `data/` | exports CSV/JSON de la API | /weekly-review, /negatives |
 | `log/YYYY-MM-DD-diagnose.md` | /diagnose | /strategy, /weekly-review |
@@ -72,6 +73,7 @@ scripts/                  utilidades (API de Google Ads, PageSpeed, etc.)
 - **Google Ads API** vía MCC de PMM (developer token ya aprobado). Ver `docs/setup-google-ads-api.md`. Úsala para leer cuentas del MCC, Keyword Planner, crear campañas y exportar search terms.
 - **Semrush MCP**: `paid_search_research`, `competitors_research`, `keyword_research`, `site_audit`, `domain_overview`.
 - **Windsor.ai MCP**: datos históricos de Google Ads para dashboards y comparativas sin gastar cuota de API. Limitaciones conocidas (usar `keyword_text`, no `keyword`; campos de reportes distintos van en llamadas separadas; `budget_amount`/`target_cpa` son valores vigentes, no históricos; search terms cubren solo parte del gasto) en el playbook §2. Cuentas sin carpeta de cliente se diagnostican en `diagnostics/<cuenta>/`.
+- **GoHighLevel**: landings por servicio generadas con `/landing-ghl` (`scripts/landing_build.py`), montaje en `docs/setup-gohighlevel.md`.
 - **PageSpeed Insights** (`scripts/pagespeed.py`) y WebFetch para auditar landings.
 - **Meta Ad Library / búsqueda web** solo como referencia de competidores.
 
