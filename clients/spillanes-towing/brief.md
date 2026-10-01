@@ -29,11 +29,11 @@ estado: onboarding
 - Capacidad (trabajos/mes): PENDIENTE
 - **CPL máximo aceptable**: PENDIENTE (falta ticket). Referencia con supuestos: ticket $200 × margen 50% = $100; × cierre 70% × 0.3 ≈ **$21**. El CPA no-marca actual es ~$77, así que sin un ticket real más alto (accidentes, recovery, reparación posterior en el taller) la cuenta no pasa esta prueba. Es la prioridad #1 a confirmar.
 - Historial Google Ads: **cuenta 822-393-5903, ya en el MCC** ("Premium Local Listings 004044"). Una campaña Search activa desde 2026-08-20:
-  - $940 gastados, 79 clics, CPC $11.90, CTR 11.4%, 14 conv. (CPA $67), IS 40.7%. Puja: Maximizar conversiones.
+  - $940 gastados (todo en sept.), 79 clics, CPC $11.90, CTR 11.4%, 14 conv. (CPA $67), IS 40.7%. Puja: Maximizar conversiones.
   - **Todas las keywords en BROAD** (incumple el estándar 2). "roadside assistance" broad se lleva el 72% del gasto ($677).
   - Marca: ~$170 (18%) y 4 de las 14 conversiones, en una campaña genérica. Sin marca: ~$770 / 10 conv. ≈ **$77 por conversión**.
   - Desperdicio visible: términos de competidores ("handy towing", "greniers towing"), "caa roadside assistance" (aseguradora canadiense), "all service citgo bennington vermont" (fuera del área), "grua cerca de mi", "long distance towing" ($30), lockout y llantas.
-  - Gasto ~$680/mes, por debajo de los $989.
+  - Todo el gasto cayó en septiembre 2026 (agosto $0): ritmo real ~$940/mes ≈ presupuesto de $989.
 
 ## Operación
 - Horario / 24-7: declarado 24/7; quién contesta de noche: PENDIENTE (bloqueante para programar anuncios 24h)
