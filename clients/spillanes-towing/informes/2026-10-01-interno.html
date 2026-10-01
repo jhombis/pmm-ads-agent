@@ -1,0 +1,193 @@
+<title>Spillane's Towing — Informe PMM</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>/* Layout: single reading column, road-sign section markers, phase strip as a highway route */
+:root{
+  --bg:#f3f4f2; --surface:#ffffff; --fg:#1d2321; --muted:#5b6662; --line:#d6dbd8;
+  --sign:#1f6b45; --sign-fg:#ffffff; --amber:#b86e00; --amber-bg:#fff3dc;
+  --red:#b3261e; --red-bg:#fde8e6; --ok:#1f6b45; --ok-bg:#e3f2ea;
+  --display:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+  --body:"Barlow",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#141917; --surface:#1c2320; --fg:#e7ece9; --muted:#9aa6a1; --line:#2e3834;
+  --sign:#2f8a5c; --sign-fg:#f4fbf7; --amber:#f0a83a; --amber-bg:#3a2c14;
+  --red:#f08a80; --red-bg:#3b1d1a; --ok:#6fcf9b; --ok-bg:#173226; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#141917; --surface:#1c2320; --fg:#e7ece9; --muted:#9aa6a1; --line:#2e3834;
+  --sign:#2f8a5c; --sign-fg:#f4fbf7; --amber:#f0a83a; --amber-bg:#3a2c14;
+  --red:#f08a80; --red-bg:#3b1d1a; --ok:#6fcf9b; --ok-bg:#173226; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.55}
+.wrap{max-width:860px;margin:0 auto;padding-inline:20px;padding-block:32px 64px;display:grid;gap:40px}
+header.top{display:grid;gap:12px;border-bottom:3px solid var(--sign);padding-bottom:20px}
+.eyebrow{font-family:var(--display);text-transform:uppercase;letter-spacing:.08em;font-size:14px;color:var(--muted)}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(34px,6vw,52px);line-height:1;margin:0;text-wrap:balance}
+h2{font-family:var(--display);font-weight:700;font-size:28px;margin:0;line-height:1.1;text-wrap:balance;display:flex;align-items:center;gap:12px}
+h3{font-family:var(--display);font-weight:600;font-size:20px;margin:0}
+.marker{flex:none;background:var(--sign);color:var(--sign-fg);font-family:var(--display);font-size:15px;letter-spacing:.06em;padding:3px 10px;border-radius:4px;border:2px solid var(--sign-fg);box-shadow:0 0 0 2px var(--sign)}
+.meta{display:flex;flex-wrap:wrap;gap:8px 20px;color:var(--muted);font-size:14px}
+.meta b{color:var(--fg);font-weight:600}
+section{display:grid;gap:16px;min-width:0}
+p{margin:0;max-width:68ch}
+.lead{font-size:18px;max-width:68ch}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.kpi{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:14px 16px;display:grid;gap:2px}
+.kpi .v{font-family:var(--mono);font-size:24px;font-variant-numeric:tabular-nums}
+.kpi .l{font-size:13px;color:var(--muted)}
+.kpi .c{font-size:12px;font-family:var(--mono)}
+.bad{color:var(--red)} .warn{color:var(--amber)} .good{color:var(--ok)}
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:6px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:14px;min-width:520px}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-family:var(--display);text-transform:uppercase;letter-spacing:.05em;font-size:13px;color:var(--muted);font-weight:600}
+tr:last-child td{border-bottom:0}
+td.n{font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+ul.plain{margin:0;padding-left:20px;display:grid;gap:8px;max-width:72ch}
+.callout{border-left:4px solid var(--amber);background:var(--amber-bg);padding:14px 16px;border-radius:0 6px 6px 0;display:grid;gap:6px}
+.callout.red{border-color:var(--red);background:var(--red-bg)}
+.callout.ok{border-color:var(--ok);background:var(--ok-bg)}
+.route{display:grid;gap:0;border-left:4px dashed var(--line);margin-left:10px;padding-left:22px}
+.stop{position:relative;padding-block:10px;display:grid;gap:2px}
+.stop::before{content:"";position:absolute;left:-33px;top:15px;width:14px;height:14px;border-radius:50%;background:var(--surface);border:3px solid var(--muted)}
+.stop.now::before{border-color:var(--sign);background:var(--sign)}
+.stop.block::before{border-color:var(--red)}
+.stop .d{font-family:var(--mono);font-size:13px;color:var(--muted)}
+.stop .t{font-weight:600}
+.pill{display:inline-block;font-size:12px;font-family:var(--mono);padding:1px 8px;border-radius:999px;border:1px solid currentColor;white-space:nowrap}
+.checks{display:grid;gap:10px;margin:0;padding:0;list-style:none}
+.checks li{display:grid;grid-template-columns:22px 1fr;gap:10px;align-items:start;background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:12px 14px}
+.box{width:18px;height:18px;border:2px solid var(--muted);border-radius:3px;margin-top:3px}
+.checks b{display:block}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.two>div{min-width:0;display:grid;gap:8px;align-content:start}
+footer{color:var(--muted);font-size:13px;border-top:1px solid var(--line);padding-top:16px}
+code{font-family:var(--mono);font-size:.9em}
+</style>
+<div class="wrap">
+<header class="top">
+  <div class="eyebrow">Informe interno PMM · Google Ads</div>
+  <h1>Spillane's Towing &amp; Recovery</h1>
+  <div class="meta"><span>Cuenta <b>822-393-5903</b></span><span>South Burlington, VT</span><span>Fecha <b>2026-10-01</b></span><span>Fase actual <b>0, Fundación</b></span></div>
+</header>
+
+<section>
+  <h2><span class="marker">RESUMEN</span>Dónde estamos</h2>
+  <p class="lead">La cuenta ya está activa: una campaña Search con 6 semanas de vida y un solo mes con gasto. Convierte, pero cara. El CPL es de $67 contra una mediana de $16 en el towing maduro del MCC. La causa principal es de estructura: el 72% del gasto se va en "roadside assistance" en concordancia amplia. No es un problema de presupuesto ni de mercado. El plan es reestructurar la misma campaña, sin crear otra, y relanzar el 13 de octubre.</p>
+  <div class="kpis">
+    <div class="kpi"><span class="l">Gasto (sept.)</span><span class="v">$940</span><span class="c">presupuesto $989/mes</span></div>
+    <div class="kpi"><span class="l">Conversiones</span><span class="v">14</span><span class="c">13 llamadas · 1 form</span></div>
+    <div class="kpi"><span class="l">CPL</span><span class="v bad">$67</span><span class="c">MCC mediana $16</span></div>
+    <div class="kpi"><span class="l">CPC</span><span class="v bad">$11.90</span><span class="c">MCC mediana $5.05</span></div>
+    <div class="kpi"><span class="l">Cuota de impr.</span><span class="v">40.7%</span><span class="c">−37.6% ranking · −23.8% ppto</span></div>
+    <div class="kpi"><span class="l">Tráfico móvil</span><span class="v">99%</span><span class="c">78 de 79 clics</span></div>
+  </div>
+</section>
+
+<section>
+  <h2><span class="marker">CUENTA</span>Por qué el CPL es $67</h2>
+  <div class="tbl"><table>
+    <thead><tr><th>Hallazgo</th><th>Dato</th><th>Impacto</th></tr></thead>
+    <tbody>
+      <tr><td>"roadside assistance" BROAD absorbe el gasto</td><td class="n">$677 · 59 clics · 10 conv</td><td>Compite con AAA y aseguradoras. En el resto del MCC esa keyword rinde un CPL de $154</td></tr>
+      <tr><td>Todas las keywords en BROAD (26 positivas)</td><td class="n">7 con gasto</td><td>Incumple el estándar 2</td></tr>
+      <tr><td>Marca pagada en la campaña genérica</td><td class="n">~$170 · 18%</td><td>#1 orgánico en la marca; el tráfico es mayormente impound</td></tr>
+      <tr><td>Desperdicio visible en search terms</td><td class="n">~$120</td><td>CAA, Bennington, "grua", competidores, long distance, lockout, llantas</td></tr>
+      <tr><td>Landing sin H1 de servicio</td><td class="n">10/22</td><td>Relevancia baja → CPC alto y conversión 17.7% (MCC: 27%)</td></tr>
+    </tbody>
+  </table></div>
+  <div class="callout"><b>Ya existían 324 negativas</b><span>La campaña ya tenía negativas de marca, AAA, aseguradoras, impound y competidores. Propuse 240 nuevas en frase (universal + towing + nicho) y 3 pausas. <b>No se aplicó nada</b> por decisión de Jhombis. Archivo: <code>data/2026-10-01-negatives.txt</code>.</span></div>
+</section>
+
+<section>
+  <h2><span class="marker">MCC</span>Benchmark interno de towing</h2>
+  <p>30 cuentas de towing del MCC (23 maduras), últimos 90 días, vía Windsor.</p>
+  <div class="tbl"><table>
+    <thead><tr><th>Métrica</th><th>P25</th><th>Mediana</th><th>P75</th><th>Spillane's</th></tr></thead>
+    <tbody>
+      <tr><td>CPC</td><td class="n">$4.02</td><td class="n">$5.05</td><td class="n">$6.33</td><td class="n bad">$11.90</td></tr>
+      <tr><td>Tasa de conversión</td><td class="n">21%</td><td class="n">27%</td><td class="n">38%</td><td class="n warn">17.7%</td></tr>
+      <tr><td>CPL</td><td class="n">$12.45</td><td class="n">$16.01</td><td class="n">$32.07</td><td class="n bad">$67.15</td></tr>
+      <tr><td>Conv./mes</td><td class="n">17</td><td class="n">36</td><td class="n">54</td><td class="n">14</td></tr>
+      <tr><td>Cuota de impresiones</td><td class="n">22%</td><td class="n">27%</td><td class="n">32%</td><td class="n good">40.7%</td></tr>
+    </tbody>
+  </table></div>
+  <p>En las mejores cuentas el gasto se concentra en "towing near me" (CPL $13.9, presente en 9 cuentas). En Spillane's se va a "roadside assistance". Las altas de 2026 en sus meses 1–2 rondan CPL de $57–81, así que el arranque no es anómalo, pero sí peor que el de los pares.</p>
+</section>
+
+<section>
+  <h2><span class="marker">MERCADO</span>Competencia y landing</h2>
+  <div class="two">
+    <div>
+      <h3>Competencia</h3>
+      <ul class="plain">
+        <li>Semrush no tiene muestra de pagado en Burlington. Hay que exportar Auction Insights desde la UI.</li>
+        <li>Locales: Handy's (dueño del orgánico), Anytime (4.5★), Tailhook, Central Service.</li>
+        <li>Agregadores 855/888: STUCK ("$50 flat rate") y True Towing.</li>
+        <li>Ángulos libres para Spillane's: flota de 21 camiones / 16 flatbeds y "local, not a call center".</li>
+        <li>Amenaza principal: <b>3.2★ con 213 reseñas en Google</b>.</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Landing <span class="pill bad">10/22 · requiere ajustes</span></h3>
+      <ul class="plain">
+        <li>Sin H1 con servicio y zona.</li>
+        <li>Formulario de 6 campos al final de la página; sin página de gracias.</li>
+        <li>Link al GBP de 3.2★ (fuga).</li>
+        <li>Velocidad sin medir (PageSpeed 429, falta API key).</li>
+        <li>Faltan <code>/towing/</code>, <code>/accident-recovery/</code>, <code>/flatbed-towing/</code> y <code>/thank-you/</code>.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2><span class="marker">PLAN</span>Estrategia</h2>
+  <p>Una sola campaña Search no-marca con $32.50/día y Maximizar conversiones. Con este presupuesto no da para dividir por servicio. Las 7 keywords BROAD con gasto se pausan, y llamadas y formulario se miden con umbral de 60 s.</p>
+  <div class="tbl"><table>
+    <thead><tr><th>Ad group</th><th>Vol. est./mes</th><th>Landing</th><th>H1 pinneado</th></tr></thead>
+    <tbody>
+      <tr><td>AG1 Towing Near Me</td><td class="n">~990</td><td>/towing/</td><td>Towing Near You - 24/7</td></tr>
+      <tr><td>AG3 Tow Truck</td><td class="n">~620</td><td>/towing/</td><td>Tow Truck Near You</td></tr>
+      <tr><td>AG4 Towing Burlington VT</td><td class="n">~200</td><td>/towing/</td><td>Towing In Burlington, VT</td></tr>
+      <tr><td>AG6 Flatbed Towing</td><td class="n">~30</td><td>/flatbed-towing/</td><td>Flatbed Towing Near You</td></tr>
+      <tr><td>AG2 24/7 Emergency</td><td class="n">~15</td><td>/towing/</td><td>24/7 Emergency Towing</td></tr>
+      <tr><td>AG5 Accident &amp; Recovery</td><td class="n">&lt;15 · nov–mar</td><td>/accident-recovery/</td><td>Accident &amp; Recovery Towing</td></tr>
+    </tbody>
+  </table></div>
+  <div class="two">
+    <div class="callout ok"><b>CPL objetivo</b><span>$35 en F1 y $25 en F2. Arriba de la mediana del MCC ($16) por mercado chico, 3.2★ y solo Search.</span></div>
+    <div class="callout red"><b>Choque con la economía</b><span>Con un ticket supuesto de $200, el CPL máximo es ~$21. Sin el ticket real, el objetivo podría no ser rentable.</span></div>
+  </div>
+  <p><b>Por qué no ahora:</b> sin PMax (pediría ~$75/día, hay 14 conv/mes y 3.2★), sin marca (#1 orgánico), sin LSA (towing no califica) y sin amplia.</p>
+</section>
+
+<section>
+  <h2><span class="marker">RUTA</span>Roadmap</h2>
+  <div class="route">
+    <div class="stop now"><span class="d">2026-10-01 → 10-12</span><span class="t">F0 · Fundación y corrección de la campaña viva</span><span>Negativas, pausas, llamadas ≥60 s, geo en presencia, H1 + form + thank-you, Tag Assistant.</span></div>
+    <div class="stop"><span class="d">2026-10-13</span><span class="t">F1 · Relanzamiento con 6 ad groups</span><span>$32.50/día, Maximizar conversiones. Evaluación el 10-20.</span></div>
+    <div class="stop"><span class="d">10-20 · 10-27 · 11-12</span><span class="t">F2 · Limpieza D7, D14, D30</span><span>Metas: CPC ≤ $7, cuota perdida por ranking &lt;25%. <code>/accident-recovery/</code> listo para el 11-10, antes de la nieve.</span></div>
+    <div class="stop"><span class="d">~2026-12-08 (rango 11-24 → 01-05)</span><span class="t">F3 · tCPA</span><span>Con ≥30 conv/30 días y llamada ≥60 s. tCPA = CPA real +10%.</span></div>
+    <div class="stop block"><span class="d">reevaluar 2027-02</span><span class="t">F4 · Remarketing</span><span>No llega a 1,000 usuarios en 30 días. La audiencia se crea ya para que acumule.</span></div>
+    <div class="stop block"><span class="d">no realista con $989/mes</span><span class="t">F5 · PMax</span><span>Fallan presupuesto, volumen, reputación (≥3.8★), assets y landing.</span></div>
+  </div>
+</section>
+
+<section>
+  <h2><span class="marker">BLOQUEOS</span>Lo que frena la Fase 0</h2>
+  <div class="tbl"><table>
+    <thead><tr><th>Bloqueante</th><th>Quién</th><th>Vence</th></tr></thead>
+    <tbody>
+      <tr><td><b>Ticket y margen</b> por servicio (define el CPL máximo)</td><td>Cliente</td><td class="n">10-12</td></tr>
+      <tr><td><b>Quién contesta de 11pm a 7am</b> (define 24/7 o 6:00–23:00)</td><td>Cliente</td><td class="n">10-12</td></tr>
+      <tr><td><b>Acceso al GBP</b> (activo de ubicación y reseñas)</td><td>Cliente</td><td class="n">10-12</td></tr>
+      <tr><td>H1, form de 3 campos y /thank-you/ en la landing</td><td>PMM</td><td class="n">10-06</td></tr>
+      <tr><td>Aprobar y aplicar negativas y pausas</td><td>Jhombis</td><td class="n">—</td></tr>
+      <tr><td>Confirmar claims: 50+ años, 21 camiones / 16 flatbeds, taller, horario</td><td>Cliente</td><td class="n">10-12</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<footer>Archivos en <code>clients/spillanes-towing/</code> (rama <code>claude/elegant-cray-07rrp2</code>): brief, investigacion, audit-site, competitors, benchmark, strategy, roadmap, checklist, data/ y log/. Fuentes: Windsor.ai (Google Ads), Semrush, Keyword Planner (Vermont) y análisis de landings.</footer>
+</div>
