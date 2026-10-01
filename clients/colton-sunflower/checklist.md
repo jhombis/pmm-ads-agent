@@ -49,10 +49,11 @@ Eliminado de la base: solicitud LSA (la categoría no aplica) y la Fase 5 PMax (
 - [x] Ubicación: Presencia solamente
 - [ ] Países restantes excluidos — verificar
 - [ ] Programación según horario del cliente (24/7 solo si contestan)
-- [ ] ⚠️ Puja: Max clics → Maximizar conversiones (sin tCPA), después de Form Fill
+- [ ] ⚠️ Puja: agregar tope de CPC $8 a Max clics (playbook §5)
+- [ ] Puja: Max conversiones cuando haya 15+ conv/mes estables con Form Fill medido
 - [ ] ⚠️ 5 ad groups según strategy.md; keywords en frase + exacta en los términos principales
 - [ ] Negativas entre ad groups (cremation/burial/cost)
-- [ ] ⚠️ 3 RSA por grupo, H1 pinneado, 15H/4D, fuerza "Buena"+
+- [ ] ⚠️ 1 RSA por grupo (máx. 2), H1 pinneado, 15H/4D, fuerza "Buena"+; reemplazar el RSA 819740188547
 - [ ] Extensiones: sitelinks 4+, callouts 6+, snippets, llamada, ubicación
 - [ ] URLs finales verificadas (200, https, sin redirect)
 - [ ] Presupuesto $49/día (+ marca $5/día si se confirma)
@@ -92,7 +93,7 @@ Eliminado de la base: solicitud LSA (la categoría no aplica) y la Fase 5 PMax (
 ## Recurrente (semanal, /weekly-review)
 - [ ] Search terms → negativas
 - [ ] Gasto vs presupuesto mensual
-- [ ] CPA vs objetivo ($100); tendencia 7d vs 28d
+- [ ] CPA vs objetivo ($73); tendencia 7d vs 28d
 - [ ] Anuncios rechazados / limitados
 - [ ] IS perdido por presupuesto y por ranking
 - [ ] Calidad de leads reportada

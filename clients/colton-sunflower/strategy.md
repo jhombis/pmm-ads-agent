@@ -2,7 +2,8 @@
 cliente: Colton Sunflower Burial and Cremation
 slug: colton-sunflower
 actualizado: 2026-10-01
-version: 1.2
+nota_v1.3: ajustada a los estándares de CLAUDE.md y playbook §5/§9 (reconciliación de Jhombis del 23-sep-2026) — puja Max clics con tope de CPC hasta 15+ conv/mes; 1 RSA por grupo (máx. 2) con <$1,500/mes de pauta
+version: 1.3
 supuestos:
   - audit-site.md hecho el 2026-10-01 (12/22): landings y claims actualizados en v1.1.
   - competitors.md y benchmark.md hechos el 2026-10-01 (v1.2: CPL objetivo ajustado a la mediana de 90d).
@@ -17,9 +18,9 @@ supuestos:
 - La cuenta **ya está activa** (desde 2026-08-03). Esto no es un lanzamiento, es un **rescate**: CPA de $466 en 28d contra ~$100 de sus hermanas del MCC.
 - **1 campaña Search** (se mantiene la actual para no perder historial) con **5 ad groups**. Opcionalmente, 1 campaña de marca de $5/día si se confirma la marca.
 - Presupuesto: $49/día ($1,490/mes). **CPL objetivo F1: $73** (mediana Search 90d del MCC; rango $58–87). Se esperan ~20 conv/mes. **La causa raíz es la tasa de conversión: 1.5% contra 9.7% del nicho**, no el CPC.
-- Puja: **Maximizar conversiones** (sin tCPA) una vez medido Form Fill. Con este presupuesto, **tCPA no llega** (requiere ~30 conv/mes, es decir CPA ≤ $50). Se reevalúa en F3.
+- Puja (playbook §5): **Maximizar clics con tope de CPC $8** mientras la cuenta tenga <15 conv/mes (hoy ~4). Hoy está en Max clics **sin tope**, que compra lo genérico y barato. Se pasa a **Maximizar conversiones** cuando haya 15+ conv/mes estables con Form Fill medido. Con este presupuesto, **tCPA no llega** (requiere ~30 conv/mes, es decir CPA ≤ $50).
 - Ángulo vs competencia online ($995 de Meadow/After): **crematorio propio, "never leaves our care"**, witness cremation y capilla local (ver competitors.md).
-- Lo que más pesa: matar el desperdicio (negativas, ya en curso), pasar de amplia + Max clics a frase/exacta + Max conv, y desbloquear la demanda de precio que hoy bloquean las negativas "how" y "Fontana".
+- Lo que más pesa: matar el desperdicio (negativas, ya en curso), pasar de amplia + Max clics sin tope a frase/exacta + Max clics con tope de CPC, y desbloquear la demanda de precio que hoy bloquean las negativas "how" y "Fontana".
 
 ## Benchmark usado (Search, últimos 30d)
 | Cuenta | Puja | Gasto | Conv. | CPA | CPC |
@@ -30,15 +31,17 @@ supuestos:
 | Murrieta Valley FH | Max conv | $1,155 | 7 | $165 | $9.96 |
 | **Colton Sunflower** | **Max clics** | **$1,457** | **4** | **$364** | $6.25 |
 
-Patrón: todas las que convierten usan Maximizar conversiones, y su mejor keyword es de precio ("cremation cost": $44 de CPA en Riverside). Hemet paga CPC de ~$12 pero convierte 12% de los clics: Max conv puja más alto por menos clics, y mejores.
+Patrón: todas las que convierten usan Maximizar conversiones porque tienen 7–20 conv/mes de historial (Colton tiene ~4; por eso empieza con Max clics con tope, playbook §5), y su mejor keyword es de precio ("cremation cost": $44 de CPA en Riverside). Hemet paga CPC de ~$12 pero convierte 12% de los clics: Max conv puja más alto por menos clics, y mejores.
 
 ## Campañas
 | Campaña | Objetivo | Presupuesto/día F1 | % | Puja inicial | Geo | Horario |
 |---|---|---|---|---|---|---|
-| Colton Sunflower — Search (actual, 24095361792) | Llamadas + formularios | $49 | 100% (90% si se activa marca) | Max conversiones (sin tCPA) tras Form Fill | Presencia ✅. Radio PENDIENTE; propuesta: ~15 mi alrededor de Colton (San Bernardino, Rialto, Fontana, Redlands, Loma Linda, Grand Terrace, Highland) | 24/7 **solo si** alguien contesta de noche (PENDIENTE). Si no, 6am–10pm |
+| Colton Sunflower — Search (actual, 24095361792) | Llamadas + formularios | $49 | 100% (90% si se activa marca) | Max clics con tope de CPC $8 → Max conversiones con 15+ conv/mes estables | Presencia ✅. Radio PENDIENTE; propuesta: ~15 mi alrededor de Colton (San Bernardino, Rialto, Fontana, Redlands, Loma Linda, Grand Terrace, Highland) | 24/7 **solo si** alguien contesta de noche (PENDIENTE). Si no, 6am–10pm |
 | Marca (condicional) | Defender la marca | $5 | ~10% | Max clics con tope de CPC $3 | Igual | Igual |
 
-**Por qué una sola campaña:** la regla de aprendizaje pide ≥3× CPL/día por campaña ($300/día). Con $49 no alcanza ni para una, así que se consolida y se divide por ad groups, como hacen las hermanas que funcionan.
+**Por qué una sola campaña:** límite de fragmentación del playbook: con $600–1,500/mes de inversión real, 1 campaña y 3–5 grupos. Colton tiene ~$1,490/mes, así que van 1 campaña y 5 grupos, como hacen las hermanas que funcionan.
+
+**RSA:** con <$1,500/mes de pauta, **1 RSA por ad group (máx. 2)**: con ~8 clics/día un A/B de anuncios es ruido (playbook §9). Hoy hay 2/1/2: se deja el mejor de cada grupo y se reemplaza el RSA 819740188547 (68 clics, 0 conv).
 
 ## Estructura por campaña
 ### Campaña: Colton Sunflower — Search
@@ -92,20 +95,20 @@ Completo en `data/ads-search.md`: 5 grupos × 15 headlines + 4 descripciones, co
 | coltonfuneral.com/cremation/ | Sí (URL final actual, 3 conv.) | Cliente/PMM | No, pero falta auditar |
 | /pricing/ | **Sí** (Simple Cremation $1,175, Direct Burial $1,995, veteranos) | PMM/Cliente | Falta formulario |
 | /burial/ | **Sí** | PMM/Cliente | No (formulario al pie) |
-| Página de gracias + Form Fill | **No** (Elementor inline; /thank-you/ 404) | PMM | **Sí**: sin esto no se pasa a Max conversiones |
+| Página de gracias + Form Fill | **No** (Elementor inline; /thank-you/ 404) | PMM | **Sí**: sin esto no se cuentan bien las conversiones ni se puede pasar después a Max conversiones |
 | Formulario arriba en / , /cremation/, /pricing/ | No | PMM/Cliente | **Sí** (ver audit-site.md) |
 
 ## Presupuesto por fase
 | Fase | Total/mes | Por campaña | Condición para pasar |
 |---|---|---|---|
-| F0 Rescate (oct 1–15) | $1,490 | Search 100% | Form Fill medido y probado; negativas "how", "Fontana" y "online" corregidas; estructura de 5 grupos con frase/exacta; 3 RSA por grupo |
-| F1 Max conversiones (aprendizaje, ~4–6 sem.) | $1,490 | Search 90% / Marca 10% (si aplica) | 30d con ≥10 conv., CPA ≤ $150 y tasa de conversión ≥ 5% |
+| F0 Rescate (oct 1–15) | $1,490 | Search 100% | Form Fill medido y probado; negativas "how", "Fontana" y "online" corregidas; estructura de 5 grupos con frase/exacta; 1 RSA por grupo (máx. 2); tope de CPC $8 |
+| F1 Max clics con tope (relanzamiento, ~4–6 sem.) | $1,490 | Search 90% / Marca 10% (si aplica) | 30d con ≥10 conv., CPA ≤ $150 y tasa de conversión ≥ 5% |
 | F2 Optimización | $1,490 → $2,500 si se confirma neto | Más peso a cremación según CPA; nuevos grupos **Veteran Cremation** y **Pre-Planning**; prueba de "cremation cost" en amplia (OK de Jhombis) | CPA 30d ≤ $87 (P50 +20%) durante 2 revisiones seguidas → subir presupuesto |
 | F3 tCPA / PMax | ≥ $2,500 | — | ≥30 conv/30d con tracking confiable (con $1,490 exige CPA ≤ $50; poco probable) |
 
 ## Por qué NO (todavía)
 - **PMax**: 4 conversiones en 30d contra las 30+/mes que pide `pmax-cuando-y-como.md`. Además no hay assets propios verificados. Riverside y Swan sí tienen PMax, pero con 17–50 conv/mes.
-- **Amplia**: es lo que tiene hoy y es la causa del desperdicio, combinada con Max clics. Se vuelve a probar solo con Max conv maduro y aprobación de Jhombis. Riverside usa "cremation cost" en amplia con buen CPA, así que puede ser una prueba en F2.
+- **Amplia**: es lo que tiene hoy y es la causa del desperdicio, combinada con Max clics. Se vuelve a probar solo con tCPA maduro, ~50 conversiones limpias acumuladas y aprobación de Jhombis (CLAUDE.md #2). Riverside usa "cremation cost" en amplia con buen CPA, así que puede ser una prueba en F2.
 - **Display / Demand Gen**: no para servicio local de alta intención. Inland Memorial tiene Display con 0 conv.
 - **LSA**: en las categorías de LSA que conocemos no aparecen funerarias; verificar en la UI antes de descartarlo.
 - **Remarketing/RLSA**: una funeraria es una compra urgente y única; poco valor. Se reevalúa en F2 con audiencias de observación.

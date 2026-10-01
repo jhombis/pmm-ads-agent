@@ -4,6 +4,8 @@ slug: colton-sunflower
 D0: 2026-10-01
 actualizado: 2026-10-01
 fase_actual: 0
+plan_es: https://claude.ai/artifact/74WA8FWCjHGkiYPWh8h8fy
+plan_en: https://claude.ai/artifact/3gJMiMNSMNamGjVe2wZsTv
 ---
 
 # Roadmap — Colton Sunflower Burial and Cremation
@@ -15,7 +17,7 @@ fase_actual: 0
 | Fase | Fecha estimada | Estado |
 |---|---|---|
 | 0 — Rescate / fundación | 2026-10-01 → 2026-10-15 | 🔄 en curso |
-| 1 — Relanzamiento con nueva estructura + Max conv. | 2026-10-15 → 2026-10-22 | ⏳ |
+| 1 — Relanzamiento con nueva estructura + tope de CPC | 2026-10-15 → 2026-10-22 | ⏳ |
 | 2 — Limpieza D7 · D14 · D30 | 2026-10-22 · 2026-10-29 · 2026-11-14 | ⏳ |
 | 3 — tCPA | No antes de ~2026-12-13; **improbable con $49/día** | ⏳ |
 | 4 — Remarketing (RLSA observación) | Evaluar 2026-11-14 | ⏳ |
@@ -33,7 +35,7 @@ fase_actual: 0
   - (PMM) Confirmar que la red sea solo Búsqueda (sin socios ni Display) y que la autoaplicación de recomendaciones esté OFF ⚠️
   - (Claude, tras OK) Corregir las negativas que bloquean demanda: quitar `how`, `Fontana` y `online` (amplias) ⚠️
   - (Claude, tras OK) Reestructurar a 5 ad groups: amplia → frase/exacta, pausar las 0 impresiones y la duplicada ⚠️
-  - (Claude, tras OK) 3 RSA por grupo con el copy de `data/ads-search.md` (sin claims `[C]` no confirmados) ⚠️
+  - (Claude, tras OK) 1 RSA por grupo (máx. 2) con el copy de `data/ads-search.md`; reemplazar el RSA 819740188547 ⚠️
   - (Claude, tras OK) Aplicar las 5 negativas de `data/2026-10-01-negatives.txt`
   - (Jhombis/Cliente) Confirmar en /onboard: ticket, margen, capacidad, idioma ES, mascotas, horario/24-7, radio real ⚠️ (radio y horario)
   - (Jhombis) Aclarar la relación con Inland Memorial / Sunflower Riverside y definir radios sin solape ⚠️
@@ -44,11 +46,11 @@ fase_actual: 0
   - Que el cliente tarde en confirmar los datos. Mitigación: lanzar la estructura sin los claims `[C]` y sumarlos después.
   - Que alguien más siga editando la cuenta.
 
-## Fase 1 — Relanzamiento (estructura nueva + Maximizar conversiones)
+## Fase 1 — Relanzamiento (estructura nueva + Max clics con tope de CPC)
 - **Fecha estimada**: 2026-10-15 → 2026-10-22
-- **Condición de paso**: estructura de 5 grupos activa 7 días, anuncios aprobados, Max conversiones activo y **≥1 conversión de Form Fill o llamada registrada después del cambio**.
-- **Qué se lanza**: la campaña actual, reestructurada según `strategy.md`, con $49/día (más marca $5/día si se confirma). Puja: Max conversiones sin tCPA.
-- **Riesgos**: el aprendizaje de Max conv con ~0.5 conv/día puede dar 1–2 semanas de CPA errático. No tocar la puja en ese período.
+- **Condición de paso**: estructura de 5 grupos activa 7 días, anuncios aprobados, Max clics con tope de CPC $8 activo y **≥1 conversión de Form Fill o llamada registrada después del cambio**.
+- **Qué se lanza**: la campaña actual, reestructurada según `strategy.md`, con $49/día (más marca $5/día si se confirma). Puja: Max clics con tope de CPC $8 (playbook §5: <15 conv/mes). Pasa a Max conversiones cuando haya 15+ conv/mes estables con Form Fill medido.
+- **Riesgos**: un tope de $8 puede dejar fuera los términos locales más caros ("cremation san bernardino" ~$11.75). En D7 se mira el IS perdido por ranking en los grupos de cremación y se ajusta el tope.
 
 ## Fase 2 — Limpieza
 - **Fechas**: D7 **2026-10-22** · D14 **2026-10-29** · D30 **2026-11-14** (contadas desde el relanzamiento).
@@ -61,7 +63,7 @@ fase_actual: 0
   - Ojo: tCPA pide **30 conv dentro de una ventana de 30 días**. Con $1,490/mes eso exige CPA ≤ $50 (P25 del nicho: $58). Con $2,500/mes exigiría CPA ≤ $83, que sí es alcanzable.
 - **Condición de paso**: ≥30 conversiones en ventana de 30 días con tracking verificado.
 - **Acción**: tCPA = CPA real observado; reajustar presupuesto.
-- **Si no se cumple**: es lo esperado con este presupuesto. Se queda en **Maximizar conversiones**, que es lo que usan las 4 hermanas con buen CPA. **No forzar tCPA con menos datos.** Si la conversión de la landing es <5%, priorizar la pista Landing.
+- **Si no se cumple**: es lo esperado con este presupuesto. Se queda en **Maximizar conversiones** (si ya hay 15+ conv/mes) o en Max clics con tope. **No forzar tCPA con menos datos.** Si la conversión de la landing es <5%, priorizar la pista Landing.
 
 ## Fase 4 — Remarketing
 - **Fecha estimada**: evaluar el 2026-11-14 (D30).
@@ -91,9 +93,11 @@ fase_actual: 0
 - No aplica: las funerarias no figuran en las categorías de LSA que conocemos. (PMM) Verificar en la UI de LSA antes de descartarlo del todo.
 
 ## Estacionalidad y ventanas
-- La mortalidad en EE. UU. sube en invierno (dic–feb), así que la demanda funeraria también. **Conviene salir de la Fase 1–2 antes de diciembre** para que Max conversiones ya haya aprendido cuando suba el volumen. Es una razón más para no alargar la Fase 0.
+- La mortalidad en EE. UU. sube en invierno (dic–feb), así que la demanda funeraria también. **Conviene salir de la Fase 1–2 antes de diciembre** para que la estructura nueva y la medición ya estén limpias cuando suba el volumen. Es una razón más para no alargar la Fase 0.
 
 ## Historial de cambios
+- 2026-10-01: /informe — plan ES + EN con el estilo PMM (plan-es.html / plan-en.html); reemplaza a plan.html, cuya URL pasa a ser la versión ES.
+- 2026-10-01: ajustado a los estándares nuevos de CLAUDE.md (puja con tope de CPC hasta 15+ conv/mes; 1 RSA por grupo con <$1,500/mes).
 - 2026-10-01: CPL benchmark ajustado a $73 (benchmark.md); fecha de tCPA recalculada.
 - 2026-10-01: pista Landing actualizada con audit-site.md.
 - 2026-10-01: creado. D0 = 2026-10-01 (cuenta heredada activa desde 2026-08-03). Ya hechos antes del roadmap: 76 negativas y 3 keywords del competidor pausadas.
