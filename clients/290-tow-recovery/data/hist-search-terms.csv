@@ -1,0 +1,36 @@
+# fuente: Windsor.ai google_ads, cuenta 213-019-5545, 2026-09-18 a 2026-09-23. Terminos visibles suman $120.57 de $165.57 (el resto no lo reporta Google).
+search_term,match_type,spend,impressions,clicks,conversions,flag
+car jumper,BROAD,27.48,2,2,0,desperdicio: DIY/producto (jump starter)
+tow truck near me,EXACT,17.84,5,1,0,ok
+car dollies for towing,BROAD,12.61,1,1,0,desperdicio: compra/alquiler de equipo
+cheap tow truck near me,PHRASE,11.84,4,1,0,desperdicio: precio bajo
+roadside service near me,EXACT,11.74,1,1,0,ok (ticket bajo)
+rv haulers in texas,BROAD,11.43,2,1,0,desperdicio: transporte/hauling de RV
+wreckers near me,NEAR_EXACT,10.06,4,1,0,ok
+emergency roadside assistance,BROAD,9.69,2,1,0,dudoso: AAA/seguro
+what does roadside assistance cover,BROAD,7.88,1,1,0,desperdicio: informacional
+roadside assistance,EXACT,0,3,0,0,dudoso: AAA/seguro
+emergency roadside assistance number,BROAD,0,1,0,0,dudoso: AAA/seguro
+roadside assistance near me,EXACT,0,1,0,0,ok (ticket bajo)
+towing company near me,EXACT,0,2,0,0,ok
+tow trucks near me,NEAR_EXACT,0,1,0,0,ok
+towing service near me,NEAR_EXACT,0,1,0,0,ok
+rollback tow truck,BROAD,0,1,0,0,dudoso: compra de equipo
+wrecker trucks,BROAD,0,1,0,0,dudoso: compra de equipo
+rv towing service near me,PHRASE,0,1,0,0,revisar: RV (confirmar si lo ofrece)
+semi truck tow,BROAD,0,1,0,0,negativa: heavy duty (no ofrecido)
+towing boerne,BROAD,0,2,0,0,ok (ciudad del area)
+tow truck llano tx,BROAD,0,1,0,0,ok (ciudad del area)
+cheapest wrecker service near me,PHRASE,0,1,0,0,negativa: precio bajo
+k and w towing,BROAD,0,2,0,0,negativa: competidor
+kw towing boerne tx,BROAD,0,1,0,0,negativa: competidor
+5 star towing boerne tx,BROAD,0,1,0,0,negativa: competidor
+creswell towing,BROAD,0,2,0,0,negativa: competidor (San Antonio)
+creswell towing san antonio phone number,NEAR_PHRASE,0,1,0,0,negativa: competidor
+gator towing,BROAD,0,2,0,0,negativa: competidor
+tic tac towing,BROAD,0,2,0,0,negativa: competidor
+ej towing denton tx,NEAR_PHRASE,0,1,0,0,negativa: competidor fuera de area (Denton)
+towing san antonio near me,NEAR_PHRASE,0,1,0,0,revisar: San Antonio fuera de area
+tow truck san antonio,NEAR_PHRASE,0,2,0,0,revisar: San Antonio fuera de area
+gruas,BROAD,0,2,0,0,revisar: espanol sin anuncios en espanol
+gruas cerca de mi ubicación en español,BROAD,0,1,0,0,revisar: espanol sin anuncios en espanol

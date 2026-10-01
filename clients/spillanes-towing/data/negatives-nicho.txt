@@ -1,0 +1,154 @@
+# Negativas de nicho + cliente — Spillane's Towing (aplicar como lista compartida a nivel de cuenta, frase salvo [exacta])
+# Además de knowledge/negativas-universales.md (lista "PMM Universal") + bloque Towing de esa misma lista.
+
+## Marca propia (sin campaña de marca en F1; ya es #1 orgánico y el tráfico es mayormente impound)
+spillane
+spillanes
+spillane's
+
+## Competidores locales y agregadores
+handy
+handys
+handy's
+grenier
+greniers
+sheehan
+sheehans
+pagan towing
+tailhook
+anytime towing
+central service
+true towing
+stuck solutions
+honk
+urgently
+agero
+
+## Membresías / aseguradoras / fabricantes (roadside de terceros)
+aaa
+triple a
+caa
+allstate
+state farm
+geico
+progressive
+usaa
+aarp
+good sam
+goodsam
+amac
+american family
+amfam
+verizon
+uhaul
+u haul
+tesla roadside
+honda roadside
+toyota roadside
+ford roadside
+subaru roadside
+kia roadside
+hyundai roadside
+nissan roadside
+gm roadside
+general motors
+
+## Precio ancla / barato
+cheap
+cheapest
+inexpensive
+$50
+50 dollar
+free tow
+
+## Heavy-duty (no confirmado: 1 wrecker) — revisar si el cliente lo vende
+semi
+tractor trailer
+18 wheeler
+bus towing
+heavy duty
+box truck
+
+## Bajo ticket (F1: excluir hasta confirmar con cliente)
+lockout
+locked out
+lock out
+unlock
+keys locked
+key stuck
+ignition
+jump start
+jumpstart
+battery jump
+flat tire
+tire change
+tire repair
+fix a flat
+mobile tire
+fuel delivery
+gas delivery
+out of gas
+
+## Impound / policía / ya remolcado
+impound
+tow lot
+tow yard
+towing yard
+towed
+where is my car
+car got towed
+release
+police tow
+parking enforcement
+abandoned vehicle
+
+## Informacional / producto (además de la universal)
+towing capacity
+tow capacity
+tow rating
+tow hitch
+tow bar
+tow strap
+tow mirror
+hitch
+toy
+toys
+lego
+game
+games
+tow truck for sale
+used tow truck
+tow truck driver
+tow truck jobs
+dispatcher jobs
+
+## Ambiguos de "recovery"
+rehab
+drug
+alcohol
+addiction
+sobriety
+treatment
+recovery center
+data recovery
+file recovery
+password
+account recovery
+
+## Fuera de área / idioma
+bennington
+rutland
+montpelier
+barre
+stowe
+st albans
+saint albans
+middlebury
+plattsburgh
+new hampshire
+new york
+canada
+montreal
+quebec
+grua
+grúa

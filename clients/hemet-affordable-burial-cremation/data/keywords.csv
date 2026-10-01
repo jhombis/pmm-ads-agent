@@ -1,0 +1,55 @@
+keyword,volumen_us,cpc_est,intencion,servicio,ciudad,match_sugerido,ad_group,historico_90d,nota
+funeral home near me,40500,3.54,comercial,funeral,near me,frase+exacta,Funeral Home,"$403 / 32 clics / 5 conv (broad+phrase)",top del grupo
+funeral homes near me,60500,3.54,comercial,funeral,near me,frase+exacta,Funeral Home,,
+funeral home hemet,90,5.13,comercial,funeral,Hemet,frase+exacta,Funeral Home,"$309 / 15 clics / 4 conv",
+funeral homes in hemet california,0,,comercial,funeral,Hemet,frase,Funeral Home,"$368 / 19 clics / 0 conv",vigilar: gasto sin conversión
+funeral home san jacinto ca,0,,comercial,funeral,San Jacinto,frase,Funeral Home,"$29 / 4 clics / 0",
+funeral home beaumont ca,0,,comercial,funeral,Beaumont,frase,Funeral Home,"$25 / 1 clic",
+funeral home banning ca,0,,comercial,funeral,Banning,frase,Funeral Home,"$57 / 5 clics / 0",
+funeral services near me,3600,4.41,comercial,funeral,near me,frase,Funeral Home,,
+mortuary near me,5400,5.24,comercial,funeral,near me,frase+exacta,Funeral Home,"search term: $144 / 7 clics / 1 conv",
+mortuary hemet,50,5.13,comercial,funeral,Hemet,frase+exacta,Funeral Home,"search term: $230 / 12 clics / 2 conv",
+funeral chapel near me,110,3.95,comercial,funeral,near me,frase,Funeral Home,,
+memorial service near me,320,2.79,comercial,funeral,near me,frase,Funeral Home,,
+funeral homes,27100,3.90,mixta,funeral,,frase,Funeral Home,"$266 / 15 clics / 0",solo con geo presencia; vigilar
+cremation services near me,14800,4.97,comercial,cremacion,near me,frase+exacta,Cremation,"$130 / 6 clics / 2 conv",
+cremation near me,18100,4.72,comercial,cremacion,near me,frase+exacta,Cremation,"search term: $87 / 5 clics / 0",
+direct cremation near me,1900,3.63,comercial,cremacion,near me,frase+exacta,Cremation,"$223 / 21 clics / 4 conv",mejor CPA del grupo
+cremation hemet,20,9.98,comercial,cremacion,Hemet,frase+exacta,Cremation,"$606 / 44 clics / 3 conv (hemet cremation broad+phrase)",
+cremation hemet ca,20,9.98,comercial,cremacion,Hemet,frase,Cremation,,
+crematory near me,4400,4.72,comercial,cremacion,near me,frase,Cremation,,
+crematorium near me,5400,4.72,comercial,cremacion,near me,frase,Cremation,,
+simple cremation near me,260,3.92,comercial,cremacion,near me,frase,Cremation,,
+cremation with viewing,210,3.40,comercial,cremacion,,frase,Cremation,,venta hacia servicio completo
+service and cremation,,,comercial,cremacion,,frase,Cremation,"$387 / 28 clics / 3 conv",mantener; revisar search terms
+affordable cremation near me,590,5.04,comercial-precio,cremacion,near me,frase,Affordable,"$12 / 2 clics",
+cheap cremation near me,1600,4.17,comercial-precio,cremacion,near me,frase,Affordable,,
+low cost cremation near me,1600,4.10,comercial-precio,cremacion,near me,frase,Affordable,,
+cremation cost near me,1300,2.46,comercial-precio,cremacion,near me,frase,Affordable,,
+cremation prices near me,390,2.95,comercial-precio,cremacion,near me,frase,Affordable,,
+affordable funeral homes near me,590,3.68,comercial-precio,funeral,near me,frase,Affordable,,
+cheapest mortuary near me,,,comercial-precio,funeral,near me,frase,Affordable,"search term: $89 / 4 clics / 1 conv",requiere quitar "cheapest" de la universal
+low cost cremation riverside county,20,6.04,comercial-precio,cremacion,Riverside County,frase,Affordable,"search term: $25 / 3 clics / 1 conv",requiere quitar "county" de la universal
+low cost burial services,,,comercial-precio,entierro,,frase,Burial,"$94 / 6 clics / 1 conv",
+burial services near me,1900,5.07,comercial,entierro,near me,frase+exacta,Burial,,
+burial near me,1300,2.81,comercial,entierro,near me,frase,Burial,,
+burial service,,,comercial,entierro,,frase,Burial,"$286 / 35 clics / 3 conv (broad)",pasar a frase
+direct burial near me,20,2.95,comercial,entierro,near me,frase,Burial,,
+affordable burial,170,4.43,comercial-precio,entierro,,frase,Burial,,
+burial packages,,,comercial,entierro,,frase,Burial,"$6 / 1 clic",
+hemet affordable burial and cremation,,,marca,marca,Hemet,exacta+frase,Brand,"search term: $207 / 24 clics / 2 conv",sacar de genérica
+hemet affordable cremation,,,marca,marca,Hemet,exacta+frase,Brand,,
+inland memorial hemet,20,2.76,marca,marca,Hemet,exacta,Brand,,marca anterior
+harford chapel hemet,,,marca,marca,Hemet,exacta,Brand,,marca histórica
+funerarias cerca de mi,1900,2.38,comercial,funeral,near me,frase,Fase 2 - Español,"funeraria cerca de mi: $24 / 4 clics / 1 conv",solo si hay personal hispanohablante
+funeraria cerca de mi,320,2.38,comercial,funeral,near me,frase,Fase 2 - Español,,
+pre need funeral plans,110,4.43,comercial-largo,pre-need,,frase,Fase 3 - Pre-need,"search term: $56 / 1 clic / 1 conv",
+funeral pre planning near me,90,3.74,comercial-largo,pre-need,near me,frase,Fase 3 - Pre-need,,
+cremation cost,12100,2.47,informacional,cremacion,,descartar,,"$384 / 43 clics / 2 conv (broad) = CPA $192",solo vía 'cremation cost near me'
+how much does cremation cost,8100,2.07,informacional,cremacion,,descartar,,,
+average funeral cost,2900,1.86,informacional,funeral,,descartar,,,
+what to do when someone dies,1600,0.49,informacional,funeral,,descartar,,,
+cremation insurance,880,7.13,producto/seguro,,,negativa,,,
+cremation plans,590,5.32,pre-need/seguro,,,descartar F1,,,
+hemet valley mortuary,320,2.45,competidor,,,negativa,,,
+miller jones mortuary,720,2.04,competidor,,,negativa,,,

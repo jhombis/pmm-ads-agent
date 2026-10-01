@@ -1,0 +1,721 @@
+<title>AAMCO 103rd St Plan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  --bg:#F2F4F3; --surface:#FFFFFF; --surface-2:#E9EEF0; --ink:#15202B; --muted:#56636E; --line:#D5DCE0;
+  --accent:#1D5D7A; --accent-ink:#FFFFFF; --accent-soft:#DDEBF1;
+  --good:#2C7A4B; --good-soft:#E0F1E6; --warn:#A8701A; --warn-soft:#FAEFD9; --bad:#B0362A; --bad-soft:#F7E1DD;
+  --display:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+  --body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#0E151B; --surface:#16202A; --surface-2:#1C2833; --ink:#E5EBEF; --muted:#9BA9B4; --line:#2A3743;
+    --accent:#6DB1D0; --accent-ink:#0E151B; --accent-soft:#1A3341;
+    --good:#6BC490; --good-soft:#173324; --warn:#E3AA4E; --warn-soft:#382B15; --bad:#EC7A6D; --bad-soft:#3B1E1A;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#0E151B; --surface:#16202A; --surface-2:#1C2833; --ink:#E5EBEF; --muted:#9BA9B4; --line:#2A3743;
+  --accent:#6DB1D0; --accent-ink:#0E151B; --accent-soft:#1A3341;
+  --good:#6BC490; --good-soft:#173324; --warn:#E3AA4E; --warn-soft:#382B15; --bad:#EC7A6D; --bad-soft:#3B1E1A;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.55}
+.wrap{max-width:1100px;margin:0 auto;padding-inline:20px;padding-block:0 64px}
+h1,h2,h3{font-family:var(--display);font-weight:700;letter-spacing:.01em;line-height:1.1;text-wrap:balance;margin:0}
+h1{font-size:clamp(34px,6vw,52px)}
+h2{font-size:32px;margin-bottom:6px}
+h3{font-size:21px;margin-bottom:8px}
+p{margin:0}
+a{color:var(--accent)}
+.muted{color:var(--muted)}
+.mono,.num{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);font-weight:600}
+code{font-family:var(--mono);font-size:.88em;background:var(--surface-2);padding:1px 5px;border-radius:4px}
+
+/* header */
+header.top{padding-block:36px 22px;display:grid;gap:14px}
+.meta{display:flex;flex-wrap:wrap;gap:8px 18px;color:var(--muted);font-size:14px}
+.meta b{color:var(--ink);font-weight:600}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;font-weight:600;padding:4px 10px;border-radius:999px;border:1px solid var(--line);background:var(--surface)}
+.chip.on{background:var(--accent-soft);border-color:transparent;color:var(--accent)}
+.chip.warn{background:var(--warn-soft);border-color:transparent;color:var(--warn)}
+.chip.bad{background:var(--bad-soft);border-color:transparent;color:var(--bad)}
+.chip.good{background:var(--good-soft);border-color:transparent;color:var(--good)}
+.dot{width:7px;height:7px;border-radius:50%;background:currentColor}
+
+nav.tabs{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line);margin-inline:-20px;padding-inline:20px}
+nav.tabs ul{list-style:none;display:flex;gap:4px;margin:0;padding:8px 0;overflow-x:auto;scrollbar-width:none}
+nav.tabs a{display:block;white-space:nowrap;text-decoration:none;color:var(--muted);font-weight:500;font-size:14px;padding:6px 12px;border-radius:6px}
+nav.tabs a:hover,nav.tabs a:focus-visible{color:var(--ink);background:var(--surface-2);outline:none}
+
+section{padding-top:44px;scroll-margin-top:56px}
+.lede{max-width:70ch;color:var(--muted);margin-bottom:18px}
+.grid{display:grid;gap:14px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.g5{grid-template-columns:repeat(auto-fit,minmax(170px,1fr))}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:18px}
+.stat{display:grid;gap:4px;align-content:start}
+.stat .v{font-family:var(--display);font-size:34px;font-weight:700;line-height:1}
+.stat .l{font-size:13px;color:var(--muted)}
+.stat.alert .v{color:var(--bad)}
+
+/* now box */
+.now{background:var(--ink);color:var(--bg);border-radius:12px;padding:22px}
+.now h3{color:var(--bg)}
+.now ol{margin:10px 0 0;padding-left:22px;display:grid;gap:8px}
+.now li::marker{font-family:var(--mono);color:var(--accent)}
+:root .now li b{color:var(--bg)}
+.now .who{font-size:11.5px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;padding:1px 7px;border-radius:4px;margin-left:6px;background:rgba(127,127,127,.25)}
+
+ul.plain{margin:0;padding-left:18px;display:grid;gap:6px}
+.decisions{counter-reset:d;display:grid;gap:10px;margin:0;padding:0;list-style:none}
+.decisions li{display:grid;grid-template-columns:28px 1fr;gap:10px}
+.decisions li::before{counter-increment:d;content:counter(d);font-family:var(--mono);font-size:13px;color:var(--accent);background:var(--accent-soft);border-radius:6px;height:24px;display:grid;place-items:center}
+
+/* tables */
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600;background:var(--surface-2);white-space:nowrap}
+tr:last-child td{border-bottom:0}
+td.n,th.n{text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+.hl td{background:var(--accent-soft)}
+.st{display:inline-block;font-size:12px;font-weight:600;padding:2px 8px;border-radius:4px;white-space:nowrap}
+.st.ok{background:var(--good-soft);color:var(--good)}
+.st.w{background:var(--warn-soft);color:var(--warn)}
+.st.x{background:var(--bad-soft);color:var(--bad)}
+.kw{font-family:var(--mono);font-size:12.5px;line-height:1.7}
+
+/* bars */
+.bars{display:grid;gap:10px}
+.bar{display:grid;grid-template-columns:minmax(120px,210px) 1fr 120px;gap:12px;align-items:center;font-size:14px}
+.bar .track{height:14px;background:var(--surface-2);border-radius:3px;position:relative;overflow:hidden}
+.bar .fill{position:absolute;inset:0 auto 0 0;background:var(--accent);border-radius:3px}
+.bar .fill.alt{background:var(--warn)}
+.bar .v{font-family:var(--mono);font-size:13px;text-align:right;color:var(--muted)}
+@media (max-width:560px){.bar{grid-template-columns:1fr 90px}.bar .track{grid-column:1/-1;order:3}}
+
+/* gantt */
+.gantt{position:relative;min-width:760px;padding:8px 14px 14px}
+.g-axis{position:relative;height:44px;margin-left:190px;border-bottom:1px solid var(--line)}
+.g-axis span{position:absolute;bottom:4px;font-size:12px;color:var(--muted);transform:translateX(-50%);font-family:var(--mono)}
+.g-row{display:grid;grid-template-columns:190px 1fr;align-items:center;min-height:38px;border-bottom:1px dashed var(--line)}
+.g-row:last-child{border-bottom:0}
+.g-label{font-size:13.5px;font-weight:600;padding-right:10px}
+.g-label small{display:block;font-weight:400;color:var(--muted);font-size:12px}
+.g-track{position:relative;height:38px}
+.g-bar{position:absolute;top:11px;height:16px;border-radius:4px;background:var(--accent)}
+.g-bar.soft{background:var(--accent-soft);border:1px dashed var(--accent)}
+.g-bar.warn{background:var(--warn)}
+.g-bar.bad{background:repeating-linear-gradient(45deg,var(--bad-soft) 0 6px,transparent 6px 12px);border:1px solid var(--bad)}
+.g-bar.good{background:var(--good)}
+.g-ms{position:absolute;top:9px;width:14px;height:14px;transform:translateX(-7px) rotate(45deg);background:var(--ink);border:2px solid var(--surface)}
+.g-vline{position:absolute;top:44px;bottom:0;width:0;border-left:2px solid var(--bad);z-index:1}
+.g-vline.hol{border-left:2px dotted var(--muted)}
+.g-vtag{position:absolute;top:0;font-size:11px;font-weight:600;color:var(--bad);transform:translateX(-50%);white-space:nowrap;background:var(--surface);padding:0 4px}
+.g-vtag.hol{color:var(--muted)}
+.legend{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--muted);margin-top:10px}
+.legend i{display:inline-block;width:18px;height:10px;border-radius:2px;vertical-align:middle;margin-right:6px}
+
+.dates{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px}
+.date{display:grid;grid-template-columns:78px 1fr;gap:10px;align-items:baseline;padding:10px 12px;background:var(--surface);border:1px solid var(--line);border-radius:8px}
+.date .d{font-family:var(--mono);font-size:13px;color:var(--accent);font-weight:500}
+
+/* checklist */
+.ck-tools{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;margin-bottom:14px}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--surface)}
+.seg button{font:inherit;font-size:13.5px;border:0;background:transparent;color:var(--muted);padding:6px 12px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink)}
+.seg button:focus-visible,.tog:focus-within{outline:2px solid var(--accent);outline-offset:2px}
+.tog{display:inline-flex;align-items:center;gap:8px;font-size:13.5px;color:var(--muted);cursor:pointer}
+.sync{font-size:12.5px;color:var(--muted);display:inline-flex;align-items:center;gap:6px}
+.sync .dot{background:var(--muted)}
+.sync.shared .dot{background:var(--good)}
+.overall{display:grid;gap:6px;margin-bottom:18px}
+.meter{height:8px;background:var(--surface-2);border-radius:99px;overflow:hidden}
+.meter i{display:block;height:100%;background:var(--good);border-radius:99px;transition:width .3s}
+.ck-sec{margin-bottom:12px;border:1px solid var(--line);border-radius:10px;background:var(--surface);overflow:hidden}
+.ck-sec>summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:1fr auto;gap:6px 14px;align-items:center;padding:14px 16px}
+.ck-sec>summary::-webkit-details-marker{display:none}
+.ck-sec>summary:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+.ck-sec h3{font-size:19px;margin:0}
+.ck-sec .cnt{font-family:var(--mono);font-size:13px;color:var(--muted)}
+.ck-sec .meter{grid-column:1/-1;height:5px}
+.ck-sub{padding:6px 16px 0;font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:600}
+.ck-list{list-style:none;margin:0;padding:4px 8px 10px}
+.ck-item label{display:grid;grid-template-columns:22px 1fr auto;gap:10px;align-items:start;padding:8px;border-radius:6px;cursor:pointer}
+.ck-item label:hover{background:var(--surface-2)}
+.ck-item input{width:17px;height:17px;margin:2px 0 0;accent-color:var(--good)}
+.ck-item input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.ck-item.done .t{color:var(--muted);text-decoration:line-through;text-decoration-color:var(--line)}
+.tags{display:flex;gap:5px;flex-wrap:wrap;justify-content:flex-end}
+.tag{font-size:11px;font-weight:600;padding:1px 7px;border-radius:4px;white-space:nowrap}
+.tag.PMM{background:var(--accent-soft);color:var(--accent)}
+.tag.Client{background:var(--warn-soft);color:var(--warn)}
+.tag.Account{background:var(--surface-2);color:var(--muted)}
+.tag.blk{background:var(--bad-soft);color:var(--bad)}
+@media (max-width:560px){.ck-item label{grid-template-columns:22px 1fr}.tags{grid-column:2;justify-content:flex-start}}
+
+/* ads */
+details.ad{border:1px solid var(--line);border-radius:10px;background:var(--surface);margin-bottom:10px}
+details.ad>summary{cursor:pointer;padding:12px 16px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:baseline}
+details.ad>summary:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+details.ad .pin{font-family:var(--mono);font-size:13px;color:var(--accent)}
+.adbody{padding:0 16px 16px;display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.adbody ol{margin:0;padding-left:26px;display:grid;gap:3px;font-size:14px}
+.adbody li::marker{font-family:var(--mono);font-size:12px;color:var(--muted)}
+.adbody li.p{font-weight:600}
+.adbody li .c{font-family:var(--mono);font-size:11.5px;color:var(--muted);margin-left:6px}
+.serp{border:1px solid var(--line);border-radius:10px;padding:14px 16px;background:var(--surface);max-width:620px}
+.serp .sp{font-size:12px;font-weight:700}
+.serp .u{font-size:13px;color:var(--muted)}
+.serp .h{color:var(--accent);font-size:19px;line-height:1.3;margin:4px 0}
+.serp .d{font-size:14px;color:var(--muted)}
+
+.callout{border-left:4px solid var(--warn);background:var(--warn-soft);padding:12px 14px;border-radius:0 8px 8px 0;font-size:14px}
+.callout.bad{border-color:var(--bad);background:var(--bad-soft)}
+.callout.good{border-color:var(--good);background:var(--good-soft)}
+pre.msg{white-space:pre-wrap;font-family:var(--body);font-size:14px;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px;margin:0}
+.btn{font:inherit;font-size:13.5px;font-weight:600;border:1px solid var(--accent);background:var(--accent);color:var(--accent-ink);border-radius:8px;padding:7px 14px;cursor:pointer}
+.btn:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+html{scroll-behavior:smooth}
+</style>
+
+<div class="wrap">
+<header class="top">
+  <div class="eyebrow">PMM · Google Ads plan · Existing account, restructure</div>
+  <h1>AAMCO Transmissions — 103rd St, Jacksonville</h1>
+  <div class="meta">
+    <span>Account <b class="mono">468-970-4116</b> (AAMCO Ad Pool)</span>
+    <span>Current campaign <b class="mono">21872809331</b></span>
+    <span>D0 <b class="mono">2026-09-23</b></span>
+    <span>Updated <b class="mono">2026-09-24</b></span>
+  </div>
+  <div class="chips">
+    <span class="chip on"><span class="dot"></span>Phase 0 in progress</span>
+    <span class="chip">Search · US · EN</span>
+    <span class="chip warn">Nothing changed in Ads yet: this is a proposal</span>
+    <span class="chip bad">PMax blocked by budget</span>
+  </div>
+</header>
+
+<nav class="tabs" aria-label="Sections">
+  <ul>
+    <li><a href="#summary">Summary</a></li>
+    <li><a href="#diagnosis">Diagnosis</a></li>
+    <li><a href="#strategy">Strategy</a></li>
+    <li><a href="#timeline">Timeline</a></li>
+    <li><a href="#checklist">Checklist</a></li>
+    <li><a href="#ads">Ads</a></li>
+    <li><a href="#negatives">Negatives</a></li>
+    <li><a href="#risks">Risks</a></li>
+    <li><a href="#client">What we need</a></li>
+  </ul>
+</nav>
+
+<!-- SUMMARY -->
+<section id="summary">
+  <div class="eyebrow">Summary</div>
+  <h2>What we recommend, and in what order</h2>
+  <p class="lede">The campaign works, but it's measured on an inflated signal and built on the same weak template as the other 6 locations. The plan: fix measurement first, then restructure into 2 Search campaigns on the same budget, and only then bid to a CPA target.</p>
+
+  <div class="grid g5" style="margin-bottom:14px">
+    <div class="panel stat"><span class="v num">$26–38</span><span class="l">Provisional target cost per CallRail call (qualified lead: $45–65)</span></div>
+    <div class="panel stat"><span class="v num">$68/day</span><span class="l">Total budget, same as today: Brand $8 + Non-brand $60</span></div>
+    <div class="panel stat"><span class="v num">Oct 12</span><span class="l">New structure goes live (Monday)</span></div>
+    <div class="panel stat"><span class="v num">~Nov 30</span><span class="l">tCPA on non-brand, if there are 30 clean conversions in 30 days</span></div>
+    <div class="panel stat alert"><span class="v">No</span><span class="l">PMax: needs ~$165/day; it would get ~$15–20</span></div>
+  </div>
+
+  <div class="grid g2">
+    <div class="now">
+      <h3>This week (Sep 23 → 30)</h3>
+      <ol>
+        <li><b>Get CallRail access</b> and measure the last 60 days: % first-time callers, % over 60 seconds, % existing customers.<span class="who">PMM</span></li>
+        <li><b>Find out what the "Phone Call" conversion is</b> (DEFAULT category).<span class="who">PMM</span></li>
+        <li><b>Approve the primary conversion change</b>: CallRail first-time calls of 60 s or more only. It goes on the current campaign so we get 2 weeks of clean baseline.<span class="who">PMM lead</span></li>
+        <li><b>Send the client the questions</b>: ticket, margin, close rate, warranty, financing, oil changes (text ready below).<span class="who">PMM → Client</span></li>
+        <li><b>Tell the client</b> that reported CPA will go up because of the measurement change, not because performance got worse.<span class="who">PMM</span></li>
+      </ol>
+    </div>
+    <div class="panel">
+      <h3>The 5 decisions in this plan</h3>
+      <ol class="decisions">
+        <li><span><b>Measurement first.</b> Today 3 call sources count as primary at the same time. Nothing launches until that's fixed.</span></li>
+        <li><span><b>2 Search campaigns:</b> BRAND 103rd ($8/day, impression share) and NON-BRAND 103rd ($60/day, Max Conversions, 5 ad groups).</span></li>
+        <li><span><b>Phrase and exact, no broad.</b> Transmission, the high-ticket service, gets priority; "oil change near me" stops being the catch-all.</span></li>
+        <li><span><b>The current campaign and PMax 103rd are paused</b> the same day the new ones go live.</span></li>
+        <li><span><b>tCPA only on clean data</b> (≥30 in 30 days). PMax, Display and broad match stay out for now.</span></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- DIAGNOSIS -->
+<section id="diagnosis">
+  <div class="eyebrow">Diagnosis · last 90 days (Windsor.ai)</div>
+  <h2>Where the campaign stands today</h2>
+  <p class="lede">Search "AAMCO Transmissions (103 RD JACKSONVILLE FL) - ZETA Radius": $3,762 spend, 602 clicks, 234 reported conversions. Last 12 months: $14,157.</p>
+
+  <div class="grid g5" style="margin-bottom:14px">
+    <div class="panel stat"><span class="v num">38.9%</span><span class="l">Reported conversion rate (not realistic for a repair shop)</span></div>
+    <div class="panel stat"><span class="v num">$16.08</span><span class="l">Reported CPA · <b>$27.06</b> counting CallRail only</span></div>
+    <div class="panel stat"><span class="v num">42%</span><span class="l">of visible spend is brand "aamco…" (67% of conversions)</span></div>
+    <div class="panel stat"><span class="v num">34%</span><span class="l">of spend on broad "oil change near me"; only $13 were actual oil-change searches</span></div>
+    <div class="panel stat"><span class="v num">53%</span><span class="l">of impressions lost to budget (20% impression share)</span></div>
+  </div>
+
+  <div class="grid g2">
+    <div class="panel">
+      <h3>Findings</h3>
+      <ul class="plain">
+        <li><b>We don't know the real cost per lead.</b> The conversion rate jumped from ~17% to ~40% in April 2026, when CallRail and "Calls from ads" were added next to "Phone Call". That's a measurement change, not a performance change.</li>
+        <li><b>The campaign lives on brand searches</b>, at ~$4.40 per click. Many of those calls are existing customers asking about their car.</li>
+        <li><b>Flat structure:</b> 1 ad group, ~60 keywords (98% of spend on broad), 1 RSA rated "POOR" and 1 call-only ad.</li>
+        <li><b>Transmission gets only 15%</b> of visible spend, even though it's the high-ticket service.</li>
+        <li><b>PMax 103rd</b> ($16/day, tCPA $23) competes for the same calls; 63 of its 88 conversions are "Calls from ads".</li>
+        <li><b>Landing page:</b> no thank-you page, and the subdomain form had 0 submissions in 90 days. All traffic lands on the generic home page.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <h3>Spend by intent (visible search terms, $2,099)</h3>
+      <div class="bars" role="list">
+        <div class="bar" role="listitem"><span>Brand (aamco…)</span><span class="track"><span class="fill" style="width:41.7%"></span></span><span class="v">$876 · CPA $8.8</span></div>
+        <div class="bar" role="listitem"><span>Generic auto repair</span><span class="track"><span class="fill alt" style="width:36%"></span></span><span class="v">$756 · CPA $25.1</span></div>
+        <div class="bar" role="listitem"><span>Non-brand transmission</span><span class="track"><span class="fill" style="width:14.8%"></span></span><span class="v">$310 · CPA $24.8</span></div>
+        <div class="bar" role="listitem"><span>Other services</span><span class="track"><span class="fill alt" style="width:5.2%"></span></span><span class="v">$109 · CPA $27.3</span></div>
+        <div class="bar" role="listitem"><span>Competitors</span><span class="track"><span class="fill alt" style="width:1.6%"></span></span><span class="v">$35</span></div>
+      </div>
+      <p class="muted" style="font-size:13px;margin-top:12px">Another $1,663 (44%) went to terms Google doesn't show. CPA as reported, inflated by double counting.</p>
+    </div>
+  </div>
+
+  <h3 style="margin-top:22px">Setup vs. PMM standard</h3>
+  <div class="tw">
+    <table>
+      <thead><tr><th>Item</th><th>Today</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td>Network</td><td>Search only</td><td><span class="st ok">OK</span></td></tr>
+        <tr><td>Location</td><td>5 mi radius around 7532 103rd St, Presence</td><td><span class="st ok">OK</span></td></tr>
+        <tr><td>Schedule</td><td>Mon–Fri 8:00–18:00 ET (GBP 8–5:30)</td><td><span class="st ok">OK</span></td></tr>
+        <tr><td>Conversions</td><td>3 primary call actions at the same time</td><td><span class="st x">Fix</span></td></tr>
+        <tr><td>Bidding</td><td>Max Conversions, no tCPA, on an inflated signal</td><td><span class="st w">Review</span></td></tr>
+        <tr><td>Ad groups</td><td>1 with ~60 keywords</td><td><span class="st x">Fix</span></td></tr>
+        <tr><td>Match types</td><td>98% of spend on broad</td><td><span class="st x">Fix</span></td></tr>
+        <tr><td>Ads</td><td>1 RSA "POOR" + 1 call-only</td><td><span class="st x">Fix</span></td></tr>
+        <tr><td>Landing page</td><td>Multi-location home page; 3 domains for the same location</td><td><span class="st w">Review</span></td></tr>
+        <tr><td>Negatives</td><td>359 on the campaign; some exact-match ones let variants through; "aaa" and "duval" block buying intent</td><td><span class="st w">Review</span></td></tr>
+        <tr><td>PMax 103rd</td><td>Brand exclusion not confirmed</td><td><span class="st w">Pause</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 style="margin-top:22px">Compared with the other 6 AAMCO locations (internal benchmark)</h3>
+  <div class="tw">
+    <table>
+      <thead><tr><th>Metric</th><th class="n">P25</th><th class="n">Median</th><th class="n">P75</th><th class="n">103rd</th></tr></thead>
+      <tbody>
+        <tr><td>Reported CPL</td><td class="n">$16.85</td><td class="n">$19.50</td><td class="n">$21.70</td><td class="n">$16.08</td></tr>
+        <tr class="hl"><td><b>CPL, CallRail only</b></td><td class="n">$28.69</td><td class="n">$32.09</td><td class="n">$35.44</td><td class="n">$27.06</td></tr>
+        <tr><td>CPC</td><td class="n">$6.19</td><td class="n">$6.41</td><td class="n">$7.22</td><td class="n">$6.25</td></tr>
+        <tr><td>CTR</td><td class="n">6.2%</td><td class="n">6.5%</td><td class="n">6.75%</td><td class="n">5.5%</td></tr>
+        <tr><td>Conversions/month (reported)</td><td class="n">50</td><td class="n">64</td><td class="n">83</td><td class="n">78</td></tr>
+        <tr><td>Impression share lost to budget</td><td class="n">42%</td><td class="n">48%</td><td class="n">53%</td><td class="n">53%</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="muted" style="font-size:13px;margin-top:8px">All 7 locations use the same template (1 ad group, broad match, "oil change near me" as the #1 keyword), so there's no "winning" structure to copy. The 103rd restructure is a pilot that can then be rolled out to ~$8,600/month of Search spend across the account.</p>
+</section>
+
+<!-- STRATEGY -->
+<section id="strategy">
+  <div class="eyebrow">Strategy v1</div>
+  <h2>Campaign type and structure</h2>
+  <p class="lede">Search only. Brand is separated so it doesn't subsidize non-brand, and non-brand is organized by service. Transmission and general repair share one campaign because $60/day can't cover 3× daily CPL across two campaigns; they split in Phase 3.</p>
+
+  <div class="tw">
+    <table>
+      <thead><tr><th>Campaign</th><th>Goal</th><th class="n">$/day P1</th><th>Bidding</th><th>Geo · schedule</th></tr></thead>
+      <tbody>
+        <tr><td><b>BRAND 103rd</b></td><td>Capture searches for this location and protect the brand</td><td class="n">$8</td><td>Target impression share 90% top, max CPC $4</td><td>5 mi radius, Presence · Mon–Fri 8:00–17:30 ET</td></tr>
+        <tr><td><b>NON-BRAND 103rd</b></td><td>Calls from new customers, transmission first</td><td class="n">$60</td><td>Max Conversions, no tCPA (CallRail ≥ 60 s + form)</td><td>5 mi radius, Presence · Mon–Fri 8:00–18:00 ET</td></tr>
+        <tr><td class="muted"><s>Current Search "ZETA Radius"</s></td><td class="muted">Paused on Oct 12</td><td class="n">$0</td><td class="muted">—</td><td class="muted">—</td></tr>
+        <tr><td class="muted"><s>PMax 103rd</s></td><td class="muted">Paused on Oct 12; its budget moves to non-brand</td><td class="n">$0</td><td class="muted">—</td><td class="muted">—</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 style="margin-top:22px">Ad groups</h3>
+  <div class="tw">
+    <table>
+      <thead><tr><th>Ad group</th><th>Main keywords (phrase "…", exact […])</th><th class="n">Est. vol./mo</th><th>Landing page</th><th>Pinned H1</th></tr></thead>
+      <tbody>
+        <tr><td><b>Brand 103rd</b><br><span class="muted">BRAND</span></td><td class="kw">[aamco 103rd] "aamco on 103rd" "aamco westside" "aamco near me" [aamco] [aamco transmission] "aamco jacksonville"</td><td class="n">~60</td><td><code>103rd.aamco-jacksonvillefl.com/</code></td><td>AAMCO on 103rd Street</td></tr>
+        <tr class="hl"><td><b>A · Transmission Repair</b><br><span class="muted">NON-BRAND</span></td><td class="kw">[transmission repair near me] [transmission shop near me] [transmission repair jacksonville fl] "transmission repair" "transmission shop" "transmission slipping" "car won't go in reverse" "transmission leaking fluid"</td><td class="n">~345</td><td><code>/service/automatic-transmissions/</code></td><td>Transmission Repair on 103rd</td></tr>
+        <tr><td><b>B · Transmission Rebuild</b><br><span class="muted">NON-BRAND</span></td><td class="kw">[transmission rebuild near me] [transmission replacement near me] "transmission rebuild" "transmission replacement" "transmission rebuild cost" "transmission financing"</td><td class="n">~20</td><td><b>New</b>: rebuild + financing</td><td>Transmission Rebuild - 103rd</td></tr>
+        <tr><td><b>C · Service, Clutch &amp; Drivetrain</b><br><span class="muted">NON-BRAND</span></td><td class="kw">[transmission service near me] "transmission fluid change" "transmission flush" "clutch repair" "cvt transmission repair" "differential repair" "4x4 repair"</td><td class="n">~45</td><td><code>/service/fluid-change-maintenance/</code> · clutch → <code>/service/manual-transmissions/</code></td><td>Transmission Service - 103rd</td></tr>
+        <tr><td><b>E · Auto Repair</b><br><span class="muted">NON-BRAND</span></td><td class="kw">[auto repair shop near me] [car repair near me] "car repair jacksonville" "auto mechanic near me" "mechanic near me" (no "auto shop near me")</td><td class="n">~900</td><td><code>/auto-service/</code></td><td>Auto Repair on 103rd Street</td></tr>
+        <tr><td><b>F · Check Engine &amp; Engine</b><br><span class="muted">NON-BRAND</span></td><td class="kw">[engine repair near me] "check engine light" "engine diagnostic" "car diagnostic" "overheating car repair"</td><td class="n">~65</td><td><code>/service/check-engine-light-service/</code></td><td>Check Engine Light? 103rd St</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="muted" style="font-size:13px;margin-top:8px">Volumes estimated with Semrush (conservative), to be confirmed with Keyword Planner on a 5 mi radius before building. E is the biggest group: if it takes more than 45% of non-brand spend at a worse CPL than transmission, its bids come down. Details in <code>data/keywords.csv</code>.</p>
+
+  <div class="grid g2" style="margin-top:18px">
+    <div class="panel">
+      <h3>Budget by phase</h3>
+      <div class="tw" style="border:0">
+        <table>
+          <thead><tr><th>Phase</th><th class="n">Total/mo</th><th>Condition to move on</th></tr></thead>
+          <tbody>
+            <tr><td>P0 Measurement</td><td class="n">~$2,070</td><td>1 primary conversion tested; max CPL defined</td></tr>
+            <tr><td>P1 New structure</td><td class="n">~$2,070</td><td>30 days with ≥25 clean conversions and CPL ≤ max</td></tr>
+            <tr><td>P2 Optimization</td><td class="n">~$2,070</td><td>Stable CPL for 2 weeks; &lt;5% irrelevant spend</td></tr>
+            <tr><td>P3 Scale</td><td class="n">→ ~$3,000</td><td>+20% per step every 2 weeks; split out Transmission</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="panel">
+      <h3>Expected results in P1</h3>
+      <ul class="plain">
+        <li><b>Non-brand</b> (~$1,825/mo): CPC ~$6–7 → ~270 clicks → <b>~55 CallRail calls</b> → <b>~28–33 qualified leads</b>.</li>
+        <li><b>Brand</b> (~$245/mo): ~55 clicks, ~14 calls (many from existing customers).</li>
+        <li>Clicks will likely drop when broad match goes away. The alarm is −40% non-brand clicks at day 14.</li>
+      </ul>
+      <h3 style="margin-top:16px">What we're NOT doing (yet)</h3>
+      <ul class="plain">
+        <li><b>PMax:</b> double-counted signal, brand exclusion not confirmed, and budget &lt; 3× CPA/day.</li>
+        <li><b>Broad match:</b> it's why "oil change near me" became the catch-all. It comes back only with a mature tCPA.</li>
+        <li><b>Display:</b> not for a local repair shop.</li>
+        <li><b>tCPA:</b> not until we have 30 days of clean conversions.</li>
+        <li><b>LSA:</b> yes, as a parallel track, if the category is available.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3 style="margin-top:22px">Landing pages needed</h3>
+  <div class="tw">
+    <table>
+      <thead><tr><th>Page</th><th>Exists</th><th>Owner</th><th>When</th></tr></thead>
+      <tbody>
+        <tr><td><code>/thank-you/</code> + form redirect</td><td><span class="st x">No</span></td><td>PMM + whoever edits the site</td><td>P0 · Oct 9 · blocking</td></tr>
+        <tr><td>103rd subdomain form working</td><td><span class="st w">Check</span></td><td>PMM</td><td>P0 · Oct 2 · blocking</td></tr>
+        <tr><td>103rd version of the transmission page</td><td><span class="st w">Base yes</span></td><td>Client/franchise</td><td>P2 · Nov 11</td></tr>
+        <tr><td>103rd rebuild + financing page</td><td><span class="st x">No</span></td><td>Client/franchise</td><td>P3 · Dec 1 (before tax-refund season)</td></tr>
+        <tr><td>103rd versions of auto-service and check engine</td><td><span class="st w">Base yes</span></td><td>Client/franchise</td><td>P3 · Dec 1</td></tr>
+        <tr><td>Single canonical domain (3 today)</td><td><span class="st w">Decision</span></td><td>Client/franchise</td><td>P2 · Nov 11</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section id="timeline">
+  <div class="eyebrow">Roadmap · D0 = 2026-09-23</div>
+  <h2>Timeline</h2>
+  <p class="lede">Dates are projections; the pass condition is what counts. If a condition isn't met, the phase doesn't move forward and gets rescheduled.</p>
+  <div class="tw"><div class="gantt" id="gantt"></div></div>
+  <div class="legend">
+    <span><i style="background:var(--accent)"></i>Phase</span>
+    <span><i style="background:var(--accent-soft);border:1px dashed var(--accent)"></i>Buffer / conditional</span>
+    <span><i style="background:var(--warn)"></i>Parallel track</span>
+    <span><i style="background:var(--good)"></i>Opportunity window</span>
+    <span><i style="background:repeating-linear-gradient(45deg,var(--bad-soft) 0 4px,transparent 4px 8px);border:1px solid var(--bad)"></i>Blocked</span>
+    <span>◆ Milestone</span>
+  </div>
+
+  <h3 style="margin-top:22px">Key dates</h3>
+  <div class="dates">
+    <div class="date"><span class="d">Sep 23</span><span>D0 · Phase 0 (measurement) starts</span></div>
+    <div class="date"><span class="d">Sep 28</span><span>Clean baseline starts (if the conversion change is approved)</span></div>
+    <div class="date"><span class="d">Oct 2</span><span>Subdomain form, GA4 events and <code>tel:</code> number ready</span></div>
+    <div class="date"><span class="d">Oct 7</span><span>LSA eligibility checked</span></div>
+    <div class="date"><span class="d">Oct 9</span><span>End of P0: <code>/thank-you/</code> live, new campaigns built and paused</span></div>
+    <div class="date"><span class="d">Oct 12</span><span><b>BRAND and NON-BRAND go live; old campaign and PMax paused</b></span></div>
+    <div class="date"><span class="d">Oct 19</span><span>D7 review · end of P1</span></div>
+    <div class="date"><span class="d">Oct 26</span><span>D14 review · brand incrementality test starts</span></div>
+    <div class="date"><span class="d">Nov 11</span><span>D30 review · client lead-quality report</span></div>
+    <div class="date"><span class="d">Nov 30</span><span><b>tCPA on non-brand</b> (if ≥30 clean conversions in 30 days)</span></div>
+    <div class="date"><span class="d">Dec 1</span><span>Rebuild + financing page and location versions</span></div>
+    <div class="date"><span class="d">Dec 14</span><span>RLSA, if the audience reaches 1,000</span></div>
+    <div class="date"><span class="d">Feb 1 '27</span><span>Tax-refund season: scale transmission and reassess PMax</span></div>
+  </div>
+</section>
+
+<!-- CHECKLIST -->
+<section id="checklist">
+  <div class="eyebrow">Checklist by phase</div>
+  <h2>What's left to do</h2>
+  <p class="lede">Tick tasks off as they get done. Whatever you tick is saved for everyone who opens this page, and Claude reads it during each <code>/weekly-review</code>.</p>
+  <div class="overall">
+    <div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap"><b id="ovText">—</b><span class="sync" id="sync"><span class="dot"></span><span id="syncText">Connecting…</span></span></div>
+    <div class="meter"><i id="ovBar" style="width:0%"></i></div>
+  </div>
+  <div class="ck-tools">
+    <div class="seg" role="group" aria-label="Filter by owner" id="respSeg">
+      <button type="button" data-r="all" aria-pressed="true">All</button>
+      <button type="button" data-r="PMM" aria-pressed="false">PMM</button>
+      <button type="button" data-r="Client" aria-pressed="false">Client</button>
+      <button type="button" data-r="Account" aria-pressed="false">Account</button>
+    </div>
+    <label class="tog" for="hideDone"><input type="checkbox" id="hideDone"> Hide completed</label>
+  </div>
+  <div id="ck"></div>
+</section>
+
+<!-- ADS -->
+<section id="ads">
+  <div class="eyebrow">Proposed copy · lengths validated</div>
+  <h2>Ads (RSA)</h2>
+  <p class="lede">6 ad groups × 15 headlines + 4 descriptions. Headline 1 is pinned. Each group gets 3 RSAs: the base below plus 2 variants that rotate pins 2 and 3 and the angle of description 1.</p>
+  <div class="callout" style="margin-bottom:16px">Before publishing, confirm with the client: <b>Nationwide Warranty</b> terms by job type, <b>Financing Available</b> at this location, <b>Free Transmission Check</b> and <b>Free Multi-Point Check</b> still offered, and that the shop can see cars within the same week.</div>
+  <div class="serp" aria-label="Example preview">
+    <div class="sp">Sponsored</div>
+    <div class="u">aamco-jacksonvillefl.com › transmission-repair</div>
+    <div class="h">Transmission Repair on 103rd | Free Transmission Check | Nationwide Warranty</div>
+    <div class="d">Transmission slipping, leaking or won't shift? Get a free check at AAMCO on 103rd St. We diagnose first and quote before any work.</div>
+  </div>
+  <p class="muted" style="font-size:13px;margin:8px 0 16px">Approximate preview of ad group A.</p>
+  <div id="ads-list"></div>
+  <div class="panel" style="margin-top:14px">
+    <h3>Assets</h3>
+    <ul class="plain">
+      <li><b>Sitelinks:</b> Transmission Repair · Free Transmission Check · Financing · Reviews · Clutch &amp; Manual · Check Engine Light</li>
+      <li><b>Callouts:</b> Free Transmission Check · Nationwide Warranty · Financing Available · 507 Google Reviews · All Makes &amp; Models · Diagnosis Before Quote · Open Mon–Fri 8–5:30 · Westside Jacksonville</li>
+      <li><b>Structured snippets (Services):</b> Transmission Repair, Transmission Rebuild, Clutch Repair, CVT Repair, Check Engine Light, Engine Repair, A/C Repair, Brakes</li>
+      <li><b>Call:</b> the location's CallRail number, Mon–Fri 8:00–17:30 ET · <b>Location:</b> GBP 7532 103rd St, this location only · <b>Images:</b> real photos of the shop</li>
+    </ul>
+  </div>
+</section>
+
+<!-- NEGATIVES -->
+<section id="negatives">
+  <div class="eyebrow">Negatives · nothing applied yet</div>
+  <h2>Negative keywords</h2>
+  <div class="grid g2">
+    <div class="panel">
+      <h3>Changes to what already exists (359 negatives)</h3>
+      <ul class="plain">
+        <li><b>Review "aaa":</b> it blocks "aaa approved auto repair", which is buying intent.</li>
+        <li><b>Review "duval":</b> it blocks "transmission repair duval county". Replace it with "duval county transmission" (a competitor).</li>
+        <li><b>Switch to phrase</b> "take 5" and "aamco dunn ave": variants still get through ($26.58 on "take 5 jacksonville fl").</li>
+        <li><b>Add:</b> rpm automotive/phillips/roosevelt, hughes riverside, tillman auto, keith pierson, dunn ave, atlantic blvd, san jose blvd, st augustine, transmissions for sale, buy transmission, who put, how to fix.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <h3>Base list for the new structure</h3>
+      <ul class="plain">
+        <li><b>PMM universal list, adjusted:</b> without "free" (it would block "free transmission check") and without "reviews"/"bbb" on brand.</li>
+        <li><b>Niche:</b> parts, body work, glass, locksmith, tires, used, "for sale", mobile mechanic.</li>
+        <li><b>Competitors:</b> Take 5, Midas, Meineke, Firestone, Pep Boys, Mavis, Cottman, Shifters, Duval County Transmission, Everything Automotive and others.</li>
+        <li><b>Cross-location:</b> biscayne, dunn ave, san jose, atlantic blvd, blanding, orange park, st augustine, st marys.</li>
+        <li><b>Oil change:</b> pending the client's decision.</li>
+      </ul>
+      <p class="muted" style="font-size:13px;margin-top:10px">Files: <code>data/negatives-nicho.txt</code> and <code>data/negatives-propuestas-2026-09-23.txt</code></p>
+    </div>
+  </div>
+</section>
+
+<!-- RISKS -->
+<section id="risks">
+  <div class="eyebrow">Risks and competition</div>
+  <h2>What could go wrong</h2>
+  <div class="grid g2">
+    <div class="panel">
+      <h3>Plan risks</h3>
+      <ul class="plain">
+        <li><b>No CallRail access, no launch.</b> The new structure would be measured on the same inflated signal.</li>
+        <li><b>Reported CPA will go up</b> once measurement is cleaned. The client needs to hear that first.</li>
+        <li><b>Less volume without broad match.</b> If non-brand clicks fall more than 40% by day 14, we reopen generic terms in phrase match.</li>
+        <li><b>Budget &lt; 3× CPL/day:</b> learning will be slow, hence the buffer on the tCPA date.</li>
+        <li><b>Brand cannibalization:</b> 4 locations bid on [aamco] (~$1,540 in 90 days, ~$5 per click). This gets solved at the account level.</li>
+        <li><b>The franchise controls the website:</b> if it can't be edited, the thank-you page falls back to event-based tracking.</li>
+        <li><b>Spend nearly stopped in Feb–Mar 2026</b> (cause pending). Confirm the ad pool budget before tax-refund season.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <h3>Competition that matters</h3>
+      <ul class="plain">
+        <li><b>Duval County Transmission</b>, ~1 mile away on the same street (8333 103rd St): NAPA 36/36 warranty, AAA with a 10% discount, <b>open Saturdays</b>.</li>
+        <li><b>Budget Automotive</b>, 8670 103rd St: transmissions, family-owned since 1994.</li>
+        <li><b>Reputation:</b> Everything Automotive (4.9★, 1,004 reviews) and JJ's (4.9★, 412) vs. AAMCO 103rd at 4.4★ with 507.</li>
+        <li><b>Chains</b> (Firestone, Midas, Meineke, Take 5…) drive up the cost of generic and oil-change terms.</li>
+        <li><b>Opportunity:</b> nobody on 103rd St advertises financing, and the current ad uses neither the AAMCO nationwide warranty nor AAMCO financing.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- CLIENT -->
+<section id="client">
+  <div class="eyebrow">Ready to send</div>
+  <h2>What we need from the client</h2>
+  <p class="lede">Without these answers we can't set the maximum cost per lead or publish the new ads. The text is ready to copy and send.</p>
+  <pre class="msg" id="msg">Hi! To finish the new Google Ads plan for the 103rd St shop, we need a few answers:
+
+1. Average ticket by job type: transmission rebuild/replacement, transmission repair, general repair/maintenance. Rough margin on each?
+2. Out of every 10 new-customer calls, how many turn into a job?
+3. How many cars per week can the shop take on right now?
+4. Who answers the phone, and what happens to calls outside Mon–Fri 8–5:30?
+5. Warranty: which warranty applies to each job type (e.g. 36 months / 100k miles on rebuilds)?
+6. Is AAMCO financing available at this location? Any current promo?
+7. Is the "Free Transmission Check" / "Free Multi-Point Check" still offered?
+8. Do you offer free towing with a repair?
+9. Oil changes: do you want them as a way to bring in new customers, or should we stop advertising them?
+10. Who can edit the website (aamco-jacksonvillefl.com / 103rd subdomain)? We need a thank-you page for the contact form.
+11. Could you share access to CallRail so we can separate new-customer calls from existing customers?
+
+Thanks!</pre>
+  <div style="display:flex;gap:10px;align-items:center;margin-top:10px">
+    <button type="button" class="btn" id="copyBtn">Copy text</button>
+    <span class="muted" id="copyMsg" style="font-size:13px" aria-live="polite"></span>
+  </div>
+</section>
+
+<footer>
+  Sources: Windsor.ai (Google Ads, GA4, GBP), Semrush and web research, as of 2026-09-23. Client files in <code>clients/aamco-jacksonville-103rd/</code> (brief, evaluation, audit-site, competitors, benchmark, strategy, roadmap, checklist). No changes have been made in Google Ads.
+</footer>
+</div>
+
+<script>
+const ITEMS = [{"id": "a02eb5ab2f", "sec": "Diagnosis (done)", "sub": null, "t": "/onboard + review of the current campaign (2026-09-23)", "resp": "PMM", "done0": true, "block": false}, {"id": "624c359e4a", "sec": "Diagnosis (done)", "sub": null, "t": "/audit-landing, partial (2026-09-23)", "resp": "PMM", "done0": true, "block": false}, {"id": "ec0bec00e1", "sec": "Diagnosis (done)", "sub": null, "t": "/competitors (2026-09-23)", "resp": "PMM", "done0": true, "block": false}, {"id": "266dd11a4f", "sec": "Diagnosis (done)", "sub": null, "t": "/benchmark-interno (2026-09-23)", "resp": "PMM", "done0": true, "block": false}, {"id": "678c42d2b9", "sec": "Diagnosis (done)", "sub": null, "t": "/strategy v1 (2026-09-23)", "resp": "PMM", "done0": true, "block": false}, {"id": "3b6c9fac3d", "sec": "Diagnosis (done)", "sub": null, "t": "/roadmap (2026-09-23)", "resp": "PMM", "done0": true, "block": false}, {"id": "f0c11eae47", "sec": "Phase 0 — Foundation (blocks the new structure)", "sub": "Account (already exists)", "t": "Account in the PMM MCC (AAMCO Ad Pool 468-970-4116)", "resp": "PMM", "done0": true, "block": false}, {"id": "18b1705419", "sec": "Phase 0 — Foundation (blocks the new structure)", "sub": "Account (already exists)", "t": "Billing active (the account is spending)", "resp": "PMM", "done0": true, "block": false}, {"id": "8a24c570d9", "sec": "Phase 0 — Foundation (blocks the new structure)", "sub": "Account (already exists)", "t": "GBP verified, category \"Transmission shop\" (507 reviews, 4.4★)", "resp": "Client", "done0": true, "block": false}, {"id": "e4fbdd3488", "sec": "Phase 0 — Foundation (blocks the new structure)", "sub": "Account (already exists)", "t": "GBP linked to Google Ads as a location asset, filtered to the 103rd location (not verified)", "resp": "PMM", "done0": false, "block": false}, {"id": "9cd39e15dd", "sec": "Phase 0 — Foundation (blocks the new structure)", "sub": "Account (already exists)", "t": "Google Tag installed (GA4 receives hits; the form conversion records)", "resp": "PMM", "done0": true, "block": false}, {"id": "89c5964e61", "sec": "Phase 0 — Foundation (blocks the new structure)", "sub": "Account (already exists)", "t": "Auto-tagging on", "resp": "PMM", "done0": true, "block": false}, {"id": "a4b0ba95b2", "sec": "Phase 0 — Foundation (blocks the new structure)", "sub": "Account (already exists)", "t": "Auto-apply recommendations turned OFF (not verified)", "resp": "PMM", "done0": false, "block": false}, {"id": "6da339182c", "sec": "Phase 0 — Foundation (blocks the new structure)", "sub": "Measurement — blocking", "t": "CallRail access", "resp": "PMM", "done0": false, "block": true}, {"id": "afb21fdf1b", "sec": "Phase 0 — Foundation (blocks the new structure)", "sub": "Measurement — blocking", "t": "Measure in CallRail (60 days): % first-time callers, % ≥ 60 s, % existing customers", "resp": "PMM", "done0": false, "block": true}, {"id": "588ec8e19a", "sec": "Phase 0 — Foundation (blocks the new structure)", "sub": "Measurement — blocking", "t": "Identify the \"Phone Call\" conversion (DEFAULT category)", "resp": "PMM", "done0": false, "block": true}, {"id": "087de0e399", "sec": "Phase 0 — Foundation (blocks the new structure)", "sub": "Measurement — blocking", "t": "Single primary call conversion: CallRail first-time call ≥ 60 s; \"Calls from ads\" and \"Phone Call\" set to secondary — needs approval", "resp": "PMM", "done0": false, "block": true}, {"id": "4e78a8c3f5", "sec": "Phase 0 — Foundation (blocks the new structure)", "sub": "Measurement — blocking", "t": "2-week clean baseline on the current campaign (09-28 → 10-11)", "resp": "PMM", "done0": false, "block": true}, {"id": "5b573f604c", "sec": "Phase 0 — Foundation (blocks the new structure)", "sub": "Measurement — blocking", "t": "\"Form\" conversion by `/thank-you/` URL, tested with Tag Assistant", "resp": "PMM", "done0": false, "block": true}, {"id": "eaedd4bda8", "sec": "Phase 0 — Foundation (blocks the new structure)", "sub": "Measurement — blocking", "t": "103rd subdomain form tested on mobile (0 submissions today)", "resp": "PMM", "done0": false, "block": true}, {"id": "5ee0fe4b3c", "sec": "Phase 0 — Foundation (blocks the new structure)", "sub": "Measurement — blocking", "t": "GA4 key events: form_submit / thank-you, click_tel", "resp": "PMM", "done0": false, "block": true}, {"id": "2fb8f63940", "sec": "Phase 0 — Foundation (blocks the new structure)", "sub": "Measurement — blocking", "t": "CallRail number shown as a `tel:` link in the mobile header", "resp": "PMM", "done0": false, "block": true}, {"id": "8fdbabda62", "sec": "Phase 0 — Foundation (blocks the new structure)", "sub": "Measurement — blocking", "t": "Secondary conversions (directions, store visits, local actions) kept as secondary", "resp": "PMM", "done0": true, "block": true}, {"id": "ea20dcc496", "sec": "Phase 0 — Foundation (blocks the new structure)", "sub": "Measurement — blocking", "t": "Hidden UTM + GCLID fields in the form (not verified)", "resp": "PMM", "done0": false, "block": true}, {"id": "c364019568", "sec": "Phase 0 — Foundation (blocks the new structure)", "sub": "Business — blocking", "t": "Ticket and margin by job type, close rate, capacity → max CPL", "resp": "Client", "done0": false, "block": true}, {"id": "581df31994", "sec": "Phase 0 — Foundation (blocks the new structure)", "sub": "Business — blocking", "t": "Response process: who answers, how fast, what happens after hours", "resp": "Client", "done0": false, "block": true}, {"id": "6bed29e89a", "sec": "Phase 0 — Foundation (blocks the new structure)", "sub": "Business — blocking", "t": "Confirm warranty by job type, financing at this location, \"Free Transmission Check\", free towing", "resp": "Client", "done0": false, "block": true}, {"id": "9a8c131fd3", "sec": "Phase 0 — Foundation (blocks the new structure)", "sub": "Business — blocking", "t": "Decision on oil changes (entry product or excluded)", "resp": "Client", "done0": false, "block": true}, {"id": "fe6253ac42", "sec": "Phase 0 — Foundation (blocks the new structure)", "sub": "Negatives and build", "t": "PMM universal negative list (adjusted: no \"free\", no \"reviews\") as a shared list — `data/negatives-nicho.txt`", "resp": "PMM", "done0": false, "block": false}, {"id": "66173d5252", "sec": "Phase 0 — Foundation (blocks the new structure)", "sub": "Negatives and build", "t": "Niche + competitor + cross-location negative lists", "resp": "PMM", "done0": false, "block": false}, {"id": "22ba4dc4d4", "sec": "Phase 0 — Foundation (blocks the new structure)", "sub": "Negatives and build", "t": "Review match type of existing negatives (\"take 5\", \"aamco dunn ave\") and remove or adjust \"aaa\" and \"duval\"", "resp": "PMM", "done0": false, "block": false}, {"id": "2620b1b06e", "sec": "Phase 0 — Foundation (blocks the new structure)", "sub": "Negatives and build", "t": "Keyword Planner (5 mi radius) to confirm volumes for groups A and E", "resp": "PMM", "done0": false, "block": false}, {"id": "aebca055c4", "sec": "Phase 0 — Foundation (blocks the new structure)", "sub": "Negatives and build", "t": "Confirm brand exclusion on PMax 103rd", "resp": "PMM", "done0": false, "block": false}, {"id": "377bf05a8c", "sec": "Phase 0 — Foundation (blocks the new structure)", "sub": "Negatives and build", "t": "/build-campaign: BRAND and NON-BRAND created **paused**", "resp": "PMM", "done0": false, "block": false}, {"id": "08501d23d2", "sec": "Phase 0 — Foundation (blocks the new structure)", "sub": "Negatives and build", "t": "Mobile PageSpeed of the landing pages (not verified; blocking only if score < 40)", "resp": "PMM", "done0": false, "block": false}, {"id": "ba6505ec02", "sec": "Phase 1 — New structure goes live (target: Monday 2026-10-12)", "sub": null, "t": "Campaigns: BRAND 103rd ($8/d) and NON-BRAND 103rd ($60/d) per `strategy.md`", "resp": "PMM", "done0": false, "block": false}, {"id": "a70b57415d", "sec": "Phase 1 — New structure goes live (target: Monday 2026-10-12)", "sub": null, "t": "Network: Search only; partners and Display off", "resp": "PMM", "done0": false, "block": false}, {"id": "b97a91a8ae", "sec": "Phase 1 — New structure goes live (target: Monday 2026-10-12)", "sub": null, "t": "Location: 5 mi radius around 7532 103rd St, Presence only", "resp": "PMM", "done0": false, "block": false}, {"id": "f9bd8c817b", "sec": "Phase 1 — New structure goes live (target: Monday 2026-10-12)", "sub": null, "t": "Ad schedule: Mon–Fri 8:00–18:00 ET (5–15 PT)", "resp": "PMM", "done0": false, "block": false}, {"id": "ac82d5fa92", "sec": "Phase 1 — New structure goes live (target: Monday 2026-10-12)", "sub": null, "t": "Bidding: BRAND on target impression share 90% top, max CPC $4; NON-BRAND on Max Conversions, no tCPA", "resp": "PMM", "done0": false, "block": false}, {"id": "095cf798b0", "sec": "Phase 1 — New structure goes live (target: Monday 2026-10-12)", "sub": null, "t": "Phrase keywords + exact on top terms; **no broad**", "resp": "PMM", "done0": false, "block": false}, {"id": "3bbfc0fb3f", "sec": "Phase 1 — New structure goes live (target: Monday 2026-10-12)", "sub": null, "t": "3 RSAs per ad group, H1 pinned, 15 headlines / 4 descriptions, \"Good\" strength or better (`data/ads-search-103rd.md`)", "resp": "PMM", "done0": false, "block": false}, {"id": "2b78740e19", "sec": "Phase 1 — New structure goes live (target: Monday 2026-10-12)", "sub": null, "t": "Call-only ad in BRAND and in A", "resp": "PMM", "done0": false, "block": false}, {"id": "554428fd23", "sec": "Phase 1 — New structure goes live (target: Monday 2026-10-12)", "sub": null, "t": "Assets: sitelinks (6), callouts (8), snippets, call (CallRail), location (103rd only), real images", "resp": "PMM", "done0": false, "block": false}, {"id": "3453e9b5db", "sec": "Phase 1 — New structure goes live (target: Monday 2026-10-12)", "sub": null, "t": "Final URLs checked (200, https, no redirect)", "resp": "PMM", "done0": false, "block": false}, {"id": "87f8f6bf6e", "sec": "Phase 1 — New structure goes live (target: Monday 2026-10-12)", "sub": null, "t": "\"ZETA Radius\" 103rd campaign and PMax 103rd paused **the same day**", "resp": "PMM", "done0": false, "block": false}, {"id": "c4afca606e", "sec": "Phase 1 — New structure goes live (target: Monday 2026-10-12)", "sub": null, "t": "Ads approved (check 24 h later)", "resp": "PMM", "done0": false, "block": false}, {"id": "33d0dc427c", "sec": "Phase 1 — New structure goes live (target: Monday 2026-10-12)", "sub": null, "t": "First CallRail ≥ 60 s conversion recorded in non-brand", "resp": "PMM", "done0": false, "block": false}, {"id": "ddf0fc3e19", "sec": "Phase 1 — New structure goes live (target: Monday 2026-10-12)", "sub": null, "t": "Heads-up to the client: reported CPA goes up because of the measurement change, not the structure", "resp": "PMM", "done0": false, "block": false}, {"id": "6f79525f9c", "sec": "Phase 2 — Cleanup (D7 2026-10-19 · D14 10-26 · D30 11-11)", "sub": null, "t": "D7: search terms → negatives", "resp": "PMM", "done0": false, "block": false}, {"id": "af49a5d68f", "sec": "Phase 2 — Cleanup (D7 2026-10-19 · D14 10-26 · D30 11-11)", "sub": null, "t": "D7: keywords with no impressions identified (don't pause yet)", "resp": "PMM", "done0": false, "block": false}, {"id": "29cb05d99e", "sec": "Phase 2 — Cleanup (D7 2026-10-19 · D14 10-26 · D30 11-11)", "sub": null, "t": "D7: spend split E vs. transmission reviewed", "resp": "PMM", "done0": false, "block": false}, {"id": "b467452bc4", "sec": "Phase 2 — Cleanup (D7 2026-10-19 · D14 10-26 · D30 11-11)", "sub": null, "t": "D14: search terms → negatives", "resp": "PMM", "done0": false, "block": false}, {"id": "07e0003ed8", "sec": "Phase 2 — Cleanup (D7 2026-10-19 · D14 10-26 · D30 11-11)", "sub": null, "t": "D14: keywords with > $60 spend and 0 conversions flagged for review", "resp": "PMM", "done0": false, "block": false}, {"id": "4442ab0daf", "sec": "Phase 2 — Cleanup (D7 2026-10-19 · D14 10-26 · D30 11-11)", "sub": null, "t": "D14: volume alarm (non-brand clicks −40% vs. baseline) checked", "resp": "PMM", "done0": false, "block": false}, {"id": "04ea3859ea", "sec": "Phase 2 — Cleanup (D7 2026-10-19 · D14 10-26 · D30 11-11)", "sub": null, "t": "D14: [aamco] incrementality test started", "resp": "PMM", "done0": false, "block": false}, {"id": "35e2f28916", "sec": "Phase 2 — Cleanup (D7 2026-10-19 · D14 10-26 · D30 11-11)", "sub": null, "t": "D30: search terms → negatives", "resp": "PMM", "done0": false, "block": false}, {"id": "3897ba546b", "sec": "Phase 2 — Cleanup (D7 2026-10-19 · D14 10-26 · D30 11-11)", "sub": null, "t": "D30: keywords with 0 impressions in 30 days paused", "resp": "PMM", "done0": false, "block": false}, {"id": "f12c43e129", "sec": "Phase 2 — Cleanup (D7 2026-10-19 · D14 10-26 · D30 11-11)", "sub": null, "t": "D30: worst RSA in each group replaced", "resp": "PMM", "done0": false, "block": false}, {"id": "d42f8128ee", "sec": "Phase 2 — Cleanup (D7 2026-10-19 · D14 10-26 · D30 11-11)", "sub": null, "t": "D30: call-only ad vs. RSA: decision", "resp": "PMM", "done0": false, "block": false}, {"id": "f0497e55dc", "sec": "Phase 2 — Cleanup (D7 2026-10-19 · D14 10-26 · D30 11-11)", "sub": null, "t": "D30: client lead-quality report (tagged in CallRail)", "resp": "PMM", "done0": false, "block": false}, {"id": "7816c271e6", "sec": "Phase 3 — Bid optimization (~2026-11-30)", "sub": null, "t": "≥30 clean non-brand conversions in 30 days confirmed", "resp": "PMM", "done0": false, "block": false}, {"id": "d9b7df56cf", "sec": "Phase 3 — Bid optimization (~2026-11-30)", "sub": null, "t": "tCPA = actual observed CPA", "resp": "PMM", "done0": false, "block": false}, {"id": "42a603ceab", "sec": "Phase 3 — Bid optimization (~2026-11-30)", "sub": null, "t": "Budget adjusted by CPA vs. max CPL and capacity (+20% per step)", "resp": "PMM", "done0": false, "block": false}, {"id": "4c832a3f0d", "sec": "Phase 3 — Bid optimization (~2026-11-30)", "sub": null, "t": "Evaluate splitting Transmission into its own campaign (≥ 3× CPL/day)", "resp": "PMM", "done0": false, "block": false}, {"id": "abf2b61d84", "sec": "Phase 3 — Bid optimization (~2026-11-30)", "sub": null, "t": "Hour-of-day and device adjustments evaluated with data", "resp": "PMM", "done0": false, "block": false}, {"id": "da44082cdf", "sec": "Phase 3 — Bid optimization (~2026-11-30)", "sub": null, "t": "Brand incrementality test result applied", "resp": "PMM", "done0": false, "block": false}, {"id": "6631023c37", "sec": "Phase 4 — Remarketing (~2026-12-14, conditional)", "sub": null, "t": "Visitor audience ≥1,000 in 30 days (consider the shared Jax site audience)", "resp": "PMM", "done0": false, "block": false}, {"id": "b58e51aaee", "sec": "Phase 4 — Remarketing (~2026-12-14, conditional)", "sub": null, "t": "RLSA in observation on non-brand", "resp": "PMM", "done0": false, "block": false}, {"id": "0b959ec415", "sec": "Phase 5 — Performance Max ⛔ (does not qualify at current budget; reassess 2027-02)", "sub": null, "t": "Location budget ≥ $150/day total (the condition that fails today)", "resp": "PMM", "done0": false, "block": false}, {"id": "bdd2d70e64", "sec": "Phase 5 — Performance Max ⛔ (does not qualify at current budget; reassess 2027-02)", "sub": null, "t": "Remaining conditions in `pmax-cuando-y-como.md`", "resp": "PMM", "done0": false, "block": false}, {"id": "729284b6ee", "sec": "Phase 6 — Offline conversions (future)", "sub": null, "t": "Tag CallRail calls that end in an appointment or a job", "resp": "Client", "done0": false, "block": false}, {"id": "a87a9a9b76", "sec": "Landing page track", "sub": null, "t": "`/thank-you/` (P0, 2026-10-09)", "resp": "PMM", "done0": false, "block": false}, {"id": "86e908d5da", "sec": "Landing page track", "sub": null, "t": "Remove `/test/`, `/test-2/`; redirect legacy URLs (P2, 2026-10-26)", "resp": "PMM", "done0": false, "block": false}, {"id": "328411673b", "sec": "Landing page track", "sub": null, "t": "Single canonical domain for the location (P2, 2026-11-11)", "resp": "Client", "done0": false, "block": false}, {"id": "a3b43ec5e8", "sec": "Landing page track", "sub": null, "t": "103rd version of the transmission page (P2, 2026-11-11)", "resp": "Client", "done0": false, "block": false}, {"id": "f6758f302a", "sec": "Landing page track", "sub": null, "t": "103rd versions of auto-service and check engine (P3, 2026-12-01)", "resp": "Client", "done0": false, "block": false}, {"id": "ff5930b9aa", "sec": "Landing page track", "sub": null, "t": "Rebuild + financing page (P3, 2026-12-01; ready before the 2027-02 tax-refund window)", "resp": "Client", "done0": false, "block": false}, {"id": "0c7a76547a", "sec": "Landing page track", "sub": null, "t": "Form anti-spam (P3)", "resp": "PMM", "done0": false, "block": false}, {"id": "104d2ef92e", "sec": "LSA track", "sub": null, "t": "Auto repair eligibility in Jacksonville + franchise permission (2026-10-07)", "resp": "PMM", "done0": false, "block": false}, {"id": "0f153ce9be", "sec": "LSA track", "sub": null, "t": "Application and verification (~2026-11-04 → 11-18), if eligible", "resp": "Client", "done0": false, "block": false}, {"id": "9d87ee1a29", "sec": "Account-level (outside this location, but it matters)", "sub": null, "t": "Agree across locations who bids on generic [aamco]", "resp": "Account", "done0": false, "block": false}, {"id": "e393cad712", "sec": "Account-level (outside this location, but it matters)", "sub": null, "t": "Review plan (4.4★ vs. 4.9★ for the independents)", "resp": "Client", "done0": false, "block": false}, {"id": "e386d56947", "sec": "Account-level (outside this location, but it matters)", "sub": null, "t": "Auction Insights metrics from the Ads UI", "resp": "PMM", "done0": false, "block": false}, {"id": "564d918b5d", "sec": "Account-level (outside this location, but it matters)", "sub": null, "t": "Label MCC accounts with nicho:* / pais:*", "resp": "PMM", "done0": false, "block": false}, {"id": "923bde0a1a", "sec": "Account-level (outside this location, but it matters)", "sub": null, "t": "Cause of low spend in Feb–Mar 2026; secure ad pool budget for Feb 2027", "resp": "PMM", "done0": false, "block": false}, {"id": "5e4eaff947", "sec": "Recurring (weekly, /weekly-review)", "sub": null, "t": "Search terms → negatives", "resp": "PMM", "done0": false, "block": false}, {"id": "4a818c7736", "sec": "Recurring (weekly, /weekly-review)", "sub": null, "t": "Spend vs. monthly budget", "resp": "PMM", "done0": false, "block": false}, {"id": "0218951c28", "sec": "Recurring (weekly, /weekly-review)", "sub": null, "t": "CPA vs. target; 7-day vs. 28-day trend", "resp": "PMM", "done0": false, "block": false}, {"id": "7d1d8ae12c", "sec": "Recurring (weekly, /weekly-review)", "sub": null, "t": "Disapproved or limited ads", "resp": "PMM", "done0": false, "block": false}, {"id": "84cba272e6", "sec": "Recurring (weekly, /weekly-review)", "sub": null, "t": "Impression share lost to budget and to rank", "resp": "PMM", "done0": false, "block": false}, {"id": "9e282ed3b8", "sec": "Recurring (weekly, /weekly-review)", "sub": null, "t": "Lead quality (CallRail)", "resp": "PMM", "done0": false, "block": false}, {"id": "1b6faaf542", "sec": "Recurring (weekly, /weekly-review)", "sub": null, "t": "Log in `log/YYYY-MM-DD.md`", "resp": "PMM", "done0": false, "block": false}];
+const ADS = [{"g": "BRAND 103rd", "H": ["AAMCO on 103rd Street", "Official AAMCO Westside Jax", "Open Mon-Fri 8AM-5:30PM", "Free Transmission Check", "507 Google Reviews", "Nationwide Warranty", "Financing Available", "Call Your Local AAMCO", "Transmission Experts", "7532 103rd St, Jacksonville", "Total Car Care Since 1963", "Book Your Appointment", "Complete Auto Repair", "Honest Diagnosis First", "Call Now - Quick Answer"], "D": ["Your local AAMCO on 103rd St. Transmission and complete car care. Call or stop in today.", "Free transmission check. Nationwide warranty and financing available. Westside Jax.", "507 Google reviews. Diagnosis before repair, no surprises. Open Mon-Fri 8AM to 5:30PM.", "Transmissions, check engine, A/C, brakes and more. One shop for your whole car. Call now."]}, {"g": "A Transmission Repair", "H": ["Transmission Repair on 103rd", "Transmission Shop Near You", "Free Transmission Check", "Slipping? Won't Shift? Call", "AAMCO Transmission Experts", "Nationwide Warranty", "Financing Available", "Repair First, Not Replace", "507 Google Reviews", "Westside Jacksonville Shop", "Diagnosis Before We Quote", "All Makes & Models", "Automatic & Manual", "Call for a Same-Week Check", "Transmission Pros Since 1963"], "D": ["Transmission slipping, leaking or won't shift? Get a free check at AAMCO on 103rd St.", "We diagnose first and quote before any work. Nationwide warranty. Financing available.", "Local AAMCO transmission experts on Jacksonville's Westside. 507 Google reviews. Call now.", "Automatic, manual and CVT. All makes and models. Open Mon-Fri 8AM-5:30PM. Stop by today."]}, {"g": "B Transmission Rebuild", "H": ["Transmission Rebuild - 103rd", "Rebuild or Replace? Ask Us", "Financing Available", "Nationwide Warranty", "Free Transmission Check", "Know Your Cost Up Front", "AAMCO Rebuilt Transmissions", "Honest Quote Before Work", "Pay Over Time - Apply Today", "Westside Jacksonville AAMCO", "507 Google Reviews", "Transmission Pros Since 1963", "All Makes & Models", "Call for a Free Estimate", "Don't Replace Until We Check"], "D": ["Rebuild or replacement at AAMCO 103rd St. Free check first, clear quote before any work.", "Big repair, small payments. AAMCO financing available on approved credit. Ask us today.", "Rebuilt transmissions backed by the AAMCO nationwide warranty, honored across the US.", "507 Google reviews on Jacksonville's Westside. Call now or stop by Mon-Fri 8AM-5:30PM."]}, {"g": "C Service Clutch Drivetrain", "H": ["Transmission Service - 103rd", "Clutch Repair Westside Jax", "CVT Repair Specialists", "Differential & 4x4 Repair", "Transmission Fluid Service", "Free Transmission Check", "AAMCO Drivetrain Experts", "Nationwide Warranty", "Financing Available", "507 Google Reviews", "Automatic & Manual", "All Makes & Models", "Call to Book Your Service", "Prevent Costly Repairs", "Transmission Pros Since 1963"], "D": ["Fluid service, clutch, CVT, differential and 4x4 repair at AAMCO on 103rd St. Call today.", "Right fluid, right spec for your vehicle. Catch small problems before they get expensive.", "Local AAMCO experts. Diagnosis before any work. Nationwide warranty. Financing available.", "507 Google reviews. Serving Jacksonville's Westside. Open Mon-Fri 8AM-5:30PM. Book now."]}, {"g": "E Auto Repair", "H": ["Auto Repair on 103rd Street", "Mechanic Near You - Westside", "Free Multi-Point Check", "AAMCO Total Car Care", "Nationwide Warranty", "Financing Available", "507 Google Reviews", "Honest Diagnosis First", "All Makes & Models", "Brakes, A/C, Engine & More", "Call to Book Your Repair", "Open Mon-Fri 8AM-5:30PM", "One Shop for Your Whole Car", "Quote Before Any Work", "Local & Trusted Since 1963"], "D": ["Complete auto repair at AAMCO on 103rd St. Free multi-point check. Call or stop in today.", "Engine, brakes, A/C, electrical and transmissions. One trusted shop for your whole car.", "We diagnose first and quote before any work. Nationwide warranty. Financing available.", "507 Google reviews on Jacksonville's Westside. Open Mon-Fri 8AM-5:30PM. Book now."]}, {"g": "F Check Engine & Engine", "H": ["Check Engine Light? 103rd St", "Engine Repair Westside Jax", "Engine Diagnostic Near You", "Overheating? Call Us Today", "Free Multi-Point Check", "AAMCO Total Car Care", "Nationwide Warranty", "Financing Available", "507 Google Reviews", "Know the Problem First", "Quote Before Any Work", "All Makes & Models", "Call to Book a Diagnostic", "Open Mon-Fri 8AM-5:30PM", "Local & Trusted Since 1963"], "D": ["Check engine light on? Find out what it means at AAMCO on 103rd St before it costs more.", "Engine diagnostics and repair for all makes. Clear quote before we start any work.", "Local AAMCO experts. Nationwide warranty and financing available. 507 Google reviews.", "Serving Jacksonville's Westside. Open Mon-Fri 8AM-5:30PM. Call now or stop by today."]}];
+
+/* ---------- Gantt ---------- */
+(function(){
+  const start=new Date('2026-09-21'), end=new Date('2027-04-30');
+  const span=end-start;
+  const pct=d=>((new Date(d)-start)/span*100).toFixed(2)+'%';
+  const w=(a,b)=>(((new Date(b)-new Date(a))/span)*100).toFixed(2)+'%';
+  const rows=[
+    {l:'P0 Foundation',s:'Measurement and landing',bars:[['2026-09-23','2026-10-09',''],['2026-10-09','2026-10-16','soft']],ms:['2026-10-09']},
+    {l:'P1 New structure',s:'Go-live and 7 days',bars:[['2026-10-12','2026-10-19','']],ms:['2026-10-12']},
+    {l:'P2 Cleanup',s:'D7 · D14 · D30',bars:[['2026-10-19','2026-11-11','']],ms:['2026-10-19','2026-10-26','2026-11-11']},
+    {l:'P3 tCPA',s:'Target ~Nov 30',bars:[['2026-11-16','2026-11-30','soft'],['2026-11-30','2027-01-15','']],ms:['2026-11-30']},
+    {l:'P4 RLSA',s:'Conditional',bars:[['2026-12-14','2027-01-31','soft']],ms:[]},
+    {l:'P5 PMax',s:'Blocked · reassess Feb',bars:[['2027-02-01','2027-04-30','bad']],ms:[]},
+    {l:'Landing track',s:'P0 → P3',bars:[['2026-09-23','2026-12-01','warn']],ms:['2026-10-09','2026-12-01']},
+    {l:'LSA track',s:'If eligible',bars:[['2026-09-23','2026-10-07','warn'],['2026-10-07','2026-11-18','soft']],ms:['2026-10-07']},
+    {l:'Tax-refund season',s:'Scale transmission',bars:[['2027-02-01','2027-04-30','good']],ms:[]},
+  ];
+  const g=document.getElementById('gantt');
+  let axis='<div class="g-axis">';
+  [['2026-10-01','Oct'],['2026-11-01','Nov'],['2026-12-01','Dec'],['2027-01-01','Jan'],['2027-02-01','Feb'],['2027-03-01','Mar'],['2027-04-01','Apr']].forEach(([d,t])=>axis+=`<span style="left:${pct(d)}">${t}</span>`);
+  axis+='</div>';
+  let body='';
+  rows.forEach(r=>{
+    let t='';
+    r.bars.forEach(([a,b,c])=>t+=`<span class="g-bar ${c}" style="left:${pct(a)};width:${w(a,b)}"></span>`);
+    r.ms.forEach(d=>t+=`<span class="g-ms" style="left:${pct(d)}" title="${d}"></span>`);
+    body+=`<div class="g-row"><div class="g-label">${r.l}<small>${r.s}</small></div><div class="g-track">${t}</div></div>`;
+  });
+  g.innerHTML=axis+`<div style="position:relative">${body}</div>`;
+  // vertical lines: hoy & Thanksgiving, placed over tracks
+  const trackWrap=g.lastElementChild;
+  const lines=[['2026-09-23','Today',''],['2026-11-26','Thanksgiving','hol']];
+  lines.forEach(([d,t,c])=>{
+    const x=`calc(190px + (100% - 190px) * ${((new Date(d)-start)/span).toFixed(4)})`;
+    trackWrap.insertAdjacentHTML('beforeend',`<span class="g-vline ${c}" style="left:${x};top:0"></span>`);
+  });
+  const ax=g.querySelector('.g-axis');
+  lines.forEach(([d,t,c])=>ax.insertAdjacentHTML('beforeend',`<span class="g-vtag ${c}" style="left:${pct(d)};top:-2px">${t}</span>`));
+})();
+
+/* ---------- Ads ---------- */
+(function(){
+  const el=document.getElementById('ads-list');
+  const esc=s=>s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  el.innerHTML=ADS.map((a,i)=>`<details class="ad"${i===1?' open':''}><summary><b>${esc(a.g)}</b><span class="pin">Pinned H1: ${esc(a.H[0])}</span></summary><div class="adbody"><div><div class="eyebrow" style="margin-bottom:6px">Headlines (≤30)</div><ol>${a.H.map((h,j)=>`<li${j===0?' class="p"':''}>${esc(h)}<span class="c">${h.length}</span></li>`).join('')}</ol></div><div><div class="eyebrow" style="margin-bottom:6px">Descriptions (≤90)</div><ol>${a.D.map(d=>`<li>${esc(d)}<span class="c">${d.length}</span></li>`).join('')}</ol></div></div></details>`).join('');
+})();
+
+/* ---------- Checklist ---------- */
+const state={}; ITEMS.forEach(i=>state[i.id]=i.done0);
+let filter='all', hideDone=false, db=null, col=null, readOnly=false;
+const LS='aamco103-checks-en-v1';
+try{const s=JSON.parse(localStorage.getItem(LS)||'{}');Object.assign(state,s)}catch(e){}
+const esc=s=>s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const openSecs=new Set();
+function render(){
+  const root=document.getElementById('ck');
+  root.querySelectorAll('details.ck-sec').forEach(d=>{ if(d.open) openSecs.add(d.dataset.sec); else openSecs.delete(d.dataset.sec); });
+  const secs=[];ITEMS.forEach(i=>{if(!secs.includes(i.sec))secs.push(i.sec)});
+  let html='';
+  secs.forEach((s,si)=>{
+    const all=ITEMS.filter(i=>i.sec===s); const done=all.filter(i=>state[i.id]).length;
+    const vis=all.filter(i=>(filter==='all'||i.resp===filter)&&!(hideDone&&state[i.id]));
+    if(!vis.length) return;
+    const isOpen = openSecs.size? openSecs.has(s) : (s.startsWith('Phase 0')||s.startsWith('Phase 1'));
+    let body='',sub=null;
+    vis.forEach(i=>{
+      if(i.sub!==sub){ if(sub!==null||body) body+='</ul>'; sub=i.sub; body+=(i.sub?`<div class="ck-sub">${esc(i.sub)}</div>`:'')+'<ul class="ck-list">'; }
+      const tags=`<span class="tag ${i.resp}">${i.resp}</span>`+(i.block&&!state[i.id]?'<span class="tag blk">Blocking</span>':'');
+      body+=`<li class="ck-item${state[i.id]?' done':''}"><label for="c_${i.id}"><input type="checkbox" id="c_${i.id}" data-id="${i.id}"${state[i.id]?' checked':''}${readOnly?' disabled':''}><span class="t">${esc(i.t)}</span><span class="tags">${tags}</span></label></li>`;
+    });
+    body+='</ul>';
+    const p=Math.round(done/all.length*100);
+    html+=`<details class="ck-sec" data-sec="${esc(s)}"${isOpen?' open':''}><summary><h3>${esc(s)}</h3><span class="cnt">${done}/${all.length}</span><span class="meter"><i style="width:${p}%"></i></span></summary>${body}</details>`;
+  });
+  root.innerHTML=html||'<p class="muted">No tasks match this filter.</p>';
+  const tot=ITEMS.length, dn=ITEMS.filter(i=>state[i.id]).length;
+  const blk=ITEMS.filter(i=>i.block&&!state[i.id]).length;
+  document.getElementById('ovText').textContent=`${dn} of ${tot} tasks done · ${blk} blocking items open in Phase 0`;
+  document.getElementById('ovBar').style.width=(dn/tot*100)+'%';
+}
+function setSync(mode,msg){
+  const el=document.getElementById('sync');
+  el.classList.toggle('shared',mode==='shared');
+  document.getElementById('syncText').textContent=msg;
+}
+const pending={};
+async function save(id){
+  try{localStorage.setItem(LS,JSON.stringify(state))}catch(e){}
+  if(!col||readOnly) return;
+  const item=ITEMS.find(i=>i.id===id);
+  const prev=pending[id]||Promise.resolve();
+  pending[id]=prev.then(()=>col.doc(id).set({done:state[id],text:item.t,phase:item.sec,resp:item.resp,at:new Date().toISOString()})).catch(e=>{
+    if(e&&e.code==='invalid_argument'){readOnly=true;setSync('local','Read-only: your changes are not saved');render();}
+    else setSync('local','Could not save; will retry on your next change');
+  });
+}
+document.getElementById('ck').addEventListener('change',e=>{
+  const id=e.target.dataset&&e.target.dataset.id; if(!id) return;
+  state[id]=e.target.checked; render(); save(id);
+  const again=document.getElementById('c_'+id); if(again) again.focus();
+});
+document.getElementById('respSeg').addEventListener('click',e=>{
+  const b=e.target.closest('button'); if(!b) return;
+  filter=b.dataset.r;
+  document.querySelectorAll('#respSeg button').forEach(x=>x.setAttribute('aria-pressed',x===b?'true':'false'));
+  render();
+});
+document.getElementById('hideDone').addEventListener('change',e=>{hideDone=e.target.checked;render()});
+render();
+setSync('local','Saved in this browser only');
+(async()=>{
+  try{ db = window.claude && window.claude.use ? await window.claude.use('db') : null; }catch(e){ db=null; }
+  if(!db){ setSync('local','Saved in this browser only'); return; }
+  col=db.collection('checks');
+  col.onSnapshot(snap=>{
+    snap.docs.forEach(d=>{const v=d.data(); if(v&&typeof v.done==='boolean') state[d.id]=v.done;});
+    render(); if(!readOnly) setSync('shared','Saved for everyone');
+  },err=>{ setSync('local','Shared saving is offline'); });
+})();
+
+/* ---------- Copy ---------- */
+document.getElementById('copyBtn').addEventListener('click',()=>{
+  const t=document.getElementById('msg').textContent, m=document.getElementById('copyMsg');
+  const fallback=()=>{const r=document.createRange();r.selectNodeContents(document.getElementById('msg'));const s=getSelection();s.removeAllRanges();s.addRange(r);m.textContent='Text selected: copy it with Ctrl/Cmd+C';};
+  try{ navigator.clipboard.writeText(t).then(()=>{m.textContent='Copied';},fallback); }catch(e){ fallback(); }
+});
+</script>
