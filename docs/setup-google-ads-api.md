@@ -10,11 +10,22 @@ Developer token ya aprobado (acceso básico o estándar). Falta solo credenciale
 ## 2. Refresh token
 ```bash
 pip install google-ads --break-system-packages
-python scripts/oauth_refresh_token.py --client-secrets client_secret.json
+# Si falla con "_cffi_backend" / "pyo3_runtime.PanicException" (cryptography del sistema roto):
+pip install --break-system-packages --ignore-installed cffi cryptography
 ```
-Abre el navegador, autoriza con la cuenta del MCC, imprime el refresh token.
+El script corre en dos pasos para que funcione también en un entorno remoto sin navegador:
+```bash
+python scripts/oauth_refresh_token.py --client-secrets client_secret.json url
+# → abrir la URL, autorizar con la cuenta del MCC. El navegador termina en http://localhost:8080/?...code=...
+#   (la página no carga; es normal). Copiar la URL completa de la barra de direcciones:
+python scripts/oauth_refresh_token.py --client-secrets client_secret.json code "http://localhost:8080/?state=pmm-ads&code=...&scope=..."
+```
+El código dura unos minutos y sirve una sola vez; si expira, se repite el paso `url`.
 
-## 3. Archivo `google-ads.yaml` (en la raíz del repo, en `.gitignore`)
+## 3. Credenciales: archivo o variables de entorno
+Los scripts (`scripts/ads_client.py`) usan `google-ads.yaml` si existe y, si no, las variables `GOOGLE_ADS_*`.
+
+**Opción A — archivo** `google-ads.yaml` en la raíz del repo (en `.gitignore`). Se puede generar directo con `--write-yaml` en el paso `code`:
 ```yaml
 developer_token: "XXXXXXXX"
 client_id: "....apps.googleusercontent.com"
@@ -23,6 +34,17 @@ refresh_token: "1//...."
 login_customer_id: "1234567890"   # ID del MCC de PMM sin guiones
 use_proto_plus: true
 ```
+
+**Opción B — variables de entorno** (recomendada en Claude Code en la nube, donde el contenedor se borra y el yaml se pierde). Se cargan en la configuración del entorno:
+```
+GOOGLE_ADS_DEVELOPER_TOKEN=XXXXXXXX
+GOOGLE_ADS_CLIENT_ID=....apps.googleusercontent.com
+GOOGLE_ADS_CLIENT_SECRET=....
+GOOGLE_ADS_REFRESH_TOKEN=1//....
+GOOGLE_ADS_LOGIN_CUSTOMER_ID=1234567890
+GOOGLE_ADS_USE_PROTO_PLUS=True
+```
+Y en el setup script del entorno: `pip install google-ads --break-system-packages && pip install --break-system-packages --ignore-installed cffi cryptography`.
 
 ## 4. Probar
 ```bash

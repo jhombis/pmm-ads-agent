@@ -1,0 +1,23 @@
+ad_group,keyword,match,estado,costo,clics,impresiones,conv,cpl
+Ad group 1 - English,towing company near me,BROAD,ENABLED,272.72,29,304,7,38.96
+Ad group 1 - English,tow truck near me,BROAD,ENABLED,208.72,24,229,5,41.74
+Ad group 1 - English,Towing Service,PHRASE,REMOVED,99.68,14,183,0,
+Ad group 1 - English,cheap towing near me,BROAD,ENABLED,47.00,6,52,2,23.50
+Ad group 1 - English,roadside assistance near me,BROAD,ENABLED,46.97,4,92,1,46.97
+Ad group 1 - English,tow truck near me,PHRASE,ENABLED,27.54,3,42,2,13.77
+Ad group 1 - English,tow service near me,BROAD,REMOVED,7.11,1,7,1,7.11
+Ad group 1 - English,towing near me,PHRASE,ENABLED,0,0,31,0,
+Ad group 1 - English,tow truck cost near me,BROAD,ENABLED,0,0,44,0,
+Ad group 1 - English,towing service near me,BROAD,ENABLED,0,0,10,0,
+Ad group 1 - English,Towing Service,BROAD,ENABLED,0,0,8,0,
+Ad group 1 - English,tow company,PHRASE,ENABLED,0,0,7,0,
+Ad group 1 - English,tow truck service near me,BROAD,ENABLED,0,0,4,0,
+Ad group 1 - English,local towing company near me,BROAD,ENABLED,0,0,2,0,
+Ad group 1 - English,cheap tow near me,BROAD,REMOVED,0,0,2,0,
+Ad group 1 - English,tow truck company,PHRASE,ENABLED,0,0,1,0,
+Ad group 2 - Spanish,servicio de gruas cerca de mi,BROAD,ENABLED,138.98,23,113,1,138.98
+Ad group 2 - Spanish,servicio de grua cerca de mi en español,BROAD,ENABLED,97.47,15,125,1,97.47
+Ad group 2 - Spanish,servicio de grua near me,BROAD,ENABLED,43.46,6,39,0,
+Ad group 2 - Spanish,servicio de grua cerca de mi,BROAD,ENABLED,16.38,2,6,1,16.38
+Ad group 2 - Spanish,gruas cerca de mi,BROAD,REMOVED,6.33,2,7,0,
+Ad group 2 - Spanish,servicio de grua,BROAD,ENABLED,5.48,1,10,0,

@@ -1,0 +1,219 @@
+{
+  "idioma": "en",
+  "nicho": "electrician",
+  "negocio": {
+    "nombre": "Pro Phase Electric",
+    "telefono": "+14792873650",
+    "telefono_display": "(479) 287-3650",
+    "direccion": {
+      "calle": "5173 Accident Rd",
+      "ciudad": "Lowell",
+      "region": "AR",
+      "cp": "72745",
+      "pais": "US"
+    },
+    "licencia": "",
+    "horario": "Open 7 days, 7 AM–6 PM",
+    "horario_schema": "Mo-Su 07:00-18:00",
+    "rating": {
+      "valor": "4.9",
+      "total": "",
+      "fuente": "on Google"
+    },
+    "logo_url": "",
+    "url_sitio": "https://prophaseelectricar.com/",
+    "gbp_url": "",
+    "schema_type": "Electrician"
+  },
+  "marca": {
+    "primario": "#1f2937",
+    "acento": "#f5c518",
+    "texto": "#111827",
+    "fondo": "#ffffff"
+  },
+  "confianza": [
+    {
+      "titulo": "4.9★ on Google",
+      "texto": "Rated by NWA homeowners"
+    },
+    {
+      "titulo": "Licensed · Bonded · Insured",
+      "texto": "Arkansas electricians"
+    },
+    {
+      "titulo": "Open 7 days",
+      "texto": "7 AM–6 PM, weekends too"
+    },
+    {
+      "titulo": "Nextdoor Fave 2023",
+      "texto": "Neighborhood Favorite"
+    }
+  ],
+  "resenas": {
+    "h2": "",
+    "items": []
+  },
+  "zona": {
+    "h2": "Serving Northwest Arkansas",
+    "texto": "Based in Lowell and working across Benton and Washington counties, including:",
+    "ciudades": [
+      "Lowell",
+      "Rogers",
+      "Bentonville",
+      "Bella Vista",
+      "Springdale",
+      "Fayetteville",
+      "Centerton",
+      "West Fork",
+      "Huntsville"
+    ],
+    "mapa_embed_url": ""
+  },
+  "ghl": {
+    "form_id": "",
+    "form_name": "LP EV Charger",
+    "form_height": 520,
+    "form_embed_html": "",
+    "chat_widget_html": ""
+  },
+  "tracking": {
+    "gtm_id": "",
+    "google_ads_id": "AW-18410300787",
+    "conversion_label_form": "",
+    "conversion_label_call": "",
+    "ga4_id": ""
+  },
+  "legal": {
+    "privacidad_url": ""
+  },
+  "pagina": {
+    "slug": "ev-charger-installation-nwa",
+    "url_final": "https://go.prophaseelectricar.com/ev-charger-installation-nwa",
+    "servicio": "EV Charger Installation",
+    "ciudad": "Northwest Arkansas",
+    "keyword_principal": "ev charger installation",
+    "keywords_secundarias": [
+      "ev charger installation near me",
+      "electric car charger installation",
+      "level 2 charger installation",
+      "home ev charger installation",
+      "nema 14-50 outlet installation",
+      "ev charger installer"
+    ],
+    "title": "EV Charger Installation in NWA | Level 2 Chargers",
+    "meta_description": "Home and business EV charger installation in Northwest Arkansas. Level 2 chargers and 240V outlets by licensed electricians. Free quotes.",
+    "og_image": "",
+    "indexar": false,
+    "ad_group": "EV Charger Installation"
+  },
+  "hero": {
+    "h1": "EV Charger Installation in Northwest Arkansas",
+    "subtitulo": "Charge at home overnight. We install Level 2 EV chargers and 240V outlets for homes and businesses across NWA.",
+    "oferta": "Free EV charger installation quotes",
+    "bullets": [
+      "Licensed, bonded & insured",
+      "Homes and businesses",
+      "Open 7 days, 7 AM–6 PM"
+    ],
+    "cta_llamar": "Call Now",
+    "cta_form": "Get a Free Quote",
+    "form_titulo": "Get a Free EV Charger Quote",
+    "form_nota": "Tell us your vehicle and where you park. We reply during business hours, 7 days a week.",
+    "imagen": {}
+  },
+  "incluye": {
+    "h2": "Home & Commercial EV Charging Installs",
+    "intro": "The right setup depends on your vehicle, your panel and where you park.",
+    "items": [
+      {
+        "titulo": "Level 2 Home Chargers",
+        "texto": "Hardwired wall chargers installed in your garage or driveway for faster charging than a regular outlet."
+      },
+      {
+        "titulo": "240V / NEMA 14-50 Outlets",
+        "texto": "A dedicated 240V outlet on its own circuit, so you can plug in your car’s mobile charger."
+      },
+      {
+        "titulo": "Commercial Charging",
+        "texto": "EV charging for businesses, offices and properties, planned with your existing electrical service."
+      }
+    ]
+  },
+  "por_que": {
+    "h2": "Why NWA Drivers Choose Pro Phase",
+    "items": [
+      {
+        "titulo": "Weekends included",
+        "texto": "We work 7 days a week, 7 AM to 6 PM. Many local electricians only book Monday to Friday."
+      },
+      {
+        "titulo": "Local, not a franchise",
+        "texto": "A Lowell-based team that knows NWA homes, from older Fayetteville houses to new builds in Bentonville and Centerton."
+      },
+      {
+        "titulo": "Fair, honest pricing",
+        "texto": "Free quote first, so you know the price before any work starts. Customers mention our punctuality and reasonable prices."
+      }
+    ]
+  },
+  "proceso": {
+    "h2": "How It Works",
+    "pasos": [
+      {
+        "titulo": "Call or send the form",
+        "texto": "Tell us what you need and where you are in NWA."
+      },
+      {
+        "titulo": "Get your free quote",
+        "texto": "A licensed electrician reviews the job and gives you a price before any work starts."
+      },
+      {
+        "titulo": "Done right",
+        "texto": "We schedule a day that works for you, weekends included."
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "q": "How much does it cost to install an EV charger at home?",
+        "a": "It depends on the distance from your panel, the charger you choose and whether your panel has capacity. We give you a free quote before any work starts."
+      },
+      {
+        "q": "Can I install a Level 2 charger at home?",
+        "a": "In most homes, yes. We check your panel and the circuit it needs, and tell you if an upgrade is required first."
+      },
+      {
+        "q": "Do I need a panel upgrade for an EV charger?",
+        "a": "Not always. A Level 2 charger needs a dedicated circuit, so if your panel is full or undersized we will recommend the right option."
+      },
+      {
+        "q": "Do you install chargers for businesses?",
+        "a": "Yes. We install EV charging for residential and commercial properties."
+      },
+      {
+        "q": "Do you work on weekends?",
+        "a": "Yes. We are open 7 days a week, from 7 AM to 6 PM."
+      }
+    ]
+  },
+  "cta_final": {
+    "h2": "Ready to Charge at Home?",
+    "texto": "Call now or request a free EV charger installation quote."
+  },
+  "gracias": {
+    "slug": "ev-charger-installation-nwa-thank-you",
+    "h1": "Thanks — we got your request",
+    "texto": "Our team will contact you during business hours (7 AM–6 PM, 7 days a week). Need us sooner? Call (479) 287-3650.",
+    "pasos": [
+      {
+        "titulo": "We review your request",
+        "texto": "We check the details you sent."
+      },
+      {
+        "titulo": "We contact you",
+        "texto": "By phone or text to set up your free quote."
+      }
+    ]
+  }
+}

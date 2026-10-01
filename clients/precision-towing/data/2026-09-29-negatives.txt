@@ -1,0 +1,391 @@
+# /negatives init precision-towing — 2026-09-29 — formato: término | match | nivel | fuente
+# Nivel "campaign" = campaña 24137167100 (ENHPRM Radius) hoy; replicar en "Search - Towing KRV" al crearla. La sección Taller NO va en "Search - Marca".
+jobs | PHRASE | campaign | universal
+career | PHRASE | campaign | universal
+careers | PHRASE | campaign | universal
+salary | PHRASE | campaign | universal
+salaries | PHRASE | campaign | universal
+wage | PHRASE | campaign | universal
+wages | PHRASE | campaign | universal
+apprentice | PHRASE | campaign | universal
+apprenticeship | PHRASE | campaign | universal
+resume | PHRASE | campaign | universal
+vacancy | PHRASE | campaign | universal
+vacancies | PHRASE | campaign | universal
+employment | PHRASE | campaign | universal
+recruit | PHRASE | campaign | universal
+recruiter | PHRASE | campaign | universal
+work from home | PHRASE | campaign | universal
+internship | PHRASE | campaign | universal
+empleo | PHRASE | campaign | universal
+trabajos | PHRASE | campaign | universal
+vacante | PHRASE | campaign | universal
+vacantes | PHRASE | campaign | universal
+salario | PHRASE | campaign | universal
+sueldo | PHRASE | campaign | universal
+hoja de vida | PHRASE | campaign | universal
+curriculum | PHRASE | campaign | universal
+contratación | PHRASE | campaign | universal
+practicante | PHRASE | campaign | universal
+pasantía | PHRASE | campaign | universal
+how do i | PHRASE | campaign | universal
+tutorial | PHRASE | campaign | universal
+course | PHRASE | campaign | universal
+courses | PHRASE | campaign | universal
+class | EXACT | campaign | universal
+classes | PHRASE | campaign | universal
+training | PHRASE | campaign | universal
+certification | PHRASE | campaign | universal
+certificate | PHRASE | campaign | universal
+school | PHRASE | campaign | universal
+degree | PHRASE | campaign | universal
+license exam | PHRASE | campaign | universal
+study | EXACT | campaign | universal
+learn | EXACT | campaign | universal
+guide | EXACT | campaign | universal
+manual | EXACT | campaign | universal
+pdf | PHRASE | campaign | universal
+wikipedia | PHRASE | campaign | universal
+definition | PHRASE | campaign | universal
+meaning | PHRASE | campaign | universal
+what is | PHRASE | campaign | universal
+youtube | PHRASE | campaign | universal
+como hacer | PHRASE | campaign | universal
+cómo hacer | PHRASE | campaign | universal
+curso | PHRASE | campaign | universal
+cursos | PHRASE | campaign | universal
+clase | PHRASE | campaign | universal
+clases | PHRASE | campaign | universal
+capacitación | PHRASE | campaign | universal
+certificación | PHRASE | campaign | universal
+escuela | PHRASE | campaign | universal
+universidad | PHRASE | campaign | universal
+aprender | PHRASE | campaign | universal
+guía | PHRASE | campaign | universal
+que es | PHRASE | campaign | universal
+qué es | PHRASE | campaign | universal
+significado | PHRASE | campaign | universal
+for free | PHRASE | campaign | universal
+freebie | PHRASE | campaign | universal
+no cost | PHRASE | campaign | universal
+donation | PHRASE | campaign | universal
+donate | PHRASE | campaign | universal
+volunteer | PHRASE | campaign | universal
+gratuito | PHRASE | campaign | universal
+regalado | PHRASE | campaign | universal
+donación | PHRASE | campaign | universal
+voluntario | PHRASE | campaign | universal
+parts | PHRASE | campaign | universal
+supply | PHRASE | campaign | universal
+supplies | PHRASE | campaign | universal
+tool | EXACT | campaign | universal
+tools | EXACT | campaign | universal
+kits | EXACT | campaign | universal
+equipment | PHRASE | campaign | universal
+wholesale | PHRASE | campaign | universal
+manufacturer | PHRASE | campaign | universal
+amazon | PHRASE | campaign | universal
+ebay | PHRASE | campaign | universal
+walmart | PHRASE | campaign | universal
+home depot | PHRASE | campaign | universal
+buy | EXACT | campaign | universal
+repuesto | PHRASE | campaign | universal
+repuestos | PHRASE | campaign | universal
+herramienta | PHRASE | campaign | universal
+herramientas | PHRASE | campaign | universal
+mayorista | PHRASE | campaign | universal
+fabricante | PHRASE | campaign | universal
+mercadolibre | PHRASE | campaign | universal
+homecenter | PHRASE | campaign | universal
+venta | PHRASE | campaign | universal
+comprar | PHRASE | campaign | universal
+alquiler | PHRASE | campaign | universal
+review | EXACT | campaign | universal
+reviews | EXACT | campaign | universal
+complaint | PHRASE | campaign | universal
+complaints | PHRASE | campaign | universal
+scam | PHRASE | campaign | universal
+lawsuit | PHRASE | campaign | universal
+forum | PHRASE | campaign | universal
+reddit | PHRASE | campaign | universal
+quora | PHRASE | campaign | universal
+yelp | PHRASE | campaign | universal
+bbb | PHRASE | campaign | universal
+reseña | PHRASE | campaign | universal
+reseñas | PHRASE | campaign | universal
+queja | PHRASE | campaign | universal
+quejas | PHRASE | campaign | universal
+estafa | PHRASE | campaign | universal
+demanda | PHRASE | campaign | universal
+foro | PHRASE | campaign | universal
+government | PHRASE | campaign | universal
+city of | PHRASE | campaign | universal
+permit | PHRASE | campaign | universal
+code | EXACT | campaign | universal
+regulation | PHRASE | campaign | universal
+insurance claim | PHRASE | campaign | universal
+lawyer | PHRASE | campaign | universal
+attorney | PHRASE | campaign | universal
+gobierno | PHRASE | campaign | universal
+alcaldía | PHRASE | campaign | universal
+permiso | PHRASE | campaign | universal
+licencia | PHRASE | campaign | universal
+normativa | PHRASE | campaign | universal
+abogado | PHRASE | campaign | universal
+porn | PHRASE | campaign | universal
+xxx | PHRASE | campaign | universal
+sex | PHRASE | campaign | universal
+nude | PHRASE | campaign | universal
+game | EXACT | campaign | universal
+games | EXACT | campaign | universal
+meme | PHRASE | campaign | universal
+funny | PHRASE | campaign | universal
+lyrics | PHRASE | campaign | universal
+song | PHRASE | campaign | universal
+movie | PHRASE | campaign | universal
+film | PHRASE | campaign | universal
+juego | PHRASE | campaign | universal
+juegos | PHRASE | campaign | universal
+película | PHRASE | campaign | universal
+canción | PHRASE | campaign | universal
+letra | PHRASE | campaign | universal
+junkyard | PHRASE | campaign | universal-towing
+junk yard | PHRASE | campaign | universal-towing
+salvage | PHRASE | campaign | universal-towing
+scrap | PHRASE | campaign | universal-towing
+car for cash | PHRASE | campaign | universal-towing
+sell my car | PHRASE | campaign | universal-towing
+tow truck for sale | PHRASE | campaign | universal-towing
+tow truck driver | PHRASE | campaign | universal-towing
+tow truck jobs | PHRASE | campaign | universal-towing
+dmv | PHRASE | campaign | universal-towing
+impound lot | PHRASE | campaign | universal-towing
+tow hitch | PHRASE | campaign | universal-towing
+tow bar | PHRASE | campaign | universal-towing
+b&d towing | PHRASE | campaign | nicho
+b & d towing | PHRASE | campaign | nicho
+b and d towing | PHRASE | campaign | nicho
+b d towing | PHRASE | campaign | nicho
+bd towing | PHRASE | campaign | nicho
+bnd towing | PHRASE | campaign | nicho
+b n d towing | PHRASE | campaign | nicho
+b&d tow | PHRASE | campaign | nicho
+b and d tow | PHRASE | campaign | nicho
+d&b towing | PHRASE | campaign | nicho
+d and b towing | PHRASE | campaign | nicho
+b&d towing & storage | PHRASE | campaign | nicho
+b&m towing | PHRASE | campaign | nicho
+b & m towing | PHRASE | campaign | nicho
+b and m towing | PHRASE | campaign | nicho
+b m towing | PHRASE | campaign | nicho
+bm towing | PHRASE | campaign | nicho
+bnm towing | PHRASE | campaign | nicho
+b&m tow | PHRASE | campaign | nicho
+m&b towing | PHRASE | campaign | nicho
+golden empire towing | PHRASE | campaign | nicho
+golden empire tow | PHRASE | campaign | nicho
+golden empire | PHRASE | campaign | nicho
+goldenempiretow | PHRASE | campaign | nicho
+inyo towing | PHRASE | campaign | nicho
+inyo county towing | PHRASE | campaign | nicho
+inyo tow | PHRASE | campaign | nicho
+kern valley auto body | PHRASE | campaign | nicho
+a&a towing | PHRASE | campaign | nicho
+a & a towing | PHRASE | campaign | nicho
+a and a towing | PHRASE | campaign | nicho
+aa towing | PHRASE | campaign | nicho
+armando towing | PHRASE | campaign | nicho
+lakeisabellatowing | PHRASE | campaign | nicho
+760 474 6825 | PHRASE | campaign | nicho
+nitro tow | PHRASE | campaign | nicho
+nitrotowing | PHRASE | campaign | nicho
+chinos towing | PHRASE | campaign | nicho
+chino's towing | PHRASE | campaign | nicho
+chino towing | PHRASE | campaign | nicho
+ibarra's towing | PHRASE | campaign | nicho
+ibarra towing | PHRASE | campaign | nicho
+nobles towing | PHRASE | campaign | nicho
+noble's towing | PHRASE | campaign | nicho
+noble towing | PHRASE | campaign | nicho
+pepe's towing | PHRASE | campaign | nicho
+pepes towing | PHRASE | campaign | nicho
+pepe towing | PHRASE | campaign | nicho
+b & b towing | PHRASE | campaign | nicho
+b and b towing | PHRASE | campaign | nicho
+bb towing | PHRASE | campaign | nicho
+a & m towing | PHRASE | campaign | nicho
+a and m towing | PHRASE | campaign | nicho
+am towing | PHRASE | campaign | nicho
+kr towing | PHRASE | campaign | nicho
+k&r towing | PHRASE | campaign | nicho
+k & r towing | PHRASE | campaign | nicho
+randys towing | PHRASE | campaign | nicho
+cal state towing | PHRASE | campaign | nicho
+cal-state towing | PHRASE | campaign | nicho
+lightning recovery | PHRASE | campaign | nicho
+omars towing | PHRASE | campaign | nicho
+omar's towing | PHRASE | campaign | nicho
+rafie's towing | PHRASE | campaign | nicho
+rafies towing | PHRASE | campaign | nicho
+murphys diesel | PHRASE | campaign | nicho
+murphy's diesel | PHRASE | campaign | nicho
+jb towing | PHRASE | campaign | nicho
+p&m towing | PHRASE | campaign | nicho
+angelo's towing | PHRASE | campaign | nicho
+tremont towing | PHRASE | campaign | nicho
+pioneer towing | PHRASE | campaign | nicho
+aguiar's towing | PHRASE | campaign | nicho
+aguiars towing | PHRASE | campaign | nicho
+mount mesa automotive | PHRASE | campaign | nicho
+sierra automotive | PHRASE | campaign | nicho
+matt's off road recovery | PHRASE | campaign | nicho
+antelope valley towing | PHRASE | campaign | nicho
+av towing | PHRASE | campaign | nicho
+crescenta valley tow | PHRASE | campaign | nicho
+road rescue network | PHRASE | campaign | nicho
+roadrescuenetwork | PHRASE | campaign | nicho
+valley towing co | PHRASE | campaign | nicho
+valleytowingco | PHRASE | campaign | nicho
+protowing | PHRASE | campaign | nicho
+towbest | PHRASE | campaign | nicho
+4roadservice | PHRASE | campaign | nicho
+833 652 7455 | PHRASE | campaign | nicho
+heavy duty | PHRASE | campaign | nicho
+heavy duty towing | PHRASE | campaign | nicho
+heavy towing | PHRASE | campaign | nicho
+semi | PHRASE | campaign | nicho
+semi truck | PHRASE | campaign | nicho
+18 wheeler | PHRASE | campaign | nicho
+big rig | PHRASE | campaign | nicho
+tractor trailer | PHRASE | campaign | nicho
+landoll | PHRASE | campaign | nicho
+lowboy | PHRASE | campaign | nicho
+bus towing | PHRASE | campaign | nicho
+commercial truck towing | PHRASE | campaign | nicho
+load shift | PHRASE | campaign | nicho
+cargo shift | PHRASE | campaign | nicho
+free towing | PHRASE | campaign | nicho
+free tow | PHRASE | campaign | nicho
+cash for cars | PHRASE | campaign | nicho
+junk car | PHRASE | campaign | nicho
+junk cars | PHRASE | campaign | nicho
+junk car removal | PHRASE | campaign | nicho
+scrap car | PHRASE | campaign | nicho
+car scrap | PHRASE | campaign | nicho
+free rv removal | PHRASE | campaign | nicho
+abandoned vehicle | PHRASE | campaign | nicho
+we buy | PHRASE | campaign | nicho
+aaa towing | PHRASE | campaign | nicho
+aaa roadside | PHRASE | campaign | nicho
+farmers insurance | PHRASE | campaign | nicho
+insurance roadside | PHRASE | campaign | nicho
+roadside plan | PHRASE | campaign | nicho
+roadside membership | PHRASE | campaign | nicho
+nsd | PHRASE | campaign | nicho
+honk | PHRASE | campaign | nicho
+urgently | PHRASE | campaign | nicho
+toyotacare | PHRASE | campaign | nicho
+mopar | PHRASE | campaign | nicho
+carvana | PHRASE | campaign | nicho
+walmart roadside | PHRASE | campaign | nicho
+phone number | PHRASE | campaign | nicho
+customer service number | PHRASE | campaign | nicho
+hitch | PHRASE | campaign | nicho
+5th wheel hitch | PHRASE | campaign | nicho
+gooseneck | PHRASE | campaign | nicho
+used | EXACT | campaign | nicho
+dealership | PHRASE | campaign | nicho
+forest river | PHRASE | campaign | nicho
+no boundaries | PHRASE | campaign | nicho
+jayco | PHRASE | campaign | nicho
+keystone | PHRASE | campaign | nicho
+grand design | PHRASE | campaign | nicho
+cargo trailer | PHRASE | campaign | nicho
+enclosed trailer | PHRASE | campaign | nicho
+toy hauler | PHRASE | campaign | nicho
+tow dolly | PHRASE | campaign | nicho
+dollies | PHRASE | campaign | nicho
+hauler | PHRASE | campaign | nicho
+capacity | PHRASE | campaign | nicho
+towing capacity | PHRASE | campaign | nicho
+calculator | PHRASE | campaign | nicho
+best truck | PHRASE | campaign | nicho
+best suv | PHRASE | campaign | nicho
+best pickup | PHRASE | campaign | nicho
+truck for towing | PHRASE | campaign | nicho
+how to tow | PHRASE | campaign | nicho
+first time | PHRASE | campaign | nicho
+tips | PHRASE | campaign | nicho
+u-haul | PHRASE | campaign | nicho
+weight distribution | PHRASE | campaign | nicho
+wdh | PHRASE | campaign | nicho
+teardrop | PHRASE | campaign | nicho
+4x8 | PHRASE | campaign | nicho
+silverado | PHRASE | campaign | nicho
+f150 | PHRASE | campaign | nicho
+f-150 | PHRASE | campaign | nicho
+ram 1500 | PHRASE | campaign | nicho
+tow strap | PHRASE | campaign | nicho
+jumper | PHRASE | campaign | nicho
+jumper cables | PHRASE | campaign | nicho
+jump starter | PHRASE | campaign | nicho
+jump box | PHRASE | campaign | nicho
+battery pack | PHRASE | campaign | nicho
+battery charger | PHRASE | campaign | nicho
+portable | PHRASE | campaign | nicho
+tire shop | PHRASE | campaign | nicho
+tire place | PHRASE | campaign | nicho
+discount tire | PHRASE | campaign | nicho
+big o tires | PHRASE | campaign | nicho
+wrecker for sale | PHRASE | campaign | nicho
+rollback for sale | PHRASE | campaign | nicho
+wheel lift for sale | PHRASE | campaign | nicho
+ridgecrest | PHRASE | campaign | nicho
+california city | PHRASE | campaign | nicho
+mojave | PHRASE | campaign | nicho
+delano | PHRASE | campaign | nicho
+visalia | PHRASE | campaign | nicho
+fresno | PHRASE | campaign | nicho
+los angeles | PHRASE | campaign | nicho
+palmdale | PHRASE | campaign | nicho
+oroville | PHRASE | campaign | nicho
+palm bay | PHRASE | campaign | nicho
+florida | PHRASE | campaign | nicho
+ohio | PHRASE | campaign | nicho
+texas | PHRASE | campaign | nicho
+inland empire | PHRASE | campaign | nicho
+colton | PHRASE | campaign | nicho
+24 hour | PHRASE | campaign | nicho
+24 hr | PHRASE | campaign | nicho
+24/7 | PHRASE | campaign | nicho
+24-hour | PHRASE | campaign | nicho
+overnight | PHRASE | campaign | nicho
+midnight | PHRASE | campaign | nicho
+fuel delivery | PHRASE | campaign | nicho
+gas delivery | PHRASE | campaign | nicho
+out of gas | PHRASE | campaign | nicho
+motorcycle | PHRASE | campaign | nicho
+motorhome | PHRASE | campaign | nicho
+long distance | PHRASE | campaign | nicho
+boat | PHRASE | campaign | nicho
+jet ski | PHRASE | campaign | nicho
+how much | PHRASE | campaign | nicho
+cost | EXACT | campaign | nicho
+prices | PHRASE | campaign | nicho
+price list | PHRASE | campaign | nicho
+rates | EXACT | campaign | nicho
+estimate calculator | PHRASE | campaign | nicho
+smog | PHRASE | campaign | nicho
+smog check | PHRASE | campaign | nicho
+oil change | PHRASE | campaign | nicho
+mechanics | PHRASE | campaign | nicho
+auto repair | PHRASE | campaign | nicho
+body shop | PHRASE | campaign | nicho
+paint | PHRASE | campaign | nicho
+collision | PHRASE | campaign | nicho
+24 hours | PHRASE | campaign | nicho
+hitches | PHRASE | campaign | nicho
+dealers | PHRASE | campaign | nicho
+haulers | PHRASE | campaign | nicho
+semi trucks | PHRASE | campaign | nicho
+boats | PHRASE | campaign | nicho

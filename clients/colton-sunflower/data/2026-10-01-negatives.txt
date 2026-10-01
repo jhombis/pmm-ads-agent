@@ -1,0 +1,11 @@
+# Colton Sunflower — negativas propuestas en /weekly-review 2026-10-01 (NO aplicadas)
+# formato: término | match | nivel  (campaña 24095361792)
+# Se colaron entre el 24 y el 30 sep y las 76 negativas del 2026-10-01 no las cubren.
+riverside national | PHRASE | campaña
+aaron's | PHRASE | campaña
+torrance | PHRASE | campaña
+water cremation | PHRASE | campaña
+santana | PHRASE | campaña
+# Verificar con el cliente antes:
+# prepaid  -> NO: el cliente vende pre-planning (ver /pre-planning/)
+# funerales | PHRASE | campaña    <- depende de si atienden en español (grupo E pendiente)

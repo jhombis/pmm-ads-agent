@@ -1,0 +1,56 @@
+keyword,volumen_us_mes,cpc_est,intencion,ad_group,ciudad,match_sugerido,nota
+cremation near me,18100,4.72,comercial,Cremation - Direct & Affordable,near me,exact+phrase,volumen nacional; local es fracción
+cremation services near me,14800,4.97,comercial,Cremation - Direct & Affordable,near me,exact+phrase,
+cremation services,12100,5.72,comercial,Cremation - Direct & Affordable,,phrase,
+direct cremation,5400,3.46,comercial,Cremation - Direct & Affordable,,phrase,
+direct cremation near me,1900,3.63,comercial,Cremation - Direct & Affordable,near me,exact+phrase,
+crematorium near me,5400,4.72,comercial,Cremation - Direct & Affordable,near me,phrase,
+simple cremation,3600,2.88,comercial,Cremation - Direct & Affordable,,phrase,ya existe en exacta
+simple cremation near me,260,3.92,comercial,Cremation - Direct & Affordable,near me,phrase,
+affordable cremation near me,590,5.04,comercial,Cremation - Direct & Affordable,near me,phrase,
+cheap cremation near me,1600,4.17,comercial,Cremation - Direct & Affordable,near me,phrase,
+low cost cremation near me,1600,4.10,comercial,Cremation - Direct & Affordable,near me,phrase,
+cremation san bernardino,70,11.75,comercial,Cremation - Direct & Affordable,San Bernardino,exact+phrase,el CPC más alto: lo pelea la competencia local
+cremation services san bernardino,20,10.63,comercial,Cremation - Direct & Affordable,San Bernardino,phrase,convirtió 1/1
+san bernardino cremation,20,11.16,comercial,Cremation - Direct & Affordable,San Bernardino,phrase,
+cremation fontana,20,7.78,comercial,Cremation - Direct & Affordable,Fontana,phrase,requiere quitar la negativa amplia "Fontana"
+cremation redlands,20,,comercial,Cremation - Direct & Affordable,Redlands,phrase,
+colton cremation,,,comercial,Cremation - Direct & Affordable,Colton,phrase,ya existe
+cremation cost,12100,2.47,comercial-precio,Cremation - Cost & Prices,,phrase,mejor keyword de Sunflower Riverside (23 conv/90d)
+cremation cost near me,1300,2.46,comercial-precio,Cremation - Cost & Prices,near me,phrase,
+cremation prices near me,390,2.95,comercial-precio,Cremation - Cost & Prices,near me,phrase,
+how much does cremation cost,8100,2.07,comercial-precio,Cremation - Cost & Prices,,phrase,BLOQUEADA hoy por la negativa amplia "how"
+how much is cremation,3600,2.21,comercial-precio,Cremation - Cost & Prices,,phrase,BLOQUEADA hoy por la negativa amplia "how"
+cremation with memorial service,320,4.14,comercial,Cremation With Service,,phrase,
+cremation with viewing,210,3.40,comercial,Cremation With Service,,phrase,
+funeral and cremation services,480,5.74,comercial,Cremation With Service,,phrase,ya existe
+funeral home near me,40500,3.54,comercial,Funeral Home,near me,exact+phrase,hoy en amplia: $376 y 1 conv en sep
+funeral homes near me,60500,3.54,comercial,Funeral Home,near me,exact+phrase,
+mortuary near me,5400,5.24,comercial,Funeral Home,near me,phrase,
+affordable funeral homes near me,590,3.68,comercial,Funeral Home,near me,phrase,
+cheap funeral homes near me,480,3.68,comercial,Funeral Home,near me,phrase,
+funeral homes in colton ca,210,1.96,comercial,Funeral Home,Colton,phrase,
+funeral homes in san bernardino ca,110,5.24,comercial,Funeral Home,San Bernardino,phrase,
+funeral home san bernardino,40,4.60,comercial,Funeral Home,San Bernardino,phrase,
+mortuary san bernardino,30,4.60,comercial,Funeral Home,San Bernardino,phrase,
+funeral homes in fontana ca,210,3.10,comercial,Funeral Home,Fontana,phrase,requiere quitar la negativa amplia "Fontana"
+funeral homes in rialto ca,90,3.85,comercial,Funeral Home,Rialto,phrase,
+funeral homes in redlands ca,110,4.84,comercial,Funeral Home,Redlands,phrase,
+funeral packages,320,2.99,comercial-precio,Funeral Home,,phrase,
+funeral home prices,720,2.40,comercial-precio,Funeral Home,,phrase,
+burial services near me,1900,5.07,comercial,Burial Services,near me,exact+phrase,
+direct burial,2400,0.99,comercial,Burial Services,,phrase,
+direct burial near me,20,2.95,comercial,Burial Services,near me,phrase,
+colton funeral home,390,1.96,marca?,Marca (condicional),Colton,exact,¿es la marca del cliente? (dominio coltonfuneral.com)
+sunflower crematory,30,3.49,marca,Marca (condicional),,exact,convirtió 1/2
+sunflower cremation,260,4.12,marca?,Marca (condicional),,exact,¿es la marca de Sunflower Riverside? Si es así no pujar (canibalización)
+colton funeral chapel,40,2.40,marca?,Marca (condicional),Colton,exact,ya existe en amplia
+funeraria cerca de mi,320,2.38,comercial-ES,Español (condicional),near me,phrase,solo si atienden en español
+inland memorial,70,1.62,marca-hermana,—,,negativa,cliente PMM; no pujar
+montecito memorial park,3600,,competidor,—,Colton,negativa,
+cortner chapel,320,4.82,competidor,—,Redlands,negativa,ya negativa
+family funeral chapel rialto,20,2.26,competidor,—,Rialto,negativa,ya negativa
+mountain view mortuary san bernardino,20,2.02,competidor,—,San Bernardino,negativa,convirtió 1/2: observar antes
+emerson mortuary,20,2.51,competidor,—,Redlands,negativa,ya negativa
+funeral home,60500,3.90,ambigua,—,,no pujar,genérica sin geo; demasiado amplia
+cremation,74000,4.66,ambigua,—,,no pujar,genérica; mucha intención informacional

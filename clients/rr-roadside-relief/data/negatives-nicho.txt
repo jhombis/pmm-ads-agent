@@ -1,0 +1,87 @@
+# RR Roadside Relief — negativas de nicho (fuente para /negatives)
+# Formato: término | match | nivel
+# Base: data/2026-10-01-negatives.txt (238 términos listos, pendientes de OK de Jhombis). Aquí van SOLO las adiciones de /strategy y las limpiezas.
+
+## A) Competidores adicionales (de competitors.md) — campaña
+bad day towing | frase | campaña
+tow mate | frase | campaña
+towmate | frase | campaña
+247okctowing | frase | campaña
+five star towing | frase | campaña
+[oklahoma towing service] | exacta | campaña
+ok towing company | frase | campaña
+lamb towing | frase | campaña
+405 tow truck | frase | campaña
+v haul towing | frase | campaña
+ultimate reflections | frase | campaña
+roadway rescues | frase | campaña
+head 2 tow | frase | campaña
+a-z towing | frase | campaña
+excel wrecker | frase | campaña
+rpm towing | frase | campaña
+
+## B) Agregadores y planes — campaña
+ineedroadside | frase | campaña
+urgently | frase | campaña
+honk roadside | frase | campaña
+drive roadside | frase | campaña
+roadside assistance plan | frase | campaña
+roadside assistance coverage | frase | campaña
+roadside assistance insurance | frase | campaña
+
+## C) Servicios que el cliente NO ofrece — campaña
+heavy duty | frase | campaña
+semi truck | frase | campaña
+18 wheeler | frase | campaña
+police tow | frase | campaña
+private property towing | frase | campaña
+junk car | frase | campaña
+locksmith | frase | campaña          # lockout de carro sí; cerrajería de casa no → revisar search terms: "car locksmith" puede ser válido
+house lockout | frase | campaña
+home lockout | frase | campaña
+
+## D) Ruteo entre ad groups (negativas en EXACTA a nivel ad group para que cada término caiga en su grupo)
+[24 hour towing near me] | exacta | AG1 Towing Near Me
+[emergency towing near me] | exacta | AG1 Towing Near Me
+[cheap towing near me] | exacta | AG1 Towing Near Me
+[cheap tow truck near me] | exacta | AG1 Towing Near Me
+[motorcycle towing near me] | exacta | AG1 Towing Near Me
+[flatbed tow truck near me] | exacta | AG1 Towing Near Me
+cheap | frase | AG3 24/7 Emergency Towing
+motorcycle | frase | AG3 24/7 Emergency Towing
+motorcycle | frase | AG4 Affordable Towing
+flatbed | frase | AG4 Affordable Towing
+cheap | frase | AG5 Flatbed & Motorcycle Towing
+tire | frase | AG6 Roadside Assistance
+lockout | frase | AG6 Roadside Assistance
+locked | frase | AG6 Roadside Assistance
+jump | frase | AG6 Roadside Assistance
+tow truck | frase | AG6 Roadside Assistance
+towing | frase | AG7 Flat Tire Change
+towing | frase | AG8 Car Lockout
+towing | frase | AG9 Jump Start
+
+## E) Por grupo (intención mixta)
+tire shop | frase | AG7 Flat Tire Change
+tire store | frase | AG7 Flat Tire Change
+new tires | frase | AG7 Flat Tire Change
+how to | frase | AG8 Car Lockout
+slim jim | frase | AG8 Car Lockout
+how to | frase | AG9 Jump Start
+jumper cables | frase | AG9 Jump Start
+for sale | frase | AG5 Flatbed & Motorcycle Towing
+trailer | frase | AG5 Flatbed & Motorcycle Towing
+
+## F) LIMPIEZA — negativas existentes a QUITAR (bloquean servicios del cliente)
+# tire change near me | EXACT        → bloquea AG7
+# tire change service near me | BROAD → bloquea AG7
+# tire repair near me | BROAD        → bloquea "tire repair near me" (mobile tire, válido)
+# flat tire service | BROAD          → bloquea AG7
+# flat tire service near me | BROAD  → bloquea AG7
+# Flat tire repair | EXACT           → bloquea AG7
+# flat tire repair near me | BROAD   → bloquea AG7
+# mobile | BROAD                     → bloquea "mobile tire change"
+# quick | BROAD                      → bloquea "quick tow near me"
+# budget | BROAD                     → bloquea "budget towing" (intención precio que convierte en el MCC)
+# discount | BROAD                   → revisar: bloquea "discount towing"; mantener solo "discount tire"
+# cheapest (propuesta en espera) → NO aplicar (benchmark: "cheap towing" convierte a ~$8 CPL)

@@ -1,0 +1,16 @@
+# Negativas de nicho — funeraria/cremación (Colton Sunflower)
+# Aplicadas: ver log/2026-10-01.md (76 frase) + 466 previas. Este archivo consolida la lógica para la lista "colton-sunflower nicho".
+# Pendiente de aplicar: data/2026-10-01-negatives.txt (5) y el grupo E en español (según el cliente).
+## Cambios a negativas EXISTENTES (bloquean demanda comercial, requieren OK)
+QUITAR how | BROAD          -> bloquea "how much does cremation cost" (8.1k) y "how much is cremation" (3.6k). Ya existen "how to", "how do", "how do i" en frase.
+QUITAR Fontana | BROAD      -> Fontana está a ~7 mi; "funeral homes in fontana ca" tiene 210/mes. Reemplazar por "fontana mortuary" en exacta (ya existe).
+QUITAR online | BROAD       -> bloquea "online cremation arrangements".
+REVISAR remains, pay, information, info | BROAD -> posibles falsos positivos; observar search terms antes.
+## Hermanas PMM (no pujar)
+inland memorial | PHRASE   (ya existe "Inland" BROAD)
+## Nicho (además de la universal)
+obituary, obituaries, obits, recent deaths, funerals today, passed away   [aplicadas]
+casket, coffin, headstone, gravestone, urn, cemetery plots, burial plot, niche for sale, costco, diamonds, flowers   [aplicadas]
+pet, pets, dog, dogs, cat, cats   [aplicadas]
+average, meaning, checklist, assistance, reimbursement, benefits, insurance   [aplicadas]
+body donation, alkaline, water cremation   [water cremation pendiente]
