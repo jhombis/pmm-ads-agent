@@ -1,49 +1,45 @@
 ---
 nicho: towing
 pais: US
-cuentas: 30 (23 maduras: ≥$700 gasto y ≥15 conv. en 90d)
-periodo: últimos 90 días (2026-07-03 → 2026-10-01)
+cuentas: 20 maduras (+10 nuevas)
+periodo: últimos 90 días (jul–sep 2026)
 actualizado: 2026-10-01
-fuente: Windsor.ai (google_ads)
+fuente: Windsor.ai (google_ads), raw en raw/towing-us-2026-q3-monthly.csv
 ---
-## Cuentas maduras (n=23)
 | Métrica | P25 | Mediana | P75 |
 |---|---|---|---|
-| CPC | $4.02 | $5.05 | $6.33 |
-| CTR | 4.8% | 7.1% | 8.2% |
-| Tasa conv. | 21% | 27% | 38% |
-| CPL | $12.45 | $16.01 | $32.07 |
-| Conv./mes | 17 | 36 | 54 |
-| Presupuesto/mes (gasto) | $374 | $680 | $918 |
-| IS búsqueda | 22% | 27% | 32% |
+| CPC | $4.08 | $4.91 | $6.01 |
+| CTR | 5.1% | 6.9% | 8.1% |
+| Tasa conv. | 23.5% | 28.2% | 38.5% |
+| CPL | $11.87 | $14.66 | $23.41 |
+| Conv./mes | 23 | 43 | 62 |
+| Presupuesto/mes (gasto real) | $420 | $728 | $1,094 |
 
-## Todas las cuentas (n=30, incluye altas 2026)
-| Métrica | P25 | Mediana | P75 |
-|---|---|---|---|
-| CPC | $4.51 | $5.41 | $6.88 |
-| CPL | $13.15 | $25.15 | $47.66 |
-| Conv./mes | 5.8 | 21.7 | 47.2 |
-
-- Altas de 2026 en sus primeros 1–3 meses: CPL de $57–81.
-- CPL de Search puro en el cuartil superior: mediana ≈ $12.90. PMax reporta $6–11 (incluye acciones de Maps).
+Cuentas nuevas (primeros 1–2 meses): CPL mediano ≈ $63 (rango $31–78) y CPC mediano ≈ $7.6.
+El monto "$X/mo" del nombre de la cuenta es el precio del paquete. El gasto real en pauta es ~44% de ese monto (mediana; rango 23–70%).
 
 ## Estructura que mejor funciona
-- 1 campaña Search "ENHPRM Radius" con Maximizar conversiones (sin tCPA en ninguna cuenta).
-- PMax agregado tras 6–12 meses de Search estable, en 4 de las 8 mejores cuentas.
-- Todo el MCC towing usa BROAD. La diferencia la hace la keyword que concentra el gasto: "towing near me" (CPL ~$13) contra "roadside assistance" (CPL $67–154).
+- Search "ENHPRM Radius" con Maximizar conversiones (sin tCPA), geo en Presencia, sin partners ni Display.
+- Las cuentas del P75 pierden solo 9–30% de IS por ranking y suelen estar limitadas por presupuesto con CPL bajo.
+- 5 de las 7 mejores suman PMax. PMax reporta CPL de ~$6, pero la calidad de esas conversiones no está validada.
+- Keywords "tow truck / towing + ciudad + estado" con CPL ≈ $8.
+- Las cuentas con Maximizar clics (TARGET_SPEND) están en el cuartil inferior.
 
 ## Keywords top por conversiones (agregado)
-1. towing near me (broad): 126 conv., CPL $13.9, presente en 9 cuentas
-2. marca propia (exact): CPL ~$14
-3. towing company near me / tow truck company: CPL $15–29
-4. road service near me: CPL $21
-5. tow truck (broad): CPL $51
-6. roadside assistance (cualquier variante, broad): CPL $67–154. **Evitar como keyword principal**
+1. towing near me: ~790 conv, CPL ~$11
+2. tow truck near me: ~155 conv, ~$9
+3. Español (grúa(s) cerca de mí, servicio de grúa, asistencia en carretera, auxilio vial): ~110 conv, ~$10.5
+4. Marca propia: ~95 conv, ~$8.5
+5. tow truck/towing + ciudad: ~90 conv, ~$8
+6. roadside assistance (+ near me): ~75 conv, ~$11
+7. cheap towing / cheap tow truck near me: ~36 conv, ~$8 (no negativizar "cheap")
 
 ## Negativas que más gasto ahorraron
-Pendiente: requiere GAQL sobre `campaign_criterion` negativo (no disponible en Windsor).
+Plantilla ENHPRM (~450, amplia): aseguradoras y motor clubs, marcas de autos, impound/repo/"car was towed", tow yard/lot, rentals, empleo, DIY.
+En cuentas nuevas, los search terms con más fuga son: tiendas de llantas, planes de asistencia de marcas (Lincoln, Bridgestone, CarShield), nombres de competidores locales e informacionales ("why won't my car start").
 
 ## Errores comunes vistos en cuentas del P25
-- Gasto concentrado en "roadside assistance" broad (compite con AAA, aseguradoras, CAA).
-- Marca propia y competidores pagados dentro de la campaña genérica.
-- Tasas de conversión <10%, que apuntan a tracking de llamadas roto o tráfico de bajo ticket (lockout, llantas).
+- Maximizar clics como estrategia sostenida.
+- IS perdido por ranking > 40% (landing o QS débil).
+- CPC > $9 en los primeros meses, sin keywords de ciudad.
+- Negativas amplias de una palabra que bloquean servicios del cliente (p. ej. "mobile", "tire change near me" en un cliente que hace cambio de llanta).
