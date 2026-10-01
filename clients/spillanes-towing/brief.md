@@ -13,7 +13,7 @@ estado: onboarding
 > Contexto público y competencia ampliados en `investigacion.md`. Snapshot de la cuenta actual en `data/2026-10-01-snapshot-cuenta.md`.
 
 ## Negocio
-- URL: https://www.spillanestowingandrecovery.com/ (existe también `spillanestowingrecovery.com`, sin tráfico; confirmar cuál es el oficial: PENDIENTE)
+- URL landing de Ads: https://spillanestowingrecovery.com/ (one-page Elementor, tel. (802) 216-3105). Sitio principal: https://www.spillanestowingandrecovery.com/ (tel. 802-863-7900, form vía Towbook). Ver `audit-site.md`
 - Base: 7 Commerce Ave, South Burlington, VT 05403 · (802) 863-7900
 - Área de servicio: **radio de 12 mi alrededor de 44.490450, -73.111263** (zona Essex Junction). Cubre Burlington, South Burlington, Winooski, Essex, Williston, Colchester, Shelburne y Jericho. Solo "Presencia".
 - Servicios (por prioridad): 1) towing de emergencia light-duty 24/7, 2) accidentes/collision, 3) winch-out / 4x4 recovery, 4) flatbed, 5) private property / blocked driveway; taller mecánico en la misma sede. Orden 2–5 PENDIENTE de validar.
@@ -68,7 +68,8 @@ estado: onboarding
 - [ ] Capacidad de trabajos/mes y margen para escalar presupuesto
 - [ ] Servicios a evitar (¿lockout, llantas, long distance?) y si el taller entra al alcance
 - [ ] Ofertas sostenibles (tiempo de llegada, tarifa local, descuento tow + reparación)
-- [ ] Dominio oficial y año de fundación correcto
+- [ ] Año de fundación correcto; confirmar que (802) 216-3105 desvía a la línea principal
+- [ ] Horario real: el sitio principal dice 7am–11pm y la landing 24/7
 - [ ] Destino de los envíos del formulario
 - [ ] Plan de reseñas: 3.2★ bloquea las seller ratings y frena la conversión en Maps
 - [ ] Reestructurar la cuenta existente (phrase/exact, negativas universales + impound + competidores, sacar la marca) en `/strategy`, sin crear desde cero
