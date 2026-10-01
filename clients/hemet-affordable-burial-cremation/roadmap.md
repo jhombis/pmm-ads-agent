@@ -4,6 +4,8 @@ slug: hemet-affordable-burial-cremation
 D0: 2026-10-01
 actualizado: 2026-10-01
 fase_actual: 0
+plan_es: https://claude.ai/artifact/KYjEPTKtqCNQxzaUKmQp3U
+plan_en: https://claude.ai/artifact/6xM5pAmQxmVM8i293nk2Bw
 ---
 
 # Roadmap — Hemet Affordable Burial and Cremation
@@ -32,7 +34,7 @@ fase_actual: 0
 - **Condición de paso**: todas las tareas bloqueantes de Fase 0 en `checklist.md` ✅
 - **Tarea crítica (día 1)**: `audit-site.md` encontró que **el sitio no tiene Google Tag**. Form Fill y Website Calls no registran desde mediados de septiembre, y la puja automática solo ve las llamadas desde el anuncio. Instalar el tag, el número de reenvío y la página de gracias (PMM, ~3 h con acceso a WordPress).
 - **Tareas — quick wins (aplicar ya, PMM, día 1–2)**. Cortan unos $230/mes de desperdicio sin esperar al resto:
-  1. (PMM) Pausar "Responsive Display" ($31/mes, 0 conv).
+  1. (PMM) Display: **no se pausa** (regla del portafolio). Confirmar que siga en ~$1/día y excluir apps si es posible.
   2. (PMM) Aplicar la lista "PMM Universal" **sin** `cheapest`, `county` ni `rental` (ver `data/negatives-nicho.txt`) más la lista de nicho "Funeral - Hemet" a nivel de cuenta.
   3. (PMM) Agregar la marca como negativa en la campaña genérica actual. Hasta que exista la de marca, se puede dejar; se aplica junto con la Fase 1.
   4. (PMM) Revisar la geo actual ("Radius"): pasarla a presencia y a las ciudades del brief. Hay search terms de Palm Springs, Lake Elsinore y Menifee.
@@ -55,10 +57,10 @@ fase_actual: 0
 - **Fecha estimada**: publicar el 2026-10-13; condición evaluada el 2026-10-20
 - **Condición de paso**: campañas nuevas activas 7 días, anuncios aprobados, ≥1 conversión registrada con la configuración nueva
 - **Qué se lanza** (según `strategy.md`, Fase 1):
-  - "Search | Funeral & Cremation | Hemet Valley": 4 ad groups (Funeral Home, Cremation, Affordable, Burial), solo frase y exacta, $44/día, Maximizar conversiones sin tCPA, 24/7.
+  - "Search | Funeral & Cremation | Hemet Valley": 4 ad groups (Funeral Home, Cremation, Affordable, Burial), solo frase y exacta, $44/día, **Maximizar clics con tope de CPC $8** (pasa a Max. conversiones con 15+ conv/mes y medición limpia), 24/7.
   - "Search | Brand": $5/día, Maximizar clics con CPC máx. $3.
   - Campaña actual "ENHPRM Radius": se pausa el mismo día. **No se borra**, para conservar el histórico.
-  - 3 RSA por grupo (`data/ads-search.md`), extensiones y activo de ubicación del GBP nuevo.
+  - 2 RSA por grupo (`data/ads-search.md`), extensiones y activo de ubicación del GBP nuevo.
 - **Riesgos**:
   - Campaña nueva implica aprendizaje. Esperar 1–2 semanas con un CPA peor antes de juzgar.
   - Al quitar la amplia baja el volumen de clics. Si el gasto queda debajo del 70% del presupuesto, ampliar variantes en frase (no volver a la amplia).
@@ -80,10 +82,10 @@ fase_actual: 0
   - Estacionalidad a favor: la mortalidad sube entre diciembre y febrero (temporada de gripe), así que el volumen de conversiones puede subir en esa ventana sin aumentar presupuesto. Por eso el checkpoint es a mediados de enero.
 - **Condición de paso**: ≥30 conversiones (llamada ≥90 s + formulario verificado) en ventana de 30 días
 - **Acción**: tCPA = CPA real observado de los últimos 30 días; reajustar presupuesto
-- **Si no se cumple**: seguir con Maximizar conversiones sin tCPA. No forzar tCPA con menos datos. Opciones para Jhombis y el cliente:
+- **Si no se cumple**: seguir con la puja vigente (Max. clics con tope o Max. conversiones según el volumen), sin tCPA. No forzar tCPA con menos datos. Opciones para Jhombis y el cliente:
   1. subir el presupuesto a ~$2,500/mes;
   2. mejorar la conversión de la landing (si es <5%, ese es el cuello de botella);
-  3. aceptar Maximizar conversiones como estrategia estable, que en esta escala es razonable.
+  3. aceptar Maximizar conversiones (sin tCPA) como estrategia estable, que en esta escala es razonable.
 
 ## Fase 4 — Remarketing (RLSA)
 - **Fecha estimada**: ⛔ no proyectable. Search trae ~110 clics al mes y el orgánico es mínimo (Semrush ~8 visitas/mes). La lista no llega a 1,000 usuarios en 30 días, que es el mínimo de Google para usar audiencias en Search.
@@ -135,4 +137,5 @@ fase_actual: 0
 
 ## Historial de cambios
 - 2026-10-01: creado (D0 = 2026-10-01).
+- 2026-10-01: strategy v1.3 (estándares nuevos: Max. clics con tope $8, 2 RSA, Display no se pausa) y plan ES/EN publicado con /informe.
 - 2026-10-01: /audit-landing → Google Tag ausente pasa a tarea crítica del día 1; GPL ✅; landings mapeadas.

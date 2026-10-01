@@ -1,13 +1,12 @@
 # Copy RSA — Hemet Affordable Burial and Cremation
 
-Idioma: EN. Límites validados con script (headline ≤30, descripción ≤90). H1 pinneado en posición 1 en los 3 RSA del grupo.
+Idioma: EN. Límites validados con script (headline ≤30, descripción ≤90). H1 pinneado en posición 1 en los 2 RSA del grupo. Sin teléfonos en el texto: el teléfono va en la extensión de llamada.
 
 **Antes de publicar**: confirmar que $1,095 / $1,995 coinciden con el General Price List vigente (FTC Funeral Rule / CA B&P §7685). Si cambian, actualizar todos los headlines con precio.
 
-**3 RSA por grupo** (mismo set de headlines y descripciones, cambia el pin de la posición 2):
+**2 RSA por grupo** (estándar #4: pauta de $1,500; mismo set de headlines y descripciones, cambia el pin de la posición 2):
 - RSA A — Precio: pin pos. 2 = headline con precio (o "Transparent, Upfront Pricing" en Funeral Home).
-- RSA B — Confianza: pin pos. 2 = "Family-Owned & Licensed".
-- RSA C — Inmediatez: pin pos. 2 = "Available 24/7 - Call Now".
+- RSA B — 24/7: pin pos. 2 = "Available 24/7 - Call Now".
 
 ## Search | Funeral & Cremation | Hemet Valley → ad group: Funeral Home
 
@@ -138,7 +137,7 @@ Idioma: EN. Límites validados con script (headline ≤30, descripción ≤90). 
 | 5 | Licensed Funeral Directors | 26 |
 | 6 | Upfront Pricing, No Upsell | 26 |
 | 7 | 120 N Buena Vista St, Hemet | 27 |
-| 8 | Call (951) 658-3288 | 19 |
+| 8 | Serving the Hemet Valley | 24 |
 | 9 | Family-Owned & Licensed | 23 |
 | 10 | Available 24/7 - Call Now | 25 |
 | 11 | Historic Hemet Chapel | 21 |

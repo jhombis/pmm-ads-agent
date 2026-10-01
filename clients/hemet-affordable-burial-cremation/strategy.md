@@ -2,7 +2,7 @@
 cliente: Hemet Affordable Burial and Cremation
 slug: hemet-affordable-burial-cremation
 actualizado: 2026-10-01
-version: 1.2
+version: 1.3
 supuestos:
   - audit-site.md (2026-10-01): sin Google Tag en el sitio; las landings se mapearon en v1.1.
   - competitors.md (2026-10-01): Semrush nacional y cuota agotada; falta Auction Insights.
@@ -16,9 +16,9 @@ supuestos:
 ## Resumen ejecutivo
 - **No es una cuenta nueva.** La cuenta 751-429-2721 corre desde el 07/05/2026: ~$1,390/mes en Search con 12.4 conv/mes (**CPA $113**), más un Display de $31/mes con 2,000+ clics y **0 conversiones**. Esto es una **reestructuración**, no un lanzamiento.
 - Problemas a corregir: ~50% del gasto en **concordancia amplia**; ~**18% del gasto en términos de competidores e irrelevantes** (Wiefels, Emerson Bartlett, Dearly Beloved, coroner, hospice…); la marca se mezcla con la genérica ($207 en 90 días); el Display es tráfico basura.
-- Propuesta: **2 campañas Search** (genérica consolidada con 4 ad groups + marca), Display pausado, solo frase/exacta, negativas de nicho, geo por las 5 ciudades + 3 zonas no incorporadas.
+- Propuesta: **2 campañas Search** (genérica consolidada con 4 ad groups + marca), Display se mantiene con presupuesto mínimo (regla del portafolio), solo frase/exacta, negativas de nicho, geo por las 5 ciudades + 3 zonas no incorporadas.
 - Presupuesto: **$1,500/mes** → genérica $44/día y marca $5/día. **CPL objetivo F1 ≤ $100**; meta F2 = mediana del MCC según `benchmark.md` (**$73 ±20% → $58–88**).
-- **tCPA no es alcanzable con este presupuesto** (hacen falta ~30 conv/30 días y hoy hay ~12). Se mantiene Maximizar conversiones sin tCPA. Se revisa si el presupuesto sube o si el volumen de conversiones se duplica.
+- **tCPA no es alcanzable con este presupuesto** (hacen falta ~30 conv/30 días y hoy hay ~12). v1.3 (estándar #6 / playbook §5): con <15 conv/mes y la medición del sitio rota, la genérica pasa a **Maximizar clics con tope de CPC $8**. Pasa a Maximizar conversiones con 15+ conv/mes estables y medición limpia. Se revisa si el presupuesto sube o si el volumen de conversiones se duplica.
 
 ## Diagnóstico de la cuenta actual (90 días, jul–sep 2026)
 | Métrica | Valor | Lectura |
@@ -29,7 +29,7 @@ supuestos:
 | Competidores en search terms | **~$495** | Wiefels (×6 variantes), Valley Mortuary, Circle of Life, Emerson Bartlett, Dearly Beloved… |
 | Irrelevantes | **~$209** | coroner ($41), hospice, cementerio, mariachi, urns, caskets, final expense, VA, Lake Elsinore, Menifee |
 | Marca dentro de la genérica | $207 / 24 clics / 2 conv | A $8.6 por clic, cuando en una campaña de marca debería costar ~$1–2 |
-| Display | $91 / 1,641 clics / 0 conv | Clics accidentales (apps). **Pausar** (estándar #8) |
+| Display | $91 / 1,641 clics / 0 conv | Clics accidentales (apps). **No se pausa**: regla del portafolio (playbook §10, sostiene la visibilidad del GBP). Se mantiene en ~$1/día y, si es posible, con apps excluidas |
 | Conversiones primarias | Calls from Ads 21 · Website Calls 5 · Form Fill 4 | Las acciones locales (direcciones, visitas) ya son secundarias. **Verificar la duración mínima de llamada** (≥90 s recomendado en este nicho) |
 
 ## Benchmark MCC (funerarias, abr–sep 2026, vía Windsor)
@@ -47,9 +47,9 @@ Mediana Search de las cuentas maduras (abr–sep): ~$83. **`benchmark.md` (90 d�
 ## Campañas
 | Campaña | Objetivo | Presupuesto/día F1 | % | Puja inicial | Geo | Horario |
 |---|---|---|---|---|---|---|
-| Search \| Funeral & Cremation \| Hemet Valley | Llamadas + formularios | **$44** | 90% | Maximizar conversiones (sin tCPA) | Presencia: Hemet, San Jacinto, Winchester, Beaumont, Banning + Valle Vista, East Hemet, Homeland* | 24/7 |
+| Search \| Funeral & Cremation \| Hemet Valley | Llamadas + formularios | **$44** | 90% | **Maximizar clics, tope CPC $8** (→ Max. conversiones con 15+ conv/mes y medición limpia) | Presencia: Hemet, San Jacinto, Winchester, Beaumont, Banning + Valle Vista, East Hemet, Homeland* | 24/7 |
 | Search \| Brand | Captar la marca barata y defenderla | **$5** (techo; gasto real esperado ~$1–3/día) | 10% | Maximizar clics con CPC máx. $3 | Mismo geo | 24/7 |
-| ~~Responsive Display~~ | — | **Pausar** | — | — | — | — |
+| Responsive Display (existente) | Visibilidad del GBP (no se mide por conversión) | **~$1** (sin cambio; hoy $31/mes) | — | Sin cambio | — | — |
 
 \*Las 3 zonas no incorporadas necesitan aprobación de Jhombis: son el mismo mercado y no salen del área real de servicio.
 
@@ -99,7 +99,7 @@ En la campaña genérica se agregan los términos de marca como negativas, para 
 Detalle completo en `data/keywords.csv`.
 
 ## Copy
-En `data/ads-search.md`: 5 grupos × 15 headlines + 4 descripciones (EN, límites validados), 3 RSA por grupo (pin en posición 2: precio / confianza / 24-7), sitelinks, callouts, snippet, llamada y ubicación.
+En `data/ads-search.md`: 5 grupos × 15 headlines + 4 descripciones (EN, límites validados), **2 RSA por grupo** (v1.3: pauta de $1,500 en el límite del estándar #4; pin en posición 2: precio / 24-7), sitelinks, callouts, snippet, llamada y ubicación.
 
 Ángulos, según brief y competencia:
 - **Precio claro con valor local.** $1,095 no es el más barato ($439+ San Jacinto Valley, $980 Simplicity), así que no se compite por "el más barato" sino por "precio publicado + funeraria local + capilla histórica + sin presión".
@@ -125,7 +125,7 @@ Nota de copy: /pricing confirma "Simple Cremation with Private Viewing **$1,495*
 ## Presupuesto por fase
 | Fase | Total/mes | Por campaña | Condición para pasar |
 |---|---|---|---|
-| **F0 — Limpieza** (semana 1) | sin cambio | — | Display pausado; amplias pasadas a frase; negativas aplicadas; conversiones verificadas (llamada ≥90 s, form con Tag Assistant); GBP nuevo vinculado |
+| **F0 — Limpieza** (semana 1) | sin cambio | — | Display en ~$1/día; amplias pasadas a frase; negativas aplicadas; conversiones verificadas (llamada ≥90 s, form con Tag Assistant); GBP nuevo vinculado |
 | **F1 — Reestructura** (30–45 días) | $1,500 | Genérica $44/día · Marca $5/día | ≥12 conv/mes **y** CPA ≤ $100 **y** desperdicio en search terms <10% del gasto |
 | **F2 — Optimización** | $1,500 (o más si el cliente aprueba) | Reasignar keywords y ad groups según CPA; sumar grupo **Español** si hay personal | CPA ≤ $88 (mediana $73 +20%) dos meses seguidos; cliente confirma que los leads se convierten en casos (feedback cualitativo, sin CRM) |
 | **F3 — Pre-need** | +$300–500 | Campaña Pre-need aparte (otro mensaje, otra landing) | F2 cumplida y landing de pre-planning lista |
@@ -135,16 +135,22 @@ Nota de copy: /pricing confirma "Simple Cremation with Private Viewing **$1,495*
 ## Por qué NO (todavía)
 - **PMax**: el cliente tiene ~12 conv/mes (el umbral es 30), una ficha de Google nueva sin reseñas y no tiene fotos ni videos propios confirmados. PMax se comería la marca y Maps, y reportaría conversiones locales infladas. Las otras funerarias del MCC muestran PMax con CPA de $21–57, pero primero hay que auditar qué cuentan esas conversiones (`/benchmark-interno`).
 - **Amplia**: aunque en los datos trajo más conversiones, generó ~$700 de fuga en competidores e irrelevantes. Se pasa todo a frase/exacta y se vuelve a evaluar solo con tCPA maduro y aprobación de Jhombis (estándar #2).
-- **Display**: 0 conversiones con 2,000+ clics. Para un servicio local de este tipo, el Display es ruido.
+- **Más Display**: 0 conversiones con 2,000+ clics. No se le sube presupuesto ni se agrega remarketing en Display. La campaña existente no se pausa (regla del portafolio).
 - **Campaña por servicio**: el presupuesto no alcanza para que cada campaña salga del aprendizaje (ver arriba).
 - **LSA**: la categoría "funeral home" no aparece como disponible. Sigue `PENDIENTE` verificarlo; no es bloqueante.
 
 ## Insumos de competencia (v1.2, `competitors.md`)
-- **24/7 con persona real** es diferencial frente a San Jacinto Valley Mortuary ($439, atiende de 9 a 5 y no tiene answering service). Se pinnea en el RSA C y no se baja la puja de noche.
+- **24/7 con persona real** es diferencial frente a San Jacinto Valley Mortuary ($439, atiende de 9 a 5 y no tiene answering service). Se pinnea en el RSA B y no se baja la puja de noche.
 - **Entierro directo a $1,995**: ningún competidor local publica un precio comparable. Es el ángulo menos disputado.
 - **Amenaza en precio**: Dearly Beloved (Hemet, cremación directa $945–995, 5.0★ con 21 reseñas en Yelp, 24 h, familiar) y otros 3 jugadores entre $980 y $995. No anunciar "lowest price". Diferenciar con precio **todo incluido** (traslado, permiso y urna), entierro directo y capilla histórica. Vigilar aparte el CPA del grupo Affordable.
 - Neptune ofrece "0% financing": **preguntar al cliente si puede ofrecer plan de pagos** (pendiente en el brief).
 - Semrush no muestra funerarias locales pujando. El CPC de $13 parece venir de la amplia, no de competencia local. **Validar con Auction Insights** de la cuenta antes de la Fase 1.
+
+## Cambios v1.3 (2026-10-01, estándares actualizados en CLAUDE.md y playbook de analítica)
+- **Puja**: Maximizar conversiones → **Maximizar clics con tope de CPC $8**. Hay <15 conv/mes y la medición del sitio está rota. El tope sale del benchmark (P75 $8.64, mediana $5.94) contra los $12.98 actuales. Con $44/día son ~5–7 clics/día.
+- **RSA**: 3 → **2 por grupo** (A: precio en pos. 2 · B: 24/7 en pos. 2).
+- **Display**: no se pausa; se mantiene en ~$1/día.
+- **Copy**: se quita el headline con teléfono de la campaña Brand (Google rechaza PHONE_NUMBER_IN_AD_TEXT).
 
 ## Riesgos y supuestos
 1. **CPA objetivo ($73–100) por encima del CPL máximo supuesto ($60).** Si el margen real por caso es de ~$500, la cuenta no es rentable con cremación directa sola. Hace falta el margen real y la mezcla de servicios (un servicio completo deja mucho más margen). Es el pendiente número 1 con el cliente.

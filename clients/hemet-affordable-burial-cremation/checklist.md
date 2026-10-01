@@ -6,7 +6,7 @@ actualizado: 2026-10-01
 ---
 # Checklist — Hemet Affordable Burial and Cremation
 
-Base: `knowledge/checklists/setup-cuenta.md`, adaptado a una **cuenta ya activa** (751-429-2721). Se eliminaron Display remarketing (el Display ya probó 0 conversiones) y la configuración de PMax (no califica; ver roadmap Fase 5). LSA queda solo como verificación.
+Base: `knowledge/checklists/setup-cuenta.md`, adaptado a una **cuenta ya activa** (751-429-2721). Se eliminó Display remarketing (el Display ya probó 0 conversiones; la campaña existente se mantiene en ~$1/día) y la configuración de PMax (no califica; ver roadmap Fase 5). LSA queda solo como verificación.
 Responsables: PMM · Cliente · Jhombis (decisión).
 
 ## Fase 0 — Fundación / limpieza (bloqueante para Fase 1) · meta 2026-10-12
@@ -14,7 +14,7 @@ Responsables: PMM · Cliente · Jhombis (decisión).
 - [ ] (PMM) **CRÍTICO: instalar el Google Tag (AW-) en todo el sitio** (WordPress). Hoy no hay ninguno (audit-site.md)
 - [ ] (PMM) Snippet de número de reenvío (Website Calls) funcionando con gclid
 - [ ] (PMM) Formulario de Elementor → redirección a /thank-you/ con la conversión Form Fill
-- [ ] (PMM) Pausar "Responsive Display - $300/mo" (0 conv en 90 días)
+- [ ] (PMM) Display existente: **no pausar** (regla del portafolio); confirmar ~$1/día y excluir apps si es posible
 - [ ] (PMM) Lista "PMM Universal" aplicada a nivel de cuenta **sin** `cheapest`, `county` ni `rental`
 - [ ] (PMM) Lista de nicho "Funeral - Hemet" (`data/negatives-nicho.txt`) aplicada a nivel de cuenta
 - [ ] (PMM) Geo de la campaña actual revisada: solo presencia, ciudades del brief, resto de países excluido
@@ -61,9 +61,9 @@ Responsables: PMM · Cliente · Jhombis (decisión).
 - [ ] Red: solo Búsqueda; socios y Display apagados
 - [ ] Ubicación: presencia; ciudades del brief (+ zonas no incorporadas si se aprueba); resto de países excluido
 - [ ] Programación 24/7 (contestan 24/7 con una persona)
-- [ ] Puja: genérica Maximizar conversiones (sin tCPA); marca Maximizar clics con CPC máx. $3
+- [ ] Puja: genérica Maximizar clics con tope de CPC $8 (→ Max. conversiones con 15+ conv/mes); marca Maximizar clics con CPC máx. $3
 - [ ] Keywords en frase; exacta para los top términos; **cero amplia**
-- [ ] 3 RSA por ad group, H1 pinneado, 15H/4D (`data/ads-search.md`), fuerza "Buena" o superior
+- [ ] 2 RSA por ad group, H1 pinneado, 15H/4D (`data/ads-search.md`), fuerza "Buena" o superior
 - [ ] Precios de los anuncios verificados contra el GPL
 - [ ] Extensiones: 6 sitelinks, 8 callouts, snippet "Services", llamada, ubicación (GBP nuevo)
 - [ ] URLs finales verificadas (200, https, sin redirect)
