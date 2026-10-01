@@ -217,7 +217,7 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
       <dt>Market</dt><dd>Northwest Arkansas · EN</dd>
       <dt>D0</dt><dd class="num">Sep 23, 2026</dd>
       <dt>Current phase</dt><dd><span class="chip st-run">Phase 1 · launched Sep 23</span></dd>
-      <dt>Updated</dt><dd class="num">Sep 29, 2026</dd>
+      <dt>Updated</dt><dd class="num">Oct 1, 2026</dd>
     </dl>
   </header>
 
@@ -448,6 +448,20 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
         <p style="font-size:.9rem; color:var(--ink-2); margin-top:12px">Every service page gets: H1 with service + NWA, the 4-field form above the fold, a call button, the 4.9 ★ widget, the Licensed/Bonded/Insured badge, real portfolio photos and the Free Quote offer.</p>
       </div>
     </div>
+    <div style="margin-top:24px">
+      <h3 style="margin-bottom:8px">GoHighLevel landing pages · built Oct 1</h3>
+      <p style="font-size:.92rem; color:var(--ink-2); margin-bottom:10px">One per ad group, built with /landing-ghl: H1 = the group’s keyword, GHL form above the fold with gclid/UTM, sticky call bar on mobile, FAQ from the account’s real searches and a thank-you page that fires the conversion. Ads-only (noindex), on the proposed subdomain go.prophaseelectricar.com.</p>
+      <div class="tbl"><table>
+        <thead><tr><th>Page</th><th>Ad group</th><th>QA</th><th>Status</th></tr></thead>
+        <tbody>
+            <tr><td class="mono">electrician-northwest-arkansas</td><td>Electrician - NWA</td><td><span class="chip st-block">3 blockers</span></td><td><span class="chip st-todo">Draft</span></td></tr>
+            <tr><td class="mono">electrical-repair-nwa</td><td>Electrical Repair</td><td><span class="chip st-block">3 blockers</span></td><td><span class="chip st-todo">Draft</span></td></tr>
+            <tr><td class="mono">electrical-panel-upgrade-nwa</td><td>Electrical Panel Upgrade</td><td><span class="chip st-block">3 blockers</span></td><td><span class="chip st-todo">Draft</span></td></tr>
+            <tr><td class="mono">ev-charger-installation-nwa</td><td>EV Charger Installation</td><td><span class="chip st-block">3 blockers</span></td><td><span class="chip st-todo">Draft</span></td></tr>
+        </tbody>
+      </table></div>
+      <p class="muted" style="font-size:.86rem; margin-top:8px"><b>Blocking setup (all 4):</b> GHL form ID (PMM), privacy policy URL (client) and the "GHL Form" conversion label (PMM). Logo, colors, review count and license number are also missing (not made up). Setting them up also fixes form tracking.</p>
+    </div>
   </section>
 
   <section id="mercado">
@@ -555,6 +569,7 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
   const esc = s => String(s).replace(/[&<>"]/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));
 
   const steps = [
+    ['Set up the 4 landing pages in GoHighLevel', 'GHL form with gclid/UTM, privacy policy and "GHL Form" conversion; test with Tag Assistant and PageSpeed; then switch the final URLs (with approval). See landings/README.md.', 'PMM/Client', true],
     ['Ask the client about leads since Sep 23', 'How many new calls and quote requests came in, and how they found us. Today it’s the only way to know if the campaign brings leads (website tracking has never recorded anything).', 'Jhombis', true],
     ['Approve 25 negatives', '16 competitors, license/journeyman, the power company and product price terms (data/2026-09-24-negatives.txt), plus routing for breaker box repair.', 'Jhombis', false],
     ['✓ Done Sep 23: 134 negatives, 4 broad keywords paused and $12 CPC cap', 'Applied via API on the current campaign and verified. Impact is measured comparing Sep 9–22 vs Sep 24–Oct 7.', 'PMM', false],

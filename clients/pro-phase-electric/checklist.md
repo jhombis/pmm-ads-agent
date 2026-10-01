@@ -2,7 +2,7 @@
 cliente: Pro Phase Electric
 slug: pro-phase-electric
 fase_actual: 1
-actualizado: 2026-09-29
+actualizado: 2026-10-01
 ---
 # Checklist — Pro Phase Electric
 
@@ -61,6 +61,16 @@ Cuenta 758-301-1023 · campaña actual 24208591381 (Max. clics, se pausa en F1).
 - [ ] (Cliente) Confirmar si instala generadores (hoy es negativa)
 - [ ] (Cliente) Número de licencia de Arkansas
 - [ ] (PMM) LSA: **en espera** (el cliente dijo "No"). Reabrir si cambia
+
+## Landings GoHighLevel (creadas 01-oct, `landings/README.md`)
+- [x] (PMM) 4 landings generadas (NWA, Repair, Paneles, EV): spec + código GHL + página de gracias, QA sin errores de copy
+- [ ] **B** (PMM) Formulario GHL con campos ocultos gclid/UTM → `ghl.form_id` en los 4 specs
+- [ ] **B** (Cliente/PMM) URL de la política de privacidad → `legal.privacidad_url`
+- [ ] **B** (PMM) Acción de conversión "GHL Form" (+ clic en tel:, secundaria) → etiquetas en `tracking`
+- [ ] (Cliente) CNAME de `go.prophaseelectricar.com` (o el subdominio que elija) hacia GHL
+- [ ] (Cliente) Logo, colores, total de reseñas y 2–3 reseñas reales; número de licencia de Arkansas
+- [ ] (PMM) Montar en GHL, probar con ?gclid=TEST123 + Tag Assistant + PageSpeed ≥70
+- [ ] (PMM) Cambiar las URLs finales de Search NWA a las landings (requiere OK)
 
 ## Fase 1 — Lanzamiento Search NWA (lanzada 23-sep con Fase 0 incompleta, por decisión de Jhombis — ver log/2026-09-23-build.md)
 - [x] (PMM) Campaña Search NWA creada: ID 24273708366, 4 ad groups **activos**, todas las URLs a la home — 23-sep
