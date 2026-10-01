@@ -14,7 +14,7 @@ La única métrica que importa es la **rentabilidad del cliente**. CTR, tasa de 
 ## Estructura del repo
 ```
 CLAUDE.md                 este archivo
-knowledge/                estrategias, benchmarks, checklists y listas base
+knowledge/                estrategias, benchmarks, checklists, listas base y estilo-informes/ (plantilla HTML + logo PMM)
 .claude/skills/           skills invocables con /nombre
 clients/<slug>/           una carpeta por cliente (ver clients/_template)
 docs/                     setup de integraciones
@@ -32,6 +32,7 @@ scripts/                  utilidades (API de Google Ads, PageSpeed, etc.)
 | `roadmap.md` | /roadmap | /weekly-review |
 | `checklist.md` | /roadmap (crea), /weekly-review (actualiza) | todos |
 | `landings/<pagina>/` | /landing-ghl (spec.json + código para GoHighLevel) | /build-campaign (URLs finales) |
+| `plan-es.html` + `plan-en.html` | /informe (al final de cada skill) | Jhombis, equipo, cliente |
 | `log/YYYY-MM-DD.md` | /weekly-review | /weekly-review |
 | `data/` | exports CSV/JSON de la API; /investigar-cliente deja account-profile.json, site-scan.json, pagespeed.json | /weekly-review, /negatives, /audit-landing |
 
@@ -69,3 +70,6 @@ scripts/                  utilidades (API de Google Ads, PageSpeed, etc.)
 - Trabaja en español con Jhombis. Los anuncios se escriben en el idioma del mercado del cliente (inglés para US, español para Colombia).
 - Los archivos de cliente usan Markdown con front matter (`cliente`, `slug`, `pais`, `actualizado`).
 - Cuando termines un skill, resume en 3–5 líneas qué produjiste y cuál es el siguiente skill a correr.
+- **Todo skill termina con `/informe`**: se actualiza y republica el artefacto del cliente (plan ES + EN con el estilo PMM) en sus mismas URLs, y se entregan los dos enlaces. Jhombis siempre lo pide: no se pregunta, se entrega.
+- **Toda página, artefacto o HTML de entrega (plan, reporte, resumen para el cliente) se genera SIEMPRE en dos versiones: español e inglés.** Archivos `clients/<slug>/plan-es.html` y `plan-en.html`, con el mismo contenido y diseño y cada una enlazada a la otra. Sus URLs se guardan en el front matter de `roadmap.md` (`plan_es`, `plan_en`).
+- **Estilo gráfico único para toda entrega HTML**: logo PMM, paleta, tipografías y componentes de `knowledge/estilo-informes/`. Se parte siempre de `python scripts/informe_html.py new <es> <en>`, no se inventa otro diseño ni se edita el `<style>`, y antes de publicar se corre `python scripts/informe_html.py check <es> <en>`. (Las landings de `/landing-ghl` son para el cliente final y no usan este estilo.)

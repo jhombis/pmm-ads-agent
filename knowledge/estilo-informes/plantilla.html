@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="es">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{Cliente}} · {{Tipo de informe}}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+:root{
+  --ground:#FFFFFF; --surface:#F5F5F8; --surface-2:#ECECF2; --ink:#121216; --ink-2:#3A3B45; --muted:#6A6C78; --line:#E2E2EA;
+  --yellow:#F5C518; --orange:#F39A1E; --red:#E0452B; --green:#22A55B; --blue:#27409C; --sky:#4F8FD6; --purple:#86479A;
+  --ok:#1C8F55; --ok-bg:#E3F4EA; --warn:#A86A00; --warn-bg:#FFF3D6; --bad:#C23A22; --bad-bg:#FCE7E2; --idle-bg:#EFEFF4;
+  --logo-plate:#FFFFFF;
+  --f-display:"Red Hat Display", "Segoe UI", system-ui, sans-serif;
+  --f-body:"Source Sans 3", "Segoe UI", system-ui, sans-serif;
+  --f-mono:"JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#0F1015; --surface:#171820; --surface-2:#20222C; --ink:#EEEEF3; --ink-2:#C9CAD4; --muted:#9496A4; --line:#2B2D38;
+    --yellow:#F7CE3A; --orange:#F6A945; --red:#F0664F; --green:#3CC478; --blue:#6C86E6; --sky:#78AEEA; --purple:#B679C9;
+    --ok:#4FD08C; --ok-bg:#15301F; --warn:#F2C152; --warn-bg:#342913; --bad:#F27C66; --bad-bg:#3A1C17; --idle-bg:#22242E;
+    --logo-plate:#FFFFFF;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0F1015; --surface:#171820; --surface-2:#20222C; --ink:#EEEEF3; --ink-2:#C9CAD4; --muted:#9496A4; --line:#2B2D38;
+  --yellow:#F7CE3A; --orange:#F6A945; --red:#F0664F; --green:#3CC478; --blue:#6C86E6; --sky:#78AEEA; --purple:#B679C9;
+  --ok:#4FD08C; --ok-bg:#15301F; --warn:#F2C152; --warn-bg:#342913; --bad:#F27C66; --bad-bg:#3A1C17; --idle-bg:#22242E;
+  --logo-plate:#FFFFFF;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--ground); color:var(--ink); font-family:var(--f-body); font-size:16px; line-height:1.55; -webkit-font-smoothing:antialiased}
+.wrap{max-width:1120px; margin:0 auto; padding-inline:20px; padding-block:28px 64px}
+h1,h2,h3,h4{font-family:var(--f-display); line-height:1.15; margin:0; text-wrap:balance; color:var(--ink)}
+h2{font-size:1.65rem; font-weight:900; letter-spacing:-.01em}
+h3{font-size:1.12rem; font-weight:700}
+p{margin:0}
+a{color:var(--blue)}
+:focus-visible{outline:3px solid var(--sky); outline-offset:2px; border-radius:4px}
+.mono{font-family:var(--f-mono); font-size:.86em}
+.num{font-variant-numeric:tabular-nums}
+.muted{color:var(--muted)}
+.eyebrow{font-family:var(--f-display); font-weight:700; font-size:.74rem; text-transform:uppercase; letter-spacing:.14em; color:var(--muted)}
+
+/* Masthead */
+.mast{display:grid; grid-template-columns:1fr auto; gap:20px 28px; align-items:end; padding-bottom:18px; border-bottom:4px solid var(--ink)}
+.logo{background:var(--logo-plate); border-radius:8px; padding:10px 14px; display:inline-block; max-width:100%}
+.logo img{display:block; height:46px; width:auto; max-width:100%}
+.mast h1{font-size:clamp(2rem,5vw,3.1rem); font-weight:900; letter-spacing:-.02em; margin-top:18px}
+.mast .sub{color:var(--ink-2); margin-top:6px; max-width:62ch}
+.meta{display:grid; grid-template-columns:auto auto; gap:4px 16px; font-size:.92rem; align-self:end}
+.meta dt{color:var(--muted)} .meta dd{margin:0; font-weight:600}
+@media (max-width:760px){ .mast{grid-template-columns:1fr} }
+
+/* Nav */
+nav.toc{position:sticky; top:env(safe-area-inset-top,0px); z-index:5; background:var(--ground); border-bottom:1px solid var(--line); margin-inline:-20px; padding:10px 20px; display:flex; gap:6px; overflow-x:auto; scrollbar-width:thin}
+nav.toc a{flex:none; font-family:var(--f-display); font-weight:700; font-size:.82rem; text-decoration:none; color:var(--ink-2); padding:6px 10px; border-radius:999px}
+nav.toc a:hover{background:var(--surface-2); color:var(--ink)}
+
+section{padding-top:48px; scroll-margin-top:60px}
+.sec-head{display:flex; align-items:baseline; justify-content:space-between; gap:12px; flex-wrap:wrap; margin-bottom:18px}
+.sec-head p{color:var(--muted); max-width:60ch}
+
+/* KPI strip */
+.kpis{display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:1px; background:var(--line); border:1px solid var(--line); border-radius:12px; overflow:hidden}
+.kpi{background:var(--ground); padding:16px 18px}
+.kpi b{display:block; font-family:var(--f-display); font-size:1.7rem; font-weight:900; letter-spacing:-.01em; font-variant-numeric:tabular-nums}
+.kpi span{font-size:.88rem; color:var(--muted)}
+@media (max-width:760px){ .kpis{grid-template-columns:repeat(2,minmax(0,1fr))} }
+
+.two{display:grid; grid-template-columns:1.1fr .9fr; gap:28px; margin-top:24px}
+@media (max-width:860px){ .two{grid-template-columns:1fr} }
+.callout{background:var(--surface); border-radius:12px; padding:18px 20px}
+.callout h3{margin-bottom:8px}
+.callout ul{margin:0; padding-left:1.1em} .callout li{margin:4px 0}
+.bar-spend{display:flex; height:14px; border-radius:7px; overflow:hidden; margin:12px 0 8px; background:var(--surface-2)}
+.bar-spend i{display:block; height:100%}
+.legend{display:flex; flex-wrap:wrap; gap:6px 14px; font-size:.85rem; color:var(--ink-2)}
+.legend span::before{content:""; display:inline-block; width:10px; height:10px; border-radius:3px; margin-right:6px; vertical-align:-1px; background:var(--c)}
+
+/* Chips */
+.chip{display:inline-flex; align-items:center; gap:6px; font-family:var(--f-display); font-weight:700; font-size:.72rem; letter-spacing:.04em; text-transform:uppercase; padding:3px 9px; border-radius:999px; white-space:nowrap}
+.st-done{background:var(--ok-bg); color:var(--ok)}
+.st-run{background:var(--warn-bg); color:var(--warn)}
+.st-todo{background:var(--idle-bg); color:var(--ink-2)}
+.st-block{background:var(--bad-bg); color:var(--bad)}
+.st-pause{background:var(--idle-bg); color:var(--muted)}
+.b-flag{background:var(--ink); color:var(--ground); font-family:var(--f-display); font-weight:900; font-size:.66rem; padding:2px 6px; border-radius:4px; letter-spacing:.05em}
+.who{font-family:var(--f-display); font-weight:700; font-size:.72rem; padding:2px 8px; border-radius:6px; border:1px solid var(--line); color:var(--ink-2); white-space:nowrap}
+
+/* Next steps */
+.steps{display:grid; gap:0; border-top:1px solid var(--line)}
+.step{display:grid; grid-template-columns:28px 1fr auto; gap:14px; padding:14px 2px; border-bottom:1px solid var(--line); align-items:start}
+.step .n{font-family:var(--f-mono); color:var(--muted); font-size:.85rem; padding-top:2px}
+.step p.d{color:var(--ink-2); font-size:.93rem; margin-top:2px}
+.step .tags{display:flex; gap:6px; flex-wrap:wrap; justify-content:flex-end}
+@media (max-width:620px){ .step{grid-template-columns:24px 1fr} .step .tags{grid-column:2; justify-content:flex-start} }
+
+/* Timeline */
+.tl-wrap{overflow-x:auto; border:1px solid var(--line); border-radius:12px; background:var(--ground)}
+.tl{min-width:760px; padding:14px 16px 18px; position:relative}
+.tl-scale{position:relative; height:22px; margin-left:190px; border-bottom:1px solid var(--line)}
+.tl-scale span{position:absolute; top:0; font-size:.75rem; color:var(--muted); transform:translateX(-1px); padding-left:4px; border-left:1px solid var(--line); height:22px}
+.tl-row{display:grid; grid-template-columns:190px 1fr; align-items:center; min-height:40px; border-bottom:1px dashed var(--line)}
+.tl-row:last-child{border-bottom:0}
+.tl-label{font-family:var(--f-display); font-weight:700; font-size:.86rem; padding-right:10px; display:flex; gap:8px; align-items:center}
+.tl-label i{width:10px; height:10px; border-radius:3px; background:var(--c); flex:none}
+.tl-track{position:relative; height:40px}
+.tl-bar{position:absolute; top:10px; height:20px; border-radius:6px; background:var(--c); color:#111; font-size:.72rem; font-weight:700; font-family:var(--f-display); padding:0 8px; display:flex; align-items:center; white-space:nowrap; overflow:hidden}
+.tl-bar.ghost{background:repeating-linear-gradient(135deg, color-mix(in srgb, var(--c) 45%, transparent) 0 6px, transparent 6px 11px); border:1.5px dashed var(--c); color:var(--ink)}
+.tl-mark{position:absolute; top:6px; width:2px; height:28px; background:var(--ink)}
+.tl-mark b{position:absolute; top:-2px; left:6px; font-size:.7rem; font-family:var(--f-display); white-space:nowrap; color:var(--ink)}
+.tl-today{position:absolute; top:0; bottom:0; width:2px; background:var(--red); z-index:2}
+.tl-today b{position:absolute; top:-2px; left:4px; font-size:.68rem; font-family:var(--f-display); color:var(--red); white-space:nowrap}
+
+/* Phase cards */
+.phases{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; margin-top:22px}
+@media (max-width:760px){ .phases{grid-template-columns:1fr} }
+.phase{border:1px solid var(--line); border-radius:12px; padding:16px 18px; display:grid; gap:10px; align-content:start; background:var(--ground)}
+.phase header{display:flex; align-items:center; justify-content:space-between; gap:10px}
+.phase .tag{display:flex; align-items:center; gap:10px}
+.phase .dot{width:14px; height:14px; border-radius:4px; background:var(--c); flex:none}
+.phase .when{font-family:var(--f-mono); font-size:.82rem; color:var(--ink-2)}
+.phase .cond{font-size:.9rem; background:var(--surface); border-radius:8px; padding:8px 10px}
+.phase .cond b{font-family:var(--f-display); font-size:.72rem; text-transform:uppercase; letter-spacing:.1em; color:var(--muted); display:block}
+.phase ul{margin:0; padding-left:1.1em; font-size:.93rem; color:var(--ink-2)} .phase li{margin:3px 0}
+
+/* Tables */
+.tbl{overflow-x:auto; border:1px solid var(--line); border-radius:12px}
+table{border-collapse:collapse; width:100%; font-size:.92rem}
+th,td{text-align:left; padding:10px 12px; border-bottom:1px solid var(--line); vertical-align:top}
+th{font-family:var(--f-display); font-size:.74rem; text-transform:uppercase; letter-spacing:.08em; color:var(--muted); background:var(--surface); white-space:nowrap}
+tr:last-child td{border-bottom:0}
+td.r, th.r{text-align:right; font-variant-numeric:tabular-nums}
+.kw{display:inline-block; font-family:var(--f-mono); font-size:.78rem; background:var(--surface-2); border-radius:5px; padding:1px 6px; margin:2px 3px 2px 0}
+
+.cfg{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1px; background:var(--line); border:1px solid var(--line); border-radius:12px; overflow:hidden; margin-bottom:22px}
+.cfg div{background:var(--ground); padding:12px 14px}
+.cfg dt{font-family:var(--f-display); font-size:.72rem; text-transform:uppercase; letter-spacing:.1em; color:var(--muted)}
+.cfg dd{margin:2px 0 0; font-weight:600}
+@media (max-width:760px){ .cfg{grid-template-columns:1fr 1fr} }
+@media (max-width:440px){ .cfg{grid-template-columns:1fr} }
+
+/* Ads */
+.adgrid{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px}
+@media (max-width:760px){ .adgrid{grid-template-columns:1fr} }
+.serp{border:1px solid var(--line); border-radius:12px; padding:14px 16px; background:var(--ground)}
+.serp .spon{font-size:.78rem; font-weight:700; color:var(--ink)}
+.serp .url{font-size:.82rem; color:var(--ink-2)}
+.serp .hl{font-size:1.12rem; color:var(--blue); font-weight:600; line-height:1.3; margin:4px 0}
+.serp .ds{font-size:.9rem; color:var(--ink-2)}
+.pool{columns:2; column-gap:24px; margin:0; padding-left:1.1em; font-size:.93rem} .pool li{break-inside:avoid; margin:3px 0}
+@media (max-width:620px){ .pool{columns:1} }
+.lenc{color:var(--muted); font-family:var(--f-mono); font-size:.75rem}
+
+/* Negatives */
+.negbars{display:grid; gap:8px}
+.negbar{display:grid; grid-template-columns:230px 1fr 40px; gap:12px; align-items:center; font-size:.92rem}
+.negbar .t{height:12px; border-radius:6px; background:var(--surface-2); overflow:hidden}
+.negbar .t i{display:block; height:100%; background:var(--c)}
+@media (max-width:560px){ .negbar{grid-template-columns:1fr 40px} .negbar .t{grid-column:1 / -1; order:3} }
+
+/* Rubric */
+.rub{display:grid; gap:6px}
+.rub-row{display:grid; grid-template-columns:1fr 92px; gap:12px; align-items:center; padding:8px 0; border-bottom:1px solid var(--line); font-size:.93rem}
+.pips{display:flex; gap:4px; justify-content:flex-end}
+.pips i{width:22px; height:10px; border-radius:3px; background:var(--surface-2)}
+.pips i.on{background:var(--ink)}
+.pips em{font-style:normal; font-size:.72rem; color:var(--muted); font-family:var(--f-display); font-weight:700}
+
+/* Checklist */
+.filters{display:flex; flex-wrap:wrap; gap:8px; margin-bottom:14px; align-items:center}
+.filters .grp{display:flex; gap:4px; flex-wrap:wrap; align-items:center}
+.filters .lab{font-size:.78rem; color:var(--muted); margin-right:4px}
+.fbtn{font-family:var(--f-display); font-weight:700; font-size:.8rem; border:1px solid var(--line); background:var(--ground); color:var(--ink-2); padding:6px 11px; border-radius:999px; cursor:pointer}
+.fbtn[aria-pressed="true"]{background:var(--ink); color:var(--ground); border-color:var(--ink)}
+.cl-phase{margin-top:18px}
+.cl-phase h3{display:flex; align-items:center; gap:10px; margin-bottom:6px}
+.cl-phase h3 i{width:12px; height:12px; border-radius:3px; background:var(--c)}
+.cl-phase h3 small{font-family:var(--f-body); font-weight:400; font-size:.85rem; color:var(--muted)}
+.cl-item{display:grid; grid-template-columns:26px 1fr auto; gap:10px; padding:9px 0; border-bottom:1px solid var(--line); align-items:start; font-size:.94rem}
+.box{width:18px; height:18px; border-radius:5px; border:2px solid var(--muted); margin-top:2px; position:relative}
+.box.done{background:var(--ok); border-color:var(--ok)}
+.box.done::after{content:""; position:absolute; left:4px; top:0px; width:5px; height:10px; border:solid var(--ground); border-width:0 2.5px 2.5px 0; transform:rotate(45deg)}
+.box.part{border-color:var(--warn); background:linear-gradient(90deg,var(--warn) 50%, transparent 50%)}
+.cl-item .tags{display:flex; gap:6px; align-items:center}
+.cl-item.is-done .txt{color:var(--muted)}
+.empty-note{color:var(--muted); font-size:.9rem; padding:10px 0}
+
+/* Questions */
+.qlist{margin:0; padding-left:1.3em} .qlist li{margin:6px 0}
+.copybtn{font-family:var(--f-display); font-weight:700; font-size:.82rem; border:0; background:var(--ink); color:var(--ground); padding:8px 14px; border-radius:8px; cursor:pointer}
+.copyarea{width:100%; min-height:120px; margin-top:10px; font-family:var(--f-mono); font-size:.8rem; border:1px solid var(--line); border-radius:8px; padding:10px; background:var(--surface); color:var(--ink)}
+
+.why{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px}
+@media (max-width:860px){ .why{grid-template-columns:1fr} }
+.why div{border-top:3px solid var(--ink); padding-top:10px}
+.why h4{font-size:1rem; margin-bottom:4px}
+.why p{font-size:.92rem; color:var(--ink-2)}
+
+footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font-size:.85rem; color:var(--muted); display:flex; flex-wrap:wrap; gap:8px 20px; justify-content:space-between}
+@media (prefers-reduced-motion: no-preference){ html{scroll-behavior:smooth} }
+</style>
+
+<!--
+  PLANTILLA DE INFORMES PMM — ver knowledge/estilo-informes/README.md
+  1. Copiar a clients/<slug>/<nombre>-es.html y <nombre>-en.html (o diagnostics/<cuenta>/…).
+  2. Reemplazar los {{MARCADORES}} y borrar las secciones que no apliquen. No tocar el <style>.
+  3. python scripts/informe_html.py embed <archivo>   → inserta el logo PMM
+     python scripts/informe_html.py check <es> <en>   → valida antes de publicar
+-->
+<div class="wrap">
+  <header class="mast">
+    <div>
+      <span class="logo"><img src="{{PMM_LOGO}}" alt="Performance Media Marketing"></span>
+      <h1>{{CLIENTE}}</h1>
+      <p class="sub">{{SUBTITULO: una frase con qué es este informe y qué decide}}</p>
+      <p style="margin-top:8px; font-size:.88rem"><a href="{{URL_OTRO_IDIOMA}}">{{English version → | Versión en español →}}</a></p>
+    </div>
+    <dl class="meta">
+      <dt>Cuenta</dt><dd class="mono">{{000-000-0000}}</dd>
+      <dt>Mercado</dt><dd>{{Ciudad/estado · idioma}}</dd>
+      <dt>Fase actual</dt><dd><span class="chip st-run">{{Fase N}}</span></dd>
+      <dt>Actualizado</dt><dd class="num">{{DD-mmm-AAAA}}</dd>
+    </dl>
+  </header>
+
+  <nav class="toc" aria-label="Secciones">
+    <a href="#resumen">Resumen</a><a href="#pasos">Próximos pasos</a><a href="#datos">Datos</a><a href="#fases">Fases</a><a href="#checklist">Checklist</a>
+  </nav>
+
+  <!-- RESUMEN: KPIs (4) + estado + callout de decisión -->
+  <section id="resumen">
+    <div class="sec-head"><h2>Resumen</h2><p>{{Una línea de contexto}}</p></div>
+    <div class="kpis">
+      <div class="kpi"><b>{{$825}}</b><span>{{pauta/mes}}</span></div>
+      <div class="kpi"><b>{{≤$85}}</b><span>{{CPL objetivo}}</span></div>
+      <div class="kpi"><b>{{8–13}}</b><span>{{prospectos/mes}}</span></div>
+      <div class="kpi"><b>{{23-sep}}</b><span>{{hito}}</span></div>
+    </div>
+    <div class="two">
+      <div>
+        <p class="eyebrow">Estado de la cuenta</p>
+        <h3 style="margin:6px 0 10px">{{$X gastados, N clics, N conversiones}}</h3>
+        <p>{{Diagnóstico en dinero, sobre el gasto rastreable}}</p>
+        <div class="bar-spend" role="img" aria-label="{{Distribución del gasto}}">
+          <i style="width:40%; background:var(--red)"></i><i style="width:35%; background:var(--orange)"></i><i style="width:25%; background:var(--sky)"></i>
+        </div>
+        <div class="legend">
+          <span style="--c:var(--red)">{{Categoría $}}</span>
+          <span style="--c:var(--orange)">{{Categoría $}}</span>
+          <span style="--c:var(--sky)">{{Categoría $}}</span>
+        </div>
+      </div>
+      <div class="callout">
+        <h3>La decisión en cinco líneas</h3>
+        <ul>
+          <li><b>{{Decisión}}</b> {{porqué en una línea}}</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRÓXIMOS PASOS: número · texto · responsable · estado -->
+  <section id="pasos">
+    <div class="sec-head"><h2>Próximos pasos</h2><p>Los marcados con B bloquean el avance.</p></div>
+    <div class="steps">
+      <div class="step">
+        <span class="n">01</span>
+        <div><b>{{Paso}}</b><p class="d">{{Detalle}}</p></div>
+        <div class="tags"><span class="b-flag">B</span><span class="who">Cliente</span><span class="chip st-todo">Pendiente</span></div>
+      </div>
+      <div class="step">
+        <span class="n">02</span>
+        <div><b>{{Paso}}</b><p class="d">{{Detalle}}</p></div>
+        <div class="tags"><span class="who">PMM</span><span class="chip st-done">Hecho</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DATOS: configuración (cfg) + tabla -->
+  <section id="datos">
+    <div class="sec-head"><h2>{{Estrategia / Datos}}</h2><p>{{Contexto}}</p></div>
+    <dl class="cfg">
+      <div><dt>Campaña</dt><dd>{{Nombre}}</dd></div>
+      <div><dt>Puja</dt><dd>{{Max. clics, tope CPC $X}}</dd></div>
+      <div><dt>Horario</dt><dd>{{L–D 7:00–18:00 Central (5:00–16:00 hora de la cuenta)}}</dd></div>
+    </dl>
+    <div class="tbl"><table>
+      <thead><tr><th>{{Columna}}</th><th class="r">{{Número}}</th><th>{{Nota}}</th></tr></thead>
+      <tbody>
+        <tr><td>{{Fila}}</td><td class="r">{{$0.00}}</td><td><span class="kw">{{keyword}}</span></td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <!-- FASES: tarjeta por fase con fecha + condición de paso. Colores fijos por fase (README) -->
+  <section id="fases">
+    <div class="sec-head"><h2>Fechas y fases</h2><p>La fecha es proyección; la condición de paso manda.</p></div>
+    <div class="phases">
+      <article class="phase" style="--c:var(--red)">
+        <header><span class="tag"><i class="dot"></i><h3>Fase 0 · {{Medición}}</h3></span><span class="chip st-run">En curso</span></header>
+        <span class="when">{{23-sep → 30-sep}}</span>
+        <div class="cond"><b>Condición de paso</b>{{Condición medible}}</div>
+        <ul><li>{{Tarea}}</li></ul>
+      </article>
+      <article class="phase" style="--c:var(--orange)">
+        <header><span class="tag"><i class="dot"></i><h3>Fase 1 · {{Lanzamiento}}</h3></span><span class="chip st-todo">Pendiente</span></header>
+        <span class="when">{{fechas}}</span>
+        <div class="cond"><b>Condición de paso</b>{{Condición medible}}</div>
+        <ul><li>{{Tarea}}</li></ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- CHECKLIST -->
+  <section id="checklist">
+    <div class="sec-head"><h2>Checklist</h2><p>{{Resumen de avance}}</p></div>
+    <div class="cl-phase" style="--c:var(--red)">
+      <h3><i></i>Fase 0 <small>{{nombre}}</small></h3>
+      <div class="cl-item is-done"><span class="box done"></span><span class="txt">{{Ítem hecho — fecha}}</span><span class="tags"><span class="who">PMM</span></span></div>
+      <div class="cl-item"><span class="box part"></span><span class="txt">{{Ítem parcial}}</span><span class="tags"><span class="who">Cliente</span></span></div>
+      <div class="cl-item"><span class="box"></span><span class="txt">{{Ítem pendiente}}</span><span class="tags"><span class="b-flag">B</span><span class="who">Cliente</span></span></div>
+    </div>
+  </section>
+
+  <footer>
+    <span>Performance Media Marketing · {{CLIENTE}} · cuenta {{000-000-0000}}</span>
+    <span>{{Fuentes: archivos del repo / periodo de datos}}</span>
+  </footer>
+</div>
+</html>
