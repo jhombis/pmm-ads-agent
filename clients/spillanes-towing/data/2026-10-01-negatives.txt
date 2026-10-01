@@ -1,0 +1,252 @@
+# Negativas a aplicar 2026-10-01 — campaña 24159102938 (única campaña; Windsor no soporta listas compartidas ni nivel cuenta)
+# formato: término | match | nivel | origen
+# ESTADO: PROPUESTA — NO APLICADA (Jhombis, 2026-10-01: 'no apliquemos nada aún')
+jobs | PHRASE | campaña | universal
+career | PHRASE | campaña | universal
+careers | PHRASE | campaña | universal
+salary | PHRASE | campaña | universal
+salaries | PHRASE | campaña | universal
+wage | PHRASE | campaña | universal
+wages | PHRASE | campaña | universal
+apprentice | PHRASE | campaña | universal
+apprenticeship | PHRASE | campaña | universal
+resume | PHRASE | campaña | universal
+vacancy | PHRASE | campaña | universal
+vacancies | PHRASE | campaña | universal
+employment | PHRASE | campaña | universal
+recruit | PHRASE | campaña | universal
+recruiter | PHRASE | campaña | universal
+work from home | PHRASE | campaña | universal
+internship | PHRASE | campaña | universal
+empleo | PHRASE | campaña | universal
+trabajos | PHRASE | campaña | universal
+vacante | PHRASE | campaña | universal
+vacantes | PHRASE | campaña | universal
+salario | PHRASE | campaña | universal
+sueldo | PHRASE | campaña | universal
+hoja de vida | PHRASE | campaña | universal
+curriculum | PHRASE | campaña | universal
+contratación | PHRASE | campaña | universal
+practicante | PHRASE | campaña | universal
+pasantía | PHRASE | campaña | universal
+how do i | PHRASE | campaña | universal
+tutorial | PHRASE | campaña | universal
+course | PHRASE | campaña | universal
+courses | PHRASE | campaña | universal
+class | PHRASE | campaña | universal
+classes | PHRASE | campaña | universal
+training | PHRASE | campaña | universal
+certification | PHRASE | campaña | universal
+certificate | PHRASE | campaña | universal
+school | PHRASE | campaña | universal
+degree | PHRASE | campaña | universal
+license exam | PHRASE | campaña | universal
+study | PHRASE | campaña | universal
+learn | PHRASE | campaña | universal
+guide | PHRASE | campaña | universal
+manual | PHRASE | campaña | universal
+pdf | PHRASE | campaña | universal
+wikipedia | PHRASE | campaña | universal
+definition | PHRASE | campaña | universal
+meaning | PHRASE | campaña | universal
+what is | PHRASE | campaña | universal
+youtube | PHRASE | campaña | universal
+como hacer | PHRASE | campaña | universal
+cómo hacer | PHRASE | campaña | universal
+curso | PHRASE | campaña | universal
+cursos | PHRASE | campaña | universal
+clase | PHRASE | campaña | universal
+clases | PHRASE | campaña | universal
+capacitación | PHRASE | campaña | universal
+certificación | PHRASE | campaña | universal
+escuela | PHRASE | campaña | universal
+universidad | PHRASE | campaña | universal
+aprender | PHRASE | campaña | universal
+guía | PHRASE | campaña | universal
+que es | PHRASE | campaña | universal
+qué es | PHRASE | campaña | universal
+significado | PHRASE | campaña | universal
+freebie | PHRASE | campaña | universal
+cheapest | PHRASE | campaña | universal
+no cost | PHRASE | campaña | universal
+donation | PHRASE | campaña | universal
+donate | PHRASE | campaña | universal
+volunteer | PHRASE | campaña | universal
+gratuito | PHRASE | campaña | universal
+regalado | PHRASE | campaña | universal
+donación | PHRASE | campaña | universal
+voluntario | PHRASE | campaña | universal
+parts | PHRASE | campaña | universal
+supply | PHRASE | campaña | universal
+supplies | PHRASE | campaña | universal
+tool | PHRASE | campaña | universal
+tools | PHRASE | campaña | universal
+kits | PHRASE | campaña | universal
+wholesale | PHRASE | campaña | universal
+manufacturer | PHRASE | campaña | universal
+amazon | PHRASE | campaña | universal
+ebay | PHRASE | campaña | universal
+walmart | PHRASE | campaña | universal
+home depot | PHRASE | campaña | universal
+buy | PHRASE | campaña | universal
+repuesto | PHRASE | campaña | universal
+repuestos | PHRASE | campaña | universal
+herramienta | PHRASE | campaña | universal
+herramientas | PHRASE | campaña | universal
+mayorista | PHRASE | campaña | universal
+fabricante | PHRASE | campaña | universal
+mercadolibre | PHRASE | campaña | universal
+homecenter | PHRASE | campaña | universal
+venta | PHRASE | campaña | universal
+comprar | PHRASE | campaña | universal
+alquiler | PHRASE | campaña | universal
+review | PHRASE | campaña | universal
+reviews | PHRASE | campaña | universal
+complaint | PHRASE | campaña | universal
+complaints | PHRASE | campaña | universal
+scam | PHRASE | campaña | universal
+lawsuit | PHRASE | campaña | universal
+forum | PHRASE | campaña | universal
+reddit | PHRASE | campaña | universal
+quora | PHRASE | campaña | universal
+yelp | PHRASE | campaña | universal
+bbb | PHRASE | campaña | universal
+reseña | PHRASE | campaña | universal
+reseñas | PHRASE | campaña | universal
+queja | PHRASE | campaña | universal
+quejas | PHRASE | campaña | universal
+estafa | PHRASE | campaña | universal
+demanda | PHRASE | campaña | universal
+foro | PHRASE | campaña | universal
+government | PHRASE | campaña | universal
+city of | PHRASE | campaña | universal
+permit | PHRASE | campaña | universal
+code | PHRASE | campaña | universal
+regulation | PHRASE | campaña | universal
+lawyer | PHRASE | campaña | universal
+attorney | PHRASE | campaña | universal
+gobierno | PHRASE | campaña | universal
+alcaldía | PHRASE | campaña | universal
+permiso | PHRASE | campaña | universal
+licencia | PHRASE | campaña | universal
+normativa | PHRASE | campaña | universal
+abogado | PHRASE | campaña | universal
+porn | PHRASE | campaña | universal
+xxx | PHRASE | campaña | universal
+sex | PHRASE | campaña | universal
+nude | PHRASE | campaña | universal
+game | PHRASE | campaña | universal
+games | PHRASE | campaña | universal
+meme | PHRASE | campaña | universal
+funny | PHRASE | campaña | universal
+lyrics | PHRASE | campaña | universal
+song | PHRASE | campaña | universal
+movie | PHRASE | campaña | universal
+film | PHRASE | campaña | universal
+juego | PHRASE | campaña | universal
+juegos | PHRASE | campaña | universal
+película | PHRASE | campaña | universal
+canción | PHRASE | campaña | universal
+letra | PHRASE | campaña | universal
+junkyard | PHRASE | campaña | towing
+salvage | PHRASE | campaña | towing
+scrap | PHRASE | campaña | towing
+car for cash | PHRASE | campaña | towing
+sell my car | PHRASE | campaña | towing
+tow truck driver | PHRASE | campaña | towing
+tow truck jobs | PHRASE | campaña | towing
+dmv | PHRASE | campaña | towing
+tow hitch | PHRASE | campaña | towing
+tow bar | PHRASE | campaña | towing
+grenier | PHRASE | campaña | nicho
+greniers | PHRASE | campaña | nicho
+sheehan | PHRASE | campaña | nicho
+sheehans | PHRASE | campaña | nicho
+pagan towing | PHRASE | campaña | nicho
+true towing | PHRASE | campaña | nicho
+stuck solutions | PHRASE | campaña | nicho
+honk | PHRASE | campaña | nicho
+urgently | PHRASE | campaña | nicho
+caa | PHRASE | campaña | nicho
+amac | PHRASE | campaña | nicho
+american family | PHRASE | campaña | nicho
+amfam | PHRASE | campaña | nicho
+verizon | PHRASE | campaña | nicho
+general motors | PHRASE | campaña | nicho
+inexpensive | PHRASE | campaña | nicho
+$50 | PHRASE | campaña | nicho
+50 dollar | PHRASE | campaña | nicho
+semi | PHRASE | campaña | nicho
+tractor trailer | PHRASE | campaña | nicho
+18 wheeler | PHRASE | campaña | nicho
+bus towing | PHRASE | campaña | nicho
+heavy duty | PHRASE | campaña | nicho
+box truck | PHRASE | campaña | nicho
+lockout | PHRASE | campaña | nicho
+locked out | PHRASE | campaña | nicho
+lock out | PHRASE | campaña | nicho
+unlock | PHRASE | campaña | nicho
+keys locked | PHRASE | campaña | nicho
+key stuck | PHRASE | campaña | nicho
+ignition | PHRASE | campaña | nicho
+jump start | PHRASE | campaña | nicho
+jumpstart | PHRASE | campaña | nicho
+battery jump | PHRASE | campaña | nicho
+flat tire | PHRASE | campaña | nicho
+tire change | PHRASE | campaña | nicho
+tire repair | PHRASE | campaña | nicho
+fix a flat | PHRASE | campaña | nicho
+mobile tire | PHRASE | campaña | nicho
+fuel delivery | PHRASE | campaña | nicho
+gas delivery | PHRASE | campaña | nicho
+out of gas | PHRASE | campaña | nicho
+where is my car | PHRASE | campaña | nicho
+release | PHRASE | campaña | nicho
+towing capacity | PHRASE | campaña | nicho
+tow capacity | PHRASE | campaña | nicho
+tow rating | PHRASE | campaña | nicho
+tow strap | PHRASE | campaña | nicho
+tow mirror | PHRASE | campaña | nicho
+hitch | PHRASE | campaña | nicho
+toy | PHRASE | campaña | nicho
+toys | PHRASE | campaña | nicho
+lego | PHRASE | campaña | nicho
+used tow truck | PHRASE | campaña | nicho
+dispatcher jobs | PHRASE | campaña | nicho
+rehab | PHRASE | campaña | nicho
+drug | PHRASE | campaña | nicho
+alcohol | PHRASE | campaña | nicho
+addiction | PHRASE | campaña | nicho
+sobriety | PHRASE | campaña | nicho
+treatment | PHRASE | campaña | nicho
+recovery center | PHRASE | campaña | nicho
+data recovery | PHRASE | campaña | nicho
+file recovery | PHRASE | campaña | nicho
+password | PHRASE | campaña | nicho
+account recovery | PHRASE | campaña | nicho
+bennington | PHRASE | campaña | nicho
+rutland | PHRASE | campaña | nicho
+montpelier | PHRASE | campaña | nicho
+barre | PHRASE | campaña | nicho
+stowe | PHRASE | campaña | nicho
+st albans | PHRASE | campaña | nicho
+saint albans | PHRASE | campaña | nicho
+middlebury | PHRASE | campaña | nicho
+plattsburgh | PHRASE | campaña | nicho
+new hampshire | PHRASE | campaña | nicho
+new york | PHRASE | campaña | nicho
+canada | PHRASE | campaña | nicho
+montreal | PHRASE | campaña | nicho
+quebec | PHRASE | campaña | nicho
+grua | PHRASE | campaña | nicho
+grúa | PHRASE | campaña | nicho
+cheap | PHRASE | campaña | nicho (aplicar DESPUÉS de pausar la keyword 'cheap towing near me')
+# DESCARTADA: county (bloquearía 'towing chittenden county')
+# DUDOSOS — fuera del lote a pedido de Jhombis, revisar con el cliente:
+#   equipment         → el sitio principal ofrece Vehicle & Equipment Transport
+#   abandoned vehicle → servicio B2B listado por el cliente
+#   trailer           → podría bloquear transporte de trailers si el cliente lo hace
+# PAUSAS PROPUESTAS (ad group 199732188375), NO ejecutadas:
+#   11018100      roadside assistance (BROAD)  — 72% del gasto, CPL $67
+#   461423232611  spillane's towing (BROAD)    — ya bloqueada por negativa de marca existente
+#   487801112152  cheap towing near me (BROAD) — conflicto con la negativa 'cheap'; pausar ANTES de agregarla
