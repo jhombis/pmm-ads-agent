@@ -1,29 +1,28 @@
 ---
 cliente: 290 Tow and Recovery
 slug: 290-tow-recovery
-campaña: Search | Towing | Hill Country 40mi
-actualizado: 2026-09-24
-version: 2 (3 ad groups)
+campaña: 290 Tow and Recovery - ENHPRM Radius - $1500/mo. - 09/17/2026
+actualizado: 2026-10-06
+version: 3 (3 ad groups · 1 RSA por grupo)
 idioma: EN
 ---
 
 # Anuncios RSA — Search Towing
 
-Los límites se validaron por script: headlines ≤30 caracteres (con el texto por defecto de las inserciones), descripciones ≤90 y paths ≤15. El teléfono no va en el texto, por política de Google. Tampoco van claims sin verificar: "licensed/insured" y TDLR quedan fuera hasta que el cliente los confirme.
+**1 RSA por ad group** (estándar PMM para cuentas con <$1,500/mes de pauta). Con ~4 clics/día un A/B es ruido (playbook §9).
+- Reemplaza el RSA actual de "Ad group 1 - Towing General", que lleva "Battery Jumpstarts", "Tire Change" y "Emergency Roadside" como titulares.
+- Reemplaza también el RSA PLL de "Ad group 2 - Exotic Car & Long Distance towing".
 
-**3 RSA por ad group** con el mismo set de 15 headlines y 4 descripciones:
-- **RSA A**: H1 pinneado a la posición 1. El resto rota.
-- **RSA B**: H1 pinneado a la 1 y "Upfront Price Before We Tow" pinneado a la 2 (prueba el ángulo precio).
-- **RSA C**: H1 pinneado a la 1 y "Navy Veteran Owned & Operated" pinneado a la 2 (prueba el ángulo confianza).
-- Descripciones sin pinear.
+Los límites se validaron por script: headlines ≤30 caracteres (con el texto por defecto de las inserciones), descripciones ≤90 y paths ≤15.
+- El teléfono no va en el texto, por política de Google.
+- "licensed/insured" y TDLR quedan fuera hasta que el cliente los confirme.
+- "Upfront Price Before We Tow" y "No Hidden Fees" se publican solo si el cliente confirma que cotiza por teléfono antes de enganchar. Si no, se cambian por "Free Quote Over The Phone" y "Fast Local Response".
 
-**Inserciones**:
-- AG1 usa `{KeyWord:24/7 Towing Near You}` pinneado: el anuncio repite la keyword (wrecker, 24 hour, ciudad) y usa el texto por defecto cuando la keyword no cabe.
+**Inserciones y URLs**:
+- AG1 pinnea `{KeyWord:24/7 Towing Near You}`: repite wrecker, 24 hour o la ciudad, y usa el texto por defecto cuando la keyword no cabe.
 - `{LOCATION(City):Hill Country}` va como headline no pinneado.
-
-**AG2 usa URL final por keyword**:
-- Keywords exotic → `/exotic-vehicle-towing/`. Quedan en pausa hasta arreglar los CTA de esa página.
-- Keywords long-distance → `/local-long-distance-towing/`, que también es la URL del anuncio.
+- AG2 usa URL final por keyword: exotic y flatbed → `/exotic-vehicle-towing/` (CTA verificados el 10-06); long-distance → `/local-long-distance-towing/`.
+- Flatbed confirmado en la web: "rollback and wrecker trucks" en /about-us/.
 
 ## AG1 Towing
 - Final URL: https://290towrecovery.com/
@@ -31,10 +30,10 @@ Los límites se validaron por script: headlines ≤30 caracteres (con el texto p
 
 | # | Headline | Chars | Pin |
 |---|---|---|---|
-| 1 | {KeyWord:24/7 Towing Near You} | 30 | 1 (A, B, C) |
+| 1 | {KeyWord:24/7 Towing Near You} | 30 | 1 |
 | 2 | 24/7 Local Towing Dispatch | 26 |  |
-| 3 | Navy Veteran Owned & Operated | 29 | 2 (C) |
-| 4 | Upfront Price Before We Tow | 27 | 2 (B) |
+| 3 | Navy Veteran Owned & Operated | 29 |  |
+| 4 | Upfront Price Before We Tow | 27 |  |
 | 5 | No Hidden Fees - Ever | 21 |  |
 | 6 | Free Quote Over The Phone | 25 |  |
 | 7 | 10% Senior Discount | 19 |  |
@@ -60,10 +59,10 @@ Los límites se validaron por script: headlines ≤30 caracteres (con el texto p
 
 | # | Headline | Chars | Pin |
 |---|---|---|---|
-| 1 | Exotic & Long-Distance Towing | 29 | 1 (A, B, C) |
+| 1 | Exotic & Long-Distance Towing | 29 | 1 |
 | 2 | 24/7 Local Towing Dispatch | 26 |  |
-| 3 | Navy Veteran Owned & Operated | 29 | 2 (C) |
-| 4 | Upfront Price Before We Tow | 27 | 2 (B) |
+| 3 | Navy Veteran Owned & Operated | 29 |  |
+| 4 | Upfront Price Before We Tow | 27 |  |
 | 5 | No Hidden Fees - Ever | 21 |  |
 | 6 | Free Quote Over The Phone | 25 |  |
 | 7 | 10% Senior Discount | 19 |  |
@@ -73,7 +72,7 @@ Los límites se validaron por script: headlines ≤30 caracteres (con el texto p
 | 11 | Call Now For A Fast Quote | 25 |  |
 | 12 | Luxury & Classic Car Towing | 27 |  |
 | 13 | Tow Anywhere In Texas | 21 |  |
-| 14 | Low-Clearance Vehicle Experts | 29 |  |
+| 14 | Flatbed & Rollback Towing | 25 |  |
 | 15 | Non-Running Vehicles Welcome | 28 |  |
 
 | # | Descripción | Chars |
@@ -89,10 +88,10 @@ Los límites se validaron por script: headlines ≤30 caracteres (con el texto p
 
 | # | Headline | Chars | Pin |
 |---|---|---|---|
-| 1 | Roadside Assistance Near You | 28 | 1 (A, B, C) |
+| 1 | Roadside Assistance Near You | 28 | 1 |
 | 2 | 24/7 Local Towing Dispatch | 26 |  |
-| 3 | Navy Veteran Owned & Operated | 29 | 2 (C) |
-| 4 | Upfront Price Before We Tow | 27 | 2 (B) |
+| 3 | Navy Veteran Owned & Operated | 29 |  |
+| 4 | Upfront Price Before We Tow | 27 |  |
 | 5 | No Hidden Fees - Ever | 21 |  |
 | 6 | Free Quote Over The Phone | 25 |  |
 | 7 | 10% Senior Discount | 19 |  |

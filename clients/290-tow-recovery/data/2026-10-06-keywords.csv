@@ -1,0 +1,17 @@
+# fuente: Windsor.ai google_ads (keyword_text), cuenta 213-019-5545, 2026-09-17 a 2026-10-06 (10-06 parcial). Todas en "Ad group 1 - Towing General". AG2 sin keywords visibles.
+# first_impression = primer día con impresiones en el período (no es fecha de creación).
+ad_group,keyword_text,match_type,status,spend,impressions,clicks,conversions,first_impression
+Ad group 1 - Towing General,towing near me,BROAD,ENABLED,299.70,271,31,4,2026-09-22
+Ad group 1 - Towing General,roadside assistance,BROAD,ENABLED,140.05,178,15,2,2026-09-21
+Ad group 1 - Towing General,towing company near me,BROAD,ENABLED,35.68,37,3,0,2026-09-20
+Ad group 1 - Towing General,wrecker service near me,BROAD,ENABLED,33.08,14,3,0,2026-09-21
+Ad group 1 - Towing General,tow truck near me,BROAD,ENABLED,17.84,21,1,0,2026-09-19
+Ad group 1 - Towing General,roadside service near me,BROAD,ENABLED,11.74,1,1,0,2026-09-20
+Ad group 1 - Towing General,roadside assistance near me,BROAD,ENABLED,0,12,0,0,2026-09-20
+Ad group 1 - Towing General,towing car,BROAD,ENABLED,0,5,0,0,2026-09-23
+Ad group 1 - Towing General,tow company,BROAD,ENABLED,0,3,0,0,2026-09-28
+Ad group 1 - Towing General,tow a car,BROAD,ENABLED,0,2,0,0,2026-09-23
+Ad group 1 - Towing General,car towing service,BROAD,ENABLED,0,2,0,0,2026-09-24
+Ad group 1 - Towing General,tow truck service near me,BROAD,ENABLED,0,1,0,0,2026-09-29
+Ad group 1 - Towing General,emergency roadside,BROAD,REMOVED,0,1,0,0,2026-09-18
+Ad group 1 - Towing General,road side assistance,BROAD,REMOVED,0,0,0,0,

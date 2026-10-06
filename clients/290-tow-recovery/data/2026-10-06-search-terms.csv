@@ -1,0 +1,197 @@
+# fuente: Windsor.ai google_ads (search_term x date), cuenta 213-019-5545, 2026-09-17 a 2026-10-06 (10-06 parcial). Columna categoria = clasificación PMM 2026-10-06 (playbook §6 + benchmark towing-us).
+date,search_term,match_type,spend,impressions,clicks,conversions,categoria
+2026-09-19,tow truck near me,EXACT,0,1,0,0,ok
+2026-09-20,roadside assistance near me,EXACT,0,1,0,0,ok (roadside)
+2026-09-20,roadside service near me,EXACT,11.74,1,1,0,ok (roadside)
+2026-09-20,tow truck near me,EXACT,0,1,0,0,ok
+2026-09-20,towing company near me,EXACT,0,1,0,0,ok
+2026-09-20,k and w towing,BROAD,0,2,0,0,competencia
+2026-09-20,kw towing boerne tx,BROAD,0,1,0,0,competencia
+2026-09-20,towing boerne,BROAD,0,2,0,0,ok (ciudad borde)
+2026-09-21,roadside assistance,EXACT,0,2,0,0,dudoso: roadside genérico
+2026-09-21,tow truck near me,EXACT,17.84,3,1,0,ok
+2026-09-21,cheapest wrecker service near me,PHRASE,0,1,0,0,ok (cheap)
+2026-09-21,creswell towing,BROAD,0,2,0,0,competencia
+2026-09-21,gator towing,BROAD,0,2,0,0,competencia
+2026-09-21,gruas,BROAD,0,2,0,0,español
+2026-09-21,tow trucks near me,NEAR_EXACT,0,1,0,0,ok
+2026-09-21,wreckers near me,NEAR_EXACT,10.06,3,1,0,ok
+2026-09-21,creswell towing san antonio phone number,NEAR_PHRASE,0,1,0,0,competencia
+2026-09-21,ej towing denton tx,NEAR_PHRASE,0,1,0,0,competencia
+2026-09-21,towing san antonio near me,NEAR_PHRASE,0,1,0,0,geo fuera de zona
+2026-09-22,roadside assistance,EXACT,0,1,0,0,dudoso: roadside genérico
+2026-09-22,towing company near me,EXACT,0,1,0,0,ok
+2026-09-22,5 star towing boerne tx,BROAD,0,1,0,0,competencia
+2026-09-22,car dollies for towing,BROAD,12.61,1,1,0,producto/equipo
+2026-09-22,car jumper,BROAD,27.48,2,2,0,producto/equipo
+2026-09-22,emergency roadside assistance,BROAD,9.69,2,1,0,dudoso: roadside genérico
+2026-09-22,emergency roadside assistance number,BROAD,0,1,0,0,aseguradora/plan
+2026-09-22,gruas cerca de mi ubicación en español,BROAD,0,1,0,0,español
+2026-09-22,rollback tow truck,BROAD,0,1,0,0,producto/equipo
+2026-09-22,semi truck tow,BROAD,0,1,0,0,fuera de servicio
+2026-09-22,tow truck llano tx,BROAD,0,1,0,0,ok
+2026-09-22,what does roadside assistance cover,BROAD,7.88,1,1,0,informacional/precio
+2026-09-22,wrecker trucks,BROAD,0,1,0,0,producto/equipo
+2026-09-23,cheap tow truck near me,PHRASE,11.84,4,1,1,ok (cheap)
+2026-09-23,rv towing service near me,PHRASE,0,1,0,0,ok (RV pendiente)
+2026-09-23,comal towing spring branch,BROAD,0,1,0,0,competencia
+2026-09-23,rv haulers in texas,BROAD,11.43,2,1,0,producto/equipo
+2026-09-23,tic tac towing,BROAD,0,2,0,0,competencia
+2026-09-23,towing service near me,NEAR_EXACT,0,1,0,0,ok
+2026-09-23,wreckers near me,NEAR_EXACT,0,1,0,0,ok
+2026-09-23,tow truck san antonio,NEAR_PHRASE,0,2,0,0,geo fuera de zona
+2026-09-24,roadside assistance,EXACT,0,1,0,0,dudoso: roadside genérico
+2026-09-24,towing company near me,EXACT,0,1,0,0,ok
+2026-09-24,big truck towing near me,PHRASE,0,1,0,0,fuera de servicio
+2026-09-24,toyotacare roadside assistance,PHRASE,10.15,2,1,0,aseguradora/plan
+2026-09-24,big e's roadside assistance,BROAD,0,1,0,0,aseguradora/plan
+2026-09-24,closest tire repair,BROAD,0,1,0,0,taller/llantas
+2026-09-24,grua,BROAD,0,4,0,0,español
+2026-09-24,hagerty roadside assistance,BROAD,0,2,0,0,aseguradora/plan
+2026-09-24,rollback tow truck,BROAD,0,1,0,0,producto/equipo
+2026-09-24,unlock car service near me,BROAD,0,2,0,0,revisar: lockout
+2026-09-24,tow truck company,NEAR_EXACT,10.23,1,1,0,ok
+2026-09-24,heroes san antonio,NEAR_PHRASE,0,2,0,0,aseguradora/plan
+2026-09-24,waco towing waco tx,NEAR_PHRASE,0,2,0,0,geo fuera de zona
+2026-09-25,tow truck near me,EXACT,0,1,0,0,ok
+2026-09-25,towing company near me,EXACT,0,1,0,0,ok
+2026-09-25,towing near me,EXACT,0,2,0,0,ok
+2026-09-25,cheap tow truck near me,PHRASE,0,1,0,0,ok (cheap)
+2026-09-25,a battery jumper,BROAD,0,1,0,0,producto/equipo
+2026-09-25,arias towing,BROAD,0,1,0,0,competencia
+2026-09-25,car towing austin tx,BROAD,0,1,0,0,geo fuera de zona
+2026-09-25,comal towing spring branch,BROAD,10.70,1,1,1,competencia
+2026-09-25,dead car battery,BROAD,0,2,0,0,revisar: jump start
+2026-09-25,jimmy's towing service,BROAD,0,1,0,0,competencia
+2026-09-25,kw towing boerne,BROAD,0,1,0,0,competencia
+2026-09-25,rv trailer transport,BROAD,0,1,0,0,producto/equipo
+2026-09-25,vehicle towing near me,NEAR_EXACT,0,1,0,0,ok
+2026-09-25,wreckers near me,NEAR_EXACT,11.38,4,1,0,ok
+2026-09-25,towing costs,NEAR_PHRASE,0,1,0,0,informacional/precio
+2026-09-26,roadside assistance,EXACT,0,1,0,0,dudoso: roadside genérico
+2026-09-26,towing near me,EXACT,0,1,0,0,ok
+2026-09-26,jump start car,BROAD,0,1,0,0,revisar: jump start
+2026-09-26,i drive safe roadside,NEAR_PHRASE,0,1,0,0,aseguradora/plan
+2026-09-26,towing fredericksburg tx,NEAR_PHRASE,9.84,2,1,0,ok
+2026-09-27,towing company near me,EXACT,0,1,0,0,ok
+2026-09-27,mopar roadside assistance,PHRASE,7.66,1,1,0,aseguradora/plan
+2026-09-27,dead battery jump start,BROAD,0,1,0,0,revisar: jump start
+2026-09-27,jump dead battery,BROAD,0,2,0,0,revisar: jump start
+2026-09-27,lonestar recovery and towing,BROAD,0,1,0,0,competencia
+2026-09-27,tire service near me open,BROAD,0,2,0,0,taller/llantas
+2026-09-27,tow,BROAD,0,2,0,0,ok
+2026-09-27,comal towing spring branch,NEAR_PHRASE,0,1,0,0,competencia
+2026-09-28,roadside assistance,EXACT,9.24,2,1,0,dudoso: roadside genérico
+2026-09-28,tow company,EXACT,0,1,0,0,ok
+2026-09-28,tow truck near me,EXACT,0,1,0,0,ok
+2026-09-28,roadside assistance san antonio,PHRASE,0,2,0,0,geo fuera de zona
+2026-09-28,tow company near me cheap,PHRASE,0,2,0,0,ok (cheap)
+2026-09-28,comal towing,BROAD,0,2,0,0,competencia
+2026-09-28,kerrville towing,BROAD,0,1,0,0,ok
+2026-09-28,open tire repair near me,BROAD,0,4,0,0,taller/llantas
+2026-09-28,roservi cerca de mi en español,BROAD,9.19,10,1,1,español
+2026-09-28,rv transporters near me,BROAD,0,2,0,0,producto/equipo
+2026-09-28,towing kerrville,BROAD,0,2,0,0,ok
+2026-09-28,towing marble falls tx,BROAD,0,2,0,0,ok
+2026-09-28,tow truck,NEAR_EXACT,0,2,0,0,ok
+2026-09-28,towing service near me,NEAR_EXACT,0,2,0,0,ok
+2026-09-28,mission towing san antonio,NEAR_PHRASE,0,1,0,1,competencia
+2026-09-28,roadside mechanics,NEAR_PHRASE,0,2,0,0,taller/llantas
+2026-09-29,tow truck service near me,EXACT,0,1,0,0,ok
+2026-09-29,towing near me,EXACT,0,2,0,0,ok
+2026-09-29,best roadside assistance plans 2026,PHRASE,0,1,0,0,aseguradora/plan
+2026-09-29,germania roadside assistance,PHRASE,0,2,0,0,aseguradora/plan
+2026-09-29,tow lots near me,PHRASE,0,1,0,0,impound
+2026-09-29,midway towing,BROAD,0,1,0,0,competencia
+2026-09-29,wreckers near me,BROAD,0,1,0,0,ok
+2026-09-29,tow truck company near me,NEAR_EXACT,7.80,1,1,0,ok
+2026-09-29,aceable 24 7 roadside,NEAR_PHRASE,0,1,0,0,aseguradora/plan
+2026-09-29,hill country auto salvage & towing marble falls,NEAR_PHRASE,0,2,0,0,competencia
+2026-09-30,tow truck near me,EXACT,0,1,0,0,ok
+2026-09-30,towing austin,BROAD,0,2,0,0,geo fuera de zona
+2026-09-30,towing kerrville,BROAD,0,1,0,0,ok
+2026-09-30,where to buy jump starter,BROAD,0,2,0,0,producto/equipo
+2026-09-30,car towing near me,NEAR_EXACT,0,1,0,0,ok
+2026-09-30,towing,NEAR_EXACT,8.43,2,1,0,ok
+2026-10-01,roadside assistance near me,EXACT,0,2,0,0,ok (roadside)
+2026-10-01,tow truck near me,EXACT,0,5,0,0,ok
+2026-10-01,flat tire roadside assistance,PHRASE,0,3,0,0,ok (roadside)
+2026-10-01,texas emergency roadside assistance,PHRASE,0,1,0,0,dudoso: roadside genérico
+2026-10-01,battery jump starter,BROAD,0,1,0,0,producto/equipo
+2026-10-01,five star towing boerne,BROAD,0,1,0,0,competencia
+2026-10-01,gruas cerca de mi,BROAD,0,1,0,0,español
+2026-10-01,repair tires near me,BROAD,0,2,0,0,taller/llantas
+2026-10-01,tire service near me,BROAD,0,2,0,0,taller/llantas
+2026-10-01,emergency roadside assistance,NEAR_EXACT,0,2,0,0,dudoso: roadside genérico
+2026-10-01,road service near me,NEAR_EXACT,0,2,0,0,ok (roadside)
+2026-10-01,tow truck services near me,NEAR_EXACT,0,1,0,0,ok
+2026-10-02,roadside assistance,EXACT,16.50,3,1,0,dudoso: roadside genérico
+2026-10-02,roadside assistance near me,EXACT,0,2,0,0,ok (roadside)
+2026-10-02,tow truck near me,EXACT,0,7,0,0,ok
+2026-10-02,towing near me,EXACT,0,1,0,0,ok
+2026-10-02,wrecker service near me,EXACT,0,2,0,0,ok
+2026-10-02,big e's roadside assistance,PHRASE,0,1,0,0,aseguradora/plan
+2026-10-02,cheapest tow truck companies near me,PHRASE,0,2,0,0,ok (cheap)
+2026-10-02,road side assistance texas,PHRASE,5.88,2,1,0,dudoso: roadside genérico
+2026-10-02,aceable 24 hour roadside assistance,BROAD,0,1,0,0,aseguradora/plan
+2026-10-02,barbee wrecker service,BROAD,0,1,0,0,competencia
+2026-10-02,battery booster,BROAD,0,2,0,0,producto/equipo
+2026-10-02,five star towing boerne,BROAD,0,5,0,0,competencia
+2026-10-02,grúas más cercanas a mi ubicación,BROAD,0,2,0,0,español
+2026-10-02,hns recovery towing,BROAD,0,1,0,0,competencia
+2026-10-02,integrity towing kerrville,BROAD,0,1,0,0,competencia
+2026-10-02,interstate battery dealership near me,BROAD,0,2,0,0,producto/equipo
+2026-10-02,interstate battery near me,BROAD,14.28,5,1,0,producto/equipo
+2026-10-02,jerry's towing service,BROAD,0,2,0,0,competencia
+2026-10-02,junk cars,BROAD,17.34,3,1,1,junk/salvage
+2026-10-02,kw towing boerne,BROAD,0,2,0,0,competencia
+2026-10-02,recovery snatch strap,BROAD,0,1,0,0,producto/equipo
+2026-10-02,tow,BROAD,0,1,0,0,ok
+2026-10-02,truck assist,BROAD,0,1,0,0,revisar
+2026-10-02,road side assistance,NEAR_EXACT,0,2,0,0,dudoso: roadside genérico
+2026-10-02,towing company,NEAR_EXACT,0,2,0,0,ok
+2026-10-02,finger towing service,NEAR_PHRASE,0,2,0,0,competencia
+2026-10-03,towing company near me,EXACT,0,1,0,0,ok
+2026-10-03,does discount tire do roadside assistance,PHRASE,0,1,0,0,aseguradora/plan
+2026-10-03,auto repairs near me,BROAD,0,1,0,0,taller/llantas
+2026-10-03,best jump starter for trucks,BROAD,0,2,0,0,producto/equipo
+2026-10-03,integrity towing kerrville,BROAD,0,2,0,0,competencia
+2026-10-03,interstate towing,BROAD,0,1,0,0,competencia
+2026-10-03,rv wrecker service,BROAD,0,1,0,0,ok (RV pendiente)
+2026-10-03,tow truck llano tx,BROAD,0,1,0,0,ok
+2026-10-03,truck tire service near me,BROAD,0,1,0,0,taller/llantas
+2026-10-03,towing,NEAR_EXACT,0,1,0,0,ok
+2026-10-03,cheap towing corpus christi,NEAR_PHRASE,0,2,0,0,geo fuera de zona
+2026-10-03,flat tire services,NEAR_PHRASE,0,2,0,0,ok (roadside)
+2026-10-03,price to tow a car 5 miles,NEAR_PHRASE,0,1,0,0,informacional/precio
+2026-10-03,towing service corpus christi,NEAR_PHRASE,0,1,0,0,geo fuera de zona
+2026-10-04,tow truck near me,EXACT,0,1,0,0,ok
+2026-10-04,towing company near me,EXACT,0,1,0,0,ok
+2026-10-04,brad's wrecker service kerrville texas,BROAD,0,1,0,0,competencia
+2026-10-04,can i call someone to jump my car,BROAD,0,1,0,0,revisar: jump start
+2026-10-04,interstate battery near me,BROAD,0,1,0,0,producto/equipo
+2026-10-04,ponchera cerca de mi ubicación,BROAD,0,1,0,0,español
+2026-10-04,remolcar coche con gancho de remolque,BROAD,0,1,0,0,informacional/precio
+2026-10-04,truck batteries near me,BROAD,0,1,0,0,producto/equipo
+2026-10-04,what to do if i lock my keys in my car,BROAD,0,1,0,0,informacional/precio
+2026-10-04,which battery jumper is the best,BROAD,0,1,0,0,producto/equipo
+2026-10-04,good towing company,NEAR_EXACT,0,2,0,0,ok
+2026-10-04,tow truck,NEAR_EXACT,0,2,0,0,ok
+2026-10-05,roadside assistance near me,EXACT,0,2,0,0,ok (roadside)
+2026-10-05,texas roadside assistance cost,PHRASE,7.13,1,1,0,informacional/precio
+2026-10-05,can i call 911 for a flat tire,BROAD,0,1,0,0,informacional/precio
+2026-10-05,discount tire roadside assistance,BROAD,0,1,0,0,aseguradora/plan
+2026-10-05,fritztown diesel fredericksburg texas,BROAD,0,1,0,0,taller/llantas
+2026-10-05,rv transport near me,BROAD,0,1,0,0,producto/equipo
+2026-10-05,tow truck fredericksburg tx,BROAD,0,1,0,0,ok
+2026-10-05,towing service fredericksburg tx,BROAD,0,1,0,0,ok
+2026-10-05,truck roadside assistance near me,BROAD,0,1,0,0,ok (roadside)
+2026-10-06,battery replacement cost,BROAD,0,1,0,0,producto/equipo
+2026-10-06,car battery replacement,BROAD,0,1,0,0,producto/equipo
+2026-10-06,carbravo roadside assistance phone number,BROAD,0,1,0,0,aseguradora/plan
+2026-10-06,i need a battery jump,BROAD,0,1,0,0,revisar: jump start
+2026-10-06,jump start service near me,BROAD,0,2,0,0,ok (roadside)
+2026-10-06,jumper cables,BROAD,0,2,0,0,producto/equipo
+2026-10-06,rst towing,BROAD,0,1,0,0,competencia
+2026-10-06,towing services,NEAR_EXACT,0,2,0,0,ok
+2026-10-06,towing services near me,NEAR_EXACT,0,1,0,0,ok

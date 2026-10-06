@@ -2,9 +2,15 @@
 cliente: 290 Tow and Recovery
 slug: 290-tow-recovery
 pais: US
-actualizado: 2026-09-23
+actualizado: 2026-10-06
 fuente: semrush (db us) + búsqueda web
 ---
+
+> **Actualización 2026-10-06 (search terms reales, 09-17 → 10-06).** Aparecen como búsquedas en la cuenta estos competidores: Tic Tac Towing, Integrity Towing (Kerrville), Five Star Towing / KW Towing (Boerne), Comal Towing (Spring Branch), Mission Towing (San Antonio), Barbee Wrecker, RST Towing, Jerry's Towing, Arias Towing, Lonestar Recovery, Finger Towing, Brad's Wrecker e Interstate Towing.
+> - **2 de las 6 conversiones** salieron de búsquedas de competidores ("comal towing spring branch", "mission towing san antonio"). Hay que verificar con el cliente si fueron trabajos o gente que buscaba a otra grúa.
+> - Todos van como negativas en `data/2026-10-06-negatives.txt`.
+> - El resto del análisis (Semrush, 2026-09-23) no cambió.
+
 
 # Competencia — 290 Tow and Recovery
 

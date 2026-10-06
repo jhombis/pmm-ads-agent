@@ -1,0 +1,3 @@
+# fuente: Windsor.ai google_ads, cuenta 213-019-5545, 2026-09-17 a 2026-10-06 (10-06 parcial). budget_amount/target_cpa = valores vigentes. Windsor no expone tope de CPC, partners/display flags ni customer.time_zone; ad_network_type solo devolvió SEARCH.
+campaign,campaign_status,primary_status,primary_status_reasons,bidding_strategy_type,budget_amount,target_cpa,geo_target_type,ad_network_type,spend,impressions,clicks,conversions,all_conversions,phone_calls
+"290 Tow and Recovery - ENHPRM Radius - $1500/mo. - 09/17/2026",ENABLED,LIMITED,"BIDDING_STRATEGY_LEARNING; BUDGET_CONSTRAINED",TARGET_SPEND,27,0,PRESENCE,SEARCH,538.09,548,54,6,6,8

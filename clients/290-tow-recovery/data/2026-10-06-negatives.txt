@@ -1,0 +1,97 @@
+# Negativas PROPUESTAS — 290 Tow and Recovery (213-019-5545) — /diagnose 2026-10-06
+# Solo lo NUEVO respecto de data/negatives-nicho.txt (que, según los search terms, sigue SIN aplicar:
+#   "kw towing boerne" 10-02, "best jump starter for trucks" 10-03 y "jumper cables" 10-06 siguen entrando).
+# Fuente: data/2026-10-06-search-terms.csv (2026-09-17 → 2026-10-06). Nivel: lista de cuenta "290 Towing Nicho".
+# Concordancia: frase salvo que se indique [exacta]. Aplicar SOLO con /negatives tras OK de Jhombis.
+
+## AJUSTE A negatives-nicho.txt ANTES DE APLICARLA (requiere OK)
+# QUITAR "cheap": en el MCC convierte igual que el genérico (benchmark towing-us: CVR 34,5%, CPL $16,59)
+#   y aquí "cheap tow truck near me" ($11.84) trajo 1 conversión (Form Fill 09-23).
+# Mantener "jumper", "jump starter", "jump box" (producto). NO negar "jump start" ni "flat tire": el cliente declara roadside.
+
+## Aseguradoras, motor clubs y planes de fabricante ($17.81 rastreables + impresiones)
+toyotacare
+mopar
+hagerty
+germania
+aceable
+big e's
+i drive safe
+carbravo
+discount tire
+heroes san antonio
+roadside assistance plans
+roadside assistance cost
+roadside assistance cover
+phone number
+
+## Batería y equipo como PRODUCTO ($14.28 nuevos; car jumper/dollies/haulers ya están en la lista de nicho)
+interstate battery
+battery booster
+battery dealership
+truck batteries
+car battery replacement
+snatch strap
+recovery strap
+rv transport
+rv transporter
+rv transporters
+trailer transport
+
+## Junk / salvage ($17.34, "junk cars" con 1 "conversión" no verificada)
+junk car
+junk cars
+we buy
+
+## Talleres y llantería (tienda; se mantiene "flat tire" por roadside)
+tire repair
+tire service
+repair tires
+auto repair
+auto repairs
+mechanic
+mechanics
+diesel
+
+## Informacionales
+what to do
+can i call
+which battery
+does discount tire
+
+## Impound
+tow lot
+tow lots
+
+## Fuera de servicio
+big truck
+
+## Geo fuera de mercado (sin "san antonio" suelto: protege "tow car to san antonio" de AG2)
+corpus christi
+waco
+denton
+towing austin
+roadside assistance san antonio
+
+## Competidores nuevos detectados (no estaban en la lista)
+comal towing
+mission towing
+arias towing
+lonestar recovery
+hill country auto salvage
+barbee wrecker
+hns recovery
+jerry's towing
+jerrys towing
+finger towing
+brad's wrecker
+brads wrecker
+rst towing
+five star towing
+interstate towing
+
+## NO se proponen (revisar con el cliente)
+# - Español (gruas, grúas, roservi, ponchera): "roservi cerca de mi en español" $9.19 con 1 conversión.
+#   No negar hasta decidir si se prueba un grupo en español (strategy F3).
+# - Lockout ("unlock car service near me") y jump start como servicio ("i need a battery jump"): depende de qué roadside presta.
+# - RV towing ("rv wrecker service", "rv towing service near me"): pendiente capacidad del cliente.

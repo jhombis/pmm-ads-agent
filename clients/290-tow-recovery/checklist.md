@@ -2,100 +2,114 @@
 cliente: 290 Tow and Recovery
 slug: 290-tow-recovery
 fase_actual: 0
-actualizado: 2026-09-24
+actualizado: 2026-10-06
 ---
 # Checklist — 290 Tow and Recovery
 
-Base: `knowledge/checklists/setup-cuenta.md`, ajustada al cliente. **(B)** = bloqueante para pasar de fase. Responsable entre paréntesis. /weekly-review lo actualiza.
-**Contexto:** la cuenta ya está activa desde el 17/09 con la configuración PLL. La Fase 1 = reestructurar según `strategy.md`.
+Base: `knowledge/checklists/setup-cuenta.md`, ajustada al cliente.
+- **(B)** = bloqueante para pasar de fase.
+- Responsable entre paréntesis.
+- /weekly-review lo actualiza.
 
-## Fase 0 — Fundación (D0 2026-09-24 → 2026-09-29)
+**Contexto (2026-10-06):** la cuenta está activa desde el 17/09 con la plantilla PLL y la reestructura no se aplicó. En 18 días gastó $530.14, CPL $88.36, con 45.8% de desperdicio rastreable. Fechas reprogramadas en `roadmap.md`.
+
+## Fase 0 — Medición + negativas (2026-10-06 → 2026-10-08)
 ### Cuenta
 - [x] (PMM) Cuenta vinculada al MCC de PMM: 213-019-5545, visible en Windsor
-- [ ] (PMM) Facturación verificada. Está gastando, así que es probable que esté activa; confirmar el método de pago y quién paga (PLL)
+- [x] (PMM) Red: solo Búsqueda; socios y Display apagados (confirmado por Windsor el 10-06: 100% SEARCH)
+- [x] (PMM) Diagnóstico de 18 días (`log/2026-10-06-diagnose.md`)
+- [ ] (PMM) Facturación verificada (está gastando; confirmar el método de pago y quién paga, PLL)
 - [ ] **(B)** (PMM) Aplicación automática de recomendaciones DESACTIVADA
-- [x] (PMM) Red: solo Búsqueda; socios y Display apagados. Ya está así: mantenerlo
 - [ ] **(B)** (PMM) Lista universal PMM aplicada a nivel de cuenta (sin excluir "tow truck" ni "towing")
-- [ ] **(B)** (PMM) Lista de nicho + cliente aplicada (`data/negatives-nicho.txt`)
-- [ ] (Jhombis) Decidir qué hacer con la campaña actual durante la F0: dejarla, pausarla o cargar solo las negativas
+- [ ] **(B)** (PMM) Lista de nicho v2 aplicada (`data/negatives-nicho.txt`, sin "cheap")
+- [ ] **(B)** (PMM) 63 negativas nuevas aplicadas (`data/2026-10-06-negatives.txt`), con OK de Jhombis
+- [ ] (PMM) Revisar el historial de cambios en la UI: quién renombró "Ad group 1 - Towing General", quitó "emergency roadside" y creó AG2
 
-### Tracking
-- [x] (PMM) Google Tag en todas las páginas: GTM-WBX4RZ9K, G-KH9SFWZK66, AW-18397446767 (auditoría del 2026-09-23)
-- [ ] **(B)** (PMM) Confirmar que AW-18397446767 corresponde a la cuenta 213-019-5545
+### Medición
+- [x] (PMM) Google Tag en todas las páginas: GTM-WBX4RZ9K y AW-18397446767 en el HTML; GA4 G-KH9SFWZK66 vía GTM
+- [ ] **(B)** (PMM) Revisar en Detalles de llamadas las 8 llamadas (25-sep, 28-sep, 29-sep, 2-oct, 4-oct): duración, código de área y hora
 - [ ] **(B)** (PMM) "Calls from Ads" con duración mínima de **60 s**, verificada en la UI
+- [ ] **(B)** (PMM) Confirmar que AW-18397446767 corresponde a la cuenta 213-019-5545
 - [ ] **(B)** (PMM) "Website Calls" (clic en `tel:` desde móvil) probada con Tag Assistant
-- [ ] **(B)** (PMM) "Form Fill" probada con Tag Assistant, disparando en `/thank-you/`
-- [ ] **(B)** (PMM) Verificar que la misma llamada no cuenta doble (Calls from Ads + Website Calls)
-- [ ] (PMM) Conversiones secundarias (vistas, scroll, direcciones) marcadas como secundarias
+- [ ] **(B)** (PMM) "Form Fill" como secundaria hasta que exista `/thank-you/`; después probarla con Tag Assistant
+- [ ] (PMM) Verificar que la misma llamada no cuenta doble (Calls from Ads + Website Calls)
 - [ ] (PMM) GA4 vinculado a Ads y audiencia "Todos los visitantes" importada
 - [ ] (PMM) Campos ocultos UTM + GCLID en el formulario Elementor
 
-### Landing (ver audit-site.md)
-- [ ] **(B)** (PMM) CTA "Get a Free Quote" + "Call Now" en `/exotic-vehicle-towing/`. Sin esto, las keywords exotic de AG2 quedan en pausa
-- [ ] **(B)** (PMM) `/thank-you/` + redirect del formulario
-- [ ] (PMM) H1 del home: "24/7 Towing & Tow Truck Service in Fredericksburg, TX"; "45-minute radius" → 40 mi
+### Landing (ver audit-site.md v3)
+- [x] (PMM) CTA "Get A Free Quote" + "Call Now" en `/exotic-vehicle-towing/`: verificados en el HTML el 10-06; el bloque vacío era un error de captura
+- [ ] **(B)** (PMM) `/thank-you/` + redirect del formulario y quitar el popup "Your Booking Is Not Yet Confirmed"
+- [ ] (PMM) H1 de texto en el home (hoy no hay `<h1>`; el hero es imagen): "24/7 Towing & Tow Truck Service in Fredericksburg, TX"
 - [ ] (PMM) Validar el volumen local en Keyword Planner (40 mi de 78624) y actualizar `data/keywords.csv`
 
 ### Cliente
-- [ ] **(B)** (Cliente) Proceso de respuesta a leads: quién contesta de noche y en fin de semana, en cuánto tiempo, qué pasa si no contesta (buzón o desvío)
-- [x] (Cliente) Call tracking aprobado (número de reenvío de Google). Confirmado en /onboard
-- [ ] (Cliente) Ticket promedio y margen por servicio → recalcular el CPL máximo (hoy ~$14 provisional; benchmark $14.57)
-- [ ] (Cliente) Servicio estrella y servicio a evitar
-- [ ] (Cliente) ¿Atiende Boerne / Fair Oaks Ranch / Bulverde? (decide las exclusiones geo)
-- [ ] (Cliente) ¿Tiene flatbed? ¿Remolca RV y motos? (activa keywords de AG2 y F2)
-- [ ] (Cliente) Número de licencia TDLR + seguro (copy y LSA)
+- [ ] **(B)** (Cliente) Cruzar las 8 llamadas: ¿clientes o gente que buscaba a otra grúa ("comal towing", "mission towing", "junk cars")?
+- [ ] **(B)** (Cliente) Proceso de respuesta a leads: quién contesta de noche y en fin de semana, en cuánto tiempo
+- [x] (Cliente) Call tracking aprobado (número de reenvío de Google)
+- [ ] (Cliente) Ticket promedio y margen por servicio → CPL máximo real (referencias: cohorte nueva $51–63; maduras $15–16)
+- [ ] (Cliente) ¿Atiende Fair Oaks Ranch / Bulverde / Spring Branch? ($120.84 = 22.9% del gasto, 1 conversión de un competidor)
+- [x] (Web) Flatbed confirmado: "rollback and wrecker trucks" (/about-us/)
+- [ ] (Cliente) ¿Remolca RV, motos o trailers? ¿Qué roadside hace (jump, lockout, llanta, gasolina)?
+- [ ] (Cliente) Número de licencia TDLR + seguro (copy y LSA). ¿Atiende en español?
 - [ ] (Cliente) Ofertas sostenibles: ¿confirma "upfront price on the phone"?
-- [x] (PMM) Historial de la cuenta leído (2026-09-23, Windsor): 6 días, $165.57, 0 conversiones, 43% de desperdicio
+- [ ] (Jhombis) Avisar al cliente que la proyección realista es ~14–24 llamadas/mes en el mes 2, no 35–55
 
-## Fase 1 — Reestructuración Search (2026-09-30 → 2026-10-07)
-- [ ] (PMM) Campaña reestructurada según `strategy.md`: 3 ad groups (AG1 Towing, AG2 Exotic & Long-Distance con URL final por keyword, AG3 Roadside en exacta); keywords exotic en pausa hasta arreglar su landing
-- [ ] (PMM) 10 keywords en amplia de la plantilla PLL eliminadas
-- [ ] (PMM) Ubicación: presencia solamente; radio de 40 mi recentrado en 30.2752, -98.8720; exclusiones de San Antonio según la respuesta del cliente
-- [ ] (PMM) Programación 24/7 (zona horaria de la cuenta: LA)
+## Fase 1 — Reestructura Search (2026-10-09 → 2026-10-16)
+- [ ] (PMM) AG1 "Ad group 1 - Towing General": keywords en frase y exacta (near me, wrecker, 24 h, ciudades sin sufijo de estado); fuera todas las keywords en amplia
+- [ ] (PMM) "roadside assistance" en amplia eliminada ($140.05, 26% del gasto)
+- [ ] (PMM) AG2 "Ad group 2 - Exotic Car & Long Distance towing" rellenado con URL final por keyword (exotic/flatbed y long-distance)
+- [ ] (PMM) AG3 Roadside nuevo, solo exacta: [roadside assistance near me], [roadside service near me], [jump start near me], [flat tire change near me]
+- [ ] (PMM) Ubicación: presencia solamente; radio de 40 mi recentrado en 30.2752, -98.8720; exclusiones del borde de San Antonio solo si el cliente lo confirma
+- [ ] (PMM) Programación 24/7; verificar la zona horaria de la cuenta en la UI
 - [ ] (PMM) Puja: Maximizar clics con tope de CPC de $6.50, $27/día
-- [ ] (PMM) Keywords en frase + exacta para los términos principales, sin amplia
-- [ ] (PMM) 3 RSA por ad group, H1 pinneado, 15H/4D, fuerza "Buena" o superior (`data/ads-search-towing.md`)
-- [ ] (PMM) Assets: 4 sitelinks, 8 callouts, snippet de servicios, llamada con número de reenvío. Ubicación cuando exista el GBP
+- [ ] (PMM) 1 RSA por ad group (estándar para <$1,500/mes), H1 pinneado, 15H/4D, fuerza "Buena" o superior (`data/ads-search-towing.md` v3); se reemplaza el RSA con "Battery Jumpstarts"/"Tire Change"
+- [ ] (PMM) Assets: 4 sitelinks, 8 callouts, snippet de servicios, llamada. Ubicación cuando exista el GBP
 - [ ] (PMM) URLs finales verificadas (200, https, sin redirect)
 - [ ] (PMM) Negativas por ad group (ver strategy.md)
+- [ ] (PMM) Cambios aplicados registrados con fecha en `log/`
 - [ ] (PMM) Anuncios aprobados por políticas (revisar 24 h después)
-- [ ] **(B)** (PMM) Primera conversión registrada y cruzada con una llamada real del cliente
+- [ ] **(B)** (PMM) Primera conversión registrada después de la reestructura y cruzada con una llamada real del cliente
 
 ## Fase 2 — Limpieza
-- [ ] (PMM) D7 (2026-10-07): search terms → negativas; keywords sin impresiones identificadas; gasto <70% del presupuesto → abrir AG3 (roadside) a frase
-- [ ] (PMM) D14 (2026-10-14): search terms → negativas; AG2 con más de $100 y 0 llamadas → pausar; AG3 >20% del gasto → pausar
-- [ ] (PMM) D14: evaluar el paso a Maximizar conversiones (≥15 conversiones o 14 días con tracking OK y CPC ≤ $7)
-- [ ] (PMM) D30 (2026-10-30): search terms → negativas; keywords con 0 impresiones pausadas; RSA peor por grupo reemplazado
+- [ ] (PMM) D7 (2026-10-16): search terms → negativas; gasto <70% del presupuesto → keywords de ciudad + AG3 a frase
+- [ ] (PMM) D14 (2026-10-23): search terms → negativas; AG2 con más de $100 y 0 llamadas → pausar; AG3 >20% del gasto → pausar
+- [ ] (PMM) D30 (2026-11-08): search terms → negativas; keywords con 0 impresiones pausadas; desperdicio <15% del rastreable
 - [ ] (Cliente) D30: calidad de las llamadas reportada (hoja compartida: llamada → trabajo sí/no → ticket)
 
-## Fase 3 — Optimización de puja (tCPA ~2026-11-11)
-- [ ] (PMM) ≥30 conversiones en 30 días confirmadas
-- [ ] (PMM) tCPA = CPL real de 30 días × 1.1 (no el deseado)
+## Fase 3 — Optimización de puja (Max conv ~2026-11-09 · tCPA ~2027-01)
+- [ ] (PMM) ≥15 conversiones verificadas/mes → Maximizar conversiones
+- [ ] (PMM) ≥30 conversiones en 30 días → tCPA = CPL real de 30 días × 1.1 (no el deseado)
+- [ ] (PMM) Prueba de grupo en español ("grua cerca de mi", "servicio de grua") si el cliente atiende en español
 - [ ] (PMM) Presupuesto revisado según CPL y capacidad del cliente
-- [ ] (PMM) Ajustes por dispositivo evaluados con datos
 
-## Fase 4 — Remarketing (probablemente no califica por volumen)
+## Fase 4 — Remarketing (no califica por volumen)
 - [ ] (PMM) Audiencia de visitantes ≥1,000 en 30 días. Revisar mensualmente en GA4
 
 ## Fase 5 — Performance Max
-**Bloqueada:** $27/día < ~$44/día de mínimo; sin assets propios; sin GBP. Se reevalúa el 2026-12-29 o si sube el presupuesto.
+**Bloqueada hasta ≥2027-03:** faltan 6 meses de Search estable, 30+ conversiones/mes verificadas, assets propios y GBP, y el presupuesto es de $27/día contra ~$44 de mínimo.
 - [ ] (Cliente) Fotos reales de las grúas y del equipo (5+) y un video corto: sirven para PMax y para el sitio
 - [ ] (Jhombis/PLL) Evaluar si el fee permite ≥$1,300/mes de pauta
 
 ## Fase 6 — Conversiones offline (futuro, requiere CRM)
 - [ ] (Cliente) Registro de trabajos con fecha, hora y teléfono para cruzar con las llamadas
 
+## Pista Landing (mejoras)
+- [ ] (PMM) Velocidad del home: móvil 43, LCP 6.7 s, TBT 1,170 ms → LCP <3 s (WebP, caché, JS de Elementor)
+- [ ] (PMM) Navy Veteran, 10% Senior Discount y radio en texto, no solo en la imagen
+- [ ] (PMM) Meta description + JSON-LD LocalBusiness/TowingService + `alt` en las imágenes
+- [ ] (PMM) Formulario de emergencia de 3 campos (Name, Phone, Location)
+
 ## Pista GBP + LSA
-- [ ] **(B para Maps/LSA)** (Cliente) Crear y verificar el GBP (área de servicio, categoría "Towing service"). Objetivo: ~2026-10-15
+- [ ] **(B para Maps/LSA)** (Cliente) Crear y verificar el GBP (área de servicio, categoría "Towing service"). Objetivo: ~2026-10-27
 - [ ] (PMM) Vincular el GBP a Ads y activar el activo de ubicación
 - [ ] (Cliente) Proceso de reseñas después de cada servicio (los competidores tienen 70–157)
-- [ ] (PMM) Solicitud LSA (licencia TDLR, seguro, background check). Objetivo: ~2026-10-15
-- [ ] (PMM) LSA verificado y con presupuesto semanal definido. Objetivo: ~2026-11-12
+- [ ] (PMM) Solicitud LSA (licencia TDLR, seguro, background check). Objetivo: ~2026-10-27
+- [ ] (PMM) LSA verificado y con presupuesto semanal definido. Objetivo: ~2026-11-24
 
 ## Recurrente (semanal, /weekly-review)
 - [ ] Search terms → negativas
-- [ ] Gasto contra los $825 mensuales
-- [ ] CPL contra el objetivo ($14.57; rango $11.70–$17.50); tendencia 7 d contra 28 d
+- [ ] Gasto contra los $825 mensuales (tope $820.80)
+- [ ] CPL contra el objetivo (meses 1–2: $30–60; meses 3–6: $21–38); tendencia 7 d contra 28 d
 - [ ] % de gasto de AG3 roadside y de AG2 exotic/long-distance
 - [ ] Anuncios rechazados o limitados
 - [ ] Impression share perdido por presupuesto y por ranking

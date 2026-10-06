@@ -6,8 +6,18 @@ pais: US
 cuentas_comparables: 21
 periodo: 90d (2026-06-24 → 2026-09-21) + 12 meses (2025-09-22 → 2026-09-21)
 fuente: Windsor.ai (connector google_ads). Sin Google Ads API en la sesión. Historial propio 213-019-5545 leído 2026-09-23.
-actualizado: 2026-09-23
+actualizado: 2026-10-06
 ---
+
+> **Actualización 2026-10-06.** El benchmark del nicho ahora está consolidado en `knowledge/benchmarks/towing-us.md`: 7 extracciones, rangos entre extracciones y una cohorte nueva aparte. El viejo `knowledge/benchmarks/towing.md` ya no existe.
+>
+> Qué cambia para 290 Tow:
+> - **CPL objetivo de una cuenta nueva solo Search: $21–38.** La mediana de Solo Search es $26–32 ±20%. El $14.57 de abajo es la mediana de cuentas **maduras** y pasa a ser la meta a 6 meses ($15–16).
+> - **Lo esperable en los meses 1–2 es la cohorte nueva**: CPL con mediana de $51–63 (rango $31–81), CPC de $7.3–7.6 y CVR de 14–19%.
+> - **Maximizar clics sostenido** sale en el MCC con un CPL de $70–83. **"roadside assistance" en amplia** concentrando el gasto, con un CPL de $67–154.
+> - **"cheap" no se niega**: CPL de $16.59 y CVR de 34.5% en 26 cuentas.
+> - **Cuenta propia a 18 días** (`log/2026-10-06-diagnose.md`): $530.14, 53 clics, CPC $10.00, CVR 11.3%, 6 conversiones sin verificar y **CPL $88.36**, por encima de todo el rango de la cohorte nueva. Coincide con el patrón "Maximizar clics + amplia sin limpiar" del P25.
+
 
 # Benchmark interno — 290 Tow and Recovery
 

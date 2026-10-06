@@ -37,8 +37,8 @@ towing marble falls,,,comercial,light-medium towing,Marble Falls (borde),frase,A
 exotic car towing,320,2.56,comercial ticket alto,exotic / flatbed / medium,radio 40mi,exacta+frase,AG2 Exotic & Long-Distance,semrush us 2026-09-23,
 luxury car towing,,,comercial ticket alto,exotic / flatbed / medium,radio 40mi,frase,AG2 Exotic & Long-Distance,variante,
 classic car towing,,,comercial ticket alto,exotic / flatbed / medium,radio 40mi,frase,AG2 Exotic & Long-Distance,variante,
-flatbed towing near me,720,3.45,comercial ticket alto,exotic / flatbed / medium,radio 40mi,frase,AG2 Exotic & Long-Distance,semrush us 2026-09-23,confirmar que tiene flatbed
-flatbed tow truck near me,320,3.72,comercial ticket alto,exotic / flatbed / medium,radio 40mi,frase,AG2 Exotic & Long-Distance,semrush us 2026-09-23,confirmar que tiene flatbed
+flatbed towing near me,720,3.45,comercial ticket alto,exotic / flatbed / medium,radio 40mi,frase,AG2 Exotic & Long-Distance,semrush us 2026-09-23,"flatbed confirmado en la web (rollback trucks, /about-us/)"
+flatbed tow truck near me,320,3.72,comercial ticket alto,exotic / flatbed / medium,radio 40mi,frase,AG2 Exotic & Long-Distance,semrush us 2026-09-23,"flatbed confirmado en la web (rollback trucks, /about-us/)"
 medium duty towing,390,3.81,comercial ticket alto,exotic / flatbed / medium,radio 40mi,frase,AG2 Exotic & Long-Distance,semrush us 2026-09-23,
 long distance towing near me,,,comercial ticket alto,long-distance towing,origen radio 40mi,frase,AG2 Exotic & Long-Distance,variante,'long distance towing' genérico lo pagan brokers: solo con ancla geo/near me + negativas transport
 long distance car towing,260,6.03,comercial ticket alto,long-distance towing,origen radio 40mi,frase,AG2 Exotic & Long-Distance,semrush us 2026-09-23,'long distance towing' genérico lo pagan brokers: solo con ancla geo/near me + negativas transport
@@ -50,14 +50,14 @@ roadside assistance near me,33100,3.38,comercial ticket bajo,roadside,radio 40mi
 roadside service near me,,,comercial ticket bajo,roadside,radio 40mi,exacta,"AG3 Roadside (exacta, tope)",search term cuenta 18-23/09,solo exacta; confirmar que el cliente hace cada servicio
 jump start near me,1300,2.66,comercial ticket bajo,roadside,radio 40mi,exacta,"AG3 Roadside (exacta, tope)",semrush us 2026-09-23,solo exacta; confirmar que el cliente hace cada servicio
 flat tire change near me,320,3.1,comercial ticket bajo,roadside,radio 40mi,exacta,"AG3 Roadside (exacta, tope)",semrush us 2026-09-23,solo exacta; confirmar que el cliente hace cada servicio
-roadside assistance,450000,3.76,informacional/AAA/seguro,—,—,NO (negativa o fase posterior),descartada,semrush us 2026-09-23,genérico; atrae AAA/seguro
+roadside assistance,450000,3.76,informacional/AAA/seguro,—,—,NO (negativa o fase posterior),descartada,semrush us 2026-09-23,amplia en la cuenta: $140.05 (26% del gasto) con casi todo el desperdicio; solo exacta near me
 emergency roadside assistance,,,AAA/seguro,—,—,NO (negativa o fase posterior),descartada,search term cuenta 18-23/09,$9.69 sin conv en la cuenta
 what does roadside assistance cover,,,informacional,—,—,NO (negativa o fase posterior),descartada,search term cuenta 18-23/09,$7.88 desperdicio real
 car jumper,,,producto,—,—,NO (negativa o fase posterior),descartada,search term cuenta 18-23/09,$27.48 desperdicio real
 car dollies for towing,,,producto/equipo,—,—,NO (negativa o fase posterior),descartada,search term cuenta 18-23/09,$12.61 desperdicio real
 rv haulers in texas,,,transporte,—,—,NO (negativa o fase posterior),descartada,search term cuenta 18-23/09,$11.43 desperdicio real
-cheap tow truck near me,,,precio,—,—,NO (negativa o fase posterior),descartada,search term cuenta 18-23/09,$11.84 desperdicio real; cheapest ya en universal
-cheap towing near me,14800,3.12,precio,—,—,NO (negativa o fase posterior),descartada,semrush us 2026-09-23,no pujar; vigilar
+cheap tow truck near me,,,comercial (precio),light-medium towing,radio 40mi,frase,AG1 Towing,search term cuenta 18-23/09,v3: ya no se niega (MCC CPL $16.59; aquí 1 conv)
+cheap towing near me,14800,3.12,comercial (precio),light-medium towing,radio 40mi,frase,AG1 Towing,semrush us 2026-09-23,v3: ya no se niega (MCC CPL $16.59; aquí 1 conv)
 fuel delivery near me,2900,7.88,comercial ticket bajo,—,—,NO (negativa o fase posterior),descartada,semrush us 2026-09-23,CPC > margen; F1 no
 accident towing,880,8.5,comercial,—,—,NO (negativa o fase posterior),descartada,semrush us 2026-09-23,CPC alto; revisar F3 si trabaja con aseguradoras
 heavy duty towing near me,1900,7.37,fuera de servicio,—,—,NO (negativa o fase posterior),descartada,semrush us 2026-09-23,cliente light/medium
@@ -76,3 +76,6 @@ douglas towing,140,1.81,competidor,—,—,NO (negativa o fase posterior),descar
 midway wrecker,110,1.55,competidor,—,—,NO (negativa o fase posterior),descartada,semrush us 2026-09-23,negativa
 gruas cerca de mi,,,comercial ES,—,—,NO (negativa o fase posterior),descartada,search term cuenta 18-23/09,sin anuncios en español; prueba F3
 290 tow and recovery,,,marca propia,—,—,NO (negativa o fase posterior),descartada,search term cuenta 18-23/09,sin búsquedas de marca; sin campaña de marca
+tow truck company,,,comercial,towing,radio 40mi,frase,AG1 Towing,search term cuenta,$10.23
+towing harper tx,,,comercial,towing,radio 40mi,frase,AG1 Towing,geo cuenta: Harper $35.84,variante
+rollback tow truck service,,,comercial,towing,radio 40mi,frase,AG2 Exotic & Long-Distance,web /about-us/,flatbed=rollback

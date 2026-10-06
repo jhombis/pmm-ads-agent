@@ -1,4 +1,5 @@
-# Negativas nicho + cliente — 290 Tow and Recovery (2026-09-23)
+# Negativas nicho + cliente — 290 Tow and Recovery (2026-09-23 · v2 2026-10-06)
+# Complemento con 63 términos nuevos de search terms: data/2026-10-06-negatives.txt
 # Nivel: cuenta (lista compartida "290 Towing Nicho"), además de "PMM Universal" (knowledge/negativas-universales.md).
 # Concordancia: frase salvo que se indique [exacta].
 # OJO al aplicar la universal: NO excluir "tow truck" ni "towing". En la universal, "trailer" (towing) y "rental/rent" están bien.
@@ -30,7 +31,7 @@ hauler
 haulers
 what does
 cover
-cheap
+# ("cheap" quitado 2026-10-06: convierte en el MCC, CPL $16.59 · ver towing-us.md)
 
 ## Equipo / compra de grúas
 rollback tow truck
@@ -105,7 +106,7 @@ tow truck san antonio
 san antonio towing
 san antonio tow truck
 san antonio wrecker
-# (no 'san antonio' suelto: bloquearía 'tow car to san antonio' de AG6)
+# (no 'san antonio' suelto: bloquearía 'tow car to san antonio' de AG2)
 new braunfels
 austin tx towing
 [towing austin]

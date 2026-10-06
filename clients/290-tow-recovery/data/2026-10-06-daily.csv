@@ -1,0 +1,21 @@
+# fuente: Windsor.ai google_ads, cuenta 213-019-5545, 2026-09-17 a 2026-10-06 (10-06 parcial). Sin filas el 09-17. IS en fracción (0.0999 = <10%).
+date,campaign,network,spend,impressions,clicks,conversions,all_conversions,phone_calls,search_is,search_budget_lost_is,search_rank_lost_is
+2026-09-18,"290 Tow and Recovery - ENHPRM Radius - $1500/mo. - 09/17/2026",SEARCH,0,1,0,0,0,0,0.1,0.5,0.4
+2026-09-19,"290 Tow and Recovery - ENHPRM Radius - $1500/mo. - 09/17/2026",SEARCH,0,1,0,0,0,0,0.0999,0.4615,0.4615
+2026-09-20,"290 Tow and Recovery - ENHPRM Radius - $1500/mo. - 09/17/2026",SEARCH,11.74,9,1,0,0,0,0.3044,0.1739,0.5217
+2026-09-21,"290 Tow and Recovery - ENHPRM Radius - $1500/mo. - 09/17/2026",SEARCH,53.90,26,4,0,0,0,0.3529,0.5147,0.1323
+2026-09-22,"290 Tow and Recovery - ENHPRM Radius - $1500/mo. - 09/17/2026",SEARCH,65.02,21,6,0,0,0,0.202,0.6869,0.1111
+2026-09-23,"290 Tow and Recovery - ENHPRM Radius - $1500/mo. - 09/17/2026",SEARCH,58.73,30,5,1,1,0,0.2097,0.4355,0.3548
+2026-09-24,"290 Tow and Recovery - ENHPRM Radius - $1500/mo. - 09/17/2026",SEARCH,30.59,60,3,0,0,0,0.371,0,0.629
+2026-09-25,"290 Tow and Recovery - ENHPRM Radius - $1500/mo. - 09/17/2026",SEARCH,41.44,39,4,1,1,1,0.3696,0.2174,0.413
+2026-09-26,"290 Tow and Recovery - ENHPRM Radius - $1500/mo. - 09/17/2026",SEARCH,36.80,21,4,0,0,0,0.2093,0.5465,0.2442
+2026-09-27,"290 Tow and Recovery - ENHPRM Radius - $1500/mo. - 09/17/2026",SEARCH,15.58,29,2,0,0,0,0.4151,0,0.5849
+2026-09-28,"290 Tow and Recovery - ENHPRM Radius - $1500/mo. - 09/17/2026",SEARCH,18.43,59,2,2,2,2,0.4396,0,0.5604
+2026-09-29,"290 Tow and Recovery - ENHPRM Radius - $1500/mo. - 09/17/2026",SEARCH,35.26,30,4,1,1,2,0.3462,0.1667,0.4872
+2026-09-30,"290 Tow and Recovery - ENHPRM Radius - $1500/mo. - 09/17/2026",SEARCH,20.30,14,3,0,0,0,0.193,0.2105,0.5965
+2026-10-01,"290 Tow and Recovery - ENHPRM Radius - $1500/mo. - 09/17/2026",SEARCH,0,30,0,0,0,0,0.3636,0.0454,0.5909
+2026-10-02,"290 Tow and Recovery - ENHPRM Radius - $1500/mo. - 09/17/2026",SEARCH,54.00,74,4,1,1,1,0.4779,0.2035,0.3186
+2026-10-03,"290 Tow and Recovery - ENHPRM Radius - $1500/mo. - 09/17/2026",SEARCH,32.81,36,3,0,0,0,0.272,0.688,0.04
+2026-10-04,"290 Tow and Recovery - ENHPRM Radius - $1500/mo. - 09/17/2026",SEARCH,29.19,27,4,0,0,2,0.2389,0.6195,0.1416
+2026-10-05,"290 Tow and Recovery - ENHPRM Radius - $1500/mo. - 09/17/2026",SEARCH,26.35,24,4,0,0,0,0.2727,0.6704,0.0568
+2026-10-06,"290 Tow and Recovery - ENHPRM Radius - $1500/mo. - 09/17/2026",SEARCH,7.95,15,1,0,0,0,,0,0
