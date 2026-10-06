@@ -33,7 +33,9 @@
       {"titulo": "Plan AAMCO 103rd St", "idioma": "ES", "url": "https://claude.ai/artifact/UxnqWzL2RYwuPgai6HBKJx"},
       {"titulo": "AAMCO 103rd St Plan", "idioma": "EN", "url": "https://claude.ai/artifact/XiXSBQnbPn6F1Wsrt3dfmx"},
       {"titulo": "Business Profile", "idioma": "ES", "url": "https://claude.ai/artifact/9GRF449V869jctM9obs75J", "extra": true}]},
-    "precision-towing": {"mercado": "Lake Isabella / Kern River Valley, CA", "cuenta": "753-255-2245", "informes": []}
+    "precision-towing": {"mercado": "Lake Isabella / Kern River Valley, CA", "cuenta": "753-255-2245", "informes": [
+      {"titulo": "Plan de Google Ads", "idioma": "ES", "url": "https://claude.ai/artifact/97ToNYyaAJP6HEyaqszB6K"},
+      {"titulo": "Google Ads Plan", "idioma": "EN", "url": "https://claude.ai/artifact/PvSG4FFvXjsGe4Aucj26bU"}]}
   },
   "otros": [
     {"cliente": "Beach Cities RV", "titulo": "Google Ads", "idioma": "ES", "url": "https://claude.ai/artifact/Sz3wTC2CYxBBD1bxGmiBfu", "fecha": "2026-08-26", "nota": "Sin carpeta de cliente en el repo"}

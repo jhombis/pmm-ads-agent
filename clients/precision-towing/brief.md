@@ -7,8 +7,6 @@ nicho: towing
 mcc_customer_id: 753-255-2245
 actualizado: 2026-10-06
 estado: brief-completo
-plan_es: 
-plan_en: 
 ---
 
 # Brief — Precision Towing

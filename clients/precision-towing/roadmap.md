@@ -5,8 +5,8 @@ D0: 2026-10-06
 actualizado: 2026-10-06
 fase_actual: 0
 version: 2
-plan_es: 
-plan_en: 
+plan_es: https://claude.ai/artifact/97ToNYyaAJP6HEyaqszB6K
+plan_en: https://claude.ai/artifact/PvSG4FFvXjsGe4Aucj26bU
 ---
 
 # Roadmap — Precision Towing (v2)

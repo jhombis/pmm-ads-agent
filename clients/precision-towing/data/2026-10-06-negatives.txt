@@ -388,7 +388,6 @@ dealers | PHRASE | campaign | nicho
 haulers | PHRASE | campaign | nicho
 semi trucks | PHRASE | campaign | nicho
 boats | PHRASE | campaign | nicho
-(solo AG1, AG2 y AG3; NO en AG4 Marca, cuyas keywords contienen "automotive", "paint" y "collision") | PHRASE | ad_group:AG1-AG3 (nunca AG4 Marca) | nicho-taller
 smog | PHRASE | ad_group:AG1-AG3 (nunca AG4 Marca) | nicho-taller
 smog check | PHRASE | ad_group:AG1-AG3 (nunca AG4 Marca) | nicho-taller
 oil change | PHRASE | ad_group:AG1-AG3 (nunca AG4 Marca) | nicho-taller
