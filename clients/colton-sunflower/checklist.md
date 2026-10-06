@@ -2,7 +2,7 @@
 cliente: Colton Sunflower Burial and Cremation
 slug: colton-sunflower
 fase_actual: 0
-actualizado: 2026-10-01
+actualizado: 2026-10-06
 ---
 # Checklist — Colton Sunflower
 
@@ -26,7 +26,7 @@ Eliminado de la base: solicitud LSA (la categoría no aplica) y la Fase 5 PMax (
 - [ ] (PMM) Campos ocultos UTM + GCLID en el formulario
 - [x] (PMM) Negativas universales/nicho: 466 previas + 76 nuevas (2026-10-01)
 - [ ] ⚠️ (Claude, tras OK) Quitar las negativas amplias que bloquean demanda: how, Fontana, online
-- [ ] (Claude, tras OK) 5 negativas de data/2026-10-01-negatives.txt
+- [ ] (Claude, tras OK) 18 negativas de data/2026-10-06-negatives.txt (incluye las 5 del 01-oct)
 - [ ] ⚠️ (PMM) Autoaplicación de recomendaciones DESACTIVADA — verificar
 - [x] (Claude) /audit-landing 2026-10-01: 12/22, requiere ajustes (ver audit-site.md)
 - [ ] (PMM) Score de PageSpeed móvil (no se pudo medir aquí)
@@ -49,9 +49,11 @@ Eliminado de la base: solicitud LSA (la categoría no aplica) y la Fase 5 PMax (
 - [x] Ubicación: Presencia solamente
 - [ ] Países restantes excluidos — verificar
 - [ ] Programación según horario del cliente (24/7 solo si contestan)
-- [ ] ⚠️ Puja: agregar tope de CPC $8 a Max clics (playbook §5)
+- [x] Puja: Max clics ya tiene tope de CPC $7 (detectado 2026-10-06)
+- [ ] ⚠️ Puja: subir tope de $7 a $8 el día de la reestructura
 - [ ] Puja: Max conversiones cuando haya 15+ conv/mes estables con Form Fill medido
-- [ ] ⚠️ 5 ad groups según strategy.md; keywords en frase + exacta en los términos principales
+- [ ] ⚠️ Estructura v2.0: 5 ad groups (Cremation, Cremation Prices, Funeral Home, Burial, Brand), frase + exacta, pausar todas las amplias (data/estructura-2026-10-06.csv)
+- [ ] Regla de guarda D7: si el gasto < $34/día, agregar frases y subir tope a $9 (sin volver a la amplia)
 - [ ] Negativas entre ad groups (cremation/burial/cost)
 - [ ] ⚠️ 1 RSA por grupo (máx. 2), H1 pinneado, 15H/4D, fuerza "Buena"+; reemplazar el RSA 819740188547
 - [ ] Extensiones: sitelinks 4+, callouts 6+, snippets, llamada, ubicación
@@ -104,3 +106,4 @@ Eliminado de la base: solicitud LSA (la categoría no aplica) y la Fase 5 PMax (
 - [x] 2026-10-01 76 negativas + 3 keywords del competidor pausadas — Claude
 - [x] 2026-10-01 Weekly review + strategy v1 — Claude
 - [x] 2026-10-01 /audit-landing, /competitors, /benchmark-interno — Claude
+- [x] 2026-10-06 /diagnose + estructura v2.0 — Claude

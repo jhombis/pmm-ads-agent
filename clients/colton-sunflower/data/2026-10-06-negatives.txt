@@ -1,0 +1,22 @@
+# Colton Sunflower — negativas propuestas /diagnose 2026-10-06 (NO aplicadas)
+# formato: término | match | nivel (campaña 24095361792). Se colaron 01–06 oct con las 76 del 01-oct ya activas.
+legacy | PHRASE | campaña
+this week | PHRASE | campaña
+tomorrow | PHRASE | campaña
+types of | PHRASE | campaña
+plots | PHRASE | campaña
+san diego | PHRASE | campaña
+victor valley | PHRASE | campaña
+guerra | PHRASE | campaña
+gutierrez | PHRASE | campaña
+grupo deco | PHRASE | campaña
+the va | PHRASE | campaña
+cenizas | PHRASE | campaña
+contenedor | PHRASE | campaña
+# Pendientes de la propuesta del 01-oct (siguen sin aplicar):
+riverside national | PHRASE | campaña
+aaron's | PHRASE | campaña
+torrance | PHRASE | campaña
+water cremation | PHRASE | campaña
+santana | PHRASE | campaña
+# Español (grupo E, 11 términos de data/2026-09-29-negatives.txt): siguen en espera de que el cliente confirme si atiende en español.

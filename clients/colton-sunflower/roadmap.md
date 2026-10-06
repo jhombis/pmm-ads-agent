@@ -2,7 +2,7 @@
 cliente: Colton Sunflower Burial and Cremation
 slug: colton-sunflower
 D0: 2026-10-01
-actualizado: 2026-10-01
+actualizado: 2026-10-06
 fase_actual: 0
 plan_es: https://claude.ai/artifact/74WA8FWCjHGkiYPWh8h8fy
 plan_en: https://claude.ai/artifact/3gJMiMNSMNamGjVe2wZsTv
@@ -10,7 +10,7 @@ plan_en: https://claude.ai/artifact/3gJMiMNSMNamGjVe2wZsTv
 
 # Roadmap — Colton Sunflower Burial and Cremation
 
-> Esta cuenta se **heredó activa** (desde 2026-08-03, Max clics, CPA $466 en 28d). "Fase 0" aquí significa **rescate**: arreglar el tracking, la puja y la estructura sobre la campaña existente. La campaña **sigue corriendo** durante la Fase 0 porque las negativas ya contienen el desperdicio. Pausarla perdería historial y llamadas.
+> Esta cuenta se **heredó activa** (desde 2026-08-03, Max clics con tope de $7, CPA $466 en 28d). "Fase 0" aquí significa **rescate**: arreglar el tracking, la puja y la estructura sobre la campaña existente. La campaña **sigue corriendo** durante la Fase 0 porque las negativas ya contienen el desperdicio. Pausarla perdería historial y llamadas.
 > Presupuesto $49/día contra un CPL benchmark de $100: el presupuesto es **menos de 3× CPL/día**, así que el aprendizaje será lento, la fase 3 se alarga +2 semanas y **PMax probablemente nunca califica** con este presupuesto.
 
 ## Resumen
@@ -48,7 +48,7 @@ plan_en: https://claude.ai/artifact/3gJMiMNSMNamGjVe2wZsTv
 
 ## Fase 1 — Relanzamiento (estructura nueva + Max clics con tope de CPC)
 - **Fecha estimada**: 2026-10-15 → 2026-10-22
-- **Condición de paso**: estructura de 5 grupos activa 7 días, anuncios aprobados, Max clics con tope de CPC $8 activo y **≥1 conversión de Form Fill o llamada registrada después del cambio**.
+- **Condición de paso**: estructura de 5 grupos activa 7 días, anuncios aprobados, estructura v2.0 sin amplia, tope de CPC $8 activo y **≥1 conversión de Form Fill o llamada registrada después del cambio**.
 - **Qué se lanza**: la campaña actual, reestructurada según `strategy.md`, con $49/día (más marca $5/día si se confirma). Puja: Max clics con tope de CPC $8 (playbook §5: <15 conv/mes). Pasa a Max conversiones cuando haya 15+ conv/mes estables con Form Fill medido.
 - **Riesgos**: un tope de $8 puede dejar fuera los términos locales más caros ("cremation san bernardino" ~$11.75). En D7 se mira el IS perdido por ranking en los grupos de cremación y se ajusta el tope.
 
@@ -96,6 +96,7 @@ plan_en: https://claude.ai/artifact/3gJMiMNSMNamGjVe2wZsTv
 - La mortalidad en EE. UU. sube en invierno (dic–feb), así que la demanda funeraria también. **Conviene salir de la Fase 1–2 antes de diciembre** para que la estructura nueva y la medición ya estén limpias cuando suba el volumen. Es una razón más para no alargar la Fase 0.
 
 ## Historial de cambios
+- 2026-10-06: /diagnose — estructura v2.0 (salir de la amplia, 92% del gasto; 5 grupos incl. Brand). Corrección: la campaña ya tenía tope de $7.
 - 2026-10-01: /informe — plan ES + EN con el estilo PMM (plan-es.html / plan-en.html); reemplaza a plan.html, cuya URL pasa a ser la versión ES.
 - 2026-10-01: ajustado a los estándares nuevos de CLAUDE.md (puja con tope de CPC hasta 15+ conv/mes; 1 RSA por grupo con <$1,500/mes).
 - 2026-10-01: CPL benchmark ajustado a $73 (benchmark.md); fecha de tCPA recalculada.

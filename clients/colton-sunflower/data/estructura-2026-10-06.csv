@@ -1,0 +1,86 @@
+ad_group,accion_grupo,keyword,match,accion,landing,nota
+Cremation,renombrar "Cremation Services",cremation near me,EXACT,crear,/cremation/,existe en frase con 3 impr.
+Cremation,,cremation services near me,EXACT,crear,/cremation/,
+Cremation,,direct cremation near me,EXACT,crear,/cremation/,
+Cremation,,cremation san bernardino,EXACT,crear,/cremation/,CPC ~$11.75: puede quedar fuera con tope $8
+Cremation,,crematorium near me,EXACT,crear,/cremation/,
+Cremation,,cremation services,PHRASE,mantener,/cremation/,
+Cremation,,cremation near me,PHRASE,mantener,/cremation/,
+Cremation,,direct cremation,PHRASE,crear,/cremation/,
+Cremation,,crematorium,PHRASE,crear,/cremation/,crematorio propio = diferenciador
+Cremation,,crematory,PHRASE,crear,/cremation/,
+Cremation,,affordable cremation,PHRASE,crear,/cremation/,
+Cremation,,cheap cremation,PHRASE,crear,/cremation/,mascotas ya negadas
+Cremation,,low cost cremation,PHRASE,crear,/cremation/,
+Cremation,,simple cremation,PHRASE,crear,/cremation/,existe en exacta
+Cremation,,cremation with viewing,PHRASE,crear,/cremation/,absorbe el grupo Cremation With Service
+Cremation,,cremation with memorial service,PHRASE,crear,/cremation/,
+Cremation,,witness cremation,PHRASE,crear,/cremation/,servicio exclusivo del cliente
+Cremation,,funeral and cremation services,PHRASE,mantener,/cremation/,
+Cremation,,colton cremation,PHRASE,mantener,/cremation/,
+Cremation,,san bernardino cremation,PHRASE,mantener,/cremation/,
+Cremation,,cremation services san bernardino,PHRASE,mantener,/cremation/,1 conv
+Cremation,,cremation fontana,PHRASE,crear,/cremation/,requiere quitar la negativa amplia Fontana
+Cremation,,cremation rialto,PHRASE,crear,/cremation/,
+Cremation,,cremation redlands,PHRASE,crear,/cremation/,
+Cremation,,cremation with service,BROAD,pausar,,$196 0 conv
+Cremation,,funeral cremation near me,BROAD,pausar,,$124 0 conv
+Cremation,,san bernardino cremation,BROAD,pausar,,
+Cremation,,cremation burial sites,BROAD,pausar,,
+Cremation,,(resto de amplias del grupo con 0 impr.),BROAD,pausar,,
+Cremation Prices,nuevo,cremation cost,EXACT,crear,/pricing/,
+Cremation Prices,,cremation prices,EXACT,crear,/pricing/,
+Cremation Prices,,how much does cremation cost,EXACT,crear,/pricing/,8.1k/mes nacional; requiere quitar how
+Cremation Prices,,cremation cost,PHRASE,mover desde Cremation,/pricing/,
+Cremation Prices,,cremation price,PHRASE,mover desde Cremation,/pricing/,
+Cremation Prices,,cremation prices,PHRASE,crear,/pricing/,
+Cremation Prices,,cost of cremation,PHRASE,crear,/pricing/,
+Cremation Prices,,how much is cremation,PHRASE,crear,/pricing/,requiere quitar how
+Cremation Prices,,how much does cremation cost,PHRASE,crear,/pricing/,requiere quitar how
+Cremation Prices,,cremation packages,PHRASE,crear,/pricing/,
+Cremation Prices,,basic cremation cost,PHRASE,mover desde Cremation,/pricing/,$72 0 conv: observar
+Cremation Prices,,cremation cost near me,BROAD,pausar,,$185 0 conv
+Cremation Prices,,simple cremation cost,BROAD,pausar,,$196 1 conv: se reemplaza por frase
+Cremation Prices,,simple cremation cost,PHRASE,crear,/pricing/,
+Funeral Home,mantener,funeral home near me,EXACT,crear,/,
+Funeral Home,,funeral homes near me,EXACT,crear,/,
+Funeral Home,,mortuary near me,EXACT,crear,/,
+Funeral Home,,funeral homes in colton ca,EXACT,crear,/,"""funeral homes colton ca"" convirtió 01-oct"
+Funeral Home,,funeral homes in san bernardino ca,EXACT,crear,/,
+Funeral Home,,funeral home near me,PHRASE,crear,/,reemplaza la amplia ($453 2 conv)
+Funeral Home,,funeral homes near me,PHRASE,crear,/,
+Funeral Home,,mortuary near me,PHRASE,crear,/,
+Funeral Home,,funeral homes in colton,PHRASE,crear,/,
+Funeral Home,,funeral home colton,PHRASE,crear,/,
+Funeral Home,,funeral home san bernardino,PHRASE,mantener,/,
+Funeral Home,,funeral homes in san bernardino,PHRASE,crear,/,
+Funeral Home,,mortuary san bernardino,PHRASE,crear,/,
+Funeral Home,,funeral homes in fontana,PHRASE,crear,/,requiere quitar Fontana
+Funeral Home,,funeral homes in rialto,PHRASE,crear,/,
+Funeral Home,,funeral homes in redlands,PHRASE,crear,/,
+Funeral Home,,affordable funeral home,PHRASE,crear,/,
+Funeral Home,,funeral services near me,PHRASE,crear,/,
+Funeral Home,,funeral services,PHRASE,mantener,/,
+Funeral Home,,funeral homes,PHRASE,mantener,/,
+Funeral Home,,funeral packages,PHRASE,crear,/,
+Funeral Home,,funeral home prices,PHRASE,crear,/,
+Funeral Home,,funeral home near me,BROAD,pausar,,$453 2 conv: se reemplaza por frase + exacta
+Funeral Home,,mortuary near me,BROAD,pausar,,$104 0 conv
+Funeral Home,,funeral arrangements,BROAD,pausar,,$40 0 conv
+Funeral Home,,funeral home services,BROAD,pausar,,$41 0 conv
+Funeral Home,,funeral planning,BROAD,pausar,,$30 0 conv; informacional
+Funeral Home,,colton funeral chapel,BROAD,pausar,,pasa a Marca si es su nombre
+Funeral Home,,(resto de amplias del grupo),BROAD,pausar,,
+Burial,renombrar "Burial Services",burial services near me,EXACT,crear,/burial/,
+Burial,,burial services near me,PHRASE,mantener,/burial/,
+Burial,,burial services,PHRASE,crear,/burial/,
+Burial,,direct burial,PHRASE,crear,/burial/,$1,995 publicado
+Burial,,graveside service,PHRASE,crear,/burial/,
+Burial,,traditional burial,PHRASE,crear,/burial/,
+Burial,,burial near me,PHRASE,mantener,/burial/,
+Burial,,cremation burial near me,BROAD,pausar,,$232 0 conv
+Burial,,(resto de amplias del grupo),BROAD,pausar,,
+Brand,nuevo (condicional),sunflower crematory,EXACT,crear,/,convirtió 1 de 2
+Brand,,colton sunflower,EXACT,crear,/,
+Brand,,colton sunflower burial and cremation,EXACT,crear,/,
+Brand,,sunflower crematory colton,PHRASE,crear,/,
