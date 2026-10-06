@@ -1,0 +1,11 @@
+search_term,match,costo,clics,conv,categoria
+gruero cerca de mi,EXACT,22.02,3,0,servicio ES
+tow truck near me,EXACT,18.10,1,1,servicio EN
+gruas cerca de mi,NEAR_EXACT,17.68,2,0,servicio ES
+tow service near me now,NEAR_PHRASE,12.61,1,1,servicio EN
+towing service near me,EXACT,11.40,1,1,servicio EN
+tow service,NEAR_EXACT,7.66,1,0,servicio EN
+costo de una grua para auto,NEAR_PHRASE,7.00,1,0,precio/informativa ES
+car towing near me,NEAR_EXACT,6.90,1,0,servicio EN
+road ranger,BROAD,6.15,1,0,servicio público (desperdicio)
+reasonable towing companies,BROAD,4.11,1,0,servicio EN

@@ -2,7 +2,7 @@
 cliente: Jerry's Auto Body Solutions & Towing Service
 slug: jerrys-towing-wesley-chapel
 D0: 2026-10-01
-actualizado: 2026-10-01
+actualizado: 2026-10-06
 fase_actual: 0
 plan_es: https://claude.ai/artifact/4BPtSrAmvJSYaeFhXCKvBE
 plan_en: https://claude.ai/artifact/7SLqmrgbKmMYWC8AaPtjDC
@@ -17,18 +17,18 @@ plan_en: https://claude.ai/artifact/7SLqmrgbKmMYWC8AaPtjDC
 ## Resumen
 | Fase | Fecha estimada | Estado |
 |---|---|---|
-| 0 — Fundación / saneamiento | 10/01 → 10/06 (PMM) · 10/15 (pendientes del cliente) | 🔄 en curso |
-| 1 — Relanzamiento Search reestructurado | 10/06 → 10/13 | ⏳ |
-| 2 — Limpieza (D7 · D14 · D30) | 10/13 · 10/20 · 11/05 | ⏳ |
+| 0 — Fundación / saneamiento | 10/01 → **10/12** (reprogramada el 10/06) · 10/15 (pendientes del cliente) | ⛔ bloqueada: Form Fill en cero desde el 14-sep + PMax lanzada fuera del plan |
+| 1 — Relanzamiento Search reestructurado | **10/13 → 10/20** | ⏳ |
+| 2 — Limpieza (D7 · D14 · D30) | **10/20 · 10/27 · 11/12** | ⏳ |
 | 3 — tCPA | **⛔ no alcanzable a $25/día.** Si se sube a $35/día el 12/01 → ~2027-01-15 | ⛔ bloqueada por presupuesto |
 | 4 — Remarketing | No realista con el tráfico actual (~90 clics/mes) | ⛔ |
-| 5 — Performance Max | No califica (ver razones) | ⛔ |
+| 5 — Performance Max | No califica (ver razones). **Se creó una PMax de $5/día el 10/01 fuera del plan: decisión pendiente** | ⛔ |
 | 6 — Conversiones offline | Fuera de alcance (sin CRM) | — |
 | Pista Landing | 10/01 → 10/10 (bloqueantes) · 10/31 (mejoras) | 🔄 |
 | Pista LSA | Verificar elegibilidad 10/03 · verificación 10/15–10/29 (si hay GBP) | ⏳ bloqueada por GBP |
 
 ## Fase 0 — Fundación / saneamiento
-- **Fecha estimada**: 2026-10-01 → **2026-10-06** para las tareas de PMM (los bloqueantes de landing los edita PMM: +3 días). Los pendientes del cliente llegan hasta el **2026-10-15** (+7–14 días), pero solo bloquean partes concretas (ver abajo), no el relanzamiento entero.
+- **Fecha estimada**: 2026-10-01 → ~~2026-10-06~~ **2026-10-12** (reprogramada en la revisión del 06-oct: ningún ítem B cerrado y dos bloqueantes nuevos) para las tareas de PMM (los bloqueantes de landing los edita PMM: +3 días). Los pendientes del cliente llegan hasta el **2026-10-15** (+7–14 días), pero solo bloquean partes concretas (ver abajo), no el relanzamiento entero.
 - **Condición de paso**: todos los ítems marcados **[B]** en `checklist.md` (Fase 0) en ✅.
 - **Tareas**:
   - [B] (PMM) Verificar con Tag Assistant las 3 conversiones: **Website Calls** (¿desvío de Google o clic en `tel:`?), **Form Fill** (¿qué la dispara sin página de gracias?) y **Calls from Ads** (duración ≥60 s). Lo que no sea un lead real pasa a secundaria.
@@ -48,7 +48,7 @@ plan_en: https://claude.ai/artifact/7SLqmrgbKmMYWC8AaPtjDC
   - El cliente no tiene historial de responder rápido (no hay datos) → riesgo de que el CPL sea "bueno" y las ventas no.
 
 ## Fase 1 — Relanzamiento Search reestructurado
-- **Fecha estimada**: **2026-10-06** (cambios aplicados) → **2026-10-13** (7 días de datos).
+- **Fecha estimada**: **2026-10-13** (cambios aplicados) → **2026-10-20** (7 días de datos). Reprogramada el 06-oct.
 - **Condición de paso**: los cambios de `strategy.md` (pasos 2–7) aplicados, con 7 días corriendo, anuncios nuevos aprobados, **≥1 conversión verificada** en la estructura nueva y ninguna conversión primaria que sea un clic.
 - **Qué se lanza** (sobre la campaña existente, sin crear otra):
   - Campaña renombrada a *Towing - Search - Radius*, $25/día, Maximizar conversiones, solo búsqueda, Presencia + 20 mi.
@@ -60,7 +60,7 @@ plan_en: https://claude.ai/artifact/7SLqmrgbKmMYWC8AaPtjDC
   - Con ~3 clics/día, una semana sin conversiones es varianza normal.
 
 ## Fase 2 — Limpieza (D7 · D14 · D30 desde el relanzamiento)
-- **Fechas**: **D7 = 2026-10-13 · D14 = 2026-10-20 · D30 = 2026-11-05**
+- **Fechas**: **D7 = 2026-10-20 · D14 = 2026-10-27 · D30 = 2026-11-12** (reprogramadas el 06-oct)
 - **Condición de paso**:
   - las tres revisiones hechas (`/weekly-review`), negativas nuevas aplicadas y keywords sin impresiones en 30 días pausadas;
   - **CPL ≤ $40 durante 4 semanas seguidas**;
@@ -128,6 +128,7 @@ plan_en: https://claude.ai/artifact/7SLqmrgbKmMYWC8AaPtjDC
 - **Fiestas (Thanksgiving, Navidad)**: más tráfico en la I-75 → más llamadas de roadside y towing.
 
 ## Historial de cambios
+- 2026-10-06: revisión semanal (`log/2026-10-06.md`). F0 ⛔: Form Fill sin conversiones desde el 14-sep (medición) y PMax "P. Max - $1500/mo - 10/01/2026" de $5/día creada el 01-oct con Search bajado de $25 a $22/día, fuera del plan. F0 → 10/12, F1 → 10/13–10/20, D7/D14/D30 → 10/20 · 10/27 · 11/12.
 - 2026-10-01: plan HTML ES + EN publicado con /informe (URLs en el front matter).
 - 2026-10-01: RSA a 1 por grupo (máx. 2) y puja condicionada a la medición, por las reglas nuevas de CLAUDE.md (#4, #6).
 - 2026-10-01: creado (D0 = 2026-10-01). Cuenta activa desde el 22/08; la Fase 0 corre con la campaña en vivo.

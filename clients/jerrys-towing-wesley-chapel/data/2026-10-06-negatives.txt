@@ -1,0 +1,14 @@
+# Propuesta de negativas — Jerry's Towing — 2026-10-06
+# Fuente: search terms 2026-09-29 → 2026-10-05 (Windsor). NO APLICAR sin OK de Jhombis → /negatives
+# Lo pendiente de la revisión anterior (data/negatives-nicho.txt, 150 términos + universal con 4 excepciones) SIGUE sin aplicar:
+# "road ranger" volvió a costar $6.15 esta semana.
+
+## Nuevas (frase) — precio/informativa en español
+costo de una grua
+cuanto cobra una grua
+cuanto cuesta una grua
+# Ojo: volumen muy bajo (1 clic, $7.00). En inglés "towing cost near me" SÍ se mantiene (intención de contratar).
+
+## PMax (creada 01-oct)
+# Las negativas a nivel de campaña de Search no la alcanzan. Si se mantiene, aplicar las negativas a NIVEL DE CUENTA
+# (sí cubren PMax) + exclusión de marca (ver log 2026-10-06).

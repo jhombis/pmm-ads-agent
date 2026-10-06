@@ -22,8 +22,10 @@ def daily_rows(lang):
         cpc = f'${cost/clk:.2f}' if clk else '—'
         isx = '<10%' if isv < .1 else f'{isv*100:.0f}%'
         out.append(f'<tr><td style="white-space:nowrap">{dm(d, lang)}</td><td class="r">{imp}</td><td class="r">{clk}</td><td class="r">${cost:.2f}</td><td class="r">{cpc}</td><td class="r">{escape(isx)}</td><td class="r">—</td><td class="r">—</td></tr>')
-    lab = 'Sep (agregado, 28 días)' if lang == 'es' else 'Sep (aggregate, 28 days)'
-    out.append(f'<tr><td><b>{lab}</b></td><td class="r"><b>822</b></td><td class="r"><b>86</b></td><td class="r"><b>$693.01</b></td><td class="r"><b>$8.06</b></td><td class="r"><b>22.6%</b></td><td class="r"><b>51.9%</b></td><td class="r"><b>25.5%</b></td></tr>')
+    lab = 'Search 7 días (agregado)' if lang == 'es' else 'Search 7 days (aggregate)'
+    out.append(f'<tr><td><b>{lab}</b></td><td class="r"><b>223</b></td><td class="r"><b>23</b></td><td class="r"><b>$174.54</b></td><td class="r"><b>$7.59</b></td><td class="r"><b>30.1%</b></td><td class="r"><b>45.1%</b></td><td class="r"><b>25.5%</b></td></tr>')
+    lab = 'P. Max 5 días (desde 01-oct)' if lang == 'es' else 'P. Max 5 days (since Oct 1)'
+    out.append(f'<tr><td><b>{lab}</b></td><td class="r">1,143</td><td class="r">16</td><td class="r">$22.51</td><td class="r">$1.41</td><td class="r">—</td><td class="r">—</td><td class="r">—</td></tr>')
     return '\n            '.join(out)
 
 def serps():
@@ -53,7 +55,7 @@ def build(lang, T):
         (r"const months = \[[^\]]*\];", "const months = ['2026-10-01','2026-11-01','2026-12-01','2027-01-01'];"),
         (r"const mname = \{.*?\};", f"const mname = {J(D['mname'])};"),
         (r"  const rows = \[\n.*?\n  \];", f"  const rows = {J(D['rows'])};"),
-        (r"const today = '[^']*';", "const today = '2026-10-01';"),
+        (r"const today = '[^']*';", "const today = '2026-10-06';"),
         (r"  const phases = \[\n.*?\n  \];", f"  const phases = {J(D['phases'])};"),
         (r"const ACTIVE = '[^']*';\n  const ags = \[\n.*?\n  \];", f"const ACTIVE = 'F1';\n  const ags = {J(D['ags'])};"),
         (r"  const h1 = \[\n.*?\n  \];", f"  const h1 = {J(D['h1'])};"),

@@ -2,7 +2,7 @@
 cliente: Jerry's Auto Body Solutions & Towing Service
 slug: jerrys-towing-wesley-chapel
 fase_actual: 0
-actualizado: 2026-10-01
+actualizado: 2026-10-06
 ---
 
 # Checklist — Jerry's Auto Body Solutions & Towing Service
@@ -13,6 +13,8 @@ Fase 5 (PMax) eliminada: no califica con este presupuesto (ver `roadmap.md`).
 
 ## Fase 0 — Fundación / saneamiento
 ### Cuenta
+- ⬜ **[B]** (Jhombis) **Decisión sobre la PMax creada el 01-oct** ($5/día; 5 días: $22.51, 16 clics, 1 conv. Website Calls). Recomendación: pausar y devolver los $5 a Search. Si se mantiene: negativas a nivel de cuenta, exclusión de marca, URL expansion apagada, exclusión de apps *(revisión 06-oct)*
+- ⬜ (Jhombis) Presupuesto: Search pasó de $25 a $22/día el 01-oct; con la PMax son $27/día (~$837/mes contra $760 del plan) *(revisión 06-oct)*
 - ✅ (PMM) Cuenta 523-801-4243 visible en el MCC de PMM *(Windsor: "Premium Local Listings 004043")*
 - ✅ (PMM) Facturación activa *(gasta desde el 22/08)*
 - ⬜ **[B]** (PMM) Aplicación automática de recomendaciones DESACTIVADA (revisar en la UI)
@@ -20,6 +22,7 @@ Fase 5 (PMax) eliminada: no califica con este presupuesto (ver `roadmap.md`).
 - ✅ (PMM) Red: solo Búsqueda *(ad_network_type = SEARCH)*
 
 ### Medición
+- ⬜ **[B]** (PMM) **Form Fill sin conversiones desde el 14-sep** (6 entre el 28-ago y el 14-sep; 0 en los 22 días siguientes con llamadas normales): revisar el disparador en GTM y Tag Assistant; preguntar al cliente si recibió formularios por email *(revisión 06-oct)*
 - ✅ (PMM) Google Tag en el sitio *(AW-18347420212, GTM-5VX6B6KS, GT-5DDGBBK6; sitio de una sola página)*
 - 🔄 **[B]** (PMM) Conversión "Formulario" probada con Tag Assistant *(existe "Form Fill": 6 conv.; sin página de gracias, disparador sin verificar)*
 - ⬜ **[B]** (PMM) Crear `/thank-you/` y redirigir el formulario de Elementor ahí; mover Form Fill a esa página
@@ -70,14 +73,16 @@ Fase 5 (PMax) eliminada: no califica con este presupuesto (ver `roadmap.md`).
 - ⬜ 1 RSA por ad group (máx. 2, CLAUDE.md #4), H1 pinneado, 15H/4D, fuerza "Buena" o superior (variante A de `data/ads-search.md`) *(hoy: 1 RSA por grupo, GOOD / EXCELLENT)*
 - ⬜ Extensiones: 4 sitelinks, 8 callouts, snippet de Servicios, llamada, ubicación (si hay GBP)
 - ⬜ URLs finales verificadas (200, https, sin redirect)
-- ✅ Presupuesto diario $25 *(confirmado)*
+- 🔄 Presupuesto diario: era $25; desde el 01-oct Search $22 + PMax $5 *(revisión 06-oct)*
 - ✅ Anuncios actuales aprobados *(APPROVED)*
 - ⬜ Anuncios nuevos aprobados (revisar 24 h después)
 - ✅ Primera conversión registrada *(25/08)*
 - ⬜ **[B]** ≥1 conversión **verificada** en la estructura nueva
 
-## Fase 2 — Limpieza (D7 10/13 · D14 10/20 · D30 11/05)
+## Fase 2 — Limpieza (D7 10/20 · D14 10/27 · D30 11/12, reprogramadas el 06-oct)
 - ✅ Revisión inicial (día ~38 de la cuenta) hecha: `log/2026-09-29.md`, negativas propuestas
+- ✅ Revisión semanal 06-oct: `log/2026-10-06.md`; 3 negativas nuevas propuestas (`data/2026-10-06-negatives.txt`)
+- ⬜ (PMM) Pasar "gruero cerca de mi" (agregada en broad) y "servicio de grua" a frase *(revisión 06-oct)*
 - ⬜ D7: search terms revisados, negativas agregadas
 - ⬜ D7: keywords sin impresiones identificadas (no pausar aún)
 - ⬜ D14: search terms revisados, negativas agregadas

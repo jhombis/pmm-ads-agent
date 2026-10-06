@@ -14,8 +14,8 @@ BODY = r'''<div class="wrap">
       <dt>MCC</dt><dd class="mono">444-523-7672</dd>
       <dt>Market</dt><dd>Wesley Chapel, FL (Pasco) · 20 mi radius · EN (+ ES conditional)</dd>
       <dt>D0</dt><dd class="num">Oct 1, 2026</dd>
-      <dt>Current phase</dt><dd><span class="chip st-run">Phase 0 · in progress</span></dd>
-      <dt>Updated</dt><dd class="num">Oct 1, 2026</dd>
+      <dt>Current phase</dt><dd><span class="chip st-block">Phase 0 · blocked</span></dd>
+      <dt>Updated</dt><dd class="num">Oct 6, 2026</dd>
     </dl>
   </header>
 
@@ -26,17 +26,17 @@ BODY = r'''<div class="wrap">
   <section id="resumen">
     <div class="sec-head"><h2>Summary</h2><p>Local, family-owned 24/7 towing at 3645 New River Rd, Wesley Chapel, FL: light and medium-duty towing, accidents, recovery and roadside. Goal: calls ≥60 s and form fills.</p></div>
     <div class="kpis">
-      <div class="kpi"><b>$760</b><span>ad spend/month · $25/day ($1,500 ENHPRM contract)</span></div>
+      <div class="kpi"><b>$760</b><span>planned ad spend/month · $25/day ($1,500 contract); since Oct 1: Search $22 + PMax $5</span></div>
       <div class="kpi"><b>$30–40</b><span>P1 target CPL · Fishhawk (Tampa) Search ~$31 · P2 goal ≤ $30</span></div>
       <div class="kpi"><b>~15–22</b><span>leads/month, base case (~94 clicks at $8.06)</span></div>
-      <div class="kpi"><b>Oct 6</b><span>relaunch with the new structure</span></div>
+      <div class="kpi"><b>Oct 13</b><span>relaunch with the new structure (rescheduled: Phase 0 blocked)</span></div>
     </div>
 
     <div class="two">
       <div>
         <p class="eyebrow">Account status today</p>
-        <h3 style="margin:6px 0 10px">$1,017.83 spent, 130 clicks, 21 conversions (Aug 22 → Sep 28)</h3>
-        <p>September closed with 18 conversions at a $38.50 CPL (August: $108.28). But all 3 conversion actions are primary and none is verified: if "Website Calls" (9 of 21) is a <span class="mono">tel:</span> click, the real CPL is above $60. The Spanish ad group spent $308.09 (30%) for 3 conversions. 13 of 21 keywords are broad. Of the visible search terms, <b>$87.08 of $629.42</b> went to competitors, public services, insurers, out-of-area searches or services Jerry's doesn't offer.</p>
+        <h3 style="margin:6px 0 10px">$1,214.89 spent, 169 clicks, 27 conversions (Aug 22 → Oct 5)</h3>
+        <p>September closed with 18 conversions at a $38.50 CPL (August: $108.28); the week of Sep 29 brought 6 conversions at $32.84. But <b>Form Fill hasn’t logged anything since Sep 14</b>, and on Oct 1 a <b>$5/day PMax</b> was created outside the plan. All 3 conversion actions are primary and none is verified: if "Website Calls" (9 of 21) is a <span class="mono">tel:</span> click, the real CPL is above $60. The Spanish ad group spent $308.09 (30%) for 3 conversions. 13 of 21 keywords are broad. Of the visible search terms, <b>$87.08 of $629.42</b> went to competitors, public services, insurers, out-of-area searches or services Jerry's doesn't offer.</p>
         <div class="bar-spend" role="img" aria-label="Breakdown of $629.42 in visible search terms">
           <i style="width:85.4%; background:var(--green)"></i><i style="width:6.1%; background:var(--orange)"></i><i style="width:5.3%; background:var(--red)"></i><i style="width:2.4%; background:var(--purple)"></i><i style="width:0.8%; background:var(--sky)"></i>
         </div>
@@ -47,7 +47,7 @@ BODY = r'''<div class="wrap">
           <span style="--c:var(--purple)">Out of area / service not offered $15.57</span>
           <span style="--c:var(--sky)">Own brand $4.95</span>
         </div>
-        <p class="muted" style="font-size:.85rem; margin-top:6px">Visible: $629.42 of $1,017.83 (62%); Google hides the rest for privacy. "Out of area" = Farmingdale NY ($5.85); "not offered" = RV transport ($9.72).</p>
+        <p class="muted" style="font-size:.85rem; margin-top:6px">Search terms Aug 22 → Sep 28. Visible: $629.42 of $1,017.83 (62%); Google hides the rest for privacy. "Out of area" = Farmingdale NY ($5.85); "not offered" = RV transport ($9.72).</p>
       </div>
       <div class="callout">
         <h3>The decision in five lines</h3>
@@ -56,7 +56,7 @@ BODY = r'''<div class="wrap">
           <li><b>Ad groups</b> 4 + conditional Grúa ES (fragmentation limit: $600–1,500/month → 1 campaign, 3–5 groups).</li>
           <li><b>Bidding and match</b> Max. Conversions if tracking checks out (if &lt;15 real conv./month remain, Max. Clicks with a $10 cap); phrase + exact; Presence, 20 mi radius; 24/7 if someone answers at night.</li>
           <li><b>The ceiling at this budget</b> ~15–22 conv./month; tCPA needs 30 → only at ~$35/day (decided after Phase 2, ~Dec 1).</li>
-          <li><b>Not doing</b> PMax, Display, remarketing, brand. LSA only with a Business Profile and an eligible category.</li>
+          <li><b>Not doing</b> PMax (the one created Oct 1 meets no conditions: recommendation, pause it), Display, remarketing, brand. LSA only with a Business Profile and an eligible category.</li>
         </ul>
       </div>
     </div>
@@ -76,19 +76,19 @@ BODY = r'''<div class="wrap">
   </section>
 
   <section id="evolucion">
-    <div class="sec-head"><h2>Performance · day 38 (September)</h2><p>Campaign "Jerry's … ENHPRM Radius", Sep 1 → Sep 28. Is the template working, and where does the money go?</p></div>
+    <div class="sec-head"><h2>Performance · week 7 (Sep 29 → Oct 5)</h2><p>Search "ENHPRM Radius" and the PMax created on Oct 1. Did Phase 0 move, and what changed in the account?</p></div>
     <div class="kpis">
-      <div class="kpi"><b>$693.01</b><span>spend in 28 days · 99% of $700</span></div>
-      <div class="kpi"><b>86</b><span>clicks · 822 impr. · 10.5% CTR</span></div>
-      <div class="kpi"><b>$8.06</b><span>avg. CPC · $9.05 over the last 7 days</span></div>
-      <div class="kpi"><b>18</b><span>conversions · $38.50 CPL · since launch: 9 Website Calls, 6 Form Fill, 6 Calls from Ads</span></div>
+      <div class="kpi"><b>$197.06</b><span>spend in 7 days · Search $174.54 + PMax $22.51 · October pacing ~$885</span></div>
+      <div class="kpi"><b>39</b><span>clicks · Search 23 (10.3% CTR) · PMax 16 (1.4% CTR)</span></div>
+      <div class="kpi"><b>$7.59</b><span>Search CPC ($9.05 the week before) · PMax $1.41</span></div>
+      <div class="kpi"><b>6</b><span>conversions · $32.84 CPL · 3 Calls from Ads, 3 Website Calls (1 from PMax), 0 forms</span></div>
     </div>
     <div class="two">
       <div style="min-width:0">
         <p class="eyebrow">The cause</p>
-        <h3 style="margin:6px 0 10px">The ad attracts clicks (10.5% CTR, above the MCC P75); it loses 52% of impressions to rank, and Spanish spends without converting</h3>
-        <div class="bar-spend" role="img" aria-label="Visible vs hidden"><i style="width:61.8%; background:var(--sky)"></i><i style="width:38.2%; background:var(--surface-2)"></i></div>
-        <div class="legend"><span style="--c:var(--sky)">Visible in search terms $629.42</span><span style="--c:var(--surface-2)">Hidden for privacy $388.41</span></div>
+        <h3 style="margin:6px 0 10px">Form Fill has been at zero for 22 days while calls keep coming: it’s tracking, not demand</h3>
+        <div class="bar-spend" role="img" aria-label="Visible vs hidden"><i style="width:65.1%; background:var(--sky)"></i><i style="width:34.9%; background:var(--surface-2)"></i></div>
+        <div class="legend"><span style="--c:var(--sky)">Visible in search terms $113.63</span><span style="--c:var(--surface-2)">Hidden for privacy $60.91</span></div>
         <div class="tbl" style="margin-top:14px"><table>
           <thead><tr><th>Day</th><th class="r">Impr.</th><th class="r">Clicks</th><th class="r">Cost</th><th class="r">CPC</th><th class="r">IS</th><th class="r">Lost (rank)</th><th class="r">Lost (budget)</th></tr></thead>
           <tbody>
@@ -98,20 +98,21 @@ BODY = r'''<div class="wrap">
         <div class="tbl" style="margin-top:14px"><table>
           <thead><tr><th>Ad group</th><th class="r">Impr.</th><th class="r">Clicks</th><th class="r">CTR</th><th class="r">Cost</th><th class="r">% spend</th></tr></thead>
           <tbody>
-            <tr><td>Ad group 1 - English (18 conv., $39.43 CPL)</td><td class="r">1,018</td><td class="r">81</td><td class="r">8.0%</td><td class="r">$709.74</td><td class="r">70%</td></tr>
-            <tr><td>Ad group 2 - Spanish (3 conv., $102.70 CPL)</td><td class="r">300</td><td class="r">49</td><td class="r">16.3%</td><td class="r">$308.09</td><td class="r">30%</td></tr>
+            <tr><td>Ad group 1 - English (3 conv., $28.49 CPL)</td><td class="r">168</td><td class="r">10</td><td class="r">6.0%</td><td class="r">$85.46</td><td class="r">43%</td></tr>
+            <tr><td>Ad group 2 - Spanish (2 conv., $44.54 CPL)</td><td class="r">55</td><td class="r">13</td><td class="r">23.6%</td><td class="r">$89.09</td><td class="r">45%</td></tr>
+            <tr><td>P. Max (1 conv. Website Calls)</td><td class="r">1,143</td><td class="r">16</td><td class="r">1.4%</td><td class="r">$22.51</td><td class="r">11%</td></tr>
           </tbody>
         </table></div>
-        <p class="muted" style="font-size:.86rem; margin-top:8px">Ad groups: Aug 22 → Sep 28. Lost IS (rank and budget) is only available as a September aggregate. 93% of spend on mobile. Sep 24–28 spent $7–21/day on a $25 budget.</p>
+        <p class="muted" style="font-size:.86rem; margin-top:8px">Forms by period: 6 from Aug 22 to Sep 14; 0 from Sep 15 to Oct 5 (with 14 call conversions). Visible search terms: clear waste "road ranger" $6.15; borderline "costo de una grua para auto" $7.00. The PMax spent on tablet and connected TV.</p>
       </div>
-      <div class="callout">
+      <div class="callout" style="min-width:0">
         <h3>Diagnosis</h3>
         <ul>
-          <li><b>Tracking:</b> Website Calls (9), Form Fill (6) and Calls from Ads (6), all three primary and unverified; the form has no thank-you page.</li>
-          <li><b>Volume:</b> 86 clicks in the month: enough to see spend trends, not to compare ads or hours.</li>
-          <li><b>Traffic:</b> 85% of visible spend is service intent; the waste is competitors, Road Rangers, insurers and searches from NY, OH and AZ (broad + possibly "Presence or interest").</li>
-          <li><b>Bidding/CPC:</b> leave it until tracking is verified; an $8 CPC is the Tampa market rate.</li>
-          <li><b>What to do:</b> 1) verify conversions and build /thank-you/; 2) negatives + Presence; 3) restructure on Oct 6 (phrase + exact, 4 groups, Spanish conditional).</li>
+          <li><b>Tracking:</b> Form Fill at zero since Sep 14 (before, about 1 every 3 days). The PMax’s only conversion is Website Calls, the unverified action.</li>
+          <li><b>Volume:</b> 23 Search clicks this week: the $34.91 CPL is week-to-week noise; the 28-day figure ($33.74) is the usable reference.</li>
+          <li><b>Off-plan changes:</b> $5/day PMax and Search $25 → $22 on Oct 1; "gruero cerca de mi" added as broad. Negatives weren’t applied ("road ranger" spent again).</li>
+          <li><b>Bidding/CPC:</b> leave it. 45% IS lost to rank: the lever is the landing page and reviews, not bids.</li>
+          <li><b>What to do:</b> 1) check the form trigger in GTM; 2) decide on the PMax; 3) negatives; 4) restructure on Oct 13.</li>
         </ul>
       </div>
     </div>
@@ -133,7 +134,7 @@ BODY = r'''<div class="wrap">
     <dl class="cfg">
       <div><dt>Campaign</dt><dd>Towing - Search - Radius (the current one, renamed)</dd></div>
       <div><dt>Type</dt><dd>Search · Search Network only (confirmed)</dd></div>
-      <div><dt>Budget</dt><dd class="num">$25/day (~$760/month)</dd></div>
+      <div><dt>Budget</dt><dd class="num">$25/day (~$760/month) in the plan · today Search $22 + PMax $5</dd></div>
       <div><dt>Bidding</dt><dd>Max. Conversions → if clean tracking leaves &lt;15 conv./month, Max. Clicks with a $10 cap → tCPA at ≥30 conv./30 days</dd></div>
       <div><dt>Conversions</dt><dd>Calls from Ads ≥60 s + form on /thank-you/; Website Calls only if it's a Google forwarding number (if it's a tel: click, secondary)</dd></div>
       <div><dt>Match</dt><dd>Phrase + exact on top terms · no broad (13 keywords move)</dd></div>
@@ -305,7 +306,7 @@ BODY = r'''<div class="wrap">
   <section id="porque">
     <div class="sec-head"><h2>Why not (yet)</h2></div>
     <div class="why">
-      <div><h4>Performance Max</h4><p>Fails 5 of 6 conditions: no stable tCPA, ~18 unverified conv./month, no own photos or video, no spam protection, and $25/day vs. the ~$115 it needs.</p></div>
+      <div><h4>Performance Max</h4><p>A $5/day one was created Oct 1, outside the plan (5 days: $22.51, 16 clicks, 1 Website Calls conv.); recommendation: pause it. Fails 5 of 6 conditions: no stable tCPA, ~18 unverified conv./month, no own photos or video, no spam protection, and $25/day vs. the ~$115 it needs.</p></div>
       <div><h4>Broad</h4><p>Its cost already shows: searches from NY, OH and AZ, Road Rangers, insurers and competitors. "tow truck near me" in phrase: $13.77 CPL; in broad: $41.74.</p></div>
       <div><h4>Display / Demand Gen</h4><p>An emergency service: nobody hires a tow truck from a banner.</p></div>
       <div><h4>Brand campaign</h4><p>"jerrys towing": 1–3 impressions in 38 days. There's no brand demand.</p></div>
@@ -326,14 +327,15 @@ BODY = r'''<div class="wrap">
 
   <footer>
     <span>Performance Media Marketing · Jerry's Auto Body Solutions &amp; Towing Service · account 523-801-4243</span>
-    <span>Sources: brief, audit-site, benchmark, competitors, strategy, roadmap, checklist and log 2026-09-29 · Windsor Aug 22 → Sep 28, 2026 · Semrush US</span>
+    <span>Sources: brief, audit-site, benchmark, competitors, strategy, roadmap, checklist and logs 2026-09-29 and 2026-10-06 · Windsor Aug 22 → Oct 5, 2026 · Semrush US</span>
   </footer>
 </div>'''
 
 CL_EN = [
+ 'Decision on the PMax created Oct 1 (recommendation: pause it)', 'Budget: Search $25 → $22 on Oct 1; with PMax $27/day (~$837/month vs $760)',
  'Account 523-801-4243 visible in the PMM MCC', 'Billing active (spending since Aug 22)', 'Auto-applied recommendations turned off',
  'Location = Presence; 20 mi radius from 3645 New River Rd; other countries excluded', 'Network: Search only',
- 'Google Tag on the site (AW-18347420212, GTM-5VX6B6KS, GT-5DDGBBK6)', 'Form Fill tested with Tag Assistant (6 conv.; trigger not verified)',
+ 'Google Tag on the site (AW-18347420212, GTM-5VX6B6KS, GT-5DDGBBK6)', 'Form Fill with no conversions since Sep 14: check the GTM trigger and ask the client', 'Form Fill tested with Tag Assistant (6 conv.; trigger not verified)',
  'Build /thank-you/ and redirect the Elementor form there', 'Calls from Ads with a 60 s minimum (6 conv.; not verified)',
  'Website Calls → secondary if it is a tel: click (9 conv., primary)', 'Secondary conversions set as secondary',
  'GA4 linked and "All visitors" audience imported', 'Hidden UTM + GCLID fields on the form',
@@ -354,9 +356,9 @@ CL_EN = [
  'Ad schedule per the client’s answer (24/7 or 6 am–11 pm)', 'Bidding: Maximize Conversions (no tCPA)',
  'If clean tracking leaves <15 conv./month → Max. Clicks with a $10 CPC cap', '1 RSA per ad group (max. 2), pinned H1, 15H/4D, Good strength or better',
  'Assets: 4 sitelinks, 8 callouts, snippet, call, location (if Business Profile)', 'Final URLs verified (200, https, no redirect)',
- 'Daily budget $25', 'Current ads approved', 'New ads approved (check 24 h later)', 'First conversion recorded (Aug 25)',
+ 'Daily budget: was $25; since Oct 1 Search $22 + PMax $5', 'Current ads approved', 'New ads approved (check 24 h later)', 'First conversion recorded (Aug 25)',
  '≥1 verified conversion in the new structure',
- 'Initial review (day ~38): log 2026-09-29, negatives proposed', 'D7: search terms → negatives; keywords with no impressions flagged',
+ 'Initial review (day ~38): log 2026-09-29, negatives proposed', 'Weekly review Oct 6: log 2026-10-06, 3 new negatives', 'Move "gruero cerca de mi" (added as broad) and "servicio de grua" to phrase', 'D7: search terms → negatives; keywords with no impressions flagged',
  'D14: search terms → negatives; >$80 spend with no conversion goes to review', 'D30: search terms; keywords with 0 impressions in 30 days paused',
  'D30: in Towing Near Me, pause the weaker of the 2 RSAs only if the gap is clear', 'D30: client lead-quality report (≥50% real)',
  'Watch hour 5 (clicks with no conversion) and daily spend under $20',
@@ -370,45 +372,46 @@ WHO = {'PMM': 'PMM', 'Cliente': 'Client', 'Jhombis': 'Jhombis'}
 
 DATA = {
  'steps': [
-  ['Verify the 3 conversions with Tag Assistant', 'Website Calls (Google forwarding number or tel: click?), Form Fill (what fires it?) and Calls from Ads (≥60 s). Anything that isn’t a real lead becomes secondary.', 'PMM', True],
+  ['Form Fill at zero since Sep 14', 'Check the form trigger in GTM and Tag Assistant; ask the client whether form emails arrived. Calls keep logging: it’s tracking.', 'PMM', True],
+  ['Decide on the PMax created Oct 1', 'Recommendation: pause it and put Search back to $25/day. If it stays: account-level negatives, brand exclusion, URL expansion off, app exclusion.', 'Jhombis', True],
+  ['Verify the 3 conversions with Tag Assistant', 'Website Calls (Google forwarding number or tel: click?), Form Fill and Calls from Ads (≥60 s). Anything that isn’t a real lead becomes secondary.', 'PMM', True],
   ['Build /thank-you/ and move Form Fill there', 'Redirect the Elementor form to the thank-you page and fire the conversion on its load.', 'PMM', True],
   ['Location on Presence, 20 mi radius', 'Check in the UI (Windsor doesn’t show it): there were clicks from NY, OH and AZ.', 'PMM', True],
-  ['Approve and apply the negatives', f'{NEG_TOTAL} niche + universal with 4 exceptions, via /negatives. Needs Jhombis’s OK.', 'Jhombis', True],
+  ['Approve and apply the negatives', f'{NEG_TOTAL} niche + universal with 4 exceptions + 3 new Spanish ones, via /negatives. "road ranger" spent $6.15 again.', 'Jhombis', True],
   ['Turn off auto-applied recommendations', 'The ENHPRM template may have them on.', 'PMM', True],
-  ['Restructure on Oct 6', '4 ad groups + conditional Grúa ES, broad → phrase + exact, pause 5 keywords, 1 RSA per group.', 'PMM', False],
-  ['Landing page: H1, normalized tel:, 3-field form', 'Quality Score improvements; social proof depends on the client’s reviews.', 'PMM', False],
-  ['Questions for the client', 'Ticket and close rate, Spanish, night answering, Business Profile, radius and services.', 'Client', False],
-  ['✓ Done Sep 29: first account review', 'log/2026-09-29: metrics, search terms and proposed negatives.', 'PMM', False],
+  ['Restructure on Oct 13', '4 ad groups + conditional Grúa ES, broad → phrase + exact (including "gruero cerca de mi"), pause 5 keywords, 1 RSA per group.', 'PMM', False],
+  ['Questions for the client', 'Forms received since Sep 14, ticket and close rate, Spanish, night answering, Business Profile, radius and services.', 'Client', False],
+  ['✓ Done Oct 6: weekly review', 'log/2026-10-06: Form Fill at zero, off-plan PMax, 3 new negatives; phases rescheduled.', 'PMM', False],
   ['✓ Done Oct 1: strategy, roadmap and checklist', 'Aligned with the CLAUDE.md rules: 1 RSA per group and bidding tied to tracking.', 'PMM', False],
  ],
  'mname': {'2026-10-01': 'Oct', '2026-11-01': 'Nov', '2026-12-01': 'Dec', '2027-01-01': 'Jan 2027'},
  'rows': [
-  {'k': 'F0', 'label': 'P0 Cleanup', 'bars': [{'a': '2026-10-01', 'b': '2026-10-06', 't': ''}, {'a': '2026-10-06', 'b': '2026-10-15', 't': 'client', 'ghost': True}]},
-  {'k': 'F1', 'label': 'P1 Relaunch', 'bars': [{'a': '2026-10-06', 'b': '2026-10-13', 't': '7 days'}]},
-  {'k': 'F2', 'label': 'P2 Cleanup reviews', 'bars': [{'a': '2026-10-13', 'b': '2026-11-05', 't': 'D7 · D14 · D30'}, {'a': '2026-11-05', 'b': '2026-12-01', 't': 'goal CPL ≤ $30', 'ghost': True}]},
-  {'k': 'F3', 'label': 'P3 tCPA', 'bars': [{'a': '2026-12-01', 'b': '2027-01-15', 't': 'only at $35/day', 'ghost': True}]},
+  {'k': 'F0', 'label': 'P0 Cleanup', 'bars': [{'a': '2026-10-01', 'b': '2026-10-12', 't': 'B'}, {'a': '2026-10-12', 'b': '2026-10-15', 't': '', 'ghost': True}]},
+  {'k': 'F1', 'label': 'P1 Relaunch', 'bars': [{'a': '2026-10-13', 'b': '2026-10-20', 't': '7 days'}]},
+  {'k': 'F2', 'label': 'P2 Cleanup reviews', 'bars': [{'a': '2026-10-20', 'b': '2026-11-12', 't': 'D7 · D14 · D30'}, {'a': '2026-11-12', 'b': '2026-12-08', 't': 'goal CPL ≤ $30', 'ghost': True}]},
+  {'k': 'F3', 'label': 'P3 tCPA', 'bars': [{'a': '2026-12-08', 'b': '2027-01-20', 't': 'only at $35/day', 'ghost': True}]},
   {'k': 'LAND', 'label': 'Landing page', 'bars': [{'a': '2026-10-01', 'b': '2026-10-10', 't': 'B'}, {'a': '2026-10-10', 'b': '2026-10-31', 't': 'improvements', 'ghost': True}]},
   {'k': 'LSA', 'label': 'LSA', 'bars': [{'a': '2026-10-20', 'b': '2026-11-03', 't': 'if Business Profile', 'ghost': True}]},
   {'k': 'F4', 'label': 'P4 Remarketing', 'bars': [], 'note': 'No date: audience < 1,000'},
-  {'k': 'F5', 'label': 'P5 PMax', 'bars': [], 'note': 'Doesn’t qualify'},
+  {'k': 'F5', 'label': 'P5 PMax', 'bars': [], 'note': 'Doesn’t qualify · created Oct 1: decide'},
  ],
  'phases': [
-  {'k': 'F0', 't': 'Cleanup', 'w': 'Oct 1 → Oct 6 (client by Oct 15)', 's': ['run', 'In progress'],
+  {'k': 'F0', 't': 'Cleanup', 'w': 'Oct 1 → Oct 12 (rescheduled Oct 6)', 's': ['block', 'Blocked'],
    'c': 'Phase 0 B items ✅: conversions verified, /thank-you/, Presence + 20 mi, negatives, recommendations off.',
-   'i': ['Verify Website Calls, Form Fill and Calls from Ads with Tag Assistant', 'Thank-you page and form conversion', f'{NEG_TOTAL} niche + universal negatives, with Jhombis’s OK', 'Client: ticket, Spanish, night hours, Business Profile']},
-  {'k': 'F1', 't': 'Search relaunch', 'w': 'Oct 6 → Oct 13', 's': ['todo', 'Pending'],
+   'i': ['New: Form Fill at zero since Sep 14; PMax created Oct 1 outside the plan', 'Verify Website Calls, Form Fill and Calls from Ads with Tag Assistant', 'Thank-you page and form conversion', f'{NEG_TOTAL} niche + universal negatives, with Jhombis’s OK', 'Client: ticket, Spanish, night hours, Business Profile']},
+  {'k': 'F1', 't': 'Search relaunch', 'w': 'Oct 13 → Oct 20 (rescheduled)', 's': ['todo', 'Pending'],
    'c': '7 days on the new structure, ads approved and ≥1 verified conversion.',
    'i': ['Same campaign, $25/day, Max. Conversions', '4 ad groups + conditional Grúa ES; broad → phrase + exact', '1 RSA per group (max. 2); pause 5 generic keywords']},
-  {'k': 'F2', 't': 'Cleanup D7 · D14 · D30', 'w': 'Oct 13 · Oct 20 · Nov 5', 's': ['todo', 'Pending'],
+  {'k': 'F2', 't': 'Cleanup D7 · D14 · D30', 'w': 'Oct 20 · Oct 27 · Nov 12 (rescheduled)', 's': ['todo', 'Pending'],
    'c': '3 reviews done, 4 weeks at CPL ≤ $40 and the client confirms ≥50% real leads.',
-   'i': ['Search terms → negatives', '>$80 spend with no conversion goes to review', 'Watch hour 5 and days spending < $20', 'Goal to move to P3: CPL ≤ $30 (~Dec 1)']},
-  {'k': 'F3', 't': 'tCPA', 'w': '~Jan 15, 2027, only at $35/day', 's': ['block', 'Blocked'],
+   'i': ['Search terms → negatives', '>$80 spend with no conversion goes to review', 'Watch hour 5 and days spending < $20', 'Goal to move to P3: CPL ≤ $30 (~Dec 8)']},
+  {'k': 'F3', 't': 'tCPA', 'w': '~Jan 20, 2027, only at $35/day', 's': ['block', 'Blocked'],
    'c': '≥30 conversions in 30 days with verified tracking.',
    'i': ['At $25/day the ceiling is ~20 conv./month', 'At $35/day and a $30 CPL → ~35 conv./month', 'tCPA = observed real CPA, not the desired one']},
   {'k': 'F4', 't': 'Remarketing', 'w': 'No date', 's': ['block', 'Blocked'],
    'c': 'Audience ≥1,000 users in 30 days.', 'i': ['~94 clicks/month and a new domain: won’t get there', 'Import the GA4 audience now (no cost)']},
   {'k': 'F5', 't': 'Performance Max', 'w': 'Doesn’t qualify', 's': ['block', 'Blocked'],
-   'c': 'Every condition in pmax-cuando-y-como.md.', 'i': ['Fails on: stable tCPA, 30+ verified conv./month, own photos and video, spam protection, budget ≥ $115/day']},
+   'c': 'Every condition in pmax-cuando-y-como.md.', 'i': ['Fails on: stable tCPA, 30+ verified conv./month, own photos and video, spam protection, budget ≥ $115/day', 'A $5/day one was created Oct 1 (5 days: $22.51, 1 Website Calls conv.): Jhombis to decide']},
   {'k': 'F6', 't': 'Offline conversions', 'w': 'Out of scope', 's': ['pause', 'Paused'],
    'c': 'Lead log with GCLID (CRM or sheet).', 'i': ['Interim step: a sheet where the client marks which leads became jobs']},
  ],
@@ -422,6 +425,7 @@ DATA = {
  'CL': [[c[0], t, WHO[c[2]], c[3], c[4]] for c, t in zip(DES['CL'], CL_EN)],
  'PHT': {'F0': 'Foundation / cleanup', 'F1': 'Search relaunch', 'F2': 'Cleanup D7 · D14 · D30', 'F3': 'Bid optimization (blocked)', 'F4': 'Remarketing', 'F6': 'Offline conversions'},
  'qs': [
+  ['<b>Have website form requests arrived by email since Sep 14?</b> The system hasn’t logged any since then.', True],
   ['<b>How many of September’s 18 contacts became jobs?</b> Without it the $38.50 CPL can’t be turned into profit.', False],
   ['<b>Ticket and margin:</b> average charge for a local tow and for medium-duty.', False],
   ['<b>Do they answer in Spanish?</b> If not, the Spanish group is paused (so far: $308.09 and 3 conversions).', True],

@@ -9,14 +9,11 @@ ROOT = Path('/home/user/pmm-ads-agent')
 C = ROOT / 'clients/jerrys-towing-wesley-chapel'
 SCR = Path(__file__).resolve().parent
 
-# Serie diaria (data/2026-09-29-campaign-daily.csv) + IS diario de Windsor (log 2026-09-29)
-IS = {'2026-09-15': .2206, '2026-09-16': .2155, '2026-09-17': .1441, '2026-09-18': .1308, '2026-09-19': .2346,
-      '2026-09-20': .1264, '2026-09-21': .1772, '2026-09-22': .2901, '2026-09-23': .1562, '2026-09-24': .0999,
-      '2026-09-25': .3293, '2026-09-26': .2222, '2026-09-27': .1731, '2026-09-28': .2647}
+# Serie diaria de Search de la última revisión (data/2026-10-06-campaign-daily.csv)
 DAILY = []
-for r in csv.DictReader(open(C / 'data/2026-09-29-campaign-daily.csv')):
-    if r['fecha'] in IS:
-        DAILY.append((r['fecha'], int(r['impresiones']), int(r['clics']), float(r['costo']), float(r['conversiones']), IS[r['fecha']]))
+for r in csv.DictReader(open(C / 'data/2026-10-06-campaign-daily.csv')):
+    if r['campana'].startswith('Search'):
+        DAILY.append((r['fecha'], int(r['impresiones']), int(r['clics']), float(r['costo']), float(r['conversiones']), float(r['is'])))
 
 # Anuncios (data/ads-search.md): variante A de cada grupo
 ADS = (C / 'data/ads-search.md').read_text()

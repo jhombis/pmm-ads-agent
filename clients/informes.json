@@ -26,7 +26,9 @@
       {"titulo": "Plan de Google Ads", "idioma": "ES", "url": "https://claude.ai/artifact/G41fXXn8ejrpzJN7JykQu5"},
       {"titulo": "Google Ads Plan", "idioma": "EN", "url": "https://claude.ai/artifact/U2e1QfnLLPYpek6vs2bGpn"}]},
     "jerrys-towing-wesley-chapel": {"mercado": "Wesley Chapel, FL", "cuenta": "523-801-4243", "informes": [
-      {"titulo": "Informe", "idioma": "ES", "url": "https://claude.ai/artifact/5yLQqmzN2bwdVkCUpboeUs"}]},
+      {"titulo": "Plan de Google Ads", "idioma": "ES", "url": "https://claude.ai/artifact/4BPtSrAmvJSYaeFhXCKvBE"},
+      {"titulo": "Google Ads Plan", "idioma": "EN", "url": "https://claude.ai/artifact/7SLqmrgbKmMYWC8AaPtjDC"},
+      {"titulo": "Informe", "idioma": "ES", "url": "https://claude.ai/artifact/5yLQqmzN2bwdVkCUpboeUs", "anterior": true}]},
     "290-tow-recovery": {"mercado": "Fredericksburg, TX", "cuenta": "213-019-5545", "informes": [
       {"titulo": "Plan 290 Tow & Recovery", "idioma": "ES", "url": "https://claude.ai/artifact/1ioZ9Qfes7GymvgprjRRbV"}]},
     "aamco-jacksonville-103rd": {"mercado": "Jacksonville, FL", "cuenta": "468-970-4116", "informes": [
