@@ -28,14 +28,14 @@ plan_en: https://claude.ai/artifact/8kNSv1uraooYbcADP5mzDY
 ## Fase 0 — Medición + negativas
 - **Fecha estimada**: 2026-10-06 → 2026-10-08.
 - **Condición de paso**: medición verificada y negativas aplicadas.
-  - Medición: Calls from Ads con umbral de 60 s, Website Calls probada y Form Fill como secundaria hasta que exista `/thank-you/`.
+  - Medición: Calls from Ads con umbral de 60 s, Website Calls probada y Form Fill probada. Form Fill sale del script `submit_success` después del captcha (sin `/thank-you/`, por decisión de Jhombis); hasta probarla, queda como secundaria.
   - Negativas: universal + nicho v2 + las 63 nuevas.
   - Ambas con OK de Jhombis.
 - **Tareas**:
   - **PMM, 10-07**:
     - Revisar en Detalles de llamadas las 8 llamadas (25-sep, 28-sep, 29-sep, 2-oct, 4-oct): duración, código de área y hora.
     - Confirmar el umbral de 60 s y que AW-18397446767 es de esta cuenta.
-  - **PMM, 10-07**: pasar Form Fill a secundaria. Crear `/thank-you/` con redirect del formulario y quitar el popup "Your Booking Is Not Yet Confirmed". Probar con Tag Assistant.
+  - **PMM, 10-07**: probar Form Fill con GTM Preview y Tag Assistant. Tiene que disparar 1 vez por envío válido, ninguna con el captcha fallido, sin el trigger nativo de Form Submission duplicado y con recuento "Una". Si pasa, vuelve a ser primaria.
   - **PMM, 10-07, requiere OK**: `/negatives` con la universal, `data/negatives-nicho.txt` (sin "cheap") y `data/2026-10-06-negatives.txt`.
   - **Cliente**: cruzar las 8 llamadas (¿clientes o gente buscando a otra grúa?); quién contesta de noche; ticket y margen; área real (Fair Oaks Ranch/Bulverde/Spring Branch); roadside que presta.
   - **Jhombis**: avisar al cliente que la proyección realista es **~14–24 llamadas/mes en el mes 2**, no 35–55.
@@ -73,7 +73,7 @@ plan_en: https://claude.ai/artifact/8kNSv1uraooYbcADP5mzDY
 ## Fase 3 — Optimización de puja
 - **Paso A, Maximizar conversiones: por resultados, sin fecha fija** (decisión de Jhombis, 2026-10-06).
   - Se evalúa en cada revisión: D14 (10-20), D21 (10-27), D30 (11-05) y semanal después. Se cambia en la **primera revisión que cumpla todo**:
-    1. **Medición F0 cerrada**: Calls from Ads ≥60 s, Website Calls probada, Form Fill secundaria o `/thank-you/` funcionando y sin doble conteo. Sin esto no se cambia, aunque haya volumen.
+    1. **Medición F0 cerrada**: Calls from Ads ≥60 s, Website Calls probada, Form Fill probada (script `submit_success`) y sin doble conteo. Sin esto no se cambia, aunque haya volumen.
     2. **Volumen**, con conversiones primarias **verificadas** desde el 06-oct (llamada ≥60 s que no viene de un search term de competidor, junk o empleo y, cuando se pueda, confirmada por el cliente). Vale cualquiera de dos vías:
        - vía rápida: **≥10 en los primeros 14 días** (ritmo ≥0.7/día ≈ 21/mes);
        - vía normal: **≥15 acumuladas**, el día en que se llegue.
@@ -123,7 +123,8 @@ plan_en: https://claude.ai/artifact/8kNSv1uraooYbcADP5mzDY
 ## Pista paralela — Landing
 | Ajuste | Tipo | Fecha | Responsable |
 |---|---|---|---|
-| `/thank-you/` + redirect del formulario y quitar el popup "Not Yet Confirmed" | **Bloqueante F0** | 2026-10-07 | PMM |
+| ~~`/thank-you/`~~ → probar el disparo de Form Fill (script `submit_success`) | **Bloqueante F0** | 2026-10-07 | PMM |
+| Texto del popup "Not Yet Confirmed" → confirmación sin pedir que llame | Mejora (evita conteo doble) | 2026-10-16 | PMM |
 | H1 de texto en el home ("24/7 Towing & Tow Truck Service in Fredericksburg, TX"); hoy no hay `<h1>` | Mejora (landing de AG1) | 2026-10-09 | PMM |
 | Velocidad del home: móvil 43, LCP 6.7 s, TBT 1,170 ms → objetivo LCP < 3 s | Mejora (bloquea si baja de 40) | 2026-10-16 | PMM |
 | Navy Veteran, 10% Senior Discount y radio en texto (hoy solo en la imagen) | Mejora | 2026-10-16 | PMM |
@@ -144,6 +145,7 @@ plan_en: https://claude.ai/artifact/8kNSv1uraooYbcADP5mzDY
 - Conclusión: no hay razón para esperar. Cada semana sin reestructurar cuesta ~$190 con ~46% de desperdicio.
 
 ## Historial de cambios
+- 2026-10-06: `/thank-you/` descartada (decisión de Jhombis). Form Fill se mide con el script `submit_success` después del captcha; la prueba con Tag Assistant sigue siendo bloqueante de F0.
 - 2026-10-06: Max. conversiones pasa a **disparador por resultados** (≥10 verificadas en 14 días o ≥15 acumuladas + medición cerrada + desperdicio <25%), evaluado desde el D14 (10-20), a pedido de Jhombis.
 - 2026-10-06: reestructura F1 aplicada en la cuenta (adelantada del 10-09). F2 → D7 10-13 · D14 10-20 · D30 11-05; Max conv → ~11-06.
 - 2026-10-06: reprogramado tras el diagnóstico de 18 días.

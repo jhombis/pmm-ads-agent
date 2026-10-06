@@ -35,7 +35,7 @@ supuestos:
 - **Situación.** La reestructura de la v2 **no se aplicó**. La cuenta sigue con la plantilla PLL: amplia, Maximizar clics sin tope visible y sin negativas. En 18 días gastó **$530.14**, con 53 clics a un CPC de **$10.00**, 6 conversiones y CPL de **$88.36**. El **45.8% de lo rastreable** ($126.66 de $276.32) es desperdicio claro.
 - **Estructura (sin cambios de fondo).** 1 campaña Search consolidada con **3 ad groups**: Towing, Exotic & Long-Distance y Roadside. Está dentro del límite de fragmentación del playbook ($600–1,500 → 1 campaña, 3–5 grupos).
 - **Orden de ejecución** (playbook):
-  1. Medición: Detalles de llamadas, umbral de 60 s, Form Fill como secundaria hasta tener `/thank-you/`.
+  1. Medición: Detalles de llamadas, umbral de 60 s, Form Fill probada con Tag Assistant. Sale del script `submit_success` después del captcha; no hay `/thank-you/`.
   2. Negativas.
   3. Estructura: frase + exacta, sin amplia.
   4. Puja: Maximizar clics con tope de **$6.50**.
@@ -60,7 +60,7 @@ Si el tope de $6.50 recorta el volumen porque "towing near me" hoy cuesta $9.67,
 ## Campañas
 | Campaña | Objetivo | Presupuesto/día | Puja | Geo | Horario |
 |---|---|---|---|---|---|
-| Se conserva la existente: "290 Tow and Recovery - ENHPRM Radius - $1500/mo. - 09/17/2026" (nombre PLL) | Llamadas: Calls from Ads + Website Calls como primarias. Form Fill **secundaria** hasta que exista `/thank-you/` | $27 (tope mensual $820.80) | Maximizar clics, tope CPC **$6.50** → Maximizar conversiones por resultados (≥10 verificadas en 14 días o ≥15 acumuladas + medición cerrada) → tCPA con ~30/30 días | **Presencia**, radio de 40 mi recentrado en Fredericksburg (30.2752, -98.8720). Excluir Fair Oaks Ranch, Bulverde y Spring Branch **solo si el cliente confirma** que no los atiende ($120.84 = 22.9% del gasto; 1 conversión, de un competidor) | 24/7 (el cliente contesta 24/7; zona horaria de la cuenta pendiente de verificar en la UI) |
+| Se conserva la existente: "290 Tow and Recovery - ENHPRM Radius - $1500/mo. - 09/17/2026" (nombre PLL) | Llamadas: Calls from Ads + Website Calls como primarias. Form Fill (script `submit_success` después del captcha) **secundaria hasta probarla** con Tag Assistant | $27 (tope mensual $820.80) | Maximizar clics, tope CPC **$6.50** → Maximizar conversiones por resultados (≥10 verificadas en 14 días o ≥15 acumuladas + medición cerrada) → tCPA con ~30/30 días | **Presencia**, radio de 40 mi recentrado en Fredericksburg (30.2752, -98.8720). Excluir Fair Oaks Ranch, Bulverde y Spring Branch **solo si el cliente confirma** que no los atiende ($120.84 = 22.9% del gasto; 1 conversión, de un competidor) | 24/7 (el cliente contesta 24/7; zona horaria de la cuenta pendiente de verificar en la UI) |
 
 **Configuración obligatoria**: solo red de Búsqueda (ya está así), rotación "optimizar", recomendaciones automáticas **apagadas**, idioma inglés, audiencias en observación.
 
@@ -113,7 +113,7 @@ Completo en `data/ads-search-towing.md` (v3): **1 RSA por ad group** (estándar 
 ## Landings requeridas
 | URL | Estado | Ad groups | Responsable | Bloqueante |
 |---|---|---|---|---|
-| `/thank-you/` + redirect del formulario (quitar popup "Your Booking Is Not Yet Confirmed") | No existe (404) | Form Fill | PMM | **Sí** |
+| Probar el disparo de Form Fill (script `submit_success` → `gtm.formSubmit`; sin `/thank-you/` por decisión) | Script presente, sin probar | Form Fill | PMM | **Sí** |
 | `/` | H1 de texto (hoy no hay `<h1>`; el hero es imagen) y velocidad (móvil 43, LCP 6.7 s) | AG1 | PMM | No (bloquea si el score baja de 40) |
 | `/exotic-vehicle-towing/` | Lista: CTA verificados en el HTML el 10-06 | AG2 | — | No |
 | `/local-long-distance-towing/` | Lista | AG2 | — | No |

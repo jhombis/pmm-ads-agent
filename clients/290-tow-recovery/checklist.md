@@ -34,14 +34,15 @@ Base: `knowledge/checklists/setup-cuenta.md`, ajustada al cliente.
 - [ ] **(B)** (PMM) "Calls from Ads" con duración mínima de **60 s**, verificada en la UI
 - [ ] **(B)** (PMM) Confirmar que AW-18397446767 corresponde a la cuenta 213-019-5545
 - [ ] **(B)** (PMM) "Website Calls" (clic en `tel:` desde móvil) probada con Tag Assistant
-- [ ] **(B)** (PMM) "Form Fill" como secundaria hasta que exista `/thank-you/`; después probarla con Tag Assistant
+- [ ] **(B)** (PMM) "Form Fill" probada con GTM Preview y Tag Assistant: dispara 1 vez por envío válido, ninguna con el captcha fallido, sin trigger nativo de Form Submission duplicado y con recuento "Una". Sale del script `submit_success` → `gtm.formSubmit`; no hay `/thank-you/` por decisión de Jhombis. Hasta probarla, queda como secundaria
 - [ ] (PMM) Verificar que la misma llamada no cuenta doble (Calls from Ads + Website Calls)
 - [ ] (PMM) GA4 vinculado a Ads y audiencia "Todos los visitantes" importada
 - [ ] (PMM) Campos ocultos UTM + GCLID en el formulario Elementor
 
 ### Landing (ver audit-site.md v3)
 - [x] (PMM) CTA "Get A Free Quote" + "Call Now" en `/exotic-vehicle-towing/`: verificados en el HTML el 10-06; el bloque vacío era un error de captura
-- [ ] **(B)** (PMM) `/thank-you/` + redirect del formulario y quitar el popup "Your Booking Is Not Yet Confirmed"
+- [x] Sin `/thank-you/`: no se crea (06-oct, decisión de Jhombis); la conversión sale del script de validación del captcha
+- [ ] (PMM) Popup "Your Booking Is Not Yet Confirmed": cambiar el texto a una confirmación ("We got your request — we'll call you right back"). Hoy pide llamar, y puede contar 2 conversiones por persona (Form Fill + Website Call). Mejora, no bloqueante
 - [ ] (PMM) H1 de texto en el home (hoy no hay `<h1>`; el hero es imagen): "24/7 Towing & Tow Truck Service in Fredericksburg, TX"
 - [ ] (PMM) Validar el volumen local en Keyword Planner (40 mi de 78624) y actualizar `data/keywords.csv`
 

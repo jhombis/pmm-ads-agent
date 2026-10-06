@@ -21,13 +21,19 @@ score: 12/22
 ## Veredicto
 **Requiere ajustes antes de lanzar la reestructuración.**
 - El sitio sirve para llamadas: el teléfono está en el header y hay botones "Call Now" en todas las páginas, con una página por servicio.
-- Bloquea la medición del formulario: no hay página de gracias. Al enviar sale un popup de Elementor ("Your Booking Is Not Yet Confirmed – Please give us a call at (830) 463-8318 now to confirm!").
+- El formulario se mide sin página de gracias (corrección del 06-oct). En el `<head>` hay un script que, con el evento `submit_success` de Elementor (solo se dispara cuando el envío pasa la validación del captcha en el servidor), empuja `gtm.formSubmit` al dataLayer. Jhombis lo usa en vez de `/thank-you/`. Falta probar el disparo con Tag Assistant.
+- Al enviar sale un popup de Elementor ("Your Booking Is Not Yet Confirmed – Please give us a call at (830) 463-8318 now to confirm!"). Es un tema de experiencia, no de medición.
 - El home móvil empeoró: score 43, LCP 6.7 s, TBT 1,170 ms.
 
 **Corrección respecto de la versión del 23/09:** la página `/exotic-vehicle-towing/` **sí tiene** los CTA "Get A Free Quote" y "Call Now (830) 463-8318" en el HTML, después del texto. El "bloque vacío" de la captura de PageSpeed era un render incompleto, no un error del sitio, así que **deja de ser bloqueante**. Las keywords exotic pueden activarse.
 
 ## Bloqueantes (resolver en Fase 0)
-- [ ] **Página de gracias medible** — crear `/thank-you/` y cambiar el "After Submit" del formulario Elementor de popup a redirect (o disparar la conversión en GTM con el evento `submit_success`). Hoy "Form Fill" no tiene dónde disparar de forma confiable. Responsable: PMM. Esfuerzo: 0.5 h.
+- [ ] **Probar el disparo de Form Fill** (reemplaza a `/thank-you/`, decisión de Jhombis del 06-oct). Con GTM Preview y Tag Assistant:
+  - un envío válido dispara la conversión **1 vez**;
+  - un envío con el captcha fallido o con campos inválidos **no** la dispara;
+  - ningún trigger nativo de "Form Submission" de GTM dispara también. Eso duplicaría el conteo, porque `gtm.formSubmit` es el nombre que usa ese trigger.
+  - En Ads, el recuento de la acción tiene que ser "Una".
+  - Responsable: PMM. Esfuerzo: 0.5 h.
 - [ ] **Verificar conversiones con Tag Assistant**:
   - "Calls from Ads" (umbral 60 s)
   - "Website Calls" (clic en `tel:(830)4638318`)
@@ -73,10 +79,10 @@ score: 12/22
 | Confianza | 1 | "Available 24/7" en texto. Navy Veteran solo en imagen. Sin TDLR ni seguro |
 | Velocidad móvil | 1 | Home 43 · light-medium 55 · exotic 62 (no bloquea: ninguna <40) |
 | Google Tag presente | 2 | GTM-WBX4RZ9K y AW-18397446767 en el HTML de todas las páginas. GA4 G-KH9SFWZK66 carga vía GTM |
-| Página de gracias medible | 0 | `/thank-you/` 404. El formulario abre un popup |
+| Conversión de formulario medible | 1 | Sin página de gracias (decisión). Script `submit_success` → `gtm.formSubmit` después de validar el captcha. Falta probarlo con Tag Assistant: sube a 2 si pasa |
 | Páginas por servicio | 2 | 4 servicios + about + schedule-a-tow |
 | Sin fugas | 1 | Sin links externos. Popup de "booking" después de enviar |
-| **Total** | **12/22** | |
+| **Total** | **13/22** | |
 
 ## Detalle por página
 | URL | H1 | CTA | Form | Tel | Prueba social | Nota |
@@ -98,6 +104,7 @@ Plataforma: WordPress + Elementor Pro, tema Hello Elementor, Google Site Kit. La
 - Teléfono único en todo el sitio: (830) 463-8318. No hay número de reenvío dinámico, así que "Website Calls" se mide por clic en `tel:`.
 - Sin Meta Pixel, CallRail, Clarity ni Hotjar.
 - Formulario Elementor sin `action` (AJAX). "After Submit" = popup "Your Booking Is Not Yet Confirmed".
+- Script en el `<head>`: `jQuery(document).on('submit_success', 'form[class^="elementor-form"]', …)`, que hace `dataLayer.push({event: 'gtm.formSubmit', 'gtm.elementId': …})`. Es la fuente de Form Fill.
 
 ## Velocidad (PageSpeed móvil, 2026-10-06)
 | Página | Score | LCP | CLS | TBT | Peso |
@@ -115,7 +122,7 @@ El 23/09 el home midió 55–79. La caída a 43 viene del TBT (JS). Las causas s
 | `/exotic-vehicle-towing/` | Lista (CTA verificados) | AG2, keywords exotic |
 | `/local-long-distance-towing/` | Lista | AG2, keywords long-distance |
 | `/roadside-assistance/` | Lista | AG3 Roadside |
-| `/thank-you/` | **Crear** (bloqueante) | Conversión Form Fill |
+| ~~`/thank-you/`~~ | No se crea (decisión de Jhombis): Form Fill sale del script `submit_success` | — |
 
 ## Qué ya rankea orgánico (Semrush, 2026-09-23)
 - 5 keywords, tráfico ≈ 0. La única con posición es "highway 290 wrecker service": posición 44 con `/light-medium-duty-towing/`.

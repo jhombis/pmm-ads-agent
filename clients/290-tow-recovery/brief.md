@@ -94,7 +94,7 @@ Fuentes:
 - **Formulario**:
   - "Contact Us" de 4 campos en cada página y "Schedule A Tow" de 9.
   - Al enviar, popup "Your Booking Is Not Yet Confirmed – Please give us a call to confirm".
-  - **No hay página de gracias** (`/thank-you/` da 404) (web).
+  - **No hay página de gracias** (`/thank-you/` da 404) (web). No se va a crear: Form Fill sale de un script que se dispara después de validar el captcha (Jhombis, 06-oct).
 - **Requisitos de política**: licencia TDLR de Texas. No es visible en el sitio; PENDIENTE.
 
 ## LSA (solo US)
@@ -130,7 +130,7 @@ Fuentes:
 8. ¿Ya creó el Google Business Profile?
 
 ## Pendientes
-- [ ] **(bloqueante)** Verificar las 8 llamadas y la medición (Tag Assistant, umbral de 60 s, `/thank-you/`).
+- [ ] **(bloqueante)** Verificar las 8 llamadas y la medición (Tag Assistant, umbral de 60 s, disparo de Form Fill por el script del captcha).
 - [ ] **(bloqueante)** Respuesta a leads (quién y en cuánto tiempo).
 - [ ] **(bloqueante para F2)** Ticket y margen → CPL máximo real.
 - [x] Historial de la cuenta leído: 09-23 (6 días) y 10-06 (18 días).
