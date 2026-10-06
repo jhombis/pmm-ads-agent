@@ -5,7 +5,7 @@ D0: 2026-09-24
 actualizado: 2026-10-06
 fase_actual: 0
 plan_es: https://claude.ai/artifact/1ioZ9Qfes7GymvgprjRRbV
-plan_en: PENDIENTE
+plan_en: https://claude.ai/artifact/8kNSv1uraooYbcADP5mzDY
 ---
 
 # Roadmap — 290 Tow and Recovery
