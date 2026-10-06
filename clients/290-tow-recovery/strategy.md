@@ -45,7 +45,7 @@ supuestos:
   - meses 3–6: **$21–38**
   - meta a 6 meses: **$15–16**
 - **Proyección.** $27/día ÷ $6.50 ≈ 4.2 clics/día (~126/mes). Con CVR de 11–19% salen **~14–24 llamadas/mes** en el mes 2, a un CPL de ~$34–59. Hay que decírselo al cliente: las 35–55 de la v1 eran números de cuentas maduras.
-- **Maximizar conversiones** con ≥15 conversiones **verificadas**/mes; **tCPA** con ~30 en 30 días, fijado desde el CPA observado. Con $825/mes eso exige un CPL ≤ $27.50: realista hacia el mes 4 (~ene-2027), no antes.
+- **Maximizar conversiones por resultados, sin fecha fija** (decisión del 06-oct). Desde el D14 se cambia en la primera revisión con: medición cerrada, ≥10 verificadas en 14 días o ≥15 acumuladas, y desperdicio <25%. Hay regla de reversión (detalle en `roadmap.md` F3). Luego, **tCPA** con ~30 en 30 días, fijado desde el CPA observado. Con $825/mes eso exige un CPL ≤ $27.50: realista hacia el mes 4 (~ene-2027), no antes.
 
 ## Matemática de presupuesto (playbook §4)
 | Escenario | CPC | Clics/mes | Tasa conv. | Llamadas/mes | CPL | Referencia |
@@ -60,7 +60,7 @@ Si el tope de $6.50 recorta el volumen porque "towing near me" hoy cuesta $9.67,
 ## Campañas
 | Campaña | Objetivo | Presupuesto/día | Puja | Geo | Horario |
 |---|---|---|---|---|---|
-| Se conserva la existente: "290 Tow and Recovery - ENHPRM Radius - $1500/mo. - 09/17/2026" (nombre PLL) | Llamadas: Calls from Ads + Website Calls como primarias. Form Fill **secundaria** hasta que exista `/thank-you/` | $27 (tope mensual $820.80) | Maximizar clics, tope CPC **$6.50** → Maximizar conversiones con ≥15 conv verificadas/mes → tCPA con ~30/30 días | **Presencia**, radio de 40 mi recentrado en Fredericksburg (30.2752, -98.8720). Excluir Fair Oaks Ranch, Bulverde y Spring Branch **solo si el cliente confirma** que no los atiende ($120.84 = 22.9% del gasto; 1 conversión, de un competidor) | 24/7 (el cliente contesta 24/7; zona horaria de la cuenta pendiente de verificar en la UI) |
+| Se conserva la existente: "290 Tow and Recovery - ENHPRM Radius - $1500/mo. - 09/17/2026" (nombre PLL) | Llamadas: Calls from Ads + Website Calls como primarias. Form Fill **secundaria** hasta que exista `/thank-you/` | $27 (tope mensual $820.80) | Maximizar clics, tope CPC **$6.50** → Maximizar conversiones por resultados (≥10 verificadas en 14 días o ≥15 acumuladas + medición cerrada) → tCPA con ~30/30 días | **Presencia**, radio de 40 mi recentrado en Fredericksburg (30.2752, -98.8720). Excluir Fair Oaks Ranch, Bulverde y Spring Branch **solo si el cliente confirma** que no los atiende ($120.84 = 22.9% del gasto; 1 conversión, de un competidor) | 24/7 (el cliente contesta 24/7; zona horaria de la cuenta pendiente de verificar en la UI) |
 
 **Configuración obligatoria**: solo red de Búsqueda (ya está así), rotación "optimizar", recomendaciones automáticas **apagadas**, idioma inglés, audiencias en observación.
 
@@ -125,7 +125,7 @@ Completo en `data/ads-search-towing.md` (v3): **1 RSA por ad group** (estándar 
 | **F0 — Medición + negativas** (10-06 → 10-08) | $825 (sigue corriendo) | Revisar las 8 llamadas en Detalles de llamadas con el cliente · umbral 60 s · Form Fill secundaria · aplicar negativas | Medición verificada con Tag Assistant + negativas aplicadas |
 | **F1 — Reestructura** (aplicada 10-06 · condición 10-13) | $825 | 3 grupos en frase/exacta · tope CPC $6.50 · 1 RSA por grupo · geo según el cliente | 7 días activa, anuncios aprobados, ≥1 conversión verificada con el cliente |
 | **F2 — Limpieza** (D7 10-16 · D14 10-23 · D30 11-08) | $825 | Search terms → negativas · reglas de control | 3 revisiones hechas, desperdicio < 15% de lo rastreable |
-| **F3 — Maximizar conversiones → tCPA** (~11-09 → ~ene-2027) | $825 (escalar solo si sube el fee) | Max conv con ≥15 conv verificadas/mes · tCPA con ~30/30 días · prueba de grupo en español | CPL estable ±20% durante 4 semanas |
+| **F3 — Maximizar conversiones → tCPA** (por resultados desde el D14, 10-20 → tCPA ~ene-2027) | $825 (escalar solo si sube el fee) | Max conv con ≥15 conv verificadas/mes · tCPA con ~30/30 días · prueba de grupo en español | CPL estable ±20% durante 4 semanas |
 | **Pista GBP + LSA** | LSA pay-per-lead, aparte o de los $825 (decide el cliente) | GBP → activo de ubicación → LSA | GBP verificado + licencia TDLR + seguro + background check |
 | **F4 — RLSA** | Dentro de los $825 | Audiencia de visitantes en observación | ≥1,000 usuarios/30 días (no se alcanza con ~126 clics/mes) |
 | **F5 — PMax** | Condicionado | — | 6–12 meses de Search estable (benchmark), 30+ conv/mes y assets propios |

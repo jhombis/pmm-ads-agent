@@ -18,7 +18,7 @@ plan_en: https://claude.ai/artifact/8kNSv1uraooYbcADP5mzDY
 | 0 — Medición + negativas | 2026-10-06 → 2026-10-08 | 🔄 en curso (atrasada desde el 29/09) |
 | 1 — Reestructura Search | aplicada 2026-10-06 · condición 2026-10-13 | 🔄 aplicada, en prueba |
 | 2 — Limpieza D7 · D14 · D30 | 2026-10-13 · 2026-10-20 · 2026-11-05 | ⏳ pendiente |
-| 3 — Maximizar conversiones → tCPA | Max conv ~2026-11-06 · tCPA ~2027-01 | ⏳ pendiente |
+| 3 — Maximizar conversiones → tCPA | Max conv **por resultados**: se evalúa en cada revisión desde el D14 (10-20); rango probable 10-20 → ~11-07 · tCPA ~2027-01 | ⏳ pendiente |
 | 4 — Remarketing (RLSA) | Sin fecha | ⛔ no califica por volumen |
 | 5 — Performance Max | No antes de 2027-03 | ⛔ bloqueada |
 | 6 — Conversiones offline | Fuera de alcance | ⏳ futuro |
@@ -71,9 +71,29 @@ plan_en: https://claude.ai/artifact/8kNSv1uraooYbcADP5mzDY
   - calidad de las llamadas reportada por el cliente en el D30
 
 ## Fase 3 — Optimización de puja
-- **Paso A, Maximizar conversiones**: ~2026-11-06.
-  - Condición: ≥15 conversiones **verificadas**/mes con medición limpia (estándar 6).
-  - Supuesto: ~126 clics/mes × 11–19% = 14–24 conversiones/mes. Es alcanzable en el mes 2 solo si se sostiene el escenario base.
+- **Paso A, Maximizar conversiones: por resultados, sin fecha fija** (decisión de Jhombis, 2026-10-06).
+  - Se evalúa en cada revisión: D14 (10-20), D21 (10-27), D30 (11-05) y semanal después. Se cambia en la **primera revisión que cumpla todo**:
+    1. **Medición F0 cerrada**: Calls from Ads ≥60 s, Website Calls probada, Form Fill secundaria o `/thank-you/` funcionando y sin doble conteo. Sin esto no se cambia, aunque haya volumen.
+    2. **Volumen**, con conversiones primarias **verificadas** desde el 06-oct (llamada ≥60 s que no viene de un search term de competidor, junk o empleo y, cuando se pueda, confirmada por el cliente). Vale cualquiera de dos vías:
+       - vía rápida: **≥10 en los primeros 14 días** (ritmo ≥0.7/día ≈ 21/mes);
+       - vía normal: **≥15 acumuladas**, el día en que se llegue.
+    3. **Search terms limpios**: desperdicio <25% del gasto rastreable en los últimos 7 días, para que el algoritmo no aprenda de basura.
+  - **Mínimo 14 días** con la estructura nueva, porque antes los datos mezclan la plantilla vieja.
+  - **Cómo se cambia**:
+    - Max. conversiones **sin tCPA**, con los mismos $27/día; el presupuesto es el tope real, porque Max. conversiones no admite tope de CPC.
+    - No se toca nada más esa semana: ni keywords nuevas ni anuncios.
+  - **Cuándo se revierte**: se vuelve a Max. clics con tope de $6.50 si, 14 días después del cambio y pasado el aprendizaje de ~7 días, pasa cualquiera de estas cosas:
+    - conversiones/día caen >30% frente a los 14 días previos;
+    - CPL > $63 (techo de la cohorte nueva);
+    - CPC medio > $12 sin más conversiones.
+  - **Rango probable**:
+    - con 24 conversiones/mes, la vía rápida se cumple el **20-oct**;
+    - con 14/mes, las 15 llegan hacia el **~07-nov**.
+    - Lo que más adelanta la fecha es cerrar la medición esta semana.
+  - **Por qué no hoy**:
+    - hay 0 conversiones verificadas;
+    - de las 6 del período anterior, 3 vienen de búsquedas de competidores o junk;
+    - con eso, Max. conversiones aprendería a comprar esas búsquedas (caso Noah's Tow Truck, playbook §5).
 - **Paso B, tCPA**: ~2027-01.
   - Condición: ~30 conversiones en 30 días, fijado desde el CPA observado × 1.1.
   - Supuesto: con $825/mes, 30 conversiones exigen un CPL ≤ $27.50. La cohorte del MCC converge a $15–28 recién en los meses 3–6 (`towing-us.md`).
@@ -124,6 +144,7 @@ plan_en: https://claude.ai/artifact/8kNSv1uraooYbcADP5mzDY
 - Conclusión: no hay razón para esperar. Cada semana sin reestructurar cuesta ~$190 con ~46% de desperdicio.
 
 ## Historial de cambios
+- 2026-10-06: Max. conversiones pasa a **disparador por resultados** (≥10 verificadas en 14 días o ≥15 acumuladas + medición cerrada + desperdicio <25%), evaluado desde el D14 (10-20), a pedido de Jhombis.
 - 2026-10-06: reestructura F1 aplicada en la cuenta (adelantada del 10-09). F2 → D7 10-13 · D14 10-20 · D30 11-05; Max conv → ~11-06.
 - 2026-10-06: reprogramado tras el diagnóstico de 18 días.
   - F0 → 10-06/10-08 y F1 → 10-09.

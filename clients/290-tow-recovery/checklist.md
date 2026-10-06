@@ -83,8 +83,9 @@ Base: `knowledge/checklists/setup-cuenta.md`, ajustada al cliente.
 - [ ] (PMM) D30 (2026-11-05): search terms → negativas; keywords con 0 impresiones pausadas; desperdicio <15% del rastreable
 - [ ] (Cliente) D30: calidad de las llamadas reportada (hoja compartida: llamada → trabajo sí/no → ticket)
 
-## Fase 3 — Optimización de puja (Max conv ~2026-11-06 · tCPA ~2027-01)
-- [ ] (PMM) ≥15 conversiones verificadas/mes → Maximizar conversiones
+## Fase 3 — Optimización de puja (Max conv por resultados desde el D14, 10-20 · tCPA ~2027-01)
+- [ ] (PMM) Max. conversiones en la primera revisión que cumpla: medición F0 cerrada + (≥10 conversiones verificadas en los primeros 14 días **o** ≥15 acumuladas desde el 06-oct) + desperdicio <25% en 7 días. Mismo presupuesto, sin tCPA
+- [ ] (PMM) 14 días después del cambio: revertir a Max. clics con tope de $6.50 si conversiones/día caen >30%, CPL > $63 o CPC > $12 sin más conversiones
 - [ ] (PMM) ≥30 conversiones en 30 días → tCPA = CPL real de 30 días × 1.1 (no el deseado)
 - [ ] (PMM) Prueba de grupo en español ("grua cerca de mi", "servicio de grua") si el cliente atiende en español
 - [ ] (PMM) Presupuesto revisado según CPL y capacidad del cliente
