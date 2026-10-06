@@ -23,7 +23,8 @@ Base: `knowledge/checklists/setup-cuenta.md`, ajustada al cliente.
 - [x] **(B)** (PMM) Lista universal PMM aplicada (06-oct, a nivel campaña vía Windsor: 138 términos sin choques)
 - [x] **(B)** (PMM) Lista de nicho v3 aplicada (06-oct: 95 términos, sin "cheap")
 - [x] **(B)** (PMM) Negativas nuevas del diagnóstico aplicadas (06-oct: 52; resto ya cubierto o en pausa). Total cargado 285, verificado
-- [ ] **(B)** (PMM) Quitar negativas existentes que bloquean el plan (requiere OK): `kerrville towing` [exacta], `city`, `Towed`, `Get car towed`, `Shop`, `shops` · marcas de lujo y llantas cuando el cliente confirme exotic/roadside (ver log/2026-10-06.md)
+- [x] **(B)** (PMM) Negativas viejas que bloqueaban el plan quitadas (06-oct, con OK): `kerrville towing` [exacta], `city`, `Towed`, `Get car towed`, `Shop`, `shops`. Quedan 609 negativas
+- [ ] (PMM) Quitar marcas de lujo y exactas de llantas cuando el cliente confirme exotic y roadside (ver log/2026-10-06.md)
 - [ ] (PMM) D7 de negativas (13-oct): desperdicio sobre lo rastreable contra 45.8%
 - [ ] (PMM) Revisar el historial de cambios en la UI: quién renombró "Ad group 1 - Towing General", quitó "emergency roadside" y creó AG2
 
