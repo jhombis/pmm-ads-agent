@@ -1,0 +1,41 @@
+{
+  "_nota": "Registro de informes publicados (artefactos). Lo actualiza /informe al publicar; scripts/indice_informes.py genera el índice para el equipo. Los artefactos son privados: para que el equipo los abra, cada uno se comparte desde Share.",
+  "indice_url": "https://claude.ai/artifact/JXRZn2E1ScDXyBmsrzFvYm",
+  "clientes": {
+    "pro-phase-electric": {"mercado": "Northwest Arkansas", "cuenta": "758-301-1023", "informes": [
+      {"titulo": "Plan de Google Ads", "idioma": "ES", "url": "https://claude.ai/artifact/B6JRbhCt3HNMFq29UeJv36"},
+      {"titulo": "Google Ads Plan", "idioma": "EN", "url": "https://claude.ai/artifact/3KhWsGyQmP8QY9ZLm1zZgk"}]},
+    "rr-roadside-relief": {"mercado": "Oklahoma City, OK", "cuenta": "425-405-2574", "informes": [
+      {"titulo": "Plan de Google Ads", "idioma": "ES", "url": "https://claude.ai/artifact/RHUHPWofMcvYwJUfH4uZcf"},
+      {"titulo": "Google Ads Plan", "idioma": "EN", "url": "https://claude.ai/artifact/KpYB2DXW2n6xFLunVfhimH"}]},
+    "hemet-affordable-burial-cremation": {"mercado": "Hemet, CA", "informes": [
+      {"titulo": "Plan Google Ads", "idioma": "ES", "url": "https://claude.ai/artifact/KYjEPTKtqCNQxzaUKmQp3U"},
+      {"titulo": "Google Ads Plan", "idioma": "EN", "url": "https://claude.ai/artifact/6xM5pAmQxmVM8i293nk2Bw"}]},
+    "jq-towing-fl": {"mercado": "Belleview / Ocala, FL", "cuenta": "986-810-9972", "informes": [
+      {"titulo": "Plan Google Ads", "idioma": "ES", "url": "https://claude.ai/artifact/48Lm7JkvRJCd57bqFy4B6Y"},
+      {"titulo": "Google Ads plan", "idioma": "EN", "url": "https://claude.ai/artifact/4FBZLakgJxvFVybD57csmC"},
+      {"titulo": "Onboarding y plan", "idioma": "ES", "url": "https://claude.ai/artifact/BxstmV6qzohw1ft468hzpw", "anterior": true}]},
+    "colton-sunflower": {"mercado": "Colton, CA", "cuenta": "151-776-2744", "informes": [
+      {"titulo": "Plan de Google Ads", "idioma": "ES", "url": "https://claude.ai/artifact/74WA8FWCjHGkiYPWh8h8fy"},
+      {"titulo": "Google Ads Plan", "idioma": "EN", "url": "https://claude.ai/artifact/3gJMiMNSMNamGjVe2wZsTv"},
+      {"titulo": "Informe", "idioma": "ES", "url": "https://claude.ai/artifact/3VGohzUMyHNpqPY6bHuTtP", "anterior": true}]},
+    "spillanes-towing": {"mercado": "South Burlington, VT", "informes": [
+      {"titulo": "Plan de Google Ads", "idioma": "ES", "url": "https://claude.ai/artifact/5jRVHYZDmtkZjJ5NY8SZP5"},
+      {"titulo": "Google Ads Plan", "idioma": "EN", "url": "https://claude.ai/artifact/EKPVNm3B52xtdNnq9aL9w7"}]},
+    "jump-towing": {"mercado": "Brooklyn Park, MN", "cuenta": "220-410-9619", "informes": [
+      {"titulo": "Plan de Google Ads", "idioma": "ES", "url": "https://claude.ai/artifact/G41fXXn8ejrpzJN7JykQu5"},
+      {"titulo": "Google Ads Plan", "idioma": "EN", "url": "https://claude.ai/artifact/U2e1QfnLLPYpek6vs2bGpn"}]},
+    "jerrys-towing-wesley-chapel": {"mercado": "Wesley Chapel, FL", "cuenta": "523-801-4243", "informes": [
+      {"titulo": "Informe", "idioma": "ES", "url": "https://claude.ai/artifact/5yLQqmzN2bwdVkCUpboeUs"}]},
+    "290-tow-recovery": {"mercado": "Fredericksburg, TX", "cuenta": "213-019-5545", "informes": [
+      {"titulo": "Plan 290 Tow & Recovery", "idioma": "ES", "url": "https://claude.ai/artifact/1ioZ9Qfes7GymvgprjRRbV"}]},
+    "aamco-jacksonville-103rd": {"mercado": "Jacksonville, FL", "cuenta": "468-970-4116", "informes": [
+      {"titulo": "Plan AAMCO 103rd St", "idioma": "ES", "url": "https://claude.ai/artifact/UxnqWzL2RYwuPgai6HBKJx"},
+      {"titulo": "AAMCO 103rd St Plan", "idioma": "EN", "url": "https://claude.ai/artifact/XiXSBQnbPn6F1Wsrt3dfmx"},
+      {"titulo": "Business Profile", "idioma": "ES", "url": "https://claude.ai/artifact/9GRF449V869jctM9obs75J", "extra": true}]},
+    "precision-towing": {"mercado": "Lake Isabella / Kern River Valley, CA", "cuenta": "753-255-2245", "informes": []}
+  },
+  "otros": [
+    {"cliente": "Beach Cities RV", "titulo": "Google Ads", "idioma": "ES", "url": "https://claude.ai/artifact/Sz3wTC2CYxBBD1bxGmiBfu", "fecha": "2026-08-26", "nota": "Sin carpeta de cliente en el repo"}
+  ]
+}
