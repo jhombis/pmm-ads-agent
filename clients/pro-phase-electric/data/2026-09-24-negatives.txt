@@ -1,0 +1,29 @@
+# Propuesta D2 (24-sep) — Search NWA 24273708366. Aplicar solo con OK de Jhombis vía /negatives.
+# Destino: lista compartida "pro-phase-electric nicho". Formato: término | match | categoría | evidencia
+journeyman | PHRASE | Empleo/licencia | "journeyman electrician", "journeyman electrician license", "electrical journeyman test" (vía "licensed electrician")
+license lookup | PHRASE | Empleo/licencia | "arkansas electrician license lookup", "alabama electrical license lookup"
+electrician license | PHRASE | Empleo/licencia | preventiva, misma familia
+electrical license | PHRASE | Empleo/licencia | preventiva, misma familia
+electric company | PHRASE | Utilities | "electric company bentonville ar"
+electric companies | PHRASE | Utilities | "electric companies in northwest arkansas", "nwa electric companies"
+hill electric | PHRASE | Competidor | "hill electric farmington ar"
+howard jones | PHRASE | Competidor | "howard jones electric rogers ar"
+karstetter | PHRASE | Competidor | "karstetter electric"
+tri cities electric | PHRASE | Competidor | "tri cities electric"
+how much is a breaker box for a house | EXACT | Precio/producto | 1 clic, $7.08 (vía "electrical panel replacement cost")
+# --- Agregado 29-sep (D6): nuevos términos con impresiones 23–29 sep ---
+armor electric | PHRASE | Competidor | "armor electric bentonville ar" (7 impr.)
+whatley twins | PHRASE | Competidor | "whatley twins electric" (3 impr.)
+genesis 1 3 electric | PHRASE | Competidor | 2 impr.
+spectrum electric | PHRASE | Competidor | "spectrum electric near me"
+snell northcutt | PHRASE | Competidor | "snell northcutt electric inc"
+shock squad | PHRASE | Competidor | 1 impr.
+level 5 electric | PHRASE | Competidor | 1 impr.
+kordsmeier | PHRASE | Competidor/geo | "kordsmeier conway ar" (Conway está fuera del área)
+fusion electrical | PHRASE | Competidor | 1 impr.
+franklin electric | PHRASE | Competidor/producto | "franklin electric arkansas"
+burl smith | PHRASE | Competidor | "burl smith electric"
+all ark electric | PHRASE | Competidor | 1 impr.
+cost of a circuit breaker | EXACT | Precio/producto | 1 impr.
+how much is a new breaker | EXACT | Precio/producto | 1 impr.
+# Enrutamiento (no negativa de cuenta): en Electrical Repair, cambiar la negativa "breaker box" por "breaker box replacement" y agregar la keyword "breaker box repair" (frase)

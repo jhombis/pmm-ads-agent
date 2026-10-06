@@ -1,0 +1,672 @@
+<!doctype html>
+<html lang="es">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{Cliente}} · {{Tipo de informe}}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+:root{
+  --ground:#FFFFFF; --surface:#F5F5F8; --surface-2:#ECECF2; --ink:#121216; --ink-2:#3A3B45; --muted:#6A6C78; --line:#E2E2EA;
+  --yellow:#F5C518; --orange:#F39A1E; --red:#E0452B; --green:#22A55B; --blue:#27409C; --sky:#4F8FD6; --purple:#86479A;
+  --ok:#1C8F55; --ok-bg:#E3F4EA; --warn:#A86A00; --warn-bg:#FFF3D6; --bad:#C23A22; --bad-bg:#FCE7E2; --idle-bg:#EFEFF4;
+  --logo-plate:#FFFFFF;
+  --f-display:"Red Hat Display", "Segoe UI", system-ui, sans-serif;
+  --f-body:"Source Sans 3", "Segoe UI", system-ui, sans-serif;
+  --f-mono:"JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#0F1015; --surface:#171820; --surface-2:#20222C; --ink:#EEEEF3; --ink-2:#C9CAD4; --muted:#9496A4; --line:#2B2D38;
+    --yellow:#F7CE3A; --orange:#F6A945; --red:#F0664F; --green:#3CC478; --blue:#6C86E6; --sky:#78AEEA; --purple:#B679C9;
+    --ok:#4FD08C; --ok-bg:#15301F; --warn:#F2C152; --warn-bg:#342913; --bad:#F27C66; --bad-bg:#3A1C17; --idle-bg:#22242E;
+    --logo-plate:#FFFFFF;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0F1015; --surface:#171820; --surface-2:#20222C; --ink:#EEEEF3; --ink-2:#C9CAD4; --muted:#9496A4; --line:#2B2D38;
+  --yellow:#F7CE3A; --orange:#F6A945; --red:#F0664F; --green:#3CC478; --blue:#6C86E6; --sky:#78AEEA; --purple:#B679C9;
+  --ok:#4FD08C; --ok-bg:#15301F; --warn:#F2C152; --warn-bg:#342913; --bad:#F27C66; --bad-bg:#3A1C17; --idle-bg:#22242E;
+  --logo-plate:#FFFFFF;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--ground); color:var(--ink); font-family:var(--f-body); font-size:16px; line-height:1.55; -webkit-font-smoothing:antialiased}
+.wrap{max-width:1120px; margin:0 auto; padding-inline:20px; padding-block:28px 64px}
+h1,h2,h3,h4{font-family:var(--f-display); line-height:1.15; margin:0; text-wrap:balance; color:var(--ink)}
+h2{font-size:1.65rem; font-weight:900; letter-spacing:-.01em}
+h3{font-size:1.12rem; font-weight:700}
+p{margin:0}
+a{color:var(--blue)}
+:focus-visible{outline:3px solid var(--sky); outline-offset:2px; border-radius:4px}
+.mono{font-family:var(--f-mono); font-size:.86em}
+.num{font-variant-numeric:tabular-nums}
+.muted{color:var(--muted)}
+.eyebrow{font-family:var(--f-display); font-weight:700; font-size:.74rem; text-transform:uppercase; letter-spacing:.14em; color:var(--muted)}
+
+/* Masthead */
+.mast{display:grid; grid-template-columns:1fr auto; gap:20px 28px; align-items:end; padding-bottom:18px; border-bottom:4px solid var(--ink)}
+.logo{background:var(--logo-plate); border-radius:8px; padding:10px 14px; display:inline-block; max-width:100%}
+.logo img{display:block; height:46px; width:auto; max-width:100%}
+.mast h1{font-size:clamp(2rem,5vw,3.1rem); font-weight:900; letter-spacing:-.02em; margin-top:18px}
+.mast .sub{color:var(--ink-2); margin-top:6px; max-width:62ch}
+.meta{display:grid; grid-template-columns:auto auto; gap:4px 16px; font-size:.92rem; align-self:end}
+.meta dt{color:var(--muted)} .meta dd{margin:0; font-weight:600}
+@media (max-width:760px){ .mast{grid-template-columns:1fr} }
+
+/* Nav */
+nav.toc{position:sticky; top:env(safe-area-inset-top,0px); z-index:5; background:var(--ground); border-bottom:1px solid var(--line); margin-inline:-20px; padding:10px 20px; display:flex; gap:6px; overflow-x:auto; scrollbar-width:thin}
+nav.toc a{flex:none; font-family:var(--f-display); font-weight:700; font-size:.82rem; text-decoration:none; color:var(--ink-2); padding:6px 10px; border-radius:999px}
+nav.toc a:hover{background:var(--surface-2); color:var(--ink)}
+
+section{padding-top:48px; scroll-margin-top:60px}
+.sec-head{display:flex; align-items:baseline; justify-content:space-between; gap:12px; flex-wrap:wrap; margin-bottom:18px}
+.sec-head p{color:var(--muted); max-width:60ch}
+
+/* KPI strip */
+.kpis{display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:1px; background:var(--line); border:1px solid var(--line); border-radius:12px; overflow:hidden}
+.kpi{background:var(--ground); padding:16px 18px}
+.kpi b{display:block; font-family:var(--f-display); font-size:1.7rem; font-weight:900; letter-spacing:-.01em; font-variant-numeric:tabular-nums}
+.kpi span{font-size:.88rem; color:var(--muted)}
+@media (max-width:760px){ .kpis{grid-template-columns:repeat(2,minmax(0,1fr))} }
+
+.two{display:grid; grid-template-columns:1.1fr .9fr; gap:28px; margin-top:24px}
+@media (max-width:860px){ .two{grid-template-columns:1fr} }
+.callout{background:var(--surface); border-radius:12px; padding:18px 20px}
+.callout h3{margin-bottom:8px}
+.callout ul{margin:0; padding-left:1.1em} .callout li{margin:4px 0}
+.bar-spend{display:flex; height:14px; border-radius:7px; overflow:hidden; margin:12px 0 8px; background:var(--surface-2)}
+.bar-spend i{display:block; height:100%}
+.legend{display:flex; flex-wrap:wrap; gap:6px 14px; font-size:.85rem; color:var(--ink-2)}
+.legend span::before{content:""; display:inline-block; width:10px; height:10px; border-radius:3px; margin-right:6px; vertical-align:-1px; background:var(--c)}
+
+/* Chips */
+.chip{display:inline-flex; align-items:center; gap:6px; font-family:var(--f-display); font-weight:700; font-size:.72rem; letter-spacing:.04em; text-transform:uppercase; padding:3px 9px; border-radius:999px; white-space:nowrap}
+.st-done{background:var(--ok-bg); color:var(--ok)}
+.st-run{background:var(--warn-bg); color:var(--warn)}
+.st-todo{background:var(--idle-bg); color:var(--ink-2)}
+.st-block{background:var(--bad-bg); color:var(--bad)}
+.st-pause{background:var(--idle-bg); color:var(--muted)}
+.b-flag{background:var(--ink); color:var(--ground); font-family:var(--f-display); font-weight:900; font-size:.66rem; padding:2px 6px; border-radius:4px; letter-spacing:.05em}
+.who{font-family:var(--f-display); font-weight:700; font-size:.72rem; padding:2px 8px; border-radius:6px; border:1px solid var(--line); color:var(--ink-2); white-space:nowrap}
+
+/* Next steps */
+.steps{display:grid; gap:0; border-top:1px solid var(--line)}
+.step{display:grid; grid-template-columns:28px 1fr auto; gap:14px; padding:14px 2px; border-bottom:1px solid var(--line); align-items:start}
+.step .n{font-family:var(--f-mono); color:var(--muted); font-size:.85rem; padding-top:2px}
+.step p.d{color:var(--ink-2); font-size:.93rem; margin-top:2px}
+.step .tags{display:flex; gap:6px; flex-wrap:wrap; justify-content:flex-end}
+@media (max-width:620px){ .step{grid-template-columns:24px 1fr} .step .tags{grid-column:2; justify-content:flex-start} }
+
+/* Timeline */
+.tl-wrap{overflow-x:auto; border:1px solid var(--line); border-radius:12px; background:var(--ground)}
+.tl{min-width:760px; padding:14px 16px 18px; position:relative}
+.tl-scale{position:relative; height:22px; margin-left:190px; border-bottom:1px solid var(--line)}
+.tl-scale span{position:absolute; top:0; font-size:.75rem; color:var(--muted); transform:translateX(-1px); padding-left:4px; border-left:1px solid var(--line); height:22px}
+.tl-row{display:grid; grid-template-columns:190px 1fr; align-items:center; min-height:40px; border-bottom:1px dashed var(--line)}
+.tl-row:last-child{border-bottom:0}
+.tl-label{font-family:var(--f-display); font-weight:700; font-size:.86rem; padding-right:10px; display:flex; gap:8px; align-items:center}
+.tl-label i{width:10px; height:10px; border-radius:3px; background:var(--c); flex:none}
+.tl-track{position:relative; height:40px}
+.tl-bar{position:absolute; top:10px; height:20px; border-radius:6px; background:var(--c); color:#111; font-size:.72rem; font-weight:700; font-family:var(--f-display); padding:0 8px; display:flex; align-items:center; white-space:nowrap; overflow:hidden}
+.tl-bar.ghost{background:repeating-linear-gradient(135deg, color-mix(in srgb, var(--c) 45%, transparent) 0 6px, transparent 6px 11px); border:1.5px dashed var(--c); color:var(--ink)}
+.tl-mark{position:absolute; top:6px; width:2px; height:28px; background:var(--ink)}
+.tl-mark b{position:absolute; top:-2px; left:6px; font-size:.7rem; font-family:var(--f-display); white-space:nowrap; color:var(--ink)}
+.tl-today{position:absolute; top:0; bottom:0; width:2px; background:var(--red); z-index:2}
+.tl-today b{position:absolute; top:-2px; left:4px; font-size:.68rem; font-family:var(--f-display); color:var(--red); white-space:nowrap}
+
+/* Phase cards */
+.phases{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; margin-top:22px}
+@media (max-width:760px){ .phases{grid-template-columns:1fr} }
+.phase{border:1px solid var(--line); border-radius:12px; padding:16px 18px; display:grid; gap:10px; align-content:start; background:var(--ground)}
+.phase header{display:flex; align-items:center; justify-content:space-between; gap:10px}
+.phase .tag{display:flex; align-items:center; gap:10px}
+.phase .dot{width:14px; height:14px; border-radius:4px; background:var(--c); flex:none}
+.phase .when{font-family:var(--f-mono); font-size:.82rem; color:var(--ink-2)}
+.phase .cond{font-size:.9rem; background:var(--surface); border-radius:8px; padding:8px 10px}
+.phase .cond b{font-family:var(--f-display); font-size:.72rem; text-transform:uppercase; letter-spacing:.1em; color:var(--muted); display:block}
+.phase ul{margin:0; padding-left:1.1em; font-size:.93rem; color:var(--ink-2)} .phase li{margin:3px 0}
+
+/* Tables */
+.tbl{overflow-x:auto; border:1px solid var(--line); border-radius:12px}
+table{border-collapse:collapse; width:100%; font-size:.92rem}
+th,td{text-align:left; padding:10px 12px; border-bottom:1px solid var(--line); vertical-align:top}
+th{font-family:var(--f-display); font-size:.74rem; text-transform:uppercase; letter-spacing:.08em; color:var(--muted); background:var(--surface); white-space:nowrap}
+tr:last-child td{border-bottom:0}
+td.r, th.r{text-align:right; font-variant-numeric:tabular-nums}
+.kw{display:inline-block; font-family:var(--f-mono); font-size:.78rem; background:var(--surface-2); border-radius:5px; padding:1px 6px; margin:2px 3px 2px 0}
+
+.cfg{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1px; background:var(--line); border:1px solid var(--line); border-radius:12px; overflow:hidden; margin-bottom:22px}
+.cfg div{background:var(--ground); padding:12px 14px}
+.cfg dt{font-family:var(--f-display); font-size:.72rem; text-transform:uppercase; letter-spacing:.1em; color:var(--muted)}
+.cfg dd{margin:2px 0 0; font-weight:600}
+@media (max-width:760px){ .cfg{grid-template-columns:1fr 1fr} }
+@media (max-width:440px){ .cfg{grid-template-columns:1fr} }
+
+/* Ads */
+.adgrid{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px}
+@media (max-width:760px){ .adgrid{grid-template-columns:1fr} }
+.serp{border:1px solid var(--line); border-radius:12px; padding:14px 16px; background:var(--ground)}
+.serp .spon{font-size:.78rem; font-weight:700; color:var(--ink)}
+.serp .url{font-size:.82rem; color:var(--ink-2)}
+.serp .hl{font-size:1.12rem; color:var(--blue); font-weight:600; line-height:1.3; margin:4px 0}
+.serp .ds{font-size:.9rem; color:var(--ink-2)}
+.pool{columns:2; column-gap:24px; margin:0; padding-left:1.1em; font-size:.93rem} .pool li{break-inside:avoid; margin:3px 0}
+@media (max-width:620px){ .pool{columns:1} }
+.lenc{color:var(--muted); font-family:var(--f-mono); font-size:.75rem}
+
+/* Negatives */
+.negbars{display:grid; gap:8px}
+.negbar{display:grid; grid-template-columns:230px 1fr 40px; gap:12px; align-items:center; font-size:.92rem}
+.negbar .t{height:12px; border-radius:6px; background:var(--surface-2); overflow:hidden}
+.negbar .t i{display:block; height:100%; background:var(--c)}
+@media (max-width:560px){ .negbar{grid-template-columns:1fr 40px} .negbar .t{grid-column:1 / -1; order:3} }
+
+/* Rubric */
+.rub{display:grid; gap:6px}
+.rub-row{display:grid; grid-template-columns:1fr 92px; gap:12px; align-items:center; padding:8px 0; border-bottom:1px solid var(--line); font-size:.93rem}
+.pips{display:flex; gap:4px; justify-content:flex-end}
+.pips i{width:22px; height:10px; border-radius:3px; background:var(--surface-2)}
+.pips i.on{background:var(--ink)}
+.pips em{font-style:normal; font-size:.72rem; color:var(--muted); font-family:var(--f-display); font-weight:700}
+
+/* Checklist */
+.filters{display:flex; flex-wrap:wrap; gap:8px; margin-bottom:14px; align-items:center}
+.filters .grp{display:flex; gap:4px; flex-wrap:wrap; align-items:center}
+.filters .lab{font-size:.78rem; color:var(--muted); margin-right:4px}
+.fbtn{font-family:var(--f-display); font-weight:700; font-size:.8rem; border:1px solid var(--line); background:var(--ground); color:var(--ink-2); padding:6px 11px; border-radius:999px; cursor:pointer}
+.fbtn[aria-pressed="true"]{background:var(--ink); color:var(--ground); border-color:var(--ink)}
+.cl-phase{margin-top:18px}
+.cl-phase h3{display:flex; align-items:center; gap:10px; margin-bottom:6px}
+.cl-phase h3 i{width:12px; height:12px; border-radius:3px; background:var(--c)}
+.cl-phase h3 small{font-family:var(--f-body); font-weight:400; font-size:.85rem; color:var(--muted)}
+.cl-item{display:grid; grid-template-columns:26px 1fr auto; gap:10px; padding:9px 0; border-bottom:1px solid var(--line); align-items:start; font-size:.94rem}
+.box{width:18px; height:18px; border-radius:5px; border:2px solid var(--muted); margin-top:2px; position:relative}
+.box.done{background:var(--ok); border-color:var(--ok)}
+.box.done::after{content:""; position:absolute; left:4px; top:0px; width:5px; height:10px; border:solid var(--ground); border-width:0 2.5px 2.5px 0; transform:rotate(45deg)}
+.box.part{border-color:var(--warn); background:linear-gradient(90deg,var(--warn) 50%, transparent 50%)}
+.cl-item .tags{display:flex; gap:6px; align-items:center}
+.cl-item.is-done .txt{color:var(--muted)}
+.empty-note{color:var(--muted); font-size:.9rem; padding:10px 0}
+
+/* Questions */
+.qlist{margin:0; padding-left:1.3em} .qlist li{margin:6px 0}
+.copybtn{font-family:var(--f-display); font-weight:700; font-size:.82rem; border:0; background:var(--ink); color:var(--ground); padding:8px 14px; border-radius:8px; cursor:pointer}
+.copyarea{width:100%; min-height:120px; margin-top:10px; font-family:var(--f-mono); font-size:.8rem; border:1px solid var(--line); border-radius:8px; padding:10px; background:var(--surface); color:var(--ink)}
+
+.why{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px}
+@media (max-width:860px){ .why{grid-template-columns:1fr} }
+.why div{border-top:3px solid var(--ink); padding-top:10px}
+.why h4{font-size:1rem; margin-bottom:4px}
+.why p{font-size:.92rem; color:var(--ink-2)}
+
+footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font-size:.85rem; color:var(--muted); display:flex; flex-wrap:wrap; gap:8px 20px; justify-content:space-between}
+@media (prefers-reduced-motion: no-preference){ html{scroll-behavior:smooth} }
+</style>
+
+<!--
+  PLANTILLA DEL INFORME PMM: misma estructura que el plan de referencia
+  (ejemplo completo y lleno: knowledge/estilo-informes/ejemplo-*-es.html / -en.html).
+
+  1. python scripts/informe_html.py new clients/<slug>/plan-es.html clients/<slug>/plan-en.html
+  2. Reemplazar TODOS los {{MARCADORES}}, también los que están dentro de los arrays del <script>.
+     Los arrays traen una fila de ejemplo con la forma exacta: se borra y se ponen las reales.
+  3. Orden fijo de secciones. Una sección sin archivo fuente se borra completa, junto con su enlace
+     del índice y su bloque del <script>. Nunca se rellena con supuestos.
+  4. No tocar el <style> ni los renderizadores del <script>; solo los datos.
+  5. python scripts/informe_html.py check <es> <en>  → tiene que dar OK antes de publicar.
+-->
+<div class="wrap">
+  <header class="mast">
+    <div>
+      <span class="logo"><img src="{{PMM_LOGO}}" alt="Performance Media Marketing"></span>
+      <h1>{{CLIENTE}}</h1>
+      <p class="sub">{{SUBTITULO: Plan de Google Ads: diagnóstico, estrategia, fechas y checklist para llevar la cuenta de X a Y.}}</p>
+      <p style="margin-top:8px; font-size:.88rem"><a href="{{URL_OTRO_IDIOMA}}">{{English version → | Versión en español →}}</a></p>
+    </div>
+    <dl class="meta">
+      <dt>Cuenta</dt><dd class="mono">{{000-000-0000}}</dd>
+      <dt>MCC</dt><dd class="mono">{{000-000-0000}}</dd>
+      <dt>Mercado</dt><dd>{{Área · idioma}}</dd>
+      <dt>D0</dt><dd class="num">{{DD-mmm-AAAA}}</dd>
+      <dt>Fase actual</dt><dd><span class="chip st-run">{{Fase N · estado}}</span></dd>
+      <dt>Actualizado</dt><dd class="num">{{DD-mmm-AAAA}}</dd>
+    </dl>
+  </header>
+
+  <nav class="toc" aria-label="Secciones">
+    <a href="#resumen">Resumen</a><a href="#evolucion">Evolución</a><a href="#pasos">Próximos pasos</a><a href="#fechas">Fechas</a><a href="#estrategia">Estrategia</a><a href="#anuncios">Anuncios</a><a href="#negativas">Negativas</a><a href="#landing">Landing</a><a href="#mercado">Mercado</a><a href="#checklist">Checklist</a><a href="#cliente">Cliente</a><a href="#porque">Por qué no</a>
+  </nav>
+
+  <!-- RESUMEN · fuente: brief, strategy, diagnose/log -->
+  <section id="resumen">
+    <div class="sec-head"><h2>Resumen</h2><p>{{Qué es el negocio, dónde, y el objetivo (llamadas / formularios).}}</p></div>
+    <div class="kpis">
+      <div class="kpi"><b>{{$825}}</b><span>{{pauta/mes · ≈ $X/día (contrato $Y)}}</span></div>
+      <div class="kpi"><b>{{≤$85}}</b><span>{{CPL objetivo y de dónde sale}}</span></div>
+      <div class="kpi"><b>{{8–13}}</b><span>{{prospectos/mes, escenario base (~N clics)}}</span></div>
+      <div class="kpi"><b>{{DD-mmm}}</b><span>{{hito: lanzamiento / próxima decisión}}</span></div>
+    </div>
+
+    <div class="two">
+      <div>
+        <p class="eyebrow">Estado de la cuenta hoy</p>
+        <h3 style="margin:6px 0 10px">{{$X gastados, N clics, N conversiones (al DD-mmm)}}</h3>
+        <p>{{Diagnóstico en dinero y sobre el gasto rastreable: puja, match, anuncios, landing, negativas heredadas.}}</p>
+        <div class="bar-spend" role="img" aria-label="{{Distribución de $X en search terms visibles}}">
+          <i style="width:{{40}}%; background:var(--red)"></i><i style="width:{{35}}%; background:var(--orange)"></i><i style="width:{{25}}%; background:var(--sky)"></i>
+        </div>
+        <div class="legend">
+          <span style="--c:var(--red)">{{Categoría de desperdicio $X}}</span>
+          <span style="--c:var(--orange)">{{Competidores $X}}</span>
+          <span style="--c:var(--sky)">{{Genéricos $X}}</span>
+        </div>
+        <p class="muted" style="font-size:.85rem; margin-top:6px">{{Qué no se ve (umbral de privacidad) y aclaraciones de categorías.}}</p>
+      </div>
+      <div class="callout">
+        <h3>La decisión en cinco líneas</h3>
+        <ul>
+          <li><b>{{Campañas}}</b> {{qué se crea o conserva y por qué}}</li>
+          <li><b>{{Ad groups}}</b> {{cuántos y por qué (límite de fragmentación)}}</li>
+          <li><b>{{Puja y match}}</b> {{estrategia, tope, match, geo, horario}}</li>
+          <li><b>{{El techo con este presupuesto}}</b> {{prospectos/mes y cuándo se decide subir}}</li>
+          <li><b>{{Qué no se hace}}</b> {{PMax, Display, remarketing, marca, LSA}}</li>
+        </ul>
+      </div>
+    </div>
+    <div style="margin-top:24px">
+      <p class="eyebrow">Matemática de presupuesto (playbook §4)</p>
+      <h3 style="margin:6px 0 10px">{{$X/día ÷ CPC $Y ≈ N clics/día → ~N clics/mes}}</h3>
+      <div class="tbl"><table>
+        <thead><tr><th>Escenario</th><th class="r">Tasa conv.</th><th class="r">Prospectos/mes</th><th class="r">CPL</th><th>Referencia</th></tr></thead>
+        <tbody>
+          <tr><td>Conservador</td><td class="r">{{5%}}</td><td class="r">{{~4}}</td><td class="r">{{~$195}}</td><td>{{Piso de lo sano en servicios locales}}</td></tr>
+          <tr><td><b>Base</b></td><td class="r"><b>{{10–15%}}</b></td><td class="r"><b>{{~8–13}}</b></td><td class="r"><b>{{~$65–100}}</b></td><td>{{Rango sano / benchmark del nicho}}</td></tr>
+          <tr><td>Optimista</td><td class="r">{{25%}}</td><td class="r">{{~21}}</td><td class="r">{{~$39}}</td><td>{{Cuartil superior del MCC}}</td></tr>
+        </tbody>
+      </table></div>
+      <p class="muted" style="font-size:.86rem; margin-top:8px">{{Qué pide cada estrategia de puja en conversiones/mes y cuánta pauta implica.}}</p>
+    </div>
+  </section>
+
+  <!-- EVOLUCION · fuente: último log (weekly-review / diagnose). Borrar si la cuenta no ha corrido. -->
+  <section id="evolucion">
+    <div class="sec-head"><h2>Evolución · {{semana N / D7 / D30}}</h2><p>{{Campaña y periodo. La pregunta que responde esta revisión.}}</p></div>
+    <div class="kpis">
+      <div class="kpi"><b>{{$193.13}}</b><span>{{gasto en N días · % del presupuesto}}</span></div>
+      <div class="kpi"><b>{{19}}</b><span>{{clics · impresiones · CTR}}</span></div>
+      <div class="kpi"><b>{{$10.16}}</b><span>{{CPC promedio y tendencia}}</span></div>
+      <div class="kpi"><b>{{0}}</b><span>{{conversiones · de qué tipo}}</span></div>
+    </div>
+    <div class="two">
+      <div>
+        <p class="eyebrow">{{La causa}}</p>
+        <h3 style="margin:6px 0 10px">{{El hallazgo principal en una frase}}</h3>
+        <div class="bar-spend" role="img" aria-label="{{Visible vs oculto}}"><i style="width:{{10}}%; background:var(--sky)"></i><i style="width:{{90}}%; background:var(--surface-2)"></i></div>
+        <div class="legend"><span style="--c:var(--sky)">{{Visible en search terms $X}}</span><span style="--c:var(--surface-2)">{{Oculto por privacidad $X}}</span></div>
+        <div class="tbl" style="margin-top:14px"><table>
+          <thead><tr><th>Día</th><th class="r">Impr.</th><th class="r">Clics</th><th class="r">Costo</th><th class="r">CPC</th><th class="r">IS</th><th class="r">Perdido ranking</th><th class="r">Perdido presup.</th></tr></thead>
+          <tbody>
+            <tr><td style="white-space:nowrap">{{DD-mmm}}</td><td class="r">{{0}}</td><td class="r">{{0}}</td><td class="r">{{$0.00}}</td><td class="r">{{$0.00}}</td><td class="r">{{0%}}</td><td class="r">{{0%}}</td><td class="r">{{0%}}</td></tr>
+          </tbody>
+        </table></div>
+        <div class="tbl" style="margin-top:14px"><table>
+          <thead><tr><th>Ad group</th><th class="r">Impr.</th><th class="r">Clics</th><th class="r">CTR</th><th class="r">Costo</th><th class="r">% gasto</th></tr></thead>
+          <tbody>
+            <tr><td>{{Ad group}}</td><td class="r">{{0}}</td><td class="r">{{0}}</td><td class="r">{{0%}}</td><td class="r">{{$0.00}}</td><td class="r">{{0%}}</td></tr>
+          </tbody>
+        </table></div>
+        <p class="muted" style="font-size:.86rem; margin-top:8px">{{Search terms visibles, dispositivo, geo.}}</p>
+      </div>
+      <div class="callout">
+        <h3>Diagnóstico</h3>
+        <ul>
+          <li><b>{{Medición:}}</b> {{qué se mide y qué no}}</li>
+          <li><b>{{Volumen:}}</b> {{si con estos clics se puede concluir algo}}</li>
+          <li><b>{{Tráfico:}}</b> {{qué buscan los que hacen clic}}</li>
+          <li><b>{{Puja/CPC:}}</b> {{si hay que tocarla}}</li>
+          <li><b>{{Qué hacer:}}</b> {{1) … 2) … 3) …}}</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PASOS · fuente: checklist + último log. Datos en el <script> (steps). -->
+  <section id="pasos">
+    <div class="sec-head"><h2>Próximos pasos</h2><p>{{Lo que falta para cerrar la fase actual.}} Los que dicen B bloquean.</p></div>
+    <div class="steps" id="steps"></div>
+  </section>
+
+  <!-- FECHAS · fuente: roadmap. Datos en el <script> (timeline + phases). -->
+  <section id="fechas">
+    <div class="sec-head"><h2>Fechas y fases</h2><p>La fecha es proyección; la condición de paso manda. Nunca se avanza "porque ya es la fecha".</p></div>
+    <div class="tl-wrap"><div class="tl" id="timeline"></div></div>
+    <div class="phases" id="phases"></div>
+  </section>
+
+  <!-- ESTRATEGIA · fuente: strategy + build log. Ad groups en el <script> (ags). -->
+  <section id="estrategia">
+    <div class="sec-head"><h2>Estrategia</h2><p>{{Por qué esta estructura, en una línea.}}</p></div>
+    <dl class="cfg">
+      <div><dt>Campaña</dt><dd>{{Nombre de la campaña}}</dd></div>
+      <div><dt>Tipo</dt><dd>{{Search · solo red de Búsqueda}}</dd></div>
+      <div><dt>Presupuesto</dt><dd class="num">{{$X/día}}</dd></div>
+      <div><dt>Puja</dt><dd>{{Estrategia actual → siguiente y su condición}}</dd></div>
+      <div><dt>Conversiones</dt><dd>{{Qué cuenta como conversión primaria}}</dd></div>
+      <div><dt>Match</dt><dd>{{Frase + exacta · sin broad}}</dd></div>
+      <div><dt>Ubicación</dt><dd>{{Presencia · área}}</dd></div>
+      <div><dt>Horario</dt><dd>{{Horario en hora del cliente (y en hora de la cuenta si difiere)}}</dd></div>
+      <div><dt>Apagado</dt><dd>{{Socios, Display, recomendaciones automáticas}}</dd></div>
+    </dl>
+    <div class="tbl"><table>
+      <thead><tr><th>Ad group</th><th>Fase</th><th>Keywords principales</th><th class="r">Vol./mes</th><th>Landing</th></tr></thead>
+      <tbody id="agrows"></tbody>
+    </table></div>
+    <p class="muted" style="font-size:.88rem; margin-top:10px">{{Notas de estructura: ciudades, consolidación, inserción de keyword.}}</p>
+
+    <h3 style="margin-top:28px; margin-bottom:10px">Presupuesto por fase</h3>
+    <div class="tbl"><table>
+      <thead><tr><th>Fase</th><th>Total/mes</th><th>Qué pasa</th><th>Condición para pasar</th></tr></thead>
+      <tbody>
+        <tr><td><b>{{F0}}</b> {{nombre}}</td><td class="num">{{$X}}</td><td>{{qué se hace}}</td><td>{{condición}}</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <!-- ANUNCIOS · fuente: data/ads-*.md. H1, pool y descripciones en el <script>. Anuncios y keywords en el idioma del mercado, sin traducir. -->
+  <section id="anuncios">
+    <div class="sec-head"><h2>Anuncios</h2><p>{{N RSA por ad group y por qué. H1 pinneado a la keyword del grupo.}}</p></div>
+    <div class="adgrid">
+      <div class="serp">
+        <div class="spon">Sponsored</div>
+        <div class="url">{{dominio.com/ruta}}</div>
+        <div class="hl">{{Headline 1 | Headline 2 | Headline 3}}</div>
+        <div class="ds">{{Descripción 1. Descripción 2.}}</div>
+      </div>
+    </div>
+    <div class="two" style="margin-top:22px">
+      <div>
+        <h3 style="margin-bottom:8px">H1 pinneado por ad group</h3>
+        <div class="tbl"><table><tbody id="h1rows"></tbody></table></div>
+      </div>
+      <div>
+        <h3 style="margin-bottom:8px">Headlines compartidas</h3>
+        <ul class="pool" id="pool"></ul>
+        <h3 style="margin:16px 0 8px">Descripciones compartidas</h3>
+        <ul style="margin:0; padding-left:1.1em; font-size:.93rem" id="descs"></ul>
+      </div>
+    </div>
+    <div class="callout" style="margin-top:22px">
+      <h3>Extensiones</h3>
+      <ul>
+        <li><b>Llamada</b> {{teléfono, horario}}</li>
+        <li><b>Sitelinks</b>: {{lista}}</li>
+        <li><b>Callouts</b>: {{lista}}</li>
+        <li><b>Snippet</b>: {{lista}}</li>
+        <li><b>Ubicación / imágenes</b>: {{estado}}</li>
+        <li><b>No se promete</b>: {{lo que el cliente no sostiene}}</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- NEGATIVAS · fuente: data/*negatives*. Barras en el <script> (negs). -->
+  <section id="negativas">
+    <div class="sec-head"><h2>Negativas</h2><p>{{Qué se aplicó, qué se quitó y qué está pendiente.}}</p></div>
+    <div class="two" style="margin-top:0">
+      <div>
+        <h3 style="margin-bottom:12px">{{N nuevas (estado)}}</h3>
+        <div class="negbars" id="negbars"></div>
+        <p class="muted" style="font-size:.86rem; margin-top:12px">{{Validación contra keywords activas. Archivo:}} <span class="mono">{{data/AAAA-MM-DD-negatives.txt}}</span></p>
+      </div>
+      <div class="callout">
+        <h3>{{Quitadas / choques evitados}}</h3>
+        <p style="margin-top:8px"><span class="kw">{{negativa}}</span></p>
+        <p style="font-size:.9rem; color:var(--ink-2); margin-top:8px">{{Ejemplos de lo que bloqueaban y qué servicios del cliente NO se niegan.}}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- LANDING · fuente: audit-site + landings/README.md. Rúbrica en el <script> (rub). -->
+  <section id="landing">
+    <div class="sec-head"><h2>Landing</h2><p>{{Score NN/22 y veredicto.}}</p></div>
+    <div class="two" style="margin-top:0">
+      <div>
+        <div class="rub" id="rubric"></div>
+      </div>
+      <div>
+        <h3 style="margin-bottom:8px">Landings que se necesitan</h3>
+        <div class="tbl"><table>
+          <thead><tr><th>URL</th><th>Estado</th><th>Para</th></tr></thead>
+          <tbody>
+            <tr><td class="mono">{{/ruta/}}</td><td><span class="chip st-block">{{Crear | Verificar | Mejora}}</span></td><td>{{Ad group / fase}}</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+    </div>
+    <div style="margin-top:24px">
+      <h3 style="margin-bottom:8px">Landings GoHighLevel · {{fecha}}</h3>
+      <div class="tbl"><table>
+        <thead><tr><th>Página</th><th>Ad group</th><th>QA</th><th>Estado</th></tr></thead>
+        <tbody>
+          <tr><td class="mono">{{slug}}</td><td>{{Ad group}}</td><td><span class="chip st-block">{{N bloqueantes}}</span></td><td><span class="chip st-todo">{{Borrador | Montada | Publicada}}</span></td></tr>
+        </tbody>
+      </table></div>
+      <p class="muted" style="font-size:.86rem; margin-top:8px">{{Qué bloquea el montaje y quién lo resuelve.}}</p>
+    </div>
+  </section>
+
+  <!-- MERCADO · fuente: benchmark + competitors -->
+  <section id="mercado">
+    <div class="sec-head"><h2>Benchmark y competencia</h2><p>{{N cuentas del nicho en el MCC, periodo. La conclusión en una línea.}}</p></div>
+    <div class="tbl"><table>
+      <thead><tr><th>Cuenta</th><th>Mercado</th><th>Puja</th><th class="r">CPC</th><th class="r">Tasa conv.</th><th class="r">CPL</th><th class="r">Conv./mes</th></tr></thead>
+      <tbody>
+        <tr><td>{{A (anonimizada)}}</td><td>{{Mercado}}</td><td>{{Puja}}</td><td class="r">{{$0.00}}</td><td class="r">{{0%}}</td><td class="r"><b>{{$0.00}}</b></td><td class="r">{{0}}</td></tr>
+        <tr><td><b>{{CLIENTE}}</b></td><td>{{Mercado}}</td><td>{{Puja}}</td><td class="r"><b>{{$0.00}}</b></td><td class="r">{{0%}}</td><td class="r"><b>{{$0.00}}</b></td><td class="r">{{—}}</td></tr>
+      </tbody>
+    </table></div>
+
+    <div class="two">
+      <div>
+        <h3 style="margin-bottom:8px">Competidores en {{área}}</h3>
+        <div class="tbl"><table>
+          <thead><tr><th>Competidor</th><th>Reseñas</th><th>Ángulo</th></tr></thead>
+          <tbody>
+            <tr><td>{{Competidor}}</td><td class="num">{{4.8 ★ · N}}</td><td>{{Ángulo / oferta}}</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+      <div class="callout">
+        <h3>Oportunidades</h3>
+        <ul><li><b>{{Oportunidad}}</b> {{por qué}}</li></ul>
+        <h3 style="margin-top:14px">Amenazas</h3>
+        <ul><li>{{Amenaza}}</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHECKLIST · espejo de checklist.md. Datos en el <script> (CL, PHT). -->
+  <section id="checklist">
+    <div class="sec-head"><h2>Checklist</h2><p>Espejo de <span class="mono">clients/{{slug}}/checklist.md</span> al {{DD-mmm}}. /weekly-review lo mantiene al día.</p></div>
+    <div class="filters" role="group" aria-label="Filtros">
+      <div class="grp"><span class="lab">Responsable</span><span id="f-who"></span></div>
+      <div class="grp"><span class="lab">Estado</span><span id="f-st"></span></div>
+    </div>
+    <div id="cl"></div>
+  </section>
+
+  <!-- CLIENTE · pendientes del cliente. Preguntas y mensaje en el <script> (qs, msg); el mensaje va en el idioma del cliente. -->
+  <section id="cliente">
+    <div class="sec-head"><h2>Pendientes del cliente</h2><p>{{Lo que hay que pedirle a CLIENTE. Los marcados con B bloquean.}}</p></div>
+    <div class="two" style="margin-top:0">
+      <ol class="qlist" id="qlist"></ol>
+      <div class="callout">
+        <h3>Mensaje listo para enviar ({{EN | ES}})</h3>
+        <p style="font-size:.9rem; color:var(--ink-2)">Para mandarle al cliente por email o texto.</p>
+        <textarea class="copyarea" id="clientmsg" readonly aria-label="Mensaje para el cliente"></textarea>
+        <div style="display:flex; gap:10px; align-items:center; margin-top:8px"><button class="copybtn" id="copybtn" type="button">Copiar mensaje</button><span id="copystate" class="muted" style="font-size:.85rem" aria-live="polite"></span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POR QUÉ NO · fuente: strategy (lo descartado) y riesgos -->
+  <section id="porque">
+    <div class="sec-head"><h2>Por qué no (todavía)</h2></div>
+    <div class="why">
+      <div><h4>Performance Max</h4><p>{{Qué condición no cumple (pmax-cuando-y-como.md).}}</p></div>
+      <div><h4>Broad</h4><p>{{Por qué no todavía.}}</p></div>
+      <div><h4>Display / Demand Gen</h4><p>{{Por qué no.}}</p></div>
+      <div><h4>Campaña de marca</h4><p>{{Volumen de marca y decisión.}}</p></div>
+      <div><h4>Remarketing</h4><p>{{Tamaño de audiencia.}}</p></div>
+      <div><h4>{{Otro descarte del nicho}}</h4><p>{{Por qué.}}</p></div>
+    </div>
+    <div class="callout" style="margin-top:22px">
+      <h3>Riesgos y supuestos</h3>
+      <ul>
+        <li>{{Riesgo o supuesto, con su consecuencia.}}</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <span>Performance Media Marketing · {{CLIENTE}} · cuenta {{000-000-0000}}</span>
+    <span>Fuentes: {{archivos del repo usados y periodo de datos}}</span>
+  </footer>
+</div>
+
+<script>
+(function(){
+  /* ── Renderizadores: NO editar. Solo cambian los datos de cada bloque. ── */
+  const PH = {
+    F0:{c:'var(--red)', n:'Fase 0'}, F1:{c:'var(--orange)', n:'Fase 1'}, F2:{c:'var(--yellow)', n:'Fase 2'},
+    F3:{c:'var(--green)', n:'Fase 3'}, F4:{c:'var(--sky)', n:'Fase 4'}, F5:{c:'var(--purple)', n:'Fase 5'},
+    F6:{c:'var(--muted)', n:'Fase 6'}, LAND:{c:'var(--blue)', n:'Landing'}, LSA:{c:'var(--muted)', n:'LSA'}
+  };
+  const esc = s => String(s).replace(/[&<>"]/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));
+  const $ = id => document.getElementById(id);
+
+  /* Próximos pasos: [título, detalle, responsable (PMM | Cliente | Jhombis | PMM/Cliente), bloqueante]. Lo hecho va con "✓ Hecho DD-mmm: …" */
+  const steps = [
+    ['{{Paso}}', '{{Detalle en una o dos frases}}', '{{PMM}}', true]
+  ];
+  if ($('steps')) $('steps').innerHTML = steps.map((s,i)=>`
+    <div class="step"><span class="n">${String(i+1).padStart(2,'0')}</span>
+      <div><b>${esc(s[0])}</b><p class="d">${esc(s[1])}</p></div>
+      <div class="tags">${s[3]?'<span class="b-flag" title="Bloqueante">B</span>':''}<span class="who">${esc(s[2])}</span></div>
+    </div>`).join('');
+
+  /* Línea de tiempo: rango, meses visibles, filas (k = clave de PH; bars con ghost:true = fecha alternativa; note = sin fecha) */
+  const start = new Date('{{AAAA-MM-DD inicio}}'), end = new Date('{{AAAA-MM-DD fin}}');
+  const span = end - start;
+  const pct = d => ((new Date(d) - start) / span * 100);
+  const months = ['{{AAAA-MM-01}}'];
+  const mname = {'{{AAAA-MM-01}}':'{{mes}}'};
+  const rows = [
+    {k:'F0', label:'{{F0 Nombre}}', bars:[{a:'{{AAAA-MM-DD}}', b:'{{AAAA-MM-DD}}', t:'{{texto}}'}]},
+    {k:'F4', label:'{{F4 Nombre}}', bars:[], note:'{{Sin fecha: motivo}}'}
+  ];
+  const today = '{{AAAA-MM-DD hoy}}';
+  if ($('timeline')){
+    let h = `<div class="tl-scale">${months.map(m=>`<span style="left:${pct(m)}%">${mname[m]}</span>`).join('')}</div>`;
+    h += rows.map((r,idx)=>`
+      <div class="tl-row"><div class="tl-label"><i style="--c:${PH[r.k].c}"></i>${esc(r.label)}</div>
+        <div class="tl-track">
+          ${idx===0?`<div class="tl-today" style="left:${pct(today)}%"><b>hoy</b></div>`:''}
+          ${r.bars.map(b=>`<div class="tl-bar${b.ghost?' ghost':''}" style="--c:${PH[r.k].c}; left:${pct(b.a)}%; width:${Math.max(pct(b.b)-pct(b.a),1.2)}%">${esc(b.t)}</div>`).join('')}
+          ${(r.marks||[]).map(m=>`<div class="tl-mark" style="left:${pct(m.d)}%"><b>${esc(m.t)}</b></div>`).join('')}
+          ${r.note?`<span class="muted" style="position:absolute; left:${pct(today)+1}%; top:11px; font-size:.8rem">${esc(r.note)}</span>`:''}
+        </div></div>`).join('');
+    $('timeline').innerHTML = h;
+  }
+
+  /* Fases: s = [done|run|todo|block|pause, texto del chip]; c = condición de paso; i = qué incluye */
+  const phases = [
+    {k:'F0', t:'{{Nombre de la fase}}', w:'{{fecha → fecha}}', s:['run','{{En curso}}'],
+     c:'{{Condición de paso}}',
+     i:['{{Qué incluye}}']}
+  ];
+  if ($('phases')) $('phases').innerHTML = phases.map(p=>`
+    <article class="phase">
+      <header><div class="tag"><span class="dot" style="--c:${PH[p.k].c}"></span><h3>${PH[p.k].n} · ${esc(p.t)}</h3></div><span class="chip st-${p.s[0]}">${esc(p.s[1])}</span></header>
+      <div class="when">${esc(p.w)}</div>
+      <div class="cond"><b>Condición de paso</b>${esc(p.c)}</div>
+      <ul>${p.i.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>
+    </article>`).join('');
+
+  /* Ad groups: [nombre, fase activa (F1 = activo), [keywords], volumen/mes, landing] */
+  const ACTIVE = '{{F1}}';
+  const ags = [
+    ['{{Ad group}}','{{F1}}',['{{keyword}}'],'{{~N}}','{{/ruta}}']
+  ];
+  if ($('agrows')) $('agrows').innerHTML = ags.map(a=>`
+    <tr><td><b>${esc(a[0])}</b></td><td><span class="chip ${a[1]===ACTIVE?'st-run':'st-pause'}">${a[1]===ACTIVE?a[1]+' activo':a[1]+' en pausa'}</span></td>
+    <td>${a[2].map(k=>`<span class="kw">${esc(k)}</span>`).join('')}</td><td class="r num">${esc(a[3])}</td><td class="mono">${esc(a[4])}</td></tr>`).join('');
+
+  /* H1 por ad group: [grupo, H1 del RSA, alternativas…]; pool de headlines y descripciones (se muestra el largo de cada una) */
+  const h1 = [
+    ['{{Grupo}}','{{H1 pinneado}}','{{Alternativa}}']
+  ];
+  if ($('h1rows')) $('h1rows').innerHTML = h1.map(r=>`<tr><td><b>${esc(r[0])}</b></td><td>${r.slice(1).map(x=>`${esc(x)} <span class="lenc">${x.startsWith('{KeyWord:')?x.length-10:x.length}</span>`).join('<br>')}</td></tr>`).join('');
+  const pool = ['{{Headline compartida}}'];
+  if ($('pool')) $('pool').innerHTML = pool.map(x=>`<li>${esc(x)} <span class="lenc">${x.length}</span></li>`).join('');
+  const descs = ['{{Descripción compartida}}'];
+  if ($('descs')) $('descs').innerHTML = descs.map(x=>`<li style="margin:4px 0">${esc(x)} <span class="lenc">${x.length}</span></li>`).join('');
+
+  /* Negativas por categoría: [categoría, cantidad, color] */
+  const negs = [['{{Categoría}}', 1, 'var(--orange)']];
+  const negMax = Math.max(...negs.map(n=>n[1]), 1);
+  if ($('negbars')) $('negbars').innerHTML = negs.map(n=>`<div class="negbar"><span>${esc(n[0])}</span><div class="t"><i style="width:${n[1]/negMax*100}%; --c:${n[2]}"></i></div><b class="num" style="text-align:right">${n[1]}</b></div>`).join('');
+
+  /* Rúbrica de landing (audit-site): [ítem, 0 | 1 | 2 | null = sin dato]. 0 marca B. */
+  const rub = [['{{Headline refleja el servicio}}', null]];
+  if ($('rubric')) $('rubric').innerHTML = rub.map(r=>`<div class="rub-row"><span>${esc(r[0])}${r[1]===0?' <span class="b-flag">B</span>':''}</span><span class="pips">${r[1]===null?'<em>SIN DATO</em>':`<i class="${r[1]>=1?'on':''}"></i><i class="${r[1]>=2?'on':''}"></i>`}</span></div>`).join('');
+
+  /* Checklist (espejo de checklist.md): [fase, ítem, responsable, done | part | todo, bloqueante] */
+  const CL = [
+    ['F0','{{Ítem del checklist}}','PMM','todo',true]
+  ];
+  const PHT = {F0:'{{Nombre F0}}', F1:'{{Nombre F1}}'};
+  let fWho='Todos', fSt='Todos';
+  const whoOpts=['Todos','PMM','Cliente','Jhombis'], stOpts=['Todos','Pendientes','Bloqueantes','Hechos'];
+  const KEY = '{{slug}}-filters';
+  function btns(el, opts, cur, set){
+    el.innerHTML = opts.map(o=>`<button type="button" class="fbtn" aria-pressed="${o===cur}" data-v="${esc(o)}">${esc(o)}</button>`).join('');
+    el.querySelectorAll('button').forEach(b=>b.addEventListener('click',()=>{set(b.dataset.v); render();}));
+  }
+  function render(){
+    btns($('f-who'), whoOpts, fWho, v=>{fWho=v; save();});
+    btns($('f-st'), stOpts, fSt, v=>{fSt=v; save();});
+    $('cl').innerHTML = Object.keys(PHT).map(ph=>{
+      const all = CL.filter(x=>x[0]===ph);
+      const done = all.filter(x=>x[3]==='done').length;
+      const items = all.filter(x=>(fWho==='Todos'||x[2]===fWho) &&
+        (fSt==='Todos' || (fSt==='Hechos'&&x[3]==='done') || (fSt==='Pendientes'&&x[3]!=='done') || (fSt==='Bloqueantes'&&x[4]&&x[3]!=='done')));
+      return `<div class="cl-phase"><h3><i style="--c:${PH[ph].c}"></i>${PH[ph].n} · ${esc(PHT[ph])} <small class="num">${done}/${all.length} hechos</small></h3>
+        ${items.length? items.map(x=>`<div class="cl-item${x[3]==='done'?' is-done':''}"><span class="box ${x[3]==='done'?'done':x[3]==='part'?'part':''}" aria-label="${x[3]==='done'?'hecho':x[3]==='part'?'parcial':'pendiente'}"></span><span class="txt">${esc(x[1])}</span><span class="tags">${x[4]?'<span class="b-flag">B</span>':''}<span class="who">${esc(x[2])}</span></span></div>`).join('') : '<p class="empty-note">Nada con estos filtros.</p>'}
+      </div>`;
+    }).join('');
+  }
+  function save(){ try{ localStorage.setItem(KEY, JSON.stringify({fWho,fSt})); }catch(e){} }
+  try{ const s=JSON.parse(localStorage.getItem(KEY)||'null'); if(s){ if(whoOpts.includes(s.fWho)) fWho=s.fWho; if(stOpts.includes(s.fSt)) fSt=s.fSt; } }catch(e){}
+  if ($('cl')) render();
+
+  /* Preguntas al cliente: [html con <b>, bloqueante] y mensaje listo para enviar (idioma del cliente) */
+  const qs = [
+    ['<b>{{Pregunta}}</b> {{detalle}}', true]
+  ];
+  if ($('qlist')) $('qlist').innerHTML = qs.map(q=>`<li>${q[0]} ${q[1]?'<span class="b-flag">B</span>':''}</li>`).join('');
+  const msg = `{{Mensaje para el cliente, numerado, listo para copiar}}`;
+  const ta = $('clientmsg');
+  if (ta){
+    ta.value = msg;
+    $('copybtn').addEventListener('click', ()=>{
+      const st = $('copystate');
+      const fallback = ()=>{ ta.focus(); ta.select(); st.textContent = 'Texto seleccionado: usa Ctrl/Cmd + C.'; };
+      try{ navigator.clipboard.writeText(msg).then(()=>{ st.textContent = 'Copiado.'; }, fallback); }catch(e){ fallback(); }
+    });
+  }
+})();
+</script>

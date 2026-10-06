@@ -10,5 +10,6 @@ Archivos que se generan (en orden):
 5. strategy.md       ← /strategy
 6. roadmap.md        ← /roadmap
 7. checklist.md      ← /roadmap (crea) · /weekly-review (mantiene)
-8. log/YYYY-MM-DD.md ← /weekly-review, /build-campaign, /negatives
-9. data/             ← keywords.csv, competitors-keywords.csv, negatives-*.txt, ads-*.md, exports
+8. landings/<pagina>/ ← /landing-ghl (spec.json, ghl-*.html, preview.html, qa.md)
+9. log/YYYY-MM-DD.md ← /weekly-review, /build-campaign, /negatives
+10. data/             ← keywords.csv, competitors-keywords.csv, negatives-*.txt, ads-*.md, exports
