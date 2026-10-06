@@ -7,13 +7,13 @@ idioma: EN
 
 # Anuncios RSA — Precision Towing
 
-Reglas aplicadas: 3 RSA por ad group; Headline 1 pinneada en posición 1 = término del grupo (una variante por RSA); headlines 2–15 rotan; 4 descripciones; sin números de teléfono en el texto (política de Google: van en el activo de llamada). Longitudes validadas (≤30 / ≤90). Nombre de negocio: "Precision Towing". Logo: PENDIENTE archivo del cliente.
+Reglas aplicadas (estándar 4 vigente, pauta < $1.500/mes): **1 RSA por ad group** (máx. 2; la segunda H1 pinneada listada es la opción B solo si Jhombis la pide). Headline 1 pinneada en posición 1 = término del grupo; en AG1 la variante B usa inserción de keyword `{KeyWord:Towing Near Me}` para que las keywords de ciudad (kernville towing, towing lake isabella) vean su término en el H1 sin grupos por ciudad (playbook §8). Headlines 2–15 rotan; 4 descripciones; sin números de teléfono ni horas en el texto (política PHONE_NUMBER_IN_AD_TEXT y caso Pro Phase: no se escriben horas sin confirmar la zona horaria de la cuenta). Longitudes validadas (≤30 / ≤90). Nombre de negocio: "Precision Towing". Logo: PENDIENTE archivo del cliente.
 
 > Claims que dependen de confirmación del cliente antes de publicar: "After-Hours Emergency Towing" (el sitio lo afirma; confirmar quién contesta), "Medium Duty Trucks Ready" y flatbed (flota), "Winch Out & Stuck Recovery" (equipo). Si no se confirman, sustituir por "Fast Local Response" / "Serving Kern River Valley".
 
-## AG1 Tow Truck Near Me
+## AG1 Tow Truck & Towing KRV
 - URL final: https://precisiontowingca.com/light-medium-duty-towing/
-- Headline 1 pinneada (una por RSA A/B/C): Tow Truck Near Lake Isabella | Towing Near Me – Call Now | Local Tow Truck, Direct Line
+- Headline 1 pinneada (una por RSA A/B/C): Tow Truck Near Lake Isabella | {KeyWord:Towing Near Me}
 
 | # | Headline | Chars |
 |---|---|---|
@@ -21,7 +21,7 @@ Reglas aplicadas: 3 RSA por ad group; Headline 1 pinneada en posición 1 = térm
 | 2 | Local Dispatch, No Call Center | 30 |
 | 3 | 33 Years in Lake Isabella | 25 |
 | 4 | 4.8★ · 850+ Google Reviews | 26 |
-| 5 | Open Daily 7 AM – 10 PM | 23 |
+| 5 | Open 7 Days A Week | 18 |
 | 6 | After-Hours Emergency Towing | 28 |
 | 7 | Free Quote By Phone | 19 |
 | 8 | Our Own Trucks & Drivers | 24 |
@@ -31,49 +31,18 @@ Reglas aplicadas: 3 RSA por ad group; Headline 1 pinneada en posición 1 = térm
 | 12 | Towed To Our 17-Bay Shop | 24 |
 | 13 | Kernville To Weldon, Hwy 178 | 28 |
 | 14 | Serving Kern River Valley | 25 |
-| 15 | NAPA AutoCare Center | 20 |
+| 15 | Kernville, Bodfish & Weldon | 27 |
 
 | # | Descripción | Chars |
 |---|---|---|
 | D1 | Stuck near Lake Isabella? Call our dispatcher. Local trucks, real ETA, no call center. | 86 |
 | D2 | Light & medium duty towing since 1993. AAA Approved, NAPA AutoCare, 4.8★, 850+ reviews. | 87 |
 | D3 | Towed right to our 17-bay repair & collision shop. One call covers the tow and the fix. | 87 |
-| D4 | Open 7 days, 7 AM–10 PM, plus after-hours emergency towing. Free quote by phone. | 80 |
+| D4 | Open 7 days a week, with after-hours emergency towing. Free quote by phone. | 75 |
 
-RSA B y C: misma lista de headlines y descripciones, cambiando solo la H1 pinneada (B y C de la lista de arriba) y pinneando en posición 2 "Local Dispatch, No Call Center" (B) o "4.8★ · 850+ Google Reviews" (C) para forzar el split test del ángulo.
+Un solo RSA por grupo (RSA A, primera H1 pinneada). Con 2–3 clics al día un A/B es ruido (playbook §9); la H1 alternativa queda documentada por si se abre un segundo RSA cuando el grupo supere ~50 clics/mes.
 
-## AG2 Towing Lake Isabella & KRV
-- URL final: https://precisiontowingca.com/light-medium-duty-towing/
-- Headline 1 pinneada (una por RSA A/B/C): Towing in Lake Isabella, CA | Kernville Tow Truck Service | Kern River Valley Towing
-
-| # | Headline | Chars |
-|---|---|---|
-| 1 | Towing in Lake Isabella, CA | 27 |
-| 2 | Local Dispatch, No Call Center | 30 |
-| 3 | 33 Years in Lake Isabella | 25 |
-| 4 | 4.8★ · 850+ Google Reviews | 26 |
-| 5 | Open Daily 7 AM – 10 PM | 23 |
-| 6 | After-Hours Emergency Towing | 28 |
-| 7 | Free Quote By Phone | 19 |
-| 8 | Our Own Trucks & Drivers | 24 |
-| 9 | Call Now For A Real ETA | 23 |
-| 10 | AAA Approved Repair Shop | 24 |
-| 11 | Based On Lake Isabella Blvd | 27 |
-| 12 | Wofford Heights & Bodfish | 25 |
-| 13 | Weldon & Mountain Mesa Too | 26 |
-| 14 | We Know Hwy 178 & 155 | 21 |
-| 15 | Towed To Our 17-Bay Shop | 24 |
-
-| # | Descripción | Chars |
-|---|---|---|
-| D1 | Lake Isabella, Kernville, Wofford Heights, Bodfish, Weldon: our trucks are in the valley. | 89 |
-| D2 | On Lake Isabella Blvd for 33 years. You talk to our dispatcher, not a call center. | 82 |
-| D3 | Towed right to our 17-bay repair & collision shop. One call covers the tow and the fix. | 87 |
-| D4 | Open 7 days, 7 AM–10 PM, plus after-hours emergency towing. Free quote by phone. | 80 |
-
-RSA B y C: misma lista de headlines y descripciones, cambiando solo la H1 pinneada (B y C de la lista de arriba) y pinneando en posición 2 "Local Dispatch, No Call Center" (B) o "4.8★ · 850+ Google Reviews" (C) para forzar el split test del ángulo.
-
-## AG3 Roadside Assistance
+## AG2 Roadside Assistance
 - URL final: https://precisiontowingca.com/roadside-assistance/
 - Headline 1 pinneada (una por RSA A/B/C): Roadside Assistance Near You | Flat Tire? We Come To You | Jump Start & Lockout Service
 
@@ -83,7 +52,7 @@ RSA B y C: misma lista de headlines y descripciones, cambiando solo la H1 pinnea
 | 2 | Local Dispatch, No Call Center | 30 |
 | 3 | 33 Years in Lake Isabella | 25 |
 | 4 | 4.8★ · 850+ Google Reviews | 26 |
-| 5 | Open Daily 7 AM – 10 PM | 23 |
+| 5 | Open 7 Days A Week | 18 |
 | 6 | After-Hours Emergency Towing | 28 |
 | 7 | Free Quote By Phone | 19 |
 | 8 | Our Own Trucks & Drivers | 24 |
@@ -100,11 +69,11 @@ RSA B y C: misma lista de headlines y descripciones, cambiando solo la H1 pinnea
 | D1 | Flat tire, dead battery or locked out? Call our dispatcher. Local trucks, real ETA. | 83 |
 | D2 | Roadside help in Lake Isabella & the Kern River Valley since 1993. 4.8★, 850+ reviews. | 86 |
 | D3 | Stuck in sand or off the road? Winch-out and recovery, then a tow to our shop if needed. | 88 |
-| D4 | Open 7 days, 7 AM–10 PM, plus after-hours emergency line. Free quote by phone. | 78 |
+| D4 | Open 7 days a week, with after-hours emergency line. Free quote by phone. | 73 |
 
-RSA B y C: misma lista de headlines y descripciones, cambiando solo la H1 pinneada (B y C de la lista de arriba) y pinneando en posición 2 "Local Dispatch, No Call Center" (B) o "4.8★ · 850+ Google Reviews" (C) para forzar el split test del ángulo.
+Un solo RSA por grupo (RSA A, primera H1 pinneada). Con 2–3 clics al día un A/B es ruido (playbook §9); la H1 alternativa queda documentada por si se abre un segundo RSA cuando el grupo supere ~50 clics/mes.
 
-## AG4 RV & Trailer Towing
+## AG3 RV & Trailer Towing
 - URL final: https://precisiontowingca.com/5th-wheel-towing/
 - Headline 1 pinneada (una por RSA A/B/C): 5th Wheel Towing Service | Travel Trailer Towing Service | RV & Camper Towing Near You
 
@@ -114,7 +83,7 @@ RSA B y C: misma lista de headlines y descripciones, cambiando solo la H1 pinnea
 | 2 | Local Dispatch, No Call Center | 30 |
 | 3 | 33 Years in Lake Isabella | 25 |
 | 4 | 4.8★ · 850+ Google Reviews | 26 |
-| 5 | Open Daily 7 AM – 10 PM | 23 |
+| 5 | Open 7 Days A Week | 18 |
 | 6 | After-Hours Emergency Towing | 28 |
 | 7 | Free Quote By Phone | 19 |
 | 8 | Our Own Trucks & Drivers | 24 |
@@ -131,11 +100,11 @@ RSA B y C: misma lista de headlines y descripciones, cambiando solo la H1 pinnea
 | D1 | Need your 5th wheel or travel trailer moved to a campground, storage or shop? We tow it. | 88 |
 | D2 | Medium duty trucks and 33 years hauling trailers around Lake Isabella and the Kern River. | 89 |
 | D3 | We tow trailers, campers and RVs. We don't sell or install hitches. Free quote by phone. | 88 |
-| D4 | Open 7 days, 7 AM–10 PM, plus after-hours emergency towing. No call center, ever. | 81 |
+| D4 | Open 7 days a week, with after-hours emergency towing. No call center, ever. | 76 |
 
-RSA B y C: misma lista de headlines y descripciones, cambiando solo la H1 pinneada (B y C de la lista de arriba) y pinneando en posición 2 "Local Dispatch, No Call Center" (B) o "4.8★ · 850+ Google Reviews" (C) para forzar el split test del ángulo.
+Un solo RSA por grupo (RSA A, primera H1 pinneada). Con 2–3 clics al día un A/B es ruido (playbook §9); la H1 alternativa queda documentada por si se abre un segundo RSA cuando el grupo supere ~50 clics/mes.
 
-## AGB Marca
+## AG4 Marca
 - URL final: https://precisiontowingca.com/
 - Headline 1 pinneada (una por RSA A/B/C): Precision Towing Lake Isabella | Precision Automotive & Towing | Precision Towing – Call Now
 
@@ -145,7 +114,7 @@ RSA B y C: misma lista de headlines y descripciones, cambiando solo la H1 pinnea
 | 2 | Local Dispatch, No Call Center | 30 |
 | 3 | 33 Years in Lake Isabella | 25 |
 | 4 | 4.8★ · 850+ Google Reviews | 26 |
-| 5 | Open Daily 7 AM – 10 PM | 23 |
+| 5 | Open 7 Days A Week | 18 |
 | 6 | After-Hours Emergency Towing | 28 |
 | 7 | Free Quote By Phone | 19 |
 | 8 | Our Own Trucks & Drivers | 24 |
@@ -161,10 +130,10 @@ RSA B y C: misma lista de headlines y descripciones, cambiando solo la H1 pinnea
 |---|---|---|
 | D1 | Precision Automotive, Paint & Collision & Towing. Lake Isabella Blvd. Call us direct. | 85 |
 | D2 | Towing, 17-bay repair, collision and smog under one roof since 1993. 4.8★, 850+ reviews. | 88 |
-| D3 | Open 7 days, 7 AM–10 PM, plus after-hours emergency towing. Book online or call. | 80 |
+| D3 | Open 7 days a week, with after-hours emergency towing. Book online or call. | 75 |
 | D4 | AAA Approved Auto Repair, NAPA AutoCare and CA Gold Seal Smog Station in Lake Isabella. | 87 |
 
-RSA B y C: misma lista de headlines y descripciones, cambiando solo la H1 pinneada (B y C de la lista de arriba) y pinneando en posición 2 "Local Dispatch, No Call Center" (B) o "4.8★ · 850+ Google Reviews" (C) para forzar el split test del ángulo.
+Un solo RSA por grupo (RSA A, primera H1 pinneada). Con 2–3 clics al día un A/B es ruido (playbook §9); la H1 alternativa queda documentada por si se abre un segundo RSA cuando el grupo supere ~50 clics/mes.
 
 ## Extensiones (nivel de campaña, ambas campañas)
 
@@ -181,7 +150,7 @@ RSA B y C: misma lista de headlines y descripciones, cambiando solo la H1 pinnea
 
 **Snippets estructurados** — Services: Light Duty Towing, Medium Duty Towing, Roadside Assistance, 5th Wheel Towing, Travel Trailer Towing, Winch-Out Recovery, Auto Repair, Collision Repair
 
-**Llamada**: (760) 606-4160 (número de call tracking, reenvío al (760) 379-6222). Reporte de llamadas activado, conversión "Calls from Ads" con duración mínima 30 s. Horario del activo: 6:30–22:30 todos los días.
+**Llamada**: (760) 606-4160 (número de call tracking, reenvío al (760) 379-6222). Reporte de llamadas activado, conversión "Calls from Ads" con duración mínima 30 s. Horario del activo: el de atención del cliente (7–22) convertido a la zona horaria de la cuenta, que Windsor no expone: verificar `customer.time_zone` en la UI antes de fijarlo.
 
 **Ubicación**: vincular GBP "Precision Automotive, Paint & Collision & Towing" (PENDIENTE acceso). Sin esto no hay anuncio en el pack de Maps.
 

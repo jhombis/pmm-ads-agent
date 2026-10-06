@@ -2,12 +2,14 @@
 cliente: Precision Towing
 slug: precision-towing
 pais: US
-actualizado: 2026-09-29
+actualizado: 2026-10-06
 fuente: semrush + web + search terms de la cuenta 753-255-2245
 estado: completo
 ---
 
 # Competencia — Precision Towing
+
+> Actualización 2026-10-06 (search terms 09-29 → 10-05, 13 términos, 2 con clic): siguen apareciendo B&D Towing (4 variantes, sin clic esta semana porque la cuenta ya pujó menos), "b & b towing", "matt's off road recovery" y un competidor nuevo, **"gomez towing near me"** (sin sitio localizado; va a negativas). El gasto irrelevante de la semana no fue de competidores sino de taller: "starter and alternator repair near me" $65,42 en 2 clics. Acumulado 53 días: marcas de competidores $143,88 (30% del gasto rastreable), 2,5 conv. El análisis de abajo (2026-09-29) sigue vigente; Semrush no se volvió a consultar porque no indexa esta subasta.
 
 > Cómo leer este archivo. Lake Isabella es un mercado rural sin cobertura de Semrush en pagado: **ningún competidor local tiene keywords pagadas en Semrush**, y tampoco las tiene el propio cliente (precisiontowingca.com muestra 0 KW pagadas pese a gastar ~$860/mes). Es decir, Semrush está ciego para esta subasta; sirve para volumen/CPC nacional de los términos, no para saber quién puja en el radio. Los únicos datos pagados reales son de una red lead-gen nacional (Road Rescue Network). Todas las landings de competidores estaban bloqueadas por el proxy de red (WebFetch y curl → 403), así que "cómo anuncian" y "a dónde envían" se reconstruyen con títulos/snippets de búsqueda web, directorios y las copies reales de Semrush. Lo que sí es de primera mano: los search terms de la cuenta (6 semanas) y los datos de la landing del cliente.
 
@@ -149,6 +151,7 @@ Lectura: nadie en el radio tiene una landing por servicio con prueba social real
 Alimenta `/negatives`. Aplicar a nivel de cuenta en **concordancia de frase** salvo donde se indica exacta. Incluye variantes ortográficas porque la concordancia amplia actual ya las atrajo.
 
 **Marcas de competidores locales (Kern River Valley)**
+- Gomez Towing (nuevo 2026-10-06): `gomez towing`, `gomez tow`, `gomez towing near me`
 - B&D Towing: `b&d towing`, `b & d towing`, `b and d towing`, `b d towing`, `bd towing`, `bnd towing`, `b n d towing`, `band d towing`, `b&d tow`, `b and d tow`, `d&b towing`, `d and b towing`, `b&d towing lake isabella`, `b and d towing lake isabella`, `b&d towing near me`, `b&d towing & storage`, `bd towing lake isabella`
 - B&M Towing: `b&m towing`, `b & m towing`, `b and m towing`, `b m towing`, `bm towing`, `bnm towing`, `b&m tow`, `b&m towing lake isabella`, `b&m towing inc`, `m&b towing`
 - Golden Empire Towing: `golden empire towing`, `golden empire tow`, `golden empire`, `goldenempiretow`, `golden empire towing mountain mesa`, `golden empire towing lake isabella`, `golden empire towing bakersfield`

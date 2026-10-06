@@ -1,103 +1,98 @@
 ---
 cliente: Precision Towing
 slug: precision-towing
-D0: 2026-09-29
-actualizado: 2026-09-29
+D0: 2026-10-06
+actualizado: 2026-10-06
 fase_actual: 0
+version: 2
+plan_es: 
+plan_en: 
 ---
 
-# Roadmap — Precision Towing
+# Roadmap — Precision Towing (v2)
 
-> Fechas = proyección desde D0 2026-09-29. Condiciones = verdad. /weekly-review avanza la fase solo cuando la condición se cumple. Factores aplicados: la web la edita el cliente (Fase 0 +14 días), presupuesto $27/día < 3× CPL benchmark ($78) (Fase 3 +2 semanas, PMax probablemente nunca califica), país US con categoría LSA (pista paralela pendiente de licencia), proceso de respuesta a leads no definido (bloqueante en Fase 0), nicho estacional (pico mayo–septiembre, lanzamos en temporada baja).
+> Re-baseline el 2026-10-06: el D0 anterior (2026-09-29) no avanzó porque ninguna tarea de Fase 0 se ejecutó (faltó confirmación para escribir en la cuenta y el cliente no entregó accesos). Fechas = proyección desde el nuevo D0; condiciones = verdad. Factores aplicados: web la edita el cliente o se monta landing propia (Fase 0 +11 días), presupuesto $27/día < 3× CPL ($78) (Fase 3 +2 semanas, PMax no califica), US con categoría LSA (pista paralela pendiente de licencia), respuesta a leads sin definir (bloqueante en Fase 0), temporada baja de noviembre a marzo.
 
 ## Resumen
 | Fase | Fecha estimada | Estado |
 |---|---|---|
-| 0 · Fundación | 2026-09-29 → 2026-10-13 | 🔄 en curso |
-| 1 · Lanzamiento Search (estructura nueva) | 2026-10-14 → 2026-10-21 | ⏳ pendiente |
-| 2 · Limpieza D7 · D14 · D30 | 2026-10-21 · 2026-10-28 · 2026-11-13 | ⏳ pendiente |
-| 3 · tCPA | 2026-11-26 (rango 2026-11-13 → 2026-12-09) | ⏳ pendiente |
-| 4 · Remarketing | 2027-01-15 (revisión) | ⛔ probable bloqueo: audiencia < 1.000 con este tráfico |
-| 5 · Performance Max | 2027-03-30 como muy pronto | ⛔ no califica con $825/mes (ver fase) |
+| 0 · Fundación | 2026-10-06 → 2026-10-17 | 🔄 en curso (acciones de cuenta esta semana; landing vía A o B decidida el 2026-10-10) |
+| 1 · Relanzamiento (estructura nueva, Max. clics con tope) | 2026-10-20 → 2026-10-27 | ⏳ pendiente |
+| 2 · Limpieza D7 · D14 · D30 y paso a Max. conversiones | 2026-10-27 · 2026-11-03 · 2026-11-19 | ⏳ pendiente |
+| 3 · tCPA | 2026-12-03 (rango 2026-11-19 → 2026-12-17) | ⏳ pendiente |
+| 4 · Remarketing | 2027-01-20 (revisión) | ⛔ probable bloqueo: audiencia < 1.000 |
+| 5 · Performance Max | 2027-04-06 como muy pronto | ⛔ no califica con $825/mes |
 | 6 · Conversiones offline | fuera de alcance | ⏳ sin CRM |
-| Paralela · Landing | 2026-09-29 → 2026-11-13 | 🔄 en curso |
-| Paralela · LSA | depende de licencia (respuesta antes del 2026-10-06) | ⏳ PENDIENTE cliente |
+| Paralela · Landing | 2026-10-06 → 2026-11-19 | 🔄 en curso |
+| Paralela · LSA | depende de licencia (respuesta antes del 2026-10-10) | ⏳ PENDIENTE cliente |
 
-La cuenta ya está gastando ($825/mes en la campaña "ENHPRM Radius"). Fase 0 no detiene el gasto: aplica las mejoras que no dependen del cliente (negativas, frase) sobre la campaña actual mientras se resuelven los bloqueantes.
+La cuenta sigue gastando ($32/día en la campaña actual, CPC $24 en las dos últimas semanas). Fase 0 arranca por lo que no depende del cliente y frena la sangría: presupuesto a $27, negativas, amplias a frase, programación.
 
 ## Fase 0 — Fundación
-- **Fecha estimada**: 2026-09-29 → 2026-10-13 (14 días porque la web y el GTM los edita el cliente o un tercero; si PMM consigue acceso directo en la primera semana, se acorta a 2026-10-06)
-- **Condición de paso**: todas las tareas bloqueantes de Fase 0 en checklist ✅ (acceso web+GTM, conversión de formulario probada, Tag Assistant OK, horario unificado, negativas aplicadas, proceso de respuesta a leads definido, estructura nueva creada en pausa)
+- **Fecha estimada**: 2026-10-06 → 2026-10-17 (11 días: 2 de acciones en cuenta con OK de Jhombis + hasta el 2026-10-10 para el acceso web + 5 días hábiles para montar la landing vía B si no llega)
+- **Condición de paso**: bloqueantes ⚠ de Fase 0 en checklist ✅: medición verificada (llamada ≥30 s y formulario real con Tag Assistant), landing publicada (vía A o B), negativas y eliminaciones aplicadas, presupuesto $27, proceso de respuesta a leads definido, estructura nueva creada en pausa.
 - **Tareas**:
-  - Esta semana, sin esperar al cliente (PMM): aplicar lista universal + `data/negatives-nicho.txt` a la cuenta actual con `/negatives`; pasar las 22 keywords amplias de "ENHPRM Radius" a frase (misma campaña, sin tocar puja) para frenar el 13,5% de desperdicio; poner duración mínima 30 s en "Calls from Ads"; marcar "Clicks to call" y acciones locales como secundarias; desactivar aplicación automática de recomendaciones; confirmar en la UI que la geo es "Presencia" y que socios de búsqueda y Display están apagados (Windsor no lo muestra).
-  - Cliente (vía Jhombis, esta semana): acceso de edición a precisiontowingca.com (WordPress/Elementor) y a GTM-NWQH4MVX, o nombre y contacto de quien publica cambios. **Bloqueante raíz.**
-  - Cliente: definir quién contesta el (760) 606-4160 en horario, quién fuera de horario, y en cuánto tiempo devuelven un formulario. Sin esto, un CPL bueno no se convierte en dinero.
-  - Cliente/quien edite: crear `/thank-you/` (noindex, teléfono grande, "we call you back in 5 minutes") y poner Redirect en los 7 formularios Elementor; corregir footer a "Monday – Sunday 7 AM – 10 PM"; corregir IDs del formulario de /schedule-a-tow/ (campo fecha con name=email).
-  - PMM: crear conversión "Form - Thank You" (URL de destino) en AW-18347302928 y, si hay acceso a GTM, trigger `submit_success` como respaldo; verificar con Tag Assistant llamada y formulario; documentar capturas en `log/`.
-  - PMM: vincular GBP "Precision Automotive, Paint & Collision & Towing" a Ads (activo de ubicación) y unificar el horario del perfil a 7–22 (hoy directorios muestran L–V 7:30–17).
-  - PMM: confirmar con el cliente los 5 claims condicionados (after-hours, flatbed, medium duty, winch/4x4, nombre Miller's) y el ticket promedio para recalcular el CPL máximo.
-  - PMM: `/build-campaign` crea "Search - Towing KRV" y "Search - Marca" en pausa según `strategy.md` y `data/ads-search.md`.
-  - PMM: pedir a Jhombis PageSpeed móvil de la home y de /light-medium-duty-towing/ (o `PAGESPEED_API_KEY`).
-- **Riesgos**: si al 2026-10-13 no hay acceso a la web, se lanza igual la estructura nueva (la landing actual convierte al 37%) pero sin conversión de formulario y con el horario mal; se anota como bloqueo de Fase 2 y se escala a Jhombis. Si el cliente no define respuesta a leads, Fase 1 arranca con advertencia y se pide reporte de calidad de leads en el D30.
+  - 2026-10-07 (PMM, con OK de Jhombis, vía Windsor): presupuesto $32 → $27; eliminar 14 keywords (`data/2026-10-06-keyword-removals.txt`); aplicar negativas de campaña (`data/2026-10-06-negatives.txt`); pasar las 93 keywords restantes a frase; programación 6:30–22:30 tras leer `customer.time_zone` en la UI; "Calls from Ads" ≥30 s; secundarias las de clic y locales; recomendaciones automáticas apagadas; confirmar socios de búsqueda y Display apagados y geo en "Presencia".
+  - 2026-10-07 (PMM, UI): verificar qué dispara "Form Fill"; si es un evento de clic, pasarla a secundaria.
+  - Hasta 2026-10-10 (Cliente vía Jhombis): acceso a WordPress/Elementor y GTM, o contacto de quien edita; quién contesta 7–22 y fuera de horario; licencia CHP/seguro para LSA; los 5 claims (after-hours, flatbed, medium duty, winch, nombre Miller's); ticket promedio; confirmación de $825 como pauta; CNAME `go.precisiontowingca.com` si se va por vía B.
+  - 2026-10-10 (PMM): decisión vía A (editar WordPress) o vía B (`/landing-ghl precision-towing todos` o Leadpages: 3 landings + gracias).
+  - 2026-10-13 → 2026-10-17 (PMM): landing publicada, conversión de formulario creada, Tag Assistant en móvil, GBP vinculado (si hay acceso), `/build-campaign` con la estructura v2 en pausa, URLs finales actualizadas en `data/keywords.csv`.
+- **Riesgos**: si Jhombis no confirma las escrituras el 2026-10-07, cada día cuesta ~$40 de CPC inflado; si el cliente no define quién contesta, se lanza con advertencia y se exige la hoja de leads en D30.
 
 ## Fase 1 — Lanzamiento Search
-- **Fecha estimada**: activar 2026-10-14; condición evaluable 2026-10-21
-- **Condición de paso**: campañas activas 7 días, RSA aprobados con fuerza ≥ "Buena", ≥1 conversión registrada en cada tipo (llamada desde anuncio y llamada web; formulario si ya existe)
-- **Qué se lanza**: "Search - Towing KRV" $24/día (AG1 Tow Truck Near Me, AG2 Towing Lake Isabella & KRV, AG3 Roadside Assistance, AG4 RV & Trailer Towing) y "Search - Marca" $3/día; Maximizar conversiones sin tCPA; frase + exacta; presencia en radio 21 mi + 2 puntos de 8 mi; programación 6:30–22:30; el mismo día se pausa "ENHPRM Radius". PMax sigue pausada.
-- **Riesgos**: caída de impresiones al salir de amplia (mercado rural). Si el gasto queda por debajo de $18/día en la primera semana, ampliar con variantes en frase ("tow truck", "towing service") antes de considerar amplia. Golden Empire (sede a 5 mi) puede aparecer en Auction Insights: revisar en D7.
+- **Fecha estimada**: activar 2026-10-20; condición evaluable 2026-10-27
+- **Condición de paso**: campaña activa 7 días, RSA aprobados (fuerza ≥ "Buena"), ≥1 conversión de llamada y ≥1 de formulario registradas, gasto ≥ $18/día
+- **Qué se lanza**: "Search - Precision Towing KRV" $27/día, 4 grupos (AG1 Tow Truck & Towing KRV, AG2 Roadside, AG3 RV & Trailer, AG4 Marca), 87 keywords frase/exacta, Max. clics con tope $9, presencia 21 mi + 2 × 8 mi, programación 6:30–22:30 hora de la cuenta; la campaña ENHPRM Radius se pausa el mismo día; PMax sigue pausada.
+- **Riesgos**: menos impresiones al salir de amplia; si el gasto no llega a $18/día en D7, tope a $11. Golden Empire en Auction Insights.
 
-## Fase 2 — Limpieza (D7 · D14 · D30)
-- **Fechas**: 2026-10-21 · 2026-10-28 · 2026-11-13
-- **Condición de paso**: tres revisiones hechas con `/weekly-review`, negativas aplicadas, keywords sin impresiones en 30 días pausadas, RSA peor por grupo reemplazado, reporte de calidad de leads del cliente recibido
-- **Qué se revisa**: search terms → negativas (marcas de competidores nuevas, compra de trailers, aseguradoras); gasto sin conversión por keyword (umbral: $47 = P75 del benchmark, sobre todo "tow truck" y "roadside assistance" en frase); CPL por ad group contra el objetivo $21–31; IS de AG1/AG2 (meta 70–80%); Auction Insights; en D30, decisión sobre AG4 (si 0 conv, pausar hasta mayo) y sobre "24 hour" si el cliente confirmó cobertura nocturna. Landing estrella reescrita debe estar publicada antes del D30.
+## Fase 2 — Limpieza (D7 · D14 · D30) y paso a Max. conversiones
+- **Fechas**: 2026-10-27 · 2026-11-03 · 2026-11-19
+- **Condición de paso**: tres revisiones con `/weekly-review`, negativas aplicadas, keywords sin impresiones pausadas, hoja de calidad de leads recibida, **≥15 conversiones limpias en 30 días y CPL ≤ $47 → cambio a Max. conversiones** (sin tCPA)
+- **Qué se revisa**: search terms (competidores nuevos, taller, compra de trailers); gasto > $47 sin conversión por keyword ("tow truck", "roadside assistance" primero); CPL por grupo contra $21–38; IS y pérdida por presupuesto vs ranking; CPC medio contra el tope; Auction Insights; dispositivo (desktop −50% si sigue en 0); en D30 decisión sobre AG3 trailers y "24 hour".
 
 ## Fase 3 — Optimización de puja (tCPA)
-- **Fecha estimada**: **2026-11-26**. Cálculo: $27/día ÷ CPL benchmark $26 = 1,04 conv/día → 30 conv en ~29 días desde el lanzamiento (2026-11-12); +14 días porque el presupuesto está por debajo de 3× CPL/día (aprendizaje lento) → 2026-11-26. Con el CPL histórico de la cuenta ($37,5): 0,72 conv/día → 42 días → 2026-11-25 sin ajuste, 2026-12-09 con él. Rango realista: 2026-11-13 → 2026-12-09.
-- **Condición de paso**: ≥30 conversiones en ventana de 30 días con tracking verificado (llamadas ≥30 s + formulario), CPL ≤ $47
-- **Acción**: tCPA en "Search - Towing KRV" = CPA real observado (esperado $30–35), no el deseado; bajar 10% cada 2 semanas si se sostiene hasta $26; Marca se queda en Max. conversiones. Reajustar reparto por ad group según CPA. Evaluar ajustes por horario y dispositivo con datos de 60 días.
-- **Si no se cumple en fecha**: revisar en este orden: (1) tasa de conversión de la landing (< 25% de llamadas por clic indica problema de landing o de respuesta del cliente), (2) IS perdido por presupuesto vs por ranking, (3) keywords que consumen sin convertir. NO forzar tCPA con menos de 30 conversiones. El histórico de la campaña vieja no cuenta para la ventana.
+- **Fecha estimada**: **2026-12-03**. Cálculo: $27/día ÷ CPL benchmark $26 = 1,04 conv/día → 30 conv en ~29 días desde el lanzamiento (2026-11-18); +14 días por presupuesto < 3× CPL/día → 2026-12-03. Con el CPL histórico de la cuenta ($43): 0,63/día → 48 días → 2026-12-07; +14 → 2026-12-21. Rango realista: 2026-11-19 → 2026-12-17.
+- **Condición de paso**: ≥30 conversiones en 30 días con tracking verificado (llamadas ≥30 s + formulario real), CPL ≤ $47, ya en Max. conversiones ≥2 semanas
+- **Acción**: tCPA = CPA observado en esas 30 conversiones (no $26 por deseo); −10% cada 2 semanas si se sostiene; reparto por grupo según CPA; ajustes de horario y dispositivo con 60 días.
+- **Si no se cumple en fecha**: revisar (1) CVR de landing (< 25% de llamadas por clic), (2) IS perdido por presupuesto vs ranking, (3) keywords que consumen sin convertir. No forzar tCPA; no volver a Max. conversiones sin tope si el CPC vuelve a dispararse.
 
 ## Fase 4 — Remarketing
-- **Fecha estimada**: revisión 2027-01-15
-- **Condición de paso**: audiencia de visitantes ≥1.000 usuarios en 30 días (mínimo de Google para RLSA en Search)
-- **Acción**: RLSA en observación en ambas campañas; Display de remarketing con exclusión de apps solo si la audiencia supera 100 usuarios y hay creatividades propias.
-- **Realidad**: con ~60–80 clics/mes y sin tráfico orgánico (Semrush: 0), la audiencia de 30 días será de 100–200 usuarios. RLSA en Search **no va a habilitarse** con este presupuesto; Display de remarketing sí es posible con lista ≥100, pero con presupuesto residual ($1–2/día) y solo si el cliente entrega fotos. Se marca ⛔ hasta que el tráfico crezca (GA4 vinculado y audiencia creada desde Fase 0 para acumular desde ya).
+- **Fecha estimada**: revisión 2027-01-20
+- **Condición de paso**: audiencia ≥1.000 usuarios en 30 días para RLSA (Search)
+- **Realidad**: con 60–90 clics/mes y 0 tráfico orgánico la lista será de 100–200: RLSA no se habilita; Display de remarketing sí con lista ≥100, presupuesto residual y fotos propias. GA4 y la audiencia se crean en Fase 0 para acumular desde ya.
 
 ## Fase 5 — Performance Max
-- **Fecha estimada**: 2027-03-30 como muy pronto (mes 6 de la cuenta)
-- **Condición de paso**: TODAS las de `knowledge/estrategias/pmax-cuando-y-como.md`: tCPA estable ≥4 semanas dentro de objetivo; ≥30 conv/mes verificadas (formulario + llamada ≥60 s); ciclo de limpieza D30 completado; assets propios (5+ fotos, logo, 1 video); landing ≥5% conversión con anti-spam; presupuesto PMax ≥3× CPA/día
-- **Si no califica** (es lo esperado): con $825/mes, PMax tendría 20–30% = $5,5–8/día contra un mínimo de ~$78/día (3× CPA $26). **No califica por presupuesto**, y además hoy fallan tracking de formulario y assets. Qué haría falta: pauta ≥ $2.000/mes o CPA ≤ $3 (imposible en el nicho). Decisión: quedarse en Search + remarketing Display; reevaluar solo si el cliente confirma margen para escalar (PENDIENTE en brief). La campaña PMax existente sigue pausada; no borrarla (conserva historial).
+- **Fecha estimada**: 2027-04-06 como muy pronto
+- **Condición de paso**: todas las de `knowledge/estrategias/pmax-cuando-y-como.md` (tCPA estable 4 semanas, 30+ conv/mes verificadas, D30 cumplido, assets propios, landing ≥5% con anti-spam, presupuesto ≥3× CPA/día)
+- **Si no califica** (esperado): con $825/mes PMax tendría $5–8/día contra ~$78 necesarios. Solo califica con pauta ≥ $2.000/mes. La PMax existente sigue pausada; no borrarla.
 
 ## Fase 6 — Conversiones offline
-- **Estado**: fuera de alcance actual. El cliente no tiene CRM (PENDIENTE confirmar). Sustituto desde D0: hoja compartida donde marque cada llamada/formulario como calificado o no, con fecha y hora, para cruzar con Ads en D30. Se reevalúa cuando exista registro de leads con GCLID (campos ocultos UTM+GCLID se añaden al formulario en Fase 0 si hay acceso).
+- **Estado**: fuera de alcance (sin CRM). Sustituto: hoja compartida de calidad de leads desde Fase 0; campos ocultos gclid/UTM en el formulario (nativos en la vía B).
 
 ## Pista paralela — Landing
-| Ajuste (audit-site.md) | Fase | Fecha | Responsable | Bloqueante |
+| Ajuste | Fase | Fecha | Responsable | Bloqueante |
 |---|---|---|---|---|
-| Acceso de edición web + GTM, o contacto de quien edita | 0 | 2026-10-06 | Cliente | Sí |
-| `/thank-you/` + Redirect en 7 formularios; conversión de formulario | 0 | 2026-10-10 | Cliente edita / PMM configura | Sí |
-| Tag Assistant: llamada web + formulario | 0 | 2026-10-13 | PMM | Sí |
-| Footer: horario 7 AM–10 PM en las 9 páginas | 0 | 2026-10-10 | Cliente | Sí |
-| Bug IDs formulario /schedule-a-tow/ | 0 | 2026-10-10 | Cliente | No |
-| Reescritura landing estrella `/light-medium-duty-towing/` (H1 "Tow Truck in Lake Isabella & the Kern River Valley", teléfono + ETA arriba, form 3 campos, comunidades, sellos, agregado 4,8★, 4 reseñas de grúa) | 2 | PMM redacta 2026-10-17; publicada antes del 2026-11-13 | PMM / Cliente | No (sí para pasar Fase 2) |
-| Botón de llamada sticky en móvil | 2 | 2026-10-24 | Cliente | No, prioridad alta |
-| Sellos AAA / NAPA / Gold Seal + "licensed & insured" (cuando confirme CHP) | 2 | 2026-10-24 | Cliente | No |
-| `/roadside-assistance/` con H2 por subservicio | 2 | 2026-10-31 | Cliente | No |
-| `/5th-wheel-towing/` y `/travel-trailer-towing/` con frase "we tow, we don't sell hitches" | 2 | 2026-10-31 | Cliente | No |
-| Home: H1, agregado de reseñas, horario | 2 | 2026-10-31 | Cliente | No |
-| Velocidad: hero WebP ≤120 KB, un solo hero por breakpoint, fuentes a 2 pesos, caché/CDN | 3 | 2026-11-30 | Cliente / hosting | No (pendiente medir PSI) |
-| Fugas: menú reducido en landings pagadas, sin Quick Links duplicados | 3 | 2026-11-30 | Cliente | No |
+| Acceso web + GTM o contacto de quien edita (vía A) | 0 | 2026-10-10 | Cliente | Sí (define vía) |
+| Vía B: 3 landings GHL/Leadpages (towing, roadside, trailer) + gracias, formulario 3 campos, conversión propia, dominio | 0 | 2026-10-13 → 2026-10-17 | PMM (CNAME: Cliente) | Sí hasta Tag Assistant OK |
+| Vía A: `/thank-you/` + redirect en 7 formularios; footer 7–22; bug IDs del formulario | 0 | 2026-10-17 | Cliente | Sí |
+| Verificar origen de "Form Fill"; conversión de formulario real | 0 | 2026-10-07 / 2026-10-17 | PMM | Sí |
+| Tag Assistant: llamada web + formulario, en móvil | 0 | 2026-10-17 | PMM | Sí |
+| Landing estrella reescrita (vía A) o copy final GHL (vía B): H1 "Tow Truck in Lake Isabella & the Kern River Valley", teléfono + ETA, form 3 campos, comunidades, sellos, 4,8★ | 1–2 | antes de 2026-11-19 | PMM redacta / Cliente o PMM publica | No (sí para pasar Fase 2) |
+| Sticky móvil; sellos AAA/NAPA/Gold Seal; agregado 4,8★ en páginas de servicio | 2 | 2026-10-30 | Cliente (vía A) / nativo en vía B | No |
+| `/roadside-assistance/`, `/5th-wheel-towing/`, `/travel-trailer-towing/` ajustes; home con H1 (AG4) | 2 | 2026-11-06 | Cliente | No |
+| Velocidad (hero WebP, fuentes, caché) y fugas de menú | 3 | 2026-12-05 | Cliente / hosting | No (PSI pendiente de medir) |
 
 ## Pista paralela — LSA
-- Aplica en principio: US, towing es categoría elegible, GBP con 4,8★ y ~850 reseñas (ventaja fuerte de ranking). Falta confirmar licencia (CHP / motor carrier permit), seguro y disposición al background check: **PENDIENTE cliente, respuesta antes del 2026-10-06**.
-- Si confirma: 2026-10-06 iniciar solicitud → verificación 2026-10-20 a 2026-11-03 → presupuesto semanal aparte de los $825 (proponer $50–75/semana) y gestión de reseñas y tasa de respuesta desde el primer día.
-- Si no confirma: se documenta como fase futura y no bloquea nada.
+- Towing es elegible en US; GBP 4,8★ / ~850 reseñas es una ventaja fuerte. Falta licencia (CHP / motor carrier), seguro y disposición al background check: **PENDIENTE cliente, respuesta antes del 2026-10-10**.
+- Si confirma: 2026-10-13 iniciar solicitud → verificación 2026-10-27 → 2026-11-10 → presupuesto semanal aparte ($50–75) y gestión de reseñas y tasa de respuesta.
+- Si no: fase futura, no bloquea.
 
 ## Estacionalidad y ventanas
-- **Pico**: mayo–septiembre (turismo del Kern River, campgrounds: es cuando AG4 trailers tiene sentido). **Valle**: noviembre–marzo. Lanzamos el 2026-10-14, entrando en temporada baja: esperar menos impresiones que las 620 de agosto–septiembre y no leerlo como fallo de la estructura.
-- Invierno: nieve y cierres en Hwy 155/178 generan demanda de winch-out y recovery (AG3) y accidentes; conviene tener AG3 vivo en enero–febrero aunque rinda poco en octubre.
-- AG4 (5th wheel / travel trailer): si en D30 sigue en 0 conversiones, pausar y reactivar el 2027-04-15 antes del pico.
-- Ventana de tCPA: la ventana de 30 conv puede alargarse por la temporada baja; el rango 2026-11-13 → 2026-12-09 ya lo contempla con el +14 días.
+- Pico mayo–septiembre (Kern River, campgrounds): AG3 trailers tiene sentido ahí. Valle noviembre–marzo: lanzamos el 2026-10-20 entrando en temporada baja; esperar menos impresiones que en agosto–septiembre y no leerlo como fallo de la estructura.
+- Invierno: nieve y cierres en Hwy 155/178 traen winch-out y recovery (AG2): mantener AG2 vivo en enero–febrero.
+- AG3: si en D30 sigue en 0 conv, pausar y reactivar el 2027-04-15.
+- La ventana de 30 conv puede alargarse por temporada baja; el rango de Fase 3 ya lo contempla.
 
 ## Historial de cambios
-- 2026-09-29: creado a partir de strategy.md v1, audit-site.md (12/22), benchmark.md (27 cuentas) y brief.md.
+- 2026-09-29: creado (v1) a partir de strategy.md v1, audit-site.md (12/22), benchmark.md (27 cuentas) y brief.md.
+- 2026-10-06: v2. Re-baseline D0 por Fase 0 sin ejecutar; estrategia v2 (1 campaña, 4 grupos, Max. clics con tope); landing vía B (GHL/Leadpages) como alternativa al acceso web; diagnóstico `log/2026-10-06-diagnose.md` (CPC $24, CPL $94 en 7 días).

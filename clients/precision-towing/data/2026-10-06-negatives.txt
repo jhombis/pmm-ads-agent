@@ -1,5 +1,6 @@
-# /negatives init precision-towing — 2026-09-29 — formato: término | match | nivel | fuente
-# Nivel "campaign" = campaña 24137167100 (ENHPRM Radius) hoy; replicar en "Search - Towing KRV" al crearla. La sección Taller NO va en "Search - Marca".
+# /negatives init precision-towing — 2026-10-06 (reemplaza a 2026-09-29) — término | match | nivel | fuente
+# Campaña = 24137167100 (ENHPRM Radius) hoy; replicar en "Search - Precision Towing KRV" al crearla. Los de nivel ad_group van en AG1, AG2 y AG3, nunca en AG4 Marca.
+# Excepciones a la universal para esta cuenta: cheapest/cheap (convierten en el nicho), trailer (el cliente remolca trailers), county ("kern county towing"), cost suelto (playbook: "X cost" puede ser comercial; se usan "how much does", "average cost", "price list").
 jobs | PHRASE | campaign | universal
 career | PHRASE | campaign | universal
 careers | PHRASE | campaign | universal
@@ -149,6 +150,12 @@ juegos | PHRASE | campaign | universal
 película | PHRASE | campaign | universal
 canción | PHRASE | campaign | universal
 letra | PHRASE | campaign | universal
+hourly rate | PHRASE | campaign | universal
+cost per hour | PHRASE | campaign | universal
+average cost | PHRASE | campaign | universal
+how much does | PHRASE | campaign | universal
+price list | PHRASE | campaign | universal
+license requirements | PHRASE | campaign | universal
 junkyard | PHRASE | campaign | universal-towing
 junk yard | PHRASE | campaign | universal-towing
 salvage | PHRASE | campaign | universal-towing
@@ -162,6 +169,7 @@ dmv | PHRASE | campaign | universal-towing
 impound lot | PHRASE | campaign | universal-towing
 tow hitch | PHRASE | campaign | universal-towing
 tow bar | PHRASE | campaign | universal-towing
+gomez towing | PHRASE | campaign | nicho
 b&d towing | PHRASE | campaign | nicho
 b & d towing | PHRASE | campaign | nicho
 b and d towing | PHRASE | campaign | nicho
@@ -370,22 +378,34 @@ long distance | PHRASE | campaign | nicho
 boat | PHRASE | campaign | nicho
 jet ski | PHRASE | campaign | nicho
 how much | PHRASE | campaign | nicho
-cost | EXACT | campaign | nicho
+cost | PHRASE | campaign | nicho
 prices | PHRASE | campaign | nicho
-price list | PHRASE | campaign | nicho
 rates | EXACT | campaign | nicho
 estimate calculator | PHRASE | campaign | nicho
-smog | PHRASE | campaign | nicho
-smog check | PHRASE | campaign | nicho
-oil change | PHRASE | campaign | nicho
-mechanics | PHRASE | campaign | nicho
-auto repair | PHRASE | campaign | nicho
-body shop | PHRASE | campaign | nicho
-paint | PHRASE | campaign | nicho
-collision | PHRASE | campaign | nicho
 24 hours | PHRASE | campaign | nicho
 hitches | PHRASE | campaign | nicho
 dealers | PHRASE | campaign | nicho
 haulers | PHRASE | campaign | nicho
 semi trucks | PHRASE | campaign | nicho
 boats | PHRASE | campaign | nicho
+(solo AG1, AG2 y AG3; NO en AG4 Marca, cuyas keywords contienen "automotive", "paint" y "collision") | PHRASE | ad_group:AG1-AG3 (nunca AG4 Marca) | nicho-taller
+smog | PHRASE | ad_group:AG1-AG3 (nunca AG4 Marca) | nicho-taller
+smog check | PHRASE | ad_group:AG1-AG3 (nunca AG4 Marca) | nicho-taller
+oil change | PHRASE | ad_group:AG1-AG3 (nunca AG4 Marca) | nicho-taller
+brakes | PHRASE | ad_group:AG1-AG3 (nunca AG4 Marca) | nicho-taller
+mechanic | PHRASE | ad_group:AG1-AG3 (nunca AG4 Marca) | nicho-taller
+mechanics | PHRASE | ad_group:AG1-AG3 (nunca AG4 Marca) | nicho-taller
+auto repair | PHRASE | ad_group:AG1-AG3 (nunca AG4 Marca) | nicho-taller
+auto care | PHRASE | ad_group:AG1-AG3 (nunca AG4 Marca) | nicho-taller
+auto service | PHRASE | ad_group:AG1-AG3 (nunca AG4 Marca) | nicho-taller
+garage | PHRASE | ad_group:AG1-AG3 (nunca AG4 Marca) | nicho-taller
+body shop | PHRASE | ad_group:AG1-AG3 (nunca AG4 Marca) | nicho-taller
+paint | PHRASE | ad_group:AG1-AG3 (nunca AG4 Marca) | nicho-taller
+collision | PHRASE | ad_group:AG1-AG3 (nunca AG4 Marca) | nicho-taller
+starter | PHRASE | ad_group:AG1-AG3 (nunca AG4 Marca) | nicho-taller
+alternator | PHRASE | ad_group:AG1-AG3 (nunca AG4 Marca) | nicho-taller
+battery replacement | PHRASE | ad_group:AG1-AG3 (nunca AG4 Marca) | nicho-taller
+new battery | PHRASE | ad_group:AG1-AG3 (nunca AG4 Marca) | nicho-taller
+repair near me | PHRASE | ad_group:AG1-AG3 (nunca AG4 Marca) | nicho-taller
+transmission | PHRASE | ad_group:AG1-AG3 (nunca AG4 Marca) | nicho-taller
+engine | PHRASE | ad_group:AG1-AG3 (nunca AG4 Marca) | nicho-taller

@@ -5,12 +5,14 @@ nicho: towing
 pais: US
 cuentas_comparables: 27
 periodo: 90d
-actualizado: 2026-09-29
+actualizado: 2026-10-06
 fuente: Windsor.ai (google_ads), últimos 90 días (~2026-07-01 a 2026-09-28)
 datos_crudos: data/benchmark-towing-us-90d.csv
 ---
 
 # Benchmark interno — Precision Towing
+
+> Actualización 2026-10-06: esta extracción (27 cuentas, 2026-09-29) quedó integrada en `knowledge/benchmarks/towing-us.md`, que consolida 7 extracciones del MCC (2026-09-23 → 2026-10-01) y da cada métrica como rango. Los rangos consolidados coinciden con los de abajo: CPL mediana solo Search $26–32 → objetivo inicial $21–38; cohorte nueva $51–63; cuentas maduras $15–16; IS mediana 26% con ~30% perdido por presupuesto. No se repitió la extracción porque una semana no mueve percentiles de 90 días. **Lo que sí cambió es el cliente**: en los últimos 14 días su CPC de Search fue $24,14 (el máximo del nicho es $12,23) y su CPL $49 → $99; ver `log/2026-10-06-diagnose.md` y la sección "Historial propio" actualizada abajo.
 
 > 32 cuentas de towing / roadside / recovery del MCC identificadas por nombre (no hay etiquetas `nicho:*`/`pais:*`; conviene crearlas). **27 comparables** con ≥ $100 de gasto en 90 días. Excluidas por gasto $0 en el periodo: 667-808-6764 (Vance), 574-661-0292 (Denton Affordable), 993-389-6186 (Budget), 573-306-9698 (A&D Boston), 108-022-5049 (A1 Roadside). La cuenta propia del cliente (753-255-2245) no entra en los percentiles. Todas las cuentas son US.
 
@@ -144,7 +146,11 @@ Temas con gasto y peor rendimiento (gasto total del tema → conv, CPL, CVR; $ e
 
 Términos individuales con más gasto y 0 conversiones (agregado, referencia): "grua cerca de mi" $54 (4 cuentas), "tow companies" $42, "grua" $40, "motorcycle towing near me" $37, "roadside" $33, "roadside service near me" $31, "long distance towing" $30, "cheap tow truck service near me" $29, "car battery change near me" $28, "roadside assistance number" $28, "car jumper" $27, "road service" $26, "jump start car" $20 (4 cuentas), "car dollies for towing" $13, "rv haulers in texas" $11, "we buy junk cars for $1000" $11, "car jump starter" $10, "walmart roadside assistance" $10, "caa roadside assistance" $9.
 
-## Historial propio del cliente (cuenta 753-255-2245, Search desde 14/08/2026, ~41 días con gasto)
+## Historial propio del cliente (cuenta 753-255-2245, Search desde 14/08/2026)
+
+Actualizado al 2026-10-05 (53 días): Search $1.332, 87 clics, 31 conv, **CPC $15,31, CPL $43,0, CVR 35,6%**; últimos 14 días CPC $24,14 y últimos 7 días CPL $94. La tabla de abajo conserva la lectura del 2026-09-28 (CPC $13,80 / CPL $37,5), que ya era la peor del MCC en CPC; la tendencia posterior la empeora y confirma el diagnóstico: Max. conversiones sin tope en subasta delgada. El plan de puja pasa a Max. clics con tope de CPC $9 durante la reestructura (playbook §5) y vuelve a Max. conversiones con 15+ conv/mes limpias.
+
+Tabla al 2026-09-28:
 | Métrica | Precision (Search) | Nicho Search P25 / Med / P75 | Cohorte nueva (med.) | Cuentas maduras (med.) | Lectura |
 |---|---|---|---|---|---|
 | CPC | **$13,80** | $5,14 / $7,04 / $8,98 | $7,56 | $5,96 | **Peor que todas las 27 cuentas** (máximo del nicho: $12,23) |

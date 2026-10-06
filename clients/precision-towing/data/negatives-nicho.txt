@@ -1,11 +1,12 @@
 # Negativas — Precision Towing (aplicar con /negatives)
-# Nivel: cuenta (lista compartida "Precision - Nicho"), concordancia de frase salvo [exacta].
+# Nivel: campaña (Windsor no crea listas compartidas; migrar a lista de cuenta cuando haya API). Frase salvo [exacta]. Las secciones marcadas NIVEL AD GROUP van en AG1–AG3 y nunca en AG4 Marca.
 # Además aplicar la lista "PMM Universal" (knowledge/negativas-universales.md) con dos EXCEPCIONES para esta cuenta:
 #   - NO aplicar "cheapest" ni "cheap": en el nicho towing convierten (23 cuentas, CVR 34%, CPL $16,59).
 #   - NO aplicar "trailer" de la lista de nicho towing: el cliente sí remolca 5th wheel y travel trailers.
 #   - "license"/"permit" de la sección gobierno: aplicar (no vendemos licencias).
 
-## Competidores locales (Kern River Valley)
+## Competidores locales (Kern River Valley) — nivel campaña, frase
+gomez towing
 b&d towing
 b & d towing
 b and d towing
@@ -274,15 +275,19 @@ long distance
 boat
 jet ski
 
-## Precio / info sin landing
+## Precio de referencia (playbook §6.5)
 how much
+how much does
 cost
 prices
 price list
 rates
+hourly rate
+average cost
 estimate calculator
 
-## Taller (sin campaña en fase 1; evita que Search pague clics de mecánica)
+## NIVEL AD GROUP (solo AG1, AG2 y AG3; NO en AG4 Marca, cuyas keywords contienen "automotive", "paint" y "collision")
+## Taller / mecánica (search terms reales: "starter and alternator repair near me" $65, "smog check lake isabella", "auto care", "auto service near me", "garage automobile")
 smog
 smog check
 oil change
@@ -290,6 +295,16 @@ brakes
 mechanic
 mechanics
 auto repair
+auto care
+auto service
+garage
 body shop
 paint
 collision
+starter
+alternator
+battery replacement
+new battery
+repair near me
+transmission
+engine

@@ -5,13 +5,15 @@ pais: US
 idioma: EN
 nicho: towing
 mcc_customer_id: 753-255-2245
-actualizado: 2026-09-29
+actualizado: 2026-10-06
 estado: brief-completo
+plan_es: 
+plan_en: 
 ---
 
 # Brief — Precision Towing
 
-> Brief cerrado el 2026-09-29 con Jhombis. Fuentes: entrevista, fetch de precisiontowingca.com, Windsor.ai (cuenta 753-255-2245) y búsqueda web. Lo marcado PENDIENTE requiere respuesta del cliente; los bloqueantes están en Pendientes al final.
+> Brief cerrado el 2026-09-29 con Jhombis; historial de la cuenta actualizado el 2026-10-06 con datos de Windsor hasta el 2026-10-05 (ver `log/2026-10-06-diagnose.md`). Fuentes: entrevista, fetch de precisiontowingca.com, Windsor.ai (cuenta 753-255-2245) y búsqueda web. Lo marcado PENDIENTE requiere respuesta del cliente; los bloqueantes están en Pendientes al final.
 
 ## Negocio
 - URL: https://precisiontowingca.com/
@@ -43,26 +45,25 @@ estado: brief-completo
 - Ticket promedio / margen: PENDIENTE (Jhombis no lo tiene; pedir al cliente ticket de light-duty tow local, 5th wheel y travel trailer).
 - Capacidad (leads o trabajos/mes): PENDIENTE (preguntar al cliente cuántos camiones y conductores tiene).
 - **CPL máximo aceptable**: PENDIENTE hasta tener ticket y margen. Referencia provisional: CPL observado de $37 en Search (ver abajo). Fórmula al tener datos: margen por trabajo × tasa de cierre × 0.3.
-- Historial Google Ads (cuenta 753-255-2245, leído de Windsor.ai el 2026-09-29; exports en `data/history-*-2026-09-28.csv`):
-  - Cuenta nueva: primera campaña activa el **14/08/2026**. Seis semanas de datos, ~41 días con gasto.
-  - Gasto total $1.176 → ritmo ≈ $29/día ≈ $860/mes, coherente con los $825.
+- Historial Google Ads (cuenta 753-255-2245; Windsor.ai, 2026-08-14 → 2026-10-05; exports en `data/history-*.csv` y diagnóstico en `log/2026-10-06-diagnose.md`):
+  - Cuenta nueva: primera campaña activa el **14/08/2026**. 53 días de datos.
+  - Gasto total $1.484 (Search $1.332 + PMax $152) ≈ $28/día ≈ $850/mes. **Presupuesto diario configurado $32** (tope mensual $973), por encima de los $825 pactados.
 
   | Campaña | Tipo | Puja | Estado | Gasto | Clics | Impr. | Conv. | CPC | CPL | IS Search |
   |---|---|---|---|---|---|---|---|---|---|---|
-  | ENHPRM Radius (14/08) | Search | Max. conversiones | Activa | $1.049 | 76 | 620 | 28 | $13,80 | **$37,5** | 50% |
-  | P. Max (04/09) | PMax | Max. conversiones | Pausada | $127 | 60 | 2.841 | 8 | $2,10 | $15,8 | — |
+  | ENHPRM Radius (14/08) | Search | Max. conversiones, sin tCPA | Activa, $32/día | $1.332 | 87 | ~690 | 31 | $15,31 | **$43,0** | 35% últ. 7 d (50% acumulado) |
+  | P. Max (04/09) | PMax | Max. conversiones | Pausada, $5/día; gastó $25 entre 09-22 y 10-05 | $152 | 77 | 3.382 | 9 | $1,97 | $16,9 | — |
 
-  - Search: CTR 12,3%, tasa de conversión 36,8% (llamadas). CPC alto para el nicho ($13,80) pero CPL sano.
-  - Conversiones primarias: "Calls from Ads" 29 (extensión de llamada) + "Website Calls" 7 (tag AW-18347302928 del sitio, propio). Secundarias: Clicks to call 10, acciones locales 10. **No hay conversión de formulario configurada.**
-  - Estructura actual: 1 campaña Search con 2 ad groups (towing general / trailer-5th wheel), **22 keywords todas en concordancia amplia**, sin campaña de marca. Viola el estándar 2 de PMM (frase por defecto).
-  - Keywords que rinden: "tow truck" ($402, 10,5 conv), "kernville towing" ($86, 6 conv), "towing lake isabella" ($73, 3 conv), "towing near me" ($180, 3 conv).
-  - Desperdicio detectado en search terms: $159 en 11 clics a marcas de competidores y productos RV (B&D Towing Lake Isabella, B&M, A&M, Nitro, Chinos, B&B, Transcend, "forest river no boundaries") con 2,5 conv. El grupo de trailer/5th wheel gastó $46 con 0 conv y atrae búsquedas de compra de trailers (hitch, cargo trailer, toy hauler), no de remolque. Prioridad para /negatives y /strategy.
-  - Marca: "precision towing" y "precision automotive lake isabella" aparecen como search terms (8 clics, 2 conv). El nombre del taller "Precision Automotive" también se busca; conviene campaña de marca con ambas variantes.
-  - PMax se lanzó a los 20 días de vida de la cuenta (contra el estándar 9) y ya está pausada. Se mantiene pausada hasta cumplir condiciones del roadmap.
-  - Competidor principal detectado por búsquedas: **B&D Towing (Lake Isabella)**, 6 variantes del nombre en search terms.
+  - Search: CVR 35,6% (llamadas). **Tendencia**: CPC $5–8 del 31/08 al 20/09; $24,14 del 22/09 al 05/10 (últimos 7 días: $283, 11 clics, 3 conv, CPL $94). Es Max. conversiones sin tope en una subasta de 70 impresiones por semana.
+  - Conversiones primarias: "Calls from Ads" 32 + "Website Calls" 7 (tag AW-18347302928) + **"Form Fill" 1 (acción creada entre el 29/09 y el 05/10, origen por verificar; el sitio sigue sin página de gracias)**. Secundarias: Clicks to call 10, acciones locales 16. Total primarias 40 → ~23/mes.
+  - Estructura actual: 1 campaña Search con 2 ad groups y **107 keywords, todas en amplia** (no 22: el export por rendimiento solo mostraba las que imprimieron). Incluye `b&d towing` y `b&m towing` como keywords positivas (viola el estándar 5), `towing 24 hours near me`, 7 variantes de boat towing, motorhome, toy hauler y cargo trailer. ~400 negativas de campaña ya cargadas, entre ellas **la marca propia** (`precision`, `precision automotive`, [precision towing], [precision automotive lake isabella]) y `[flat tire service]` en exacta. Sin programación de anuncios (sirve 24/7 aunque el cliente atiende 7–22). Dispositivos: 97% móvil.
+  - Keywords que rinden (53 d): "tow truck" ($402, 10,5 conv), "kernville towing" ($128, 6), "towing near me" ($292, 5), "towing lake isabella" ($108, 4), "car towing" ($95, 2,5). "lake isabella towing" en amplia: $136, 0 conv.
+  - Desperdicio en search terms (sobre $476 rastreables de $1.332): competidores $144 (30%), taller $72 (15%: "starter and alternator repair near me" $65), 24 h $16, compra RV $15, precio $6. Neto 53%. Marca propia $67 con 2 conv (no es desperdicio; va a su grupo).
+  - PMax se lanzó a los 20 días de vida (contra el estándar 9) y está pausada; no borrarla.
+  - Competidor principal detectado por búsquedas: **B&D Towing (Lake Isabella)**, 6+ variantes del nombre en search terms; nueva esta semana: "gomez towing near me".
 
 ## Operación
-- Horario / 24-7: **Lunes a domingo 7:00 AM – 10:00 PM** (dato de Jhombis, coincide con formato de Google Business Profile). El sitio dice 8 AM – 8 PM y "After-Hours Emergency Towing Available": inconsistencia a corregir en la landing. Programación de anuncios propuesta: 6:30 AM – 10:30 PM todos los días; fuera de esa franja PENDIENTE confirmar si alguien contesta (define si se abre 24/7).
+- Horario / 24-7: **Lunes a domingo 7:00 AM – 10:00 PM** (dato de Jhombis, coincide con formato de Google Business Profile). El sitio dice 8 AM – 8 PM (sin cambios al 2026-10-06) y "After-Hours Emergency Towing Available": inconsistencia a corregir. La campaña actual **no tiene programación** (sirve 24/7). Propuesta: 6:30–22:30 todos los días **en la zona horaria de la cuenta** (`customer.time_zone`, PENDIENTE verificar en la UI; Windsor no la expone). Fuera de esa franja PENDIENTE confirmar si alguien contesta.
 - Respuesta a leads (quién, tiempo): PENDIENTE con el cliente. El sitio afirma que atiende el propio equipo (nombres en reseñas: Wes/West Miller, Carolyn en recepción, conductores Matthew y Leroy).
 - Teléfono / call tracking: **sí tiene call tracking**. El (760) 606-4160 de la landing es el número de reenvío; el número real del negocio es **(760) 379-6222** (sitio principal, GBP y directorios). En Ads usar siempre el de tracking; en el activo de ubicación se verá el del GBP.
 - CRM (solo referencia): PENDIENTE con el cliente
@@ -82,9 +83,9 @@ estado: brief-completo
 Lista confirmada por el cliente: PENDIENTE (no la conoce Jhombis). /competitors debe validar URLs y descartar los que no anuncian.
 
 ## Web y tracking
-- Plataforma / quién edita: WordPress + Elementor en precisiontowingca.com. Propietario y quién edita: PENDIENTE con el cliente (no es de PMM según Jhombis). Si PMM no puede editar, los cambios de landing de /audit-landing pasan a ser bloqueantes hasta conseguir acceso.
+- Plataforma / quién edita: WordPress + Elementor en precisiontowingca.com. Propietario y quién edita: PENDIENTE con el cliente (no es de PMM según Jhombis). **Alternativa sin depender del cliente (2026-10-06)**: PMM puede montar landings propias por servicio con `/landing-ghl` (GoHighLevel) o en Leadpages (cuenta de PMM conectada, plan Grow, 2 páginas de otro cliente ya publicadas), con formulario corto, página de gracias y conversión propias. Es la vía recomendada si el acceso no llega en la semana del 2026-10-06.
 - Tag/GA4: GTM-NWQH4MVX instalado (contenedor GTM) y gtag de Google Ads AW-18347302928 (propio de la cuenta 753-255-2245). GA4 no visible en el HTML de la home (puede estar dentro de GTM). Acceso a GTM: PENDIENTE con el cliente.
-- Formulario → destino: formulario Elementor en /schedule-a-tow/ con campos Name, Phone, Email, Vehicle Year/Make/Model, Service Needed, Pick Up Location, Drop Off Location, Desired Date/Time, Comments (9 campos, largo para una emergencia). Destino probable: amirepair22@gmail.com (email visible en la página). PENDIENTE confirmar con el cliente. Tras enviar aparece popup "Your Booking Is Not Yet Confirmed — Please give us a call": el formulario no cierra la venta solo, el teléfono es la conversión principal.
+- Formulario → destino: en la cuenta de Ads apareció la acción "Form Fill" (1 conv entre el 29/09 y el 05/10) sin que exista página de gracias ni redirect: PENDIENTE verificar sobre qué evento dispara. Formulario Elementor en /schedule-a-tow/ con campos Name, Phone, Email, Vehicle Year/Make/Model, Service Needed, Pick Up Location, Drop Off Location, Desired Date/Time, Comments (9 campos, largo para una emergencia). Destino probable: amirepair22@gmail.com (email visible en la página). PENDIENTE confirmar con el cliente. Tras enviar aparece popup "Your Booking Is Not Yet Confirmed — Please give us a call": el formulario no cierra la venta solo, el teléfono es la conversión principal.
 - Home sin formulario: la home solo tiene CTA "Get A Free Quote" → /schedule-a-tow/ y "Call Now". Sin meta description. Candidato a bloqueante en /audit-landing: landing de towing de emergencia sin formulario corto arriba del pliegue.
 - Requisitos de política: towing en California opera bajo permiso de CHP (motor carrier permit / CHP tow rotation). No es restricción de política de Google Ads, pero conviene mostrar licencia y seguro en la landing. Licencia y rotación CHP: PENDIENTE con el cliente. Sellos AAA/NAPA/Gold Seal sí son usables ya.
 
@@ -106,7 +107,9 @@ Lista confirmada por el cliente: PENDIENTE (no la conoce Jhombis). /competitors 
 - [x] Bloque 5 — Web y tracking (sitio confirmado; acceso de edición, GTM y destino del formulario PENDIENTE con el cliente)
 - [x] Bloque 6 — LSA (PENDIENTE con el cliente, fase futura)
 - [x] AW-18347302928 es propio de la cuenta 753-255-2245 (confirmado por Jhombis)
-- [ ] Confirmar destino real de los envíos del formulario
+- [ ] Confirmar destino real de los envíos del formulario y el origen de la conversión "Form Fill"
+- [ ] Verificar `customer.time_zone` de la cuenta antes de programar anuncios o escribir horas en el copy
+- [ ] Confirmar presupuesto diario correcto ($27 = $825/30,4; hoy $32)
 - [ ] Unificar horario en la landing (sitio 8–8 vs real 7–10 vs GBP L–V 7:30–5) y aclarar si hay atención fuera de horario
 - [ ] Pedir al cliente: quién responde leads y en cuánto tiempo, CRM, acceso a GBP y vínculo con Ads, licencia CHP / motor carrier, ofertas sostenibles, lista de competidores que reconoce
 - [ ] Agregar sellos AAA / NAPA / Gold Seal Smog a la landing y a las extensiones

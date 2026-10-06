@@ -2,22 +2,24 @@
 cliente: Precision Towing
 slug: precision-towing
 url: https://precisiontowingca.com/
-actualizado: 2026-09-29
+actualizado: 2026-10-06
 veredicto: REQUIERE AJUSTES ANTES DE LANZAR
 score: 12/22
 ---
 
 # Auditoría de landing — Precision Towing
 
+> Re-verificación 2026-10-06 (curl de home, /light-medium-duty-towing/, /schedule-a-tow/ y /thank-you/): **sin cambios en el sitio**. Horario sigue en 8–8, /thank-you/ sigue en 404, los formularios siguen sin redirect, sin sellos AAA/NAPA, sin sticky móvil. Novedades fuera del sitio: (1) en Google Ads apareció la conversión "Form Fill" (1 registro) sin página de gracias: hay que ver sobre qué evento dispara antes de contarla como lead; (2) PMM tiene ahora dos vías propias para la landing sin depender del cliente: `/landing-ghl` (GoHighLevel, `scripts/landing_build.py`) y Leadpages (cuenta de PMM conectada, plan Grow, con 2 páginas de otro cliente ya publicadas). Con eso el "bloqueante raíz" deja de ser un bloqueo absoluto: si el acceso a WordPress no llega en la semana del 2026-10-06, las landings de Ads se montan en GHL/Leadpages con formulario corto, página de gracias y conversión propias, y precisiontowingca.com queda como sitio orgánico.
+
 > Método (2026-09-29): 9 páginas descargadas con `curl` y parseadas con Python (WebFetch bloqueado para el dominio). PageSpeed API sin clave devolvió 429 (cuota diaria agotada) y no hay `PAGESPEED_API_KEY`: la velocidad es una **estimación por peso** y hay que confirmarla. Semrush `domain_overview` + `organic_research` (db us) ejecutados; no hay proyecto de `site_audit`. precisionautomotiveus.com y bbb.org bloqueados (no auditados). Archivos fuente en el scratchpad de la sesión (`audit/*.html`, `sizes.txt`).
 
 ## Veredicto
-La web es limpia, tiene una página por servicio con H1 correcto, teléfono de tracking con `tel:` en todas partes y GTM + gtag de Ads instalados, pero **no existe página de gracias ni ninguna forma de medir el formulario** (Elementor responde con popup, sin redirect), no hay formulario corto arriba del pliegue en ninguna landing, el botón de llamada no es sticky en móvil, faltan sellos/licencia y el horario publicado (8–8) contradice el real (7–10). Nada de esto lo puede corregir PMM hoy porque no hay acceso de edición a la web ni a GTM: ese acceso es el bloqueante raíz.
+La web es limpia, tiene una página por servicio con H1 correcto, teléfono de tracking con `tel:` en todas partes y GTM + gtag de Ads instalados, pero **no existe página de gracias ni ninguna forma de medir el formulario** (Elementor responde con popup, sin redirect), no hay formulario corto arriba del pliegue en ninguna landing, el botón de llamada no es sticky en móvil, faltan sellos/licencia y el horario publicado (8–8) contradice el real (7–10). Nada de esto lo puede corregir PMM en precisiontowingca.com sin acceso de edición; desde el 2026-10-06 la salida es montar las landings de Ads en GoHighLevel o Leadpages (ver nota de re-verificación) si el acceso no llega.
 
 Bloqueantes (rúbrica = 0 o estándar PMM 7): página de gracias / conversión de formulario, acceso de edición web + GTM, verificación con Tag Assistant.
 
 ## Bloqueantes (resolver en Fase 0)
-- [ ] **Acceso de edición a precisiontowingca.com (WordPress/Elementor) y a GTM-NWQH4MVX**, o nombre de quien aplica cambios — sin esto ningún otro ítem de esta lista se puede ejecutar — Cliente — 0,5 h
+- [ ] **Acceso de edición a precisiontowingca.com (WordPress/Elementor) y a GTM-NWQH4MVX**, o nombre de quien aplica cambios — Cliente — 0,5 h. **Plazo: 2026-10-10.** Si no llega, se decide la vía B: landings de Ads en GoHighLevel (`/landing-ghl`) o Leadpages, con dominio propio (p. ej. `go.precisiontowingca.com` requiere CNAME del cliente; sin DNS, subdominio de Leadpages/GHL), formulario de 3 campos, página de gracias y conversiones propias. Los ítems siguientes se resuelven en esa landing en vez de en WordPress — PMM — 4 h
 - [ ] **Conversión de formulario medible** (hoy 0 conversiones de formulario configuradas; el envío solo muestra el popup "Your Booking Is Not Yet Confirmed", `triggers: []`, sin `redirect`). Dos vías, elegir según acceso: (a) crear `/thank-you/` (noindex, con teléfono grande y "te llamamos en X min") y poner Redirect en la acción del formulario de `/schedule-a-tow/` y de los 6 formularios "Contact Us" de las páginas de servicio → conversión por URL de destino; (b) si solo hay acceso a GTM: trigger sobre el evento JS `submit_success` de Elementor Pro → etiqueta de conversión en AW-18347302928. Recomendada (a)+(b) — Cliente (web) / PMM (GTM + Ads) — 2 h
 - [ ] **Verificar con Tag Assistant** que `AW-18347302928` dispara la conversión "Website Calls" al tocar `tel:(760)6064160` y que la nueva conversión de formulario dispara al enviar; documentar en checklist — PMM — 1 h
 - [ ] **Unificar horario**: la landing dice "Monday – Sunday 8 AM – 8 PM" en el footer de las 9 páginas y en `/schedule-a-tow/`; el real es 7 AM – 10 PM. Si Ads anuncia 7–10 y la web dice 8–8, el usuario duda y no llama a las 9 PM. Cambio de un texto en el footer template de Elementor (ID 51) — Cliente / PMM si consigue acceso — 0,25 h
@@ -94,6 +96,8 @@ Datos medidos (home):
 Estimación: score móvil **35–55**, LCP **3,5–5 s** en 4G (hero JPEG grande, sin `fetchpriority`, fuentes bloqueantes), CLS bajo (imágenes con width/height). Causas principales por orden: peso de imágenes hero (doble hero), sin caché/CDN, fuentes, TTFB. No se marca como bloqueante porque no se puede confirmar score < 40; queda en Mejoras con prioridad media y **"PENDIENTE medir"** en el checklist.
 
 ## Landings que la estrategia va a necesitar
+
+**Actualización 2026-10-06**: la estrategia v2 pasa a **una sola campaña con 4 grupos** (límite de fragmentación del playbook para $600–1.500/mes). Cambia el mapa: AG1 Tow Truck & Towing KRV (incluye las ciudades por inserción de keyword) → landing estrella; AG2 Roadside → /roadside-assistance/; AG3 RV & Trailer → /5th-wheel-towing/ y /travel-trailer-towing/; AG4 Marca → home. Si se va por GHL/Leadpages, son **3 landings propias + 1 página de gracias** (towing, roadside, trailer) y la marca sigue a la home del sitio actual.
 Contexto: mercado rural (Kern River Valley, radio 21 mi), $825/mes, 76 clics en 6 semanas, CPC $13,80. Con ese volumen **no se justifican landings por ciudad**: "kernville towing" (6 conv) es el único término geográfico con tracción y se resuelve mencionando las comunidades en la landing estrella y en los ad groups, no con páginas separadas. Las 5 páginas de servicio ya existen; lo que falta es una página nueva y reescribir una.
 
 | # | Landing | Estado | Campaña / ad group que la usará | Acción |
