@@ -20,7 +20,7 @@ Los límites se validaron por script: headlines ≤30 caracteres (con el texto p
 
 **Inserciones y URLs**:
 - AG1 pinnea `{KeyWord:24/7 Towing Near You}`: repite wrecker, 24 hour o la ciudad, y usa el texto por defecto cuando la keyword no cabe.
-- `{LOCATION(City):Hill Country}` va como headline no pinneado.
+- ~~`{LOCATION(City):Hill Country}`~~: Windsor valida el largo bruto (36) y lo rechaza. En la cuenta se publicó "Hill Country Towing 24/7" en su lugar (06-oct). Se puede volver a poner a mano en la UI.
 - AG2 usa URL final por keyword: exotic y flatbed → `/exotic-vehicle-towing/` (CTA verificados el 10-06); long-distance → `/local-long-distance-towing/`.
 - Flatbed confirmado en la web: "rollback and wrecker trucks" en /about-us/.
 
@@ -43,7 +43,7 @@ Los límites se validaron por script: headlines ≤30 caracteres (con el texto p
 | 11 | Call Now For A Fast Quote | 25 |  |
 | 12 | Wrecker Service Near You | 24 |  |
 | 13 | 24 Hour Towing - Call Now | 25 |  |
-| 14 | {LOCATION(City):Hill Country} Towing | 36 |  |
+| 14 | Hill Country Towing 24/7 | 24 |  |
 | 15 | Stranded? We're On Our Way | 26 |  |
 
 | # | Descripción | Chars |

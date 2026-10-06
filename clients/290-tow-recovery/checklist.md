@@ -1,7 +1,7 @@
 ---
 cliente: 290 Tow and Recovery
 slug: 290-tow-recovery
-fase_actual: 0
+fase_actual: 1
 actualizado: 2026-10-06
 ---
 # Checklist — 290 Tow and Recovery
@@ -11,7 +11,7 @@ Base: `knowledge/checklists/setup-cuenta.md`, ajustada al cliente.
 - Responsable entre paréntesis.
 - /weekly-review lo actualiza.
 
-**Contexto (2026-10-06):** la cuenta está activa desde el 17/09 con la plantilla PLL y la reestructura no se aplicó. En 18 días gastó $530.14, CPL $88.36, con 45.8% de desperdicio rastreable. Fechas reprogramadas en `roadmap.md`.
+**Contexto (2026-10-06):** la cuenta está activa desde el 17/09 con la plantilla PLL. En 18 días gastó $530.14, CPL $88.36, con 45.8% de desperdicio rastreable. El 06-oct se aplicaron las negativas y la reestructura (F1, adelantada con OK de Jhombis); la medición de F0 sigue sin verificar. Fechas en `roadmap.md`.
 
 ## Fase 0 — Medición + negativas (2026-10-06 → 2026-10-08)
 ### Cuenta
@@ -25,7 +25,7 @@ Base: `knowledge/checklists/setup-cuenta.md`, ajustada al cliente.
 - [x] **(B)** (PMM) Negativas nuevas del diagnóstico aplicadas (06-oct: 52; resto ya cubierto o en pausa). Total cargado 285, verificado
 - [x] **(B)** (PMM) Negativas viejas que bloqueaban el plan quitadas (06-oct, con OK): `kerrville towing` [exacta], `city`, `Towed`, `Get car towed`, `Shop`, `shops`. Quedan 609 negativas
 - [ ] (PMM) Quitar marcas de lujo y exactas de llantas cuando el cliente confirme exotic y roadside (ver log/2026-10-06.md)
-- [ ] (PMM) D7 de negativas (13-oct): desperdicio sobre lo rastreable contra 45.8%
+- [ ] (PMM) D7 de negativas y reestructura (13-oct): desperdicio sobre lo rastreable contra 45.8%
 - [ ] (PMM) Revisar el historial de cambios en la UI: quién renombró "Ad group 1 - Towing General", quitó "emergency roadside" y creó AG2
 
 ### Medición
@@ -57,29 +57,33 @@ Base: `knowledge/checklists/setup-cuenta.md`, ajustada al cliente.
 - [ ] (Cliente) Ofertas sostenibles: ¿confirma "upfront price on the phone"?
 - [ ] (Jhombis) Avisar al cliente que la proyección realista es ~14–24 llamadas/mes en el mes 2, no 35–55
 
-## Fase 1 — Reestructura Search (2026-10-09 → 2026-10-16)
-- [ ] (PMM) AG1 "Ad group 1 - Towing General": keywords en frase y exacta (near me, wrecker, 24 h, ciudades sin sufijo de estado); fuera todas las keywords en amplia
-- [ ] (PMM) "roadside assistance" en amplia eliminada ($140.05, 26% del gasto)
-- [ ] (PMM) AG2 "Ad group 2 - Exotic Car & Long Distance towing" rellenado con URL final por keyword (exotic/flatbed y long-distance)
-- [ ] (PMM) AG3 Roadside nuevo, solo exacta: [roadside assistance near me], [roadside service near me], [jump start near me], [flat tire change near me]
-- [ ] (PMM) Ubicación: presencia solamente; radio de 40 mi recentrado en 30.2752, -98.8720; exclusiones del borde de San Antonio solo si el cliente lo confirma
+## Fase 1 — Reestructura Search (aplicada 2026-10-06 · condición 2026-10-13)
+- [x] (PMM) AG1 "Ad group 1 - Towing General": 29 keywords en frase y exacta (near me, wrecker, 24 h, ciudades sin sufijo de estado); 47 amplias eliminadas (06-oct)
+- [x] (PMM) "roadside assistance" en amplia eliminada ($140.05, 26% del gasto)
+- [x] (PMM) AG2 "Ad group 2 - Exotic Car & Long Distance towing": 11 keywords nuevas; 6 fuera (genérico "long distance towing", "best…", "…companies" ×2, rv, trailer) (06-oct)
+- [ ] (PMM) AG2: URL final `/exotic-vehicle-towing/` por keyword en exotic, luxury, classic, flatbed y rollback (en la UI; Windsor no lo permite)
+- [x] (PMM) AG3 "Ad group 3 - Roadside" (200527954469) creado el 06-oct, solo exacta: [roadside assistance near me], [roadside service near me], [jump start near me], [flat tire change near me]
+- [x] (PMM) Radio de 40 mi recentrado en 30.2752, -98.8720 (06-oct); exclusiones del borde de San Antonio solo si el cliente lo confirma
+- [ ] (PMM) Confirmar en la UI "Presencia" solamente (Windsor no expone la opción)
 - [ ] (PMM) Programación 24/7; verificar la zona horaria de la cuenta en la UI
-- [ ] (PMM) Puja: Maximizar clics con tope de CPC de $6.50, $27/día
-- [ ] (PMM) 1 RSA por ad group (estándar para <$1,500/mes), H1 pinneado, 15H/4D, fuerza "Buena" o superior (`data/ads-search-towing.md` v3); se reemplaza el RSA con "Battery Jumpstarts"/"Tire Change"
-- [ ] (PMM) Assets: 4 sitelinks, 8 callouts, snippet de servicios, llamada. Ubicación cuando exista el GBP
-- [ ] (PMM) URLs finales verificadas (200, https, sin redirect)
-- [ ] (PMM) Negativas por ad group (ver strategy.md)
-- [ ] (PMM) Cambios aplicados registrados con fecha en `log/`
-- [ ] (PMM) Anuncios aprobados por políticas (revisar 24 h después)
+- [x] (PMM) Puja: Maximizar clics con tope de CPC de $6.50, $27/día (06-oct)
+- [x] (PMM) 1 RSA por ad group, 15H/4D (`data/ads-search-towing.md` v3), activos; los RSA viejos con "Battery Jumpstarts"/"Tire Change" en pausa (06-oct)
+- [ ] (PMM) Fijar el H1 de los 3 RSA en la UI (Windsor no pinnea) y revisar la fuerza del anuncio ("Buena" o superior)
+- [x] (PMM) Assets: 4 sitelinks, 8 callouts y snippet "Service catalog" a nivel campaña (06-oct)
+- [ ] (PMM) Verificar en la UI el call asset (830) 463-8318 con número de reenvío. Ubicación cuando exista el GBP
+- [x] (PMM) URLs finales verificadas (200, https, sin redirect): home, long-distance, roadside, exotic, light-medium (06-oct)
+- [x] (PMM) Negativas por ad group (06-oct): AG1 5, AG2 4, AG3 3
+- [x] (PMM) Cambios aplicados registrados con fecha en `log/2026-10-06.md`
+- [ ] (PMM) Anuncios y assets aprobados por políticas (revisar el 07-oct)
 - [ ] **(B)** (PMM) Primera conversión registrada después de la reestructura y cruzada con una llamada real del cliente
 
 ## Fase 2 — Limpieza
-- [ ] (PMM) D7 (2026-10-16): search terms → negativas; gasto <70% del presupuesto → keywords de ciudad + AG3 a frase
-- [ ] (PMM) D14 (2026-10-23): search terms → negativas; AG2 con más de $100 y 0 llamadas → pausar; AG3 >20% del gasto → pausar
-- [ ] (PMM) D30 (2026-11-08): search terms → negativas; keywords con 0 impresiones pausadas; desperdicio <15% del rastreable
+- [ ] (PMM) D7 (2026-10-13): search terms → negativas; gasto <70% del presupuesto → keywords de ciudad + AG3 a frase
+- [ ] (PMM) D14 (2026-10-20): search terms → negativas; AG2 con más de $100 y 0 llamadas → pausar; AG3 >20% del gasto → pausar
+- [ ] (PMM) D30 (2026-11-05): search terms → negativas; keywords con 0 impresiones pausadas; desperdicio <15% del rastreable
 - [ ] (Cliente) D30: calidad de las llamadas reportada (hoja compartida: llamada → trabajo sí/no → ticket)
 
-## Fase 3 — Optimización de puja (Max conv ~2026-11-09 · tCPA ~2027-01)
+## Fase 3 — Optimización de puja (Max conv ~2026-11-06 · tCPA ~2027-01)
 - [ ] (PMM) ≥15 conversiones verificadas/mes → Maximizar conversiones
 - [ ] (PMM) ≥30 conversiones en 30 días → tCPA = CPL real de 30 días × 1.1 (no el deseado)
 - [ ] (PMM) Prueba de grupo en español ("grua cerca de mi", "servicio de grua") si el cliente atiende en español

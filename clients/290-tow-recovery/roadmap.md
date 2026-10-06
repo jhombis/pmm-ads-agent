@@ -3,7 +3,7 @@ cliente: 290 Tow and Recovery
 slug: 290-tow-recovery
 D0: 2026-09-24
 actualizado: 2026-10-06
-fase_actual: 0
+fase_actual: 1
 plan_es: https://claude.ai/artifact/1ioZ9Qfes7GymvgprjRRbV
 plan_en: https://claude.ai/artifact/8kNSv1uraooYbcADP5mzDY
 ---
@@ -16,9 +16,9 @@ plan_en: https://claude.ai/artifact/8kNSv1uraooYbcADP5mzDY
 | Fase | Fecha estimada | Estado |
 |---|---|---|
 | 0 — Medición + negativas | 2026-10-06 → 2026-10-08 | 🔄 en curso (atrasada desde el 29/09) |
-| 1 — Reestructura Search | 2026-10-09 → 2026-10-16 | ⏳ pendiente |
-| 2 — Limpieza D7 · D14 · D30 | 2026-10-16 · 2026-10-23 · 2026-11-08 | ⏳ pendiente |
-| 3 — Maximizar conversiones → tCPA | Max conv ~2026-11-09 · tCPA ~2027-01 | ⏳ pendiente |
+| 1 — Reestructura Search | aplicada 2026-10-06 · condición 2026-10-13 | 🔄 aplicada, en prueba |
+| 2 — Limpieza D7 · D14 · D30 | 2026-10-13 · 2026-10-20 · 2026-11-05 | ⏳ pendiente |
+| 3 — Maximizar conversiones → tCPA | Max conv ~2026-11-06 · tCPA ~2027-01 | ⏳ pendiente |
 | 4 — Remarketing (RLSA) | Sin fecha | ⛔ no califica por volumen |
 | 5 — Performance Max | No antes de 2027-03 | ⛔ bloqueada |
 | 6 — Conversiones offline | Fuera de alcance | ⏳ futuro |
@@ -44,7 +44,9 @@ plan_en: https://claude.ai/artifact/8kNSv1uraooYbcADP5mzDY
   - Si el cliente no responde, la reestructura sale igual con supuestos (geo sin exclusiones).
 
 ## Fase 1 — Reestructura Search
-- **Fecha estimada**: se aplica el 2026-10-09; pasa la condición el 2026-10-16.
+- **Aplicada el 2026-10-06** (adelantada con OK de Jhombis; detalle e IDs en `log/2026-10-06.md`). La condición se revisa el **2026-10-13**.
+- **Falta en la UI**: fijar el H1 de los 3 RSA, URL final por keyword de exotic/flatbed en AG2, confirmar "Presencia" y el call asset.
+- **Reserva**: la medición de F0 sigue sin verificar; hasta cerrarla, las conversiones nuevas no cuentan para la condición si no se cruzan con el cliente.
 - **Condición de paso**: 7 días activa, anuncios aprobados y ≥1 conversión verificada con el cliente.
 - **Qué se lanza** (`/build-campaign` o manual, según `strategy.md` v3):
   - Campaña existente conservada, con 3 grupos:
@@ -58,7 +60,7 @@ plan_en: https://claude.ai/artifact/8kNSv1uraooYbcADP5mzDY
   - Con el tope, la campaña puede no gastar los $27 ("towing near me" hoy cuesta $9.67). Si en el D7 gasta < 70%: sumar keywords de ciudad y abrir AG3 a frase. Nunca volver a la amplia.
 
 ## Fase 2 — Limpieza
-- **Fechas**: **2026-10-16** (D7) · **2026-10-23** (D14) · **2026-11-08** (D30), contadas desde el 10-09.
+- **Fechas**: **2026-10-13** (D7) · **2026-10-20** (D14) · **2026-11-05** (D30), contadas desde el 10-06.
 - **Condición de paso**: 3 revisiones con `/weekly-review`, negativas aplicadas, desperdicio < 15% del gasto rastreable y keywords sin impresiones en 30 días pausadas.
 - **Qué se revisa**:
   - search terms
@@ -69,7 +71,7 @@ plan_en: https://claude.ai/artifact/8kNSv1uraooYbcADP5mzDY
   - calidad de las llamadas reportada por el cliente en el D30
 
 ## Fase 3 — Optimización de puja
-- **Paso A, Maximizar conversiones**: ~2026-11-09.
+- **Paso A, Maximizar conversiones**: ~2026-11-06.
   - Condición: ≥15 conversiones **verificadas**/mes con medición limpia (estándar 6).
   - Supuesto: ~126 clics/mes × 11–19% = 14–24 conversiones/mes. Es alcanzable en el mes 2 solo si se sostiene el escenario base.
 - **Paso B, tCPA**: ~2027-01.
@@ -122,6 +124,7 @@ plan_en: https://claude.ai/artifact/8kNSv1uraooYbcADP5mzDY
 - Conclusión: no hay razón para esperar. Cada semana sin reestructurar cuesta ~$190 con ~46% de desperdicio.
 
 ## Historial de cambios
+- 2026-10-06: reestructura F1 aplicada en la cuenta (adelantada del 10-09). F2 → D7 10-13 · D14 10-20 · D30 11-05; Max conv → ~11-06.
 - 2026-10-06: reprogramado tras el diagnóstico de 18 días.
   - F0 → 10-06/10-08 y F1 → 10-09.
   - Proyección corregida a 14–24 llamadas/mes.

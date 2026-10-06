@@ -15,6 +15,11 @@ supuestos:
 
 # Estrategia Google Ads — 290 Tow and Recovery
 
+> **Aplicada en la cuenta el 2026-10-06** vía Windsor (detalle e IDs en `log/2026-10-06.md`). Diferencias con lo que dice este documento:
+> - En AG2 se quitaron también "long distance towing companies" ×2, "best…", rv y trailer (brokers o sin confirmar). Se dejaron cost/price.
+> - En AG1, `{LOCATION(City)}` se cambió por "Hill Country Towing 24/7".
+> - Falta hacer en la UI: fijar el H1 y la URL por keyword de exotic/flatbed.
+
 > **v3 (2026-10-06)**: reanálisis con 18 días de datos (`log/2026-10-06-diagnose.md`), la auditoría v3 del sitio y los estándares nuevos del repo (playbook de analítica, benchmark `towing-us.md`).
 >
 > Qué cambia frente a la v2:
@@ -118,7 +123,7 @@ Completo en `data/ads-search-towing.md` (v3): **1 RSA por ad group** (estándar 
 | Fase | Total/mes | Qué pasa | Condición para pasar |
 |---|---|---|---|
 | **F0 — Medición + negativas** (10-06 → 10-08) | $825 (sigue corriendo) | Revisar las 8 llamadas en Detalles de llamadas con el cliente · umbral 60 s · Form Fill secundaria · aplicar negativas | Medición verificada con Tag Assistant + negativas aplicadas |
-| **F1 — Reestructura** (10-09 → 10-16) | $825 | 3 grupos en frase/exacta · tope CPC $6.50 · 1 RSA por grupo · geo según el cliente | 7 días activa, anuncios aprobados, ≥1 conversión verificada con el cliente |
+| **F1 — Reestructura** (aplicada 10-06 · condición 10-13) | $825 | 3 grupos en frase/exacta · tope CPC $6.50 · 1 RSA por grupo · geo según el cliente | 7 días activa, anuncios aprobados, ≥1 conversión verificada con el cliente |
 | **F2 — Limpieza** (D7 10-16 · D14 10-23 · D30 11-08) | $825 | Search terms → negativas · reglas de control | 3 revisiones hechas, desperdicio < 15% de lo rastreable |
 | **F3 — Maximizar conversiones → tCPA** (~11-09 → ~ene-2027) | $825 (escalar solo si sube el fee) | Max conv con ≥15 conv verificadas/mes · tCPA con ~30/30 días · prueba de grupo en español | CPL estable ±20% durante 4 semanas |
 | **Pista GBP + LSA** | LSA pay-per-lead, aparte o de los $825 (decide el cliente) | GBP → activo de ubicación → LSA | GBP verificado + licencia TDLR + seguro + background check |
