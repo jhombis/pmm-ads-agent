@@ -20,9 +20,11 @@ Base: `knowledge/checklists/setup-cuenta.md`, ajustada al cliente.
 - [x] (PMM) Diagnóstico de 18 días (`log/2026-10-06-diagnose.md`)
 - [ ] (PMM) Facturación verificada (está gastando; confirmar el método de pago y quién paga, PLL)
 - [ ] **(B)** (PMM) Aplicación automática de recomendaciones DESACTIVADA
-- [ ] **(B)** (PMM) Lista universal PMM aplicada a nivel de cuenta (sin excluir "tow truck" ni "towing")
-- [ ] **(B)** (PMM) Lista de nicho v2 aplicada (`data/negatives-nicho.txt`, sin "cheap")
-- [ ] **(B)** (PMM) 63 negativas nuevas aplicadas (`data/2026-10-06-negatives.txt`), con OK de Jhombis
+- [x] **(B)** (PMM) Lista universal PMM aplicada (06-oct, a nivel campaña vía Windsor: 138 términos sin choques)
+- [x] **(B)** (PMM) Lista de nicho v3 aplicada (06-oct: 95 términos, sin "cheap")
+- [x] **(B)** (PMM) Negativas nuevas del diagnóstico aplicadas (06-oct: 52; resto ya cubierto o en pausa). Total cargado 285, verificado
+- [ ] **(B)** (PMM) Quitar negativas existentes que bloquean el plan (requiere OK): `kerrville towing` [exacta], `city`, `Towed`, `Get car towed`, `Shop`, `shops` · marcas de lujo y llantas cuando el cliente confirme exotic/roadside (ver log/2026-10-06.md)
+- [ ] (PMM) D7 de negativas (13-oct): desperdicio sobre lo rastreable contra 45.8%
 - [ ] (PMM) Revisar el historial de cambios en la UI: quién renombró "Ad group 1 - Towing General", quitó "emergency roadside" y creó AG2
 
 ### Medición

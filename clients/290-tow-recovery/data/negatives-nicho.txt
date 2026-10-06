@@ -1,4 +1,7 @@
-# Negativas nicho + cliente — 290 Tow and Recovery (2026-09-23 · v2 2026-10-06)
+# Negativas nicho + cliente — 290 Tow and Recovery (2026-09-23 · v3 2026-10-06, APLICADA)
+# Aplicada el 2026-10-06 a nivel campaña (Windsor no maneja listas compartidas). Lo que se cargó: data/2026-10-06-negatives-aplicadas.csv
+# Ajustes antes de aplicar: fuera cheap, cover, how much does/is, cost/price per mile, 24hr towing; rollback tow truck -> rollback tow truck for sale.
+# En pausa hasta confirmar con el cliente: trailer, locksmith (si hace lockout o remolca trailers).
 # Complemento con 63 términos nuevos de search terms: data/2026-10-06-negatives.txt
 # Nivel: cuenta (lista compartida "290 Towing Nicho"), además de "PMM Universal" (knowledge/negativas-universales.md).
 # Concordancia: frase salvo que se indique [exacta].
@@ -18,7 +21,7 @@ dmv
 impound lot
 tow hitch
 tow bar
-trailer
+# trailer  (EN PAUSA: confirmar si remolca trailers)
 
 ## Desperdicio real de la cuenta (18–23/09)
 jumper
@@ -30,11 +33,10 @@ dollies
 hauler
 haulers
 what does
-cover
 # ("cheap" quitado 2026-10-06: convierte en el MCC, CPL $16.59 · ver towing-us.md)
 
 ## Equipo / compra de grúas
-rollback tow truck
+rollback tow truck for sale
 wrecker trucks
 wrecker for sale
 tow truck bed
@@ -87,7 +89,7 @@ battery replacement
 battery change
 tire shop
 tire store
-locksmith
+# locksmith  (EN PAUSA: confirmar si hace lockout)
 
 ## Geo fuera de mercado
 virginia
@@ -138,10 +140,6 @@ ej towing
 west central towing
 wimberley towing
 true towing
-24hr towing
 
 ## Informacional
-cost per mile
-how much does
-how much is
-price per mile
+# (precio quitado 2026-10-06: en el MCC convierte, CPL $21.67)

@@ -1,4 +1,4 @@
-# Negativas PROPUESTAS — 290 Tow and Recovery (213-019-5545) — /diagnose 2026-10-06
+# Negativas APLICADAS 2026-10-06 (antes: PROPUESTAS) — 290 Tow and Recovery (213-019-5545) — /diagnose 2026-10-06
 # Solo lo NUEVO respecto de data/negatives-nicho.txt (que, según los search terms, sigue SIN aplicar:
 #   "kw towing boerne" 10-02, "best jump starter for trucks" 10-03 y "jumper cables" 10-06 siguen entrando).
 # Fuente: data/2026-10-06-search-terms.csv (2026-09-17 → 2026-10-06). Nivel: lista de cuenta "290 Towing Nicho".
@@ -44,18 +44,16 @@ junk cars
 we buy
 
 ## Talleres y llantería (tienda; se mantiene "flat tire" por roadside)
-tire repair
-tire service
-repair tires
+# tire repair / tire service / repair tires  (EN PAUSA: el cliente hace cambio de llanta)
 auto repair
 auto repairs
 mechanic
 mechanics
-diesel
+diesel mechanic
 
 ## Informacionales
 what to do
-can i call
+# can i call  (descartada: bloqueaba 'can i call someone to jump my car')
 which battery
 does discount tire
 
@@ -64,7 +62,7 @@ tow lot
 tow lots
 
 ## Fuera de servicio
-big truck
+big truck repair
 
 ## Geo fuera de mercado (sin "san antonio" suelto: protege "tow car to san antonio" de AG2)
 corpus christi
@@ -88,7 +86,7 @@ brad's wrecker
 brads wrecker
 rst towing
 five star towing
-interstate towing
+# interstate towing  (EN PAUSA: puede ser genérico)
 
 ## NO se proponen (revisar con el cliente)
 # - Español (gruas, grúas, roservi, ponchera): "roservi cerca de mi en español" $9.19 con 1 conversión.
