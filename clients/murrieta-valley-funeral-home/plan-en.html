@@ -226,7 +226,7 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
   </header>
 
   <nav class="toc" aria-label="Sections">
-    <a href="#resumen">Summary</a><a href="#pasos">Next steps</a><a href="#checklist">Checklist</a><a href="#cliente">Client</a>
+    <a href="#resumen">Summary</a><a href="#pasos">Next steps</a><a href="#landing">Landing</a><a href="#checklist">Checklist</a><a href="#cliente">Client</a>
   </nav>
 
   <!-- RESUMEN · fuente: brief, strategy, diagnose/log -->
@@ -236,7 +236,7 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
       <div class="kpi"><b>$1,155–1,244</b><span>Search spend/month · ≈ $40/day (contract TBD)</span></div>
       <div class="kpi"><b>$162–182</b><span>historical Search CPL · MCC niche median $73</span></div>
       <div class="kpi"><b>7</b><span>conversions/month (21 in 90 days) · ~116 clicks/month at $9.96 CPC</span></div>
-      <div class="kpi"><b>56%</b><span>of the brief filled · 8 client questions, 4 blocking</span></div>
+      <div class="kpi"><b>11/22</b><span>landing (audit 07-Oct) · brief 64% · 8 client questions</span></div>
     </div>
 
     <div class="two">
@@ -260,7 +260,7 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
           <li><b>Brand on its own</b> 390 + 460 brand searches/month at $1–2 per click in their own campaign; today they are paid inside the generic one.</li>
           <li><b>Structure</b> with ~$1,200/month, 1 Search campaign with 3–5 service ad groups (cremation, funeral/burial, veterans, near me) plus brand; nothing by city: "cremation murrieta" has 20 searches/month.</li>
           <li><b>The ceiling with this budget</b> ~120 clicks/month; at the niche median rate (9.7%) that is ~12 leads at ~$103. Getting under $100 requires CPC < $8 or a rate > 12%.</li>
-          <li><b>What we do not do</b> tCPA (7 conv/month), PMax as a benchmark, LSA (category not available), broad match without full tracking.</li>
+          <li><b>What we do not do</b> tCPA (7 conv/month), PMax as a benchmark, LSA (category not available), broad match without full tracking, and no "cheap/low cost cremation": the real GPL price (from $1,578) is the highest in the local SERP.</li>
         </ul>
       </div>
     </div>
@@ -290,6 +290,32 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
 
 
 
+  <!-- LANDING · fuente: audit-site + landings/README.md. Rúbrica en el <script> (rub). -->
+  <section id="landing">
+    <div class="sec-head"><h2>Landing</h2><p>11/22 (audit-site.md, 07-Oct). Verdict: needs fixes before paying for more clicks. Lab speed: LCP 2.58 s, TTFB 1.8–2.2 s, 601 KB.</p></div>
+    <div class="two" style="margin-top:0">
+      <div>
+        <div class="rub" id="rubric"></div>
+        <p style="font-size:.9rem; color:var(--ink-2); margin-top:12px">What is there: GTM-MRZ2HJMT + AW-16758859270 on every page, a 4-field form visible on the home, a call button in the header, FD#1853 and "family owned". What is missing: no page talks about cremation (the home has no H1), the form has no thank-you page (/thank-you/ returns 404), not a single price in HTML, and the home shows two phone numbers with no forwarding number.</p>
+      </div>
+      <div>
+        <h3 style="margin-bottom:8px">Landings needed</h3>
+        <div class="tbl"><table>
+          <thead><tr><th>URL</th><th>Status</th><th>For</th></tr></thead>
+          <tbody>
+            <tr><td class="mono">/cremation/</td><td><span class="chip st-block">Create</span></td><td>Cremation ad group · F0</td></tr>
+            <tr><td class="mono">/funeral-services/</td><td><span class="chip st-block">Create</span></td><td>Funeral / Burial ad group · F0</td></tr>
+            <tr><td class="mono">/thank-you/</td><td><span class="chip st-block">Create + noindex</span></td><td>Form Fill conversion · F0</td></tr>
+            <tr><td class="mono">/ (H1, precio, 1 teléfono)</td><td><span class="chip st-todo">Improve</span></td><td>Brand campaign · F0</td></tr>
+            <tr><td class="mono">/veteran-services/</td><td><span class="chip st-todo">Improve</span></td><td>Veterans ad group · F1</td></tr>
+            <tr><td class="mono">/temecula-cremation/</td><td><span class="chip st-pause">Evaluate</span></td><td>If Temecula C&B advertises with its own number</td></tr>
+            <tr><td class="mono">/why-preplan/</td><td><span class="chip st-done">Exists</span></td><td>Pre-planning · F3</td></tr>
+          </tbody>
+        </table></div>
+        <p style="font-size:.9rem; color:var(--ink-2); margin-top:12px">Each landing carries: H1 with service and city, 4-field form at the top, fixed call button with the forwarding number, FD#1853, "family owned · 40 years · 3 locations", GPL packages with prices (direct cremation from $1,578 all-in; packages $3,015–4,000) and Google reviews with a count.</p>
+      </div>
+    </div>
+  </section>
 
 
   <!-- CHECKLIST · espejo de checklist.md. Datos en el <script> (CL, PHT). -->
@@ -319,7 +345,7 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
 
   <footer>
     <span>Performance Media Marketing · Murrieta Valley Funeral Home · account 769-956-1619</span>
-    <span>Sources: brief.md, checklist.md, data/semrush-2026-10-07.json, data/web-findings-2026-10-07.md, data/mcc-referencias-2026-10-01.md · account Apr–Sep 2026 (Windsor, via sister accounts)</span>
+    <span>Sources: brief.md, audit-site.md, checklist.md, data/semrush-2026-10-07.json, data/perf-lab-2026-10-07.json, data/gpl-2024-02-29.txt, data/web-findings-2026-10-07.md, data/mcc-referencias-2026-10-01.md · account Apr–Sep 2026 (Windsor, via sister accounts)</span>
   </footer>
 </div>
 
@@ -337,11 +363,13 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
   /* Próximos pasos: [título, detalle, responsable (PMM | Cliente | Jhombis | PMM/Cliente), bloqueante]. Lo hecho va con "✓ Hecho DD-mmm: …" */
   const steps = [
     ["Get API credentials (or authorize Windsor) and run account_profile.py", "Campaign structure, conversion list, search terms and the real geo of 769-956-1619. Without it the diagnosis stays second-hand.", "Jhombis", true],
-    ["Verify the site tracking", "Google Tag/GA4, form with a thank-you page and calls with a minimum duration, tested with Tag Assistant. The domain was blocked in this session.", "PMM", true],
+    ["Close the site measurement", "Create /thank-you/ and set the Elementor form to Redirect; confirm AW-16758859270 belongs to the account and what the GTM fires; one (forwarding) phone per landing; minimum call duration.", "PMM/Client", true],
+    ["Cremation and funeral landings", "Today there is no cremation page and the home has no H1 or price. Two landings with GPL packages, form at the top and a fixed call button; then switch the account final URLs.", "PMM/Client", true],
     ["Ask the client for margin, mix and capacity", "Direct cremation ($995) vs full service ($3,500–4,635) and cases/month: without it there is no maximum CPL.", "Client", true],
     ["Confirm group and owner", "Shreves vs Hamilton; Colton Sunflower, Temecula Cremation & Burial and Options. Coordinate geos and brand negatives with 151-776-2744 and with Inland Memorial Murrieta (934-241-5137, paused).", "Jhombis", true],
     ["Access to the Business Profile of the three locations", "Verification, Google review count and PMM as manager; link as a location asset.", "Client", false],
-    ["/audit-landing, /competitors, /benchmark-interno", "Semrush and web findings are already in data/; the audit needs the domain allowed on the network.", "PMM", false],
+    ["/competitors, /benchmark-interno", "Semrush and web findings are already in data/. Benchmark: tag the 5 funeral accounts in the MCC and audit the PMax conversions.", "PMM", false],
+    ["✓ Done 07-Oct: /audit-landing (11/22)", "26 pages read, GPL PDF, lab speed. Three blockers: no cremation page, no thank-you page, no visible offer. Real direct cremation price is ≈ $1,578–1,873, not $995.", "PMM", false],
     ["/strategy → /roadmap", "With brief, audit, competitors and benchmark: service-based structure + brand, bidding and dates with pass conditions.", "PMM", false],
     ["✓ Done 07-Oct: researched brief (56%)", "Web (snippets), Semrush and second-hand MCC figures; 8 client questions ready to copy.", "PMM", false]
   ];
@@ -351,6 +379,22 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
       <div class="tags">${s[3]?'<span class="b-flag" title="Blocking">B</span>':''}<span class="who">${esc(s[2])}</span></div>
     </div>`).join('');
 
+  /* Rúbrica de landing (audit-site): [ítem, 0 | 1 | 2 | null = sin dato]. 0 marca B. */
+  const rub = [
+    ["Headline matches the searched service", 0],
+    ["Short form visible at the top (mobile)", 1],
+    ["Click to call on mobile", 2],
+    ["Clear offer", 0],
+    ["Social proof", 1],
+    ["Trust (license, years)", 2],
+    ["Mobile speed", 1],
+    ["Google Tag present", 2],
+    ["Measurable thank-you page", 0],
+    ["Service pages", 1],
+    ["No leaks", 1]
+  ];
+  if ($('rubric')) $('rubric').innerHTML = rub.map(r=>`<div class="rub-row"><span>${esc(r[0])}${r[1]===0?' <span class="b-flag">B</span>':''}</span><span class="pips">${r[1]===null?'<em>NO DATA</em>':`<i class="${r[1]>=1?'on':''}"></i><i class="${r[1]>=2?'on':''}"></i>`}</span></div>`).join('');
+
   /* Checklist (espejo de checklist.md): [fase, ítem, responsable, done | part | todo, bloqueante] */
   const CL = [
     ["F0", "Researched brief, no interview (2026-10-07, 56% complete)", "PMM", "done", false],
@@ -358,8 +402,16 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
     ["F0", "Audit which conversions the PMax counts ($57 CPA) before using it as a reference", "PMM", "todo", false],
     ["F0", "Margin per service type, mix and case capacity/month → maximum CPL", "Client", "todo", true],
     ["F0", "Service they most want to sell and sustainable offers (payment plans, pre-need)", "Client", "todo", false],
-    ["F0", "Verify Google Tag / GA4 on murrietavalleyfuneralhome.com (revalidate in /audit-landing)", "PMM", "todo", true],
-    ["F0", "Form measured (thank-you page) and calls with minimum duration; forwarding number accepted", "PMM", "todo", true],
+    ["F0", "Google Tag present: GTM-MRZ2HJMT + AW-16758859270 on every page (audit 07-Oct)", "PMM", "done", false],
+    ["F0", "Confirm AW-16758859270 belongs to 769-956-1619 and what the GTM fires", "PMM", "todo", true],
+    ["F0", "Create /thank-you/ (noindex) and set the Elementor form to Redirect; Form Fill by URL tested with Tag Assistant", "PMM/Client", "todo", true],
+    ["F0", "Calls with minimum duration and forwarding number; one phone per landing (today the home shows two)", "PMM/Client", "todo", true],
+    ["F0", "/cremation/ landing with service H1, GPL packages with prices, form at the top and fixed call button", "PMM/Client", "todo", true],
+    ["F0", "/funeral-services/ landing (packages A/B/C, direct burial $1,995, chapel)", "PMM/Client", "todo", true],
+    ["F0", "Home: H1, one price/offer line under the hero, one phone number", "Client", "todo", false],
+    ["F0", "/veteran-services/: form and call button at the top", "Client", "todo", false],
+    ["F0", "Page cache (TTFB 1.8–2.2 s) and mobile hero preload", "Client", "todo", false],
+    ["F0", "Google reviews with count and rating on every landing", "PMM/Client", "todo", false],
     ["F0", "WordPress access to install or confirm the tag", "Client", "todo", false],
     ["F0", "Murrieta, Temecula and Lake Elsinore Business Profiles: verification, Google review count and PMM access", "Client", "todo", false],
     ["F0", "Business Profile linked as a location asset", "PMM", "todo", false],
@@ -367,7 +419,7 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
     ["F0", "Coordinate geos and brand negatives across 769-956-1619, Colton Sunflower (151-776-2744) and Inland Memorial Murrieta (934-241-5137, paused)", "Jhombis", "todo", false],
     ["F0", "Who answers nights and weekends; form response time", "Client", "todo", false],
     ["F0", "Do they serve families in Spanish? (defines an ES ad group or group E negatives)", "Client", "todo", false],
-    ["F0", "/audit-landing (once the domain is allowed on the network)", "PMM", "todo", false],
+    ["F0", "/audit-landing run 2026-10-07 (11/22, needs fixes)", "PMM", "done", false],
     ["F0", "/competitors and /benchmark-interno in parallel", "PMM", "todo", false],
     ["F0", "/strategy → /roadmap (creates the full checklist)", "PMM", "todo", false]
   ];
@@ -401,14 +453,14 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
     ["<b>Mix and margin per service</b>: % of cases in direct cremation ($995) vs full service, and the margin of each.", true],
     ["<b>Capacity</b>: new cases per month they can handle across the three locations.", true],
     ["<b>Who answers</b> (951) 696-0626 nights and weekends, form response time, and whether they accept a forwarding number.", true],
-    ["<b>WordPress access</b> to install or verify Google Tag and measure the form.", true],
+    ["<b>WordPress (Elementor) access</b> to create the thank-you page, redirect the form and build the cremation and funeral landings.", true],
     ["<b>Google Business Profiles</b> for Murrieta, Temecula and Lake Elsinore: verified, with PMM manager access.", false],
     ["<b>Current owner and group</b>: Shreves or Hamilton; whether Colton Sunflower, Temecula Cremation & Burial and Options belong to the same group.", false],
     ["<b>Spanish</b>: do they serve families in Spanish? (1,900 searches/month for \"funerarias cerca de mi\").", false],
-    ["<b>Priority and offers</b>: which service they want to sell most and which offer or payment plan they can sustain in the ads.", false]
+    ["<b>Priority, prices and offers</b>: which service they want to sell most; whether we can publish GPL prices on the landing (direct cremation from $1,578 all-in, packages $3,015–4,000) and which payment plan they can sustain.", false]
   ];
   if ($('qlist')) $('qlist').innerHTML = qs.map(q=>`<li>${q[0]} ${q[1]?'<span class="b-flag">B</span>':''}</li>`).join('');
-  const msg = "Hi! To finish setting up Google Ads for Murrieta Valley Funeral Home we need a few things from you:\n\n1. Roughly what share of your cases are direct cremation ($995) versus full-service arrangements, and what is the approximate margin on each? This sets the maximum we should pay per lead.\n2. How many new cases per month can the three locations handle?\n3. Who answers (951) 696-0626 at night and on weekends, and how fast do you return a website form? Can we use a Google forwarding number on the website so calls from ads are tracked? (Calls still ring your main line.)\n4. Who manages the WordPress site? We need access to install or verify the Google Tag and measure the contact form.\n5. Are the Google Business Profiles for Murrieta, Temecula and Lake Elsinore verified? Could you add us as managers?\n6. Who is the current owner (Garland and Laurie Shreves, or Peter Hamilton)? Are Colton Sunflower, Temecula Cremation & Burial and Options part of the same group? We need this so your accounts never bid against each other.\n7. Do you serve families in Spanish?\n8. Which service do you most want to grow (direct cremation, full service, veterans, pre-planning), and is there any offer or payment plan we can promise in the ads?\n\nThanks!";
+  const msg = "Hi! To finish setting up Google Ads for Murrieta Valley Funeral Home we need a few things from you:\n\n1. Roughly what share of your cases are direct cremation ($995) versus full-service arrangements, and what is the approximate margin on each? This sets the maximum we should pay per lead.\n2. How many new cases per month can the three locations handle?\n3. Who answers (951) 696-0626 at night and on weekends, and how fast do you return a website form? Can we use a Google forwarding number on the website so calls from ads are tracked? (Calls still ring your main line.)\n4. Who manages the WordPress site (Elementor)? We need access to create a thank-you page, redirect the contact form to it, and build two landing pages (cremation and funeral services).\n5. Are the Google Business Profiles for Murrieta, Temecula and Lake Elsinore verified? Could you add us as managers?\n6. Who is the current owner (Garland and Laurie Shreves, or Peter Hamilton)? Are Colton Sunflower, Temecula Cremation & Burial and Options part of the same group? We need this so your accounts never bid against each other.\n7. Do you serve families in Spanish?\n8. Which service do you most want to grow (direct cremation, service packages, veterans, pre-planning)? May we publish your General Price List prices on the landing pages (direct cremation from $1,578 all-in, packages $3,015–4,000), and is there a payment plan we can promise in the ads?\n\nThanks!";
   const ta = $('clientmsg');
   if (ta){
     ta.value = msg;

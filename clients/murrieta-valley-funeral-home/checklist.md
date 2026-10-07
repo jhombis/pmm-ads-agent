@@ -18,18 +18,27 @@ Responsables: PMM · Cliente · Jhombis (decisión).
 - [ ] (Cliente) **Bloqueante**: margen por tipo de servicio (cremación directa vs servicio completo), mezcla y capacidad de casos/mes → CPL máximo
 - [ ] (Cliente) Servicio que más quiere vender y ofertas sostenibles (planes de pago, pre-need)
 ### Tracking
-- [ ] (PMM) **Bloqueante**: verificar Google Tag / GA4 en murrietavalleyfuneralhome.com (dominio bloqueado en esta sesión; revalidar en /audit-landing)
-- [ ] (PMM/Cliente) **Bloqueante**: formulario medido (página de gracias) y llamadas medidas con duración mínima; aceptación de número de reenvío
+- [x] (PMM) Google Tag presente: GTM-MRZ2HJMT + AW-16758859270 en todas las páginas (audit-site.md 2026-10-07)
+- [ ] (PMM) **Bloqueante**: confirmar que AW-16758859270 es el de 769-956-1619 y qué etiquetas dispara el GTM (llamadas, formulario, reenvío)
+- [ ] (PMM/Cliente) **Bloqueante**: crear /thank-you/ (noindex) y poner el formulario de Elementor en Redirect; Form Fill por URL probado con Tag Assistant
+- [ ] (PMM/Cliente) **Bloqueante**: llamadas con duración mínima (≥60–90 s) y número de reenvío; un solo teléfono por landing (hoy la home muestra 696-0626 y 296-0890)
 - [ ] (Cliente) Acceso al WordPress para instalar o confirmar el tag
 ### GBP y grupo
 - [ ] (Cliente) GBP de Murrieta (y Temecula / Lake Elsinore): verificación, conteo de reseñas en Google y acceso de PMM
 - [ ] (PMM) GBP vinculado como activo de ubicación
 - [ ] (Cliente) Confirmar dueño actual (Shreves vs Hamilton) y si Colton Sunflower, Temecula Cremation & Burial y Options son del mismo grupo
 - [ ] (Jhombis) Coordinar geos y negativas de marca entre 769-956-1619, Colton Sunflower (151-776-2744) e Inland Memorial Murrieta (934-241-5137, pausada)
+### Landing (audit-site.md 2026-10-07: 11/22)
+- [ ] (PMM/Cliente) **Bloqueante**: landing /cremation/ con H1 de servicio, paquetes con precio del GPL, formulario arriba y llamada fija
+- [ ] (PMM/Cliente) **Bloqueante**: landing /funeral-services/ (paquetes A/B/C, direct burial $1,995, capilla)
+- [ ] (Cliente) Home: H1, una línea de precio/oferta bajo el hero, un solo teléfono
+- [ ] (Cliente) /veteran-services/: formulario y llamada arriba
+- [ ] (Cliente) Caché de página (TTFB 1.8–2.2 s) y preload del hero móvil
+- [ ] (PMM/Cliente) Reseñas de Google con número y nota en todas las landings
 ### Operación
 - [ ] (Cliente) Quién contesta de noche y fines de semana; tiempo de respuesta a formularios
 - [ ] (Cliente) ¿Atienden en español? (define ad group ES o negativas del grupo E)
 ### Siguientes skills
-- [ ] (PMM) `/audit-landing` (cuando el dominio esté permitido en la red)
+- [x] (PMM) `/audit-landing` corrido 2026-10-07 (11/22, requiere ajustes)
 - [ ] (PMM) `/competitors` y `/benchmark-interno` en paralelo
 - [ ] (PMM) `/strategy` → `/roadmap` (crea el checklist completo)
