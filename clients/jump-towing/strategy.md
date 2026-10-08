@@ -56,10 +56,10 @@ Volúmenes: Semrush US (ciudad) o estimación near-me × 0.18%. Detalle en `data
 
 | Ad group | Keywords (match) | Vol. est./mes | Landing | H1 pinneado |
 |---|---|---|---|---|
-| **G1 Towing Near Me** | [towing near me], [tow truck near me], [towing company near me], "towing service near me", "emergency towing near me", "towing service", "tow truck service", "towing company", "car towing", "tow service", "flatbed towing near me" [C] | ~560 | /towing | Tow Truck Near You |
-| **G2 Towing Brooklyn Park & NW** | [towing brooklyn park mn], [tow truck brooklyn park], "towing brooklyn park" + "towing <ciudad>" y "tow truck <ciudad>" para Maple Grove, Plymouth, Coon Rapids, Crystal, Brooklyn Center, Fridley, New Hope, Robbinsdale, Champlin, Osseo | ~220 | /towing (bloque de área de servicio) | {KeyWord:Towing in Brooklyn Park} |
-| **G3 Towing Minneapolis** | [towing minneapolis], [tow truck minneapolis], "car towing minneapolis", "flatbed towing minneapolis" [C], "cheap towing minneapolis", "24 hour towing minneapolis" | ~800 (solo el norte cae en el radio) | /towing | Towing in Minneapolis, MN |
-| **G4 Roadside** | [jump start service near me], "car jump start", "jump start minneapolis", "battery jump service", "i need a jump", "roadside assistance minneapolis". Con confirmación: "car lockout service near me", "locked out of car", "flat tire service near me", "gas delivery near me", "ran out of gas" | ~90 | /roadside (secciones por servicio) | {KeyWord:Roadside Help Near You} |
+| **G1 Towing Near Me** | [towing near me], [tow truck near me], [towing company near me], "towing service near me", "emergency towing near me", "towing service", "tow truck service", "towing company", "car towing", "tow service", "flatbed towing near me" [C] | ~560 | /jump-towing/towing/ | Tow Truck Near You |
+| **G2 Towing Brooklyn Park & NW** | [towing brooklyn park mn], [tow truck brooklyn park], "towing brooklyn park" + "towing <ciudad>" y "tow truck <ciudad>" para Maple Grove, Plymouth, Coon Rapids, Crystal, Brooklyn Center, Fridley, New Hope, Robbinsdale, Champlin, Osseo | ~220 | /jump-towing/towing/ | {KeyWord:Towing in Brooklyn Park} |
+| **G3 Towing Minneapolis** | [towing minneapolis], [tow truck minneapolis], "car towing minneapolis", "flatbed towing minneapolis" [C], "cheap towing minneapolis", "24 hour towing minneapolis" | ~800 (solo el norte cae en el radio) | /jump-towing/towing/ | Towing in Minneapolis, MN |
+| **G4 Roadside** | [jump start service near me], "car jump start", "jump start minneapolis", "battery jump service", "i need a jump", "roadside assistance minneapolis". Con confirmación: "car lockout service near me", "locked out of car", "flat tire service near me", "gas delivery near me", "ran out of gas" | ~90 | /jump-towing/roadside/ | {KeyWord:Roadside Help Near You} |
 
 - **G2** junta Brooklyn Park con las ciudades del radio porque cada una tiene <100/mes. La inserción de keyword pone la ciudad en el H1.
 - **G3** va aparte porque "towing/tow truck minneapolis" suman 530/mes y piden el H1 con Minneapolis.
@@ -99,8 +99,8 @@ En `data/ads-search-towing-roadside.md`: **1 RSA por ad group** (máx. 2), cada 
 | URL | Existe | Responsable | Bloqueante |
 |---|---|---|---|
 | jumptowing.com (home) | Sí (sin auditar) | PMM | **Sí**: /audit-landing desde un entorno con acceso |
-| /towing (G1–G3): H1 "Towing in Brooklyn Park & the NW Metro", llamada fija con el número de tracking, área de servicio y horario | PENDIENTE | PMM (/landing-ghl si va en GoHighLevel) | **Sí** |
-| /roadside (G4): secciones jump start, lockout*, tire*, fuel* | PENDIENTE | PMM | Sí para activar G4 |
+| https://performancemediamarketing.com/jump-towing/towing/ (G1–G3) | Generada el 08-oct, borrador (QA: 3 bloqueantes: form GHL, privacidad, conversión) | PMM | **Sí** |
+| https://performancemediamarketing.com/jump-towing/roadside/ (G4) | Generada el 08-oct, borrador (jump start + remolque; lockout/llanta/combustible al confirmarse) | PMM | Sí para activar G4 |
 
 En las landings, **un solo teléfono**: el número de seguimiento que corresponda (Google forwarding o CallFire), nunca el directo (612) 616-0723.
 

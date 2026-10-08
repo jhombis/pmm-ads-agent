@@ -48,8 +48,13 @@ Base: `knowledge/checklists/setup-cuenta.md`, adaptada a este cliente. Responsab
 
 ### GBP y landing
 - [ ] **[B]** (PMM) /audit-landing de jumptowing.com aprobado o ajustes bloqueantes resueltos
-- [ ] **[B]** (PMM) Landing /towing creada (H1 de ciudad, botón de llamada fijo, horario, área de servicio)
-- [ ] (PMM) Landing /roadside creada con secciones por servicio (bloqueante para G4)
+- [x] (PMM) Landing /jump-towing/towing/ generada en el dominio de PMM (borrador, 08-oct)
+- [x] (PMM) Landing /jump-towing/roadside/ generada en el dominio de PMM (borrador, 08-oct; jump start + remolque)
+- [ ] **[B]** (PMM) Formulario GHL con gclid/UTM y redirección a /gracias/ → ghl.form_id en los dos spec.json
+- [ ] **[B]** (PMM) Política de privacidad para las landings → legal.privacidad_url
+- [ ] **[B]** (PMM) IDs de conversión de 220-410-9619 (AW-ID + etiqueta de formulario y de clic en llamada) en tracking de los dos spec.json
+- [ ] **[B]** (PMM) Publicar las landings en Plesk con QA en 0 y probar con Tag Assistant (formulario llega a GHL con gclid; la conversión dispara una vez en /gracias/)
+- [ ] (Jhombis) Confirmar el dominio de las landings: el de PMM (listas) o jumptowing.com (/landing-ghl)
 - [ ] (Cliente) GBP verificado con categoría "Towing service" y acceso de administrador para PMM
 - [ ] (PMM) GBP vinculado a Google Ads (activo de ubicación)
 

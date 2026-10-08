@@ -1,0 +1,5 @@
+URL: https://performancemediamarketing.com/jump-towing/towing/
+Gracias: https://performancemediamarketing.com/jump-towing/towing/gracias/
+/var/www/vhosts/performancemediamarketing.com/httpdocs/jump-towing/towing/index.html          <- publicar/index.html
+/var/www/vhosts/performancemediamarketing.com/httpdocs/jump-towing/towing/gracias/index.html  <- publicar/gracias/index.html
+No subir nada más (spec.json, qa.md, ghl-*, preview.html quedan en el repo).

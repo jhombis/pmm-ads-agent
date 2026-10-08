@@ -1,0 +1,5 @@
+URL: https://performancemediamarketing.com/jump-towing/roadside/
+Gracias: https://performancemediamarketing.com/jump-towing/roadside/gracias/
+/var/www/vhosts/performancemediamarketing.com/httpdocs/jump-towing/roadside/index.html          <- publicar/index.html
+/var/www/vhosts/performancemediamarketing.com/httpdocs/jump-towing/roadside/gracias/index.html  <- publicar/gracias/index.html
+No subir nada más (spec.json, qa.md, ghl-*, preview.html quedan en el repo).

@@ -280,7 +280,7 @@ def body(s):
                f'<a class="pmm-btn pmm-btn-ghost" href="#pmm-form">{e(h.get("cta_form") or t["quote"])}</a></div></div></section>')
     out.append(footer(s, t))
     out.append(f'<nav class="pmm-sticky">{call_btn(s, t, numero=False)}'
-               f'<a class="pmm-btn pmm-btn-ghost" href="#pmm-form">{e(t["quote"])}</a></nav>')
+               f'<a class="pmm-btn pmm-btn-ghost" href="#pmm-form">{e(h.get("cta_form") or t["quote"])}</a></nav>')
     out.append(call_tracking_js(s))
     if g(s, "ghl.chat_widget_html"):
         out.append(g(s, "ghl.chat_widget_html"))
