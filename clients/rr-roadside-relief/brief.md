@@ -6,6 +6,8 @@ idioma: EN (con demanda en ES detectada)
 nicho: towing / roadside assistance
 actualizado: 2026-10-01
 estado: activo — brief preliminar (investigación sin entrevista)
+call_tracking: callfire
+tracking_number: "(405) 536-9093"
 ---
 
 # Brief — RR Roadside Relief

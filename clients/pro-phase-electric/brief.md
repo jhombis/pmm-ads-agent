@@ -6,6 +6,7 @@ idioma: EN
 nicho: electricista
 actualizado: 2026-09-23
 estado: onboarding
+call_tracking: PENDIENTE
 ---
 
 # Brief — Pro Phase Electric
