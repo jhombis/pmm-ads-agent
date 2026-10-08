@@ -1,6 +1,9 @@
 {
   "idioma": "en",
   "nicho": "electrician",
+  "hosting": {
+    "tipo": "ghl"
+  },
   "negocio": {
     "nombre": "Pro Phase Electric",
     "telefono": "+14792873650",

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Genera una landing compatible con GoHighLevel a partir de un spec.json (lo escribe /landing-ghl).
+"""Genera una landing a partir de un spec.json (lo escriben /landing y /landing-ghl).
 
 Uso:
   python scripts/landing_build.py clients/<slug>/landings/<pagina>/spec.json
@@ -14,6 +14,9 @@ Salida en la carpeta del spec:
   preview.html           → página completa para revisar en el navegador (o publicar fuera de GHL)
   gracias-preview.html
   qa.md                  → checklist automático; código de salida 1 si hay bloqueantes
+  publicar/              → SOLO esto se sube a Plesk (hosting.tipo = "plesk", lo pone /landing):
+                           index.html y gracias/index.html, páginas completas para
+                           https://performancemediamarketing.com/<hosting.ruta>/
 
 Sin dependencias externas. El CSS va con prefijo .pmm- dentro de un contenedor propio para no chocar
 con los estilos del builder de GHL.
@@ -21,6 +24,9 @@ con los estilos del builder de GHL.
 import json, re, sys, unicodedata
 from html import escape
 from pathlib import Path
+
+PLESK_BASE = "https://performancemediamarketing.com"
+PLESK_ROOT = "/var/www/vhosts/performancemediamarketing.com/httpdocs"
 
 # Tipos schema.org por nicho (LocalBusiness si no hay uno específico)
 SCHEMA_TYPES = {
@@ -420,8 +426,25 @@ Pegar en GHL → página → **Settings → SEO Meta Data** (y en la ruta/path d
 | URL final (Ads) | {pag.get('url_final', '')} |
 | Página de gracias (path) | `{gr_slug}` |
 
-Formulario GHL → **On submit: Open URL** → `{(pag.get('url_final') or '').rsplit('/', 1)[0]}/{gr_slug}`
+Formulario GHL → **On submit: Open URL** → `{(s.get('gracias') or {}).get('url') or (pag.get('url_final') or '').rsplit('/', 1)[0] + '/' + gr_slug}`
 """
+
+
+def plesk_setup(s, spec_path):
+    """Hosting en performancemediamarketing.com/<ruta>/: fija la URL final y la de gracias.
+    Por defecto noindex: el dominio es de PMM, no del cliente (ver docs/publicar-plesk.md)."""
+    h = s.setdefault("hosting", {})
+    if h.get("tipo", "ghl") != "plesk":  # sin hosting = GHL (specs anteriores a /landing)
+        return None
+    pag = s.setdefault("pagina", {})
+    ruta = (h.get("ruta") or pag.get("slug") or "").strip("/")
+    if not re.fullmatch(r"[a-z0-9]+(-[a-z0-9]+)*(/[a-z0-9]+(-[a-z0-9]+)*)?", ruta):
+        sys.exit(f"{spec_path}: hosting.ruta inválida ({ruta!r}); usar <cliente> o <cliente>/<servicio>, minúsculas y guiones")
+    h.update(tipo="plesk", ruta=ruta)
+    pag["url_final"] = f"{PLESK_BASE}/{ruta}/"
+    pag.setdefault("indexar", False)
+    s.setdefault("gracias", {})["url"] = f"{PLESK_BASE}/{ruta}/gracias/"
+    return ruta
 
 
 def build(spec_path):
@@ -431,8 +454,11 @@ def build(spec_path):
     if s["idioma"] not in TXT:
         sys.exit(f"{spec_path}: idioma debe ser en|es")
     out = spec_path.parent
+    ruta = plesk_setup(s, spec_path)
     pag = s.get("pagina", {})
     gr_slug = g(s, "gracias.slug", (pag.get("slug") or "pagina") + ("-thank-you" if s["idioma"] == "en" else "-gracias"))
+    if ruta:
+        gr_slug = f"{ruta}/gracias"
     b, hd = body(s), head(s)
     gb, gh = gracias_body(s), gracias_head(s)
     files = {
@@ -443,7 +469,17 @@ def build(spec_path):
     }
     report, n = qa(s, b)
     files["qa.md"] = report
+    if ruta:
+        strip = lambda h: re.sub(r"<!-- PMM · [^>]*-->\n?", "", h)
+        files["publicar/index.html"] = preview(s, b, strip(hd), pag.get("title", ""), pag.get("meta_description", ""))
+        files["publicar/gracias/index.html"] = preview(s, gb, strip(gh), g(s, "gracias.h1"), "")
+        files["publicar/MANIFIESTO.txt"] = (
+            f"URL: {pag['url_final']}\nGracias: {s['gracias']['url']}\n"
+            f"{PLESK_ROOT}/{ruta}/index.html          <- publicar/index.html\n"
+            f"{PLESK_ROOT}/{ruta}/gracias/index.html  <- publicar/gracias/index.html\n"
+            "No subir nada más (spec.json, qa.md, ghl-*, preview.html quedan en el repo).\n")
     for name, content in files.items():
+        (out / name).parent.mkdir(parents=True, exist_ok=True)
         (out / name).write_text(content)
     print(f"{out}: {len(b.encode()) // 1024} KB body · bloqueantes QA: {n}")
     return n
