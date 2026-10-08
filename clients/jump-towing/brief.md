@@ -4,10 +4,11 @@ slug: jump-towing
 pais: US
 idioma: EN
 nicho: towing
-actualizado: 2026-10-01
+actualizado: 2026-10-08
 estado: onboarding
 call_tracking: callfire
 tracking_number: "(612) 665-6274"
+tracking_destino: "(612) 616-0723"
 ---
 
 # Brief — Jump Towing LLC
@@ -38,8 +39,8 @@ tracking_number: "(612) 665-6274"
 
 ## Operación
 - Horario: lun–vie 6:00–18:00, sáb 6:00–15:30, **domingo cerrado**. **No es 24/7.** La programación de anuncios se ajusta a ese horario, así que se pierde la demanda nocturna y dominical, que en remolque es una parte grande.
-- Respuesta a leads (quién, tiempo): PENDIENTE
-- Teléfono / call tracking: teléfono PENDIENTE. La aceptación de un número de reenvío también está PENDIENTE.
+- Respuesta a leads (quién, tiempo): quién contesta PENDIENTE. Según CallFire (14-sep → 08-oct), el **89%** de las llamadas se contesta (25 de 28). Hubo 2 perdidas en horario (06 y 07-oct) y 2 contestadas después del cierre (vie 18:08, sáb 16:15). Ver `log/2026-10-08.md`.
+- Teléfono / call tracking: **CallFire (612) 665-6274 → reenvía a (612) 616-0723** (el teléfono del negocio). Conectado al MCP de CallFire. Entre el 14-sep y el 08-oct entraron 28 llamadas, 12 calificadas ≥60 s. Costo por calificada en sep: $76.50. **Dónde se usa el número** (extensión de llamada, web, GBP): PENDIENTE. Si también está en la web o el GBP, CallFire no separa Ads de orgánico.
 - CRM (solo referencia): PENDIENTE
 - GBP: PENDIENTE (verificado, reseñas, acceso). Sin GBP no hay activo de ubicación ni LSA.
 
@@ -79,7 +80,8 @@ Detectados en búsqueda web, sin confirmar con el cliente:
 ## Pendientes
 - [ ] **(decisión Jhombis, urgente)** La cuenta 220-410-9619 está gastando sin cumplir la Fase 0. Hay que decidir si se pausa o se corrige en caliente: Maximizar conversiones, phrase, quitar el ad group en español, negativas universales, geo por Presencia a 10 mi.
 - [ ] **(bloqueante)** Ticket promedio y margen, para calcular el CPL máximo
-- [ ] **(bloqueante)** Teléfono principal y aprobación de call tracking (número de reenvío)
+- [x] Call tracking: CallFire (612) 665-6274 → (612) 616-0723 (2026-10-08)
+- [ ] **(bloqueante)** Confirmar dónde se usa el número de CallFire (extensión de llamada / web / GBP) y que la conversión de llamada de Ads tenga umbral de 60 s
 - [ ] **(bloqueante)** Verificar que el Google Tag y la conversión de llamada funcionen en jumptowing.com (Tag Assistant)
 - [ ] **(bloqueante)** Auditar jumptowing.com con /audit-landing desde un entorno con acceso al dominio
 - [ ] ID de la cuenta anterior a PMM (si existe) y qué pasó

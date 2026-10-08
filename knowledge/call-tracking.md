@@ -48,7 +48,7 @@ Los números de los llamantes y las grabaciones son datos personales: van solo e
 |---|---|---|---|
 | JQ Towing | CallFire | (352) 645-5030 | Reenvía a (352) 282-2512 |
 | RR Roadside Relief | CallFire | (405) 536-9093 | |
-| Jump Towing | CallFire | (612) 665-6274 | |
+| Jump Towing | CallFire | (612) 665-6274 | Reenvía a (612) 616-0723. 28 llamadas, 12 calificadas (14-sep → 08-oct) |
 | 290 Tow & Recovery | CallFire | (830) 463-8318 | |
 | Spillane's Towing | CallFire | (802) 216-3105 | |
 | Precision Towing | CallFire | (760) 606-4160 | Confirmar que es este negocio (la etiqueta coincide; prefijo de Victorville) |

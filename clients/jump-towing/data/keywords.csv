@@ -1,48 +1,48 @@
 keyword,volumen,cpc_semrush,intencion,servicio,ciudad,match,ad_group,nota
-towing near me,~198 (est.),3.46,comercial,towing,near me,exacta+frase,T1 Towing Near Me,volumen local estimado
-tow truck near me,~243 (est.),3.96,comercial,towing,near me,exacta+frase,T1 Towing Near Me,volumen local estimado
-towing company near me,~73 (est.),3.36,comercial,towing,near me,exacta+frase,T1 Towing Near Me,volumen local estimado
-towing service near me,~49 (est.),3.46,comercial,towing,near me,frase,T1 Towing Near Me,volumen local estimado
-emergency towing near me,~2 (est.),3.69,comercial,towing,near me,frase,T1 Towing Near Me,volumen local estimado
-flatbed towing near me,~1 (est.),3.45,comercial,towing,near me,frase,T1 Towing Near Me,volumen local estimado; flatbed condicional a confirmar servicio
-towing service,s/d,s/d,comercial,towing,genérico,frase,T1 Towing Near Me,patrón de alta conversión en benchmark
-tow truck service,s/d,s/d,comercial,towing,genérico,frase,T1 Towing Near Me,patrón de alta conversión en benchmark
-towing company,s/d,s/d,comercial,towing,genérico,frase,T1 Towing Near Me,patrón de alta conversión en benchmark
-car towing,s/d,s/d,comercial,towing,genérico,frase,T1 Towing Near Me,patrón de alta conversión en benchmark
-tow service,s/d,s/d,comercial,towing,genérico,frase,T1 Towing Near Me,patrón de alta conversión en benchmark
-towing brooklyn park mn,50,3.14,comercial,towing,Brooklyn Park,exacta+frase,T2 Towing Brooklyn Park,
-tow truck brooklyn park,30,3.97,comercial,towing,Brooklyn Park,exacta+frase,T2 Towing Brooklyn Park,
-towing brooklyn park,s/d,s/d,comercial,towing,Brooklyn Park,frase,T2 Towing Brooklyn Park,
-towing minneapolis,320,3.04,comercial,towing,Minneapolis,exacta+frase,T3 Towing Minneapolis,presencia 10 mi: solo captura N Minneapolis
-tow truck minneapolis,210,3.24,comercial,towing,Minneapolis,exacta+frase,T3 Towing Minneapolis,presencia 10 mi: solo captura N Minneapolis
-car towing minneapolis,70,2.0,comercial,towing,Minneapolis,frase,T3 Towing Minneapolis,presencia 10 mi: solo captura N Minneapolis
-flatbed towing minneapolis,70,s/d,comercial,towing,Minneapolis,frase,T3 Towing Minneapolis,presencia 10 mi: solo captura N Minneapolis
-cheap towing minneapolis,110,3.16,comercial,towing,Minneapolis,frase,T3 Towing Minneapolis,presencia 10 mi: solo captura N Minneapolis; precio: monitorear
-24 hour towing minneapolis,20,2.14,comercial,towing,Minneapolis,frase,T3 Towing Minneapolis,presencia 10 mi: solo captura N Minneapolis; copy no promete 24/7
-towing maple grove mn,30,3.59,comercial,towing,Maple Grove,frase,T4 Towing Ciudades NW,agrupado: <100/mes
-towing plymouth mn,20,3.42,comercial,towing,Plymouth,frase,T4 Towing Ciudades NW,agrupado: <100/mes
-towing coon rapids mn,20,2.87,comercial,towing,Coon Rapids,frase,T4 Towing Ciudades NW,agrupado: <100/mes
-towing crystal mn,20,s/d,comercial,towing,Crystal,frase,T4 Towing Ciudades NW,agrupado: <100/mes
-towing brooklyn center mn,20,2.4,comercial,towing,Brooklyn Center,frase,T4 Towing Ciudades NW,agrupado: <100/mes
-towing fridley mn,10,2.19,comercial,towing,Fridley,frase,T4 Towing Ciudades NW,agrupado: <100/mes
-towing new hope mn,0,s/d,comercial,towing,New Hope,frase,T4 Towing Ciudades NW,agrupado: <100/mes
-towing robbinsdale mn,0,s/d,comercial,towing,Robbinsdale,frase,T4 Towing Ciudades NW,agrupado: <100/mes
-towing champlin mn,0,s/d,comercial,towing,Champlin,frase,T4 Towing Ciudades NW,agrupado: <100/mes
-towing osseo mn,s/d,s/d,comercial,towing,Osseo,frase,T4 Towing Ciudades NW,agrupado: <100/mes
-jump start service near me,~3 (est.),3.02,comercial,roadside,near me / Minneapolis,exacta+frase,R1 Jump Start,
-car jump start,s/d,s/d,comercial,roadside,near me / Minneapolis,frase,R1 Jump Start,
-jump start minneapolis,20,2.44,comercial,roadside,near me / Minneapolis,frase,R1 Jump Start,
-battery jump service,s/d,s/d,comercial,roadside,near me / Minneapolis,frase,R1 Jump Start,
-i need a jump,s/d,s/d,comercial,roadside,near me / Minneapolis,frase,R1 Jump Start,
-car lockout service near me,~3 (est.),3.99,comercial,roadside,near me / Minneapolis,exacta+frase,R2 Lockout,condicional: confirmar que hace lockouts
-locked out of car,s/d,s/d,comercial,roadside,near me / Minneapolis,frase,R2 Lockout,condicional: confirmar que hace lockouts
-car lockout minneapolis,s/d,s/d,comercial,roadside,near me / Minneapolis,frase,R2 Lockout,condicional: confirmar que hace lockouts
-car unlock service,s/d,s/d,comercial,roadside,near me / Minneapolis,frase,R2 Lockout,condicional: confirmar que hace lockouts
-flat tire service near me,~2 (est.),3.05,comercial,roadside,near me,frase,R3 Tire & Fuel,condicional: confirmar servicio
-roadside tire change near me,~0 (est.),3.12,comercial,roadside,near me,frase,R3 Tire & Fuel,condicional: confirmar servicio
-gas delivery near me,~1 (est.),8.75,comercial,roadside,near me,frase,R3 Tire & Fuel,"condicional: confirmar servicio; CPC alto, vigilar"
-ran out of gas,s/d,s/d,comercial,roadside,near me,frase,R3 Tire & Fuel,condicional: confirmar servicio
-roadside assistance minneapolis,110,3.01,comercial (mezcla membresías),roadside,Minneapolis,frase,R1 Jump Start,con negativas aaa/membership/insurance
+towing near me,~198 (est.),3.46,comercial,towing,near me,exacta+frase,G1 Towing Near Me,volumen local estimado
+tow truck near me,~243 (est.),3.96,comercial,towing,near me,exacta+frase,G1 Towing Near Me,volumen local estimado
+towing company near me,~73 (est.),3.36,comercial,towing,near me,exacta+frase,G1 Towing Near Me,volumen local estimado
+towing service near me,~49 (est.),3.46,comercial,towing,near me,frase,G1 Towing Near Me,volumen local estimado
+emergency towing near me,~2 (est.),3.69,comercial,towing,near me,frase,G1 Towing Near Me,volumen local estimado
+flatbed towing near me,~1 (est.),3.45,comercial,towing,near me,frase,G1 Towing Near Me,volumen local estimado; flatbed condicional a confirmar servicio
+towing service,s/d,s/d,comercial,towing,genérico,frase,G1 Towing Near Me,patrón de alta conversión en benchmark
+tow truck service,s/d,s/d,comercial,towing,genérico,frase,G1 Towing Near Me,patrón de alta conversión en benchmark
+towing company,s/d,s/d,comercial,towing,genérico,frase,G1 Towing Near Me,patrón de alta conversión en benchmark
+car towing,s/d,s/d,comercial,towing,genérico,frase,G1 Towing Near Me,patrón de alta conversión en benchmark
+tow service,s/d,s/d,comercial,towing,genérico,frase,G1 Towing Near Me,patrón de alta conversión en benchmark
+towing brooklyn park mn,50,3.14,comercial,towing,Brooklyn Park,exacta+frase,G2 Towing Brooklyn Park & NW,
+tow truck brooklyn park,30,3.97,comercial,towing,Brooklyn Park,exacta+frase,G2 Towing Brooklyn Park & NW,
+towing brooklyn park,s/d,s/d,comercial,towing,Brooklyn Park,frase,G2 Towing Brooklyn Park & NW,
+towing minneapolis,320,3.04,comercial,towing,Minneapolis,exacta+frase,G3 Towing Minneapolis,presencia 10 mi: solo captura N Minneapolis
+tow truck minneapolis,210,3.24,comercial,towing,Minneapolis,exacta+frase,G3 Towing Minneapolis,presencia 10 mi: solo captura N Minneapolis
+car towing minneapolis,70,2.0,comercial,towing,Minneapolis,frase,G3 Towing Minneapolis,presencia 10 mi: solo captura N Minneapolis
+flatbed towing minneapolis,70,s/d,comercial,towing,Minneapolis,frase,G3 Towing Minneapolis,presencia 10 mi: solo captura N Minneapolis
+cheap towing minneapolis,110,3.16,comercial,towing,Minneapolis,frase,G3 Towing Minneapolis,presencia 10 mi: solo captura N Minneapolis; precio: monitorear
+24 hour towing minneapolis,20,2.14,comercial,towing,Minneapolis,frase,G3 Towing Minneapolis,presencia 10 mi: solo captura N Minneapolis; copy no promete 24/7
+towing maple grove mn,30,3.59,comercial,towing,Maple Grove,frase,G2 Towing Brooklyn Park & NW,agrupado: <100/mes
+towing plymouth mn,20,3.42,comercial,towing,Plymouth,frase,G2 Towing Brooklyn Park & NW,agrupado: <100/mes
+towing coon rapids mn,20,2.87,comercial,towing,Coon Rapids,frase,G2 Towing Brooklyn Park & NW,agrupado: <100/mes
+towing crystal mn,20,s/d,comercial,towing,Crystal,frase,G2 Towing Brooklyn Park & NW,agrupado: <100/mes
+towing brooklyn center mn,20,2.4,comercial,towing,Brooklyn Center,frase,G2 Towing Brooklyn Park & NW,agrupado: <100/mes
+towing fridley mn,10,2.19,comercial,towing,Fridley,frase,G2 Towing Brooklyn Park & NW,agrupado: <100/mes
+towing new hope mn,0,s/d,comercial,towing,New Hope,frase,G2 Towing Brooklyn Park & NW,agrupado: <100/mes
+towing robbinsdale mn,0,s/d,comercial,towing,Robbinsdale,frase,G2 Towing Brooklyn Park & NW,agrupado: <100/mes
+towing champlin mn,0,s/d,comercial,towing,Champlin,frase,G2 Towing Brooklyn Park & NW,agrupado: <100/mes
+towing osseo mn,s/d,s/d,comercial,towing,Osseo,frase,G2 Towing Brooklyn Park & NW,agrupado: <100/mes
+jump start service near me,~3 (est.),3.02,comercial,roadside,near me / Minneapolis,exacta+frase,G4 Roadside,
+car jump start,s/d,s/d,comercial,roadside,near me / Minneapolis,frase,G4 Roadside,
+jump start minneapolis,20,2.44,comercial,roadside,near me / Minneapolis,frase,G4 Roadside,
+battery jump service,s/d,s/d,comercial,roadside,near me / Minneapolis,frase,G4 Roadside,
+i need a jump,s/d,s/d,comercial,roadside,near me / Minneapolis,frase,G4 Roadside,
+car lockout service near me,~3 (est.),3.99,comercial,roadside,near me / Minneapolis,exacta+frase,G4 Roadside,condicional: confirmar que hace lockouts
+locked out of car,s/d,s/d,comercial,roadside,near me / Minneapolis,frase,G4 Roadside,condicional: confirmar que hace lockouts
+car lockout minneapolis,s/d,s/d,comercial,roadside,near me / Minneapolis,frase,G4 Roadside,condicional: confirmar que hace lockouts
+car unlock service,s/d,s/d,comercial,roadside,near me / Minneapolis,frase,G4 Roadside,condicional: confirmar que hace lockouts
+flat tire service near me,~2 (est.),3.05,comercial,roadside,near me,frase,G4 Roadside,condicional: confirmar servicio
+roadside tire change near me,~0 (est.),3.12,comercial,roadside,near me,frase,G4 Roadside,condicional: confirmar servicio
+gas delivery near me,~1 (est.),8.75,comercial,roadside,near me,frase,G4 Roadside,"condicional: confirmar servicio; CPC alto, vigilar"
+ran out of gas,s/d,s/d,comercial,roadside,near me,frase,G4 Roadside,condicional: confirmar servicio
+roadside assistance minneapolis,110,3.01,comercial (mezcla membresías),roadside,Minneapolis,frase,G4 Roadside,con negativas aaa/membership/insurance
 minneapolis impound,590,1.58,navegacional,descartar,-,negativa,-,lote municipal
 impound lot minneapolis,260,1.58,navegacional,descartar,-,negativa,-,lote municipal
 heavy duty towing minneapolis,20,s/d,fuera de servicio,descartar,-,negativa,-,no hace heavy-duty

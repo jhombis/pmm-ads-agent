@@ -3,7 +3,7 @@ cliente: Jump Towing LLC
 slug: jump-towing
 campaña: Search | Towing & Roadside | 10mi | v1
 idioma: EN
-actualizado: 2026-10-01
+actualizado: 2026-10-08
 ---
 
 # RSA — Search | Towing & Roadside
@@ -41,31 +41,27 @@ Longitudes validadas (headlines ≤30, descripciones ≤90).
 | D5 | Dead battery, locked keys or a flat? A local roadside tech can head your way. Call now. | Roadside |
 | D6 | Fast roadside help in Brooklyn Park and nearby cities. One call gets a truck on the way. | Roadside |
 
-Towing (T1–T4): D1, D2, D3, D4. Roadside (R1–R3): D5, D6, D2, D3.
+Towing (G1–G3): D1, D2, D3, D4. Roadside (G4): D5, D6, D2, D3.
 
-## Ad groups: headlines propios (pin H1)
-Cada ad group = 3 propios (pinneados en H1) + 12 del pool común = 15.
+## Ad groups: headlines propios (pin H1) — v2, 4 grupos
+Cada ad group lleva sus headlines propios (el primero pinneado en H1) más el pool común hasta completar 15.
 
-| Ad group | Pin H1 (rotan entre sí) | Otros propios |
+| Ad group | H1 pinneado | Otros propios (sin pin) |
 |---|---|---|
-| T1 Towing Near Me | Tow Truck Near You · Towing Service Near You | Local Towing Company |
-| T2 Towing Brooklyn Park | Towing in Brooklyn Park, MN · Brooklyn Park Tow Truck | Brooklyn Park Towing Co. |
-| T3 Towing Minneapolis | Towing in Minneapolis, MN · Minneapolis Tow Truck | North Minneapolis Towing |
-| T4 Towing Ciudades NW | Towing in the NW Metro | Maple Grove & Plymouth Towing · Coon Rapids & Fridley Towing · Crystal & New Hope Towing · Brooklyn Center Towing (sin pin: Google elige según la búsqueda) |
-| R1 Jump Start | Car Jump Start Service · Dead Battery? Get a Jump | Jump Start Near You |
-| R2 Lockout | Car Lockout Service · Locked Out of Your Car? | Car Unlock Near You |
-| R3 Tire & Fuel | Flat Tire Help Near You · Out of Gas? We Bring Fuel | Roadside Tire Change |
+| G1 Towing Near Me | Tow Truck Near You | Towing Service Near You · Local Towing Company |
+| G2 Towing Brooklyn Park & NW | {KeyWord:Towing in Brooklyn Park} (por defecto 23 caracteres) | Brooklyn Park Tow Truck · Maple Grove & Plymouth Towing · Coon Rapids & Fridley Towing · Crystal & New Hope Towing · Brooklyn Center Towing |
+| G3 Towing Minneapolis | Towing in Minneapolis, MN | Minneapolis Tow Truck · North Minneapolis Towing |
+| G4 Roadside | {KeyWord:Roadside Help Near You} (por defecto 22) | Car Jump Start Service · Dead Battery? Get a Jump · Car Lockout Service [C] · Flat Tire Help Near You [C] · Out of Gas? We Bring Fuel [C] |
 
-En T4 hay 5 propios + 10 del pool común.
+La inserción de keyword usa keywords de ≤30 caracteres; las más largas del grupo ("towing brooklyn center", 22) caben.
 
-## 3 RSA por ad group (qué cambia entre ellos)
-Mismo H1 pinneado; cambia el ángulo pinneado en H2:
-- **RSA A — Local**: H2 pin = C1 "Based in Brooklyn Park, MN".
-- **RSA B — Rapidez**: H2 pin = C7 "Quick Response in Your Area".
-- **RSA C — Precio/claridad** [C]: H2 pin = C10 "Local Tows From $XX" (towing) o C9 "Clear Price Before We Roll" (roadside). Si no hay precio confirmado, RSA C usa C3 "Call Now for a Quick Quote".
+## 1 RSA por ad group (máx. 2)
+Estándar 4 de CLAUDE.md y playbook §9: con <$1,500/mes y ~4.7 clics/día, un A/B da ~60 clics por variante en 90 días, lo que es ruido.
+- **RSA único**: H1 pinneado, H2 pinneado a C1 "Based in Brooklyn Park, MN" (el ángulo que nadie más puede usar). El resto rota.
+- **Segundo RSA (opcional, solo cuando el cliente confirme el precio)**: H2 pinneado a C10 "Local Tows From $XX". Se evalúa por llamadas calificadas en CallFire, no por CTR, y no antes de ~100 clics por variante.
 
 ## Extensiones (nivel campaña)
-- **Llamada**: número de reenvío de Google. La conversión es la llamada de ≥60 s. Programada en el horario de la campaña. Teléfono PENDIENTE.
+- **Llamada**: el número del negocio detrás del tracking es el (612) 616-0723, y CallFire (612) 665-6274 reenvía a él. Con el reenvío de Google activado, la conversión "Llamada desde anuncio" ≥60 s la mide Google y CallFire sigue viendo todas las llamadas. Hay que confirmar qué número muestra hoy la extensión. Programada en el horario de la campaña.
 - **Sitelinks** (landings PENDIENTES de audit):
   - Towing Service: "Cars, SUVs & light trucks" / "Call for a quick quote"
   - Jump Start: "Dead battery help" / "Local roadside tech"
