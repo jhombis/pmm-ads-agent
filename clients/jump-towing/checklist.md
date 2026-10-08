@@ -23,7 +23,7 @@ Base: `knowledge/checklists/setup-cuenta.md`, adaptada a este cliente. Responsab
 
 ### Tracking
 - [x] (PMM) Call tracking: CallFire (612) 665-6274 → (612) 616-0723, conectado al MCP (08-oct)
-- [ ] **[B]** (PMM) Confirmar dónde se usa el número de CallFire (extensión de llamada / web / GBP)
+- [x] (PMM) Dónde se usa el número de CallFire: en la web jumptowing.com (tel: en el sitio, 08-oct). Falta saber si también está en la extensión de llamada y en el GBP
 - [ ] (PMM) Explicar el hueco del 26-sep al 02-oct sin llamadas (¿campaña pausada o limitada?)
 - [ ] **[B]** (PMM) Google Tag en todas las páginas de jumptowing.com
 - [ ] **[B]** (PMM) Conversión "Llamada desde anuncio" (≥60 s), primaria
@@ -48,12 +48,14 @@ Base: `knowledge/checklists/setup-cuenta.md`, adaptada a este cliente. Responsab
 
 ### GBP y landing
 - [ ] **[B]** (PMM) /audit-landing de jumptowing.com aprobado o ajustes bloqueantes resueltos
-- [x] (PMM) Landing /jump-towing/towing/ generada en el dominio de PMM (borrador, 08-oct)
-- [x] (PMM) Landing /jump-towing/roadside/ generada en el dominio de PMM (borrador, 08-oct; jump start + remolque)
-- [ ] **[B]** (PMM) Formulario GHL con gclid/UTM y redirección a /gracias/ → ghl.form_id en los dos spec.json
-- [ ] **[B]** (PMM) Política de privacidad para las landings → legal.privacidad_url
-- [ ] **[B]** (PMM) IDs de conversión de 220-410-9619 (AW-ID + etiqueta de formulario y de clic en llamada) en tracking de los dos spec.json
-- [ ] **[B]** (PMM) Publicar las landings en Plesk con QA en 0 y probar con Tag Assistant (formulario llega a GHL con gclid; la conversión dispara una vez en /gracias/)
+- [x] (PMM) Landing /jump-towing/towing/ publicada en el dominio de PMM (08-oct, solo llamada)
+- [x] (PMM) Landing /jump-towing/roadside/ publicada en el dominio de PMM (08-oct, solo llamada; jump start + remolque)
+- [ ] (PMM) Formulario GHL con gclid/UTM y redirección a /gracias/ → ghl.form_id en los dos spec.json (hoy: excepción solo llamada aprobada por Jhombis el 08-oct)
+- [x] (PMM) Política de privacidad para las landings → jumptowing.com/privacy-policy/ (08-oct)
+- [x] (PMM) Conversión en las landings: GTM del cliente GTM-T9JFQNTC (AW-18347375568, llamadas web + clic) (08-oct)
+- [x] (PMM) Landings publicadas en Plesk: 200 y H1 verificados desde el servidor (08-oct)
+- [ ] **[B]** (PMM) Tag Assistant en las landings: el número cambia al de reenvío de Google y el clic en llamada dispara la conversión una vez
+- [ ] (PMM) Confirmar que AW-18347375568 es la cuenta 220-410-9619
 - [ ] (Jhombis) Confirmar el dominio de las landings: el de PMM (listas) o jumptowing.com (/landing-ghl)
 - [ ] (Cliente) GBP verificado con categoría "Towing service" y acceso de administrador para PMM
 - [ ] (PMM) GBP vinculado a Google Ads (activo de ubicación)

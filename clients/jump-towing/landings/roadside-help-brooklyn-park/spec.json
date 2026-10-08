@@ -62,9 +62,9 @@
       "Open Mon–Sat from 6 AM"
     ],
     "cta_llamar": "Call Now",
-    "cta_form": "Request Roadside Help",
-    "form_titulo": "Request Roadside Help",
-    "form_nota": "Send your location and vehicle. We call you back during business hours.",
+    "cta_form": "Hours & How to Reach Us",
+    "form_titulo": "Call for Roadside Help",
+    "form_nota": "Tell us where you are, the vehicle and where it needs to go.",
     "imagen": {}
   },
   "confianza": [
@@ -208,16 +208,18 @@
     "form_name": "Jump Towing Lead",
     "form_height": 520,
     "form_embed_html": "",
-    "chat_widget_html": ""
+    "chat_widget_html": "",
+    "solo_llamada": true,
+    "_nota": "solo_llamada aprobado por Jhombis el 2026-10-08: no hay formulario GHL. Al tenerlo, poner form_id y quitar solo_llamada."
   },
   "tracking": {
-    "gtm_id": "",
+    "gtm_id": "GTM-T9JFQNTC",
     "google_ads_id": "",
     "conversion_label_form": "",
     "conversion_label_call": "",
     "ga4_id": ""
   },
   "legal": {
-    "privacidad_url": ""
+    "privacidad_url": "https://jumptowing.com/privacy-policy/"
   }
 }

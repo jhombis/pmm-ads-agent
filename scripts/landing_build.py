@@ -151,7 +151,12 @@ def call_btn(s, t, cls="pmm-btn pmm-btn-call", label=None, numero=True):
 def form_block(s, t):
     raw = g(s, "ghl.form_embed_html")
     fid = g(s, "ghl.form_id")
-    if raw:
+    if g(s, "ghl.solo_llamada") and not (raw or fid):
+        # Excepción aprobada (ghl.solo_llamada): sin formulario, tarjeta de llamada con horario
+        horario = g(s, "negocio.horario")
+        inner = ((f'<p><b>{e(t["hours"])}:</b> {e(horario)}</p>' if horario else "")
+                 + f'<div class="pmm-ctas">{call_btn(s, t)}</div>')
+    elif raw:
         inner = raw
     elif fid:
         base = g(s, "ghl.form_base", "https://api.leadconnectorhq.com").rstrip("/")
@@ -383,7 +388,9 @@ def qa(s, body_html):
     has = lambda txt: bool(kw_words) and all(w in plain(txt) for w in kw_words)
     checks = [  # (bloqueante, ok, descripción)
         (True, bool(g(s, "negocio.telefono")), "Teléfono con clic para llamar"),
-        (True, bool(g(s, "ghl.form_id") or g(s, "ghl.form_embed_html")), "Formulario GHL embebido (ghl.form_id)"),
+        (True, bool(g(s, "ghl.form_id") or g(s, "ghl.form_embed_html") or g(s, "ghl.solo_llamada")),
+         "Formulario GHL embebido (ghl.form_id)" + (" — EXCEPCIÓN: solo llamada (ghl.solo_llamada), va contra el estándar 11"
+                                                     if g(s, "ghl.solo_llamada") and not (g(s, "ghl.form_id") or g(s, "ghl.form_embed_html")) else "")),
         (True, bool(g(s, "legal.privacidad_url")), "Enlace a política de privacidad (requisito de Google Ads al pedir datos)"),
         (True, bool(g(s, "tracking.gtm_id") or (g(s, "tracking.google_ads_id") and g(s, "tracking.conversion_label_form"))),
          "Conversión de formulario configurada (GTM o AW-ID + etiqueta)"),

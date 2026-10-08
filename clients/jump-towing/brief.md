@@ -16,7 +16,7 @@ tracking_destino: "(612) 616-0723"
 > Ojo con homónimos: **no** es "Jump Towing and Recovery LLC" de Oklahoma City (14130 S Meridian Ave, DPS-53334-W, hermana de Jump Transport) ni "JumpStart Towing and Recovery LLC" (MN, Facebook). Nombre legal confirmado por Jhombis: **Jump Towing LLC**, base Brooklyn Park, MN.
 
 ## Negocio
-- URL: https://jumptowing.com/ (no se pudo revisar en onboarding: el proxy de la sesión bloquea el dominio; /audit-landing debe correr desde un entorno con acceso)
+- URL: https://jumptowing.com/ (WordPress en el Plesk de PMM; responde 200 desde el servidor. El proxy de la sesión bloquea el dominio, pero /audit-landing puede leerlo vía Plesk)
 - Base y área de servicio: **radio de 10 mi alrededor de (45.093312, -93.343931)**, Brooklyn Park / Brooklyn Center, MN. Cubre aprox. Brooklyn Park, Brooklyn Center, Crystal, New Hope, Robbinsdale, Osseo, Maple Grove, Champlin, Coon Rapids, Fridley, Plymouth (parte) y el norte de Minneapolis. Segmentación por **Presencia**.
 - Servicios (por prioridad): mismo peso para los dos grupos
   1. Remolque liviano (autos/SUVs)
@@ -40,7 +40,7 @@ tracking_destino: "(612) 616-0723"
 ## Operación
 - Horario: lun–vie 6:00–18:00, sáb 6:00–15:30, **domingo cerrado**. **No es 24/7.** La programación de anuncios se ajusta a ese horario, así que se pierde la demanda nocturna y dominical, que en remolque es una parte grande.
 - Respuesta a leads (quién, tiempo): quién contesta PENDIENTE. Según CallFire (14-sep → 08-oct), el **89%** de las llamadas se contesta (25 de 28). Hubo 2 perdidas en horario (06 y 07-oct) y 2 contestadas después del cierre (vie 18:08, sáb 16:15). Ver `log/2026-10-08.md`.
-- Teléfono / call tracking: **CallFire (612) 665-6274 → reenvía a (612) 616-0723** (el teléfono del negocio). Conectado al MCP de CallFire. Entre el 14-sep y el 08-oct entraron 28 llamadas, 12 calificadas ≥60 s. Costo por calificada en sep: $76.50. **Dónde se usa el número** (extensión de llamada, web, GBP): PENDIENTE. Si también está en la web o el GBP, CallFire no separa Ads de orgánico.
+- Teléfono / call tracking: **CallFire (612) 665-6274 → reenvía a (612) 616-0723** (el teléfono del negocio). Conectado al MCP de CallFire. Entre el 14-sep y el 08-oct entraron 28 llamadas, 12 calificadas ≥60 s. Costo por calificada en sep: $76.50. **Dónde se usa el número**: **en jumptowing.com** (enlaces tel: del sitio, verificado el 08-oct). CallFire mezcla las llamadas orgánicas del sitio con las de Ads. Falta saber si también está en la extensión de llamada y en el GBP.
 - CRM (solo referencia): PENDIENTE
 - GBP: PENDIENTE (verificado, reseñas, acceso). Sin GBP no hay activo de ubicación ni LSA.
 
@@ -69,8 +69,9 @@ Detectados en búsqueda web, sin confirmar con el cliente:
 | Twin Cities Transport & Recovery | tctr.com | heavy-duty, no compite directo |
 
 ## Web y tracking
-- Plataforma / quién edita: **PMM tiene acceso** (plataforma PENDIENTE)
-- Tag/GA4: PENDIENTE verificar
+- Plataforma / quién edita: **WordPress, alojado en el Plesk de PMM** (`/var/www/vhosts/jumptowing.com`). PMM tiene acceso.
+- Tag/GA4: jumptowing.com (WordPress en el Plesk de PMM) tiene **GTM-T9JFQNTC** con la etiqueta de Google Ads **AW-18347375568**: conversión de llamadas desde la web (`__awcc`, cambia el (612) 665-6274) y una conversión por clic (`__awct`). GA4: no visto. Verificado el 08-oct.
+- Política de privacidad: https://jumptowing.com/privacy-policy/
 - Formulario → destino: secundario (el objetivo es llamada). PENDIENTE.
 - Requisitos de política: en MN no hay licencia estatal general de grúa. Si hace impound de propiedad privada aplican normas municipales (no aplica: no lo ofrece).
 

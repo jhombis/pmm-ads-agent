@@ -99,8 +99,8 @@ En `data/ads-search-towing-roadside.md`: **1 RSA por ad group** (máx. 2), cada 
 | URL | Existe | Responsable | Bloqueante |
 |---|---|---|---|
 | jumptowing.com (home) | Sí (sin auditar) | PMM | **Sí**: /audit-landing desde un entorno con acceso |
-| https://performancemediamarketing.com/jump-towing/towing/ (G1–G3) | Generada el 08-oct, borrador (QA: 3 bloqueantes: form GHL, privacidad, conversión) | PMM | **Sí** |
-| https://performancemediamarketing.com/jump-towing/roadside/ (G4) | Generada el 08-oct, borrador (jump start + remolque; lockout/llanta/combustible al confirmarse) | PMM | Sí para activar G4 |
+| https://performancemediamarketing.com/jump-towing/towing/ (G1–G3) | **Publicada el 08-oct** (solo llamada, excepción aprobada; GTM-T9JFQNTC; privacidad del cliente) | PMM | No (falta Tag Assistant) |
+| https://performancemediamarketing.com/jump-towing/roadside/ (G4) | **Publicada el 08-oct** (solo llamada; jump start + remolque; lockout/llanta/combustible al confirmarse) | PMM | No |
 
 En las landings, **un solo teléfono**: el número de seguimiento que corresponda (Google forwarding o CallFire), nunca el directo (612) 616-0723.
 
