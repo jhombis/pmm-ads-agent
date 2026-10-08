@@ -33,7 +33,7 @@ Recoger en una sola conversación todo lo que los demás skills necesitan, y dej
 ## Bloque 3 — Operación (los eslabones que no controlamos)
 12. Horario de atención real y si hay servicio 24/7 con alguien que conteste
 13. ¿Quién responde los leads y en cuánto tiempo? ¿Tienen recepcionista, IA, buzón?
-14. Teléfono principal y si aceptan call tracking (número de reenvío)
+14. Teléfono principal. **¿Tiene número de call tracking?** Proveedor (CallFire, CallRail u otro), el número y dónde está publicado (anuncio, web, GBP). Si no tiene, ¿acepta uno? Sin él solo se ven las llamadas del anuncio (ver `knowledge/call-tracking.md`). Antes de preguntar, búscalo en CallFire (`/numbers/leases`) y CallRail por el nombre del negocio.
 15. ¿Tienen CRM o dónde registran los leads? (solo documentar, no integrar)
 16. Google Business Profile: ¿verificado? ¿cuántas reseñas y promedio? ¿acceso para PMM?
 
@@ -62,6 +62,8 @@ idioma: EN|ES
 nicho: <nicho>
 actualizado: YYYY-MM-DD
 estado: onboarding
+call_tracking: callfire|callrail|ninguno|PENDIENTE
+tracking_number: "(000) 000-0000"
 ---
 
 # Brief — <cliente>
@@ -86,7 +88,7 @@ estado: onboarding
 ## Operación
 - Horario / 24-7:
 - Respuesta a leads (quién, tiempo):
-- Teléfono / call tracking:
+- Teléfono / call tracking: proveedor, número de tracking, destino, dónde se usa
 - CRM (solo referencia):
 - GBP: verificado sí/no, reseñas N (promedio X), acceso sí/no
 

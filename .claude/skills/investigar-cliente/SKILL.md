@@ -76,6 +76,13 @@ Qué sale del MCC:
 ### 5. Google Business Profile
 Windsor `google_my_business` si la ficha está conectada. Si no, el JSON-LD o el widget de reseñas de la web. Datos a sacar: verificado, número de reseñas y promedio. El acceso de PMM a la ficha queda PENDIENTE salvo que Windsor lo confirme.
 
+### 5b. Call tracking (CallFire / CallRail)
+Busca el negocio en CallFire (`callfire_get` con path `/numbers/leases`, paginando con `offset`; la etiqueta es el nombre del negocio) y en CallRail (`callrail_list_companies` + `callrail_list_trackers`). Si aparece:
+- Anota en el front matter `call_tracking`, `tracking_number` y el destino `(CallFire)`/`(CallRail)`.
+- Exporta 90 días de llamadas a `data/` y corre `scripts/call_summary.py`. Con eso se responden con dato las preguntas de capacidad de respuesta (tasa de contestadas), horario real y volumen de llamadas (ver `knowledge/call-tracking.md`).
+
+Si no aparece, la pregunta va al bloque de preguntas para el cliente.
+
 ### 6. LSA (solo US)
 Decide si la categoría califica según el nicho. Licencia y seguro, desde la web. La disposición al background check queda siempre PENDIENTE.
 

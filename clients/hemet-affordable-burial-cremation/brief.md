@@ -6,6 +6,7 @@ idioma: EN
 nicho: funeraria / cremación
 actualizado: 2026-10-01
 estado: onboarding
+call_tracking: PENDIENTE
 ---
 
 # Brief — Hemet Affordable Burial and Cremation

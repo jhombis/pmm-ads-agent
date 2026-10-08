@@ -58,7 +58,11 @@ description: Genera o actualiza el artefacto del cliente (plan en HTML, español
    - Con `url` si ya existen.
    - Si es la primera vez, `icon: "chart"` y una `description` de una línea.
    - `label` corto con lo que cambió (p. ej. "D7 review", "Horario 7–18 Central").
-8. **Guardar** las URLs en el front matter que corresponda y actualizar `actualizado`. Hacer commit junto con los cambios del skill que lo disparó.
+8. **Guardar** las URLs en el front matter que corresponda y actualizar `actualizado`.
+9. **Índice del equipo**:
+   - Registra o actualiza las URLs del cliente en `clients/informes.json` (`clientes.<slug>.informes`: título, idioma, url; `mercado` y `cuenta` si faltan). Marca `"anterior": true` en los que quedan reemplazados.
+   - Corre `python scripts/indice_informes.py` y republica `clients/indice-informes.html` en la URL de `indice_url` (Artifact con `url`). Nunca crees un índice nuevo.
+   - Haz commit de todo junto con los cambios del skill que lo disparó.
 
 ## Al terminar
-Entrega los dos enlaces (ES y EN) y en una línea qué cambió en esta versión. Recuerda que el artefacto es privado: para que el cliente lo vea, Jhombis lo comparte desde el menú Share.
+Entrega los dos enlaces (ES y EN) y en una línea qué cambió en esta versión. Menciona que el índice del equipo quedó actualizado. Recuerda que el artefacto es privado: para que el cliente lo vea, Jhombis lo comparte desde el menú Share.

@@ -17,7 +17,13 @@ Sigue la rutina de diagnóstico del playbook (§3) y sus reglas de respuesta (§
 3. **Desperdicio**: keywords con gasto > 2× CPL objetivo y 0 conversiones → proponer pausar o bajar. Keywords con 0 impresiones en 30d → pausar.
 4. **Anuncios**: rechazados/limitados; RSA con fuerza baja; peor RSA por grupo (CTR y conv.) → reemplazar.
 4b. **Medición**: `conversion_action_name` por semana; estado de los recursos de llamada; que el horario de anuncios coincida con el de atención.
-5. **Calidad de leads**: preguntar a Jhombis si el cliente reportó (hasta que haya CRM). Anotar spam.
+4c. **Llamadas reales** (si el brief tiene `call_tracking`): exporta las llamadas del periodo (CallFire o CallRail) a `data/`, corre `python scripts/call_summary.py ... --gasto <gasto> --ads-conv <conv. de llamada>` y reporta:
+   - llamadas, contestadas y calificadas ≥60 s, y el costo por llamada calificada
+   - la diferencia contra lo que reporta Ads
+   - las llamadas perdidas en horario de atención (en $)
+
+   Método y definiciones: `knowledge/call-tracking.md`. Si no hay call tracking, anótalo como pendiente del cliente.
+5. **Calidad de leads**: con call tracking, usa las calificadas y, en CallRail, `lead_status`/`call_summary`. Sin él, pregunta a Jhombis si el cliente reportó (hasta que haya CRM). Anota spam.
 6. **Roadmap**: comparar la condición de paso de la fase actual contra los datos. Si se cumple → avanzar `fase_actual`, marcar ✅, poner fecha de la siguiente. Si no → ⛔ con la razón concreta y nueva fecha estimada. Nunca avanzar por calendario.
 7. **Presupuesto**: gasto acumulado del mes vs presupuesto; proyección; impression share perdido por presupuesto en campañas rentables → propuesta de reasignación.
 8. **Checklist**: marcar lo hecho, agregar tareas nuevas con responsable.
