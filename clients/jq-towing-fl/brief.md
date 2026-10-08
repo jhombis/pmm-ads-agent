@@ -6,6 +6,8 @@ idioma: EN
 nicho: towing
 actualizado: 2026-10-01
 estado: onboarding
+call_tracking: callfire
+tracking_number: "(352) 645-5030"
 ---
 
 # Brief — JQ Towing (Belleview / Ocala, FL)
