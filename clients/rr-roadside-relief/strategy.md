@@ -1,13 +1,13 @@
 ---
 cliente: RR Roadside Relief
 slug: rr-roadside-relief
-actualizado: 2026-10-01
+actualizado: 2026-10-08
 version: 1
 supuestos:
-  - Presupuesto de pauta real ≈ $43/día (~$1,300/mes), tomado del gasto actual. El paquete de $2,250 no es todo pauta. PENDIENTE confirmar.
+  - Presupuesto de pauta real: el ritmo observado es ~$49/día (~$1,490/mes; corregido el 01-oct, antes se estimó en $43/día). El paquete de $2,250 no es todo pauta. PENDIENTE confirmar.
   - Área de servicio = OKC metro, radio de 25 mi. PENDIENTE confirmar (la web dice "anywhere in Oklahoma City").
   - Ticket promedio y tasa de cierre desconocidos. El CPL objetivo sale del benchmark interno, no de la economía del cliente.
-  - 24/7 real con alguien que contesta de noche (según la web). PENDIENTE confirmar.
+  - 24/7 real: CONFIRMADO con CallFire (22 de 23 llamadas nocturnas contestadas, 16-sep → 08-oct).
   - Atención en español desconocida. AG10 queda condicionado.
   - Sin oferta de precio confirmada. Los headlines con precio llevan ⚠ y no se publican hasta confirmar.
   - Volúmenes OKC estimados como volumen nacional × 0.43% (población del metro), salvo keywords con ciudad (volumen real). Validar con Keyword Planner geo OKC cuando la API esté disponible.
@@ -123,6 +123,7 @@ Regla de aprendizaje: cada campaña necesita ≥ 3× CPL por día. Con un CPL ma
 - **Dividir en varias campañas ya**: el presupuesto no da para que cada una salga de aprendizaje.
 
 ## Riesgos y supuestos
+- **Medición (actualizado 08-oct, CallFire)**: Ads subcuenta. Del 16-sep al 01-oct reporta 7 llamadas y CallFire registra 19 calificadas ≥60 s (~$36 por llamada calificada si todas vienen de Ads). La prioridad de F0 pasa de "evitar contar basura" a **"hacer que Ads vea las llamadas reales"**: conversión de llamadas desde la web + recurso de llamada ≥60 s. tCPA nunca se fija desde el CPA de Ads ($85) mientras subcuente.
 - **Calidad de conversión**: si "Calls from Ads" cuenta llamadas cortas o mal dirigidas, Maximizar conversiones optimiza hacia basura. Es la acción F0 más importante después de las negativas.
 - **Landing**: sin formulario arriba y con carga lenta, el IS perdido por ranking seguirá alto (QS bajo) y el CPC por encima de $6. El benchmark de mercado está en $3–4 (Semrush) y $4.91 en el MCC maduro.
 - **Reputación**: 0 reseñas frente a las ~1,500 de 5-Star. Afecta CTR, LSA y conversión. Hay que conseguir las primeras 20–30 reseñas en GBP (cliente). Sin GBP no hay activo de ubicación ni Maps.

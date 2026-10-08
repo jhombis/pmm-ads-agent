@@ -47,7 +47,7 @@ Los números de los llamantes y las grabaciones son datos personales: van solo e
 | Cliente | Proveedor | Número de tracking | Notas |
 |---|---|---|---|
 | JQ Towing | CallFire | (352) 645-5030 | Reenvía a (352) 282-2512 |
-| RR Roadside Relief | CallFire | (405) 536-9093 | |
+| RR Roadside Relief | CallFire | (405) 536-9093 | Reenvía a (405) 953-5281. Es el mismo número de la web: CallFire no separa Ads de la web. 08-oct: 19 calificadas vs 7 en Ads (16-sep → 01-oct) |
 | Jump Towing | CallFire | (612) 665-6274 | |
 | 290 Tow & Recovery | CallFire | (830) 463-8318 | |
 | Spillane's Towing | CallFire | (802) 216-3105 | |

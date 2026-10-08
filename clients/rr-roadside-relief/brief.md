@@ -4,10 +4,11 @@ slug: rr-roadside-relief
 pais: US
 idioma: EN (con demanda en ES detectada)
 nicho: towing / roadside assistance
-actualizado: 2026-10-01
+actualizado: 2026-10-08
 estado: activo — brief preliminar (investigación sin entrevista)
 call_tracking: callfire
 tracking_number: "(405) 536-9093"
+tracking_destino: "(405) 953-5281"
 ---
 
 # Brief — RR Roadside Relief
@@ -44,7 +45,7 @@ tracking_number: "(405) 536-9093"
 ### Hallazgos (ordenados por impacto en dinero)
 1. **Las ~100 keywords activas están en amplia** (37 con impresiones en 30 d) (viola estándar PMM #2). Consecuencia directa:
 2. **≈$184 de $340 de gasto visible en search terms (54%) fue desperdicio**: competidores ($62: Puckett's, 5 Star, TK, Always, Robertson, Harrington's Tire), tiendas de llantas / montaje ($41: Michelin, "nearest tire store", "tire service near me"), planes de asistencia de aseguradoras y fabricantes ($37: Lincoln, Bridgestone, ARP, CarShield, "roadside assistance phone number"), irrelevantes ($25: "reliable auto phone number", "reeds transmission", "highway emergency number"), informacionales ($12). Detalle en `data/2026-10-01-search-terms-con-gasto-30d.csv`.
-3. **Conversiones sospechosas**: 2 de las 8 vienen de "lincoln roadside assistance" y "harringtons tire choctaw" → probablemente llamadas mal dirigidas (gente buscando otro negocio). Revisar umbral de duración de "Calls from Ads" y escuchar/confirmar con cliente. El CPA real de leads calificados es peor que $81.
+3. **Conversiones subcontadas (CallFire, 08-oct)**: del 16-sep al 01-oct Ads reporta 7 llamadas y CallFire 19 llamantes calificados ≥60 s → **$35.94 por llamada calificada** (si todas vienen de Ads) contra $85 en Ads. Antes se veían como **conversiones sospechosas**: 2 de las 8 vienen de "lincoln roadside assistance" y "harringtons tire choctaw" → probablemente llamadas mal dirigidas (gente buscando otro negocio). Revisar umbral de duración de "Calls from Ads". CallFire muestra que, en total, las llamadas reales son más y mejores de lo que Ads reporta.
 4. **Fuga geográfica**: impresiones en Tulsa, Wichita KS, Stillwater, Enid, Tahlequah, Kingman AZ (con clic), Williams AZ, Hartford CT, Austin TX, Rogers AR, Puerto Rico. La campaña **ya está en Presencia**; la fuga viene de un radio amplio o de gente de paso. Revisar el radio y negativizar ciudades fuera de área.
 5. **Negativas**: ya hay 458 de campaña (plantilla ENHPRM, en amplia), pero siguen colándose "how do i change a tire", "jump starter", "walmart tire center", "autozone" → lista universal PMM no aplicada o incompleta.
 6. **Estructura**: un solo ad group mezclando towing, roadside y tire service; no hay H1 pinneado por tema posible. Propuesta para `/strategy`: campañas/ad groups Towing · Roadside (jump/lockout/fuel) · Mobile Tire.
@@ -52,9 +53,9 @@ tracking_number: "(405) 536-9093"
 8. **IS 17%, con 62% perdido por ranking** (las mejores cuentas de towing del MCC pierden 9–30%). El freno es calidad (QS/landing/relevancia), no presupuesto. Puja: Maximizar conversiones (OK). Ver `benchmark.md`.
 
 ## Operación
-- Horario / 24-7: la web dice "Available 24/7". Confirmar que alguien contesta de noche.
-- Respuesta a leads (quién, tiempo): PENDIENTE
-- Teléfono / call tracking: (405) 536-9093 (web). Call asset con conversiones "Calls from Ads"; sin call tracking en la web. Email: rraysautorecovery@gmail.com
+- Horario / 24-7: **24/7 confirmado con CallFire** (16-sep → 08-oct): 23 llamadas entre las 20:00 y las 07:00, 22 contestadas. Tasa de contestadas total: 89% (6 perdidas, 5 de ellas de día).
+- Respuesta a leads (quién, tiempo): quién contesta PENDIENTE. Mediana de conversación de 102 s; 89% de llamadas contestadas.
+- Teléfono / call tracking: **CallFire (405) 536-9093** → reenvía a (405) 953-5281. Número alquilado el 16-sep y el mismo que muestra la web, así que CallFire no separa Ads de web/GBP. 54 llamadas, 27 calificadas ≥60 s (16-sep → 08-oct). Ver `log/2026-10-08.md`.
 - CRM (solo referencia): PENDIENTE
 - GBP: PENDIENTE (no encontrado en búsqueda web)
 
@@ -79,7 +80,7 @@ tracking_number: "(405) 536-9093"
 ## Pendientes
 - [ ] Confirmar con Jhombis área de servicio real y servicios (bloqueante para geo y estructura)
 - [ ] Ticket promedio y tasa de cierre → CPL máximo
-- [ ] Horario real / 24-7 y quién contesta
+- [x] Horario real 24/7 (confirmado con CallFire); quién contesta: PENDIENTE
 - [ ] Acceso a GBP y número de reseñas
 - [ ] Revisar estrategia de puja y config de ubicación directamente en la cuenta (API)
 - [x] `/audit-landing` → `audit-site.md` (2026-10-01)

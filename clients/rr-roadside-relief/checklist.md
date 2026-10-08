@@ -2,7 +2,7 @@
 cliente: RR Roadside Relief
 slug: rr-roadside-relief
 fase_actual: 0
-actualizado: 2026-10-01
+actualizado: 2026-10-08
 ---
 # Checklist — RR Roadside Relief
 
@@ -10,11 +10,12 @@ Base: `knowledge/checklists/setup-cuenta.md` + tareas propias del cliente. La cu
 
 ## Fase 0 — Fundación (correcciones con la cuenta activa)
 ### Cuenta y conversiones
+- [x] (PMM) Call tracking conectado: CallFire (405) 536-9093 → (405) 953-5281; export y resumen en `log/2026-10-08.md`
 - [x] (PMM) Cuenta vinculada al MCC de PMM (425-405-2574)
 - [ ] (PMM) Facturación verificada
 - [ ] ⛔ (PMM) "Calls from Ads" con duración mínima de 60 s, única conversión primaria de llamada
 - [ ] ⛔ (PMM) Tag Assistant: `AW-18397439627` es de esta cuenta; "Form Fill" sin doble conteo (Site Kit `GT-PHCMTZJ8` + GTM `GTM-TS99RXK7`)
-- [ ] (PMM) Conversión "Clic en teléfono" en la web (móvil), con `tel:(405)5369093`
+- [ ] ⛔ (PMM) Conversión de **llamadas desde la web** (número de desvío de Google en el sitio o clic en `tel:(405)5369093`): Ads cuenta 7 de 19 llamadas calificadas (CallFire, 16-sep → 01-oct)
 - [ ] (PMM) Conversiones secundarias marcadas como secundarias
 - [ ] (PMM) GA4 (`GT-PHCMTZJ8`) vinculado y audiencia "Todos los visitantes" importada
 - [ ] (PMM) Campos ocultos UTM + GCLID en los formularios de Elementor
@@ -30,7 +31,8 @@ Base: `knowledge/checklists/setup-cuenta.md` + tareas propias del cliente. La cu
 ### Confirmaciones del cliente (vía Jhombis)
 - [ ] ⛔ (Cliente) Presupuesto real de pauta (el paquete de $2,250 no es todo pauta)
 - [ ] ⛔ (Cliente) Área de servicio real → radio de la campaña (supuesto: 25 mi desde OKC)
-- [ ] ⛔ (Cliente) Proceso de respuesta: quién contesta, en cuánto tiempo, ¿24/7 de verdad?
+- [x] (PMM) 24/7 real verificado con CallFire: 22 de 23 llamadas nocturnas contestadas (16-sep → 08-oct)
+- [ ] (Cliente) Proceso de respuesta: quién contesta; revisar 5 llamadas perdidas de día en 23 días
 - [ ] (Cliente) Tarifas/oferta sostenible (habilita AG4 y los headlines de precio ⚠)
 - [ ] (Cliente) ¿Atienden en español? (habilita AG10)
 - [ ] (Cliente) Licencia y seguro (callout "Licensed & Insured" ⚠, requisito LSA)
@@ -69,6 +71,7 @@ Base: `knowledge/checklists/setup-cuenta.md` + tareas propias del cliente. La cu
 
 ## Fase 2 — Limpieza (D7 2026-10-15 · D14 2026-10-22 · D30 2026-11-07)
 - [ ] D7: search terms revisados, negativas agregadas
+- [ ] D7: llamadas CallFire vs conversiones de Ads (calificadas ≥60 s, perdidas, costo por llamada calificada)
 - [ ] D7: keywords sin impresiones identificadas (no pausar aún)
 - [ ] D14: search terms revisados, negativas agregadas
 - [ ] D14: keywords/ad groups con gasto >$90 y 0 conversiones marcados para revisión
@@ -80,7 +83,7 @@ Base: `knowledge/checklists/setup-cuenta.md` + tareas propias del cliente. La cu
 - [ ] (PMM) Landings nuevas publicadas: /flat-tire-change/, /car-lockout/, /jump-start/, /flatbed-motorcycle-towing/ (y /es/ si aplica) y ad groups re-apuntados
 
 ## Fase 3 — Optimización de puja (estimada ~2026-11-16)
-- [ ] ≥30 conversiones en 30 días con tracking verificado
+- [ ] ≥30 conversiones en 30 días con tracking verificado (CallFire ya ve ~35 calificadas/30 d; falta que Ads las cuente)
 - [ ] Cliente confirma ≥70% de leads reales
 - [ ] tCPA = CPA real observado (no el deseado)
 - [ ] Presupuesto reajustado según CPA y capacidad (3 flatbeds)

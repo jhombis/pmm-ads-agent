@@ -2,7 +2,7 @@
 cliente: RR Roadside Relief
 slug: rr-roadside-relief
 D0: 2026-10-01
-actualizado: 2026-10-01
+actualizado: 2026-10-08
 fase_actual: 0
 plan_es: https://claude.ai/artifact/RHUHPWofMcvYwJUfH4uZcf
 plan_en: https://claude.ai/artifact/KpYB2DXW2n6xFLunVfhimH
@@ -32,7 +32,7 @@ plan_en: https://claude.ai/artifact/KpYB2DXW2n6xFLunVfhimH
   - Día 1–2, sobre la campaña actual (cortar desperdicio ya):
     - (Jhombis) OK para aplicar `data/2026-10-01-negatives.txt` (238 términos) + `data/negatives-nicho.txt` §A–C.
     - (PMM) Quitar las negativas existentes que bloquean llantas, `mobile`, `quick` y `budget` (`data/negatives-nicho.txt` §F).
-    - (PMM) Ajustar "Calls from Ads" a ≥60 s y verificar que sea la única conversión de llamada primaria.
+    - (PMM) Ajustar "Calls from Ads" a ≥60 s **y agregar la conversión de llamadas desde la web**. CallFire (08-oct): Ads cuenta 7 de 19 llamadas calificadas.
     - (PMM) Tag Assistant: confirmar que `AW-18397439627` pertenece a la cuenta 425-405-2574 y que "Form Fill" no se cuenta doble (Site Kit + GTM).
   - Confirmaciones del cliente (vía Jhombis):
     - Presupuesto real de pauta.
@@ -82,6 +82,7 @@ plan_en: https://claude.ai/artifact/KpYB2DXW2n6xFLunVfhimH
 - **Supuesto del cálculo**: $43/día ÷ CPL de cuenta nueva ≈ $35 (benchmark de cuentas nuevas, mejorado por la limpieza) ≈ 1.2 conv/día → 30 conversiones en ~25 días desde el 10-08 (≈ 11-02). Se suman **+2 semanas** porque el presupuesto queda por debajo de 3× el CPL del benchmark → ~11-16. Si el CPL baja a ~$20, la fecha se adelanta a ~11-05 (mínimo 21 días).
 - **Condición de paso**: ≥30 conversiones en 30 días con tracking verificado (llamada ≥60 s, formulario sin doble conteo) **y** el cliente confirma que ≥70% son leads reales.
 - **Acción**: tCPA = CPA real de 30 días (no el deseado). Reajustar el presupuesto según CPA y capacidad (3 flatbeds).
+- **Nota 08-oct (CallFire)**: en llamadas reales la cuenta ya va a ~35 calificadas por 30 días. Si la medición se corrige en F0, la condición puede cumplirse antes del ~16-nov. El tCPA se fija con el CPA de las conversiones corregidas, no con el de Ads de hoy ($85).
 - **Si no se cumple en fecha**:
   - conversión por clic < 5% → revisar la landing (formulario, velocidad);
   - IS perdido por ranking > 50% → revisar QS y copy;
@@ -139,3 +140,4 @@ plan_en: https://claude.ai/artifact/KpYB2DXW2n6xFLunVfhimH
 
 ## Historial de cambios
 - 2026-10-01: creado (D0 = 2026-10-01; cuenta activa desde el 2026-09-15).
+- 2026-10-08: call tracking (CallFire). 24/7 confirmado; Ads subcuenta llamadas (7 vs 19 calificadas). La medición web pasa a bloqueante de F0. El repo no registra avances de F0 desde el 01-oct (OK de negativas, landing, GBP): si no hubo cambios, el relanzamiento del 08-oct se corre hasta cerrar los bloqueantes.
