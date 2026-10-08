@@ -75,7 +75,7 @@ scripts/                  utilidades (API de Google Ads, PageSpeed, etc.)
 - **Semrush MCP**: `paid_search_research`, `competitors_research`, `keyword_research`, `site_audit`, `domain_overview`.
 - **Windsor.ai MCP**: datos históricos de Google Ads para dashboards y comparativas sin gastar cuota de API. Limitaciones conocidas (usar `keyword_text`, no `keyword`; campos de reportes distintos van en llamadas separadas; `budget_amount`/`target_cpa` son valores vigentes, no históricos; search terms cubren solo parte del gasto) en el playbook §2. Cuentas sin carpeta de cliente se diagnostican en `diagnostics/<cuenta>/`.
 - **Call tracking — CallFire y CallRail (MCP, solo lectura)**: llamadas reales por número (contestadas, duración, repetidas, horario; fuente y transcripción en CallRail). Método, definiciones (calificada = ≥60 s, llamante único) y mapa de números por cliente en `knowledge/call-tracking.md`; resumen con `scripts/call_summary.py`. Los números y grabaciones de llamantes no salen de `data/`.
-- **GoHighLevel**: landings por servicio generadas con `/landing-ghl` (`scripts/landing_build.py`), montaje en `docs/setup-gohighlevel.md`.
+- **Landings**: `/landing-ghl` (`scripts/landing_build.py`) publica por defecto en **Plesk**, en `https://performancemediamarketing.com/<cliente>/` (conector `Plesk_PMM`, procedimiento en `docs/publicar-plesk.md`). Solo se sube `publicar/`. Si el cliente usa su propio dominio, va a GoHighLevel (`docs/setup-gohighlevel.md`).
 - **PageSpeed Insights** (`scripts/pagespeed.py`) y WebFetch para auditar landings.
 - **Meta Ad Library / búsqueda web** solo como referencia de competidores.
 

@@ -1,12 +1,16 @@
 ---
 name: landing-ghl
-description: Diseña landing pages por servicio listas para GoHighLevel (código para pegar en Custom Code + Head Tracking Code, SEO, schema, formulario GHL con gclid/UTM, página de gracias con conversión). Escribe clients/<slug>/landings/<pagina>/. Usar cuando se pida "landing", "crear landing page", "una landing por servicio", "página para GHL/GoHighLevel".
+description: Diseña landing pages por servicio y, por defecto, las publica en https://performancemediamarketing.com/<cliente>/ vía Plesk (index + /gracias con conversión, SEO, schema, formulario GHL con gclid/UTM). También genera el código para GoHighLevel si el cliente usa su propio dominio. Escribe clients/<slug>/landings/<pagina>/. Usar cuando se pida "landing", "crear landing page", "una landing por servicio", "landing para la campaña", "publicar en Plesk", "página para GHL/GoHighLevel".
 ---
 
 # /landing-ghl — Una landing por servicio, lista para GoHighLevel
 
 ## Entrada
 `/landing-ghl <slug> [servicio|todos] [ciudad]`. Por defecto crea **una landing por cada campaña/servicio de `strategy.md`**, o por cada servicio principal del brief si aún no hay estrategia.
+
+## Dónde se publica
+- **Por defecto: Plesk** (`hosting.tipo = "plesk"`) → `https://performancemediamarketing.com/<cliente>/` y `/<cliente>/gracias/`. Si el cliente tiene más de una landing: `/<cliente>/<servicio>/`. `hosting.ruta` define la carpeta; la URL final y la de gracias las fija el generador, así que no se escriben a mano. Por defecto va con noindex. Procedimiento completo en `docs/publicar-plesk.md`.
+- **GHL o el dominio del cliente** (`hosting.tipo = "ghl"`): solo si Jhombis lo pide o el cliente necesita su propio dominio en el anuncio o SEO. Montaje en `docs/setup-gohighlevel.md`.
 
 ## Requisitos
 - `clients/<slug>/brief.md` (obligatorio).
@@ -55,7 +59,14 @@ description: Diseña landing pages por servicio listas para GoHighLevel (código
    - el hero y el CTA de llamada sin scroll en móvil
    - que no haya desbordes
    - que la barra sticky esté visible
-5. **Índice**: escribe `clients/<slug>/landings/README.md` con una tabla `página | URL final | keyword | indexar | QA bloqueantes | estado (borrador/montada en GHL/publicada)`.
+5. **Publicar en Plesk** (si `hosting.tipo = "plesk"` y el QA está en 0): sigue `docs/publicar-plesk.md`.
+   - Comprueba que la ruta esté libre (404) y crea las carpetas.
+   - Sube **solo** `publicar/index.html` y `publicar/gracias/index.html` con `write_file`.
+   - Devuelve el dueño a la suscripción con `chown`.
+   - Verifica 200 + H1 desde el servidor.
+
+   Antes de publicar, revisa que ningún otro cliente del mismo nicho y zona use este dominio (un anuncio por dominio por subasta).
+6. **Índice**: escribe `clients/<slug>/landings/README.md` con una tabla `página | URL final | keyword | indexar | QA bloqueantes | estado (borrador/montada en GHL/publicada)`.
 
 ## Salida por página (`clients/<slug>/landings/<pagina>/`)
 | Archivo | Dónde va en GHL |
@@ -67,9 +78,11 @@ description: Diseña landing pages por servicio listas para GoHighLevel (código
 | `gracias-body.html` / `gracias-head.html` | paso o página de gracias (dispara la conversión) |
 | `preview.html` | revisión local; también sirve para hospedar fuera de GHL |
 | `qa.md` | checklist automático |
+| `publicar/` | **lo único que se sube a Plesk**: `index.html`, `gracias/index.html` y `MANIFIESTO.txt` (destinos) |
 
 ## Al terminar
 Resume en 3–5 líneas:
 - páginas creadas, cuáles se indexan y cuáles son solo para Ads
 - bloqueantes de QA y quién los resuelve
-- el siguiente paso: montarlas en GHL siguiendo `docs/setup-gohighlevel.md`, probar el envío con Tag Assistant y luego actualizar las URLs finales en `strategy.md` antes de `/build-campaign`
+- las URLs publicadas en performancemediamarketing.com, o las pendientes de montar si van a GHL
+- el siguiente paso: probar el envío con Tag Assistant y luego actualizar las URLs finales en `strategy.md` antes de `/build-campaign`. Cambiar las URLs en una campaña activa requiere el OK de Jhombis.
