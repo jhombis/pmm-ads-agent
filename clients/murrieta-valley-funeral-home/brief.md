@@ -5,7 +5,7 @@ pais: US
 idioma: EN
 nicho: funeraria / cremación
 actualizado: 2026-10-07
-estado: onboarding — audit-landing corrido
+estado: onboarding — audit, competitors y benchmark corridos
 origen: investigar-cliente
 customer_id: 769-956-1619
 completitud: 64%

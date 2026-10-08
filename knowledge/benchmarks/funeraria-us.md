@@ -3,7 +3,7 @@ nicho: funeraria / cremación
 pais: US
 cuentas: 5 (4 en Inland Empire CA, 1 en AZ)
 periodo: últimos 90 días (2026-07-03 → 2026-09-30)
-actualizado: 2026-10-01
+actualizado: 2026-10-08
 ---
 | Métrica (Search) | P25 | Mediana | P75 |
 |---|---|---|---|
@@ -41,3 +41,9 @@ Obituarios / "recent deaths" / "funerals today", productos (casket, headstone, u
 - Home como URL final sin formulario.
 - Negativas amplias de una palabra que bloquean ciudades del radio o términos de precio.
 - Varias cuentas del mismo grupo compitiendo en la misma zona.
+
+## Notas de uso (2026-10-08, sin extracción nueva)
+- /benchmark-interno de una cuenta funeraria del suroeste de Riverside County reutilizó esta extracción (sin API ni Windsor en la sesión). Las 5 cuentas siguen sin etiquetas `nicho:funeral` / `pais:US`.
+- **El CPL no se explica solo con la puja.** La cuenta del P25 en conversiones usa la misma puja que las del P75 (Max conversiones) y convierte a ~5.8% con CPC sobre el P75. Lo que la separa: landing sin página de cremación ni precio, formulario sin página de gracias y dos teléfonos sin reenvío.
+- **Posición de precio antes de keywords de precio.** "cremation cost" y "cheapest" convierten en cuentas con cremación directa a $1,095–1,175. En una cuenta cuyo GPL pone la directa en ≈ $1,578+ (frente a $995 de After/Meadow/Tulip en la misma SERP), "cheap", "cheapest", "low cost" y "$499/$595" van a negativas; el ángulo es paquetes con servicio y funerales/entierros, donde los online no compiten.
+- Semrush no muestra keywords pagadas de ningún funeral home local del valle (England, Valley Cremation, Lakepointe, Miller-Jones con ciudad): la subasta local explícita ("funeral homes in <ciudad> ca") está vacía y los "near me" los dominan los online nacionales a CPC ~$5.

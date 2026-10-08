@@ -2,7 +2,7 @@
 cliente: Murrieta Valley Funeral Home
 slug: murrieta-valley-funeral-home
 fase_actual: 0
-actualizado: 2026-10-07
+actualizado: 2026-10-08
 ---
 # Checklist — Murrieta Valley Funeral Home
 
@@ -27,6 +27,7 @@ Responsables: PMM · Cliente · Jhombis (decisión).
 - [ ] (Cliente) GBP de Murrieta (y Temecula / Lake Elsinore): verificación, conteo de reseñas en Google y acceso de PMM
 - [ ] (PMM) GBP vinculado como activo de ubicación
 - [ ] (Cliente) Confirmar dueño actual (Shreves vs Hamilton) y si Colton Sunflower, Temecula Cremation & Burial y Options son del mismo grupo
+- [ ] (Jhombis) Etiquetar las 5 cuentas funerarias del MCC con `nicho:funeral` y `pais:US`
 - [ ] (Jhombis) Coordinar geos y negativas de marca entre 769-956-1619, Colton Sunflower (151-776-2744) e Inland Memorial Murrieta (934-241-5137, pausada)
 ### Landing (audit-site.md 2026-10-07: 11/22)
 - [ ] (PMM/Cliente) **Bloqueante**: landing /cremation/ con H1 de servicio, paquetes con precio del GPL, formulario arriba y llamada fija
@@ -40,5 +41,5 @@ Responsables: PMM · Cliente · Jhombis (decisión).
 - [ ] (Cliente) ¿Atienden en español? (define ad group ES o negativas del grupo E)
 ### Siguientes skills
 - [x] (PMM) `/audit-landing` corrido 2026-10-07 (11/22, requiere ajustes)
-- [ ] (PMM) `/competitors` y `/benchmark-interno` en paralelo
+- [x] (PMM) `/competitors` y `/benchmark-interno` corridos 2026-10-08 (benchmark reutiliza la extracción del 01-oct; repetir con API)
 - [ ] (PMM) `/strategy` → `/roadmap` (crea el checklist completo)
