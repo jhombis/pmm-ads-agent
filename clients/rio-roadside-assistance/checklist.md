@@ -14,3 +14,7 @@ actualizado: 2026-10-07
 - [ ] Servicios ofrecidos y orden de rentabilidad; idiomas de atención (PT/ES)
 - [ ] GBP: existencia, verificación, reseñas, acceso PMM
 - [ ] Presupuesto de pauta real ($20/día vigente) y margen para escalar
+- [ ] Habilitar el dominio del cliente en la red del entorno (o exportar el HTML) para correr site_scan y PageSpeed
+- [ ] Un solo teléfono en el sitio = número de reenvío; confirmar el (550) 782-9250 de Yelp
+- [ ] Programación de anuncios = horario real (domingo sin datos; Yelp 7:00–23:00)
+- [ ] Reseñas GBP de competidores (Maps) y Auction Insights de la cuenta para ver quién puja de verdad

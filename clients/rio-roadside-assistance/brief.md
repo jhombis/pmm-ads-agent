@@ -59,6 +59,8 @@ Nadie compra "roadside assistance boston" ni "flat tire service near me" en los 
 | Competidor | URL | Nota |
 |---|---|---|
 | JMC Recovery | — | search term "jmc recovery", 1 impresión (MCC); único competidor directo visible |
+| DRIVE Roadside · I Need Roadside · The Roadside Helper | driveroadside.com · ineedroadside.com · theroadsidehelper.com | redes nacionales con páginas por ciudad y precio cerrado ($49 plano, $89–199, $149/h) (web/Semrush); ver competitors.md |
+| JV Towing (Medford) · Boston Towing · Atlantis Towing · A Affordable Towing Boston | jvtowing.com · bostontowing.us · atlantistowingservices.com · aaffordabletowingboston.com | locales con roadside 24/7 (A Affordable 7am–11pm); sin pauta visible en Semrush (web/Semrush) |
 | Mavis Discount Tire (Cambridge, Everett) | mavis.com | 3 variantes; taller de llantas, negativizar (MCC) |
 | Town Fair Tire (Everett) | townfairtire.com | 4 impresiones; taller de llantas, negativizar (MCC) |
 | Sullivan Tire | sullivantire.com | 3 impresiones; negativizar (MCC) |
@@ -75,6 +77,7 @@ Nadie compra "roadside assistance boston" ni "flat tire service near me" en los 
 - Aplica: **posible** — towing/roadside es categoría de Local Services Ads en US; disponibilidad en el mercado de Boston, licencia, seguro y disposición al background check: PENDIENTE.
 
 ## Pendientes
+- [ ] Ver también `audit-site.md` (bloqueantes de medición), `competitors.md` y `benchmark.md` (2026-10-07)
 - [ ] URL final de los anuncios y acceso a la web (bloqueante para /audit-landing y para cualquier landing)
 - [ ] Verificar con Tag Assistant qué acciones de conversión existen y si registran (bloqueante: 0 conversiones en 24 clics)
 - [ ] Confirmar área de servicio real (centro del radio, millas, Presencia vs "Presencia o interés") y si Brockton es el mismo negocio
