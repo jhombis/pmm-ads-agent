@@ -1,6 +1,7 @@
 # Copy — Search | Towing & Roadside | Ocala 15mi
 
 > `*` = claim que el cliente debe confirmar antes de publicar; si no se confirma, se elimina (no se reemplaza por otro claim no verificado).
+> **Se monta 1 RSA por grupo (la A)**: estándar PMM #4 para < $1,500/mes. B y C quedan de reemplazo para el día 30 o como 2.º RSA si un grupo pasa de ~50 clics/mes.
 > RSA A, B y C comparten el pool. H1 pinneado en posición 1 en las tres. B pinnea en posición 2 "Upfront Quote on the Phone*" (ángulo precio; si no se confirma, usar "Real Person Answers 24/7"), C pinnea en posición 2 "Local Belleview Tow Company*" (ángulo local). A sin pin en posición 2.
 
 ## Towing - Near Me
@@ -131,7 +132,7 @@
 Towing · Flatbed Towing* · Emergency Towing · Lockouts · Jump Starts · Tire Changes · Fuel Delivery · Winch-Outs
 
 ### Llamada
-Número de desvío de Google → (352) 645-5030 · conversión de llamada ≥ 60 s · 24/7 (PENDIENTE aceptación de call tracking)
+(352) 645-5030 (CallFire → reenvía a (352) 282-2512) con informes de llamadas de Google activados (número de desvío) · conversión de llamada ≥ 60 s · 24/7
 
 ### Ubicación
 Vincular GBP (PENDIENTE acceso). Si no hay GBP verificado, no hay activo de ubicación ni presencia en Maps.

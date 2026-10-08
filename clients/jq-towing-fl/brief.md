@@ -4,10 +4,11 @@ slug: jq-towing-fl
 pais: US
 idioma: EN
 nicho: towing
-actualizado: 2026-10-01
+actualizado: 2026-10-08
 estado: onboarding
 call_tracking: callfire
 tracking_number: "(352) 645-5030"
+tracking_destino: "(352) 282-2512"
 ---
 
 # Brief — JQ Towing (Belleview / Ocala, FL)
@@ -34,9 +35,9 @@ tracking_number: "(352) 645-5030"
 - Historial Google Ads: **cuenta previa 986-810-9972 en el MCC**. No conectada a Windsor → histórico PENDIENTE
 
 ## Operación
-- Horario / 24-7: **24/7 real** (alguien contesta) → programación 24/7 permitida
-- Respuesta a leads (quién, tiempo): PENDIENTE
-- Teléfono / call tracking: (352) 645-5030 · call tracking: PENDIENTE (**bloqueante**)
+- Horario / 24-7: **24/7 real, confirmado con CallFire**: contestaron llamadas a las 00:30, 01:07, 03:00 y 03:06 (14-sep → 08-oct) → programación 24/7 permitida
+- Respuesta a leads (quién, tiempo): quién contesta PENDIENTE. CallFire 14-sep → 08-oct: 28 llamadas, 18 llamantes, **75% contestadas** (bajo el 80% de PMM), 5 llamantes calificados (≥ 60 s), mediana de conversación 31 s. 4 de 18 llamantes nunca lograron hablar (02:11, 06:19, 16:51 y 18:41).
+- Teléfono / call tracking: **CallFire (352) 645-5030 → reenvía a (352) 282-2512** (número del negocio). Activo desde 14-sep-2026, con grabación. Ya recibe ~1 llamada/día sin campaña nueva → está publicado en otro lado (¿web, GBP, directorios?): **dónde se usa: PENDIENTE**. Si el mismo número está en anuncios, web y GBP, CallFire solo no atribuye a Ads; la atribución a Ads sale del número de desvío de Google (llamadas desde anuncios ≥ 60 s).
 - CRM (solo referencia): PENDIENTE
 - GBP: PENDIENTE (verificación, reseñas, acceso)
 
@@ -79,18 +80,21 @@ Lectura:
 - Aplica: PENDIENTE — towing es categoría LSA; falta confirmar licencia, seguro y disposición al background check
 
 ## Pendientes
-- [ ] **Call tracking**: aceptación del número de reenvío (bloqueante para lanzar)
+- [x] **Call tracking**: CallFire (352) 645-5030 → (352) 282-2512, conectado al MCP (2026-10-08)
+- [ ] Dónde está publicado (352) 645-5030 hoy (web, GBP, directorios) — define cómo se separan las llamadas de Ads
+- [ ] Tasa de contestadas 75% → subirla a ≥ 80% (cliente)
 - [ ] Conectar 986-810-9972 a Windsor o API (histórico + Auction Insights)
 - [ ] **Ticket, margen y tasa de cierre** → CPL máximo (bloquea /strategy)
 - [ ] Lista exacta de servicios (¿golf cart, heavy duty, junk car?)
 - [ ] Diferenciadores y ofertas sostenibles (tiempo de llegada, precio fijo, años)
 - [ ] GBP: verificado, reseñas, acceso para PMM
 - [ ] Plataforma del sitio y destino del formulario
-- [ ] Capacidad (camiones/choferes, trabajos por mes) y quién contesta
+- [ ] Capacidad (camiones/choferes, trabajos por mes) y quién contesta (24/7 ya confirmado con CallFire)
 - [ ] LSA: licencia, seguro, background check
 - [ ] Keyword Planner con geo radio 15 mi para "near me"
 
 ## Fuentes
 - Cliente (vía Jhombis), 2026-10-01: radio, presupuesto, URL, teléfono, 24/7, cuenta previa, tag + formulario
 - Semrush phrase_these / phrase_adwords / domain_rank (db=us), 2026-10-01
+- CallFire (MCP): /numbers/leases y callfire_list_calls de (352) 645-5030, 14-sep → 08-oct-2026 → data/calls-callfire-2026-09-14_2026-10-08.json
 - https://jdtowingservices.com/ · https://www.movecars.com/companies/dot/4288456/j-and-d-towing-and-recovery-llc · https://safer.fmcsa.dot.gov/query.asp?searchtype=ANY&query_type=queryCarrierSnapshot&query_param=USDOT&query_string=2533037

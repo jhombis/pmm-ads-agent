@@ -1,12 +1,13 @@
 ---
 cliente: JQ Towing
 slug: jq-towing-fl
-actualizado: 2026-10-01
-version: 1
+actualizado: 2026-10-08
+version: 2
 supuestos:
   - "CPL máximo sin calcular: falta ticket, margen y tasa de cierre. Se usa CPL objetivo del benchmark ($25–38) como referencia, no como techo de rentabilidad."
   - "Landing sin auditar (jqtowingfl.com bloqueado por red). URLs por ad group = PENDIENTE; se asume que hay que crear 2 landings + thank-you."
-  - "Historial de la cuenta 986-810-9972 sin leer (no conectada a Windsor, sin API). Puja inicial depende de si tiene conversiones recientes."
+  - "Historial de la cuenta 986-810-9972 sin leer (no conectada a Windsor, sin API). Si muestra 15+ conversiones/mes limpias, se arranca en Max. conversiones en vez de Max. clics."
+  - "Dónde está publicado hoy el número CallFire (352) 645-5030 (ya recibe ~1 llamada/día)."
   - "Volumen 'near me' es nacional (Semrush); el volumen real del radio de 15 mi requiere Keyword Planner geo."
   - "Lista exacta de servicios sin confirmar: lockout, jump, llanta, fuel, flatbed, golf cart, heavy duty."
   - "Claims de copy marcados con * (licensed & insured, upfront quote, no hidden fees, flatbed, base en Belleview) sin confirmar."
@@ -24,13 +25,16 @@ supuestos:
 ## Campañas
 | Campaña | Objetivo | Presupuesto/día F1 | % | Puja inicial | Geo | Horario |
 |---|---|---|---|---|---|---|
-| `JQ \| Search \| Towing & Roadside \| 15mi` | Llamadas ≥ 60 s + formulario | $29 | 100% | Maximizar conversiones sin tCPA (ver nota) | Radio 15 mi desde 29.045014, -82.037279 · **Presencia** · excluir resto de países | 24/7 (el cliente contesta 24/7 real) |
+| `JQ \| Search \| Towing & Roadside \| 15mi` | Llamadas ≥ 60 s + formulario | $29 | 100% | Maximizar clics con CPC máx. $9 (ver nota) | Radio 15 mi desde 29.045014, -82.037279 · **Presencia** · excluir resto de países | 24/7 (el cliente contesta 24/7 real) |
 | LSA (pista paralela) | Leads pagados por lead | Aparte (PENDIENTE) | — | Max leads | Marion County dentro del radio | 24/7 |
 
-**Nota de puja:** si la cuenta 986-810-9972 registró conversiones en los últimos 30–60 días, va Maximizar conversiones desde el día 1. Si no tiene historial, Maximizar clics con CPC máx. $9 solo hasta acumular ~10 conversiones (≤ 3 semanas) y después Maximizar conversiones. Max clics no es estrategia final: las 4 cuentas del MCC que lo usan están en el cuartil inferior.
+**Nota de puja (estándar PMM #6, playbook §5):** cuenta nueva o con < 15 conversiones/mes → **Maximizar clics con CPC máx. $9** (sin tope compra lo genérico y barato; $9 ≈ P75 de CPC del MCC). Con 15+ conversiones/mes estables y medición limpia → **Maximizar conversiones**. tCPA con ~30 conversiones en 30 días, fijado desde el CPA observado. Excepción: si el historial de 986-810-9972 muestra 15+ conversiones/mes limpias, se arranca en Max. conversiones. Max. clics es punto de partida, no estrategia final: las 4 cuentas del MCC que se quedaron en él están en el cuartil inferior.
 
 **Conversiones (Fase 0):**
 - Primarias: llamadas desde anuncios ≥ 60 s, llamadas al número de desvío en el sitio ≥ 60 s, y envío de formulario (thank-you con URL propia).
+- **Cadena de llamada:** el activo de llamada y el sitio muestran el número CallFire **(352) 645-5030**; Google lo reemplaza por su número de desvío (llamadas desde anuncios y desde el sitio, umbral 60 s) → CallFire (graba y mide) → negocio **(352) 282-2512**. Google Ads atribuye; CallFire mide la calidad: contestadas, calificadas (≥ 60 s por llamante único), repetidas, horario (`knowledge/call-tracking.md`).
+- **Control semanal:** calificadas de CallFire vs conversiones de llamada en Ads. Si Ads reporta muchas más, cuenta llamadas cortas o repetidas; si muchas menos, falta el activo de llamada o el desvío en el sitio.
+- **Línea base CallFire (14-sep → 08-oct, antes de la campaña nueva):** 28 llamadas, 18 llamantes, 75% contestadas, 5 calificadas (~6/mes). Lo que suba sobre esa base es lo que aporta Ads.
 - Secundaria (no se optimiza): clic en `tel:`.
 - El benchmark muestra cuentas que cuentan llamadas de 20 s o 3 acciones primarias a la vez; aquí no.
 
@@ -79,7 +83,7 @@ Detalle completo en `data/keywords.csv` (63 filas).
 ## Copy
 En `data/ads-search-towing-roadside.md`:
 - 4 ad groups × 15 headlines + 4 descripciones, con límites de caracteres validados.
-- 3 RSA por grupo: A sin pin en posición 2, B con ángulo precio, C con ángulo local.
+- **1 RSA por grupo** (estándar PMM #4: con < $1,500/mes un A/B es ruido, ~4 clics/día). Se monta la variante A (sin pin en posición 2); B (ángulo precio) y C (ángulo local) quedan en el archivo como reemplazo para el día 30 o como 2.º RSA si un grupo pasa de ~50 clics/mes.
 - Sitelinks, callouts, snippets, llamada y ubicación.
 
 **Ángulos (de competitors.md):**
@@ -97,7 +101,7 @@ En `data/ads-search-towing-roadside.md`:
 | /towing — "24/7 Towing in Ocala & Belleview, FL" (grupos Near Me, Ocala y Emergency) | PENDIENTE (sitio sin auditar) | PMM (Leadpages disponible) o quien edite el sitio | Sí |
 | /roadside-assistance — lockout, jump, llanta, fuel, winch-out | PENDIENTE | PMM / cliente | Sí (o enviar a /towing con sección roadside y H1 adaptado) |
 | /thank-you con URL propia | PENDIENTE | PMM | Sí: conversión de formulario |
-| Número de desvío (call tracking) visible en ambas | PENDIENTE aceptación | Cliente | Sí |
+| Número CallFire (352) 645-5030 visible en ambas (Google lo reemplaza por su desvío) | Número listo (CallFire) | PMM | Sí |
 
 **Mínimo de cada landing:**
 - H1 que refleje el término buscado.
@@ -110,15 +114,15 @@ En `data/ads-search-towing-roadside.md`:
 | Fase | Total/mes | Por campaña | Condición para pasar |
 |---|---|---|---|
 | F0 — Setup | $0 | — | Tracking verificado con Tag Assistant (llamada ≥ 60 s + form), landings con 200, claims confirmados, negativas aplicadas |
-| F1 — Lanzamiento (días 1–30) | $879 | Search 100% ($29/día) | ≥ 15 conversiones en 30 días y CPL ≤ $45; search terms limpios en las revisiones de los días 7, 14 y 30 |
-| F2 — Optimización (días 31–60) | $879 | Reasignar con ajustes por ad group (pausar el que tenga CPL > 2× la media) | ~30 conversiones en 30 días |
+| F1 — Lanzamiento (días 1–30) | $879 | Search 100% ($29/día), Max. clics con CPC máx. $9 | ≥ 15 conversiones en 30 días y CPL ≤ $45 → Max. conversiones; search terms limpios en las revisiones de los días 7, 14 y 30 |
+| F2 — Optimización (días 31–60) | $879 | Max. conversiones; pausar el ad group con CPL > 2× la media | ~30 conversiones en 30 días |
 | F3 — tCPA (mes 2–3) | $879 → propuesta $1,200 si IS perdido por presupuesto > 30% y CPL ≤ objetivo | tCPA = CPL real de 30 días ×1.0–1.1 | CPL estable 2 semanas; cliente confirma capacidad |
 | F4 — Remarketing / RLSA | +10% | Observación → ajuste de oferta | Audiencia de ≥ 1,000 usuarios |
 | F5 — PMax | Ver condición | — | Ver "Por qué NO" |
 
 ## Por qué NO (todavía)
 - **PMax:** requiere más de 30 conversiones al mes con tracking confiable, Search estable, exclusión de marca y assets propios. Hoy no existe nada de eso. Además, en el MCC su CPL "bajo" viene mezclado con marca y acciones locales.
-- **Amplia:** en el MCC rinde algo mejor que frase (CPL $21 contra $25), pero en cuentas maduras con conversiones infladas por llamadas cortas. Para una cuenta nueva con $29/día, amplia gasta en búsquedas ajenas. Se reevalúa con tCPA maduro y aprobación de Jhombis.
+- **Amplia:** en el MCC rinde algo mejor que frase (CPL $21 contra $25), pero en cuentas maduras con conversiones infladas por llamadas cortas. Para una cuenta nueva con $29/día, amplia gasta en búsquedas ajenas. Se reevalúa con tCPA maduro, ~50 conversiones limpias acumuladas y aprobación de Jhombis (estándar PMM #2; aplica también a AI Max).
 - **Campaña de marca:** "jq towing" no tiene volumen medible en FL y nadie puja por el nombre.
 - **Separar towing y roadside en campañas:** con $29/día ninguna llega al mínimo de aprendizaje. Se separan cuando el presupuesto pase de ~$100/día o roadside muestre un CPL muy distinto.
 - **Display / Video / Demand Gen:** no aplican a una urgencia local.
@@ -129,5 +133,10 @@ En `data/ads-search-towing-roadside.md`:
 - **CPC real probablemente por encima de Semrush ($3–4):** el benchmark del MCC da ~$7 en Search, lo que deja unos 125 clics al mes. Si el CPC real pasa de $9, el volumen cae a menos de 100 clics y la salida de aprendizaje se demora.
 - **Volumen local de "near me" desconocido:** si el radio de 15 mi no da más de ~1,500 búsquedas al mes, el techo es la demanda y no el presupuesto.
 - **Muggsuggs (más de 150 reseñas)** puede dominar Maps y LSA. Sin GBP verificado y con reseñas no hay activo de ubicación ni LSA competitivo.
-- **Speed to lead:** el brief dice que contesta 24/7. Si de noche no contesta, conviene restringir el horario. Se verifica en la revisión del día 14 con la tasa de llamadas perdidas.
+- **Speed to lead:** CallFire confirma que contesta de madrugada (00:30, 01:07, 03:00, 03:06), así que 24/7 se mantiene. Pero la tasa de contestadas es 75% (4 de 18 llamantes nunca hablaron con nadie): por debajo del 80%, cada llamada perdida es pauta perdida. Se revisa cada semana con CallFire; si las perdidas se concentran en una franja, se recorta esa franja.
+- **Atribución:** el número CallFire ya recibe ~1 llamada/día sin la campaña nueva, así que está en la web, el GBP u otro lado. Las llamadas de Ads se separan solo con el número de desvío de Google; CallFire da el total y la calidad.
 - **Historial de la cuenta 986-810-9972 sin leer:** puede haber conversiones mal configuradas o negativas útiles. Conectar a Windsor antes de construir.
+
+## Historial de cambios
+- 2026-10-01: v1.
+- 2026-10-08: v2. CallFire (352) 645-5030 → (352) 282-2512 conectado: cadena de llamada y línea base. Puja inicial Max. clics con tope $9 y 1 RSA por grupo según los estándares PMM actualizados.

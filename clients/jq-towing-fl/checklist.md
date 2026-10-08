@@ -2,7 +2,7 @@
 cliente: JQ Towing
 slug: jq-towing-fl
 fase_actual: 0
-actualizado: 2026-10-01
+actualizado: 2026-10-08
 ---
 
 # Checklist — JQ Towing
@@ -12,7 +12,9 @@ Basado en `knowledge/checklists/setup-cuenta.md`. Fase 5 (PMax) eliminada porque
 ## Pendientes de onboarding (bloqueantes de Fase 0)
 - [x] (Cliente) ID de la cuenta previa: 986-810-9972
 - [ ] (Cliente) Ticket promedio, margen y tasa de cierre → CPL máximo
-- [ ] (Cliente) Aprobar call tracking (número de desvío) — **sin esto no se lanza**
+- [x] (Cliente) Call tracking: CallFire (352) 645-5030 → (352) 282-2512, conectado al MCP (2026-10-08)
+- [ ] (Cliente) Decir dónde está publicado hoy (352) 645-5030 (web, GBP, directorios)
+- [ ] (Cliente) Subir la tasa de contestadas del 75% al ≥ 80% (CallFire 14-sep → 08-oct: 4 de 18 llamantes nunca hablaron)
 - [ ] (Cliente) Confirmar servicios: lockout, jump, llanta, fuel, flatbed, golf cart, heavy duty, junk car
 - [ ] (Cliente) Confirmar claims del copy marcados con `*` (licensed & insured, upfront quote, no hidden fees, flatbed, base en Belleview, long-distance)
 - [ ] (PMM) Conectar 986-810-9972 a Windsor o configurar API; leer historial, conversiones y Auction Insights → decidir puja inicial
@@ -26,7 +28,8 @@ Basado en `knowledge/checklists/setup-cuenta.md`. Fase 5 (PMax) eliminada porque
 - [ ] (PMM) Google Tag instalado en todas las landings (/towing, /roadside-assistance, /thank-you)
 - [ ] (PMM) Conversión "Formulario" (thank-you con URL propia) creada y probada con Tag Assistant
 - [ ] (PMM) Conversión "Llamada desde anuncio" ≥ 60 s
-- [ ] (PMM) Conversión "Llamada al número de desvío en el sitio" ≥ 60 s
+- [ ] (PMM) Conversión "Llamada al número de desvío en el sitio" ≥ 60 s (Google reemplaza (352) 645-5030 en el sitio)
+- [ ] (PMM) Activo de llamada con (352) 645-5030 e informes de llamadas activados
 - [ ] (PMM) Conversión "Clic en teléfono" en móvil como SECUNDARIA
 - [ ] (PMM) Revisar y limpiar conversiones heredadas de la cuenta previa (sin llamadas de 20 s ni primarias duplicadas)
 - [ ] (PMM) GA4 vinculado y audiencia "Todos los visitantes" importada
@@ -35,7 +38,8 @@ Basado en `knowledge/checklists/setup-cuenta.md`. Fase 5 (PMax) eliminada porque
 - [ ] (PMM) `data/negatives-nicho.txt` aplicada (ajustada a los servicios confirmados)
 - [ ] (PMM) Aplicación automática de recomendaciones DESACTIVADA
 - [ ] (PMM) Landings `/towing`, `/roadside-assistance` y `/thank-you` publicadas (200, https) y aprobadas por /audit-landing
-- [ ] (Cliente) Proceso 24/7 confirmado: quién contesta de noche y tiempo de respuesta
+- [x] (Cliente) 24/7 real: CallFire muestra llamadas contestadas a las 00:30, 01:07, 03:00 y 03:06 (2026-10-08)
+- [ ] (Cliente) Quién contesta y en cuánto tiempo
 - [ ] (Cliente) Hoja compartida de leads cerrados (fecha, teléfono, servicio, monto) para calidad de lead
 - [ ] (Cliente) Licencia, seguro y background check confirmados → (PMM) solicitud LSA iniciada
 
@@ -44,10 +48,10 @@ Basado en `knowledge/checklists/setup-cuenta.md`. Fase 5 (PMax) eliminada porque
 - [ ] Red: solo Búsqueda; socios y Display apagados
 - [ ] Ubicación: radio de 15 mi desde 29.045014, -82.037279, solo Presencia; resto de países excluidos
 - [ ] Programación 24/7
-- [ ] Puja: Maximizar conversiones (o Max. clics con CPC máx. $9 si no hay historial, ≤ 3 semanas)
+- [ ] Puja: Maximizar clics con CPC máx. $9 (Max. conversiones si el historial trae 15+ conversiones/mes limpias)
 - [ ] Keywords en frase; exacta para los top términos (ver `data/keywords.csv`)
 - [ ] Cross-negatives entre ad groups aplicadas
-- [ ] 3 RSA por ad group, H1 pinneado, 15H/4D, fuerza "Buena" o superior; claims `*` no confirmados eliminados
+- [ ] 1 RSA por ad group (< $1,500/mes), H1 pinneado, 15H/4D, fuerza "Buena" o superior; claims `*` no confirmados eliminados
 - [ ] Extensiones: 4 sitelinks, 6+ callouts, snippet de servicios, llamada, ubicación
 - [ ] URLs finales verificadas (200, https, sin redirect)
 - [ ] Presupuesto diario $29
@@ -55,7 +59,7 @@ Basado en `knowledge/checklists/setup-cuenta.md`. Fase 5 (PMax) eliminada porque
 - [ ] Primera conversión real registrada
 
 ## Fase 2 — Limpieza
-- [ ] D7 (2026-10-22): search terms → negativas; llamadas perdidas o cortas revisadas
+- [ ] D7 (2026-10-22): search terms → negativas; CallFire (contestadas, calificadas, horario) vs conversiones de llamada de Ads
 - [ ] D7: keywords sin impresiones identificadas (no pausar aún)
 - [ ] D14 (2026-10-29): search terms → negativas
 - [ ] D14: keywords con gasto > $40 y 0 conversiones marcadas para revisión
@@ -67,6 +71,7 @@ Basado en `knowledge/checklists/setup-cuenta.md`. Fase 5 (PMax) eliminada porque
 - [ ] D30: reevaluar campaña de marca y tamaño de la audiencia de remarketing
 
 ## Fase 3 — Optimización de puja (~2026-12-01)
+- [ ] 15+ conversiones/mes limpias → Maximizar conversiones
 - [ ] ≥ 30 conversiones en 30 días confirmadas
 - [ ] tCPA = CPA real observado (no el deseado)
 - [ ] Presupuesto reajustado según CPA, IS perdido por presupuesto y capacidad del cliente

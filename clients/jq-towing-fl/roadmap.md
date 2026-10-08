@@ -2,7 +2,7 @@
 cliente: JQ Towing
 slug: jq-towing-fl
 D0: 2026-10-01
-actualizado: 2026-10-01
+actualizado: 2026-10-08
 fase_actual: 0
 plan_es: https://claude.ai/artifact/48Lm7JkvRJCd57bqFy4B6Y
 plan_en: https://claude.ai/artifact/4FBZLakgJxvFVybD57csmC
@@ -28,7 +28,7 @@ plan_en: https://claude.ai/artifact/4FBZLakgJxvFVybD57csmC
 - **Condición de paso**: todas las tareas bloqueantes de Fase 0 en `checklist.md` ✅.
 - **Tareas**:
   1. (Cliente) Ticket promedio, margen y tasa de cierre → CPL máximo. Si el CPL máximo queda por debajo de $25, se replantea la estrategia antes de construir.
-  2. (Cliente) Aprobar call tracking (número de desvío de Google en anuncios y sitio).
+  2. ~~(Cliente) Aprobar call tracking~~ ✅ 2026-10-08: CallFire (352) 645-5030 → (352) 282-2512, conectado. Falta saber dónde está publicado hoy (ya recibe ~1 llamada/día) y subir la tasa de contestadas del 75% al ≥ 80%.
   3. (Cliente) Confirmar la lista de servicios (lockout, jump, llanta, fuel, flatbed, golf cart, heavy duty) y los claims marcados con `*` en el copy.
   4. (Cliente) GBP: verificado, reseñas y acceso de administrador para PMM.
   5. (PMM) Conectar 986-810-9972 a Windsor o configurar la API, y leer historial, conversiones existentes y Auction Insights. Decide la puja inicial.
@@ -46,11 +46,11 @@ plan_en: https://claude.ai/artifact/4FBZLakgJxvFVybD57csmC
 - **Fecha estimada**: lanzamiento 2026-10-15; condición evaluable 2026-10-22.
 - **Condición de paso**: campaña activa 7 días, anuncios aprobados y ≥ 1 conversión real registrada (llamada ≥ 60 s o formulario).
 - **Qué se lanza**: `JQ | Search | Towing & Roadside | 15mi` a $29/día. Lleva 4 ad groups (golf cart solo si se confirma), radio de 15 mi en Presencia y horario 24/7.
-- **Puja**: Maximizar conversiones si la cuenta previa trae conversiones; si no, Maximizar clics con CPC máx. $9 hasta ~10 conversiones (≤ 3 semanas).
+- **Puja**: Maximizar clics con CPC máx. $9 (estándar PMM #6 para cuenta nueva); Max. conversiones al llegar a 15+ conversiones/mes limpias. Si el historial de 986-810-9972 ya trae 15+ limpias, se arranca en Max. conversiones.
 - **Riesgos**:
   - **Aprendizaje lento**: el presupuesto de $29/día está por debajo de 3× CPL ($96).
   - **Volumen**: con CPC de ~$7 son ~4 clics/día.
-  - **Speed to lead**: si de noche nadie contesta, se pierden las llamadas y el CPL se dispara. Se verifica con las llamadas perdidas en la revisión D7.
+  - **Speed to lead**: CallFire confirma respuesta de madrugada, pero solo 75% de contestadas (14-sep → 08-oct). Cada revisión compara contestadas y calificadas de CallFire contra las conversiones de llamada de Ads.
 
 ## Fase 2 — Limpieza
 - **Fechas**: D7 2026-10-22 · D14 2026-10-29 · D30 2026-11-14.
@@ -100,13 +100,13 @@ plan_en: https://claude.ai/artifact/4FBZLakgJxvFVybD57csmC
 | `/towing`: H1 "24/7 Towing in Ocala & Belleview, FL", `tel:` sticky, formulario ≤ 4 campos, reseñas, área de servicio | 2026-10-09 | PMM | Bloqueante |
 | `/roadside-assistance` (o sección dentro de /towing con H1 propio) | 2026-10-09 | PMM | Bloqueante |
 | `/thank-you` con URL propia ("Keep your phone close — we'll call you in under 2 min") | 2026-10-09 | PMM | Bloqueante |
-| Número de desvío en las landings + Google Tag + Tag Assistant | 2026-10-13 | PMM | Bloqueante |
+| Número CallFire (352) 645-5030 en las landings (Google lo reemplaza por su desvío) + Google Tag + Tag Assistant | 2026-10-13 | PMM | Bloqueante |
 | Fotos reales de las grúas y del equipo | 2026-10-13 | Cliente | Mejora (F2) |
 | Indexar el sitio (revisar noindex/robots) para SEO/GBP a futuro | 2026-10-31 | Cliente / quien edite el sitio | Mejora (F2–3) |
 
 ## Pista paralela — LSA
 - **2026-10-01**: confirmar licencia y seguro de grúa en FL, GBP verificado y disposición al background check (PENDIENTE).
-- **2026-10-05**: iniciar la solicitud de Local Services (categoría Towing).
+- **2026-10-05**: iniciar la solicitud de Local Services (categoría Towing). Al 2026-10-08 no se inició: el cliente no ha confirmado licencia y seguro. Se reprograma a 3 días después de su confirmación.
 - **2026-10-15 → 2026-10-29**: verificación (2–4 semanas).
 - **Luego**:
   - presupuesto semanal aparte (por definir con el cliente);
@@ -123,3 +123,4 @@ plan_en: https://claude.ai/artifact/4FBZLakgJxvFVybD57csmC
 ## Historial de cambios
 - 2026-10-01: creado.
 - 2026-10-01: plan ES/EN publicado (/informe).
+- 2026-10-08: call tracking resuelto (CallFire (352) 645-5030 → (352) 282-2512); 24/7 confirmado con llamadas reales; puja inicial Max. clics con tope $9 y 1 RSA por grupo (estándares PMM actualizados). Lanzamiento del 2026-10-15 en riesgo: siguen abiertos ticket/margen, servicios, GBP, landings, auditoría del sitio e historial de la cuenta.
