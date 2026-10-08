@@ -6,6 +6,7 @@ idioma: EN (+ demanda ES detectada)
 nicho: funeraria / cremación
 actualizado: 2026-10-01
 estado: activo — prellenado desde la cuenta de Google Ads, sin entrevista /onboard
+call_tracking: PENDIENTE
 ---
 
 # Brief — Colton Sunflower Burial and Cremation

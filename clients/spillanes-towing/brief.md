@@ -6,6 +6,8 @@ idioma: EN
 nicho: towing
 actualizado: 2026-10-01
 estado: onboarding
+call_tracking: callfire
+tracking_number: "(802) 216-3105"
 ---
 
 # Brief — Spillane's Towing & Recovery
