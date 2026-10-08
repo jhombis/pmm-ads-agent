@@ -1,5 +1,5 @@
 {
-  "_nota": "EJEMPLO FICTICIO. Plantilla de spec.json para /landing-ghl. Copiar a clients/<slug>/landings/<pagina>/spec.json y reemplazar todo con datos del brief. Campos vacíos = sección omitida. hosting.tipo 'plesk' (default) publica en https://performancemediamarketing.com/<hosting.ruta>/ e ignora pagina.url_final; 'ghl' = GoHighLevel con dominio propio.",
+  "_nota": "EJEMPLO FICTICIO. Plantilla de spec.json para /landing y /landing-ghl (hosting plesk o ghl). Copiar a clients/<slug>/landings/<pagina>/spec.json y reemplazar todo con datos del brief. Campos vacíos = sección omitida. hosting.tipo 'plesk' (default) publica en https://performancemediamarketing.com/<hosting.ruta>/ e ignora pagina.url_final; 'ghl' = GoHighLevel con dominio propio.",
   "idioma": "en",
   "nicho": "plumbing",
   "hosting": {

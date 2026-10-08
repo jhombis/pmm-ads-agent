@@ -11,7 +11,8 @@ Agente de Google Ads para Performance Media Marketing. Se usa con Claude Code (o
 /benchmark-interno ┘
 /strategy           → strategy.md  (revisar y aprobar)
 /roadmap            → roadmap.md + checklist.md
-/landing-ghl        → landings/<servicio>/ (código para GoHighLevel + SEO + QA)
+/landing            → landings/<servicio>/ publicada en performancemediamarketing.com/<cliente>/ (Plesk)
+/landing-ghl        → landings/<servicio>/ (código para GoHighLevel o dominio del cliente)
 /informe            → plan-es.html + plan-en.html (artefacto resumen, estilo PMM; al final de cada skill)
 /build-campaign     → campañas en PAUSA vía API (o CSV para Ads Editor)
 /weekly-review      → log/, avanza fases, propone negativas

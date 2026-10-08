@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Genera una landing compatible con GoHighLevel a partir de un spec.json (lo escribe /landing-ghl).
+"""Genera una landing a partir de un spec.json (lo escriben /landing y /landing-ghl).
 
 Uso:
   python scripts/landing_build.py clients/<slug>/landings/<pagina>/spec.json
@@ -14,7 +14,7 @@ Salida en la carpeta del spec:
   preview.html           → página completa para revisar en el navegador (o publicar fuera de GHL)
   gracias-preview.html
   qa.md                  → checklist automático; código de salida 1 si hay bloqueantes
-  publicar/              → SOLO esto se sube a Plesk (hosting.tipo = "plesk", el default):
+  publicar/              → SOLO esto se sube a Plesk (hosting.tipo = "plesk", lo pone /landing):
                            index.html y gracias/index.html, páginas completas para
                            https://performancemediamarketing.com/<hosting.ruta>/
 
@@ -434,7 +434,7 @@ def plesk_setup(s, spec_path):
     """Hosting en performancemediamarketing.com/<ruta>/: fija la URL final y la de gracias.
     Por defecto noindex: el dominio es de PMM, no del cliente (ver docs/publicar-plesk.md)."""
     h = s.setdefault("hosting", {})
-    if h.get("tipo", "plesk") != "plesk":
+    if h.get("tipo", "ghl") != "plesk":  # sin hosting = GHL (specs anteriores a /landing)
         return None
     pag = s.setdefault("pagina", {})
     ruta = (h.get("ruta") or pag.get("slug") or "").strip("/")

@@ -1,6 +1,6 @@
 # Publicar landings en performancemediamarketing.com (Plesk)
 
-Es el destino por defecto de `/landing-ghl` (`hosting.tipo = "plesk"`). Cada landing vive en una carpeta estática dentro del WordPress de PMM:
+Lo usa `/landing` (`hosting.tipo = "plesk"`). Para GoHighLevel o el dominio del cliente está `/landing-ghl`. Cada landing vive en una carpeta estática dentro del WordPress de PMM:
 
 ```
 https://performancemediamarketing.com/<cliente>/             → landing
@@ -47,7 +47,7 @@ Nunca se suben `spec.json`, `qa.md`, `ghl-*`, `preview.html` ni nada de `data/`:
 8. **Despublicar**: no se borra nada sin la aprobación de Jhombis. Si la da: `mv "$D" "$D.off.<fecha>"` (devuelve 403 o 404 y se puede revertir) en lugar de `rm`.
 
 ## Decisiones que trae este dominio
-- **Dominio visible en el anuncio**: Google Ads muestra el dominio de la URL final. El anuncio de un cliente aparece como `performancemediamarketing.com`, no con el dominio del cliente, y eso puede bajar el CTR frente a competidores con su propia marca. Para clientes con dominio propio y acceso, la alternativa es GHL o una carpeta en su sitio (`hosting.tipo = "ghl"`).
+- **Dominio visible en el anuncio**: Google Ads muestra el dominio de la URL final. El anuncio de un cliente aparece como `performancemediamarketing.com`, no con el dominio del cliente, y eso puede bajar el CTR frente a competidores con su propia marca. Para clientes con dominio propio y acceso, la alternativa es `/landing-ghl` (GHL o su propio dominio).
 - **Un anuncio por dominio en cada subasta**: Google no muestra dos anuncios con el mismo dominio en una misma subasta. Dos clientes de PMM del mismo nicho y con áreas que se solapan (p. ej. dos towing en la misma ciudad) se excluirían entre sí. Antes de publicar, revisa en `clients/informes.json` y en los briefs que no haya otro cliente del mismo nicho en la misma zona usando este dominio.
 - **SEO**: por defecto la landing se publica con `noindex`. Posicionarla en el dominio de PMM no le sirve al cliente, y muchas páginas de towing casi iguales en un mismo dominio cuentan como *doorway pages*. Si un cliente necesita SEO, la landing va en su propio dominio.
 - **Caché**: LiteSpeed Cache solo cachea WordPress; los archivos estáticos se sirven directos. Si una actualización no se ve, la causa es el caché del navegador o el CDN, no el plugin.
