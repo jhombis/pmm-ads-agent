@@ -2,6 +2,9 @@
   "_nota": "Registro de informes publicados (artefactos). Lo actualiza /informe al publicar; scripts/indice_informes.py genera el índice para el equipo. Los artefactos son privados: para que el equipo los abra, cada uno se comparte desde Share.",
   "indice_url": "https://claude.ai/artifact/JXRZn2E1ScDXyBmsrzFvYm",
   "clientes": {
+    "electrical-service-solutions": {"mercado": "Pittsburgh, PA (por confirmar)", "cuenta": "384-080-6970", "informes": [
+      {"titulo": "Plan de Google Ads", "idioma": "ES", "url": "https://claude.ai/artifact/DDF3D2rBbjUM1vFLbG26eP"},
+      {"titulo": "Google Ads Plan", "idioma": "EN", "url": "https://claude.ai/artifact/1mULJUUTdeY8nYccq25HJU"}]},
     "pro-phase-electric": {"mercado": "Northwest Arkansas", "cuenta": "758-301-1023", "informes": [
       {"titulo": "Plan de Google Ads", "idioma": "ES", "url": "https://claude.ai/artifact/B6JRbhCt3HNMFq29UeJv36"},
       {"titulo": "Google Ads Plan", "idioma": "EN", "url": "https://claude.ai/artifact/3KhWsGyQmP8QY9ZLm1zZgk"}]},
