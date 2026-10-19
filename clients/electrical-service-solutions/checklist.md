@@ -7,10 +7,22 @@ actualizado: 2026-10-19
 # Checklist — Electrical Service Solutions
 (El checklist completo lo genera /roadmap a partir de knowledge/checklists/setup-cuenta.md.)
 
-## Pendientes bloqueantes del brief (/investigar-cliente, 2026-10-19)
-- [ ] URL de la web o confirmar que no tiene (decide /landing en Plesk PMM)
-- [ ] Base y área de servicio real (Pittsburgh es solo una inferencia por el código de área 412)
-- [ ] Pauta mensual real del contrato de $2,250
-- [ ] Ticket promedio, margen y tasa de cierre → CPL máximo
-- [ ] Servicios por rentabilidad, servicio estrella y servicio a evitar
-- [ ] Conversión de llamada (412) 666-9290 configurada en la cuenta 384-080-6970 y probada
+## Hecho
+- [x] Brief investigado (/investigar-cliente, 19-oct)
+- [x] Welcome call volcada al brief: área (4 ZIP + Monroeville), solo paneles, horario, financiamiento, 40+ años, email del formulario (19-oct)
+- [x] CTN (412) 666-9290 en CallFire con reenvío probado a (412) 377-7502
+
+## Pendientes bloqueantes
+- [ ] Pauta mensual real del contrato de $2,250 — Cliente
+- [ ] Ticket promedio (residencial / comercial), margen y tasa de cierre → CPL máximo — Cliente
+- [ ] Condiciones del financiamiento y qué se puede decir en anuncios — Cliente
+- [ ] Comprar electricalservicesolutionspa.com y decidir dónde se monta la web (/landing o /landing-ghl) — PMM
+- [ ] Conversión de llamada del CTN configurada en 384-080-6970 y probada — PMM
+
+## Pendientes no bloqueantes
+- [ ] Licencia (número y municipio) y seguro — Cliente
+- [ ] Quién contesta las emergencias / horario nocturno; capacidad de trabajos/mes — Cliente
+- [ ] Acceso de gestor al GBP y teléfono publicado — Cliente
+- [ ] Qué hacer con el sitio actual electrical-service-solutions.com — Cliente
+- [ ] Pegar el contenido de la estrategia de ChatGPT (el enlace no abre desde el entorno) — Jhombis
+- [ ] Volumen de paneles en los 4 ZIP + Monroeville con Keyword Planner — PMM
