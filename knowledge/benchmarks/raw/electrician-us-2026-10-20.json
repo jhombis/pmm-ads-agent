@@ -1,0 +1,4348 @@
+{
+ "nicho": "electrician (+ HVAC y plomería como nicho afín)",
+ "pais": "US",
+ "extraido": "2026-10-20",
+ "fuente": "Windsor.ai google_ads (plan BASIC, sin force_refresh)",
+ "periodo": {
+  "from": "2026-07-22",
+  "to": "2026-10-19"
+ },
+ "cuentas": {
+  "324-020-3548": "Ridge Electric (Grand Junction CO) - letra A",
+  "436-679-0497": "Ideal Electric (San Diego North County CA) - B",
+  "758-301-1023": "Pro Phase Electric (NWA AR, gasto desde 2026-09-11) - C",
+  "649-727-8001": "Gray's Heating & Air (Hilton Head SC, HVAC, nicho afín) - D",
+  "533-198-9686": "Integrity Plumbing (Sierra Vista AZ, plomería, nicho afín) - E"
+ },
+ "excluidas": {
+  "384-080-6970": "Electrical Service Solutions: 0 filas (cuenta sin actividad)",
+  "244-642-6584": "Qualified Comfort: campañas en pausa, $0 en 90 días",
+  "334-048-0032 / 684-092-9740": "electricistas de la extracción del 2026-09-22 (Rocky Mount NC, Irvine CA): ya no aparecen en get_connectors"
+ },
+ "campanas_90d": [
+  {
+   "account_id": "758-301-1023",
+   "campaign_type": "SEARCH",
+   "bidding": "TARGET_SPEND",
+   "status": "PAUSED",
+   "budget_amount_vigente": 27,
+   "target_cpa_vigente": 0,
+   "spend": 469.62,
+   "clicks": 38,
+   "impressions": 1135,
+   "conversions": 1,
+   "all_conversions": 1,
+   "search_is": 0.22,
+   "is_lost_budget": 0.4531,
+   "is_lost_rank": 0.3269
+  },
+  {
+   "account_id": "758-301-1023",
+   "campaign_type": "SEARCH",
+   "bidding": "TARGET_SPEND",
+   "status": "ENABLED",
+   "budget_amount_vigente": 27,
+   "target_cpa_vigente": 0,
+   "spend": 690.98,
+   "clicks": 69,
+   "impressions": 2235,
+   "conversions": 1,
+   "all_conversions": 1,
+   "search_is": 0.3971,
+   "is_lost_budget": 0.0726,
+   "is_lost_rank": 0.5303
+  },
+  {
+   "account_id": "533-198-9686",
+   "campaign_type": "DISPLAY",
+   "bidding": "MAXIMIZE_CONVERSIONS",
+   "status": "ENABLED",
+   "budget_amount_vigente": 1.5,
+   "target_cpa_vigente": 0,
+   "spend": 103.0589,
+   "clicks": 262,
+   "impressions": 7384,
+   "conversions": 0,
+   "all_conversions": 44,
+   "search_is": null,
+   "is_lost_budget": null,
+   "is_lost_rank": null
+  },
+  {
+   "account_id": "533-198-9686",
+   "campaign_type": "SEARCH",
+   "bidding": "TARGET_SPEND",
+   "status": "ENABLED",
+   "budget_amount_vigente": 21,
+   "target_cpa_vigente": 0,
+   "spend": 839.5116,
+   "clicks": 120,
+   "impressions": 2783,
+   "conversions": 10,
+   "all_conversions": 42,
+   "search_is": 0.4864,
+   "is_lost_budget": 0.0459,
+   "is_lost_rank": 0.4677
+  },
+  {
+   "account_id": "649-727-8001",
+   "campaign_type": "SEARCH",
+   "bidding": "MAXIMIZE_CONVERSIONS",
+   "status": "ENABLED",
+   "budget_amount_vigente": 15,
+   "target_cpa_vigente": 0,
+   "spend": 1125.9513,
+   "clicks": 90,
+   "impressions": 1297,
+   "conversions": 33,
+   "all_conversions": 46,
+   "search_is": 0.2185,
+   "is_lost_budget": 0.1924,
+   "is_lost_rank": 0.5892
+  },
+  {
+   "account_id": "324-020-3548",
+   "campaign_type": "SEARCH",
+   "bidding": "MAXIMIZE_CONVERSIONS",
+   "status": "ENABLED",
+   "budget_amount_vigente": 13,
+   "target_cpa_vigente": 20,
+   "spend": 964.1536,
+   "clicks": 184,
+   "impressions": 3243,
+   "conversions": 53.1499,
+   "all_conversions": 92.1499,
+   "search_is": 0.3887,
+   "is_lost_budget": 0.2961,
+   "is_lost_rank": 0.3152
+  },
+  {
+   "account_id": "324-020-3548",
+   "campaign_type": "PERFORMANCE_MAX",
+   "bidding": "MAXIMIZE_CONVERSIONS",
+   "status": "ENABLED",
+   "budget_amount_vigente": 2,
+   "target_cpa_vigente": null,
+   "spend": 287.6278,
+   "clicks": 101,
+   "impressions": 3006,
+   "conversions": 17.8501,
+   "all_conversions": 35.8501,
+   "search_is": 0.1081,
+   "is_lost_budget": 0.5986,
+   "is_lost_rank": 0.2933
+  },
+  {
+   "account_id": "436-679-0497",
+   "campaign_type": "SEARCH",
+   "bidding": "TARGET_SPEND",
+   "status": "ENABLED",
+   "budget_amount_vigente": 44,
+   "target_cpa_vigente": 0,
+   "spend": 3951.1977,
+   "clicks": 486,
+   "impressions": 11607,
+   "conversions": 8,
+   "all_conversions": 8,
+   "search_is": 0.19,
+   "is_lost_budget": 0.244,
+   "is_lost_rank": 0.5659
+  },
+  {
+   "account_id": "244-642-6584",
+   "campaign_type": "SEARCH",
+   "bidding": "MAXIMIZE_CONVERSIONS",
+   "status": "PAUSED",
+   "budget_amount_vigente": 36,
+   "target_cpa_vigente": null,
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 0,
+   "conversions": 0,
+   "all_conversions": 0,
+   "search_is": null,
+   "is_lost_budget": null,
+   "is_lost_rank": null
+  }
+ ],
+ "mensual_search": [
+  [
+   "324-020-3548",
+   "2026-06",
+   382.6,
+   79,
+   14.0
+  ],
+  [
+   "324-020-3548",
+   "2026-07",
+   316.24,
+   60,
+   15.98
+  ],
+  [
+   "324-020-3548",
+   "2026-08",
+   344.19,
+   73,
+   24.67
+  ],
+  [
+   "324-020-3548",
+   "2026-09",
+   328.88,
+   58,
+   16.5
+  ],
+  [
+   "324-020-3548",
+   "2026-10 (1-19)",
+   179.06,
+   28,
+   10
+  ],
+  [
+   "436-679-0497",
+   "2026-07 (desde 20)",
+   483.99,
+   42,
+   1
+  ],
+  [
+   "436-679-0497",
+   "2026-08",
+   1328.36,
+   147,
+   4
+  ],
+  [
+   "436-679-0497",
+   "2026-09",
+   1334.24,
+   184,
+   3
+  ],
+  [
+   "436-679-0497",
+   "2026-10 (1-19)",
+   804.61,
+   113,
+   0
+  ],
+  [
+   "758-301-1023",
+   "2026-09",
+   684.84,
+   59,
+   1
+  ],
+  [
+   "758-301-1023",
+   "2026-10 (1-19)",
+   475.76,
+   48,
+   1
+  ],
+  [
+   "649-727-8001",
+   "2026-06",
+   482.66,
+   37,
+   13
+  ],
+  [
+   "649-727-8001",
+   "2026-07",
+   366.32,
+   31,
+   13
+  ],
+  [
+   "649-727-8001",
+   "2026-08",
+   392.95,
+   29,
+   10
+  ],
+  [
+   "649-727-8001",
+   "2026-09",
+   377.95,
+   35,
+   16
+  ],
+  [
+   "649-727-8001",
+   "2026-10 (1-19)",
+   192.69,
+   16,
+   4
+  ],
+  [
+   "533-198-9686",
+   "2026-06",
+   145.74,
+   22,
+   4
+  ],
+  [
+   "533-198-9686",
+   "2026-07",
+   201.01,
+   30,
+   1
+  ],
+  [
+   "533-198-9686",
+   "2026-08",
+   507.86,
+   71,
+   5.0
+  ],
+  [
+   "533-198-9686",
+   "2026-09",
+   224.71,
+   36,
+   4.0
+  ],
+  [
+   "533-198-9686",
+   "2026-10 (1-19)",
+   63.32,
+   8,
+   1
+  ]
+ ],
+ "mensual_columns": [
+  "account_id",
+  "mes",
+  "spend",
+  "clicks",
+  "conversions"
+ ],
+ "conversiones_por_accion_search_90d": {
+  "324-020-3548": {
+   "Calls from ads": 47.17,
+   "Website Calls": 5.98
+  },
+  "436-679-0497": {
+   "Form Fill": 5,
+   "Website Calls": 3
+  },
+  "758-301-1023": {
+   "Calls from Ads": 2
+  },
+  "649-727-8001": {
+   "Calls from ads": 33,
+   "Website Calls (solo all_conversions)": 13.0
+  },
+  "533-198-9686": {
+   "Calls from Ads": 7,
+   "Website Calls": 3.0,
+   "Form Fill (solo all_conversions)": 1
+  }
+ },
+ "marca_propia_keywords_90d": {
+  "324-020-3548": [
+   68.93,
+   25,
+   11
+  ],
+  "649-727-8001": [
+   783.52,
+   72,
+   29
+  ],
+  "533-198-9686": [
+   50.67,
+   8,
+   2
+  ],
+  "columns": [
+   "spend",
+   "clicks",
+   "conversions"
+  ]
+ },
+ "keywords_panel_90d": [
+  [
+   "436-679-0497",
+   "electrical panel upgrade cost",
+   "PHRASE",
+   13.49,
+   2,
+   40,
+   0
+  ],
+  [
+   "436-679-0497",
+   "electrical panel upgrade cost",
+   "BROAD",
+   0,
+   0,
+   4,
+   0
+  ],
+  [
+   "436-679-0497",
+   "electrical panel replacement",
+   "PHRASE",
+   0,
+   0,
+   23,
+   0
+  ],
+  [
+   "436-679-0497",
+   "electrical panel upgrade",
+   "EXACT",
+   0,
+   0,
+   1,
+   0
+  ],
+  [
+   "436-679-0497",
+   "circuit breaker repair",
+   "BROAD",
+   12.81,
+   2,
+   90,
+   0
+  ],
+  [
+   "758-301-1023",
+   "electrical panel replacement cost",
+   "PHRASE",
+   37.86,
+   4,
+   40,
+   0
+  ],
+  [
+   "758-301-1023",
+   "electrical service upgrade",
+   "PHRASE",
+   12.96,
+   2,
+   44,
+   0
+  ],
+  [
+   "758-301-1023",
+   "breaker box replacement",
+   "PHRASE",
+   0,
+   0,
+   26,
+   0
+  ],
+  [
+   "758-301-1023",
+   "breaker box replacement",
+   "EXACT",
+   0,
+   0,
+   2,
+   0
+  ],
+  [
+   "758-301-1023",
+   "electric panel installation",
+   "PHRASE",
+   0,
+   0,
+   9,
+   0
+  ],
+  [
+   "758-301-1023",
+   "panel upgrade",
+   "PHRASE",
+   0,
+   0,
+   9,
+   0
+  ],
+  [
+   "758-301-1023",
+   "fuse box replacement",
+   "PHRASE",
+   0,
+   0,
+   3,
+   0
+  ],
+  [
+   "758-301-1023",
+   "electrical panel replacement",
+   "PHRASE",
+   0,
+   0,
+   1,
+   0
+  ],
+  [
+   "758-301-1023",
+   "breaker replacement",
+   "PHRASE",
+   0,
+   0,
+   50,
+   0
+  ],
+  [
+   "758-301-1023",
+   "circuit breaker replacement",
+   "PHRASE",
+   0,
+   0,
+   1,
+   0
+  ]
+ ],
+ "keywords_columns": [
+  "account_id",
+  "keyword_text",
+  "match",
+  "spend",
+  "clicks",
+  "impressions",
+  "conversions"
+ ],
+ "search_terms_panel_90d": [
+  {
+   "account_id": "436-679-0497",
+   "search_term": "do i need a permit to replace an electrical panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "electrical panel upgrade cost",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 4,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "wire size for 200 amp service",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "100 amp sub panel wire size",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "125 amp sub panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "adding a new circuit to a panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "arc fault breakers",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "circuit breaker alarm",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "circuit breaker finder",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 4,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "circuit breaker keeps tripping",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "electrical panel 100 amp",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "gfci breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 4,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "house fuse box",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "leviton electrical panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "lutron electrical panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "span electrical panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 5,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "what gauge wire for 60 amp breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "wire needed for 60 amp breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "zinsco breaker 15 amp",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "average cost to rewire a 1500 sq ft house",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "fuse box house",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 3,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "new electrical panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "smart breakers for home",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "zenco breakers",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "zinco electric panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "zinsco panel",
+   "spend": 8.56,
+   "clicks": 1,
+   "impressions": 5,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "able edge smart breakers",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "breaker panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 8,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "challenger sub panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "commercial and residential electrician",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "cost of replacing electrical breaker box",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "cost of replacing electrical panel in home",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "electrical panel load balancing",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "electrical panel load management system",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "homeline 200a breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "outdoor subpanel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "panel upgrade cost",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "service disconnect breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "split bus electrical panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "zinsco electrical panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 7,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "100 amp breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "are challenger panels safe",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "main breaker panel 400 amp",
+   "spend": 8.88,
+   "clicks": 1,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "modern electrical panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "125 amp breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "20 amp breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "40 amp sub panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "50 amp power panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "apartment circuit breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "bedroom circuit breaker keeps tripping",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "breaker switch",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "commercial electrician san marcos",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "electric panel upgrade cost",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "electrical panel extension",
+   "spend": 11.13,
+   "clicks": 1,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "knob and tube panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "solar ready main service panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "weatherproof sub panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "100 amp sub panel installation cost",
+   "spend": 7.79,
+   "clicks": 1,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "100a panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "adding a subpanel to 100 amp service",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "cost to install subpanel in detached garage",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "electrical panel lifespan",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "federal pacific 40 amp double pole breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "stab lok breakers",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 4,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "2 pole 40 amp breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "cost to replace breaker box",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "cost to replace zinsco electrical panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "push o matic breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "324-020-3548",
+   "search_term": "electrician commercial near me",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 3,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "400 amp panel residential",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "commercial electrical contractors",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 5,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "crouse hinds breakers",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "pushmatic breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "324-020-3548",
+   "search_term": "breaker panel upgrade",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "324-020-3548",
+   "search_term": "commercial electrician near me",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "breaker box",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 10,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "solar panel electricians near me",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "panel upgrade 200 amp cost",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "power breakers",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "process of rewiring a house",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "324-020-3548",
+   "search_term": "commercial electrical contractors near me",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "upgrade circuit breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "breaker for car charger",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "challenger panel recall",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "challenger sl12 panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "challenger type a1515 circuit breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "cost to replace circuit breaker panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "gfi breakers",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "q120 breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "shunt trip breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "siemens 20a breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "smart electrical panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 3,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "cost to replace a circuit breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "electrical breaker tripped and won t reset",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "federal pacific 100 amp breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "general electric circuit breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "install gfci breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "modern breaker panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "new electrical panel cost",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "sacramento commercial electrical contractors",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "50 amp breaker box",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "auto reset breakers",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "circuit breaker box",
+   "spend": 8.38,
+   "clicks": 1,
+   "impressions": 1,
+   "conversions": 2
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "old electrical panel brands",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "siemens breakers",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "smart home electrical panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "breaker panel box",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "challenger breakers",
+   "spend": 8.56,
+   "clicks": 1,
+   "impressions": 3,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "circuit breaker replacement cost",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "cost to rewire a 1500 sq ft house",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "ground bus bar for sub panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "arc fault breaker type braf",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 3,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "bw2200 main breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "panelectric inc",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 3,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "power went out in one room but breaker not tripped",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "200 amps panel",
+   "spend": 7.82,
+   "clicks": 1,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "circuit breaker surge protector whole house",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "circuit breakers near me",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "murray breaker replacement",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "outdoor main lug panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "50 amp bolt on breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "average cost to replace electric panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "electric panel box",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "home electric panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "install new fuse box",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "bad circuit breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "homeline breaker panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "new circuit breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "circuit breaker gets hot and trips",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "cost to upgrade breaker panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 3,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "resetting the circuit breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "symptoms of a bad breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "tesla charger tripping 50 amp breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "where is the fuse box in a house",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "main circuit breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "main panel upgrade",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "mobile home electrical panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "324-020-3548",
+   "search_term": "commercial electric company near me",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "240v fuse box",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "400 amp residential panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "breaker won t reset",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "cost of electrical panel upgrade",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "electric meter box",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "why does my circuit breaker keep tripping",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "murray 200 amp main breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "200 amp electrical panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "breaker panel setting to save electricity",
+   "spend": 9.17,
+   "clicks": 1,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "changing out breaker switch",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "cost of rewiring an old house",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "cost to upgrade panel to 200 amp",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "hold down kit for breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "styles of circuit breakers",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "como checar si un breaker esta dañado",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "ge breaker compatibility chart",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "quad breaker 50 30",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "surge protection device for electrical panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "what trips a breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "100 amp breaker murray",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "200 amp panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 5,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "bigger breaker box",
+   "spend": 6.39,
+   "clicks": 1,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "circuit breaker switch will not stay on",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "cost to replace electrical panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 6,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "cost to upgrade to 200 amp panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "electric breaker box",
+   "spend": 6.33,
+   "clicks": 1,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "electrical panel",
+   "spend": 6.72,
+   "clicks": 1,
+   "impressions": 8,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "electrical panel box for home",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "electrical panel replacement cost",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "nec sub panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "reset breaker box",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "reset circuit breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "sub panel wiring",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 3,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "200 amp 42 space panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "add a sub panel to house",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "breaker with outlet",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "eaton residential panels",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "electrical outlet not working but breaker not tripped",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "no tripped breaker but no power",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "panel box",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "sylvania electrical panel",
+   "spend": 4,
+   "clicks": 1,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "what wire to run 100 amp sub panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "circuit breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 10,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "circuit breakers panels",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "cost to replace an electrical panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 3,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "gfci circuit breaker troubleshooting",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "why won t my breaker reset",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "200 amp breaker box",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "add a new circuit to panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "best circuit breaker box",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "cost to replace electrical panel box",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "different types of circuit breakers and their uses",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "general electric electrical panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "200 amp panel with main breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 4,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "240v breaker switch",
+   "spend": 5.86,
+   "clicks": 1,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "electrical panel box 200 amp",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "200 amp eaton breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "25 amp breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "changing breakers",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "homeline breakers",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "100 amp sub panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "225 amp main breaker panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "electrical panel directory",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "cost of new breaker panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "cost of new electrical panel for house",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "cost to upgrade electrical panel to 200 amps",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 4,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "cutler hammer breaker replacement",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "30 amp breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "ac breaker panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "add breaker to panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "breaker box upgrade",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 3,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "breaker will not turn back on",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "challenger breakers replacement",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "circuit breaker for mobile home",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "cost to replace electrical panel in home",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "cost to upgrade breaker box",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "electric panel upgrade tax credit 2026",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "electrical panel box cost",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "is a 200 amp panel enough for ev charger",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "ite electrical panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "murray breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "power out but breaker not tripped",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "replacing electric panel cost",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "siemens bolt on breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "span panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 6,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "200 amp solar ready panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "air conditioner circuit breaker outside",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "cost of replacing an electrical panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "electric panel upgrade rebate",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "lr48907 breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "main breaker switch won t turn back on",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "outdoor electrical panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "residential electrical panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 3,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "type c breakers",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "updated electrical panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "when should circuit breakers be replaced",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "324-020-3548",
+   "search_term": "commercial electrician",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "25 amp 2 pole breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "bulldog electrical panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "commercial electricians near me",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 3,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "cost of new breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "electrical panel surge protector installation",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "50 amp breaker for ev charger",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 3,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "circuit breaker replacement near me",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 3,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "cost of upgrading electrical panel to 200 amps",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "murray circuit breaker replacement",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "what causes a breaker to trip",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "cafci breaker keeps tripping",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "replacing gfci breaker with regular breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "circuit breaker replacement",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "eaton compatible breakers",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "pacific federal breakers",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "pull circuit breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "pull out circuit breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "solar panels and battery for ev charging",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "what would cause a breaker to keep tripping",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "20 amp breaker with test button",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "afci breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "circuit breaker keeps tripping",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "lowes 50 amp breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "mobile home breakers",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "resetting breaker not working",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "size wire needed for 100 amp service",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "span electrical panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "tesla correction breaker panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "why would a breaker keep tripping",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "wire size for 100 amp sub panel 50 feet away",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "wire size for 100 amp sub panel 75 feet away",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "challenger breakers",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "siemens 200 amp breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "electrical panel upgrade",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "rewiring a lamp",
+   "spend": 6.31,
+   "clicks": 1,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "circuit breaker trips after a few minutes",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "panel breaker sizes",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "reset a breaker switch",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "wire needed for 20 amp breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "bryant replacement breakers",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "cost of replacing electrical panel",
+   "spend": 6.61,
+   "clicks": 1,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "fpe circuit breakers",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "house fuse panel",
+   "spend": 6.48,
+   "clicks": 1,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "outdoor main breaker panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "300 amp meter base",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "breaker box upgrade",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "breakers panel electrical",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "electric meter box",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "garbage disposal keeps tripping breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "leviton smart panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "multiple outlets not working but breaker not tripped",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "service change electrical",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "50 amp circuit breaker for tesla charger",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "dual meter panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "eaton arc fault breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "electrical panels",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "federal pacific circuit breakers replacement",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "wiring a gfci breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "40 amp gfci breaker for hot tub",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "fuse box switch stuck in middle",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "gfci breaker for hot tub",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "smoke detector circuit breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "tripped breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "tripped breaker not resetting",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "wire size for 100 amp service",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "100 amp breaker box with breakers",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "pool pump tripping gfci breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "200 amp panel upgrade cost",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "electrical service panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "murray 20 amp breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "upgrade electric panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "upgrading electrical panel cost",
+   "spend": 7.56,
+   "clicks": 1,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "100 amp panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "125 amp electrical panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "220 breaker box",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "400 amp panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "breaker tracer electrical",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "eaton circuit breaker panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "eaton circuit breakers",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "new breaker box",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "electrical panel dead front",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "fpe panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "siemens electrical panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "150 amp panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "breaker won t reset",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "eaton breakers",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "wire size for 50 amp service",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "commercial electrician",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "eaton br 125 amp 2 pole circuit breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "water heater tripping main breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "20 amp breaker replacement",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "eaton breaker box",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "20 15 amp breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "200 amp house panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "average cost of new electrical panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "meter base",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "20 amp ge gfci breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "eaton solar ready 200 amp panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "why does the breaker keep tripping in one room",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "how much is a breaker box for a house",
+   "spend": 7.08,
+   "clicks": 1,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "100 amp vs 200 amp panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "circuit breaker at home",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "upgrade 200 amp service",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "fuse box to breaker box cost",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "smart panel for home",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "zinsco electrical panels",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "how expensive to rewire a house",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "how much to rewire a 3 bedroom house",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "30 amp fuse box",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "circuit breaker 40amp",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "cost of replacing electrical panel in home",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 4,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "cost to replace an electrical panel",
+   "spend": 11.72,
+   "clicks": 1,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "residential electrical panel upgrade",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "should i upgrade to 200 amp service",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 4,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "cost of a circuit breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "125 panel box",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 4,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "40 amp double pole 30 amp double pole circuit breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "70 amp sub panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "panelectric",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "zinsco breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "how much is a new breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "200 amp sub panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "225a main breaker panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "afci breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "circuit breaker numbering system",
+   "spend": 17.66,
+   "clicks": 2,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "hacr breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "murray electrical panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "panel breakers",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "wire for 40 amp breaker",
+   "spend": 6.54,
+   "clicks": 1,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "commercial journeyman electrician",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "cost of new electrical panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "can t find breaker for smoke detectors",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "replacing breaker in panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "siemens smart breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "electrician for panel upgrade",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "30 amp single pole breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "challenger circuit breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "challenger panel box",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "electrical breaker panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "federal breaker box",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "relocating electrical panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "breaker box replacement cost",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 3,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "200 amp exterior electrical panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "cost to change electrical panel from fuses to breakers",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 3,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "what size aluminum ser for 100 amp sub panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "breaker box replacement",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "breaker keeps tripping after power outage",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "can circuit breakers wear out",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "challenger breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "challenger panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "cost to rewire a house",
+   "spend": 9.2,
+   "clicks": 1,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "eaton 200 amp main breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "house electrical panel sizes",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "main breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 3,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "smart electrical panel 200 amp",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "breakers for challenger panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "subpanel height requirements",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "best electrical panel 200 amp",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "electrical panel surge protection",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "smart circuit breaker 240v",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "smart electrical panel for home",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "why does my air conditioner breaker keep tripping",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "200amp panel upgrade cost",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "240v circuit breaker panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "cable for 100 amp sub panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "federal pacific electrical breakers",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "zinsco breakers",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "2 0 copper wire for 200 amp service",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "smart circuit breaker panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "span smart panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "what do i need to upgrade my electrical panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "why does my electrical panel keep tripping",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "cutler hammer breaker replacement",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "324-020-3548",
+   "search_term": "circuit breaker",
+   "spend": 11.84,
+   "clicks": 2,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "400 amp panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 4,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "breaker size for air conditioner",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "breakers for murray panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "hacr type breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "siemens surge protector breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "sub panel 100 amp",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "sub panel box",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "subpanel wiring",
+   "spend": 6.68,
+   "clicks": 1,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "surge protector for panel box",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "eaton 125 amp breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "electrical rewiring",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "how much to rewire a house",
+   "spend": 9.14,
+   "clicks": 1,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "circuit breaker near me",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "t and b breakers",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 3,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "400 amp electrical panel cost",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "20 amp 1 pole type qpf2 gfci circuit breaker",
+   "spend": 4.78,
+   "clicks": 1,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "60 amp breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "average cost of a new electrical panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "microwave tripping breaker when opening door",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "qpf2 breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "adding new circuit to breaker box",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "arc fault breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "arrow hart panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "cost to change 100 amp service to 200 amp",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "do electrical panels need to be replaced",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "federal pacific breakers near me",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "what does a tripped breaker look like",
+   "spend": 14.48,
+   "clicks": 2,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "50 amp breakers",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "400 amp service",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "replace breaker box",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "3 pole 100 amp breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "san diego commercial electrical contractors",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "thomas and betts breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "breaker panel replacement cost",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 4,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "how long does it take to replace a electrical panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "sub panel price",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "200 amp panel replacement cost",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "eaton 20 amp breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "electrical breakers",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 4,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "electrical breakers near me",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "is rewiring a house expensive",
+   "spend": 6.77,
+   "clicks": 1,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "sub panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "cost to upgrade electrical panel to 200 amps",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "200 amp challenger main breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "50 amp ev breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "average cost to replace circuit breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "can a breaker go bad",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "circuit breaker panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "dp 4075 breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "dp 4075 breaker 15 amp",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 4,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "gfi on breaker box",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "homt circuit breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "problems with challenger electrical panels",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "why does electric breaker keep tripping",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "breaker box wiring",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "125 amp circuit breaker panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "60 amp breaker for tesla charger",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 3,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "best 200 amp breaker panel for residential use",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "breaker keeps tripping in one room",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "commercial electrician",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "dishwasher tripping the breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "power outlet not working but breaker not tripped",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "smart breaker switch",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "three phase breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "758-301-1023",
+   "search_term": "residential circuit breakers",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "324-020-3548",
+   "search_term": "eaton electrical panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "eaton electrical panel",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "gfci circuit breaker keeps tripping",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 2,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "outdoor outlet not working breaker not tripped",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  },
+  {
+   "account_id": "436-679-0497",
+   "search_term": "siemens 175 amp breaker",
+   "spend": 0,
+   "clicks": 0,
+   "impressions": 1,
+   "conversions": 0
+  }
+ ]
+}
