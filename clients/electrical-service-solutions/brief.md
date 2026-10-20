@@ -12,8 +12,6 @@ completitud: 69%
 call_tracking: callfire
 tracking_number: "(412) 666-9290"
 tracking_destino: "(412) 377-7502"
-plan_es: https://claude.ai/artifact/DDF3D2rBbjUM1vFLbG26eP
-plan_en: https://claude.ai/artifact/1mULJUUTdeY8nYccq25HJU
 ---
 
 # Brief — Electrical Service Solutions
