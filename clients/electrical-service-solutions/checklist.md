@@ -46,18 +46,19 @@ Generado por /roadmap (20-oct-2026) desde `knowledge/checklists/setup-cuenta.md`
 
 ## Fase 1 — Lanzamiento Search · 24-oct → 03-nov (activación 27-oct)
 - [x] (PMM) Plan de operaciones y CSV de Google Ads Editor preparados (log/2026-10-20-build-plan.md), 20-oct
-- [ ] (PMM) **B** Campaña ESS · Search · Paneles creada en pausa con /build-campaign y revisada por Jhombis
-- [ ] (PMM) Red: solo Búsqueda; socios y Display apagados; AI Max apagado
+- [x] (PMM) Campaña creada en pausa por Windsor (ID 24380613328), con nombre "[NO ACTIVAR · falta geo]"; decisión de Jhombis con la Fase 0 incompleta (log/2026-10-20-build.md), 20-oct
+- [ ] (PMM) **B** Antes de activar, en la interfaz: 5 ubicaciones con Presencia (hoy PRESENCE_OR_INTEREST y sin ubicaciones), socios de búsqueda apagados (hoy activados), H1 pinneado en los 4 RSA, quitar "[NO ACTIVAR]" del nombre
+- [ ] (PMM) Red: solo Búsqueda; socios y Display apagados; AI Max apagado (Display ✓; socios: activados, apagar en la interfaz)
 - [ ] (PMM) Ubicación: Presencia en ZIP 15102, 15241, 15228, 15237 + Monroeville; resto de países excluido
-- [ ] (PMM) Programación L–V 9:00–21:00 y S–D 9:00–17:00, hora del Este (convertida a la zona de la cuenta)
-- [ ] (PMM) Puja: Max. clics con tope de CPC de $15
-- [ ] (PMM) **B** Negativas aplicadas con Windsor (data/2026-10-20-negatives.txt) y leídas de vuelta; lista compartida "PMM Universal" creada en la interfaz
-- [ ] (PMM) 42 keywords en frase + exacta en los 4 grupos (data/keywords.csv)
-- [ ] (PMM) 1 RSA por grupo, H1 pinneado, 15 headlines y 4 descripciones, fuerza "Buena" o más (data/ads-search-paneles.md)
-- [ ] (PMM) Extensiones: llamada al CTN, 4 sitelinks (Residential, Commercial, Free Quote, About Us; Financing cuando exista /financing/), 8 callouts, snippet de servicios
+- [x] (PMM) Programación: L–V 6–18 y S–D 6–14 en hora del Pacífico (= 9–21 y 9–17 hora del Este), verificada, 20-oct
+- [x] (PMM) Puja: Max. clics con tope de CPC de $15, verificada, 20-oct
+- [x] (PMM) Negativas aplicadas con Windsor: 303 de campaña (leídas de vuelta) + 8 de grupo, 20-oct. Lista compartida "PMM Universal": pendiente en la interfaz
+- [x] (PMM) 51 keywords (42 términos en frase + exacta) en los 4 grupos, verificadas, 20-oct
+- [ ] (PMM) 1 RSA por grupo, 15 headlines y 4 descripciones: creados el 20-oct. Falta pinnear el H1 (Windsor no lo permite) y ver la fuerza
+- [x] (PMM) Extensiones: llamada al CTN, 4 sitelinks, 8 callouts y snippet "Service catalog", creadas, 20-oct (Financing cuando exista /financing/)
 - [ ] (PMM) Después de crear: Presencia y socios de búsqueda apagados en la interfaz si se usa Windsor (no los configura)
 - [x] (PMM) URLs finales verificadas (HEAD 200, sin redirect): residencial, comercial, /contact-us/ y /about-us/, 20-oct
-- [ ] (PMM) Presupuesto diario de $42.56
+- [x] (PMM) Presupuesto diario de $42.56, 20-oct
 - [ ] (PMM) **B** Anuncios aprobados por políticas (revisar 24 h después de activar)
 - [ ] (PMM) **B** Primera conversión registrada y al menos 1 llamada real en CallFire
 

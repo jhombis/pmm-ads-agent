@@ -122,6 +122,6 @@
   - About Us → /about-us/: "40+ years in the trade" / "Panels are all we do"
   - Financing → /financing/ cuando exista: "Financing on approved credit" / "Ask about your options" (hoy el menú sale a Pure Finance Group)
 - **Callouts**: 40+ Years Experience · Financing Available · Free Quotes · Permits & Inspection · Open 7 Days · Residential & Commercial · Panel Specialists · Service Change-Outs
-- **Snippet (Services)**: Panel Upgrades, Panel Replacement, Service Upgrades, Fuse Box Replacement, Meter Base Replacement, Commercial Panels
+- **Snippet (Service catalog; "Services" no existe en la API)**: Panel Upgrades, Panel Replacement, Service Upgrades, Fuse Box Replacement, Meter Base Replacement, Commercial Panels
 - **Ubicación**: PENDIENTE (requiere vincular el GBP; el negocio no publica dirección)
 - **Imágenes**: solo fotos propias de trabajos de panel (PENDIENTE: pedirlas al cliente)

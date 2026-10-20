@@ -19,7 +19,7 @@ plan_en: https://claude.ai/artifact/1mULJUUTdeY8nYccq25HJU
 | Fase | Fecha estimada | Estado |
 |---|---|---|
 | 0 — Fundación: medición, web y cuenta | 20-oct → 23-oct | 🔄 en curso |
-| 1 — Lanzamiento Search Paneles | Lanzamiento **27-oct** → paso a F2 el 03-nov | ⏳ |
+| 1 — Lanzamiento Search Paneles | Campaña **creada en pausa el 20-oct** (ID 24380613328). Activación estimada **27-oct** → paso a F2 el 03-nov | 🔄 creada en pausa |
 | 2 — Limpieza (D7 · D14 · D30) | **03-nov · 10-nov · 27-nov** (D30 cae el 26-nov, Thanksgiving: la revisión va el 27) | ⏳ |
 | 3 — Max. conversiones → tCPA | Max. conversiones: no antes del **04-ene-2027**, y solo en el escenario optimista. tCPA: **sin fecha** con esta pauta | ⛔ por presupuesto |
 | 4 — Remarketing | No realista (~108 clics/mes; la audiencia no llega a 1,000) | ⛔ |
@@ -132,5 +132,6 @@ De `audit-site.md` (10/22):
 - Comercial: los change-outs se programan con el negocio cerrado (la web lo dice). Sin datos de estacionalidad propia.
 
 ## Historial de cambios
+- 2026-10-20: campaña 24380613328 creada en pausa por Windsor, por decisión de Jhombis con la Fase 0 incompleta. Antes de activar faltan, en la interfaz: ubicaciones con Presencia, socios apagados y el pin del H1 (log/2026-10-20-build.md).
 - 2026-10-20: Jhombis instaló el Google Tag y las conversiones. La web pasa a 13/22; el formulario arriba es el único bloqueante de la web que queda, más la prueba de las conversiones. Fechas sin cambio.
 - 2026-10-20: creado (D0 = 20-oct). Fechas: F0 → 23-oct, lanzamiento 27-oct, D7 03-nov, D14 10-nov, D30 27-nov. F3 a F5 sin fecha por presupuesto.
