@@ -13,12 +13,15 @@ actualizado: 2026-10-20
 - [x] CTN (412) 666-9290 en CallFire con reenvío probado a (412) 377-7502
 - [x] Pauta: $1,293.75/mes (57.5% de $2,250) — Jhombis, 20-oct
 - [x] Web: electricalservicesolutionspa.com — Jhombis, 20-oct
+- [x] Competencia (/competitors) y benchmark interno (/benchmark-interno) — PMM, 20-oct
+- [x] Estrategia v1 con supuestos (/strategy): 1 campaña, 4 grupos, 42 keywords, tope CPC $15 — PMM, 20-oct
 
 ## Pendientes bloqueantes
 - [ ] Ticket promedio (residencial / comercial), margen y tasa de cierre → CPL máximo — Cliente
 - [ ] Condiciones del financiamiento y qué se puede decir en anuncios — Cliente
 - [ ] Auditar electricalservicesolutionspa.com (/audit-landing): estándar 11, Tag, financiamiento visible — PMM
 - [ ] Conversión de llamada del CTN configurada en 384-080-6970 y probada — PMM
+- [ ] Aplicar lista universal + 122 negativas de nicho (/negatives, con aprobación de Jhombis) — PMM
 
 ## Pendientes no bloqueantes
 - [ ] Licencia (número y municipio) y seguro — Cliente

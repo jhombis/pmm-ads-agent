@@ -1,0 +1,144 @@
+# Negativas de nicho — Electrical Service Solutions (solo paneles)
+# Nivel campaña, concordancia de frase salvo [exacta]. Se suman a la lista universal PMM (nivel cuenta).
+# Ajustes a la universal para este cliente: NO negar "replace", "panel", "service", "upgrade", "commercial", "breaker", ni marcas de panel (zinsco, federal pacific, siemens, eaton, square d) — reconciliación PMM 23-sep.
+# "free": se mantiene negada mientras no se confirme estimado gratis (si se confirma, quitarla: playbook §6.5).
+# "permit" y "code" (universal): se mantienen; "panel upgrade permit" es trámite, no lead.
+
+## Lo que el cliente no hace (brief)
+generator
+generators
+ev charger
+car charger
+tesla
+wall connector
+lighting
+light fixture
+recessed lights
+outlet
+outlets
+gfci
+light switch
+ceiling fan
+doorbell
+smoke detector
+thermostat
+electrical inspection
+home inspection
+rewire
+rewiring
+wiring repair
+troubleshooting
+electrical repair
+handyman
+solar company
+solar installer
+security camera
+low voltage
+data cabling
+
+## Panel que no es eléctrico
+# ("solar" no se niega suelto: un upgrade de panel para solar es un lead válido)
+[solar panel]
+[solar panels]
+solar panel installation
+solar panels for home
+garage door panel
+wall panel
+wall panels
+control panel
+panel heater
+fence panel
+door panel
+siding panel
+acoustic panel
+ceiling panel
+tv panel
+radiant panel
+
+## Precio e información (benchmark: $67.74 de $131.30 en precio, 0 conv.)
+cost to
+cost of
+how much
+average cost
+price list
+calculator
+estimate calculator
+wire size
+wiring diagram
+diagram
+how to
+diy
+what size
+should i
+tripped breaker
+reset
+labeling
+numbering
+
+## Producto y compra
+for sale
+home depot
+lowes
+menards
+amazon
+supply
+supplier
+wholesale
+breaker for sale
+panel for sale
+used
+
+## Empresa de luz (verificar en search terms)
+duquesne light
+duquesne
+pay bill
+outage
+power outage
+electric company
+electricity provider
+
+## Empleo y formación (además de la universal)
+electrician salary
+journeyman
+apprentice
+electrician school
+license lookup
+electrical license
+
+## Competidores y agregadores (estándar 5)
+mr electric
+mister sparky
+cw electric
+cw electrical
+c w electric
+hufnagel
+luminous electric
+prodigy electrical
+pricelight
+bk electrical
+brighter side electric
+young electric
+gumpher
+rodgers electric
+mcguire electric
+jw electric
+the electrical company
+[south hills electric]
+[south hills electric llc]
+[south hills heating and plumbing]
+angi
+homeadvisor
+home advisor
+thumbtack
+yelp
+local electrician bids
+eaton find a contractor
+
+## Genéricas de electricista (no se compran)
+[electrician]
+[electricians]
+[electrician near me]
+[electrician pittsburgh]
+[pittsburgh electrician]
+[electrician pittsburgh pa]
+[electrical contractor]

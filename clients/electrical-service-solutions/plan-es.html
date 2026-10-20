@@ -226,7 +226,7 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
   </header>
 
   <nav class="toc" aria-label="Secciones">
-    <a href="#resumen">Resumen</a><a href="#pasos">Próximos pasos</a><a href="#mercado">Mercado</a><a href="#checklist">Checklist</a><a href="#cliente">Cliente</a>
+    <a href="#resumen">Resumen</a><a href="#pasos">Próximos pasos</a><a href="#estrategia">Estrategia</a><a href="#anuncios">Anuncios</a><a href="#negativas">Negativas</a><a href="#mercado">Mercado</a><a href="#checklist">Checklist</a><a href="#cliente">Cliente</a><a href="#porque">Por qué no</a>
   </nav>
 
   <!-- RESUMEN · fuente: brief, strategy, diagnose/log -->
@@ -257,8 +257,8 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
         <h3>La decisión en cinco líneas</h3>
         <ul>
           <li><b>Campañas</b>: 1 campaña Search de paneles, a $42.56/día, cuando la web pase la auditoría y la conversión de llamada esté probada.</li>
-          <li><b>Ad groups</b>: 3–5 (límite de fragmentación de $600–1,500): upgrade residencial, cambio de servicio / amperaje, panel comercial y reemplazo de breaker o fusibles.</li>
-          <li><b>Puja y match</b>: Max. clics con tope de CPC realista para paneles ($8–18), frase + exacta, Presencia en los 4 ZIP + Monroeville. Horario: L–V 9–21 y fines de semana 9–17, hora del Este.</li>
+          <li><b>Ad groups</b>: 4 (límite de fragmentación de $600–1,500): Panel Upgrade, Service Upgrade, Fuse Box y Commercial Panel. 42 keywords en frase + exacta.</li>
+          <li><b>Puja y match</b>: Max. clics con tope de CPC de $15 (clic real de panel en el MCC ~$7.72; Semrush $8–18), frase + exacta, Presencia en los 4 ZIP + Monroeville. Horario: L–V 9–21 y fines de semana 9–17, hora del Este.</li>
           <li><b>El techo con este presupuesto</b>: ~108 clics y ~9 prospectos/mes. Las 15 conversiones/mes de Max. conversiones solo llegan en el escenario optimista; la demanda de paneles en zonas tan chicas puede acabarse antes que la pauta (Keyword Planner).</li>
           <li><b>Qué no se hace</b>: "electrician" genérico ni ningún otro servicio eléctrico (negativas desde el día 1), PMax, Display, marca ni LSA hasta tener el GBP y la licencia.</li>
         </ul>
@@ -283,6 +283,104 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
   <section id="pasos">
     <div class="sec-head"><h2>Próximos pasos</h2><p>Lo que falta para cerrar la Fase 0: datos del cliente, auditoría de la web y medición. Los que dicen B bloquean.</p></div>
     <div class="steps" id="steps"></div>
+  </section>
+
+  <!-- ESTRATEGIA · fuente: strategy + build log. Ad groups en el <script> (ags). -->
+  <section id="estrategia">
+    <div class="sec-head"><h2>Estrategia</h2><p>1 campaña y 4 grupos, porque $1,293.75/mes está en el límite de $600–1,500. Un solo servicio (paneles) y ~3.5 clics/día no dan para dividir el presupuesto.</p></div>
+    <dl class="cfg">
+      <div><dt>Campaña</dt><dd>ESS · Search · Paneles · South Hills/North Hills/Monroeville</dd></div>
+      <div><dt>Tipo</dt><dd>Search · solo red de Búsqueda (sin socios ni Display)</dd></div>
+      <div><dt>Presupuesto</dt><dd class="num">$42.56/día ($1,293.75/mes)</dd></div>
+      <div><dt>Puja</dt><dd>Max. clics con tope de CPC de $15 → Max. conversiones con 15+ conv./mes estables 2 meses; tCPA fuera de alcance con esta pauta</dd></div>
+      <div><dt>Conversiones</dt><dd>Primarias: Calls from ads ≥60 s y formulario. Secundaria: clic en tel: de la web. Calidad: llamadas calificadas en CallFire</dd></div>
+      <div><dt>Match</dt><dd>Frase + exacta en los 3–5 términos principales de cada grupo · sin amplia ni AI Max</dd></div>
+      <div><dt>Ubicación</dt><dd>Presencia: ZIP 15102, 15241, 15228, 15237 + Monroeville, PA</dd></div>
+      <div><dt>Horario</dt><dd>L–V 9:00–21:00 · S–D 9:00–17:00 (hora del Este). Si la cuenta está en hora del Pacífico: L–V 6:00–18:00 · S–D 6:00–14:00. Emergencias y noche, cerradas por ahora</dd></div>
+      <div><dt>Apagado</dt><dd>Socios de búsqueda, Display, recomendaciones automáticas, AI Max, exclusión por segmentos de audiencia</dd></div>
+    </dl>
+    <div class="tbl"><table>
+      <thead><tr><th>Ad group</th><th>Fase</th><th>Keywords principales</th><th class="r">Vol./mes</th><th>Landing</th></tr></thead>
+      <tbody id="agrows"></tbody>
+    </table></div>
+    <p class="muted" style="font-size:.88rem; margin-top:10px">Los volúmenes son nacionales (Semrush US): en 4 ZIP + Monroeville serán una fracción mínima. Keyword Planner con la geo exacta es condición de F0. No hay grupos por ciudad (ninguna combinación llega a 100 búsquedas/mes): las ciudades van en headlines y en la geo. Las landings por grupo se confirman en /audit-landing; si no existen, el grupo va a la home. Subpaneles (480/mes US) quedan fuera hasta que el cliente confirme que los hace.</p>
+
+    <h3 style="margin-top:28px; margin-bottom:10px">Presupuesto por fase</h3>
+    <div class="tbl"><table>
+      <thead><tr><th>Fase</th><th>Total/mes</th><th>Qué pasa</th><th>Condición para pasar</th></tr></thead>
+      <tbody>
+        <tr><td><b>F0</b> Medición y web</td><td class="num">$0</td><td>Conversiones, auditoría de la web, negativas, Keyword Planner por ZIP</td><td>Calls from ads + formulario probados con Tag Assistant; web que cumpla el estándar 11</td></tr>
+        <tr><td><b>F1</b> Lanzamiento</td><td class="num">$1,293.75</td><td>Max. clics tope $15; search terms a D3, D7 y D14; tope revisado a D7/D14</td><td>30 días, ≥50 clics, search terms limpiados 2 veces, CPL observado</td></tr>
+        <tr><td><b>F2</b> Optimización</td><td class="num">$1,293.75</td><td>Negativas semanales; prueba [commercial electrician near me] si el grupo comercial tiene &lt;50 impresiones</td><td>15+ conversiones/mes 2 meses seguidos, con medición limpia</td></tr>
+        <tr><td><b>F3</b> Max. conversiones</td><td class="num">$1,293.75 (escalar: PENDIENTE)</td><td>Smart Bidding sin tCPA</td><td>tCPA con ~30 conv./30 días desde el CPA observado: pediría $3,000–4,500/mes</td></tr>
+        <tr><td><b>LSA</b> pista paralela</td><td class="num">aparte</td><td>Solo si el cliente lo aprueba</td><td>GBP verificado con acceso, licencia y seguro, background check</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <!-- ANUNCIOS · fuente: data/ads-*.md. H1, pool y descripciones en el <script>. Anuncios y keywords en el idioma del mercado, sin traducir. -->
+  <section id="anuncios">
+    <div class="sec-head"><h2>Anuncios</h2><p>1 RSA por grupo (pauta &lt;$1,500/mes): con ~108 clics/mes un A/B es ruido. H1 pinneado al término del grupo; ángulo: especialista en paneles + 40+ años + financiamiento.</p></div>
+    <div class="adgrid">
+      <div class="serp">
+        <div class="spon">Sponsored</div>
+        <div class="url">electricalservicesolutionspa.com/panel-upgrades</div>
+        <div class="hl">Electrical Panel Upgrades | 40+ Years Of Experience | Financing Available</div>
+        <div class="ds">Electrical panel and service upgrades by a contractor with 40+ years of experience. Financing available on panel and service upgrades. Ask us about your options today.</div>
+      </div>
+      <div class="serp">
+        <div class="spon">Sponsored</div>
+        <div class="url">electricalservicesolutionspa.com/service-upgrade</div>
+        <div class="hl">Electrical Service Upgrades | 200 Amp Service Upgrades | Open 7 Days A Week</div>
+        <div class="ds">Electrical panel and service upgrades by a contractor with 40+ years of experience. Serving Bethel Park, Upper St. Clair, Mt. Lebanon, McCandless/North Hills & Monroeville.</div>
+      </div>
+      <div class="serp">
+        <div class="spon">Sponsored</div>
+        <div class="url">electricalservicesolutionspa.com/commercial</div>
+        <div class="hl">Commercial Panel Upgrades | Restaurant &amp; Retail Panels | Financing Available</div>
+        <div class="ds">Panel upgrades for retail, restaurants, offices, dental, medical, grocery & industrial. Open 7 days: Mon-Fri 9am-9pm, Sat-Sun 9am-5pm. Call or request your quote online.</div>
+      </div>
+    </div>
+    <div class="two" style="margin-top:22px">
+      <div>
+        <h3 style="margin-bottom:8px">H1 pinneado por ad group</h3>
+        <div class="tbl"><table><tbody id="h1rows"></tbody></table></div>
+      </div>
+      <div>
+        <h3 style="margin-bottom:8px">Headlines compartidas</h3>
+        <ul class="pool" id="pool"></ul>
+        <h3 style="margin:16px 0 8px">Descripciones compartidas</h3>
+        <ul style="margin:0; padding-left:1.1em; font-size:.93rem" id="descs"></ul>
+      </div>
+    </div>
+    <div class="callout" style="margin-top:22px">
+      <h3>Extensiones</h3>
+      <ul>
+        <li><b>Llamada</b> CTN (412) 666-9290, con el horario del cliente</li>
+        <li><b>Sitelinks</b>: Panel Upgrades · Service Upgrades · Commercial Panels · Financing (a la sección de financiamiento de la web: los sitelinks tienen que ser del mismo dominio)</li>
+        <li><b>Callouts</b>: 40+ Years Experience · Financing Available · Open 7 Days · Residential &amp; Commercial · Panel Specialists · Service Change-Outs</li>
+        <li><b>Snippet</b> (Services): Panel Upgrades, Panel Replacement, Service Upgrades, Fuse Box Replacement, Meter Base Replacement, Commercial Panels</li>
+        <li><b>Ubicación / imágenes</b>: PENDIENTE (falta vincular el GBP; solo fotos propias de trabajos de panel)</li>
+        <li><b>No se promete</b>: licensed &amp; insured, free estimates, 24/7, same-day ni condiciones de financiamiento (cuota, plazo, APR, 0%) hasta que el cliente las confirme</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- NEGATIVAS · fuente: data/*negatives*. Barras en el <script> (negs). -->
+  <section id="negativas">
+    <div class="sec-head"><h2>Negativas</h2><p>Lista universal PMM a nivel de cuenta + 122 de nicho a nivel de campaña. Propuestas, sin aplicar: se aplican con /negatives cuando apruebes.</p></div>
+    <div class="two" style="margin-top:0">
+      <div>
+        <h3 style="margin-bottom:12px">122 de nicho (propuestas)</h3>
+        <div class="negbars" id="negbars"></div>
+        <p class="muted" style="font-size:.86rem; margin-top:12px">Validadas contra las 42 keywords activas de F1: 0 choques. Archivo: <span class="mono">data/negatives-nicho.txt</span></p>
+      </div>
+      <div class="callout">
+        <h3>Lo que no se niega</h3>
+        <p style="margin-top:8px"><span class="kw">replace</span> <span class="kw">panel</span> <span class="kw">service</span> <span class="kw">upgrade</span> <span class="kw">commercial</span> <span class="kw">breaker</span> <span class="kw">zinsco</span> <span class="kw">federal pacific</span> <span class="kw">solar</span></p>
+        <p style="font-size:.9rem; color:var(--ink-2); margin-top:8px">Son las palabras del servicio. Las marcas de panel ("zinsco panel replacement") son leads de ticket alto, y un upgrade de panel para solar es un lead válido: solar va solo en exacta y en "solar panel installation". South Hills Electric se niega solo en exacta, porque "South Hills" es la zona del cliente. "free" queda negada hasta confirmar un estimado gratis.</p>
+      </div>
+    </div>
   </section>
 
   <!-- MERCADO · fuente: benchmark + competitors -->
@@ -358,9 +456,32 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
     </div>
   </section>
 
+  <!-- POR QUÉ NO · fuente: strategy (lo descartado) y riesgos -->
+  <section id="porque">
+    <div class="sec-head"><h2>Por qué no (todavía)</h2></div>
+    <div class="why">
+      <div><h4>Performance Max</h4><p>Pide Search estable, 30+ conversiones/mes con tracking confiable, exclusión de marca y assets propios. Con ~9 al mes, no.</p></div>
+      <div><h4>Broad</h4><p>~50 conversiones limpias, tCPA maduro y tu aprobación. "Panel" es ambiguo: la amplia compraría solar, garage y precio.</p></div>
+      <div><h4>Display / Demand Gen</h4><p>Servicio local de ticket alto, sin assets propios y sin presupuesto para dividir.</p></div>
+      <div><h4>Campaña de marca</h4><p>No hay búsqueda de marca: 20/mes de una frase genérica.</p></div>
+      <div><h4>Remarketing</h4><p>Con ~108 clics/mes la lista no llega a 1,000 usuarios en un plazo útil.</p></div>
+      <div><h4>"Electrician" genérico y emergencias</h4><p>El cliente solo quiere paneles. La noche se abre cuando sepamos quién contesta.</p></div>
+    </div>
+    <div class="callout" style="margin-top:22px">
+      <h3>Riesgos y supuestos</h3>
+      <ul>
+        <li><b>Sin auditoría de la web</b>: si la home no habla de paneles o no tiene el Tag, F1 no arranca.</li>
+        <li><b>Sin ticket</b>: el CPL de $100–150 sale de cuentas de servicio general; en paneles probablemente sea mayor. Se recalcula con margen × cierre × 0.3.</li>
+        <li><b>Sin volumen por ZIP</b>: la pauta puede no gastarse. Si a D14 se gasta &lt;60% con cuota &gt;80%, se propone al cliente sumar ZIP vecinos.</li>
+        <li><b>Financiamiento</b>: Mr. Electric y South Hills también lo ofrecen; sin condiciones concretas, diferencia poco.</li>
+        <li><b>Zona horaria de la cuenta</b> sin confirmar: la programación se convierte al configurar.</li>
+      </ul>
+    </div>
+  </section>
+
   <footer>
     <span>Performance Media Marketing · Electrical Service Solutions · cuenta 384-080-6970</span>
-    <span>Fuentes: brief.md, checklist.md, competitors.md y benchmark.md (20-oct-2026) · Welcome call · Windsor google_ads (2 años, 0 filas) · CallFire (jul-2025 → oct-2026) · Semrush (us)</span>
+    <span>Fuentes: brief.md, checklist.md, competitors.md, benchmark.md, strategy.md y data/ (20-oct-2026) · Welcome call · Windsor google_ads (2 años, 0 filas) · CallFire (jul-2025 → oct-2026) · Semrush (us)</span>
   </footer>
 </div>
 
@@ -376,15 +497,35 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
   const $ = id => document.getElementById(id);
 
   /* Próximos pasos: [título, detalle, responsable (PMM | Cliente | Jhombis | PMM/Cliente), bloqueante]. Lo hecho va con "✓ Hecho DD-mmm: …" */
-  const steps = [["✓ Hecho 20-oct: brief + Welcome call + pauta", "Área (4 ZIP + Monroeville), solo paneles, horario 7 días, financiamiento, 40+ años, email del formulario, pauta $1,293.75 y web electricalservicesolutionspa.com. Brief al 61%.", "PMM", false], ["✓ Hecho 20-oct: competencia y benchmark", "/competitors: ningún electricista local pujando en paneles (solo Angi y HomeAdvisor). /benchmark-interno: 5 cuentas, CPL objetivo inicial de $100–150, ~9 prospectos/mes en el base.", "PMM", false], ["Mandar las 7 preguntas al cliente", "El mensaje está listo en la sección Cliente. Prioridad: ticket y condiciones del financiamiento.", "Jhombis", true], ["Auditar electricalservicesolutionspa.com", "/audit-landing desde una red con acceso (en este entorno no abre): headline de paneles, CTN, formulario corto, prueba social, velocidad móvil y Tag.", "PMM", true], ["Web: lo que tiene que mostrar", "Residencial + comercial, bloque de financiamiento visible con CTA a Pure Finance Group, \"40+ years\", CTN (412) 666-9290 y formulario a chris@electrical-service-solutions.com. Sin dirección.", "PMM", true], ["Conversión de llamada", "CTN (412) 666-9290 como recurso de llamada y conversión en la cuenta 384-080-6970, probada. Sin tracking no se lanza.", "PMM", true], ["Volumen real por zona", "Keyword Planner con los 4 ZIP + Monroeville para las keywords de paneles. Semrush no tiene datos a nivel ciudad.", "PMM", false], ["Negativas del nicho", "Todo lo que no es panel: iluminación, tomas, ventiladores, EV, generadores, cableado, DIY, precios de referencia y la empresa de luz local.", "PMM", false], ["Estrategia de ChatGPT", "El enlace no abre desde el entorno: pegar el contenido para cruzarlo en /strategy.", "Jhombis", false]];
+  const steps = [["✓ Hecho 20-oct: brief + Welcome call + pauta", "Área (4 ZIP + Monroeville), solo paneles, horario 7 días, financiamiento, 40+ años, email del formulario, pauta $1,293.75 y web electricalservicesolutionspa.com. Brief al 61%.", "PMM", false], ["✓ Hecho 20-oct: competencia y benchmark", "/competitors: ningún electricista local pujando en paneles (solo Angi y HomeAdvisor). /benchmark-interno: 5 cuentas, CPL objetivo inicial de $100–150, ~9 prospectos/mes en el base.", "PMM", false], ["✓ Hecho 20-oct: estrategia v1 (con supuestos)", "1 campaña Search, 4 grupos, 42 keywords, tope $15, 122 negativas de nicho (0 choques) y 4 RSA. Supuestos: sin auditoría de la web, sin ticket y sin volumen por ZIP.", "PMM", false], ["Mandar las 7 preguntas al cliente", "El mensaje está listo en la sección Cliente. Prioridad: ticket y condiciones del financiamiento.", "Jhombis", true], ["Auditar electricalservicesolutionspa.com", "/audit-landing desde una red con acceso (en este entorno no abre): headline de paneles, CTN, formulario corto, prueba social, velocidad móvil y Tag.", "PMM", true], ["Web: lo que tiene que mostrar", "Residencial + comercial, bloque de financiamiento visible con CTA a Pure Finance Group, \"40+ years\", CTN (412) 666-9290 y formulario a chris@electrical-service-solutions.com. Sin dirección.", "PMM", true], ["Conversión de llamada", "CTN (412) 666-9290 como recurso de llamada y conversión en la cuenta 384-080-6970, probada. Sin tracking no se lanza.", "PMM", true], ["Volumen real por zona", "Keyword Planner con los 4 ZIP + Monroeville para las keywords de paneles. Semrush no tiene datos a nivel ciudad.", "PMM", false], ["Aprobar negativas y correr /roadmap", "Revisar las 122 negativas propuestas (se aplican con /negatives) y pasar la estrategia a fechas y condiciones con /roadmap.", "Jhombis", false], ["Estrategia de ChatGPT", "El enlace no abre desde el entorno: pegar el contenido para cruzarlo en /strategy.", "Jhombis", false]];
   if ($('steps')) $('steps').innerHTML = steps.map((s,i)=>`
     <div class="step"><span class="n">${String(i+1).padStart(2,'0')}</span>
       <div><b>${esc(s[0])}</b><p class="d">${esc(s[1])}</p></div>
       <div class="tags">${s[3]?'<span class="b-flag" title="Bloqueante">B</span>':''}<span class="who">${esc(s[2])}</span></div>
     </div>`).join('');
 
+  /* Ad groups: [nombre, fase activa (F1 = activo), [keywords], volumen/mes, landing] */
+  const ACTIVE = 'F1';
+  const ags = [["Panel Upgrade", "F1", ["electrical panel upgrade", "electrical panel replacement", "breaker box replacement", "electrical panel upgrade near me", "panel upgrade", "zinsco panel replacement"], "~44,300", "/panel-upgrades"], ["Service Upgrade", "F1", ["electrical service upgrade", "200 amp panel upgrade", "electrical service change", "meter base replacement", "100 amp to 200 amp upgrade"], "~2,800", "/service-upgrade"], ["Fuse Box", "F1", ["fuse box replacement", "replace fuse box", "replace fuse box with breaker panel", "fuse panel replacement"], "~2,000", "/panel-upgrades"], ["Commercial Panel", "F1", ["commercial electrical panel upgrade", "commercial electrical panel", "commercial electrical service upgrade"], "~350", "/commercial"]];
+  if ($('agrows')) $('agrows').innerHTML = ags.map(a=>`
+    <tr><td><b>${esc(a[0])}</b></td><td><span class="chip ${a[1]===ACTIVE?'st-run':'st-pause'}">${a[1]===ACTIVE?a[1]+' activo':a[1]+' en pausa'}</span></td>
+    <td>${a[2].map(k=>`<span class="kw">${esc(k)}</span>`).join('')}</td><td class="r num">${esc(a[3])}</td><td class="mono">${esc(a[4])}</td></tr>`).join('');
+
+  /* H1 por ad group: [grupo, H1 del RSA, alternativas…]; pool de headlines y descripciones (se muestra el largo de cada una) */
+  const h1 = [["Panel Upgrade", "Electrical Panel Upgrades", "Panel Replacement Experts", "Breaker Box Replacement"], ["Service Upgrade", "Electrical Service Upgrades", "200 Amp Service Upgrades", "Meter & Service Change-Outs"], ["Fuse Box", "Fuse Box Replacement", "Fuse Box To Breaker Panel", "Replace Your Old Fuse Box"], ["Commercial Panel", "Commercial Panel Upgrades", "Restaurant & Retail Panels", "Dental & Medical Offices"]];
+  if ($('h1rows')) $('h1rows').innerHTML = h1.map(r=>`<tr><td><b>${esc(r[0])}</b></td><td>${r.slice(1).map(x=>`${esc(x)} <span class="lenc">${x.startsWith('{KeyWord:')?x.length-10:x.length}</span>`).join('<br>')}</td></tr>`).join('');
+  const pool = ["40+ Years Of Experience", "Financing Available", "Electrical Panel Specialists", "Panel & Service Upgrades", "Residential & Commercial", "Open 7 Days A Week", "Bethel Park & Mt. Lebanon", "Upper St. Clair & McCandless", "Serving Monroeville, PA", "Ask About Financing Options", "Call Now To Schedule", "Upgrade To Modern Breakers"];
+  if ($('pool')) $('pool').innerHTML = pool.map(x=>`<li>${esc(x)} <span class="lenc">${x.length}</span></li>`).join('');
+  const descs = ["Electrical panel and service upgrades by a contractor with 40+ years of experience.", "Financing available on panel and service upgrades. Ask us about your options today.", "Serving Bethel Park, Upper St. Clair, Mt. Lebanon, McCandless/North Hills & Monroeville.", "Open 7 days: Mon-Fri 9am-9pm, Sat-Sun 9am-5pm. Call or request your quote online."];
+  if ($('descs')) $('descs').innerHTML = descs.map(x=>`<li style="margin:4px 0">${esc(x)} <span class="lenc">${x.length}</span></li>`).join('');
+
+  /* Negativas por categoría: [categoría, cantidad, color] */
+  const negs = [["Lo que el cliente no hace", 30, "var(--red)"], ["Competidores y agregadores", 27, "var(--orange)"], ["Precio e información", 18, "var(--purple)"], ["Panel no eléctrico", 16, "var(--sky)"], ["Producto y compra", 11, "var(--purple)"], ["Genéricas de electricista", 7, "var(--yellow)"], ["Empresa de luz", 7, "var(--red)"], ["Empleo y formación", 6, "var(--muted)"]];
+  const negMax = Math.max(...negs.map(n=>n[1]), 1);
+  if ($('negbars')) $('negbars').innerHTML = negs.map(n=>`<div class="negbar"><span>${esc(n[0])}</span><div class="t"><i style="width:${n[1]/negMax*100}%; --c:${n[2]}"></i></div><b class="num" style="text-align:right">${n[1]}</b></div>`).join('');
+
   /* Checklist (espejo de checklist.md): [fase, ítem, responsable, done | part | todo, bloqueante] */
-  const CL = [["F0", "Brief investigado (/investigar-cliente)", "PMM", "done", false], ["F0", "Welcome call volcada al brief (área, servicios, horario, financiamiento)", "PMM", "done", false], ["F0", "CTN (412) 666-9290 en CallFire con reenvío probado", "PMM", "done", false], ["F0", "Pauta: $1,293.75/mes (57.5% de $2,250)", "Jhombis", "done", false], ["F0", "Web: electricalservicesolutionspa.com", "Jhombis", "done", false], ["F0", "Competencia (/competitors) y benchmark interno (/benchmark-interno)", "PMM", "done", false], ["F0", "Ticket (residencial / comercial), margen y tasa de cierre → CPL máximo", "Cliente", "todo", true], ["F0", "Condiciones del financiamiento y qué se puede decir en anuncios", "Cliente", "todo", true], ["F0", "Auditar electricalservicesolutionspa.com (/audit-landing)", "PMM", "todo", true], ["F0", "Conversión de llamada del CTN configurada y probada", "PMM", "todo", true], ["F0", "Licencia (número y municipio) y seguro", "Cliente", "todo", false], ["F0", "Quién contesta las emergencias / nocturno; capacidad de trabajos/mes", "Cliente", "todo", false], ["F0", "Acceso de gestor al GBP y teléfono publicado", "Cliente", "todo", false], ["F0", "Qué hacer con el dominio anterior electrical-service-solutions.com", "Cliente", "todo", false], ["F0", "Pegar la estrategia de ChatGPT", "Jhombis", "todo", false], ["F0", "Volumen de paneles en los 4 ZIP + Monroeville (Keyword Planner)", "PMM", "todo", false]];
+  const CL = [["F0", "Brief investigado (/investigar-cliente)", "PMM", "done", false], ["F0", "Welcome call volcada al brief (área, servicios, horario, financiamiento)", "PMM", "done", false], ["F0", "CTN (412) 666-9290 en CallFire con reenvío probado", "PMM", "done", false], ["F0", "Pauta: $1,293.75/mes (57.5% de $2,250)", "Jhombis", "done", false], ["F0", "Web: electricalservicesolutionspa.com", "Jhombis", "done", false], ["F0", "Competencia (/competitors) y benchmark interno (/benchmark-interno)", "PMM", "done", false], ["F0", "Estrategia v1 con supuestos (/strategy)", "PMM", "done", false], ["F0", "Aplicar lista universal + 122 negativas de nicho (/negatives, con aprobación)", "PMM", "todo", true], ["F0", "Ticket (residencial / comercial), margen y tasa de cierre → CPL máximo", "Cliente", "todo", true], ["F0", "Condiciones del financiamiento y qué se puede decir en anuncios", "Cliente", "todo", true], ["F0", "Auditar electricalservicesolutionspa.com (/audit-landing)", "PMM", "todo", true], ["F0", "Conversión de llamada del CTN configurada y probada", "PMM", "todo", true], ["F0", "Licencia (número y municipio) y seguro", "Cliente", "todo", false], ["F0", "Quién contesta las emergencias / nocturno; capacidad de trabajos/mes", "Cliente", "todo", false], ["F0", "Acceso de gestor al GBP y teléfono publicado", "Cliente", "todo", false], ["F0", "Qué hacer con el dominio anterior electrical-service-solutions.com", "Cliente", "todo", false], ["F0", "Pegar la estrategia de ChatGPT", "Jhombis", "todo", false], ["F0", "Volumen de paneles en los 4 ZIP + Monroeville (Keyword Planner)", "PMM", "todo", false]];
   const PHT = {"F0": "Brief, web y medición"};
   let fWho='Todos', fSt='Todos';
   const whoOpts=['Todos','PMM','Cliente','Jhombis'], stOpts=['Todos','Pendientes','Bloqueantes','Hechos'];

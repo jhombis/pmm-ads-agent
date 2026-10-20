@@ -1,0 +1,56 @@
+keyword,vol_us,cpc_us,intencion,ad_group,match,fase_o_decision,fuente,nota
+electrical panel upgrade,14800,10.53,comercial,Panel Upgrade,EXACT+PHRASE,F1,"Semrush us (nacional), 2026-10-19/20",
+electrical panel replacement,9900,8.12,comercial,Panel Upgrade,EXACT+PHRASE,F1,"Semrush us (nacional), 2026-10-19/20",
+electric panel upgrade,4400,10.05,comercial,Panel Upgrade,PHRASE,F1,"Semrush us (nacional), 2026-10-19/20",
+panel upgrade,3600,9.65,comercial (ambigua),Panel Upgrade,PHRASE,F1,"Semrush us (nacional), 2026-10-19/20","""panel"" sin ""electrical"": se filtra con negativas de panel no eléctrico"
+electrical panel installation,2400,10.11,comercial,Panel Upgrade,PHRASE,F1,"Semrush us (nacional), 2026-10-19/20",
+breaker box replacement,2400,8.12,comercial,Panel Upgrade,EXACT+PHRASE,F1,"Semrush us (nacional), 2026-10-19/20",
+electrical panel upgrade near me,1900,18.5,comercial alta,Panel Upgrade,EXACT+PHRASE,F1,"Semrush us (nacional), 2026-10-19/20",CPC alto: lo limita el tope
+electrical panel replacement near me,1000,15.52,comercial alta,Panel Upgrade,EXACT+PHRASE,F1,"Semrush us (nacional), 2026-10-19/20",
+breaker panel replacement,1000,8.78,comercial,Panel Upgrade,PHRASE,F1,"Semrush us (nacional), 2026-10-19/20",
+panel upgrade near me,720,36.67,comercial alta (ambigua),Panel Upgrade,PHRASE,F1,"Semrush us (nacional), 2026-10-19/20",CPC $36.67 > tope: casi no va a servir; vigilar search terms
+circuit breaker panel replacement,480,4.82,comercial,Panel Upgrade,PHRASE,F1,"Semrush us (nacional), 2026-10-19/20",
+electrician for panel upgrade,390,,comercial,Panel Upgrade,PHRASE,F1,"Semrush us (nacional), 2026-10-19/20",CPC sin dato en Semrush
+main panel upgrade,260,10.11,comercial,Panel Upgrade,PHRASE,F1,"Semrush us (nacional), 2026-10-19/20",
+breaker box upgrade,260,6.27,comercial,Panel Upgrade,PHRASE,F1,"Semrush us (nacional), 2026-10-19/20",
+breaker panel upgrade,170,8.48,comercial,Panel Upgrade,PHRASE,F1,"Semrush us (nacional), 2026-10-19/20",
+electric panel replacement near me,140,20.49,comercial alta,Panel Upgrade,PHRASE,F1,"Semrush us (nacional), 2026-10-19/20",
+circuit breaker panel upgrade,140,9.82,comercial,Panel Upgrade,PHRASE,F1,"Semrush us (nacional), 2026-10-19/20",
+panel upgrade electrician,110,14.78,comercial,Panel Upgrade,PHRASE,F1,"Semrush us (nacional), 2026-10-19/20",
+electrical box replacement,110,8.82,comercial,Panel Upgrade,PHRASE,F1,"Semrush us (nacional), 2026-10-19/20",
+zinsco panel replacement,90,9.15,"comercial (panel peligroso, ticket alto)",Panel Upgrade,PHRASE,F1,"Semrush us (nacional), 2026-10-19/20",No negar marcas de panel (reconciliación PMM 23-sep)
+federal pacific panel replacement,40,7.32,"comercial (panel peligroso, ticket alto)",Panel Upgrade,PHRASE,F1,"Semrush us (nacional), 2026-10-19/20",
+fpe panel replacement,20,8.59,comercial,Panel Upgrade,PHRASE,F1,"Semrush us (nacional), 2026-10-19/20",
+subpanel installation,480,6.06,comercial,Panel Upgrade,PHRASE,F2 si el cliente confirma,"Semrush us (nacional), 2026-10-19/20","¿Instala subpaneles? Es trabajo de panel, pero de ticket menor: confirmar"
+sub panel installation,390,6.06,comercial,Panel Upgrade,PHRASE,F2 si el cliente confirma,"Semrush us (nacional), 2026-10-19/20",
+electrical service upgrade,1300,9.29,comercial,Service Upgrade,EXACT+PHRASE,F1,"Semrush us (nacional), 2026-10-19/20",Sin anunciantes en Semrush (competitors.md)
+electrical service upgrade near me,320,,comercial alta,Service Upgrade,PHRASE,F1,"Semrush us (nacional), 2026-10-19/20",CPC sin dato
+200 amp panel upgrade,210,6.72,comercial,Service Upgrade,EXACT+PHRASE,F1,"Semrush us (nacional), 2026-10-19/20",
+upgrade electrical service,210,10.76,comercial,Service Upgrade,PHRASE,F1,"Semrush us (nacional), 2026-10-19/20",
+electrical service change,170,7.99,comercial,Service Upgrade,PHRASE,F1,"Semrush us (nacional), 2026-10-19/20","= ""service change-out"" del brief"
+200 amp service upgrade,140,5.25,comercial,Service Upgrade,PHRASE,F1,"Semrush us (nacional), 2026-10-19/20",
+upgrade to 200 amp service,140,5.7,comercial,Service Upgrade,PHRASE,F1,"Semrush us (nacional), 2026-10-19/20",
+meter base replacement,260,7.47,comercial,Service Upgrade,PHRASE,F1,"Semrush us (nacional), 2026-10-19/20",Parte del change-out
+100 amp to 200 amp upgrade,50,6.08,comercial,Service Upgrade,PHRASE,F1,"Semrush us (nacional), 2026-10-19/20",
+400 amp service upgrade,40,3.88,comercial,Service Upgrade,PHRASE,F1,"Semrush us (nacional), 2026-10-19/20",
+200 amp service,720,3.56,mixta (mucho DIY / precio),Service Upgrade,—,Descartada,"Semrush us (nacional), 2026-10-19/20","Sin verbo de servicio: trae ""200 amp service wire size"", ""cost"". Se cubre con ""200 amp service upgrade"""
+fuse box replacement,1600,6.25,comercial,Fuse Box,EXACT+PHRASE,F1,"Semrush us (nacional), 2026-10-19/20",
+replace fuse box,260,5.26,comercial,Fuse Box,PHRASE,F1,"Semrush us (nacional), 2026-10-19/20",
+fuse box replacement near me,70,,comercial alta,Fuse Box,PHRASE,F1,"Semrush us (nacional), 2026-10-19/20",CPC sin dato
+replace fuse box with breaker panel,50,8.1,comercial,Fuse Box,PHRASE,F1,"Semrush us (nacional), 2026-10-19/20",
+fuse panel replacement,30,4.93,comercial,Fuse Box,PHRASE,F1,"Semrush us (nacional), 2026-10-19/20",
+fuse box to breaker box,20,,comercial,Fuse Box,PHRASE,F1,"Semrush us (nacional), 2026-10-19/20",
+commercial electrical panel,260,3.14,comercial B2B (mixta),Commercial Panel,PHRASE,F1,"Semrush us (nacional), 2026-10-19/20","Puede traer compra del producto: negativas ""for sale"", ""price"", ""supplier"""
+commercial electrical panel upgrade,70,10.08,comercial B2B,Commercial Panel,EXACT+PHRASE,F1,"Semrush us (nacional), 2026-10-19/20",2 anunciantes nacionales (competitors.md)
+commercial electrical service upgrade,20,,comercial B2B,Commercial Panel,PHRASE,F1,"Semrush us (nacional), 2026-10-19/20",
+commercial panel replacement,0,,comercial B2B,Commercial Panel,PHRASE,F1,"Semrush us (nacional), 2026-10-19/20",Sin volumen en Semrush; se deja por intención
+commercial electrician near me,4400,24.4,"comercial, cualquier trabajo",—,—,Descartada F1,"Semrush us (nacional), 2026-10-19/20","Trae iluminación, tomas, TI: el cliente solo hace paneles. F2: prueba en exacta si el grupo comercial no imprime"
+commercial electrical contractor near me,320,13.65,"comercial, cualquier trabajo",—,—,Descartada F1,"Semrush us (nacional), 2026-10-19/20",Igual que la anterior
+electrical panel upgrade cost,1300,6.76,precio / informativa,—,—,Descartada,"Semrush us (nacional), 2026-10-19/20",No se puja; el benchmark muestra $67.74 en precio con 0 conversiones
+electrical panel replacement cost,2400,5.98,precio / informativa,—,—,Descartada,"Semrush us (nacional), 2026-10-19/20",
+panel upgrade cost,320,7.28,precio / informativa,—,—,Descartada,"Semrush us (nacional), 2026-10-19/20",
+electrical financing,260,1.96,financiera / informativa,—,—,Descartada,"Semrush us (nacional), 2026-10-19/20","El financiamiento va en el mensaje, no en la segmentación"
+electrician pittsburgh,590,10.21,comercial general,—,—,Descartada,"Semrush us (nacional), 2026-10-19/20",El cliente solo quiere paneles (brief)
+pittsburgh electrician,320,10.21,comercial general,—,—,Descartada,"Semrush us (nacional), 2026-10-19/20",
+electrician pittsburgh pa,260,11.74,comercial general,—,—,Descartada,"Semrush us (nacional), 2026-10-19/20",
+electrical service solutions,20,3.57,marca (genérica),—,—,Descartada,"Semrush us (nacional), 2026-10-19/20",Sin búsqueda de marca real (brief)
