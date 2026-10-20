@@ -1,0 +1,345 @@
+# Negativas — Electrical Service Solutions (384-080-6970) — 2026-10-20 — /negatives init
+# Formato: término | match | nivel | fuente
+# Estado: PROPUESTAS, sin aplicar. La cuenta no tiene campañas todavía. Se aplican al crear la campaña (/build-campaign),
+#   con aprobación de Jhombis: Windsor push_negative_keywords (solo nivel campaña o ad group) o Google Ads Editor (data/2026-10-20-negatives-editor.csv).
+#   Nivel "cuenta" = lista compartida "PMM Universal". Windsor no crea listas compartidas: si se aplica por Windsor, va a nivel campaña.
+# Totales: cuenta 167 · campaña 136 · ad group 8 · excluidas por choque 11
+# Validación: 0 choques contra las 42 keywords activas de F1 (data/keywords.csv) ni contra las keywords de cada ad group.
+
+# --- Excluidas por choque con los servicios del cliente (no se aplican) ---
+# free — La web ofrece "Get A Free Quote" (playbook §6.5)
+# for free — Mismo motivo que free: el cliente da cotización gratis
+# no cost — "no cost quote" es un lead: el cliente da cotización gratis
+# utility — Choca con "utility room panel" y coordinación con la empresa de luz; se usan "utility bill" y "utility company"
+# utilities — Igual que utility
+# leviton — Leviton fabrica load centers: "leviton panel replacement" es lead
+# siemens — Marca de panel: "siemens panel replacement" es un lead (reconciliación PMM 23-sep)
+# eaton — Marca de panel (reconciliación PMM 23-sep); se niega solo "eaton find a contractor"
+# zinsco — Panel peligroso: "zinsco panel replacement" es keyword activa
+# sylvania — Panel Sylvania/Zinsco: lead de reemplazo
+# not working — "breaker panel not working" es un lead de reemplazo
+# --- Revisadas y mantenidas ---
+# permit — El cliente tramita permisos. Las búsquedas de permiso son trámites o DIY ("electrical permit pittsburgh"): se mantiene
+# code — "electrical code panel clearance" es DIY: se mantiene
+# insurance claim — El texto comercial habla de "insurance finding", no de reclamos: se mantiene
+# part — "part" suelto es raro en búsquedas de servicio: se mantiene
+# parts — Se mantiene: quien busca "panel parts" compra repuestos
+# equipment — Se mantiene: "electrical equipment" es compra
+# what size — "what size panel do I need" es informativa: se mantiene
+
+# --- Nivel cuenta ---
+job | PHRASE | cuenta | universal: Empleo
+jobs | PHRASE | cuenta | universal: Empleo
+hiring | PHRASE | cuenta | universal: Empleo
+career | PHRASE | cuenta | universal: Empleo
+careers | PHRASE | cuenta | universal: Empleo
+salary | PHRASE | cuenta | universal: Empleo
+salaries | PHRASE | cuenta | universal: Empleo
+wage | PHRASE | cuenta | universal: Empleo
+wages | PHRASE | cuenta | universal: Empleo
+apprentice | PHRASE | cuenta | universal: Empleo
+apprenticeship | PHRASE | cuenta | universal: Empleo
+resume | PHRASE | cuenta | universal: Empleo
+vacancy | PHRASE | cuenta | universal: Empleo
+vacancies | PHRASE | cuenta | universal: Empleo
+employment | PHRASE | cuenta | universal: Empleo
+recruit | PHRASE | cuenta | universal: Empleo
+recruiter | PHRASE | cuenta | universal: Empleo
+work from home | PHRASE | cuenta | universal: Empleo
+internship | PHRASE | cuenta | universal: Empleo
+empleo | PHRASE | cuenta | universal: Empleo
+trabajo | PHRASE | cuenta | universal: Empleo
+trabajos | PHRASE | cuenta | universal: Empleo
+vacante | PHRASE | cuenta | universal: Empleo
+vacantes | PHRASE | cuenta | universal: Empleo
+salario | PHRASE | cuenta | universal: Empleo
+sueldo | PHRASE | cuenta | universal: Empleo
+hoja de vida | PHRASE | cuenta | universal: Empleo
+curriculum | PHRASE | cuenta | universal: Empleo
+contratación | PHRASE | cuenta | universal: Empleo
+practicante | PHRASE | cuenta | universal: Empleo
+pasantía | PHRASE | cuenta | universal: Empleo
+how to | PHRASE | cuenta | universal: Educación / DIY / información
+how do i | PHRASE | cuenta | universal: Educación / DIY / información
+diy | PHRASE | cuenta | universal: Educación / DIY / información
+tutorial | PHRASE | cuenta | universal: Educación / DIY / información
+course | PHRASE | cuenta | universal: Educación / DIY / información
+courses | PHRASE | cuenta | universal: Educación / DIY / información
+class | PHRASE | cuenta | universal: Educación / DIY / información
+classes | PHRASE | cuenta | universal: Educación / DIY / información
+training | PHRASE | cuenta | universal: Educación / DIY / información
+certification | PHRASE | cuenta | universal: Educación / DIY / información
+certificate | PHRASE | cuenta | universal: Educación / DIY / información
+school | PHRASE | cuenta | universal: Educación / DIY / información
+degree | PHRASE | cuenta | universal: Educación / DIY / información
+license exam | PHRASE | cuenta | universal: Educación / DIY / información
+study | PHRASE | cuenta | universal: Educación / DIY / información
+learn | PHRASE | cuenta | universal: Educación / DIY / información
+guide | PHRASE | cuenta | universal: Educación / DIY / información
+manual | PHRASE | cuenta | universal: Educación / DIY / información
+pdf | PHRASE | cuenta | universal: Educación / DIY / información
+wikipedia | PHRASE | cuenta | universal: Educación / DIY / información
+definition | PHRASE | cuenta | universal: Educación / DIY / información
+meaning | PHRASE | cuenta | universal: Educación / DIY / información
+what is | PHRASE | cuenta | universal: Educación / DIY / información
+youtube | PHRASE | cuenta | universal: Educación / DIY / información
+como hacer | PHRASE | cuenta | universal: Educación / DIY / información
+cómo hacer | PHRASE | cuenta | universal: Educación / DIY / información
+curso | PHRASE | cuenta | universal: Educación / DIY / información
+cursos | PHRASE | cuenta | universal: Educación / DIY / información
+clase | PHRASE | cuenta | universal: Educación / DIY / información
+clases | PHRASE | cuenta | universal: Educación / DIY / información
+capacitación | PHRASE | cuenta | universal: Educación / DIY / información
+certificación | PHRASE | cuenta | universal: Educación / DIY / información
+escuela | PHRASE | cuenta | universal: Educación / DIY / información
+universidad | PHRASE | cuenta | universal: Educación / DIY / información
+aprender | PHRASE | cuenta | universal: Educación / DIY / información
+guía | PHRASE | cuenta | universal: Educación / DIY / información
+que es | PHRASE | cuenta | universal: Educación / DIY / información
+qué es | PHRASE | cuenta | universal: Educación / DIY / información
+significado | PHRASE | cuenta | universal: Educación / DIY / información
+freebie | PHRASE | cuenta | universal: Gratis / barato extremo
+cheapest | PHRASE | cuenta | universal: Gratis / barato extremo
+donation | PHRASE | cuenta | universal: Gratis / barato extremo
+donate | PHRASE | cuenta | universal: Gratis / barato extremo
+volunteer | PHRASE | cuenta | universal: Gratis / barato extremo
+gratis | PHRASE | cuenta | universal: Gratis / barato extremo
+gratuito | PHRASE | cuenta | universal: Gratis / barato extremo
+regalado | PHRASE | cuenta | universal: Gratis / barato extremo
+donación | PHRASE | cuenta | universal: Gratis / barato extremo
+voluntario | PHRASE | cuenta | universal: Gratis / barato extremo
+parts | PHRASE | cuenta | universal: Productos y repuestos
+part | PHRASE | cuenta | universal: Productos y repuestos
+supply | PHRASE | cuenta | universal: Productos y repuestos
+supplies | PHRASE | cuenta | universal: Productos y repuestos
+tool | PHRASE | cuenta | universal: Productos y repuestos
+tools | PHRASE | cuenta | universal: Productos y repuestos
+kit | PHRASE | cuenta | universal: Productos y repuestos
+kits | PHRASE | cuenta | universal: Productos y repuestos
+equipment | PHRASE | cuenta | universal: Productos y repuestos
+wholesale | PHRASE | cuenta | universal: Productos y repuestos
+manufacturer | PHRASE | cuenta | universal: Productos y repuestos
+amazon | PHRASE | cuenta | universal: Productos y repuestos
+ebay | PHRASE | cuenta | universal: Productos y repuestos
+walmart | PHRASE | cuenta | universal: Productos y repuestos
+home depot | PHRASE | cuenta | universal: Productos y repuestos
+lowes | PHRASE | cuenta | universal: Productos y repuestos
+for sale | PHRASE | cuenta | universal: Productos y repuestos
+buy | PHRASE | cuenta | universal: Productos y repuestos
+rental | PHRASE | cuenta | universal: Productos y repuestos
+rent | PHRASE | cuenta | universal: Productos y repuestos
+repuesto | PHRASE | cuenta | universal: Productos y repuestos
+repuestos | PHRASE | cuenta | universal: Productos y repuestos
+herramienta | PHRASE | cuenta | universal: Productos y repuestos
+herramientas | PHRASE | cuenta | universal: Productos y repuestos
+mayorista | PHRASE | cuenta | universal: Productos y repuestos
+fabricante | PHRASE | cuenta | universal: Productos y repuestos
+mercadolibre | PHRASE | cuenta | universal: Productos y repuestos
+homecenter | PHRASE | cuenta | universal: Productos y repuestos
+venta | PHRASE | cuenta | universal: Productos y repuestos
+comprar | PHRASE | cuenta | universal: Productos y repuestos
+alquiler | PHRASE | cuenta | universal: Productos y repuestos
+review | PHRASE | cuenta | universal: Investigación / reseñas de terceros
+reviews | PHRASE | cuenta | universal: Investigación / reseñas de terceros
+complaint | PHRASE | cuenta | universal: Investigación / reseñas de terceros
+complaints | PHRASE | cuenta | universal: Investigación / reseñas de terceros
+scam | PHRASE | cuenta | universal: Investigación / reseñas de terceros
+lawsuit | PHRASE | cuenta | universal: Investigación / reseñas de terceros
+forum | PHRASE | cuenta | universal: Investigación / reseñas de terceros
+reddit | PHRASE | cuenta | universal: Investigación / reseñas de terceros
+quora | PHRASE | cuenta | universal: Investigación / reseñas de terceros
+yelp | PHRASE | cuenta | universal: Investigación / reseñas de terceros
+bbb | PHRASE | cuenta | universal: Investigación / reseñas de terceros
+reseña | PHRASE | cuenta | universal: Investigación / reseñas de terceros
+reseñas | PHRASE | cuenta | universal: Investigación / reseñas de terceros
+queja | PHRASE | cuenta | universal: Investigación / reseñas de terceros
+quejas | PHRASE | cuenta | universal: Investigación / reseñas de terceros
+estafa | PHRASE | cuenta | universal: Investigación / reseñas de terceros
+demanda | PHRASE | cuenta | universal: Investigación / reseñas de terceros
+foro | PHRASE | cuenta | universal: Investigación / reseñas de terceros
+government | PHRASE | cuenta | universal: Gobierno / legal / seguros
+city of | PHRASE | cuenta | universal: Gobierno / legal / seguros
+county | PHRASE | cuenta | universal: Gobierno / legal / seguros
+permit | PHRASE | cuenta | universal: Gobierno / legal / seguros
+code | PHRASE | cuenta | universal: Gobierno / legal / seguros
+regulation | PHRASE | cuenta | universal: Gobierno / legal / seguros
+insurance claim | PHRASE | cuenta | universal: Gobierno / legal / seguros
+lawyer | PHRASE | cuenta | universal: Gobierno / legal / seguros
+attorney | PHRASE | cuenta | universal: Gobierno / legal / seguros
+gobierno | PHRASE | cuenta | universal: Gobierno / legal / seguros
+alcaldía | PHRASE | cuenta | universal: Gobierno / legal / seguros
+permiso | PHRASE | cuenta | universal: Gobierno / legal / seguros
+licencia | PHRASE | cuenta | universal: Gobierno / legal / seguros
+normativa | PHRASE | cuenta | universal: Gobierno / legal / seguros
+abogado | PHRASE | cuenta | universal: Gobierno / legal / seguros
+porn | PHRASE | cuenta | universal: Contenido adulto / irrelevante
+xxx | PHRASE | cuenta | universal: Contenido adulto / irrelevante
+sex | PHRASE | cuenta | universal: Contenido adulto / irrelevante
+nude | PHRASE | cuenta | universal: Contenido adulto / irrelevante
+game | PHRASE | cuenta | universal: Contenido adulto / irrelevante
+games | PHRASE | cuenta | universal: Contenido adulto / irrelevante
+meme | PHRASE | cuenta | universal: Contenido adulto / irrelevante
+funny | PHRASE | cuenta | universal: Contenido adulto / irrelevante
+lyrics | PHRASE | cuenta | universal: Contenido adulto / irrelevante
+song | PHRASE | cuenta | universal: Contenido adulto / irrelevante
+movie | PHRASE | cuenta | universal: Contenido adulto / irrelevante
+film | PHRASE | cuenta | universal: Contenido adulto / irrelevante
+juego | PHRASE | cuenta | universal: Contenido adulto / irrelevante
+juegos | PHRASE | cuenta | universal: Contenido adulto / irrelevante
+película | PHRASE | cuenta | universal: Contenido adulto / irrelevante
+canción | PHRASE | cuenta | universal: Contenido adulto / irrelevante
+letra | PHRASE | cuenta | universal: Contenido adulto / irrelevante
+hourly rate | PHRASE | cuenta | universal: Precio de referencia
+cost per hour | PHRASE | cuenta | universal: Precio de referencia
+average cost | PHRASE | cuenta | universal: Precio de referencia
+how much does | PHRASE | cuenta | universal: Precio de referencia
+price list | PHRASE | cuenta | universal: Precio de referencia
+license requirements | PHRASE | cuenta | universal: Precio de referencia
+
+# --- Nivel campaña ---
+electrician salary | PHRASE | campaña | universal: electricistas
+electrician school | PHRASE | campaña | universal: electricistas
+journeyman | PHRASE | campaña | universal: electricistas
+license lookup | PHRASE | campaña | universal: electricistas
+electrician license | PHRASE | campaña | universal: electricistas
+electrical license | PHRASE | campaña | universal: electricistas
+electrical supply | PHRASE | campaña | universal: electricistas
+wire for sale | PHRASE | campaña | universal: electricistas
+circuit breaker for sale | PHRASE | campaña | universal: electricistas
+electrical engineer | PHRASE | campaña | universal: electricistas
+solar panels for sale | PHRASE | campaña | universal: electricistas
+nec code | PHRASE | campaña | universal: electricistas
+cooperative | PHRASE | campaña | universal: electricistas
+electric cooperative | PHRASE | campaña | universal: electricistas
+electric coop | PHRASE | campaña | universal: electricistas
+pay bill | PHRASE | campaña | universal: electricistas
+pay my bill | PHRASE | campaña | universal: electricistas
+outage | PHRASE | campaña | universal: electricistas
+power outage | PHRASE | campaña | universal: electricistas
+power company | PHRASE | campaña | universal: electricistas
+electricity provider | PHRASE | campaña | universal: electricistas
+supercharger | PHRASE | campaña | universal: electricistas
+ccs | PHRASE | campaña | universal: electricistas
+adapter | PHRASE | campaña | universal: electricistas
+generac | PHRASE | campaña | universal: electricistas
+lutron | PHRASE | campaña | universal: electricistas
+harbor breeze | PHRASE | campaña | universal: electricistas
+minka | PHRASE | campaña | universal: electricistas
+casablanca | PHRASE | campaña | universal: electricistas
+intermatic | PHRASE | campaña | universal: electricistas
+menards | PHRASE | campaña | universal: electricistas
+wire size | PHRASE | campaña | universal: electricistas
+gauge | PHRASE | campaña | universal: electricistas
+diagram | PHRASE | campaña | universal: electricistas
+what size | PHRASE | campaña | universal: electricistas
+why does | PHRASE | campaña | universal: electricistas
+reset | PHRASE | campaña | universal: electricistas
+utility bill | PHRASE | campaña | universal (combinada en lugar de utility)
+utility company | PHRASE | campaña | universal (combinada en lugar de utility)
+generator | PHRASE | campaña | nicho (strategy.md)
+generators | PHRASE | campaña | nicho (strategy.md)
+ev charger | PHRASE | campaña | nicho (strategy.md)
+car charger | PHRASE | campaña | nicho (strategy.md)
+tesla | PHRASE | campaña | nicho (strategy.md)
+wall connector | PHRASE | campaña | nicho (strategy.md)
+lighting | PHRASE | campaña | nicho (strategy.md)
+light fixture | PHRASE | campaña | nicho (strategy.md)
+recessed lights | PHRASE | campaña | nicho (strategy.md)
+outlet | PHRASE | campaña | nicho (strategy.md)
+outlets | PHRASE | campaña | nicho (strategy.md)
+gfci | PHRASE | campaña | nicho (strategy.md)
+light switch | PHRASE | campaña | nicho (strategy.md)
+ceiling fan | PHRASE | campaña | nicho (strategy.md)
+doorbell | PHRASE | campaña | nicho (strategy.md)
+smoke detector | PHRASE | campaña | nicho (strategy.md)
+thermostat | PHRASE | campaña | nicho (strategy.md)
+electrical inspection | EXACT | campaña | nicho (strategy.md)
+home inspection | EXACT | campaña | nicho (strategy.md)
+home inspector | PHRASE | campaña | nicho (strategy.md)
+rewire | PHRASE | campaña | nicho (strategy.md)
+rewiring | PHRASE | campaña | nicho (strategy.md)
+wiring repair | PHRASE | campaña | nicho (strategy.md)
+troubleshooting | PHRASE | campaña | nicho (strategy.md)
+electrical repair | PHRASE | campaña | nicho (strategy.md)
+handyman | PHRASE | campaña | nicho (strategy.md)
+solar company | PHRASE | campaña | nicho (strategy.md)
+solar installer | PHRASE | campaña | nicho (strategy.md)
+security camera | PHRASE | campaña | nicho (strategy.md)
+low voltage | PHRASE | campaña | nicho (strategy.md)
+data cabling | PHRASE | campaña | nicho (strategy.md)
+solar panel | EXACT | campaña | nicho (strategy.md)
+solar panels | EXACT | campaña | nicho (strategy.md)
+solar panel installation | PHRASE | campaña | nicho (strategy.md)
+solar panels for home | PHRASE | campaña | nicho (strategy.md)
+garage door panel | PHRASE | campaña | nicho (strategy.md)
+wall panel | PHRASE | campaña | nicho (strategy.md)
+wall panels | PHRASE | campaña | nicho (strategy.md)
+control panel | PHRASE | campaña | nicho (strategy.md)
+panel heater | PHRASE | campaña | nicho (strategy.md)
+fence panel | PHRASE | campaña | nicho (strategy.md)
+door panel | PHRASE | campaña | nicho (strategy.md)
+siding panel | PHRASE | campaña | nicho (strategy.md)
+acoustic panel | PHRASE | campaña | nicho (strategy.md)
+ceiling panel | PHRASE | campaña | nicho (strategy.md)
+tv panel | PHRASE | campaña | nicho (strategy.md)
+radiant panel | PHRASE | campaña | nicho (strategy.md)
+cost to | PHRASE | campaña | nicho (strategy.md)
+cost of | PHRASE | campaña | nicho (strategy.md)
+how much | PHRASE | campaña | nicho (strategy.md)
+calculator | PHRASE | campaña | nicho (strategy.md)
+estimate calculator | PHRASE | campaña | nicho (strategy.md)
+wiring diagram | PHRASE | campaña | nicho (strategy.md)
+should i | PHRASE | campaña | nicho (strategy.md)
+tripped breaker | PHRASE | campaña | nicho (strategy.md)
+labeling | PHRASE | campaña | nicho (strategy.md)
+numbering | PHRASE | campaña | nicho (strategy.md)
+supplier | PHRASE | campaña | nicho (strategy.md)
+breaker for sale | PHRASE | campaña | nicho (strategy.md)
+panel for sale | PHRASE | campaña | nicho (strategy.md)
+used | PHRASE | campaña | nicho (strategy.md)
+duquesne light | PHRASE | campaña | nicho (strategy.md)
+duquesne | PHRASE | campaña | nicho (strategy.md)
+electric company | PHRASE | campaña | nicho (strategy.md)
+mr electric | PHRASE | campaña | nicho (strategy.md)
+mister sparky | PHRASE | campaña | nicho (strategy.md)
+cw electric | PHRASE | campaña | nicho (strategy.md)
+cw electrical | PHRASE | campaña | nicho (strategy.md)
+c w electric | PHRASE | campaña | nicho (strategy.md)
+hufnagel | PHRASE | campaña | nicho (strategy.md)
+luminous electric | PHRASE | campaña | nicho (strategy.md)
+prodigy electrical | PHRASE | campaña | nicho (strategy.md)
+pricelight | PHRASE | campaña | nicho (strategy.md)
+bk electrical | PHRASE | campaña | nicho (strategy.md)
+brighter side electric | PHRASE | campaña | nicho (strategy.md)
+young electric | PHRASE | campaña | nicho (strategy.md)
+gumpher | PHRASE | campaña | nicho (strategy.md)
+rodgers electric | PHRASE | campaña | nicho (strategy.md)
+mcguire electric | PHRASE | campaña | nicho (strategy.md)
+jw electric | PHRASE | campaña | nicho (strategy.md)
+the electrical company | PHRASE | campaña | nicho (strategy.md)
+south hills electric | EXACT | campaña | nicho (strategy.md)
+south hills electric llc | EXACT | campaña | nicho (strategy.md)
+south hills heating and plumbing | EXACT | campaña | nicho (strategy.md)
+angi | PHRASE | campaña | nicho (strategy.md)
+homeadvisor | PHRASE | campaña | nicho (strategy.md)
+home advisor | PHRASE | campaña | nicho (strategy.md)
+thumbtack | PHRASE | campaña | nicho (strategy.md)
+local electrician bids | PHRASE | campaña | nicho (strategy.md)
+eaton find a contractor | PHRASE | campaña | nicho (strategy.md)
+electrician | EXACT | campaña | nicho (strategy.md)
+electricians | EXACT | campaña | nicho (strategy.md)
+electrician near me | EXACT | campaña | nicho (strategy.md)
+electrician pittsburgh | EXACT | campaña | nicho (strategy.md)
+pittsburgh electrician | EXACT | campaña | nicho (strategy.md)
+electrician pittsburgh pa | EXACT | campaña | nicho (strategy.md)
+electrical contractor | EXACT | campaña | nicho (strategy.md)
+
+# --- Nivel ad group (reparto entre grupos) ---
+fuse | PHRASE | ad group: Panel Upgrade | estrategia (reparto entre grupos)
+commercial | PHRASE | ad group: Panel Upgrade | estrategia (reparto entre grupos)
+fuse | PHRASE | ad group: Service Upgrade | estrategia (reparto entre grupos)
+commercial | PHRASE | ad group: Service Upgrade | estrategia (reparto entre grupos)
+commercial | PHRASE | ad group: Fuse Box | estrategia (reparto entre grupos)
+residential | PHRASE | ad group: Commercial Panel | estrategia (reparto entre grupos)
+home | PHRASE | ad group: Commercial Panel | estrategia (reparto entre grupos)
+house | PHRASE | ad group: Commercial Panel | estrategia (reparto entre grupos)

@@ -98,6 +98,7 @@ Detalle en `data/keywords.csv`.
   - Compra de producto, empleo y Duquesne Light.
   - 27 entradas de competidores y agregadores (South Hills Electric solo en exacta, porque "South Hills" es la zona del cliente).
   - Genéricas de electricista en exacta.
+- **Lista final aprobada** (/negatives init, 20-oct; `data/2026-10-20-negatives.txt`): 167 de cuenta + 136 de campaña (bloque de electricistas + 97 de nicho únicas) + 8 por ad group. 11 excluidas por choque (free, for free, no cost, utility/utilities, marcas de panel, not working). Se aplican con Windsor al crear la campaña.
 - **Validación**: 0 choques contra las 42 keywords activas de F1 (comprobado por script). "solar" no se niega suelto: un upgrade de panel para solar es un lead válido.
 
 ## Copy

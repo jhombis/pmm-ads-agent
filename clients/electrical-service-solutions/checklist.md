@@ -28,8 +28,7 @@ Generado por /roadmap (20-oct-2026) desde `knowledge/checklists/setup-cuenta.md`
 - [ ] (PMM) **B** /thank-you/ con noindex y Redirect en Elementor (Actions After Submit), sin quitar el Email a chris@; envío de prueba avisando al cliente
 - [ ] (PMM) **B** Formulario de 4 campos (o botón "Get A Free Quote") debajo del H1 en las páginas residencial y comercial; contacto con 4 campos
 - [ ] (PMM) **B** Facturación configurada y verificada en 384-080-6970
-- [ ] (PMM) **B** Lista universal PMM a nivel de cuenta, sin "free" (la web ofrece Free Quote)
-- [ ] (PMM) **B** 123 negativas de nicho (`data/negatives-nicho.txt`) con /negatives y aprobación de Jhombis
+- [x] (Jhombis) Negativas aprobadas (/negatives init, 20-oct): 167 de cuenta + 136 de campaña + 8 por ad group, 11 excluidas por choque (log/2026-10-20.md)
 - [ ] (PMM) **B** Aplicación automática de recomendaciones desactivada
 - [ ] (PMM) **B** Volumen de los 4 ZIP + Monroeville en Keyword Planner (desde la interfaz), con confirmación de que el tope de $15 y la pauta se pueden gastar
 - [ ] (PMM) Zona horaria de la cuenta confirmada (para convertir la programación)
@@ -51,6 +50,7 @@ Generado por /roadmap (20-oct-2026) desde `knowledge/checklists/setup-cuenta.md`
 - [ ] (PMM) Ubicación: Presencia en ZIP 15102, 15241, 15228, 15237 + Monroeville; resto de países excluido
 - [ ] (PMM) Programación L–V 9:00–21:00 y S–D 9:00–17:00, hora del Este (convertida a la zona de la cuenta)
 - [ ] (PMM) Puja: Max. clics con tope de CPC de $15
+- [ ] (PMM) **B** Negativas aplicadas con Windsor (data/2026-10-20-negatives.txt) y leídas de vuelta; lista compartida "PMM Universal" creada en la interfaz
 - [ ] (PMM) 42 keywords en frase + exacta en los 4 grupos (data/keywords.csv)
 - [ ] (PMM) 1 RSA por grupo, H1 pinneado, 15 headlines y 4 descripciones, fuerza "Buena" o más (data/ads-search-paneles.md)
 - [ ] (PMM) Extensiones: llamada al CTN, sitelinks (Financing cuando exista /financing/), 8 callouts, snippet de servicios
