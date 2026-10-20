@@ -4,11 +4,11 @@ slug: electrical-service-solutions
 pais: US
 idioma: EN
 nicho: electricista (solo paneles eléctricos)
-actualizado: 2026-10-19
+actualizado: 2026-10-20
 estado: onboarding
 origen: investigar-cliente + welcome call
 customer_id: 384-080-6970
-completitud: 57%
+completitud: 61%
 call_tracking: callfire
 tracking_number: "(412) 666-9290"
 tracking_destino: "(412) 377-7502"
@@ -20,12 +20,14 @@ plan_en: https://claude.ai/artifact/1mULJUUTdeY8nYccq25HJU
 
 > Versión 2 (19-oct-2026). La primera fue un brief investigado sin entrevista (30%). Esta suma los datos de la **Welcome call** que pasó Jhombis, marcados `(cliente)`. Lo que cambia: el área de servicio queda confirmada (4 ZIP del sur y norte de Pittsburgh + Monroeville), el cliente **solo quiere paneles eléctricos**, residencial y comercial, y **el financiamiento es el diferenciador**.
 >
-> Completitud 57% = 15.5 de 27 campos (los datos completos cuentan 1 y los parciales 0.5).
+> Actualización 20-oct-2026 (Jhombis): **pauta = 57.5% del contrato = $1,293.75/mes**, y **la web ya es `electricalservicesolutionspa.com`**.
+>
+> Completitud 61% = 16.5 de 27 campos (los datos completos cuentan 1 y los parciales 0.5).
 >
 > No se pudo abrir ninguno de los enlaces de la llamada (web actual, página de financiamiento, GBP, estrategia de ChatGPT, logo): la red del entorno los bloquea. Lo que dependa de ellos queda PENDIENTE de revisar desde otro equipo.
 
 ## Negocio
-- URL: **PMM va a comprar `electricalservicesolutionspa.com`** para la web nueva `(cliente)`. Hoy no tiene datos en Semrush (dominio sin uso) `(Semrush)`. Sitio actual: el email del negocio usa `electrical-service-solutions.com` y el logo está en `static.wixstatic.com` → probablemente hay un sitio en Wix (inferido: dominio del email y hosting del logo). No se pudo abrir (DNS bloqueado en el entorno) y Semrush tampoco tiene datos de ese dominio. Qué pasa con ese sitio (redirigir, mantener): PENDIENTE
+- URL: **https://www.electricalservicesolutionspa.com**: es la web del negocio y la URL final de los anuncios (Jhombis, 20-oct). Semrush todavía no tiene datos del dominio (sin tráfico orgánico ni de pago registrado) `(Semrush)`. No se pudo abrir desde el entorno (DNS bloqueado): el contenido, el tracking y la velocidad quedan para `/audit-landing` desde una red con acceso. Dominio anterior: el email del negocio usa `electrical-service-solutions.com` y el logo está en `static.wixstatic.com` → probablemente hay un sitio en Wix (inferido: dominio del email y hosting del logo). No se pudo abrir (DNS bloqueado en el entorno) y Semrush tampoco tiene datos de ese dominio. Qué pasa con ese sitio (redirigir, mantener): PENDIENTE
 - Base y área de servicio: **sin dirección publicada en la web** `(cliente)`, así que es un negocio de área de servicio. Zonas objetivo desde el 21-sep-2026 `(cliente)`:
   | ZIP / ciudad | Zona |
   |---|---|
@@ -48,9 +50,8 @@ plan_en: https://claude.ai/artifact/1mULJUUTdeY8nYccq25HJU
 
 ## Objetivo y economía
 - Objetivo primario: **llamadas** (y clics a la web) solo de paneles `(cliente)`
-- Presupuesto mensual: **contrato $2,250/mes** (inferido: nombre de la cuenta en el MCC, "($2250 Electrical Service Solutions)") `(MCC)`. **Pauta real: PENDIENTE**
-  - Referencia, no dato: con la proporción de otra cuenta de electricista del MCC (55% del contrato a pauta) serían ~$1,240/mes (~$41/día)
-  - CPC de las keywords de paneles en US: $8.12–18.50, con "panel upgrade near me" a $36.67 `(Semrush)`. Con ~$14 de CPC salen **~3 clics/día, ~90 al mes**. Para los 4 ZIP + Monroeville, Semrush no tiene volumen a nivel ciudad (las variantes "+ pittsburgh" no tienen datos) `(Semrush)`: el volumen real de estas zonas hay que sacarlo de Keyword Planner con la geo exacta
+- Presupuesto mensual: **pauta $1,293.75/mes = 57.5% del contrato de $2,250** (Jhombis) → **$42.56/día** (÷ 30.4). El contrato sale del nombre de la cuenta en el MCC, "($2250 Electrical Service Solutions)" `(MCC)`. Margen para escalar: PENDIENTE
+  - CPC de las keywords de paneles en US: $8.12–18.50, con "panel upgrade near me" a $36.67 `(Semrush)`. Con ~$14 de CPC salen **~3 clics/día, ~92 al mes** ($42.56 ÷ $14 = 3.04 clics/día). Para los 4 ZIP + Monroeville, Semrush no tiene volumen a nivel ciudad (las variantes "+ pittsburgh" no tienen datos) `(Semrush)`: el volumen real de estas zonas hay que sacarlo de Keyword Planner con la geo exacta
   - Límite de fragmentación ($600–1,500): 1 campaña Search con 3–5 grupos (residencial, cambio de servicio / amperaje, comercial, reemplazo de breaker o fusibles)
 - Ticket promedio / margen: PENDIENTE (residencial y comercial por separado)
 - Capacidad (leads o trabajos/mes): PENDIENTE
@@ -83,8 +84,8 @@ Competidores que aparecen en la búsqueda orgánica de electricistas en Pittsbur
 Competidores que reconoce el cliente: PENDIENTE
 
 ## Web y tracking
-- Plataforma / quién edita: **web nueva hecha por PMM** en `electricalservicesolutionspa.com`, dominio que va a comprar PMM `(cliente)`. Si se monta en GoHighLevel o en el dominio del cliente → `/landing-ghl`; si va en Plesk → `/landing` (decisión de Jhombis). Logo: `https://static.wixstatic.com/media/93030c_285126cb7318486f97bd66977c60f367~mv2.png` `(cliente)`; no se pudo descargar desde el entorno
-- Tag/GA4: PENDIENTE: se instala en la web nueva. Conversiones en la cuenta: PENDIENTE (sin API)
+- Plataforma / quién edita: **web de PMM** en `electricalservicesolutionspa.com`, ya en el aire (Jhombis, 20-oct). CMS: PENDIENTE (no se pudo abrir). Si hacen falta landings por grupo (residencial / comercial), van en el mismo dominio con `/landing-ghl`. Logo: `https://static.wixstatic.com/media/93030c_285126cb7318486f97bd66977c60f367~mv2.png` `(cliente)`; no se pudo descargar desde el entorno
+- Tag/GA4: PENDIENTE: verificar en la web con /audit-landing (Google Tag, conversión de llamada al CTN y de formulario). Conversiones en la cuenta: PENDIENTE (sin API)
 - Formulario → destino: **`chris@electrical-service-solutions.com`**, que es el email para la web `(cliente)`. Campos y página de gracias: se definen en /landing
 - Mensajes obligatorios en la web `(cliente)`: **financiamiento visible** (bloque propio + CTA al enlace de Pure Finance Group), "40+ years of experience" y solo servicios de paneles. Sin dirección publicada
 - Requisitos de política: licencia y seguro: PENDIENTE (en PA la licencia es municipal: pedir el número y quién la emitió). **Financiamiento en anuncios**: si el anuncio menciona condiciones concretas (cuota, plazo, "0% APR"), tiene que coincidir con lo que dice la página del financiador y llevar sus condiciones. Sin condiciones confirmadas, el anuncio dice solo "Financing Available"
@@ -93,10 +94,11 @@ Competidores que reconoce el cliente: PENDIENTE
 - Aplica: **PENDIENTE**. Electrician califica en LSA US y el GBP existe. Faltan el GBP verificado, la licencia, el seguro y la disposición al background check. Ojo: LSA no permite elegir "solo paneles" con la misma precisión que Search; se reevalúa en una fase posterior
 
 ## Pendientes
-- [ ] **Bloqueante**: pauta mensual real del contrato de $2,250
+- [x] Pauta mensual: $1,293.75 (57.5% de $2,250), 20-oct
+- [x] Web: electricalservicesolutionspa.com, 20-oct
 - [ ] **Bloqueante**: ticket promedio (residencial y comercial), margen y tasa de cierre → CPL máximo
 - [ ] **Bloqueante**: condiciones del financiamiento (montos, plazo, APR o promoción, monto mínimo) y qué se puede decir en los anuncios
-- [ ] **Bloqueante**: comprar `electricalservicesolutionspa.com` y decidir dónde se monta la web (`/landing` en Plesk o `/landing-ghl`)
+- [ ] **Bloqueante**: auditar la web (`/audit-landing`): que cumpla el estándar 11 (headline de paneles, CTN, formulario corto, financiamiento visible, prueba social, velocidad móvil) y que tenga el Tag. Desde este entorno no abre: hace falta red con acceso
 - [ ] **Bloqueante**: conversión de llamada del CTN (412) 666-9290 en la cuenta 384-080-6970, probada
 - [ ] Licencia (número y municipio) y seguro, para la web y para LSA
 - [ ] Emergencias / nocturno: quién contesta después de las 21:00 (L–V) y de las 17:00 (fines de semana); capacidad de trabajos/mes
@@ -113,7 +115,8 @@ Competidores que reconoce el cliente: PENDIENTE
 | Google Ads API (cuenta 384-080-6970) | sin credenciales (no hay `google-ads.yaml` ni variables `GOOGLE_ADS_*`) | — |
 | Windsor `google_ads` | ok. Cuenta presente en el conector, **0 filas** en 2 años | data/windsor-2026-10-19.json |
 | Web actual / financiamiento / GBP / ChatGPT / logo | **red bloqueada** (WebFetch: ENOTFOUND; shell: CONNECT 403). Hay que habilitar Network access en Full o agregar los dominios a la lista permitida | — |
-| PageSpeed | no aplica (la web nueva no existe) y sin `PAGESPEED_API_KEY` | — |
+| Web electricalservicesolutionspa.com | red bloqueada (ENOTFOUND). Semrush sin datos del dominio | — |
+| PageSpeed | sin `PAGESPEED_API_KEY` y con la red bloqueada | — |
 | Semrush | ok: volúmenes de Pittsburgh y de paneles (US). Sin datos de los dominios `electrical-service-solutions.com` ni `electricalservicesolutionspa.com`, ni de paneles + ciudad | data/semrush-keywords-pittsburgh-2026-10-19.csv, data/semrush-keywords-paneles-2026-10-19.csv |
 | Windsor `google_my_business` | ficha no conectada | — |
 | CallFire | ok. CTN (412) 666-9290 → (412) 377-7502; 2 llamadas de prueba | data/callfire-lease.json, data/calls-callfire-2025-07-20_2026-10-19.json, data/calls-summary.json |
@@ -123,7 +126,7 @@ Competidores que reconoce el cliente: PENDIENTE
 ## Hallazgos que ya importan para la estrategia
 - **Un solo servicio, muchas negativas**: el cliente solo quiere paneles. La lista de negativas del nicho tiene que cortar todo lo demás de electricista general: iluminación, tomas, ventiladores, timbres, cableado, EV, generadores y troubleshooting, además de bricolaje y precios de referencia ("panel upgrade cost": 320/mes; "electrical panel replacement cost": 2,400/mes) `(Semrush)` y la empresa de luz local (en Pittsburgh, Duquesne Light; verificar en los search terms). No se puja por "electrician" a secas.
 - **Geo en tres bolsas pequeñas**: 4 ZIP + Monroeville, con Presencia. Semrush no tiene volumen de paneles a nivel ciudad, y en las ciudades solo aparecen 20 búsquedas/mes de "electrician + ciudad" `(Semrush)`. Riesgo: que el límite sea la demanda y no el presupuesto. Confirmar con Keyword Planner antes de fijar la pauta.
-- **El CPC de paneles es alto**: $8–18, y "panel upgrade near me" a $36.67 `(Semrush)`. El tope de Max. clics tiene que ser realista o la campaña no sale. Con la pauta de referencia salen ~90 clics al mes.
+- **El CPC de paneles es alto**: $8–18, y "panel upgrade near me" a $36.67 `(Semrush)`. El tope de Max. clics tiene que ser realista o la campaña no sale. Con $1,293.75/mes salen ~92 clics al mes.
 - **Financiamiento = diferenciador obligatorio**: callout "Financing Available", sitelink a la página de financiamiento y un bloque visible en la landing. Las condiciones concretas solo van al anuncio cuando el cliente las confirme.
 - **Residencial y comercial son búsquedas distintas**: el comercial (retail, restaurantes, oficinas, dental, médico, supermercados, industrial) busca "commercial electrical panel upgrade" (70/mes) o "commercial electrician near me" (4,400/mes, $24.40) `(Semrush)`. Merece su propio grupo y su propia sección en la landing.
 - **El call tracking ya funciona** y se configura en Verizon/CallFire. Lo que falta es la conversión de llamada en Ads y la web nueva.
@@ -131,11 +134,10 @@ Competidores que reconoce el cliente: PENDIENTE
 ## Preguntas para el cliente (solo lo que no se pudo investigar)
 Para copiar en un correo o WhatsApp, ordenadas por lo que bloquea:
 
-1. Del contrato de $2,250/mes, ¿cuánto va a pauta en Google Ads?
-2. ¿Cuánto cobran en promedio por un upgrade de panel residencial y por uno comercial? ¿Qué margen les queda y de cada 10 cotizaciones cuántas cierran?
-3. Financiamiento (Pure Finance Group): ¿desde qué monto, a qué plazos, con qué tasa o promoción (p. ej., 0% por X meses)? ¿Qué podemos decir textualmente en anuncios y en la web?
-4. ¿Cuál es el número de licencia, qué municipio la emitió y tienen seguro? ¿Los 40+ años son de la empresa o del dueño?
-5. Emergencias y horario nocturno: ¿quién contesta después de las 9 pm entre semana y después de las 5 pm los fines de semana? ¿Cuántos trabajos de panel pueden tomar al mes?
-6. Google Business Profile: ¿nos dan acceso de gestor? ¿Qué teléfono tiene publicado?
-7. El sitio actual (electrical-service-solutions.com): ¿lo mantienen, lo redirigimos al dominio nuevo o se da de baja? ¿Tienen fotos de trabajos de paneles y reseñas que podamos usar?
-8. ¿Qué prefieren, residencial o comercial? ¿Tienen un monto mínimo de trabajo? ¿A qué competidores ven en estas zonas?
+1. ¿Cuánto cobran en promedio por un upgrade de panel residencial y por uno comercial? ¿Qué margen les queda y de cada 10 cotizaciones cuántas cierran?
+2. Financiamiento (Pure Finance Group): ¿desde qué monto, a qué plazos, con qué tasa o promoción (p. ej., 0% por X meses)? ¿Qué podemos decir textualmente en anuncios y en la web?
+3. ¿Cuál es el número de licencia, qué municipio la emitió y tienen seguro? ¿Los 40+ años son de la empresa o del dueño?
+4. Emergencias y horario nocturno: ¿quién contesta después de las 9 pm entre semana y después de las 5 pm los fines de semana? ¿Cuántos trabajos de panel pueden tomar al mes?
+5. Google Business Profile: ¿nos dan acceso de gestor? ¿Qué teléfono tiene publicado?
+6. El sitio actual (electrical-service-solutions.com): ¿lo mantienen, lo redirigimos al dominio nuevo o se da de baja? ¿Tienen fotos de trabajos de paneles y reseñas que podamos usar?
+7. ¿Qué prefieren, residencial o comercial? ¿Tienen un monto mínimo de trabajo? ¿A qué competidores ven en estas zonas?

@@ -2,7 +2,7 @@
 cliente: Electrical Service Solutions
 slug: electrical-service-solutions
 fase_actual: 0
-actualizado: 2026-10-19
+actualizado: 2026-10-20
 ---
 # Checklist — Electrical Service Solutions
 (El checklist completo lo genera /roadmap a partir de knowledge/checklists/setup-cuenta.md.)
@@ -11,12 +11,13 @@ actualizado: 2026-10-19
 - [x] Brief investigado (/investigar-cliente, 19-oct)
 - [x] Welcome call volcada al brief: área (4 ZIP + Monroeville), solo paneles, horario, financiamiento, 40+ años, email del formulario (19-oct)
 - [x] CTN (412) 666-9290 en CallFire con reenvío probado a (412) 377-7502
+- [x] Pauta: $1,293.75/mes (57.5% de $2,250) — Jhombis, 20-oct
+- [x] Web: electricalservicesolutionspa.com — Jhombis, 20-oct
 
 ## Pendientes bloqueantes
-- [ ] Pauta mensual real del contrato de $2,250 — Cliente
 - [ ] Ticket promedio (residencial / comercial), margen y tasa de cierre → CPL máximo — Cliente
 - [ ] Condiciones del financiamiento y qué se puede decir en anuncios — Cliente
-- [ ] Comprar electricalservicesolutionspa.com y decidir dónde se monta la web (/landing o /landing-ghl) — PMM
+- [ ] Auditar electricalservicesolutionspa.com (/audit-landing): estándar 11, Tag, financiamiento visible — PMM
 - [ ] Conversión de llamada del CTN configurada en 384-080-6970 y probada — PMM
 
 ## Pendientes no bloqueantes
