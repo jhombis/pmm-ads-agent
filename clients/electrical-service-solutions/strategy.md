@@ -118,8 +118,8 @@ Detalle en `data/ads-search-paneles.md`. 1 RSA por grupo (pauta <$1,500/mes, est
 | Acción | Tipo | Cómo | Estado |
 |---|---|---|---|
 | Calls from ads | Primaria | Extensión de llamada con el CTN (412) 666-9290 y desvío de Google; duración mínima 60 s | PENDIENTE (bloqueante) |
-| Formulario enviado | Primaria | Redirect de Elementor a /thank-you/ + Google Tag; el envío llega a chris@electrical-service-solutions.com | PENDIENTE: hoy no hay tag ni página de gracias (audit-site.md) |
-| Clic en tel: de la web | Secundaria | Evento del Google Tag sobre el enlace al CTN | PENDIENTE |
+| Formulario enviado | Primaria | Evento `gtm.formSubmit` (submit_success de Elementor) en GTM-58K232MX → conversión de AW-18460546953; el envío llega a chris@electrical-service-solutions.com | Configurada por Jhombis (20-oct); falta el envío de prueba con Tag Assistant |
+| Clic en tel: de la web | Secundaria | Evento sobre el enlace al CTN (Google Tag / GTM) | Configurada por Jhombis (20-oct); falta probarla |
 | Llamadas calificadas | Fuente de verdad | CallFire: llamante único con ≥60 s contestados (`knowledge/call-tracking.md`) | Listo: el CTN reenvía y se contesta |
 
 Todo se prueba con Tag Assistant antes de gastar (estándar 7). Como el CTN se publica en la web y en los anuncios, CallFire mezcla las dos fuentes. La parte de Ads sale de "Calls from ads".
@@ -131,14 +131,14 @@ Auditoría del 20-oct (`audit-site.md`): 10/22, **requiere ajustes antes de lanz
 |---|---|---|---|
 | /residential-electric-service-panel-upgrades-replacements/ (Panel Upgrade, Service Upgrade, Fuse Box) | Sí. H1 correcto; formulario a 2,821 px | PMM: subir el formulario o un botón debajo del H1 | **Sí** (formulario arriba) |
 | /commercial-electric-service-panel-upgrades-replacements/ (Commercial Panel) | Sí. H1 correcto; formulario a 2,622 px | PMM: igual que la residencial | **Sí** (formulario arriba) |
-| Google Tag + conversiones (formulario y clic en tel:) en todo el sitio | No: Site Kit instalado sin conectar | PMM | **Sí** |
-| /thank-you/ (Redirect del formulario de Elementor) | No | PMM | **Sí** |
+| Google Tag + conversiones (formulario y clic en tel:) en todo el sitio | Sí: AW-18460546953 + GTM-58K232MX (20-oct). Conversiones configuradas, sin probar | PMM | Sí, hasta la prueba con Tag Assistant |
+| /thank-you/ | Ya no hace falta: el formulario se mide por evento | — | No |
 | /financing/ (destino del sitelink; hoy el menú sale a purefinancegroup.com) | No | PMM | No (sin ella, el sitelink de financiamiento se omite) |
 
 ## Presupuesto por fase
 | Fase | Total/mes | Por campaña | Condición para pasar |
 |---|---|---|---|
-| F0 · Medición y web | $0 | — | Calls from ads + formulario probados con Tag Assistant; bloqueantes de audit-site.md resueltos (tag, /thank-you/, formulario arriba); universal + nicho aplicadas; volumen por ZIP revisado en Keyword Planner |
+| F0 · Medición y web | $0 | — | Calls from ads + formulario probados con Tag Assistant; bloqueantes de audit-site.md resueltos (formulario arriba; tag ✓); universal + nicho aplicadas; volumen por ZIP revisado en Keyword Planner |
 | F1 · Lanzamiento | $1,293.75 | Search Paneles 100% ($42.56/día), Max. clics tope $15 | 30 días corridos, ≥50 clics, search terms limpiados 2 veces, CPL observado |
 | F2 · Optimización | $1,293.75 | Igual; ajuste del tope a D7/D14 y prueba comercial si no imprime | 15+ conversiones/mes 2 meses seguidos con medición limpia (calificadas en CallFire) |
 | F3 · Max. conversiones | $1,293.75 (o más si el cliente escala: PENDIENTE) | Search Paneles 100%, sin tCPA | tCPA solo con ~30 conv. en 30 días, desde el CPA observado. Con esta pauta no llega: pediría $3,000–4,500/mes |
@@ -160,7 +160,7 @@ Auditoría del 20-oct (`audit-site.md`): 10/22, **requiere ajustes antes de lanz
 
 ## Riesgos y supuestos
 - **Demanda**: con 4 ZIP + Monroeville, la pauta puede no gastarse (benchmark: ~5 impresiones/día de paneles en un grupo con más geo). Si a D14 se gasta <60% con cuota de impresiones >80%, se propone al cliente ampliar a ZIP vecinos. No se toca la geo sin su aprobación.
-- **Web con bloqueantes** (audit-site.md): sin Google Tag, sin página de gracias y con el formulario a ~3 pantallas en móvil. F1 no arranca hasta resolverlos (4–5 h de PMM).
+- **Web con un bloqueante** (audit-site.md, revisión 2: 13/22): el tag y las conversiones ya están (falta probarlas), pero el formulario sigue a ~3 pantallas en móvil (~1.5 h de PMM).
 - **CPL sin ticket**: $100–150 es una referencia de cuentas de servicio general. Un panel tiene ticket más alto, así que el CPL aceptable probablemente sea mayor. Se recalcula con margen × cierre × 0.3.
 - **Financiamiento neutralizado**: Mr. Electric y South Hills también lo ofrecen. Sin condiciones concretas, "Financing Available" diferencia poco.
 - **"Panel" ambiguo**: "panel upgrade near me" ($36.67) y "panel upgrade" traen solar, garage y paredes. Lo cubren las negativas y la revisión de search terms a D3, D7 y D14.

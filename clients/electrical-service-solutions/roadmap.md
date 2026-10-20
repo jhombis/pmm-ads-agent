@@ -34,9 +34,9 @@ plan_en: https://claude.ai/artifact/1mULJUUTdeY8nYccq25HJU
 - **Tareas**:
   | Tarea | Responsable | Bloquea |
   |---|---|---|
-  | Google Tag de la cuenta 384-080-6970 en todo el sitio (conectar Site Kit o GTM) | PMM | Sí |
+  | ~~Google Tag en todo el sitio~~ ✅ 20-oct: AW-18460546953 + GTM-58K232MX | Jhombis | — |
   | Conversiones: formulario (primaria), Calls from ads ≥60 s (primaria), clic en tel: (secundaria) | PMM | Sí |
-  | /thank-you/ + Redirect en Elementor (sin quitar el Email a chris@) + envío de prueba avisando al cliente | PMM | Sí |
+  | ~~/thank-you/~~ ya no hace falta (formulario por evento gtm.formSubmit). Envío de prueba avisando al cliente, con Tag Assistant | PMM | Sí |
   | Formulario de 4 campos (o botón "Get A Free Quote") debajo del H1 en las páginas residencial y comercial | PMM | Sí |
   | Facturación de la cuenta 384-080-6970 configurada y verificada (sin dato: la cuenta nunca gastó) | PMM | Sí |
   | Lista universal PMM (sin "free") + 123 negativas de nicho, con /negatives y tu aprobación | PMM | Sí |
@@ -108,8 +108,8 @@ De `audit-site.md` (10/22):
 
 | Ajuste | Fecha | Responsable | Tipo |
 |---|---|---|---|
-| Google Tag + conversiones (formulario, clic en tel:) | 21-oct | PMM | Bloqueante F0 |
-| /thank-you/ + Redirect en Elementor + envío de prueba | 21-oct | PMM | Bloqueante F0 |
+| Google Tag + conversiones (formulario, clic en tel:) | ✅ 20-oct (Jhombis); prueba con Tag Assistant 21-oct | PMM | Bloqueante F0 (la prueba) |
+| /thank-you/ | No hace falta: formulario por evento | — | — |
 | Formulario de 4 campos debajo del H1 (residencial y comercial); contacto con 4 campos | 22-oct | PMM | Bloqueante F0 |
 | Verificar que `www.` redirija al dominio | 22-oct | PMM | F0 (no bloquea) |
 | Página /financing/ en el dominio (destino del sitelink) | 30-oct | PMM | Mejora F2: activa el sitelink |
@@ -132,4 +132,5 @@ De `audit-site.md` (10/22):
 - Comercial: los change-outs se programan con el negocio cerrado (la web lo dice). Sin datos de estacionalidad propia.
 
 ## Historial de cambios
+- 2026-10-20: Jhombis instaló el Google Tag y las conversiones. La web pasa a 13/22; el formulario arriba es el único bloqueante de la web que queda, más la prueba de las conversiones. Fechas sin cambio.
 - 2026-10-20: creado (D0 = 20-oct). Fechas: F0 → 23-oct, lanzamiento 27-oct, D7 03-nov, D14 10-nov, D30 27-nov. F3 a F5 sin fecha por presupuesto.

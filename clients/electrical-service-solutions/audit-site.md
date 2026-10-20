@@ -3,26 +3,31 @@ cliente: Electrical Service Solutions
 slug: electrical-service-solutions
 url: https://electricalservicesolutionspa.com/
 actualizado: 2026-10-20
+revision: 2 (tag y conversiones de Jhombis)
 veredicto: REQUIERE AJUSTES ANTES DE LANZAR
-score: 10/22
+score: 13/22
 ---
 
 # Auditoría de landing — Electrical Service Solutions
 
 ## Veredicto
-El mensaje está bien: especialista en paneles, residencial y comercial, 40+ años, financiamiento y "Free Quote", con una página por servicio y un solo teléfono, el CTN. **Pero no se puede lanzar** porque:
-1. No hay ningún Google Tag.
-2. El formulario no tiene página de gracias medible.
-3. En móvil el formulario queda a ~3 pantallas de scroll en las landings de servicio.
+**Revisión 2 (20-oct, después de que Jhombis instaló el tag y las conversiones): 13/22.**
+- **Resuelto**: el Google Tag está en todas las páginas (AW-18460546953 vía Site Kit + GTM-58K232MX).
+- **Cubierto por evento**: el formulario se mide con el evento `gtm.formSubmit`, que se dispara en el `submit_success` de Elementor. Eso reemplaza la página de gracias (/thank-you/ da 404 y ya no hace falta).
+- **Sigue abierto**:
+  1. **Formulario arriba en móvil**: sigue a 2,821 px (residencial) y 2,622 px (comercial). Es el único bloqueante de la web que queda (~1.5 h).
+  2. **Verificar las conversiones**: googletagmanager.com está bloqueado desde el entorno, así que no se pueden ver los tags de conversión del contenedor. Falta un envío de prueba y un clic en tel: con Tag Assistant, y ver en Google Ads que las acciones pasen a "Activa" o "Registrando conversiones".
 
-Son 4–5 horas de trabajo de PMM en Elementor. No dependen del cliente.
+El mensaje sigue igual de bien: especialista en paneles, residencial y comercial, 40+ años, financiamiento y "Free Quote", con una página por servicio y un solo teléfono, el CTN.
+
+> Revisión 1 (20-oct): 10/22. Sin Google Tag, sin página de gracias y con el formulario a ~3 pantallas.
 
 Fuentes: `data/site-scan.json` (6 páginas), HTML bajado por curl y Playwright en móvil (390×844, red de ~1.6 Mbps con 150 ms de latencia y CPU 4× más lenta, parecido a Lighthouse móvil). No hay `PAGESPEED_API_KEY`, así que **la velocidad es una medición propia, no el score de PageSpeed**. Solo abre el dominio sin `www` (`www.` no resuelve desde el entorno; verificar que redirija).
 
 ## Bloqueantes (resolver en Fase 0)
-- [ ] **Google Tag**: Site Kit by Google 1.189.0 está instalado pero sin conectar. En el HTML solo aparece un `dns-prefetch` a googletagmanager.com, sin ningún ID G-, AW- ni GTM-. Hay que conectar el tag de Google Ads de la cuenta 384-080-6970, ya sea con Site Kit o con GTM, en todas las páginas. — PMM — 1 h
-- [ ] **Conversiones en la web**: (a) envío del formulario por la página de gracias y (b) clic en `tel:4126669290`. Las dos se prueban con Tag Assistant, y la del formulario se registra como primaria. — PMM — 1 h
-- [ ] **Página de gracias**: el formulario es de Elementor Pro (`elementor-form`, sin `action`) y no hay redirección visible. Hay que crear `/thank-you/` con noindex y, en Elementor → Form → Actions After Submit, poner **Redirect** a esa página, sin quitar la acción Email a chris@electrical-service-solutions.com. Después, hacer un envío de prueba (con aviso al cliente) para confirmar que llega el correo. — PMM — 1 h
+- [x] **Google Tag** (resuelto, 20-oct, Jhombis): GT-WBZ5PR4G con `config` de **AW-18460546953** vía Site Kit, más el contenedor **GTM-58K232MX**, en las 6 páginas. Antes: Site Kit by Google 1.189.0 estaba instalado pero sin conectar. En el HTML solo aparece un `dns-prefetch` a googletagmanager.com, sin ningún ID G-, AW- ni GTM-. Hay que conectar el tag de Google Ads de la cuenta 384-080-6970, ya sea con Site Kit o con GTM, en todas las páginas. — PMM — 1 h
+- [ ] **Conversiones en la web**: configuradas por Jhombis (20-oct). En el HTML está el evento `gtm.formSubmit` del formulario de Elementor. **Falta verificarlas**: un envío de prueba (con aviso al cliente) y un clic en `tel:4126669290` con Tag Assistant, y en Google Ads que la conversión del formulario sea **primaria**, que Calls from ads tenga ≥60 s y que el clic en tel: sea secundaria. Desde el entorno no se ve el interior del contenedor GTM. — PMM — 0.5 h
+- [x] **Página de gracias** (ya no hace falta): el formulario se mide por evento (`gtm.formSubmit` en `submit_success`). Antes: el formulario es de Elementor Pro (`elementor-form`, sin `action`) y no hay redirección visible. Hay que crear `/thank-you/` con noindex y, en Elementor → Form → Actions After Submit, poner **Redirect** a esa página, sin quitar la acción Email a chris@electrical-service-solutions.com. Después, hacer un envío de prueba (con aviso al cliente) para confirmar que llega el correo. — PMM — 1 h
 - [ ] **Formulario corto arriba en móvil**: la home no tiene formulario, porque "Get A Free Quote" lleva a /contact-us/. En las páginas residencial y comercial el formulario (Name, Phone, Email, Message + reCAPTCHA) empieza a **2,821 px** y **2,622 px**, con un fold de 844 px. Hay que subirlo justo debajo del H1, o poner un botón "Get A Free Quote" debajo del H1 que salte al formulario. Además, /contact-us/ pide 6 campos, con Property Address obligatorio: se baja a 4 o se deja la dirección opcional. — PMM — 1.5 h
 
 ## Mejoras (Fase 2–3)
@@ -56,9 +61,10 @@ Fuentes: `data/site-scan.json` (6 páginas), HTML bajado por curl y Playwright e
 ## Tracking encontrado
 | Elemento | Estado |
 |---|---|
-| Google Tag (G-/AW-) | **No hay** |
-| GTM | No hay |
-| Site Kit by Google 1.189.0 | Instalado, sin conectar (solo `dns-prefetch`) |
+| Google Tag | **GT-WBZ5PR4G** con `gtag("config", "AW-18460546953")` (Site Kit) en las 6 páginas (20-oct) |
+| GTM | **GTM-58K232MX** en las 6 páginas; evento `gtm.formSubmit` en el `submit_success` de los formularios de Elementor |
+| Site Kit by Google 1.189.0 | Conectado (antes: sin conectar) |
+| Contenido del contenedor GTM | No verificable desde el entorno (googletagmanager.com bloqueado) |
 | Meta Pixel, CallRail, Clarity, Hotjar | No hay |
 | reCAPTCHA | Sí, en todos los formularios |
 | Plataforma | WordPress 7.1.3 + Elementor 4.3.4 + Elementor Pro, tema Hello Elementor |

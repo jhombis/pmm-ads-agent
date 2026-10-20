@@ -15,17 +15,17 @@ Generado por /roadmap (20-oct-2026) desde `knowledge/checklists/setup-cuenta.md`
 - [x] (Jhombis) Pauta: $1,293.75/mes (57.5% de $2,250), 20-oct
 - [x] (Jhombis) Web: electricalservicesolutionspa.com, 20-oct
 - [x] (PMM) Competencia (/competitors) y benchmark interno (/benchmark-interno), 20-oct
-- [x] (PMM) Web auditada (/audit-landing): 10/22, requiere ajustes, 20-oct
+- [x] (PMM) Web auditada (/audit-landing): 10/22, requiere ajustes, 20-oct; revisión 2: 13/22 con el tag, 20-oct
 - [x] (PMM) Estrategia v1.1 (/strategy): 1 campaña, 4 grupos, 42 keywords, tope de CPC $15, 20-oct
 - [x] (PMM) Roadmap con fechas (/roadmap): D0 20-oct, lanzamiento 27-oct, 20-oct
 - [x] (PMM) Cuenta 384-080-6970 en el MCC de PMM (visible en Windsor)
 
 ## Fase 0 — Fundación (bloqueante para lanzar) · 20-oct → 23-oct
-- [ ] (PMM) **B** Google Tag de la cuenta 384-080-6970 en todas las páginas (Site Kit está instalado sin conectar, o GTM)
-- [ ] (PMM) **B** Conversión "Formulario" con /thank-you/, probada con Tag Assistant
-- [ ] (PMM) **B** Conversión "Llamada desde anuncio" con el CTN (412) 666-9290, duración mínima 60 s
-- [ ] (PMM) **B** Conversión "Clic en teléfono" (tel:4126669290) como secundaria
-- [ ] (PMM) **B** /thank-you/ con noindex y Redirect en Elementor (Actions After Submit), sin quitar el Email a chris@; envío de prueba avisando al cliente
+- [x] (Jhombis) Google Tag en todas las páginas: AW-18460546953 (Site Kit) + GTM-58K232MX, verificado en el HTML, 20-oct
+- [ ] (PMM) **B** Conversión "Formulario" por evento gtm.formSubmit (configurada por Jhombis, 20-oct): primaria y probada con un envío de prueba en Tag Assistant
+- [ ] (PMM) **B** Conversión "Llamada desde anuncio" con el CTN (412) 666-9290 (configurada por Jhombis): confirmar duración mínima 60 s y call reporting activo
+- [ ] (PMM) **B** Conversión "Clic en teléfono" (tel:4126669290) (configurada por Jhombis): confirmar que es secundaria y probarla en Tag Assistant
+- [x] (PMM) /thank-you/: ya no hace falta, el formulario se mide por evento gtm.formSubmit (20-oct). Pendiente igual: envío de prueba avisando al cliente para confirmar que llega a chris@
 - [ ] (PMM) **B** Formulario de 4 campos (o botón "Get A Free Quote") debajo del H1 en las páginas residencial y comercial; contacto con 4 campos
 - [ ] (PMM) **B** Facturación configurada y verificada en 384-080-6970
 - [x] (Jhombis) Negativas aprobadas (/negatives init, 20-oct): 167 de cuenta + 136 de campaña + 8 por ad group, 11 excluidas por choque (log/2026-10-20.md)

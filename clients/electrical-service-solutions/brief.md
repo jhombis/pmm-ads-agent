@@ -85,7 +85,7 @@ Competidores que reconoce el cliente: PENDIENTE
 
 ## Web y tracking
 - Plataforma / quién edita: **web de PMM** en `electricalservicesolutionspa.com` (Jhombis, 20-oct): WordPress 7.1.3 + Elementor 4.3.4 + Elementor Pro, tema Hello Elementor `(web)`. Páginas: home, residencial, comercial, about, contacto y privacidad. El menú "Financing" sale a Pure Finance Group `(web)`. Si hacen falta landings por grupo (residencial / comercial), van en el mismo dominio con `/landing-ghl`. Logo: `https://static.wixstatic.com/media/93030c_285126cb7318486f97bd66977c60f367~mv2.png` `(cliente)`; no se pudo descargar desde el entorno
-- Tag/GA4: **no hay**. Site Kit by Google está instalado sin conectar; no hay G-, AW- ni GTM `(web)`. Bloqueante (audit-site.md). Conversiones en la cuenta: PENDIENTE (sin API)
+- Tag/GA4: **sí** desde el 20-oct: Google Tag GT-WBZ5PR4G con AW-18460546953 (Site Kit) + GTM-58K232MX, con evento `gtm.formSubmit` en el formulario `(web)`. Antes no había ninguno. Conversiones en la cuenta: PENDIENTE (sin API)
 - Formulario → destino: **`chris@electrical-service-solutions.com`** `(cliente)`. Formulario de Elementor Pro con Name, Phone, Email y Message + reCAPTCHA en las páginas de servicio, y 6 campos en contacto. No tiene página de gracias `(web)`. Que el envío llegue al correo: PENDIENTE (envío de prueba)
 - Mensajes obligatorios en la web `(cliente)`: **financiamiento visible** (bloque propio + CTA al enlace de Pure Finance Group), "40+ years of experience" y solo servicios de paneles. Sin dirección publicada
 - Requisitos de política: licencia y seguro: PENDIENTE (en PA la licencia es municipal: pedir el número y quién la emitió). **Financiamiento en anuncios**: si el anuncio menciona condiciones concretas (cuota, plazo, "0% APR"), tiene que coincidir con lo que dice la página del financiador y llevar sus condiciones. Sin condiciones confirmadas, el anuncio dice solo "Financing Available"
@@ -99,7 +99,8 @@ Competidores que reconoce el cliente: PENDIENTE
 - [ ] **Bloqueante**: ticket promedio (residencial y comercial), margen y tasa de cierre → CPL máximo
 - [ ] **Bloqueante**: financiamiento: monto mínimo, APR o promoción, y qué se puede decir en los anuncios (los plazos de 7–20 años ya están en la web)
 - [x] Web auditada (`audit-site.md`, 10/22), 20-oct
-- [ ] **Bloqueante**: arreglos de la web: Google Tag + conversiones, /thank-you/ y formulario arriba en las páginas de servicio (audit-site.md; ~4.5 h de PMM)
+- [x] Google Tag + conversiones configuradas (Jhombis, 20-oct)
+- [ ] **Bloqueante**: formulario arriba en las páginas de servicio (~1.5 h) y prueba de las conversiones con Tag Assistant (audit-site.md, revisión 2: 13/22)
 - [ ] **Bloqueante**: conversión de llamada del CTN (412) 666-9290 en la cuenta 384-080-6970, probada
 - [ ] Licencia (número y municipio) y seguro, para la web y para LSA
 - [ ] Emergencias / nocturno: quién contesta después de las 21:00 (L–V) y de las 17:00 (fines de semana); capacidad de trabajos/mes
