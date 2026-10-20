@@ -108,7 +108,7 @@ Detalle en `data/ads-search-paneles.md`. 1 RSA por grupo (pauta <$1,500/mes, est
 - **Headlines compartidas**: 40+ Years Of Experience · Financing Available · Electrical Panel Specialists · Panel & Service Upgrades · Residential & Commercial · Open 7 Days A Week · Bethel Park & Mt. Lebanon · Upper St. Clair & McCandless · Serving Monroeville, PA · Ask About Financing Options · Get A Free Quote · Permits & Inspection Handled.
 - **Extensiones**:
   - Llamada al CTN (412) 666-9290, con el horario del cliente.
-  - 4 sitelinks: Panel Upgrades, Service Upgrades, Commercial Panels y Financing. El de Financing apunta a la sección de financiamiento **de la web**, porque los sitelinks tienen que ser del mismo dominio.
+  - 4 sitelinks con una URL distinta cada uno: Residential Panels, Commercial Panels, Get A Free Quote y About Us. Financing se agrega cuando exista /financing/ en el dominio, porque los sitelinks tienen que ser del mismo dominio.
   - Callouts: 40+ Years Experience, Financing Available, Free Quotes, Permits & Inspection, Open 7 Days, Residential & Commercial, Panel Specialists, Service Change-Outs.
   - Snippet de servicios.
 - **Sí se usa** (lo dice la web): Free Quote, permisos e inspección incluidos, trabajo de noche y fines de semana en comercial, financiamiento "on approved credit".

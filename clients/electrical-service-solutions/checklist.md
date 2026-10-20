@@ -45,6 +45,7 @@ Generado por /roadmap (20-oct-2026) desde `knowledge/checklists/setup-cuenta.md`
 - [ ] (Jhombis) Pegar el contenido de la estrategia de ChatGPT (el enlace no abre desde el entorno)
 
 ## Fase 1 — Lanzamiento Search · 24-oct → 03-nov (activación 27-oct)
+- [x] (PMM) Plan de operaciones y CSV de Google Ads Editor preparados (log/2026-10-20-build-plan.md), 20-oct
 - [ ] (PMM) **B** Campaña ESS · Search · Paneles creada en pausa con /build-campaign y revisada por Jhombis
 - [ ] (PMM) Red: solo Búsqueda; socios y Display apagados; AI Max apagado
 - [ ] (PMM) Ubicación: Presencia en ZIP 15102, 15241, 15228, 15237 + Monroeville; resto de países excluido
@@ -53,8 +54,9 @@ Generado por /roadmap (20-oct-2026) desde `knowledge/checklists/setup-cuenta.md`
 - [ ] (PMM) **B** Negativas aplicadas con Windsor (data/2026-10-20-negatives.txt) y leídas de vuelta; lista compartida "PMM Universal" creada en la interfaz
 - [ ] (PMM) 42 keywords en frase + exacta en los 4 grupos (data/keywords.csv)
 - [ ] (PMM) 1 RSA por grupo, H1 pinneado, 15 headlines y 4 descripciones, fuerza "Buena" o más (data/ads-search-paneles.md)
-- [ ] (PMM) Extensiones: llamada al CTN, sitelinks (Financing cuando exista /financing/), 8 callouts, snippet de servicios
-- [ ] (PMM) URLs finales verificadas: /residential-electric-service-panel-upgrades-replacements/ y /commercial-electric-service-panel-upgrades-replacements/ (200, https, sin redirect)
+- [ ] (PMM) Extensiones: llamada al CTN, 4 sitelinks (Residential, Commercial, Free Quote, About Us; Financing cuando exista /financing/), 8 callouts, snippet de servicios
+- [ ] (PMM) Después de crear: Presencia y socios de búsqueda apagados en la interfaz si se usa Windsor (no los configura)
+- [x] (PMM) URLs finales verificadas (HEAD 200, sin redirect): residencial, comercial, /contact-us/ y /about-us/, 20-oct
 - [ ] (PMM) Presupuesto diario de $42.56
 - [ ] (PMM) **B** Anuncios aprobados por políticas (revisar 24 h después de activar)
 - [ ] (PMM) **B** Primera conversión registrada y al menos 1 llamada real en CallFire

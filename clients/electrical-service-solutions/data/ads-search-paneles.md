@@ -115,11 +115,12 @@
 ## Extensiones
 
 - **Llamada**: CTN (412) 666-9290, con el horario del cliente (L–V 9:00–21:00, S–D 9:00–17:00, hora del Este). Conversión "Calls from ads" ≥60 s
-- **Sitelinks** (mismo dominio: Panel Upgrades → /residential-electric-service-panel-upgrades-replacements/, Service Upgrades → misma página, Commercial Panels → /commercial-electric-service-panel-upgrades-replacements/, Financing → /financing/ cuando exista; hoy el menú sale a Pure Finance Group):
-  - Panel Upgrades: "Residential panel upgrades" / "and replacements"
-  - Service Upgrades: "100 to 200 amp, meter" / "and service change-outs"
-  - Commercial Panels: "Retail, restaurants," / "offices and medical"
-  - Financing: "Financing available on" / "panel and service upgrades"
+- **Sitelinks** (mismo dominio y una URL distinta por sitelink; verificadas el 20-oct: 200 sin redirección):
+  - Residential Panels → /residential-electric-service-panel-upgrades-replacements/: "Panel upgrades & replacements" / "Service change-outs for homes"
+  - Commercial Panels → /commercial-electric-service-panel-upgrades-replacements/: "Retail, restaurants & offices" / "Dental, medical & industrial"
+  - Get A Free Quote → /contact-us/: "Tell us what your panel is doing" / "We'll tell you what it costs"
+  - About Us → /about-us/: "40+ years in the trade" / "Panels are all we do"
+  - Financing → /financing/ cuando exista: "Financing on approved credit" / "Ask about your options" (hoy el menú sale a Pure Finance Group)
 - **Callouts**: 40+ Years Experience · Financing Available · Free Quotes · Permits & Inspection · Open 7 Days · Residential & Commercial · Panel Specialists · Service Change-Outs
 - **Snippet (Services)**: Panel Upgrades, Panel Replacement, Service Upgrades, Fuse Box Replacement, Meter Base Replacement, Commercial Panels
 - **Ubicación**: PENDIENTE (requiere vincular el GBP; el negocio no publica dirección)
