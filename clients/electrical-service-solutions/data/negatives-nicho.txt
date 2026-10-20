@@ -1,7 +1,7 @@
 # Negativas de nicho — Electrical Service Solutions (solo paneles)
 # Nivel campaña, concordancia de frase salvo [exacta]. Se suman a la lista universal PMM (nivel cuenta).
 # Ajustes a la universal para este cliente: NO negar "replace", "panel", "service", "upgrade", "commercial", "breaker", ni marcas de panel (zinsco, federal pacific, siemens, eaton, square d) — reconciliación PMM 23-sep.
-# "free": se mantiene negada mientras no se confirme estimado gratis (si se confirma, quitarla: playbook §6.5).
+# "free": QUITAR de la universal para este cliente: la web ofrece "Get A Free Quote" (audit-site.md, playbook §6.5).
 # "permit" y "code" (universal): se mantienen; "panel upgrade permit" es trámite, no lead.
 
 ## Lo que el cliente no hace (brief)
@@ -22,8 +22,10 @@ ceiling fan
 doorbell
 smoke detector
 thermostat
-electrical inspection
-home inspection
+[electrical inspection]
+[home inspection]
+home inspector
+# ("inspection" no va en frase: "failed inspection panel" es un lead; la web atiende fallas que marca una inspección)
 rewire
 rewiring
 wiring repair

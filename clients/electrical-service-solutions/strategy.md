@@ -3,9 +3,8 @@ cliente: Electrical Service Solutions
 slug: electrical-service-solutions
 pais: US
 actualizado: 2026-10-20
-version: 1
+version: 1.1
 supuestos:
-  - "Sin audit-site.md: la web electricalservicesolutionspa.com no abre desde el entorno. Se asume que cumple el estándar 11 o que se ajusta antes de lanzar; las URLs finales por grupo quedan por confirmar"
   - "Sin ticket, margen ni tasa de cierre: el CPL objetivo sale del benchmark interno ($100–150), no del margen del cliente"
   - "Sin volumen por ZIP: todos los volúmenes son nacionales (Semrush us). El volumen de los 4 ZIP + Monroeville sale de Keyword Planner antes de lanzar"
   - "Zona horaria de la cuenta 384-080-6970 sin confirmar: la programación va en hora del Este del cliente y se convierte al configurar"
@@ -14,7 +13,7 @@ supuestos:
 
 # Estrategia Google Ads — Electrical Service Solutions
 
-> Versión 1, con supuestos. Faltan tres insumos (auditoría de la web, ticket y volumen por ZIP). Cada decisión que depende de ellos dice qué la cambia. Nada de esto se escribe en Google Ads sin aprobación de Jhombis con la lista de cambios a la vista.
+> Versión 1.1 (20-oct): la auditoría de la web ya está hecha (`audit-site.md`, 10/22, requiere ajustes). Quedan dos supuestos: el ticket y el volumen por ZIP. Cada decisión que depende de ellos dice qué la cambia. Nada de esto se escribe en Google Ads sin aprobación de Jhombis con la lista de cambios a la vista.
 
 ## Datos (antes de la estrategia)
 - **Cliente**: contratista eléctrico con 40+ años que **solo quiere trabajos de paneles**: upgrades residenciales y comerciales, y cambio de servicio (brief).
@@ -61,10 +60,10 @@ Configuración: solo red de Búsqueda (sin socios ni Display), rotación optimiz
 ### Campaña: ESS · Search · Paneles
 | Ad group | Keywords (match) | Vol. US/mes | Landing | H1 pinneado |
 |---|---|---|---|---|
-| **Panel Upgrade** | [electrical panel upgrade], [electrical panel replacement], [breaker box replacement], [electrical panel upgrade near me], [electrical panel replacement near me] + frase: electrical panel upgrade, electrical panel replacement, electric panel upgrade, panel upgrade, electrical panel installation, breaker box replacement, breaker panel replacement, circuit breaker panel replacement, main panel upgrade, breaker box upgrade, breaker panel upgrade, circuit breaker panel upgrade, panel upgrade electrician, electrician for panel upgrade, electrical box replacement, electric panel replacement near me, panel upgrade near me, zinsco panel replacement, federal pacific panel replacement, fpe panel replacement | ~44,300 | /panel-upgrades (o la home) | Electrical Panel Upgrades |
-| **Service Upgrade** | [electrical service upgrade], [200 amp panel upgrade] + frase: electrical service upgrade (near me), upgrade electrical service, electrical service change, 200 amp service upgrade, upgrade to 200 amp service, 100 amp to 200 amp upgrade, 400 amp service upgrade, meter base replacement | ~2,800 | /service-upgrade (o la home) | Electrical Service Upgrades |
-| **Fuse Box** | [fuse box replacement] + frase: fuse box replacement (near me), replace fuse box, replace fuse box with breaker panel, fuse panel replacement, fuse box to breaker box | ~2,000 | /panel-upgrades (sección fusibles) | Fuse Box Replacement |
-| **Commercial Panel** | [commercial electrical panel upgrade] + frase: commercial electrical panel, commercial electrical panel upgrade, commercial electrical service upgrade, commercial panel replacement | ~350 | /commercial (o la home, sección comercial) | Commercial Panel Upgrades |
+| **Panel Upgrade** | [electrical panel upgrade], [electrical panel replacement], [breaker box replacement], [electrical panel upgrade near me], [electrical panel replacement near me] + frase: electrical panel upgrade, electrical panel replacement, electric panel upgrade, panel upgrade, electrical panel installation, breaker box replacement, breaker panel replacement, circuit breaker panel replacement, main panel upgrade, breaker box upgrade, breaker panel upgrade, circuit breaker panel upgrade, panel upgrade electrician, electrician for panel upgrade, electrical box replacement, electric panel replacement near me, panel upgrade near me, zinsco panel replacement, federal pacific panel replacement, fpe panel replacement | ~44,300 | /residential-electric-service-panel-upgrades-replacements/ | Electrical Panel Upgrades |
+| **Service Upgrade** | [electrical service upgrade], [200 amp panel upgrade] + frase: electrical service upgrade (near me), upgrade electrical service, electrical service change, 200 amp service upgrade, upgrade to 200 amp service, 100 amp to 200 amp upgrade, 400 amp service upgrade, meter base replacement | ~2,800 | /residential-electric-service-panel-upgrades-replacements/ (sección "Panel Upgrade or Service Change-Out?") | Electrical Service Upgrades |
+| **Fuse Box** | [fuse box replacement] + frase: fuse box replacement (near me), replace fuse box, replace fuse box with breaker panel, fuse panel replacement, fuse box to breaker box | ~2,000 | /residential-electric-service-panel-upgrades-replacements/ (menciona fusibles) | Fuse Box Replacement |
+| **Commercial Panel** | [commercial electrical panel upgrade] + frase: commercial electrical panel, commercial electrical panel upgrade, commercial electrical service upgrade, commercial panel replacement | ~350 | /commercial-electric-service-panel-upgrades-replacements/ | Commercial Panel Upgrades |
 
 - Los volúmenes son **nacionales**. En 4 ZIP + Monroeville serán una fracción mínima: Keyword Planner con la geo exacta es la condición para fijar el tope y confirmar que la pauta se puede gastar.
 - **Ciudades**: no hay grupos por ciudad (ninguna combinación servicio × ciudad tiene ≥100 búsquedas). Las ciudades van en headlines y en la geo.
@@ -91,8 +90,8 @@ Negativas específicas por grupo (para que cada búsqueda caiga en su grupo):
 Detalle en `data/keywords.csv`.
 
 ## Negativas
-- **Lista universal PMM** a nivel de cuenta desde el día 1 (`knowledge/negativas-universales.md`), con estos ajustes para el cliente: **no** se niegan `replace`, `panel`, `service`, `upgrade`, `commercial`, `breaker` ni marcas de panel (zinsco, federal pacific, siemens, eaton, square d; reconciliación PMM del 23-sep). `free` queda negada mientras no se confirme un estimado gratis.
-- **Nicho** (`data/negatives-nicho.txt`, 122 términos a nivel de campaña):
+- **Lista universal PMM** a nivel de cuenta desde el día 1 (`knowledge/negativas-universales.md`), con estos ajustes para el cliente: **no** se niegan `replace`, `panel`, `service`, `upgrade`, `commercial`, `breaker` ni marcas de panel (zinsco, federal pacific, siemens, eaton, square d; reconciliación PMM del 23-sep). `free` **no** se niega: la web ofrece "Get A Free Quote" (audit-site.md, playbook §6.5).
+- **Nicho** (`data/negatives-nicho.txt`, 123 términos a nivel de campaña):
   - Lo que el cliente no hace (generadores, EV, iluminación, tomas, ventiladores, rewiring, inspecciones…).
   - Paneles que no son eléctricos (solar panel en exacta, garage door panel, wall panel…).
   - Precio e información (cost to, how much, average cost, diagram…).
@@ -105,39 +104,40 @@ Detalle en `data/keywords.csv`.
 Detalle en `data/ads-search-paneles.md`. 1 RSA por grupo (pauta <$1,500/mes, estándar 4): H1 pinneado + 2 headlines del grupo + 12 compartidas = 15; 4 descripciones (la comercial cambia la primera por una de verticales).
 
 - **Ángulo** (competitors.md): especialista en paneles + 40+ años + financiamiento, el combo que ningún local junta.
-- **Headlines compartidas**: 40+ Years Of Experience · Financing Available · Electrical Panel Specialists · Panel & Service Upgrades · Residential & Commercial · Open 7 Days A Week · Bethel Park & Mt. Lebanon · Upper St. Clair & McCandless · Serving Monroeville, PA · Ask About Financing Options · Call Now To Schedule · Upgrade To Modern Breakers.
+- **Headlines compartidas**: 40+ Years Of Experience · Financing Available · Electrical Panel Specialists · Panel & Service Upgrades · Residential & Commercial · Open 7 Days A Week · Bethel Park & Mt. Lebanon · Upper St. Clair & McCandless · Serving Monroeville, PA · Ask About Financing Options · Get A Free Quote · Permits & Inspection Handled.
 - **Extensiones**:
   - Llamada al CTN (412) 666-9290, con el horario del cliente.
   - 4 sitelinks: Panel Upgrades, Service Upgrades, Commercial Panels y Financing. El de Financing apunta a la sección de financiamiento **de la web**, porque los sitelinks tienen que ser del mismo dominio.
-  - Callouts: 40+ Years Experience, Financing Available, Open 7 Days, Residential & Commercial, Panel Specialists, Service Change-Outs.
+  - Callouts: 40+ Years Experience, Financing Available, Free Quotes, Permits & Inspection, Open 7 Days, Residential & Commercial, Panel Specialists, Service Change-Outs.
   - Snippet de servicios.
-- **No se promete** (no hay fuente): licensed & insured, free estimates, 24/7, same-day, ni condiciones de financiamiento (cuota, plazo, APR, 0%).
+- **Sí se usa** (lo dice la web): Free Quote, permisos e inspección incluidos, trabajo de noche y fines de semana en comercial, financiamiento "on approved credit".
+- **No se promete** (no hay fuente): licensed & insured, 24/7, same-day ni condiciones de financiamiento en el anuncio. La web publica plazos de 7–20 años, pero en un anuncio los plazos o cuotas pueden obligar a divulgar APR y condiciones.
 
 ## Medición (playbook §7) — va antes de cualquier ajuste de puja
 | Acción | Tipo | Cómo | Estado |
 |---|---|---|---|
 | Calls from ads | Primaria | Extensión de llamada con el CTN (412) 666-9290 y desvío de Google; duración mínima 60 s | PENDIENTE (bloqueante) |
-| Formulario enviado | Primaria | Página de gracias o evento del formulario con el Google Tag; el envío llega a chris@electrical-service-solutions.com | PENDIENTE: depende de /audit-landing |
+| Formulario enviado | Primaria | Redirect de Elementor a /thank-you/ + Google Tag; el envío llega a chris@electrical-service-solutions.com | PENDIENTE: hoy no hay tag ni página de gracias (audit-site.md) |
 | Clic en tel: de la web | Secundaria | Evento del Google Tag sobre el enlace al CTN | PENDIENTE |
 | Llamadas calificadas | Fuente de verdad | CallFire: llamante único con ≥60 s contestados (`knowledge/call-tracking.md`) | Listo: el CTN reenvía y se contesta |
 
 Todo se prueba con Tag Assistant antes de gastar (estándar 7). Como el CTN se publica en la web y en los anuncios, CallFire mezcla las dos fuentes. La parte de Ads sale de "Calls from ads".
 
 ## Landings requeridas
+Auditoría del 20-oct (`audit-site.md`): 10/22, **requiere ajustes antes de lanzar**. Las páginas de servicio ya existen. Lo que falta es medición y que el formulario quede arriba.
+
 | URL | Existe | Responsable | Bloqueante |
 |---|---|---|---|
-| electricalservicesolutionspa.com (home): headline de paneles, CTN, formulario corto, financiamiento visible, "40+ years", prueba social, velocidad móvil y Google Tag | Sí, sin auditar | PMM (/audit-landing) | **Sí** |
-| /panel-upgrades (incluye fusibles) | PENDIENTE (audit) | PMM | No: si no existe, el grupo va a la home |
-| /service-upgrade | PENDIENTE (audit) | PMM | No |
-| /commercial (verticales: retail, restaurantes, oficinas, dental, médico, supermercados, industrial) | PENDIENTE (audit) | PMM | No |
-| Sección o página de financiamiento en el dominio, con CTA a Pure Finance Group (destino del sitelink) | PENDIENTE (audit) | PMM | **Sí**: el cliente pidió que se vea claro |
-
-Si faltan páginas por grupo, se arman en el mismo dominio con `/landing-ghl`. Mientras tanto, los grupos van a la home.
+| /residential-electric-service-panel-upgrades-replacements/ (Panel Upgrade, Service Upgrade, Fuse Box) | Sí. H1 correcto; formulario a 2,821 px | PMM: subir el formulario o un botón debajo del H1 | **Sí** (formulario arriba) |
+| /commercial-electric-service-panel-upgrades-replacements/ (Commercial Panel) | Sí. H1 correcto; formulario a 2,622 px | PMM: igual que la residencial | **Sí** (formulario arriba) |
+| Google Tag + conversiones (formulario y clic en tel:) en todo el sitio | No: Site Kit instalado sin conectar | PMM | **Sí** |
+| /thank-you/ (Redirect del formulario de Elementor) | No | PMM | **Sí** |
+| /financing/ (destino del sitelink; hoy el menú sale a purefinancegroup.com) | No | PMM | No (sin ella, el sitelink de financiamiento se omite) |
 
 ## Presupuesto por fase
 | Fase | Total/mes | Por campaña | Condición para pasar |
 |---|---|---|---|
-| F0 · Medición y web | $0 | — | Calls from ads + formulario probados con Tag Assistant; web auditada (estándar 11); universal + nicho aplicadas; volumen por ZIP revisado en Keyword Planner |
+| F0 · Medición y web | $0 | — | Calls from ads + formulario probados con Tag Assistant; bloqueantes de audit-site.md resueltos (tag, /thank-you/, formulario arriba); universal + nicho aplicadas; volumen por ZIP revisado en Keyword Planner |
 | F1 · Lanzamiento | $1,293.75 | Search Paneles 100% ($42.56/día), Max. clics tope $15 | 30 días corridos, ≥50 clics, search terms limpiados 2 veces, CPL observado |
 | F2 · Optimización | $1,293.75 | Igual; ajuste del tope a D7/D14 y prueba comercial si no imprime | 15+ conversiones/mes 2 meses seguidos con medición limpia (calificadas en CallFire) |
 | F3 · Max. conversiones | $1,293.75 (o más si el cliente escala: PENDIENTE) | Search Paneles 100%, sin tCPA | tCPA solo con ~30 conv. en 30 días, desde el CPA observado. Con esta pauta no llega: pediría $3,000–4,500/mes |
@@ -159,7 +159,7 @@ Si faltan páginas por grupo, se arman en el mismo dominio con `/landing-ghl`. M
 
 ## Riesgos y supuestos
 - **Demanda**: con 4 ZIP + Monroeville, la pauta puede no gastarse (benchmark: ~5 impresiones/día de paneles en un grupo con más geo). Si a D14 se gasta <60% con cuota de impresiones >80%, se propone al cliente ampliar a ZIP vecinos. No se toca la geo sin su aprobación.
-- **Web sin auditar**: si la home no habla de paneles o no tiene el Tag, F1 no arranca (bloqueante).
+- **Web con bloqueantes** (audit-site.md): sin Google Tag, sin página de gracias y con el formulario a ~3 pantallas en móvil. F1 no arranca hasta resolverlos (4–5 h de PMM).
 - **CPL sin ticket**: $100–150 es una referencia de cuentas de servicio general. Un panel tiene ticket más alto, así que el CPL aceptable probablemente sea mayor. Se recalcula con margen × cierre × 0.3.
 - **Financiamiento neutralizado**: Mr. Electric y South Hills también lo ofrecen. Sin condiciones concretas, "Financing Available" diferencia poco.
 - **"Panel" ambiguo**: "panel upgrade near me" ($36.67) y "panel upgrade" traen solar, garage y paredes. Lo cubren las negativas y la revisión de search terms a D3, D7 y D14.

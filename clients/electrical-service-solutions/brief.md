@@ -8,7 +8,7 @@ actualizado: 2026-10-20
 estado: onboarding
 origen: investigar-cliente + welcome call
 customer_id: 384-080-6970
-completitud: 61%
+completitud: 69%
 call_tracking: callfire
 tracking_number: "(412) 666-9290"
 tracking_destino: "(412) 377-7502"
@@ -22,12 +22,14 @@ plan_en: https://claude.ai/artifact/1mULJUUTdeY8nYccq25HJU
 >
 > Actualización 20-oct-2026 (Jhombis): **pauta = 57.5% del contrato = $1,293.75/mes**, y **la web ya es `electricalservicesolutionspa.com`**.
 >
-> Completitud 61% = 16.5 de 27 campos (los datos completos cuentan 1 y los parciales 0.5).
+> Actualización 20-oct-2026 (/audit-landing): la web abre sin `www` y queda auditada en `audit-site.md` (10/22). Confirma "Free Quote", financiamiento "on approved credit" de 7 a 20 años, WordPress + Elementor Pro, un solo teléfono (el CTN) y que no hay Google Tag.
+>
+> Completitud 69% = 18.5 de 27 campos (los datos completos cuentan 1 y los parciales 0.5).
 >
 > No se pudo abrir ninguno de los enlaces de la llamada (web actual, página de financiamiento, GBP, estrategia de ChatGPT, logo): la red del entorno los bloquea. Lo que dependa de ellos queda PENDIENTE de revisar desde otro equipo.
 
 ## Negocio
-- URL: **https://www.electricalservicesolutionspa.com**: es la web del negocio y la URL final de los anuncios (Jhombis, 20-oct). Semrush todavía no tiene datos del dominio (sin tráfico orgánico ni de pago registrado) `(Semrush)`. No se pudo abrir desde el entorno (DNS bloqueado): el contenido, el tracking y la velocidad quedan para `/audit-landing` desde una red con acceso. Dominio anterior: el email del negocio usa `electrical-service-solutions.com` y el logo está en `static.wixstatic.com` → probablemente hay un sitio en Wix (inferido: dominio del email y hosting del logo). No se pudo abrir (DNS bloqueado en el entorno) y Semrush tampoco tiene datos de ese dominio. Qué pasa con ese sitio (redirigir, mantener): PENDIENTE
+- URL: **https://www.electricalservicesolutionspa.com**: es la web del negocio y la URL final de los anuncios (Jhombis, 20-oct). Semrush todavía no tiene datos del dominio (sin tráfico orgánico ni de pago registrado) `(Semrush)`. Auditada el 20-oct: abre sin `www` (la variante con `www` no resuelve desde el entorno) `(web, audit-site.md)`. Dominio anterior: el email del negocio usa `electrical-service-solutions.com` y el logo está en `static.wixstatic.com` → probablemente hay un sitio en Wix (inferido: dominio del email y hosting del logo). No se pudo abrir (DNS bloqueado en el entorno) y Semrush tampoco tiene datos de ese dominio. Qué pasa con ese sitio (redirigir, mantener): PENDIENTE
 - Base y área de servicio: **sin dirección publicada en la web** `(cliente)`, así que es un negocio de área de servicio. Zonas objetivo desde el 21-sep-2026 `(cliente)`:
   | ZIP / ciudad | Zona |
   |---|---|
@@ -44,8 +46,8 @@ plan_en: https://claude.ai/artifact/1mULJUUTdeY8nYccq25HJU
   3. Comercial: cualquier edificio comercial, incluidos retail, restaurantes, oficinas, consultorios dentales y médicos, supermercados e industrial
   - El orden por rentabilidad entre residencial y comercial: PENDIENTE
 - Servicio estrella / servicio a evitar: **paneles (residencial y comercial) y cambio de servicio** / **todo lo demás** (iluminación, tomas, ventiladores, cableado general, cargadores EV, generadores, troubleshooting…). El cliente "solo quiere clics y llamadas de estos servicios" `(cliente)`. Esto va a negativas desde el día 1
-- Diferenciadores: **más de 40 años de experiencia** `(cliente)`. **Financiamiento**: es lo que lo separa de los contratistas que no lo ofrecen, y tiene que verse claro en la web y, si se puede, en los anuncios `(cliente)`. Enlace: `https://offers.purefinancegroup.com/electricalservicesolutions` (Pure Finance Group) `(cliente)`. Condiciones (montos, plazo, APR, promoción): PENDIENTE; hay que pedírselas al cliente. Licencia, seguro y garantía: PENDIENTE
-- Ofertas sostenibles: **financiamiento** `(cliente)`, con condiciones PENDIENTE. Estimado gratis u otra oferta: PENDIENTE
+- Diferenciadores: **más de 40 años de experiencia** `(cliente)`. **Financiamiento**: es lo que lo separa de los contratistas que no lo ofrecen, y tiene que verse claro en la web y, si se puede, en los anuncios `(cliente)`. Enlace: `https://offers.purefinancegroup.com/electricalservicesolutions` (Pure Finance Group) `(cliente)`. La web dice **"financing (on approved credit)" con plazos de 7 a 20 años**, también para comerciales `(web)`. Monto mínimo, APR y promoción: PENDIENTE. Licencia, seguro y garantía: PENDIENTE
+- Ofertas sostenibles: **Free Quote** ("Get A Free Quote" / "Call for Your FREE Quote") `(web)` y **financiamiento on approved credit, 7–20 años** `(web)`. También sale de la web: permisos e inspección incluidos, coordinación con la empresa de luz, "usually a single working day" en residencial y trabajo de noche y fin de semana en comercial `(web)`
 - Búsqueda de marca: **no**. "electrical service solutions" tiene 20 búsquedas/mes en todo US, CPC $3.57, y es una frase genérica `(Semrush)`. No hay campaña de marca
 
 ## Objetivo y economía
@@ -84,9 +86,9 @@ Competidores que aparecen en la búsqueda orgánica de electricistas en Pittsbur
 Competidores que reconoce el cliente: PENDIENTE
 
 ## Web y tracking
-- Plataforma / quién edita: **web de PMM** en `electricalservicesolutionspa.com`, ya en el aire (Jhombis, 20-oct). CMS: PENDIENTE (no se pudo abrir). Si hacen falta landings por grupo (residencial / comercial), van en el mismo dominio con `/landing-ghl`. Logo: `https://static.wixstatic.com/media/93030c_285126cb7318486f97bd66977c60f367~mv2.png` `(cliente)`; no se pudo descargar desde el entorno
-- Tag/GA4: PENDIENTE: verificar en la web con /audit-landing (Google Tag, conversión de llamada al CTN y de formulario). Conversiones en la cuenta: PENDIENTE (sin API)
-- Formulario → destino: **`chris@electrical-service-solutions.com`**, que es el email para la web `(cliente)`. Campos y página de gracias: se definen en /landing
+- Plataforma / quién edita: **web de PMM** en `electricalservicesolutionspa.com` (Jhombis, 20-oct): WordPress 7.1.3 + Elementor 4.3.4 + Elementor Pro, tema Hello Elementor `(web)`. Páginas: home, residencial, comercial, about, contacto y privacidad. El menú "Financing" sale a Pure Finance Group `(web)`. Si hacen falta landings por grupo (residencial / comercial), van en el mismo dominio con `/landing-ghl`. Logo: `https://static.wixstatic.com/media/93030c_285126cb7318486f97bd66977c60f367~mv2.png` `(cliente)`; no se pudo descargar desde el entorno
+- Tag/GA4: **no hay**. Site Kit by Google está instalado sin conectar; no hay G-, AW- ni GTM `(web)`. Bloqueante (audit-site.md). Conversiones en la cuenta: PENDIENTE (sin API)
+- Formulario → destino: **`chris@electrical-service-solutions.com`** `(cliente)`. Formulario de Elementor Pro con Name, Phone, Email y Message + reCAPTCHA en las páginas de servicio, y 6 campos en contacto. No tiene página de gracias `(web)`. Que el envío llegue al correo: PENDIENTE (envío de prueba)
 - Mensajes obligatorios en la web `(cliente)`: **financiamiento visible** (bloque propio + CTA al enlace de Pure Finance Group), "40+ years of experience" y solo servicios de paneles. Sin dirección publicada
 - Requisitos de política: licencia y seguro: PENDIENTE (en PA la licencia es municipal: pedir el número y quién la emitió). **Financiamiento en anuncios**: si el anuncio menciona condiciones concretas (cuota, plazo, "0% APR"), tiene que coincidir con lo que dice la página del financiador y llevar sus condiciones. Sin condiciones confirmadas, el anuncio dice solo "Financing Available"
 
@@ -97,8 +99,9 @@ Competidores que reconoce el cliente: PENDIENTE
 - [x] Pauta mensual: $1,293.75 (57.5% de $2,250), 20-oct
 - [x] Web: electricalservicesolutionspa.com, 20-oct
 - [ ] **Bloqueante**: ticket promedio (residencial y comercial), margen y tasa de cierre → CPL máximo
-- [ ] **Bloqueante**: condiciones del financiamiento (montos, plazo, APR o promoción, monto mínimo) y qué se puede decir en los anuncios
-- [ ] **Bloqueante**: auditar la web (`/audit-landing`): que cumpla el estándar 11 (headline de paneles, CTN, formulario corto, financiamiento visible, prueba social, velocidad móvil) y que tenga el Tag. Desde este entorno no abre: hace falta red con acceso
+- [ ] **Bloqueante**: financiamiento: monto mínimo, APR o promoción, y qué se puede decir en los anuncios (los plazos de 7–20 años ya están en la web)
+- [x] Web auditada (`audit-site.md`, 10/22), 20-oct
+- [ ] **Bloqueante**: arreglos de la web: Google Tag + conversiones, /thank-you/ y formulario arriba en las páginas de servicio (audit-site.md; ~4.5 h de PMM)
 - [ ] **Bloqueante**: conversión de llamada del CTN (412) 666-9290 en la cuenta 384-080-6970, probada
 - [ ] Licencia (número y municipio) y seguro, para la web y para LSA
 - [ ] Emergencias / nocturno: quién contesta después de las 21:00 (L–V) y de las 17:00 (fines de semana); capacidad de trabajos/mes
@@ -115,8 +118,8 @@ Competidores que reconoce el cliente: PENDIENTE
 | Google Ads API (cuenta 384-080-6970) | sin credenciales (no hay `google-ads.yaml` ni variables `GOOGLE_ADS_*`) | — |
 | Windsor `google_ads` | ok. Cuenta presente en el conector, **0 filas** en 2 años | data/windsor-2026-10-19.json |
 | Web actual / financiamiento / GBP / ChatGPT / logo | **red bloqueada** (WebFetch: ENOTFOUND; shell: CONNECT 403). Hay que habilitar Network access en Full o agregar los dominios a la lista permitida | — |
-| Web electricalservicesolutionspa.com | red bloqueada (ENOTFOUND). Semrush sin datos del dominio | — |
-| PageSpeed | sin `PAGESPEED_API_KEY` y con la red bloqueada | — |
+| Web electricalservicesolutionspa.com | ok (sin `www`): 6 páginas, auditada | data/site-scan.json, audit-site.md |
+| PageSpeed | sin `PAGESPEED_API_KEY`: medición propia con Playwright (LCP de las páginas de servicio ~3.3 s, home ~8.8 s) | audit-site.md |
 | Semrush | ok: volúmenes de Pittsburgh y de paneles (US). Sin datos de los dominios `electrical-service-solutions.com` ni `electricalservicesolutionspa.com`, ni de paneles + ciudad | data/semrush-keywords-pittsburgh-2026-10-19.csv, data/semrush-keywords-paneles-2026-10-19.csv |
 | Windsor `google_my_business` | ficha no conectada | — |
 | CallFire | ok. CTN (412) 666-9290 → (412) 377-7502; 2 llamadas de prueba | data/callfire-lease.json, data/calls-callfire-2025-07-20_2026-10-19.json, data/calls-summary.json |
@@ -135,7 +138,7 @@ Competidores que reconoce el cliente: PENDIENTE
 Para copiar en un correo o WhatsApp, ordenadas por lo que bloquea:
 
 1. ¿Cuánto cobran en promedio por un upgrade de panel residencial y por uno comercial? ¿Qué margen les queda y de cada 10 cotizaciones cuántas cierran?
-2. Financiamiento (Pure Finance Group): ¿desde qué monto, a qué plazos, con qué tasa o promoción (p. ej., 0% por X meses)? ¿Qué podemos decir textualmente en anuncios y en la web?
+2. Financiamiento (Pure Finance Group): en la web dice 7 a 20 años on approved credit. ¿Desde qué monto, con qué tasa o promoción (p. ej., 0% por X meses)? ¿Qué podemos decir textualmente en los anuncios?
 3. ¿Cuál es el número de licencia, qué municipio la emitió y tienen seguro? ¿Los 40+ años son de la empresa o del dueño?
 4. Emergencias y horario nocturno: ¿quién contesta después de las 9 pm entre semana y después de las 5 pm los fines de semana? ¿Cuántos trabajos de panel pueden tomar al mes?
 5. Google Business Profile: ¿nos dan acceso de gestor? ¿Qué teléfono tiene publicado?
