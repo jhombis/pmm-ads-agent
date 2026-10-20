@@ -117,9 +117,9 @@ Detalle en `data/ads-search-paneles.md`. 1 RSA por grupo (pauta <$1,500/mes, est
 ## Medición (playbook §7) — va antes de cualquier ajuste de puja
 | Acción | Tipo | Cómo | Estado |
 |---|---|---|---|
-| Calls from ads | Primaria | Extensión de llamada con el CTN (412) 666-9290 y desvío de Google; duración mínima 60 s | PENDIENTE (bloqueante) |
-| Formulario enviado | Primaria | Evento `gtm.formSubmit` (submit_success de Elementor) en GTM-58K232MX → conversión de AW-18460546953; el envío llega a chris@electrical-service-solutions.com | Configurada por Jhombis (20-oct); falta el envío de prueba con Tag Assistant |
-| Clic en tel: de la web | Secundaria | Evento sobre el enlace al CTN (Google Tag / GTM) | Configurada por Jhombis (20-oct); falta probarla |
+| Calls from ads | Primaria | Extensión de llamada con el CTN (412) 666-9290 (asset 431600258912) y desvío de Google; duración mínima 60 s | Configurada por Jhombis (20-oct) |
+| Formulario enviado | Primaria | Evento `gtm.formSubmit` (submit_success de Elementor) en GTM-58K232MX → conversión de AW-18460546953; el envío llega a chris@electrical-service-solutions.com | Configurada por Jhombis (20-oct) |
+| Clic en tel: de la web | Secundaria | Evento sobre el enlace al CTN (Google Tag / GTM) | Configurada por Jhombis (20-oct) |
 | Llamadas calificadas | Fuente de verdad | CallFire: llamante único con ≥60 s contestados (`knowledge/call-tracking.md`) | Listo: el CTN reenvía y se contesta |
 
 Todo se prueba con Tag Assistant antes de gastar (estándar 7). Como el CTN se publica en la web y en los anuncios, CallFire mezcla las dos fuentes. La parte de Ads sale de "Calls from ads".
@@ -131,7 +131,7 @@ Auditoría del 20-oct (`audit-site.md`): 10/22, **requiere ajustes antes de lanz
 |---|---|---|---|
 | /residential-electric-service-panel-upgrades-replacements/ (Panel Upgrade, Service Upgrade, Fuse Box) | Sí. H1 correcto; formulario a 2,821 px | PMM: subir el formulario o un botón debajo del H1 | **Sí** (formulario arriba) |
 | /commercial-electric-service-panel-upgrades-replacements/ (Commercial Panel) | Sí. H1 correcto; formulario a 2,622 px | PMM: igual que la residencial | **Sí** (formulario arriba) |
-| Google Tag + conversiones (formulario y clic en tel:) en todo el sitio | Sí: AW-18460546953 + GTM-58K232MX (20-oct). Conversiones configuradas, sin probar | PMM | Sí, hasta la prueba con Tag Assistant |
+| Google Tag + conversiones (formulario y clic en tel:) en todo el sitio | Sí: AW-18460546953 + GTM-58K232MX y conversiones configuradas por Jhombis (20-oct) | Jhombis | No (se confirma con la primera conversión) |
 | /thank-you/ | Ya no hace falta: el formulario se mide por evento | — | No |
 | /financing/ (destino del sitelink; hoy el menú sale a purefinancegroup.com) | No | PMM | No (sin ella, el sitelink de financiamiento se omite) |
 

@@ -100,8 +100,8 @@ Competidores que reconoce el cliente: PENDIENTE
 - [ ] **Bloqueante**: financiamiento: monto mínimo, APR o promoción, y qué se puede decir en los anuncios (los plazos de 7–20 años ya están en la web)
 - [x] Web auditada (`audit-site.md`, 10/22), 20-oct
 - [x] Google Tag + conversiones configuradas (Jhombis, 20-oct)
-- [ ] **Bloqueante**: formulario arriba en las páginas de servicio (~1.5 h) y prueba de las conversiones con Tag Assistant (audit-site.md, revisión 2: 13/22)
-- [ ] **Bloqueante**: conversión de llamada del CTN (412) 666-9290 en la cuenta 384-080-6970, probada
+- [ ] **Bloqueante**: formulario arriba en las páginas de servicio (~1.5 h) (audit-site.md, revisión 2: 13/22)
+- [x] Conversiones configuradas por Jhombis (formulario, Calls from ads ≥60 s con el CTN, clic en tel:), 20-oct
 - [ ] Licencia (número y municipio) y seguro, para la web y para LSA
 - [ ] Emergencias / nocturno: quién contesta después de las 21:00 (L–V) y de las 17:00 (fines de semana); capacidad de trabajos/mes
 - [ ] GBP: acceso de gestor, verificado, reseñas; qué número usa

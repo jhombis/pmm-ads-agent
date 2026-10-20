@@ -22,16 +22,16 @@ Generado por /roadmap (20-oct-2026) desde `knowledge/checklists/setup-cuenta.md`
 
 ## Fase 0 — Fundación (bloqueante para lanzar) · 20-oct → 23-oct
 - [x] (Jhombis) Google Tag en todas las páginas: AW-18460546953 (Site Kit) + GTM-58K232MX, verificado en el HTML, 20-oct
-- [ ] (PMM) **B** Conversión "Formulario" por evento gtm.formSubmit (configurada por Jhombis, 20-oct): primaria y probada con un envío de prueba en Tag Assistant
-- [ ] (PMM) **B** Conversión "Llamada desde anuncio" con el CTN (412) 666-9290 (configurada por Jhombis): confirmar duración mínima 60 s y call reporting activo
-- [ ] (PMM) **B** Conversión "Clic en teléfono" (tel:4126669290) (configurada por Jhombis): confirmar que es secundaria y probarla en Tag Assistant
+- [x] (Jhombis) Conversión "Formulario" por evento gtm.formSubmit, primaria (Jhombis, 20-oct; no verificable desde el entorno: Windsor no lista acciones sin eventos y GTM está bloqueado)
+- [x] (Jhombis) Conversión "Llamada desde anuncio" con el CTN (412) 666-9290, ≥60 s y call reporting (Jhombis, 20-oct; no verificable desde el entorno: Windsor no lista acciones sin eventos y GTM está bloqueado)
+- [x] (Jhombis) Conversión "Clic en teléfono" (tel:4126669290), secundaria (Jhombis, 20-oct; no verificable desde el entorno: Windsor no lista acciones sin eventos y GTM está bloqueado)
 - [x] (PMM) /thank-you/: ya no hace falta, el formulario se mide por evento gtm.formSubmit (20-oct). Pendiente igual: envío de prueba avisando al cliente para confirmar que llega a chris@
 - [ ] (PMM) **B** Formulario de 4 campos (o botón "Get A Free Quote") debajo del H1 en las páginas residencial y comercial; contacto con 4 campos
 - [ ] (PMM) **B** Facturación configurada y verificada en 384-080-6970
 - [x] (Jhombis) Negativas aprobadas (/negatives init, 20-oct): 167 de cuenta + 136 de campaña + 8 por ad group, 11 excluidas por choque (log/2026-10-20.md)
 - [ ] (PMM) **B** Aplicación automática de recomendaciones desactivada
 - [ ] (PMM) **B** Volumen de los 4 ZIP + Monroeville en Keyword Planner (desde la interfaz), con confirmación de que el tope de $15 y la pauta se pueden gastar
-- [ ] (PMM) Zona horaria de la cuenta confirmada (para convertir la programación)
+- [x] (Jhombis) Zona horaria de la cuenta: Pacífico (Los Angeles); programación convertida, 20-oct
 - [ ] (PMM) Campos ocultos GCLID/UTM en el formulario de Elementor
 - [ ] (PMM) Verificar que www.electricalservicesolutionspa.com redirija al dominio sin www
 - [ ] (PMM) GA4 vinculado y audiencia "Todos los visitantes" importada (Site Kit)
