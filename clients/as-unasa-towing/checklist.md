@@ -17,4 +17,5 @@ actualizado: 2026-10-21
 - [ ] Cliente · Capacidad medium-duty de la F550
 - [ ] PMM · Web: dirección + email, horario corregido, H1 en el home, meta descriptions, schema TowingService
 - [ ] Cliente · Elegir el concepto de logo (logo/)
-- [ ] PMM · Correr /audit-landing, /competitors, /benchmark-interno
+- [x] PMM · /competitors y /benchmark-interno (21-oct)
+- [ ] PMM · Correr /audit-landing, después /strategy (CPL objetivo meses 3–6: $24–36, benchmark.md)
