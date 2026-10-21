@@ -226,7 +226,7 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
   </header>
 
   <nav class="toc" aria-label="Sections">
-    <a href="#resumen">Summary</a><a href="#pasos">Next steps</a><a href="#mercado">Market</a><a href="#checklist">Checklist</a><a href="#cliente">Client</a>
+    <a href="#resumen">Summary</a><a href="#pasos">Next steps</a><a href="#landing">Landing</a><a href="#mercado">Market</a><a href="#checklist">Checklist</a><a href="#cliente">Client</a>
   </nav>
 
   <section id="resumen">
@@ -235,7 +235,7 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
       <div class="kpi"><b>$1,200</b><span>monthly package. Media spend pending; reference $540 (45% median for $799–1,200 packages)</span></div>
       <div class="kpi"><b>≈$17</b><span>reference max CPL at the $79.99 starting tow price. A new account starts at $51–63</span></div>
       <div class="kpi"><b>63%</b><span>brief completeness · 8 questions for the client</span></div>
-      <div class="kpi"><b>5 B</b><span>blockers before launch: ticket, budget, hours, tracking, GBP</span></div>
+      <div class="kpi"><b>6 B</b><span>blockers before launch: ticket, budget, hours, tracking, GBP, form above the fold</span></div>
     </div>
 
     <div class="two">
@@ -257,7 +257,7 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
         <h3>The decision in five lines</h3>
         <ul>
           <li><b>Economics first.</b> "Tows starting at $79.99" gives a max CPL of ~$17, even at a 100% margin. Without the real ticket (accidents, medium-duty, exotics), the budget can't be set.</li>
-          <li><b>No tracking, no launch.</b> The site has no Google tag or GTM. Call (≥60 s) and form conversions need to be installed and tested with Tag Assistant.</li>
+          <li><b>No tracking, no launch.</b> The site has no Google tag or GTM (Site Kit is installed but not connected). It still needs a call conversion (≥60 s), a form conversion with a thank-you page, and a Tag Assistant test.</li>
           <li><b>Hours.</b> The client asks for 24/7 and the site says "Closed Sunday". With one driver, the ad schedule follows who actually answers.</li>
           <li><b>Likely structure.</b> At ~$540/mo and a $7–10 CPC in months 1–2, that's ~2 clicks/day. The 8 best accounts in this package size run one radius Search campaign with one ad group. Phrase match, Presence only; /strategy sets it.</li>
           <li><b>What we won't do.</b> No PMax or Display at launch. No brand campaign either ("unasa towing" gets 20 searches/mo), and no LSA, because towing doesn't qualify.</li>
@@ -282,6 +282,36 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
   <section id="pasos">
     <div class="sec-head"><h2>Next steps</h2><p>What's left to close Phase 0. Items marked B are blocking.</p></div>
     <div class="steps" id="steps"></div>
+  </section>
+
+  <section id="landing">
+    <div class="sec-head"><h2>Landing page</h2><p>10/22 · needs fixes before launch. 3 blockers: Google tag, form above the fold and a thank-you page. B marks every item at 0; social proof at 0 is not a blocker per the rubric.</p></div>
+    <div class="two" style="margin-top:0">
+      <div>
+        <div class="rub" id="rubric"></div>
+        <p class="muted" style="font-size:.86rem; margin-top:8px">Speed: no PageSpeed (no API key). In an unthrottled lab run, mobile LCP was 3.1 s on the home page and 2.0 s on Accident Recovery, with ~1.5 MB on the home page. It counts as 1 in the score.</p>
+      </div>
+      <div>
+        <h3 style="margin-bottom:8px">Landing pages needed</h3>
+        <div class="tbl"><table>
+          <thead><tr><th>URL</th><th>Status</th><th>For</th></tr></thead>
+          <tbody>
+            <tr><td class="mono">/towing-west-valley-kearns/</td><td><span class="chip st-block">Create</span></td><td>Main group: towing / tow truck + West Valley, Kearns (Sandy via city insertion)</td></tr>
+            <tr><td class="mono">/thank-you/</td><td><span class="chip st-block">Create</span></td><td>Form conversion (today a "Booking Not Yet Confirmed" popup shows instead)</td></tr>
+            <tr><td class="mono">/accident-recovery/</td><td><span class="chip st-todo">Improve</span></td><td>Accident / recovery group: form above the fold and a real photo instead of the stock one</td></tr>
+            <tr><td class="mono">/exotic-classic-vehicle-transport/</td><td><span class="chip st-todo">Improve</span></td><td>Sitelink or small exotic & classic group</td></tr>
+          </tbody>
+        </table></div>
+        <div class="callout" style="margin-top:16px">
+          <h3>What an ad visitor sees today</h3>
+          <ul>
+            <li><b>Good:</b> "Tows Starting At $79.99!" and "Click here to call" above the fold, the real photo of the red truck, and one phone number (CallFire) site-wide.</li>
+            <li><b>Bad:</b> Elementor's "Logo." placeholder in the header, zero reviews, conflicting hours ("Closed Sunday" vs "24/7 Service" on the truck) and a header that disappears on mobile scroll.</li>
+            <li><b>Tracking:</b> Site Kit by Google is installed but not connected. It's the fastest way to get the tag in.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section id="mercado">
@@ -358,7 +388,7 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
 
   <footer>
     <span>Performance Media Marketing · A's Unasa Towing · account 730-795-5909</span>
-    <span>Sources: brief.md and checklist.md (Oct 21, 2026) · Windsor 365 days · CallFire Jul 22 to Oct 21 · Semrush · 8-page site scan · benchmark.md and competitors.md (Oct 21)</span>
+    <span>Sources: brief.md and checklist.md (Oct 21, 2026) · Windsor 365 days · CallFire Jul 22 to Oct 21 · Semrush · 8-page site scan · benchmark.md, competitors.md and audit-site.md (Oct 21)</span>
   </footer>
 </div>
 
@@ -374,15 +404,19 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
   const $ = id => document.getElementById(id);
 
   /* Próximos pasos: [título, detalle, responsable, bloqueante] */
-  const steps = [["Confirm average ticket and margin by job type", "At the $79.99 floor, max CPL is ~$17, and a new account costs $51–63 per call in months 1–2. Without this, we can't set the budget or pick keywords.", "Client", true], ["Confirm real media spend from the $1,200 package", "The MCC reference is $396–540/mo. It decides how many campaigns and ad groups fit.", "Jhombis", true], ["Clarify hours: 24/7 or Monday–Saturday", "The site says \"Closed Sunday\". With one driver, we need to know who answers overnight before running ads 24/7.", "Client", true], ["Install tracking on the site", "WordPress access → Google tag, call conversion (≥60 s, Google forwarding number in the ad) and form submit. Tested with Tag Assistant.", "PMM", true], ["GBP: does it exist, is it verified, can we get access", "No listing found. If 721 S 5500 W is a mailing address, the listing should be a service-area business. It's needed for the location asset.", "Client", true], ["Confirm service area", "The 4 ZIPs requested leave out the base (84104), and Sandy 84092 is not contiguous with the rest. Propose a radius or the full ZIP list.", "Client", false], ["Site fixes requested by the client", "Show the address and email. Fix the hours. Add an H1 to the home page, meta descriptions and TowingService schema.", "PMM", false], ["Pick a logo concept", "There are 4 concepts with a red flatbed in clients/as-unasa-towing/logo/.", "Client", false], ["Run /audit-landing, then /strategy", "✓ Done Oct 21: /competitors and /benchmark-interno. /audit-landing is next (the site scan is already in data/), then /strategy with a $24–36 target CPL for months 3–6.", "PMM", false]];
+  const steps = [["Confirm average ticket and margin by job type", "At the $79.99 floor, max CPL is ~$17, and a new account costs $51–63 per call in months 1–2. Without this, we can't set the budget or pick keywords.", "Client", true], ["Confirm real media spend from the $1,200 package", "The MCC reference is $396–540/mo. It decides how many campaigns and ad groups fit.", "Jhombis", true], ["Clarify hours: 24/7 or Monday–Saturday", "The site says \"Closed Sunday\". With one driver, we need to know who answers overnight before running ads 24/7.", "Client", true], ["Install tracking on the site", "WordPress access → connect Site Kit (already installed) or GTM. Call conversion ≥60 s, a Google forwarding number on the site that forwards to (385) 473-9820 so CallFire keeps logging, and a form redirect to /thank-you/. Tested with Tag Assistant.", "PMM", true], ["GBP: does it exist, is it verified, can we get access", "No listing found. If 721 S 5500 W is a mailing address, the listing should be a service-area business. It's needed for the location asset.", "Client", true], ["Confirm service area", "The 4 ZIPs requested leave out the base (84104), and Sandy 84092 is not contiguous with the rest. Propose a radius or the full ZIP list.", "Client", false], ["Form above the fold and campaign page", "A 3-field form above the fold on mobile (none on the home page today; on service pages it starts at ~2,370 px). Create /towing-west-valley-kearns/. Sticky header on mobile.", "PMM", true], ["Site fixes", "Replace the \"Logo.\" placeholder with the chosen logo. Address and email in the footer (today only on Schedule A Tow). Consistent hours. Home H1, meta descriptions, schema, image alt text and header compression.", "PMM", false], ["Pick a logo concept", "There are 4 concepts with a red flatbed in clients/as-unasa-towing/logo/.", "Client", false], ["Run /strategy", "✓ Done Oct 21: /competitors, /benchmark-interno and /audit-landing (10/22). /strategy is next, with a $24–36 target CPL for months 3–6 and the 3 landing pages in the Landing section.", "PMM", false]];
   if ($('steps')) $('steps').innerHTML = steps.map((s,i)=>`
     <div class="step"><span class="n">${String(i+1).padStart(2,'0')}</span>
       <div><b>${esc(s[0])}</b><p class="d">${esc(s[1])}</p></div>
       <div class="tags">${s[3]?'<span class="b-flag" title="Blocking">B</span>':''}<span class="who">${esc(s[2])}</span></div>
     </div>`).join('');
 
+  /* Rúbrica de landing (audit-site): [ítem, 0 | 1 | 2 | null = sin dato]. 0 marca B. */
+  const rub = [["Headline matches the search", 1], ["Short form visible above the fold (mobile)", 0], ["Click to call on mobile", 1], ["Clear offer", 2], ["Social proof", 0], ["Trust (license, insurance, years)", 1], ["Mobile speed", null], ["Google tag present", 0], ["Measurable thank-you page", 0], ["One page per service", 2], ["No leaks", 2]];
+  if ($('rubric')) $('rubric').innerHTML = rub.map(r=>`<div class="rub-row"><span>${esc(r[0])}${r[1]===0?' <span class="b-flag">B</span>':''}</span><span class="pips">${r[1]===null?'<em>SIN DATO</em>':`<i class="${r[1]>=1?'on':''}"></i><i class="${r[1]>=2?'on':''}"></i>`}</span></div>`).join('');
+
   /* Checklist (espejo de checklist.md): [fase, ítem, responsable, done | part | todo, bloqueante] */
-  const CL = [["F0", "✓ Done Oct 21: researched brief (63%), CallFire number identified, MCC account located", "PMM", "done", false], ["F0", "Average ticket by job type and margin → max CPL", "Client", "todo", true], ["F0", "Real media spend from the $1,200 package", "Jhombis", "todo", true], ["F0", "Real hours (24/7 vs \"Closed Sunday\") and who answers overnight", "Client", "todo", true], ["F0", "WordPress access → Google tag + call ≥60 s + form, tested with Tag Assistant", "PMM", "todo", true], ["F0", "GBP: exists, verified, access for PMM", "Client", "todo", true], ["F0", "Service area (84104, 84120, all of Sandy)", "Client", "todo", false], ["F0", "Medium-duty capacity of the F550", "Client", "todo", false], ["F0", "Site: address + email, hours, H1, meta descriptions, schema", "PMM", "todo", false], ["F0", "Pick a logo concept", "Client", "todo", false], ["F0", "✓ Done Oct 21: /competitors and /benchmark-interno", "PMM", "done", false], ["F0", "/audit-landing", "PMM", "todo", false]];
+  const CL = [["F0", "✓ Done Oct 21: researched brief (63%), CallFire number identified, MCC account located", "PMM", "done", false], ["F0", "Average ticket by job type and margin → max CPL", "Client", "todo", true], ["F0", "Real media spend from the $1,200 package", "Jhombis", "todo", true], ["F0", "Real hours (24/7 vs \"Closed Sunday\") and who answers overnight", "Client", "todo", true], ["F0", "WordPress access → Google tag + call ≥60 s + form, tested with Tag Assistant", "PMM", "todo", true], ["F0", "GBP: exists, verified, access for PMM", "Client", "todo", true], ["F0", "Service area (84104, 84120, all of Sandy)", "Client", "todo", false], ["F0", "Medium-duty capacity of the F550", "Client", "todo", false], ["F0", "Site: address + email, hours, H1, meta descriptions, schema", "PMM", "todo", false], ["F0", "Pick a logo concept", "Client", "todo", false], ["F0", "✓ Done Oct 21: /competitors and /benchmark-interno", "PMM", "done", false], ["F0", "✓ Done Oct 21: /audit-landing (10/22, needs fixes)", "PMM", "done", false], ["F0", "3-field form above the fold on mobile + measurable /thank-you/", "PMM", "todo", true], ["F0", "Real logo in the header (placeholder \"Logo.\" today)", "PMM", "todo", false], ["F0", "/strategy", "PMM", "todo", false]];
   const PHT = {"F0": "Brief, tracking and economics"};
   let fWho='All', fSt='All';
   const whoOpts=['All','PMM','Client','Jhombis'], stOpts=['All','Pending','Blocking','Done'];

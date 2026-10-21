@@ -20,7 +20,7 @@ plan_en: https://claude.ai/artifact/CrPAZcEDg6j5hqZZMBC6ie
 
 ## Negocio
 - URL: https://asunasatowing.com (web). WordPress + Elementor, 8 páginas: home, About, 4 de servicio, Schedule A Tow y Privacy (web)
-- Base: 721 S 5500 W, Salt Lake City, UT 84104 (cliente). Coincide con el registro USDOT 4229473 "AS UNASA TOWING", que tiene dirección postal en Kearns (web: LoadWrap). LoadWrap marca la dirección física como posible dirección de agente registrado u oficina virtual. **Hoy no aparece en el sitio.**
+- Base: 721 S 5500 W, Salt Lake City, UT 84104 (cliente). Coincide con el registro USDOT 4229473 "AS UNASA TOWING", que tiene dirección postal en Kearns (web: LoadWrap). LoadWrap marca la dirección física como posible dirección de agente registrado u oficina virtual. Aparece solo en /schedule-a-tow/, no en el footer ni en el resto de las páginas (web, corregido 21-oct en /audit-landing).
 - Área de servicio (cliente):
   - 84118 Kearns / West Valley City
   - 84119 West Valley City
@@ -68,7 +68,7 @@ plan_en: https://claude.ai/artifact/CrPAZcEDg6j5hqZZMBC6ie
   - Ya está publicado en el header, los CTA y el footer del sitio (web).
   - Llamadas registradas del 8 al 20 de octubre (CallFire): 3 llamadas de 2 llamantes. Se contestaron 2 (67%), hubo 1 calificada de ≥60 s y 1 abandonada a los 12 s. Ver `data/calls-callfire-2026-07-22_2026-10-21.json`.
   - Como el mismo número va en la web y en los anuncios, CallFire no separa las llamadas de Ads de las orgánicas. Para atribuir a Ads, la extensión de llamada debe usar el número de reenvío de Google.
-- Email: asunasatowing@gmail.com (cliente). No aparece en el sitio (web).
+- Email: asunasatowing@gmail.com (cliente). Aparece solo en /schedule-a-tow/ y en /privacy-policy/ (web, corregido 21-oct).
 - CRM (solo referencia): PENDIENTE
 - GBP: PENDIENTE. No hay ficha en Windsor y la búsqueda web no encontró una ficha con reseñas. El sitio no tiene widget de reseñas ni `aggregateRating` (web). Faltan verificación, reseñas y acceso de PMM.
 
@@ -89,12 +89,12 @@ Otros en el top 10: speedytowing.com, quicktowtowing.com, bullockstowing.com (Se
 ## Web y tracking
 - Plataforma / quién edita: WordPress + Elementor (web). Quién edita y si PMM tiene acceso: PENDIENTE
 - Tag/GA4: **ninguno**. No hay `G-`, `AW-`, `GTM-` ni Meta Pixel en las 8 páginas (web). Solo hay un `dns-prefetch` a googletagmanager.com, sin ID. Sin tracking no se lanza (estándar 7).
-- Formulario → destino: hay un formulario Elementor de 4 campos (name, campo sin nombre que probablemente es el teléfono, email, message) en About, en las 4 páginas de servicio y en Schedule A Tow (web). El destino de los envíos está PENDIENTE.
+- Formulario → destino: hay un formulario Elementor de 4 campos (name, campo sin nombre que probablemente es el teléfono, email, message) en About y en las 4 páginas de servicio; Schedule A Tow tiene uno de 9 campos (web, audit-site.md). El destino de los envíos está PENDIENTE.
 - SEO básico (web):
   - el home no tiene H1
   - ninguna página tiene meta description
   - no hay JSON-LD (LocalBusiness/TowingService)
-  - el sitio no muestra dirección ni email
+  - la dirección y el email solo aparecen en /schedule-a-tow/
 - Requisitos de política: sin requisitos especiales en towing. "Tows starting at $79.99" solo se puede usar en los anuncios si el cliente lo cumple. En las páginas no se ve el número USDOT ni "licensed & insured" (web).
 
 ## LSA (solo US)
@@ -110,7 +110,7 @@ Otros en el top 10: speedytowing.com, quicktowtowing.com, bullockstowing.com (Se
 - [ ] Medium-duty con una F550: qué vehículos puede mover realmente (para no prometer en los anuncios lo que no puede cumplir)
 - [ ] Servicio que más quiere vender y el que menos le interesa (¿lockout, gasolina y llantas valen la pena con 1 grúa?)
 - [ ] Destino de los envíos del formulario
-- [ ] Poner la dirección y el email en el sitio (los pidió el cliente). Corregir el horario del footer y agregar H1 al home, meta descriptions y schema.
+- [ ] Poner la dirección y el email en el footer de todas las páginas (los pidió el cliente; hoy solo están en /schedule-a-tow/). Corregir el horario del footer y agregar H1 al home, meta descriptions y schema.
 - [ ] Logo: el cliente quiere el estilo de la referencia de Etsy con una flatbed roja en vez de una pickup. Los conceptos están en `logo/`.
 
 ## Fuentes consultadas
