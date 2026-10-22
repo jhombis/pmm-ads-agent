@@ -1,0 +1,228 @@
+# Negativas nicho — A's Unasa Towing (complementan la lista universal PMM, que va a nivel de cuenta)
+# Concordancia de frase salvo [exacta]. Fuentes: knowledge/negativas-universales.md (towing), knowledge/benchmarks/towing-us.md,
+# benchmark.md, competitors.md y data/keywords.csv. Actualizado 2026-10-22.
+# NO se negativizan (convierten en el MCC o son servicios del cliente): cheap, affordable, price, cost, how much, lockout,
+# jump start, tire change, fuel, winch, flatbed, exotic, classic, box truck, medium duty.
+# Revisar antes de aplicar: los bloques marcados "PENDIENTE" dependen de lo que conteste el cliente.
+
+## Ajuste a la lista universal para esta cuenta
+# La universal incluye "cheapest" y "free": se mantienen. "trailer" (lista towing): se mantiene salvo que el cliente remolque trailers.
+# La universal incluye "review(s)" y "yelp": se mantienen.
+
+## Aseguradoras, motor clubs y planes de fabricante
+aaa
+geico
+progressive
+state farm
+allstate
+usaa
+farmers insurance
+liberty mutual
+nationwide
+honk
+urgently
+agero
+onstar
+carshield
+good sam
+roadside assistance plan
+roadside assistance membership
+roadside assistance coverage
+
+## Teléfono / navegacional genérico
+phone number
+number for
+contact number
+
+## Batería y jump como producto
+jump starter
+jump box
+battery pack
+car jumper
+portable jump
+battery replacement
+battery for sale
+
+## Compra / renta de trailers, grúas y equipo
+tow dolly
+tow hitch
+tow bar
+trailer rental
+trailer for sale
+car hauler
+tow truck for sale
+wrecker for sale
+rollback for sale
+u haul
+uhaul
+penske
+ryder
+budget truck
+enterprise
+hertz
+jerr dan
+copart
+
+## Junk, salvage y compra de autos
+junk car
+junk cars
+junkyard
+junk yard
+cash for cars
+cash for junk
+we buy cars
+sell my car
+salvage
+scrap
+pick n pull
+pull a part
+
+## Impound, lotes y autos remolcados
+impound
+impound lot
+tow lot
+tow yard
+towed car
+car was towed
+car got towed
+where is my car
+find my car
+vehicle release
+police auction
+auto auction
+
+## Talleres y llantas (tiendas)
+mechanic
+auto repair
+car repair
+pep boys
+firestone
+discount tire
+big o tires
+les schwab
+tire shop
+tire store
+
+## Heavy-duty que la F550 no mueve
+heavy duty
+heavy-duty
+semi
+semi truck
+18 wheeler
+tractor trailer
+big rig
+bus
+rv
+motorhome
+motor home
+camper
+
+## Larga distancia / transporte interestatal
+long distance
+cross country
+out of state
+interstate
+car shipping
+ship a car
+ship my car
+auto transport quote
+enclosed trailer shipping
+nationwide transport
+
+## Precio irreal / ancla ajena
+$50
+50 dollar
+$40
+40 dollar
+$25
+free tow
+free towing
+average tow cost
+price per mile
+cost per mile
+
+## Informacionales
+why won't my car start
+tow truck backing up
+towing capacity
+tow rating
+
+## Empleo del nicho (además de la universal)
+tow truck driver
+tow truck drivers
+tow operator jobs
+cdl
+driver wanted
+
+## Competidores locales (competitors.md) — no pujar salvo prueba controlada
+stauffer
+stauffers
+stauffer's
+firstline
+adams towing
+adams tow
+shamrock towing
+top notch towing
+taylorsville towing
+cheap towing salt lake
+cheaptowingsaltlake
+snap towing
+beehive towing
+4 wheel towing
+roadside rescue
+stuck solutions
+speedy towing
+quick tow towing
+bullocks towing
+bullock's towing
+cantrell
+
+## Navegacional de otra empresa
+sandys
+sandy's
+sandy towing [exacta]
+sandys towing
+
+## Geografía fuera del área (con Presencia el riesgo baja, pero "west valley towing" también es West Valley, AZ)
+arizona
+az
+goodyear
+phoenix
+avondale
+surprise az
+peoria
+glendale
+las vegas
+nevada
+idaho
+colorado
+denver
+ogden
+layton
+provo
+orem
+logan
+st george
+saint george
+park city
+heber
+tooele
+lehi
+spanish fork
+bountiful
+
+## Idioma sin ad group (no hay evidencia de demanda en español en el área; benchmark.md)
+grua
+gruas
+grúa
+grúas
+servicio de grua
+remolque
+
+## PENDIENTE: aplicar solo si el cliente NO presta el servicio (brief, preguntas #7 y #8)
+# motorcycle
+# motorcycle towing
+# box truck            (si la F550 no mueve medium-duty)
+# medium duty          (ídem)
+# lockout / unlock / jump start / tire change / fuel delivery / gas delivery   (si no quiere roadside)
+# 24 hour / emergency  (NO negativizar: solo se quitan del copy si no es 24/7)

@@ -2,7 +2,7 @@
 cliente: A's Unasa Towing
 slug: as-unasa-towing
 fase_actual: 0
-actualizado: 2026-10-21
+actualizado: 2026-10-22
 ---
 # Checklist — A's Unasa Towing
 > Provisional, a partir de /investigar-cliente. /roadmap lo reemplaza con knowledge/checklists/setup-cuenta.md.
@@ -20,4 +20,6 @@ actualizado: 2026-10-21
 - [ ] Cliente · Elegir el concepto de logo (logo/)
 - [x] PMM · /competitors y /benchmark-interno (21-oct)
 - [x] PMM · /audit-landing (21-oct): 10/22, requiere ajustes
-- [ ] PMM · /strategy (CPL objetivo meses 3–6: $24–36, benchmark.md)
+- [x] PMM · /strategy (22-oct): 1 campaña, 3 ad groups, Max. clics tope $7.50, CPL objetivo $24–36 (meses 3–6)
+- [ ] PMM · Aplicar universal + data/negatives-nicho.txt (178) al crear la campaña
+- [ ] PMM · /roadmap

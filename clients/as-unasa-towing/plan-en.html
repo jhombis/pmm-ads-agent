@@ -221,12 +221,12 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
       <dt>Market</dt><dd>West Valley City · Kearns · Sandy, UT · EN</dd>
       <dt>D0</dt><dd class="num">Not set</dd>
       <dt>Current phase</dt><dd><span class="chip st-block">Phase 0 · blocked</span></dd>
-      <dt>Updated</dt><dd class="num">Oct 21, 2026</dd>
+      <dt>Updated</dt><dd class="num">Oct 22, 2026</dd>
     </dl>
   </header>
 
   <nav class="toc" aria-label="Sections">
-    <a href="#resumen">Summary</a><a href="#pasos">Next steps</a><a href="#landing">Landing</a><a href="#mercado">Market</a><a href="#checklist">Checklist</a><a href="#cliente">Client</a>
+    <a href="#resumen">Summary</a><a href="#pasos">Next steps</a><a href="#estrategia">Strategy</a><a href="#anuncios">Ads</a><a href="#negativas">Negatives</a><a href="#landing">Landing</a><a href="#mercado">Market</a><a href="#checklist">Checklist</a><a href="#cliente">Client</a><a href="#porque">Why not</a>
   </nav>
 
   <section id="resumen">
@@ -259,7 +259,7 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
           <li><b>Economics first.</b> "Tows starting at $79.99" gives a max CPL of ~$17, even at a 100% margin. Without the real ticket (accidents, medium-duty, exotics), the budget can't be set.</li>
           <li><b>No tracking, no launch.</b> The site has no Google tag or GTM (Site Kit is installed but not connected). It still needs a call conversion (≥60 s), a form conversion with a thank-you page, and a Tag Assistant test.</li>
           <li><b>Hours.</b> The client asks for 24/7 and the site says "Closed Sunday". With one driver, the ad schedule follows who actually answers.</li>
-          <li><b>Likely structure.</b> At ~$540/mo and a $7–10 CPC in months 1–2, that's ~2 clicks/day. The 8 best accounts in this package size run one radius Search campaign with one ad group. Phrase match, Presence only; /strategy sets it.</li>
+          <li><b>Structure.</b> One Search campaign, 3 ad groups (near me, cities, accident), phrase + exact, Presence only. Max. clicks with a $7.50 cap until 15+ conversions/mo (month 3–4).</li>
           <li><b>What we won't do.</b> No PMax or Display at launch. No brand campaign either ("unasa towing" gets 20 searches/mo), and no LSA, because towing doesn't qualify.</li>
         </ul>
       </div>
@@ -282,6 +282,102 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
   <section id="pasos">
     <div class="sec-head"><h2>Next steps</h2><p>What's left to close Phase 0. Items marked B are blocking.</p></div>
     <div class="steps" id="steps"></div>
+  </section>
+
+  <section id="estrategia">
+    <div class="sec-head"><h2>Strategy</h2><p>One campaign and 3 ad groups: the maximum under $600/mo, and the best accounts in this package size run one campaign with one group.</p></div>
+    <dl class="cfg">
+      <div><dt>Campaign</dt><dd>Search | Towing | West Valley-Kearns | v1</dd></div>
+      <div><dt>Type</dt><dd>Search · Search Network only</dd></div>
+      <div><dt>Budget</dt><dd class="num">$17.75/day (24/7) · $20.50/day without Sunday · $540/mo [assumed]</dd></div>
+      <div><dt>Bidding</dt><dd>Max. clicks, $7.50 cap → Max. conversions at 15+ clean conv./mo</dd></div>
+      <div><dt>Conversions</dt><dd>Call ≥60 s (ad and website) + form on /thank-you/</dd></div>
+      <div><dt>Match</dt><dd>Phrase + exact · no broad</dd></div>
+      <div><dt>Location</dt><dd>Presence · ZIPs 84118, 84119, 84128, 84092 + 84104, 84120 [C]</dd></div>
+      <div><dt>Schedule</dt><dd>Mon–Sat 24 h, Sunday off (America/Denver) until the client confirms 24/7</dd></div>
+      <div><dt>Off</dt><dd>Search partners, Display, auto-applied recommendations</dd></div>
+    </dl>
+    <div class="tbl"><table>
+      <thead><tr><th>Ad group</th><th>Phase</th><th>Main keywords</th><th class="r">Vol./mo</th><th>Landing</th></tr></thead>
+      <tbody id="agrows"></tbody>
+    </table></div>
+    <p class="muted" style="font-size:.88rem; margin-top:10px">Local "near me" volume estimated as national × 0.05% (the 4 ZIPs total ~152–184k residents). All cities go in AG2 with {KeyWord:} in the H1, with no per-city groups. $7.50 cap: between what mature accounts pay in SLC ($6.0–7.1) and what new ones pay ($6.8–9).</p>
+
+    <h3 style="margin-top:28px; margin-bottom:10px">Budget by phase</h3>
+    <div class="tbl"><table>
+      <thead><tr><th>Phase</th><th>Total/mo</th><th>What happens</th><th>Exit condition</th></tr></thead>
+      <tbody>
+        <tr><td><b>F0</b> Tracking, landing and answers</td><td class="num">$0</td><td>Ticket, spend, hours and area confirmed; Google tag + 3 conversions; /towing-west-valley-kearns/ and /thank-you/; negatives.</td><td>Everything tested with Tag Assistant and ticket confirmed</td></tr>
+        <tr><td><b>F1</b> Launch (days 1–30)</td><td class="num">$540 [assumed]</td><td>Max. clicks with a $7.50 cap. Search term reviews on days 7 and 14.</td><td>≥50 clicks, ≥80% answered in CallFire, no out-of-area traffic</td></tr>
+        <tr><td><b>F2</b> Cleanup (days 31–90)</td><td class="num">$540</td><td>Cap tuning; pause groups with ≥$72 spent and 0 conversions.</td><td>15+ clean conversions/mo → Max. conversions (month 3–4)</td></tr>
+        <tr><td><b>F3</b> Max. conversions (months 3–6)</td><td class="num">$540 → raise if IS lost to budget >40%</td><td>Target CPL $24–36.</td><td>~30 conv. in 30 days → tCPA from observed CPA (not before month 6)</td></tr>
+        <tr><td><b>F4</b> Expansion (month 4+)</td><td class="num">Per F3</td><td>Exotic & classic; roadside or medium-duty only if the client confirms them.</td><td>CPL ≤ target for 30 days</td></tr>
+        <tr><td><b>F5</b> PMax</td><td class="num">—</td><td>See "Why not".</td><td>Conditions in pmax-cuando-y-como.md</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section id="anuncios">
+    <div class="sec-head"><h2>Ads</h2><p>One RSA per ad group: at ~2.5 clicks/day an A/B test is noise. H1 pinned to the group term. [C] = needs client confirmation.</p></div>
+    <div class="adgrid">
+      <div class="serp">
+        <div class="spon">Sponsored</div>
+        <div class="url">asunasatowing.com/towing-west-valley-kearns</div>
+        <div class="hl">Tow Truck Near You | Tows Starting at $79.99 | Flatbed & Wheel-Lift Towing</div>
+        <div class="ds">Flatbed and wheel-lift towing for cars, SUVs, vans and pickups in West Valley and Kearns. Free quote by phone. You get the price before we hook up, so the bill has no surprises.</div>
+      </div>
+      <div class="serp">
+        <div class="spon">Sponsored</div>
+        <div class="url">asunasatowing.com/towing-west-valley-kearns</div>
+        <div class="hl">West Valley Towing | Upfront Price Before We Hook | 8 Years on Salt Lake Roads</div>
+        <div class="ds">Free quote by phone. You get the price before we hook up, so the bill has no surprises. Tows start at $79.99. On the local police rotation, nearly a decade on Salt Lake roads.</div>
+      </div>
+      <div class="serp">
+        <div class="spon">Sponsored</div>
+        <div class="url">asunasatowing.com/accident-recovery</div>
+        <div class="hl">Accident Towing & Recovery | On the Local Police Rotation | Free Quote Over the Phone</div>
+        <div class="ds">After a crash, call 911 first. Then call us for accident towing, winch-outs and cleanup. Used to working with officers on scene. We tow to the body shop, dealer or home you pick.</div>
+      </div>
+    </div>
+    <div class="two" style="margin-top:22px">
+      <div>
+        <h3 style="margin-bottom:8px">Pinned H1 by ad group</h3>
+        <div class="tbl"><table><tbody id="h1rows"></tbody></table></div>
+      </div>
+      <div>
+        <h3 style="margin-bottom:8px">Shared headlines</h3>
+        <ul class="pool" id="pool"></ul>
+        <h3 style="margin:16px 0 8px">Descriptions</h3>
+        <ul style="margin:0; padding-left:1.1em; font-size:.93rem" id="descs"></ul>
+      </div>
+    </div>
+    <div class="callout" style="margin-top:22px">
+      <h3>Assets</h3>
+      <ul>
+        <li><b>Call</b> Google forwarding number → (385) 473-9820 → (801) 906-1114, ≥60 s conversion, same schedule as the campaign</li>
+        <li><b>Sitelinks</b>: Accident Recovery · Exotic & Classic Cars · Schedule a Tow · Light & Medium-Duty [C]</li>
+        <li><b>Callouts</b>: Free Phone Quotes · Upfront Pricing · Damage-Free Towing · Flatbed & Wheel-Lift · Police Rotation Tow Co. [C] · Local Owner-Operated [C] · Tows From $79.99 [C]</li>
+        <li><b>Snippet</b> (Services): Flatbed Towing, Wheel-Lift Towing, Accident Recovery, Winch-Outs, Exotic Car Transport, Classic Car Transport</li>
+        <li><b>Price / location / images</b>: price "Local Tow from $79.99" [C]; location pending the GBP; image: the real photo of the red truck and the logo the client picks</li>
+        <li><b>Not promised</b>: 24/7, arrival minutes, review counts, "Licensed & Insured", prices under $79.99, or the phone number in ad text</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="negativas">
+    <div class="sec-head"><h2>Negatives</h2><p>PMM universal list at account level + 178 niche terms from day 1. Nothing applied yet: the account has no campaigns.</p></div>
+    <div class="two" style="margin-top:0">
+      <div>
+        <h3 style="margin-bottom:12px">178 proposed (not applied)</h3>
+        <div class="negbars" id="negbars"></div>
+        <p class="muted" style="font-size:.86rem; margin-top:12px">Phrase unless [exact]. Checked against the keywords in all 3 groups. File: <span class="mono">data/negatives-nicho.txt</span></p>
+      </div>
+      <div class="callout">
+        <h3>What is NOT negated</h3>
+        <p style="margin-top:8px"><span class="kw">cheap</span><span class="kw">price</span><span class="kw">cost</span><span class="kw">lockout</span><span class="kw">jump start</span><span class="kw">tire change</span><span class="kw">fuel</span><span class="kw">box truck</span><span class="kw">24 hour</span></p>
+        <p style="font-size:.9rem; color:var(--ink-2); margin-top:8px">"cheap", "price" and "cost" convert like generic terms in the MCC: the outside anchor ($50, 50 dollar, free tow) is negated, not the word. Lockout, jump, tires, fuel and box truck are client services: not bid in F1, negated only if the client excludes them. "sandy towing" is Sandy’s Towing in Ohio: negated as exact, not "sandy" alone, because Sandy, UT is in the area.</p>
+      </div>
+    </div>
   </section>
 
   <section id="landing">
@@ -386,9 +482,32 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
     </div>
   </section>
 
+  <section id="porque">
+    <div class="sec-head"><h2>Why not (yet)</h2></div>
+    <div class="why">
+      <div><h4>Performance Max</h4><p>Needs stable Search, 30+ conversions/mo with reliable tracking and own assets. Today there is no tracking, GBP or logo, and MCC accounts that launched it before month 3 paused it.</p></div>
+      <div><h4>Broad / AI Max</h4><p>23% of the niche’s Search spend went to zero-conversion terms on broad. Phrase + exact until ~50 clean conversions and Jhombis’s approval.</p></div>
+      <div><h4>Display / Demand Gen</h4><p>Towing is an immediate need: demand can’t be created.</p></div>
+      <div><h4>Brand campaign</h4><p>"unasa towing" gets 20 searches/mo and nobody bids on the brand. Added as exact if it shows up in search terms.</p></div>
+      <div><h4>Remarketing</h4><p>At ~80 clicks/mo the audience never reaches the minimum, and the purchase doesn’t repeat.</p></div>
+      <div><h4>Roadside and LSA</h4><p>Roadside: low ticket, high CPC (lockout $5, fuel $9.18) and one truck; pending what the client wants. LSA: towing is not a category.</p></div>
+    </div>
+    <div class="callout" style="margin-top:22px">
+      <h3>Risks and assumptions</h3>
+      <ul>
+        <li><b>The economics don’t work at $79.99.</b> Reference max CPL ~$17 vs $33–65 in months 1–2 and $24–36 in months 3–6. Blocking until the ticket is known.</li>
+        <li><b>Small area.</b> 4 ZIPs (~152–184k residents) may not support $17.75/day. Checked on day 7 and widened if spend runs under 70%.</li>
+        <li><b>One truck, one driver.</b> While on a job, the next call can be missed. Under 80% answered in CallFire is a client problem, not a campaign one.</li>
+        <li><b>Max. clicks underperforms in the MCC</b> ($42–80 CPL in 4 accounts), though it’s unknown whether they had a cap. The standard stays, with a cap, phrase match, negatives and an early move to Max. conversions.</li>
+        <li><b>Real CPL will be higher than the benchmark</b>: here a conversion is a ≥60 s call, while the benchmark counts unqualified calls.</li>
+        <li><b>Police rotation</b>: West Valley City is reviewing it. If it changes, C6 and D3 come out of the copy.</li>
+      </ul>
+    </div>
+  </section>
+
   <footer>
     <span>Performance Media Marketing · A's Unasa Towing · account 730-795-5909</span>
-    <span>Sources: brief.md and checklist.md (Oct 21, 2026) · Windsor 365 days · CallFire Jul 22 to Oct 21 · Semrush · 8-page site scan · benchmark.md, competitors.md and audit-site.md (Oct 21)</span>
+    <span>Sources: brief.md and checklist.md (Oct 21, 2026) · Windsor 365 days · CallFire Jul 22 to Oct 21 · Semrush · 8-page site scan · benchmark.md, competitors.md, audit-site.md and strategy.md (Oct 22)</span>
   </footer>
 </div>
 
@@ -404,19 +523,39 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
   const $ = id => document.getElementById(id);
 
   /* Próximos pasos: [título, detalle, responsable, bloqueante] */
-  const steps = [["Confirm average ticket and margin by job type", "At the $79.99 floor, max CPL is ~$17, and a new account costs $51–63 per call in months 1–2. Without this, we can't set the budget or pick keywords.", "Client", true], ["Confirm real media spend from the $1,200 package", "The MCC reference is $396–540/mo. It decides how many campaigns and ad groups fit.", "Jhombis", true], ["Clarify hours: 24/7 or Monday–Saturday", "The site says \"Closed Sunday\". With one driver, we need to know who answers overnight before running ads 24/7.", "Client", true], ["Install tracking on the site", "WordPress access → connect Site Kit (already installed) or GTM. Call conversion ≥60 s, a Google forwarding number on the site that forwards to (385) 473-9820 so CallFire keeps logging, and a form redirect to /thank-you/. Tested with Tag Assistant.", "PMM", true], ["GBP: does it exist, is it verified, can we get access", "No listing found. If 721 S 5500 W is a mailing address, the listing should be a service-area business. It's needed for the location asset.", "Client", true], ["Confirm service area", "The 4 ZIPs requested leave out the base (84104), and Sandy 84092 is not contiguous with the rest. Propose a radius or the full ZIP list.", "Client", false], ["Form above the fold and campaign page", "A 3-field form above the fold on mobile (none on the home page today; on service pages it starts at ~2,370 px). Create /towing-west-valley-kearns/. Sticky header on mobile.", "PMM", true], ["Site fixes", "Replace the \"Logo.\" placeholder with the chosen logo. Address and email in the footer (today only on Schedule A Tow). Consistent hours. Home H1, meta descriptions, schema, image alt text and header compression.", "PMM", false], ["Pick a logo concept", "There are 4 concepts with a red flatbed in clients/as-unasa-towing/logo/.", "Client", false], ["Run /strategy", "✓ Done Oct 21: /competitors, /benchmark-interno and /audit-landing (10/22). /strategy is next, with a $24–36 target CPL for months 3–6 and the 3 landing pages in the Landing section.", "PMM", false]];
+  const steps = [["Confirm average ticket and margin by job type", "At the $79.99 floor, max CPL is ~$17, and a new account costs $51–63 per call in months 1–2. Without this, we can't set the budget or pick keywords.", "Client", true], ["Confirm real media spend from the $1,200 package", "The MCC reference is $396–540/mo. It decides how many campaigns and ad groups fit.", "Jhombis", true], ["Clarify hours: 24/7 or Monday–Saturday", "The site says \"Closed Sunday\". With one driver, we need to know who answers overnight before running ads 24/7.", "Client", true], ["Install tracking on the site", "WordPress access → connect Site Kit (already installed) or GTM. Call conversion ≥60 s, a Google forwarding number on the site that forwards to (385) 473-9820 so CallFire keeps logging, and a form redirect to /thank-you/. Tested with Tag Assistant.", "PMM", true], ["GBP: does it exist, is it verified, can we get access", "No listing found. If 721 S 5500 W is a mailing address, the listing should be a service-area business. It's needed for the location asset.", "Client", true], ["Confirm service area", "The 4 ZIPs requested leave out the base (84104), and Sandy 84092 is not contiguous with the rest. Propose a radius or the full ZIP list.", "Client", false], ["Form above the fold and campaign page", "A 3-field form above the fold on mobile (none on the home page today; on service pages it starts at ~2,370 px). Create /towing-west-valley-kearns/. Sticky header on mobile.", "PMM", true], ["Site fixes", "Replace the \"Logo.\" placeholder with the chosen logo. Address and email in the footer (today only on Schedule A Tow). Consistent hours. Home H1, meta descriptions, schema, image alt text and header compression.", "PMM", false], ["Pick a logo concept", "There are 4 concepts with a red flatbed in clients/as-unasa-towing/logo/.", "Client", false], ["Run /roadmap", "✓ Done Oct 22: /strategy (one campaign, 3 ad groups, Max. clicks with a $7.50 cap, $24–36 target CPL in months 3–6). /roadmap is next, with dates and exit conditions.", "PMM", false]];
   if ($('steps')) $('steps').innerHTML = steps.map((s,i)=>`
     <div class="step"><span class="n">${String(i+1).padStart(2,'0')}</span>
       <div><b>${esc(s[0])}</b><p class="d">${esc(s[1])}</p></div>
       <div class="tags">${s[3]?'<span class="b-flag" title="Blocking">B</span>':''}<span class="who">${esc(s[2])}</span></div>
     </div>`).join('');
 
+  /* Ad groups: [nombre, fase activa (F1 = activo), [keywords], volumen/mes, landing] */
+  const ACTIVE = 'F1';
+  const ags = [["AG1 Towing Near Me", "F1", ["tow truck near me", "towing near me", "towing company near me", "towing service", "flatbed towing near me"], "~175 (est.)", "/towing-west-valley-kearns/"], ["AG2 Towing West Valley & SLC", "F1", ["west valley towing", "kearns towing", "towing salt lake city", "tow truck salt lake city", "towing sandy utah [C]"], "~690 (metro)", "/towing-west-valley-kearns/"], ["AG3 Accident & Recovery", "F1", ["accident towing near me", "accident recovery", "winch out service near me", "vehicle recovery"], "<5 (est.)", "/accident-recovery/"], ["Exotic & Classic", "F4", ["exotic car towing", "classic car towing"], "<1 (est.)", "/exotic-classic-vehicle-transport/"]];
+  if ($('agrows')) $('agrows').innerHTML = ags.map(a=>`
+    <tr><td><b>${esc(a[0])}</b></td><td><span class="chip ${a[1]===ACTIVE?'st-run':'st-pause'}">${a[1]===ACTIVE?a[1]+' active':a[1]+' paused'}</span></td>
+    <td>${a[2].map(k=>`<span class="kw">${esc(k)}</span>`).join('')}</td><td class="r num">${esc(a[3])}</td><td class="mono">${esc(a[4])}</td></tr>`).join('');
+
+  /* H1 por ad group: [grupo, H1 del RSA, alternativas…]; pool de headlines y descripciones */
+  const h1 = [["AG1 Towing Near Me", "Tow Truck Near You", "Towing Service Near You", "Local Flatbed Towing"], ["AG2 Towing West Valley & SLC", "{KeyWord:West Valley Towing}", "Towing in West Valley City", "Kearns & West Valley Towing"], ["AG3 Accident & Recovery", "Accident Towing & Recovery", "Winch-Out & Vehicle Recovery", "Wrecked Car? We Tow It"]];
+  if ($('h1rows')) $('h1rows').innerHTML = h1.map(r=>`<tr><td><b>${esc(r[0])}</b></td><td>${r.slice(1).map(x=>`${esc(x)} <span class="lenc">${x.startsWith('{KeyWord:')?x.length-10:x.length}</span>`).join('<br>')}</td></tr>`).join('');
+  const pool = ["Tows Starting at $79.99", "Upfront Price Before We Hook", "Free Quote Over the Phone", "Flatbed & Wheel-Lift Towing", "Damage-Free Towing", "On the Local Police Rotation", "8 Years on Salt Lake Roads", "Local Owner-Operated Towing", "Exotic & Classic Car Transport", "Cars, SUVs, Vans & Pickups", "Serving West Valley & Kearns", "Fast Response - Call Now", "Talk to the Driver, Not a Bot", "Open Mon-Sat, 24 Hours"];
+  if ($('pool')) $('pool').innerHTML = pool.map(x=>`<li>${esc(x)} <span class="lenc">${x.length}</span></li>`).join('');
+  const descs = ["Flatbed and wheel-lift towing for cars, SUVs, vans and pickups in West Valley and Kearns.", "Free quote by phone. You get the price before we hook up, so the bill has no surprises.", "Tows start at $79.99. On the local police rotation, nearly a decade on Salt Lake roads.", "Low-clearance, exotic and classic cars loaded on a flatbed with the care they need.", "After a crash, call 911 first. Then call us for accident towing, winch-outs and cleanup.", "Used to working with officers on scene. We tow to the body shop, dealer or home you pick."];
+  if ($('descs')) $('descs').innerHTML = descs.map(x=>`<li style="margin:4px 0">${esc(x)} <span class="lenc">${x.length}</span></li>`).join('');
+
+  /* Negativas por categoría: [categoría, cantidad, color] */
+  const negs = [["Out-of-area geography", 26, "var(--sky)"], ["Local competitors", 21, "var(--orange)"], ["Insurers and motor clubs", 18, "var(--red)"], ["Trailers, trucks and equipment", 18, "var(--purple)"], ["Junk and salvage", 12, "var(--red)"], ["Impound and lots", 12, "var(--red)"], ["Heavy-duty", 12, "var(--purple)"], ["Repair shops and tire stores", 10, "var(--purple)"], ["Unrealistic prices", 10, "var(--red)"], ["Long distance", 10, "var(--sky)"], ["Battery as a product", 7, "var(--purple)"], ["Spanish with no ad group", 6, "var(--sky)"], ["Niche jobs", 5, "var(--red)"], ["Another company (Sandy's)", 4, "var(--orange)"], ["Informational", 4, "var(--red)"], ["Phone number", 3, "var(--red)"]];
+  const negMax = Math.max(...negs.map(n=>n[1]), 1);
+  if ($('negbars')) $('negbars').innerHTML = negs.map(n=>`<div class="negbar"><span>${esc(n[0])}</span><div class="t"><i style="width:${n[1]/negMax*100}%; --c:${n[2]}"></i></div><b class="num" style="text-align:right">${n[1]}</b></div>`).join('');
+
   /* Rúbrica de landing (audit-site): [ítem, 0 | 1 | 2 | null = sin dato]. 0 marca B. */
   const rub = [["Headline matches the search", 1], ["Short form visible above the fold (mobile)", 0], ["Click to call on mobile", 1], ["Clear offer", 2], ["Social proof", 0], ["Trust (license, insurance, years)", 1], ["Mobile speed", null], ["Google tag present", 0], ["Measurable thank-you page", 0], ["One page per service", 2], ["No leaks", 2]];
   if ($('rubric')) $('rubric').innerHTML = rub.map(r=>`<div class="rub-row"><span>${esc(r[0])}${r[1]===0?' <span class="b-flag">B</span>':''}</span><span class="pips">${r[1]===null?'<em>SIN DATO</em>':`<i class="${r[1]>=1?'on':''}"></i><i class="${r[1]>=2?'on':''}"></i>`}</span></div>`).join('');
 
   /* Checklist (espejo de checklist.md): [fase, ítem, responsable, done | part | todo, bloqueante] */
-  const CL = [["F0", "✓ Done Oct 21: researched brief (63%), CallFire number identified, MCC account located", "PMM", "done", false], ["F0", "Average ticket by job type and margin → max CPL", "Client", "todo", true], ["F0", "Real media spend from the $1,200 package", "Jhombis", "todo", true], ["F0", "Real hours (24/7 vs \"Closed Sunday\") and who answers overnight", "Client", "todo", true], ["F0", "WordPress access → Google tag + call ≥60 s + form, tested with Tag Assistant", "PMM", "todo", true], ["F0", "GBP: exists, verified, access for PMM", "Client", "todo", true], ["F0", "Service area (84104, 84120, all of Sandy)", "Client", "todo", false], ["F0", "Medium-duty capacity of the F550", "Client", "todo", false], ["F0", "Site: address + email, hours, H1, meta descriptions, schema", "PMM", "todo", false], ["F0", "Pick a logo concept", "Client", "todo", false], ["F0", "✓ Done Oct 21: /competitors and /benchmark-interno", "PMM", "done", false], ["F0", "✓ Done Oct 21: /audit-landing (10/22, needs fixes)", "PMM", "done", false], ["F0", "3-field form above the fold on mobile + measurable /thank-you/", "PMM", "todo", true], ["F0", "Real logo in the header (placeholder \"Logo.\" today)", "PMM", "todo", false], ["F0", "/strategy", "PMM", "todo", false]];
+  const CL = [["F0", "✓ Done Oct 21: researched brief (63%), CallFire number identified, MCC account located", "PMM", "done", false], ["F0", "Average ticket by job type and margin → max CPL", "Client", "todo", true], ["F0", "Real media spend from the $1,200 package", "Jhombis", "todo", true], ["F0", "Real hours (24/7 vs \"Closed Sunday\") and who answers overnight", "Client", "todo", true], ["F0", "WordPress access → Google tag + call ≥60 s + form, tested with Tag Assistant", "PMM", "todo", true], ["F0", "GBP: exists, verified, access for PMM", "Client", "todo", true], ["F0", "Service area (84104, 84120, all of Sandy)", "Client", "todo", false], ["F0", "Medium-duty capacity of the F550", "Client", "todo", false], ["F0", "Site: address + email, hours, H1, meta descriptions, schema", "PMM", "todo", false], ["F0", "Pick a logo concept", "Client", "todo", false], ["F0", "✓ Done Oct 21: /competitors and /benchmark-interno", "PMM", "done", false], ["F0", "✓ Done Oct 21: /audit-landing (10/22, needs fixes)", "PMM", "done", false], ["F0", "3-field form above the fold on mobile + measurable /thank-you/", "PMM", "todo", true], ["F0", "Real logo in the header (placeholder \"Logo.\" today)", "PMM", "todo", false], ["F0", "✓ Done Oct 22: /strategy", "PMM", "done", false], ["F0", "Apply universal + data/negatives-nicho.txt (178) when the account is built", "PMM", "todo", false], ["F0", "/roadmap", "PMM", "todo", false]];
   const PHT = {"F0": "Brief, tracking and economics"};
   let fWho='All', fSt='All';
   const whoOpts=['All','PMM','Client','Jhombis'], stOpts=['All','Pending','Blocking','Done'];

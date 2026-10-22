@@ -1,0 +1,49 @@
+keyword,volumen_semrush,volumen_local_est,cpc_semrush,intencion,servicio,ciudad,match,ad_group,nota
+tow truck near me,135000,~68,4.36,comercial,towing,near me,exacta+frase,AG1 Towing Near Me,volumen nacional; la geo filtra
+towing near me,110000,~55,3.81,comercial,towing,near me,exacta+frase,AG1 Towing Near Me,volumen nacional; la geo filtra
+towing company near me,49500,~25,3.73,comercial,towing,near me,exacta+frase,AG1 Towing Near Me,volumen nacional; la geo filtra
+towing service near me,27100,~14,,comercial,towing,near me,frase,AG1 Towing Near Me,volumen nacional; la geo filtra
+tow service near me,14800,~7,3.94,comercial,towing,near me,frase,AG1 Towing Near Me,volumen nacional; la geo filtra
+car towing near me,8100,~4,3.67,comercial,towing,near me,frase,AG1 Towing Near Me,volumen nacional; la geo filtra
+flatbed towing near me,720,~0,3.35,comercial,towing,near me,frase,AG1 Towing Near Me,volumen nacional; la geo filtra
+flatbed tow truck near me,320,~0,4.09,comercial,towing,near me,frase,AG1 Towing Near Me,volumen nacional; la geo filtra
+towing service,,,,comercial,towing,—,frase,AG1 Towing Near Me,top 5 del MCC (CPL maduro $9.79)
+tow truck service,,,,comercial,towing,—,frase,AG1 Towing Near Me,
+24 hour towing near me,2900,~1,3.6,comercial urgente,towing,near me,frase,AG1 Towing Near Me,[C] solo si se confirma 24/7
+emergency towing near me,1300,~1,4.43,comercial urgente,towing,near me,frase,AG1 Towing Near Me,[C] solo si se confirma quién contesta de noche
+towing salt lake city,140,,3.87,comercial local,towing,Salt Lake City,exacta+frase,AG2 Towing West Valley & SLC,volumen del metro; con Presencia solo cuenta la búsqueda desde los ZIP
+tow truck salt lake city,110,,4.56,comercial local,towing,Salt Lake City,exacta+frase,AG2 Towing West Valley & SLC,volumen del metro; con Presencia solo cuenta la búsqueda desde los ZIP
+salt lake towing,110,,3.67,comercial local,towing,Salt Lake City,frase,AG2 Towing West Valley & SLC,volumen del metro; con Presencia solo cuenta la búsqueda desde los ZIP
+salt lake city towing,90,,4.52,comercial local,towing,Salt Lake City,frase,AG2 Towing West Valley & SLC,volumen del metro; con Presencia solo cuenta la búsqueda desde los ZIP
+west valley towing,110,,3.34,comercial local,towing,West Valley City,exacta+frase,AG2 Towing West Valley & SLC,
+towing west valley,110,,3.08,comercial local,towing,West Valley City,frase,AG2 Towing West Valley & SLC,
+towing west valley city,20,,,comercial local,towing,West Valley City,frase,AG2 Towing West Valley & SLC,
+tow truck west valley,0,,,comercial local,towing,West Valley City,frase,AG2 Towing West Valley & SLC,
+kearns towing,20,,2.28,comercial local,towing,Kearns,frase,AG2 Towing West Valley & SLC,
+tow truck kearns,,,,comercial local,towing,Kearns,frase,AG2 Towing West Valley & SLC,
+towing sandy utah,20,,3.78,comercial local,towing,Sandy,frase,AG2 Towing West Valley & SLC,[C] solo si se confirma Sandy
+tow truck sandy utah,20,,4.39,comercial local,towing,Sandy,frase,AG2 Towing West Valley & SLC,[C] solo si se confirma Sandy
+accident towing near me,140,~0,3.3,comercial ticket alto,accident & recovery,near me,frase,AG3 Accident & Recovery,
+accident recovery,,,,comercial ticket alto,accident & recovery,near me,frase,AG3 Accident & Recovery,
+car accident towing,,,,comercial ticket alto,accident & recovery,near me,frase,AG3 Accident & Recovery,
+winch out service near me,140,~0,2.75,comercial ticket alto,accident & recovery,near me,frase,AG3 Accident & Recovery,
+winch out near me,90,~0,4.66,comercial ticket alto,accident & recovery,near me,frase,AG3 Accident & Recovery,
+vehicle recovery,,,,comercial ticket alto,accident & recovery,near me,frase,AG3 Accident & Recovery,
+exotic car towing,320,~0,3.24,comercial ticket alto,exotic/medium,near me,frase,— (fase futura),F2: grupo condicional si hay presupuesto; en F1 va como sitelink
+classic car towing,320,~0,3.67,comercial ticket alto,exotic/medium,near me,frase,— (fase futura),F2 condicional
+medium duty towing,390,~0,3.94,comercial ticket alto,exotic/medium,near me,frase,— (fase futura),PENDIENTE capacidad F550
+box truck towing,260,~0,5.06,comercial ticket alto,exotic/medium,near me,frase,— (fase futura),PENDIENTE capacidad F550
+cheap towing near me,14800,,3.5,comercial sensible a precio,—,—,—,descartada,no se puja: ancla $50 de STUCK y piso de $79.99; no se negativiza 'cheap' suelto (convierte en el MCC)
+cheap towing salt lake city,40,,3.5,comercial sensible a precio,—,—,—,descartada,ídem
+roadside assistance near me,33100,,3.83,mixta (AAA/aseguradoras),—,—,—,descartada,no en F1; pendiente pregunta #8 del brief
+roadside assistance salt lake city,50,,3.19,mixta,—,—,—,descartada,no en F1
+car lockout near me,390,,5.03,ticket bajo,—,—,—,descartada,no en F1; CPC $5 con ticket bajo
+fuel delivery near me,2900,,9.18,ticket bajo,—,—,—,descartada,no en F1; CPC $9.18
+jump start near me,1900,,3.39,ticket bajo,—,—,—,descartada,no en F1
+tire change service near me,2900,,3.24,ticket bajo,—,—,—,descartada,no en F1
+motorcycle towing near me,1900,,2.79,comercial,—,—,—,descartada,PENDIENTE: no está en los servicios del brief
+sandy towing,260,,1.61,"navegacional (Sandy's Towing, Dayton OH)",—,—,—,descartada,"negativa: sandys, sandy's"
+stauffers towing,320,,4.64,competidor,—,—,—,descartada,negativa
+adams towing,1000,,2.06,competidor,—,—,—,descartada,negativa
+towing cost,1600,,2.76,informacional/precio,—,—,—,descartada,no se puja; no se negativiza (price/cost convierte en el MCC)
+utah towing,110,,2.77,comercial local (todo el estado),—,—,—,descartada,no se puja: demasiado amplio para 4 ZIP
