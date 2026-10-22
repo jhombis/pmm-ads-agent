@@ -5,13 +5,13 @@ fase_actual: 0
 actualizado: 2026-10-22
 ---
 # Checklist — A's Unasa Towing
-> Generado por /roadmap desde knowledge/checklists/setup-cuenta.md + tareas del cliente. /weekly-review lo mantiene. B = bloqueante. Sin LSA (towing no califica) y sin Fase 5 PMax (no realista con $540/mes; roadmap.md).
+> Generado por /roadmap desde knowledge/checklists/setup-cuenta.md + tareas del cliente. /weekly-review lo mantiene. B = bloqueante. Sin LSA (towing no califica) y sin Fase 5 PMax (no realista con $510/mes; roadmap.md).
 
 ## Fase 0 — Fundación
 - [x] PMM · Brief investigado (63%), CallFire (385) 473-9820 → (801) 906-1114 identificado
 - [x] PMM · /competitors, /benchmark-interno, /audit-landing (10/22), /strategy v1 y /roadmap
 - [ ] B · Cliente · Ticket promedio y margen por tipo de trabajo → CPL máximo
-- [ ] B · Jhombis · Gasto real en medios del paquete de $1,200 (strategy.md usa $540)
+- [x] Jhombis · Gasto real en medios: 42.5% de $1,200 = $510/mes (22-oct)
 - [ ] B · Cliente · Horario real (24/7 o "Closed Sunday") y quién contesta de noche y el domingo
 - [ ] B · Cliente · Proceso de respuesta a leads: qué pasa cuando el conductor está en un servicio (desvío o devolución en <15 min)
 - [ ] B · Cliente · Acceso a WordPress para PMM
@@ -43,7 +43,7 @@ actualizado: 2026-10-22
 - [ ] PMM · 1 RSA por grupo, H1 pinneado, 15H/4D, fuerza "Buena" o superior
 - [ ] PMM · Extensiones: 4 sitelinks, 7 callouts, snippet, llamada; ubicación cuando haya GBP
 - [ ] PMM · URLs finales verificadas (200, https, sin redirect)
-- [ ] PMM · Presupuesto $17.75/día (24/7) o $20.50/día (sin domingo)
+- [ ] PMM · Presupuesto $16.75/día (24/7) o $19.50/día (sin domingo)
 - [ ] PMM · Anuncios aprobados (revisar 24 h después)
 - [ ] PMM · Primera conversión registrada y contestadas ≥80% en CallFire
 - [ ] PMM · Logo real y horario coherente en el sitio

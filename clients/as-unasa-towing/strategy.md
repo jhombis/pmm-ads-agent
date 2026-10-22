@@ -3,9 +3,8 @@ cliente: A's Unasa Towing
 slug: as-unasa-towing
 pais: US
 actualizado: 2026-10-22
-version: 1
+version: 1.1
 supuestos:
-  - Gasto real en medios PENDIENTE (Jhombis). Se usa $540/mes, la mediana del 45% de los paquetes de $799–1,200 en el MCC (benchmark.md).
   - Ticket promedio y margen PENDIENTES. El CPL máximo de referencia es ~$17 con el piso de $79.99 (brief). El CPL objetivo sale del benchmark, no de la economía del cliente.
   - Horario PENDIENTE (24/7 según el cliente, "Closed Sunday" según la web). F1 arranca con el horario de la web.
   - Área PENDIENTE. Se usan los 4 ZIP del cliente y se proponen 84104 (base) y 84120 (West Valley City) como [C].
@@ -19,26 +18,28 @@ supuestos:
 
 ## Resumen ejecutivo
 - **1 campaña Search** ("Search | Towing | West Valley-Kearns | v1") con **3 ad groups**: genéricos "near me", ciudad (West Valley, Kearns, SLC, Sandy [C]) y accidente/recovery. Es el máximo del límite de fragmentación para <$600/mes (playbook §4). Las 8 mejores cuentas del paquete usan 1 campaña y 1 ad group (benchmark.md).
-- **Presupuesto F1**: **$540/mes** [supuesto] → **$17.75/día** si es 24/7, o **$20.50/día** si el domingo va apagado (~26 días activos). Matemática: $17.75 ÷ CPC $6.5–7.5 ≈ **2.4–2.7 clics/día → ~70–83 clics/mes → ~10–15 llamadas** con la CVR de la cohorte nueva (14–18%). Las llamadas de ≥60 s serán menos.
+- **Presupuesto F1**: **$510/mes** (42.5% del paquete de $1,200, confirmado por Jhombis el 22-oct) → **$16.75/día** si es 24/7, o **$19.50/día** si el domingo va apagado (~26 días activos). Matemática: $16.75 ÷ CPC $6.5–7.5 ≈ **2.2–2.6 clics/día → ~68–78 clics/mes → ~10–14 llamadas** con la CVR de la cohorte nueva (14–18%). Las llamadas de ≥60 s serán menos.
 - **Puja**: **Maximizar clics con tope de CPC de $7.50** (estándar 6), Presencia, frase + exacta. Pasa a **Maximizar conversiones** con 15+ conversiones/mes limpias, esperable hacia el **mes 3–4**.
 - **CPL objetivo**: meses 1–2 sin objetivo, solo control ($33–65 esperado). **Meses 3–6: $24–36** (mediana Search del nicho ±20%). Meta madura: $10.8–16.2.
-- **tCPA**: no antes del **mes 6**, con ~30 conversiones en 30 días y fijado desde el CPA observado. Con $540/mes solo pasa si la cuenta llega a CPL maduro.
+- **tCPA**: no antes del **mes 6**, con ~30 conversiones en 30 días y fijado desde el CPA observado. Con $510/mes, 30 en 30 días exige un CPL ≤ $17: solo pasa si la cuenta llega a CPL maduro.
 - **Bloqueante económico**: el CPL máximo de referencia (~$17 con el piso de $79.99) queda por debajo de todo lo esperable hasta el mes 6. La cuenta solo es rentable si el ticket real es mayor (accidentes, exóticos, millaje). **No lanzar sin la respuesta del ticket.**
 
 ## Campañas
 | Campaña | Objetivo | Presupuesto/día F1 | % | Puja inicial | Geo | Horario |
 |---|---|---|---|---|---|---|
-| Search \| Towing \| West Valley-Kearns \| v1 | Llamadas ≥60 s (anuncio + web) y formulario (/thank-you/) | $17.75 (24/7) · $20.50 (dom off) | 100% | Max. clics, tope CPC $7.50 | **Presencia**. ZIP 84118, 84119, 84128, 84092 [C] + 84104 [C], 84120 [C]. Excluir resto de países | F1: lun–sáb 24 h, dom off (horario de la web) hasta que el cliente confirme 24/7 con alguien que conteste (America/Denver) |
+| Search \| Towing \| West Valley-Kearns \| v1 | Llamadas ≥60 s (anuncio + web) y formulario (/thank-you/) | $16.75 (24/7) · $19.50 (dom off) | 100% | Max. clics, tope CPC $7.50 | **Presencia**. ZIP 84118, 84119, 84128, 84092 [C] + 84104 [C], 84120 [C]. Excluir resto de países | F1: lun–sáb 24 h, dom off (horario de la web) hasta que el cliente confirme 24/7 con alguien que conteste (America/Denver) |
 | ~~Marca~~ | — | — | — | — | — | No: "unasa towing" tiene 20 búsquedas/mes y nadie puja por la marca (Semrush) |
 | ~~LSA~~ | — | — | — | — | — | Towing no es categoría de Local Services Ads (brief) |
 
-**Por qué una sola campaña:** la regla de aprendizaje pide ≥3× CPL/día por campaña, $72–108/día con un CPL de $24–36. Con $17.75–20.50/día no alcanza ni para una, así que todo va en una campaña y la prioridad se maneja por ad group y copy.
+**Por qué una sola campaña:** la regla de aprendizaje pide ≥3× CPL/día por campaña, $72–108/día con un CPL de $24–36. Con $16.75–19.50/día no alcanza ni para una, así que todo va en una campaña y la prioridad se maneja por ad group y copy.
 
 **Por qué tope de $7.50:** Semrush da $3.87–4.56 en los términos de SLC; en el MCC, una cuenta madura paga ~$6.0–7.1 en SLC calibrado y las nuevas pagan $6.8–9 en "near me" (benchmark.md). Un tope de $7.50 compra en el rango de las maduras sin quedar fuera de la subasta. Se revisa el día 7: si la pérdida de IS por ranking pasa de 50% y no se gasta el presupuesto, se sube a $9.
 
+**Ritmo con domingo apagado:** con $19.50/día el tope mensual de Google (30.4× el diario) es $593, por encima de los $510. Se controla el gasto cada semana y se baja el diario si a mitad de mes va por encima del ritmo.
+
 **Por qué el horario arranca sin domingo:** la web dice "Closed Sunday", hay 1 grúa y 1 conductor, y ya hubo 1 llamada abandonada de 3 en CallFire. Una llamada pagada que nadie contesta es desperdicio puro (estándar 10). Se abre el domingo cuando el cliente confirme quién contesta.
 
-**Geo**: los 4 ZIP pedidos suman ~152–184k habitantes (web: zip-codes.com, statisticalatlas.com; 84118 tiene cifras inconsistentes entre fuentes). Es un área chica para $17.75/día y deja afuera la base (84104) y 84120, que también es West Valley City. Regla F1: si el día 7 el gasto va por debajo del 70% del presupuesto con IS perdido por ranking <30%, se amplía la geo (radio de ~8 mi desde la base o más ZIP confirmados).
+**Geo**: los 4 ZIP pedidos suman ~152–184k habitantes (web: zip-codes.com, statisticalatlas.com; 84118 tiene cifras inconsistentes entre fuentes). Es un área chica para $16.75/día y deja afuera la base (84104) y 84120, que también es West Valley City. Regla F1: si el día 7 el gasto va por debajo del 70% del presupuesto con IS perdido por ranking <30%, se amplía la geo (radio de ~8 mi desde la base o más ZIP confirmados).
 
 **Configuración fija (estándares PMM):**
 - Solo red de Búsqueda: sin socios ni Display (estándar 8).
@@ -103,10 +104,10 @@ En `data/ads-search.md`: 1 RSA por ad group (pauta <$1,500/mes), 15 headlines (3
 ## Presupuesto por fase
 | Fase | Total/mes | Por campaña | Condición para pasar |
 |---|---|---|---|
-| **F0 — Medición, landing y respuestas** (ya) | $0 | — | Ticket y margen confirmados (CPL máximo); gasto real confirmado; horario y área confirmados; Google tag + 3 conversiones probadas con Tag Assistant; /towing-west-valley-kearns/ y /thank-you/ publicadas; universal + nicho aplicadas |
-| **F1 — Lanzamiento** (días 1–30) | $540 [supuesto] | 100%, $17.75/día (o $20.50 sin domingo). Max. clics, tope $7.50 | ≥50 clics; search terms revisados los días 7 y 14; tasa de contestadas ≥80% en CallFire; sin términos fuera de geo |
-| **F2 — Limpieza** (días 31–90) | $540 | Igual. Ajustar tope según IS perdido por ranking. Pausar un ad group con gasto ≥2× CPL objetivo (~$72) y 0 conversiones | **15+ conversiones/mes limpias** (≥60 s) → Maximizar conversiones (esperable mes 3–4) |
-| **F3 — Maximizar conversiones** (mes 3–6) | $540 → propuesta de subir si IS perdido por presupuesto >40% y CPL ≤ $36 | 100% | ~30 conversiones en 30 días → tCPA = CPA observado de 30 días (no antes del mes 6) |
+| **F0 — Medición, landing y respuestas** (ya) | $0 | — | Ticket y margen confirmados (CPL máximo); horario y área confirmados; Google tag + 3 conversiones probadas con Tag Assistant; /towing-west-valley-kearns/ y /thank-you/ publicadas; universal + nicho aplicadas |
+| **F1 — Lanzamiento** (días 1–30) | $510 | 100%, $16.75/día (o $19.50 sin domingo). Max. clics, tope $7.50 | ≥50 clics; search terms revisados los días 7 y 14; tasa de contestadas ≥80% en CallFire; sin términos fuera de geo |
+| **F2 — Limpieza** (días 31–90) | $510 | Igual. Ajustar tope según IS perdido por ranking. Pausar un ad group con gasto ≥2× CPL objetivo (~$72) y 0 conversiones | **15+ conversiones/mes limpias** (≥60 s) → Maximizar conversiones (esperable mes 3–4) |
+| **F3 — Maximizar conversiones** (mes 3–6) | $510 → propuesta de subir si IS perdido por presupuesto >40% y CPL ≤ $36 | 100% | ~30 conversiones en 30 días → tCPA = CPA observado de 30 días (no antes del mes 6) |
 | **F4 — Expansión** (mes 4+) | Según F3 | Grupo de exóticos y clásicos; roadside o medium-duty solo si el cliente los confirma y hay presupuesto. RLSA: baja prioridad (compra urgente, no se repite) | CPL ≤ objetivo sostenido 30 días |
 | **F5 — PMax** | — | Ver "Por qué NO" | Condiciones de `knowledge/estrategias/pmax-cuando-y-como.md` |
 
@@ -120,9 +121,13 @@ En `data/ads-search.md`: 1 RSA por ad group (pauta <$1,500/mes), 15 headlines (3
 - **Remarketing**: audiencia mínima con ~80 clics/mes, y la compra no se repite.
 - **Roadside como grupo propio**: ticket bajo, CPC alto (lockout $5, fuel $9.18) y 1 grúa. Pendiente de lo que conteste el cliente.
 
+## Historial de cambios
+- 2026-10-22 v1: creada con $540/mes de referencia.
+- 2026-10-22 v1.1: gasto real confirmado por Jhombis: 42.5% de $1,200 = $510/mes. Presupuesto diario $16.75 (24/7) o $19.50 (sin domingo); estructura, puja y tope sin cambios.
+
 ## Riesgos y supuestos
 1. **La economía no cierra con $79.99.** CPL máximo de referencia ~$17 contra $33–65 en los meses 1–2 y $24–36 en los meses 3–6. Si el ticket promedio real es cercano a $80, la cuenta pierde plata hasta madurar. Es bloqueante.
-2. **Geo chica.** 4 ZIP (~152–184k habitantes) pueden no alcanzar para gastar $17.75/día. Se mide el día 7.
+2. **Geo chica.** 4 ZIP (~152–184k habitantes) pueden no alcanzar para gastar $16.75/día. Se mide el día 7.
 3. **Capacidad de respuesta.** 1 grúa y 1 conductor: si está en un servicio, la siguiente llamada se puede perder. Se mide la tasa de contestadas en CallFire cada semana; <80% es problema del cliente, no de la campaña.
 4. **Max. clics en el MCC sale peor.** Las 4 cuentas de towing que hoy lo usan tienen CPL de $42–80 o 0 conversiones, pero Windsor no muestra si tenían tope y son casi todas nuevas (benchmark.md). Se mantiene el estándar 6 con tope, frase, negativas desde el día 1 y salida temprana a Maximizar conversiones apenas haya 15/mes.
 5. **El CPL real va a ser mayor que el benchmark.** El benchmark cuenta llamadas sin calificar; aquí la conversión es una llamada de ≥60 s.

@@ -4,11 +4,11 @@ slug: as-unasa-towing
 pais: US
 idioma: EN
 nicho: towing
-actualizado: 2026-10-21
+actualizado: 2026-10-22
 estado: onboarding
 origen: investigar-cliente
 customer_id: 730-795-5909
-completitud: 63%
+completitud: 65%
 call_tracking: callfire
 tracking_number: "(385) 473-9820"
 tracking_destino: "(801) 906-1114"
@@ -48,8 +48,8 @@ plan_en: https://claude.ai/artifact/CrPAZcEDg6j5hqZZMBC6ie
 
 ## Objetivo y economía
 - Objetivo primario: llamadas (inferido: el sitio empuja "Call Now" en cada sección, y "Schedule A Tow" termina en "Your Booking Is Not Yet Confirmed — call to confirm"). Formulario secundario.
-- Presupuesto mensual: el paquete es de **$1,200/mes** (MCC: nombre de la cuenta "Premium Local Listings 004052 ($1200 A's Unasa Towing)"). El gasto real en medios está PENDIENTE.
-  - Referencia (benchmark towing US): en paquetes de $799–1,200 va a medios el 33–45% del monto, unos **$396–540/mes**, con una mediana de $375.
+- Presupuesto mensual: el paquete es de **$1,200/mes** (MCC: nombre de la cuenta "Premium Local Listings 004052 ($1200 A's Unasa Towing)"). **Gasto real en medios: 42.5% = $510/mes** (Jhombis, 2026-10-22).
+  - Referencia (benchmark towing US): en paquetes de $799–1,200 va a medios el 37–47% del monto (benchmark.md); $510 queda dentro del rango.
 - Ticket promedio / margen: PENDIENTE. El único dato publicado es el piso de $79.99 por tow (web).
 - Capacidad (trabajos/mes): PENDIENTE. Con 1 grúa y 1 conductor (cliente + web: LoadWrap), la capacidad simultánea es de un trabajo a la vez.
 - **CPL máximo aceptable**: PENDIENTE (faltan el ticket y el margen). Referencias:
@@ -102,7 +102,7 @@ Otros en el top 10: speedytowing.com, quicktowtowing.com, bullockstowing.com (Se
 
 ## Pendientes
 - [ ] **B** Ticket promedio por tipo de trabajo (tow local, accidente, medium-duty, exótico, roadside) y margen. Define el CPL máximo: con el piso de $79.99 no cierra.
-- [ ] **B** Gasto real en medios del paquete de $1,200
+- [x] Gasto real en medios: 42.5% de $1,200 = $510/mes (Jhombis, 2026-10-22)
 - [ ] **B** Horario real: ¿24/7, o lunes a sábado con el domingo cerrado como dice el sitio? ¿Quién contesta de madrugada si hay 1 solo conductor?
 - [ ] **B** Instalar Google tag + conversiones de llamada (≥60 s) y formulario en el sitio. Falta el acceso a WordPress para PMM.
 - [ ] **B** GBP: ¿existe, está verificado y tiene reseñas? Acceso para PMM. Si la dirección 721 S 5500 W es virtual, la ficha va como área de servicio, sin dirección visible.
@@ -131,7 +131,7 @@ Otros en el top 10: speedytowing.com, quicktowtowing.com, bullockstowing.com (Se
 - **La economía no cierra con el precio publicado.** Con "Tows starting at $79.99", el CPL máximo de referencia ronda los $17, contra los $51–63 que cuesta un lead en los primeros 2 meses de una cuenta nueva de towing. Sin un ticket real más alto, la cuenta pierde plata desde el día 1. Hay que confirmar el ticket antes de definir presupuesto y keywords. Lockout y gasolina probablemente bajan el ticket.
 - **Sin tracking en el sitio** (no hay Google tag ni GTM). La conversión de llamada desde el anuncio se puede medir con la extensión, pero el formulario y las llamadas desde la web no. Bloquea el lanzamiento (estándar 7).
 - **Contradicción de horario.** El cliente pide 24/7, y la web dice "Closed Sunday". Con 1 grúa y 1 conductor, publicar anuncios 24/7 sin cobertura real quema el presupuesto en llamadas no contestadas. Ya hay 1 abandonada de 3.
-- **Volumen local chico y presupuesto chico.** En Semrush (frase local, mensual): "towing salt lake city" 140, "tow truck salt lake city" 110, "west valley towing" 110 y "salt lake towing" 110, con un CPC de $3.3–4.6. El volumen real viene de "towing near me" y "tow truck near me", filtrados por geo. Con ~$400–540/mes y ~$5–7 de CPC salen unos 2–3 clics/día. Por el playbook, eso es **1 campaña con 2–3 ad groups**, nada de grupos por ciudad.
+- **Volumen local chico y presupuesto chico.** En Semrush (frase local, mensual): "towing salt lake city" 140, "tow truck salt lake city" 110, "west valley towing" 110 y "salt lake towing" 110, con un CPC de $3.3–4.6. El volumen real viene de "towing near me" y "tow truck near me", filtrados por geo. Con $510/mes y ~$6.5–7.5 de CPC salen unos 2.2–2.6 clics/día. Por el playbook, eso es **1 campaña con 2–3 ad groups**, nada de grupos por ciudad.
 - **El geo pedido deja afuera la base.** Los ZIP 84118/84119/84128 + 84092 no incluyen 84104 (la dirección del negocio), y Sandy queda separado del resto. Conviene un radio o la lista completa de ZIP de West Valley, Kearns y Taylorsville, más Sandy si de verdad lo cubre.
 - **"sandy towing" (260/mes, CPC $1.61, competencia 0.25)** parece una búsqueda de navegación hacia otra empresa (inferido: CPC y competencia muy por debajo del resto de keywords locales). No usarla como keyword.
 
