@@ -219,14 +219,14 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
       <dt>Account</dt><dd class="mono">730-795-5909</dd>
       <dt>MCC</dt><dd class="mono">444-523-7672</dd>
       <dt>Market</dt><dd>West Valley City · Kearns · Sandy, UT · EN</dd>
-      <dt>D0</dt><dd class="num">Not set</dd>
-      <dt>Current phase</dt><dd><span class="chip st-block">Phase 0 · blocked</span></dd>
+      <dt>D0</dt><dd class="num">Oct 22, 2026</dd>
+      <dt>Current phase</dt><dd><span class="chip st-run">Phase 0 · in progress</span></dd>
       <dt>Updated</dt><dd class="num">Oct 22, 2026</dd>
     </dl>
   </header>
 
   <nav class="toc" aria-label="Sections">
-    <a href="#resumen">Summary</a><a href="#pasos">Next steps</a><a href="#estrategia">Strategy</a><a href="#anuncios">Ads</a><a href="#negativas">Negatives</a><a href="#landing">Landing</a><a href="#mercado">Market</a><a href="#checklist">Checklist</a><a href="#cliente">Client</a><a href="#porque">Why not</a>
+    <a href="#resumen">Summary</a><a href="#pasos">Next steps</a><a href="#fechas">Dates</a><a href="#estrategia">Strategy</a><a href="#anuncios">Ads</a><a href="#negativas">Negatives</a><a href="#landing">Landing</a><a href="#mercado">Market</a><a href="#checklist">Checklist</a><a href="#cliente">Client</a><a href="#porque">Why not</a>
   </nav>
 
   <section id="resumen">
@@ -282,6 +282,13 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
   <section id="pasos">
     <div class="sec-head"><h2>Next steps</h2><p>What's left to close Phase 0. Items marked B are blocking.</p></div>
     <div class="steps" id="steps"></div>
+  </section>
+
+  <section id="fechas">
+    <div class="sec-head"><h2>Dates and phases</h2><p>Dates are projections; the exit condition rules. A phase never advances "because it's the date". D0 = Oct 22, 2026.</p></div>
+    <div class="tl-wrap"><div class="tl" id="timeline"></div></div>
+    <div class="phases" id="phases"></div>
+    <p class="muted" style="font-size:.86rem; margin-top:10px">Seasonality (16 MCC towing accounts, Oct 2025 → Sep 2026): December and January get 1.20–1.27× the average month's conversions and the lowest CPL of the year ($11.48–12.02). A Nov 5 launch learns right in the peak; every week Phase 0 slips pushes every date back.</p>
   </section>
 
   <section id="estrategia">
@@ -461,7 +468,7 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
   </section>
 
   <section id="checklist">
-    <div class="sec-head"><h2>Checklist</h2><p>Mirror of <span class="mono">clients/as-unasa-towing/checklist.md</span> as of Oct 21 (provisional, until /roadmap).</p></div>
+    <div class="sec-head"><h2>Checklist</h2><p>Mirror of <span class="mono">clients/as-unasa-towing/checklist.md</span> as of Oct 22 (built by /roadmap from the setup template).</p></div>
     <div class="filters" role="group" aria-label="Filters">
       <div class="grp"><span class="lab">Owner</span><span id="f-who"></span></div>
       <div class="grp"><span class="lab">Status</span><span id="f-st"></span></div>
@@ -507,7 +514,7 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
 
   <footer>
     <span>Performance Media Marketing · A's Unasa Towing · account 730-795-5909</span>
-    <span>Sources: brief.md and checklist.md (Oct 21, 2026) · Windsor 365 days · CallFire Jul 22 to Oct 21 · Semrush · 8-page site scan · benchmark.md, competitors.md, audit-site.md and strategy.md (Oct 22)</span>
+    <span>Sources: brief.md and checklist.md (Oct 21, 2026) · Windsor 365 days · CallFire Jul 22 to Oct 21 · Semrush · 8-page site scan · benchmark.md, competitors.md, audit-site.md and strategy.md and roadmap.md (Oct 22)</span>
   </footer>
 </div>
 
@@ -515,20 +522,51 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
 (function(){
   /* ── Renderizadores: NO editar. Solo cambian los datos de cada bloque. ── */
   const PH = {
-    F0:{c:'var(--red)', n:'Fase 0'}, F1:{c:'var(--orange)', n:'Fase 1'}, F2:{c:'var(--yellow)', n:'Fase 2'},
-    F3:{c:'var(--green)', n:'Fase 3'}, F4:{c:'var(--sky)', n:'Fase 4'}, F5:{c:'var(--purple)', n:'Fase 5'},
-    F6:{c:'var(--muted)', n:'Fase 6'}, LAND:{c:'var(--blue)', n:'Landing'}, LSA:{c:'var(--muted)', n:'LSA'}
+    F0:{c:'var(--red)', n:'Phase 0'}, F1:{c:'var(--orange)', n:'Phase 1'}, F2:{c:'var(--yellow)', n:'Phase 2'},
+    F3:{c:'var(--green)', n:'Phase 3'}, F4:{c:'var(--sky)', n:'Phase 4'}, F5:{c:'var(--purple)', n:'Phase 5'},
+    F6:{c:'var(--muted)', n:'Phase 6'}, LAND:{c:'var(--blue)', n:'Landing'}, LSA:{c:'var(--muted)', n:'LSA'}
   };
   const esc = s => String(s).replace(/[&<>"]/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));
   const $ = id => document.getElementById(id);
 
   /* Próximos pasos: [título, detalle, responsable, bloqueante] */
-  const steps = [["Confirm average ticket and margin by job type", "At the $79.99 floor, max CPL is ~$17, and a new account costs $51–63 per call in months 1–2. Without this, we can't set the budget or pick keywords.", "Client", true], ["Confirm real media spend from the $1,200 package", "The MCC reference is $396–540/mo. It decides how many campaigns and ad groups fit.", "Jhombis", true], ["Clarify hours: 24/7 or Monday–Saturday", "The site says \"Closed Sunday\". With one driver, we need to know who answers overnight before running ads 24/7.", "Client", true], ["Install tracking on the site", "WordPress access → connect Site Kit (already installed) or GTM. Call conversion ≥60 s, a Google forwarding number on the site that forwards to (385) 473-9820 so CallFire keeps logging, and a form redirect to /thank-you/. Tested with Tag Assistant.", "PMM", true], ["GBP: does it exist, is it verified, can we get access", "No listing found. If 721 S 5500 W is a mailing address, the listing should be a service-area business. It's needed for the location asset.", "Client", true], ["Confirm service area", "The 4 ZIPs requested leave out the base (84104), and Sandy 84092 is not contiguous with the rest. Propose a radius or the full ZIP list.", "Client", false], ["Form above the fold and campaign page", "A 3-field form above the fold on mobile (none on the home page today; on service pages it starts at ~2,370 px). Create /towing-west-valley-kearns/. Sticky header on mobile.", "PMM", true], ["Site fixes", "Replace the \"Logo.\" placeholder with the chosen logo. Address and email in the footer (today only on Schedule A Tow). Consistent hours. Home H1, meta descriptions, schema, image alt text and header compression.", "PMM", false], ["Pick a logo concept", "There are 4 concepts with a red flatbed in clients/as-unasa-towing/logo/.", "Client", false], ["Run /roadmap", "✓ Done Oct 22: /strategy (one campaign, 3 ad groups, Max. clicks with a $7.50 cap, $24–36 target CPL in months 3–6). /roadmap is next, with dates and exit conditions.", "PMM", false]];
+  const steps = [["Confirm average ticket and margin by job type", "At the $79.99 floor, max CPL is ~$17, and a new account costs $51–63 per call in months 1–2. Without this, we can't set the budget or pick keywords.", "Client", true], ["Confirm real media spend from the $1,200 package", "The MCC reference is $396–540/mo. It decides how many campaigns and ad groups fit.", "Jhombis", true], ["Clarify hours: 24/7 or Monday–Saturday", "The site says \"Closed Sunday\". With one driver, we need to know who answers overnight before running ads 24/7.", "Client", true], ["Install tracking on the site", "WordPress access → connect Site Kit (already installed) or GTM. Call conversion ≥60 s, a Google forwarding number on the site that forwards to (385) 473-9820 so CallFire keeps logging, and a form redirect to /thank-you/. Tested with Tag Assistant.", "PMM", true], ["GBP: does it exist, is it verified, can we get access", "No listing found. If 721 S 5500 W is a mailing address, the listing should be a service-area business. It's needed for the location asset.", "Client", true], ["Confirm service area", "The 4 ZIPs requested leave out the base (84104), and Sandy 84092 is not contiguous with the rest. Propose a radius or the full ZIP list.", "Client", false], ["Form above the fold and campaign page", "A 3-field form above the fold on mobile (none on the home page today; on service pages it starts at ~2,370 px). Create /towing-west-valley-kearns/. Sticky header on mobile.", "PMM", true], ["Site fixes", "Replace the \"Logo.\" placeholder with the chosen logo. Address and email in the footer (today only on Schedule A Tow). Consistent hours. Home H1, meta descriptions, schema, image alt text and header compression.", "PMM", false], ["Pick a logo concept", "There are 4 concepts with a red flatbed in clients/as-unasa-towing/logo/.", "Client", false], ["Clear Phase 0 and run /build-campaign", "✓ Done Oct 22: /strategy and /roadmap (D0 Oct 22, estimated launch Nov 5). Once the blockers are cleared, /build-campaign creates the campaign paused.", "PMM", false]];
   if ($('steps')) $('steps').innerHTML = steps.map((s,i)=>`
     <div class="step"><span class="n">${String(i+1).padStart(2,'0')}</span>
       <div><b>${esc(s[0])}</b><p class="d">${esc(s[1])}</p></div>
       <div class="tags">${s[3]?'<span class="b-flag" title="Blocking">B</span>':''}<span class="who">${esc(s[2])}</span></div>
     </div>`).join('');
+
+  /* Línea de tiempo: rango, meses visibles, filas (k = clave de PH; ghost = fecha alternativa; note = sin fecha) */
+  const start = new Date('2026-10-15'), end = new Date('2027-07-31');
+  const span = end - start;
+  const pct = d => ((new Date(d) - start) / span * 100);
+  const months = ["2026-11-01", "2026-12-01", "2027-01-01", "2027-02-01", "2027-03-01", "2027-04-01", "2027-05-01", "2027-06-01", "2027-07-01"];
+  const mname = {"2026-11-01": "Nov", "2026-12-01": "Dec", "2027-01-01": "Jan", "2027-02-01": "Feb", "2027-03-01": "Mar", "2027-04-01": "Apr", "2027-05-01": "May", "2027-06-01": "Jun", "2027-07-01": "Jul"};
+  const rows = [{"k": "F0", "label": "F0 Foundation", "bars": [{"a": "2026-10-22", "b": "2026-11-05", "t": "blockers"}, {"a": "2026-11-05", "b": "2026-11-12", "t": "", "ghost": true}]}, {"k": "F1", "label": "F1 Launch", "bars": [{"a": "2026-11-05", "b": "2026-11-12", "t": "Search"}]}, {"k": "F2", "label": "F2 Cleanup", "bars": [{"a": "2026-11-12", "b": "2026-12-05", "t": "D7–D30"}, {"a": "2027-01-05", "b": "2027-03-05", "t": "→ Max. conv.", "ghost": true}], "marks": [{"d": "2027-02-05", "t": "15+/mo"}]}, {"k": "F3", "label": "F3 tCPA", "bars": [{"a": "2027-05-05", "b": "2027-06-01", "t": "tCPA", "ghost": false}], "marks": [{"d": "2027-05-19", "t": "~May 19"}]}, {"k": "F4", "label": "F4 RLSA", "bars": [], "note": "No date: audience <1,000/30d"}, {"k": "F5", "label": "F5 PMax", "bars": [], "note": "Blocked at $540/mo"}, {"k": "LAND", "label": "Landing", "bars": [{"a": "2026-10-22", "b": "2026-11-02", "t": "B"}, {"a": "2026-11-05", "b": "2026-12-05", "t": "fixes"}]}];
+  const today = '2026-10-22';
+  if ($('timeline')){
+    let h = `<div class="tl-scale">${months.map(m=>`<span style="left:${pct(m)}%">${mname[m]}</span>`).join('')}</div>`;
+    h += rows.map((r,idx)=>`
+      <div class="tl-row"><div class="tl-label"><i style="--c:${PH[r.k].c}"></i>${esc(r.label)}</div>
+        <div class="tl-track">
+          ${idx===0?`<div class="tl-today" style="left:${pct(today)}%"><b>today</b></div>`:''}
+          ${r.bars.map(b=>`<div class="tl-bar${b.ghost?' ghost':''}" style="--c:${PH[r.k].c}; left:${pct(b.a)}%; width:${Math.max(pct(b.b)-pct(b.a),1.2)}%">${esc(b.t)}</div>`).join('')}
+          ${(r.marks||[]).map(m=>`<div class="tl-mark" style="left:${pct(m.d)}%"><b>${esc(m.t)}</b></div>`).join('')}
+          ${r.note?`<span class="muted" style="position:absolute; left:${pct(today)+1}%; top:11px; font-size:.8rem">${esc(r.note)}</span>`:''}
+        </div></div>`).join('');
+    $('timeline').innerHTML = h;
+  }
+
+  /* Fases: s = [done|run|todo|block|pause, texto del chip]; c = condición de paso; i = qué incluye */
+  const phases = [{"k": "F0", "t": "Foundation", "w": "2026-10-22 → 2026-11-05 (range to 11-12)", "s": ["run", "In progress"], "c": "All Phase 0 blockers (B) in the checklist ✅", "i": ["Client: ticket and margin, real hours, response process, WordPress access", "Jhombis: real media spend", "PMM: Google tag + 3 conversions, /towing-west-valley-kearns/ and /thank-you/, negatives"]}, {"k": "F1", "t": "Search launch", "w": "2026-11-05 → 2026-11-12", "s": ["todo", "Pending"], "c": "Live 7 days, ads approved, ≥1 conversion and ≥80% answered in CallFire", "i": ["One campaign, 3 ad groups, $17.75/day (or $20.50 without Sunday)", "Max. clicks with a $7.50 cap, phrase + exact, Presence"]}, {"k": "F2", "t": "Cleanup", "w": "D7 Nov 12 · D14 Nov 19 · D30 Dec 5", "s": ["todo", "Pending"], "c": "3 reviews done, negatives applied, keywords with no impressions paused. Max. conversions at 15+ conv./mo (~Feb 5)", "i": ["D7: area rule (spend <70%) and CPC vs cap", "No RSA swap for \"worst\": ~75 clicks/mo is noise"]}, {"k": "F3", "t": "tCPA", "w": "~2027-05-19 (range Apr 2027 → not reached at $396)", "s": ["todo", "Pending"], "c": "≥30 conversions in 30 days with verified tracking", "i": ["Needs CPL ≤ $17.75 (mature-account level) at $540/mo", "tCPA = observed 30-day CPA"]}, {"k": "F4", "t": "Remarketing", "w": "re-check 2027-05", "s": ["block", "Does not qualify"], "c": "Audience ≥1,000 in 30 days", "i": ["~75 Ads clicks/mo and no measurable organic traffic"]}, {"k": "F5", "t": "Performance Max", "w": "not before 2027-07", "s": ["block", "Blocked"], "c": "All conditions in pmax-cuando-y-como.md", "i": ["Needs $40–54/day; today there is $17.75 total", "Missing photos, logo, video and active tCPA"]}];
+  if ($('phases')) $('phases').innerHTML = phases.map(p=>`
+    <article class="phase">
+      <header><div class="tag"><span class="dot" style="--c:${PH[p.k].c}"></span><h3>${PH[p.k].n} · ${esc(p.t)}</h3></div><span class="chip st-${p.s[0]}">${esc(p.s[1])}</span></header>
+      <div class="when">${esc(p.w)}</div>
+      <div class="cond"><b>Exit condition</b>${esc(p.c)}</div>
+      <ul>${p.i.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>
+    </article>`).join('');
 
   /* Ad groups: [nombre, fase activa (F1 = activo), [keywords], volumen/mes, landing] */
   const ACTIVE = 'F1';
@@ -555,8 +593,8 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
   if ($('rubric')) $('rubric').innerHTML = rub.map(r=>`<div class="rub-row"><span>${esc(r[0])}${r[1]===0?' <span class="b-flag">B</span>':''}</span><span class="pips">${r[1]===null?'<em>SIN DATO</em>':`<i class="${r[1]>=1?'on':''}"></i><i class="${r[1]>=2?'on':''}"></i>`}</span></div>`).join('');
 
   /* Checklist (espejo de checklist.md): [fase, ítem, responsable, done | part | todo, bloqueante] */
-  const CL = [["F0", "✓ Done Oct 21: researched brief (63%), CallFire number identified, MCC account located", "PMM", "done", false], ["F0", "Average ticket by job type and margin → max CPL", "Client", "todo", true], ["F0", "Real media spend from the $1,200 package", "Jhombis", "todo", true], ["F0", "Real hours (24/7 vs \"Closed Sunday\") and who answers overnight", "Client", "todo", true], ["F0", "WordPress access → Google tag + call ≥60 s + form, tested with Tag Assistant", "PMM", "todo", true], ["F0", "GBP: exists, verified, access for PMM", "Client", "todo", true], ["F0", "Service area (84104, 84120, all of Sandy)", "Client", "todo", false], ["F0", "Medium-duty capacity of the F550", "Client", "todo", false], ["F0", "Site: address + email, hours, H1, meta descriptions, schema", "PMM", "todo", false], ["F0", "Pick a logo concept", "Client", "todo", false], ["F0", "✓ Done Oct 21: /competitors and /benchmark-interno", "PMM", "done", false], ["F0", "✓ Done Oct 21: /audit-landing (10/22, needs fixes)", "PMM", "done", false], ["F0", "3-field form above the fold on mobile + measurable /thank-you/", "PMM", "todo", true], ["F0", "Real logo in the header (placeholder \"Logo.\" today)", "PMM", "todo", false], ["F0", "✓ Done Oct 22: /strategy", "PMM", "done", false], ["F0", "Apply universal + data/negatives-nicho.txt (178) when the account is built", "PMM", "todo", false], ["F0", "/roadmap", "PMM", "todo", false]];
-  const PHT = {"F0": "Brief, tracking and economics"};
+  const CL = [["F0", "Researched brief (63%), CallFire (385) 473-9820 → (801) 906-1114 identified", "PMM", "done", false], ["F0", "/competitors, /benchmark-interno, /audit-landing (10/22), /strategy v1 and /roadmap", "PMM", "done", false], ["F0", "Average ticket and margin by job type → max CPL", "Client", "todo", true], ["F0", "Real media spend from the $1,200 package (strategy.md uses $540)", "Jhombis", "todo", true], ["F0", "Real hours (24/7 or \"Closed Sunday\") and who answers at night and on Sunday", "Client", "todo", true], ["F0", "Lead response process: what happens when the driver is on a job (forwarding or callback in <15 min)", "Client", "todo", true], ["F0", "WordPress access for PMM", "Client", "todo", true], ["F0", "Account 730-795-5909 linked to the MCC with admin access (already in the Windsor connector)", "PMM", "todo", false], ["F0", "Billing set up and verified", "PMM", "todo", true], ["F0", "Google tag on every page (connect Site Kit, already installed, or GTM)", "PMM", "todo", true], ["F0", "\"Calls from ads\" conversion ≥60 s", "PMM", "todo", true], ["F0", "\"Website calls\" conversion ≥60 s with a Google forwarding number → (385) 473-9820", "PMM", "todo", true], ["F0", "Form conversion on /thank-you/ tested with Tag Assistant", "PMM", "todo", true], ["F0", "Phone click as a secondary conversion (not primary)", "PMM", "todo", false], ["F0", "GA4 linked and \"All visitors\" audience imported", "PMM", "todo", false], ["F0", "Hidden UTM + GCLID fields on the form", "PMM", "todo", false], ["F0", "/towing-west-valley-kearns/ with a 3-field form above the fold on mobile and a sticky call button", "PMM", "todo", true], ["F0", "PMM universal list at account level + data/negatives-nicho.txt (178)", "PMM", "todo", true], ["F0", "Auto-applied recommendations OFF", "PMM", "todo", true], ["F0", "GBP: confirm it exists or create it as a service-area business; access for PMM", "Client", "todo", false], ["F0", "Service area: 84104, 84120 and all of Sandy", "Client", "todo", false], ["F0", "F550 medium-duty capacity; roadside and motorcycles yes or no", "Client", "todo", false], ["F0", "Confirm the [C] items in the copy: $79.99, current police rotation, owner-operated", "Client", "todo", false], ["F0", "Pick a logo concept (logo/)", "Client", "todo", false], ["F1", "Search | Towing | West Valley-Kearns | v1 campaign with AG1–AG3 per strategy.md", "PMM", "todo", false], ["F1", "Search Network only; partners and Display off", "PMM", "todo", false], ["F1", "Presence only; confirmed ZIPs; other countries excluded", "PMM", "todo", false], ["F1", "Ad schedule per the confirmed hours (America/Denver)", "PMM", "todo", false], ["F1", "Max. clicks with a $7.50 CPC cap", "PMM", "todo", false], ["F1", "Phrase + exact on top terms", "PMM", "todo", false], ["F1", "1 RSA per group, pinned H1, 15H/4D, strength \"Good\" or better", "PMM", "todo", false], ["F1", "Assets: 4 sitelinks, 7 callouts, snippet, call; location once the GBP exists", "PMM", "todo", false], ["F1", "Final URLs verified (200, https, no redirect)", "PMM", "todo", false], ["F1", "Budget $17.75/day (24/7) or $20.50/day (no Sunday)", "PMM", "todo", false], ["F1", "Ads approved (check 24 h later)", "PMM", "todo", false], ["F1", "First conversion recorded and ≥80% answered in CallFire", "PMM", "todo", false], ["F1", "Real logo and consistent hours on the site", "PMM", "todo", false], ["F2", "D7 (2026-11-12): search terms, spend vs 70% (area rule), CPC vs cap", "PMM", "todo", false], ["F2", "D14 (2026-11-19): search terms; keywords with ≥$36 spent and 0 conversions flagged", "PMM", "todo", false], ["F2", "D30 (2026-12-05): search terms; keywords with no impressions in 30 days paused", "PMM", "todo", false], ["F2", "D30: call quality (how many became jobs)", "Client", "todo", false], ["F2", "Sticky mobile header, Schedule A Tow form fixed, address and email in the footer", "PMM", "todo", false], ["F2", "/accident-recovery/ with form above the fold and a real photo; visible reviews", "PMM", "todo", false], ["F2", "15+ clean conversions/mo → Max. conversions (~2027-02-05)", "PMM", "todo", false], ["F3", "≥30 conversions in 30 days confirmed (~2027-05-19)", "PMM", "todo", false], ["F3", "tCPA = real observed 30-day CPA (not the desired one)", "PMM", "todo", false], ["F3", "Budget adjusted to CPA and one-truck capacity", "Jhombis", "todo", false], ["F4", "Visitor audience ≥1,000 in 30 days (re-check 2027-05)", "PMM", "todo", false], ["F4", "RLSA in observation, if it qualifies", "PMM", "todo", false]];
+  const PHT = {"F0": "Foundation", "F1": "Search launch", "F2": "Cleanup D7 · D14 · D30", "F3": "tCPA", "F4": "Remarketing"};
   let fWho='All', fSt='All';
   const whoOpts=['All','PMM','Client','Jhombis'], stOpts=['All','Pending','Blocking','Done'];
   const KEY = 'as-unasa-towing-filters';
