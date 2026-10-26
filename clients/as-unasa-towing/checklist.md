@@ -25,7 +25,7 @@ actualizado: 2026-10-22
 - [ ] PMM · GA4 vinculado y audiencia "Todos los visitantes" importada
 - [ ] PMM · Campos ocultos UTM + GCLID en el formulario
 - [ ] B · PMM · /towing-west-valley-kearns/ con formulario de 3 campos arriba en móvil y llamada sticky
-- [ ] B · PMM · Lista universal PMM a nivel de cuenta + data/negatives-nicho.txt (178)
+- [x] PMM · Lista universal (169) + nicho (178) = 347 negativas a nivel de campaña, 26-oct (Windsor no crea listas de cuenta)
 - [ ] B · PMM · Aplicación automática de recomendaciones DESACTIVADA
 - [ ] Cliente · GBP: confirmar si existe o crearlo como área de servicio; acceso para PMM
 - [ ] Cliente · Área de servicio: 84104, 84120 y todo Sandy
@@ -34,17 +34,17 @@ actualizado: 2026-10-22
 - [ ] Cliente · Elegir el concepto de logo (logo/)
 
 ## Fase 1 — Lanzamiento Search
-- [ ] PMM · Campaña Search | Towing | West Valley-Kearns | v1 con AG1–AG3 según strategy.md
-- [ ] PMM · Solo red de Búsqueda; socios y Display apagados
-- [ ] PMM · Presencia solamente; ZIP confirmados; resto de países excluidos
-- [ ] PMM · Programación según el horario confirmado (America/Denver)
-- [ ] PMM · Max. clics con tope de CPC de $7.50
-- [ ] PMM · Frase + exacta en los top términos
-- [ ] PMM · 1 RSA por grupo, H1 pinneado, 15H/4D, fuerza "Buena" o superior
-- [ ] PMM · Extensiones: 4 sitelinks, 7 callouts, snippet, llamada; ubicación cuando haya GBP
-- [ ] PMM · URLs finales verificadas (200, https, sin redirect)
-- [ ] PMM · Presupuesto $16.75/día (24/7) o $19.50/día (sin domingo)
-- [ ] PMM · Anuncios aprobados (revisar 24 h después)
+- [x] PMM · Campaña 24402387793 con AG1–AG3 creada EN PAUSA vía Windsor, 26-oct (log/2026-10-26-build.md)
+- [ ] B · PMM · Solo red de Búsqueda: Display apagado ✓; socios de búsqueda ENCENDIDOS → apagar en la UI
+- [ ] B · PMM · Geo por radio (6 mi West Valley + 3 mi Sandy) ✓; está en "Presencia o interés" → cambiar a Presencia en la UI
+- [ ] PMM · Programación lun–sáb 24 h (cuenta en America/Denver) ✓; ajustar si el cliente confirma 24/7
+- [x] PMM · Max. clics con tope de CPC de $7.50
+- [x] PMM · Frase + exacta en los top términos (34 keywords)
+- [ ] PMM · 1 RSA por grupo (11–12H/3D, sin [C]) ✓; falta pinnear el H1 en la UI y sumar los [C] cuando se confirmen
+- [ ] PMM · Extensiones: 4 sitelinks, 5 callouts, snippet y llamada ✓; faltan precio [C], imagen y ubicación (GBP)
+- [ ] PMM · URLs verificadas (200, sin redirect) ✓; AG1/AG2 apuntan al home hasta que exista /towing-west-valley-kearns/
+- [x] PMM · Presupuesto $19.50/día (sin domingo); bajar a $16.75 si pasa a 24/7
+- [ ] PMM · Activar campaña + 3 grupos + 3 anuncios (todo en pausa) y revisar aprobación 24 h después
 - [ ] PMM · Primera conversión registrada y contestadas ≥80% en CallFire
 - [ ] PMM · Logo real y horario coherente en el sitio
 
