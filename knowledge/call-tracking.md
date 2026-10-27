@@ -53,4 +53,5 @@ Los números de los llamantes y las grabaciones son datos personales: van solo e
 | Spillane's Towing | CallFire | (802) 216-3105 | |
 | Precision Towing | CallFire | (760) 606-4160 | Confirmar que es este negocio (la etiqueta coincide; prefijo de Victorville) |
 | AAMCO 103rd St | CallRail + CallFire | CallRail: Ad Ext (904) 569-5501 · GMB (904) 664-1215 · pool web "103rd St. - Jax Ad Pool" · CallFire: (904) 203-5211 | CallRail separa por fuente |
+| Tuff Truck Towing | CallFire | (918) 320-7595 | Reenvía a (918) 638-6348. Rentado 2026-10-09; ya recibe llamadas antes de tener campaña (origen PENDIENTE) |
 | Pro Phase Electric · Jerry's Towing · Colton Sunflower · Hemet Affordable | — | No encontrado | Preguntar. Jerry's: existe "Fishhawk Towing" (813) 565-3206 en CallFire; confirmar si es suyo |
