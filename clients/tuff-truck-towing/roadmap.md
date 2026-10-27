@@ -144,5 +144,6 @@ plan_en: https://claude.ai/artifact/SXJzd5AN6xtkuqCGKqeAY7
 - **Thanksgiving 2026-11-26 y fiestas de fin de año**: semanas cortas; se comparan contra la mediana, no contra la semana anterior.
 
 ## Historial de cambios
+- 2026-10-27: campaña 24395168148 creada **en pausa** vía Windsor (T1, T2, E1 en pausa; 59 keywords; 336 negativas de campaña; 3 RSA; 6 callouts, snippet y llamada; $34/día; Max. clics con tope de $9; geo BA/Bixby/Coweta/Catoosa; lun–vie 5–19 hora de la cuenta). Pendiente en la interfaz: Presencia, redes, pin H1, zona horaria, conversiones, URL /towing. Ver log/2026-10-27-build.md.
 - 2026-10-27: pauta confirmada en $735/mes ($34/día lun–vie); cuenta conectada a Windsor (vacía).
 - 2026-10-27: creado (D0 = 2026-10-27). Inputs: brief, audit-site, competitors, benchmark, strategy v1. URLs del plan pasadas desde brief.md.

@@ -84,7 +84,7 @@ Volúmenes: Semrush US. "Local est." es el volumen nacional × ~0.08% para los "
 Negativas cruzadas por ad group (para que cada búsqueda caiga en su grupo):
 - **T1**: broken arrow, bixby, coweta, catoosa, tulsa, claremore, equipment, forklift, skid steer, container, conex, lumber, tractor, machinery.
 - **T2**: near me, equipment, forklift, skid steer, container, conex, lumber, tractor, machinery.
-- **E1**: tow truck, towing near me, car towing, flatbed towing, wrecker.
+- **E1**: tow truck, car towing, flatbed towing, wrecker. ("towing near me" no: bloquearía "forklift towing near me".)
 
 ## Keywords descartadas y por qué
 | Keyword | Vol. | Motivo |

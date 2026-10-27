@@ -212,4 +212,4 @@ freedom towing
 ## Negativas cruzadas entre ad groups (nivel ad group)
 # T1 Towing Near Me: broken arrow, bixby, coweta, catoosa, tulsa, claremore, equipment, forklift, skid steer, container, conex, lumber, tractor, machinery
 # T2 Towing Ciudades: near me, equipment, forklift, skid steer, container, conex, lumber, tractor, machinery
-# E1 Equipment & Container Hauling: tow truck, towing near me, car towing, flatbed towing, wrecker
+# E1 Equipment & Container Hauling: tow truck, car towing, flatbed towing, wrecker ("towing near me" bloquearía "forklift towing near me")

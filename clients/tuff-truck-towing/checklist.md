@@ -27,8 +27,8 @@ Generado por /roadmap a partir de `knowledge/checklists/setup-cuenta.md` y de la
 - [ ] (PMM) **(B)** Cuenta vinculada al MCC con acceso admin, y zona horaria verificada (America/Chicago)
 - [ ] (PMM) **(B)** Facturación configurada y verificada
 - [ ] (PMM) **(B)** Aplicación automática de recomendaciones DESACTIVADA
-- [ ] (PMM) **(B)** Lista universal PMM a nivel de cuenta, **sin "equipment" ni "cheapest"**
-- [ ] (PMM) **(B)** Negativas del nicho aplicadas (`data/negatives-nicho.txt`, 170)
+- [x] (PMM) **(B)** Lista universal PMM (168, **sin "equipment" ni "cheapest"**) aplicada a nivel de campaña: Windsor no maneja listas compartidas (2026-10-27)
+- [x] (PMM) **(B)** Negativas del nicho aplicadas a nivel de campaña (`data/negatives-nicho.txt`, 170) (2026-10-27)
 
 ### Medición
 - [ ] (Cliente) **(B)** Acceso de colaborador de PMM al Wix
@@ -49,16 +49,16 @@ Generado por /roadmap a partir de `knowledge/checklists/setup-cuenta.md` y de la
 - [ ] (PMM) Si califica: solicitud LSA iniciada (pista paralela, 2026-11-03)
 
 ## Fase 1 — Lanzamiento Search (estimado 2026-11-10)
-- [ ] (PMM) Campaña "Search | Towing & Hauling | BA-East Tulsa | v1" creada según strategy.md (T1, T2 activos; E1 en pausa)
-- [ ] (PMM) Red: solo Búsqueda; socios y Display apagados
-- [ ] (PMM) Ubicación: Presencia; BA, Bixby, Coweta, Catoosa + ZIP de Tulsa este; resto de Tulsa excluido; países excluidos
-- [ ] (PMM) Programación lun–vie 7:00–21:00 America/Chicago
-- [ ] (PMM) Puja: Max. clics con tope de CPC de $9
-- [ ] (PMM) Keywords en frase; exacta para los top 3 de cada grupo; negativas cruzadas entre grupos
-- [ ] (PMM) 1 RSA por grupo, H1 pinneado, 15H/4D, fuerza "Buena" o más (sin [C] no confirmados)
-- [ ] (PMM) Extensiones: llamada (reenvío de Google), sitelinks (4), callouts (6), snippet Services, ubicación si hay GBP
-- [ ] (PMM) URLs finales verificadas (200, https, sin redirect)
-- [ ] (PMM) Presupuesto de $34/día; vigilar que el gasto de la semana 1 no pase de ~$170
+- [x] (PMM) Campaña "Search | Towing & Hauling | BA-East Tulsa | v1" creada **en pausa** (24395168148): T1, T2 activos; E1 en pausa (2026-10-27, vía Windsor)
+- [ ] (PMM) Red: solo Búsqueda; socios y Display apagados (**en la interfaz**: Windsor no lo soporta)
+- [~] (PMM) Ubicación: BA, Bixby, Coweta, Catoosa cargadas (2026-10-27). Falta: **Presencia** (interfaz) + ZIP de Tulsa este
+- [~] (PMM) Programación cargada lun–vie 5–19 hora de la cuenta (= 7–21 Central si la cuenta está en LA). **Verificar la zona horaria**
+- [x] (PMM) Puja: Max. clics con tope de CPC de $9 (2026-10-27)
+- [x] (PMM) Keywords: T1 19, T2 19, E1 21; negativas cruzadas 14/9/4; 336 de campaña (2026-10-27)
+- [~] (PMM) 1 RSA por grupo creado (14/14/13 headlines, 3 descripciones, sin [C]). Falta: **pin H1** en la interfaz; revisar la fuerza
+- [~] (PMM) Extensiones: 6 callouts, snippet "Service catalog" y llamada (918) 320-7595 creados. Faltan sitelinks (landings) y ubicación (GBP)
+- [~] (PMM) URLs finales: home temporal (200). Cambiar a /towing y /equipment antes de activar
+- [x] (PMM) Presupuesto de $34/día cargado (2026-10-27); vigilar que el gasto de la semana 1 no pase de ~$170
 - [ ] (PMM) Anuncios aprobados (revisar 24 h después)
 - [ ] (PMM) Primera conversión de llamada ≥60 s registrada y cruzada con CallFire
 
