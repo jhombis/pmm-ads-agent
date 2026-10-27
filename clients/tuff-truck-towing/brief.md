@@ -12,8 +12,6 @@ completitud: 73%
 call_tracking: callfire
 tracking_number: "(918) 320-7595"
 tracking_destino: "(918) 638-6348"
-plan_es: https://claude.ai/artifact/EtXuJ1EMrY3pVwjNiwcTvE
-plan_en: https://claude.ai/artifact/SXJzd5AN6xtkuqCGKqeAY7
 ---
 
 # Brief — Tuff Truck Towing
