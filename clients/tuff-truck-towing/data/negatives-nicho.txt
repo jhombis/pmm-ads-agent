@@ -1,0 +1,215 @@
+# Negativas nicho — Tuff Truck Towing (complementan la lista universal PMM a nivel de cuenta)
+# Concordancia de frase salvo [exacta]. Fuentes: knowledge/negativas-universales.md (towing) + benchmark.md + competitors.md + towing-us.md.
+# OJO con la lista universal:
+#  - NO aplicar "equipment": el cliente traslada equipos.
+#  - NO aplicar "cheapest": en el benchmark de towing, cheap/cheapest convierte igual que el genérico.
+#  - "rental", "rent", "for sale" y "buy" sí se aplican.
+# Revisar antes de aplicar: si el cliente confirma heavy-duty, RV, motos o roadside, sacar el término correspondiente.
+
+## Nicho towing (lista PMM)
+junkyard
+junk yard
+salvage
+scrap
+car for cash
+cash for cars
+sell my car
+tow truck for sale
+tow truck driver
+tow truck jobs
+dmv
+tow hitch
+tow bar
+
+## Heavy-duty y vehículos no atendidos
+semi
+semi truck
+18 wheeler
+tractor trailer
+big rig
+heavy wrecker
+rotator
+heavy duty towing
+heavy duty tow
+bus towing
+rv
+motorhome
+camper
+motorcycle
+boat
+# [C] rv/motorhome/motorcycle: confirmar con el cliente
+
+## Aseguradoras, motor clubs y planes de fabricante
+aaa
+geico
+progressive
+state farm
+allstate
+usaa
+farmers insurance
+nationwide
+carshield
+onstar
+good sam
+road america
+honk
+
+## Impound, repo, municipal
+impound
+impound lot
+tow lot
+tow yard
+towed car
+car was towed
+find my car
+repo
+repossession
+police tow
+
+## Renta, compra y transporte de vehículos (no es el servicio)
+u haul
+uhaul
+penske
+ryder
+hertz
+enterprise
+budget truck
+copart
+car hauler
+car hauling
+car shipping
+auto transport
+car transport
+vehicle shipping
+long distance
+cross country
+
+## Brokers y carga por contrato (llamadas de fuera del estado)
+hot shot
+hotshot
+load board
+dispatch
+dispatcher jobs
+freight
+cdl
+owner operator
+
+## Equipment: ruido de compra, alquiler, reparación y capacitación
+forklift rental
+forklift for sale
+forklift repair
+forklift parts
+forklift certification
+forklift training
+forklift license
+skid steer rental
+equipment rental
+trailer rental
+trailer for sale
+gooseneck
+hitch
+trailer repair
+pods
+u pack
+upack
+portable storage
+storage unit
+container for sale
+conex for sale
+container rental
+
+## Volteo y material suelto (servicio /hauling fuera del foco del brief)
+dump truck
+dirt
+gravel
+topsoil
+asphalt
+rock delivery
+sand delivery
+junk removal
+trash removal
+debris removal
+
+## Madera retail
+lumber yard
+lumber prices
+home depot
+lowes
+menards
+84 lumber
+
+## Talleres y producto
+mechanic
+car repair
+auto repair
+tire shop
+jump starter
+battery charger
+battery replacement
+
+## Precio irreal e informacionales
+average tow cost
+how much does a tow
+tow truck cost per mile
+tow truck salary
+tow truck insurance
+tow truck for rent
+
+## "phone number" (benchmark: $347, 13% CVR)
+phone number
+
+## Fuera del área (Presencia + negativas de ciudad)
+owasso
+sand springs
+sapulpa
+jenks
+glenpool
+skiatook
+wagoner
+muskogee
+okmulgee
+claremore
+# claremore: SACAR si se confirma el conductor en Claremore (brief)
+oklahoma city
+okc
+norman
+edmond
+west tulsa
+north tulsa
+downtown tulsa
+midtown tulsa
+# Ojo: "tulsa" a secas NO se negativiza (T2 la usa para el este de Tulsa por geo)
+
+## Idioma
+grua
+gruas
+grúa
+grúas
+
+## Competidores (regla PMM: no pujar salvo prueba controlada)
+allied towing
+speedys
+speedy's
+tow n go
+storey wrecker
+story wrecker
+a&w towing
+a & w towing
+aw towing
+neptune towing
+ba towing
+mikes towing
+mike's towing
+miklos
+swift wrecker
+jacks wrecker
+jack's wrecker
+metro wrecker
+offutt
+freedom towing
+123 tow
+
+## Negativas cruzadas entre ad groups (nivel ad group)
+# T1 Towing Near Me: broken arrow, bixby, coweta, catoosa, tulsa, claremore, equipment, forklift, skid steer, container, conex, lumber, tractor, machinery
+# T2 Towing Ciudades: near me, equipment, forklift, skid steer, container, conex, lumber, tractor, machinery
+# E1 Equipment & Container Hauling: tow truck, towing near me, car towing, flatbed towing, wrecker

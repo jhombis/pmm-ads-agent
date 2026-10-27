@@ -2,7 +2,7 @@
   "_nota": "Registro de informes publicados (artefactos). Lo actualiza /informe al publicar; scripts/indice_informes.py genera el índice para el equipo. Los artefactos son privados: para que el equipo los abra, cada uno se comparte desde Share.",
   "indice_url": "https://claude.ai/artifact/JXRZn2E1ScDXyBmsrzFvYm",
   "clientes": {
-    "tuff-truck-towing": {"mercado": "Broken Arrow / este de Tulsa, OK", "informes": [
+    "tuff-truck-towing": {"mercado": "Broken Arrow / este de Tulsa, OK", "cuenta": "727-278-3398", "informes": [
       {"titulo": "Brief investigado y pendientes", "idioma": "ES", "url": "https://claude.ai/artifact/EtXuJ1EMrY3pVwjNiwcTvE"},
       {"titulo": "Researched brief & open items", "idioma": "EN", "url": "https://claude.ai/artifact/SXJzd5AN6xtkuqCGKqeAY7"}]},
     "pro-phase-electric": {"mercado": "Northwest Arkansas", "cuenta": "758-301-1023", "informes": [

@@ -7,8 +7,8 @@ nicho: towing
 actualizado: 2026-10-27
 estado: onboarding
 origen: investigar-cliente
-customer_id: ninguno
-completitud: 69%
+customer_id: 727-278-3398
+completitud: 73%
 call_tracking: callfire
 tracking_number: "(918) 320-7595"
 tracking_destino: "(918) 638-6348"
@@ -41,7 +41,7 @@ plan_en: https://claude.ai/artifact/SXJzd5AN6xtkuqCGKqeAY7
 
 ## Objetivo y economía
 - Objetivo primario: **llamadas** (inferido: el cliente pidió un número de tracking, y en el nicho el 86% de las conversiones son llamadas según `knowledge/benchmarks/towing-us.md`). Formulario: secundario, PENDIENTE confirmar si hay uno.
-- Presupuesto mensual: PENDIENTE. No hay cuenta en el MCC ni monto de contrato en lo recibido.
+- Presupuesto mensual: **paquete de $1,400/mes**. La cuenta del MCC se llama "Premium Local Listings 004061 ($1,400 Tuff Truck Towing)" (Jhombis, 27-oct). Pauta real en medios estimada en **~$630–700/mes** (inferido: en el MCC los paquetes de $1,200–1,500 van ~45–50% a medios, towing-us.md). Monto exacto: PENDIENTE de confirmar.
 - Ticket promedio / margen: PENDIENTE. Hay que pedirlo por línea, porque un remolque liviano, un medium-duty y un traslado de maquinaria o contenedor tienen tickets muy distintos.
 - Capacidad: 5 camiones (cliente) y un conductor nuevo en Claremore (cliente). Trabajos al mes: PENDIENTE.
 - **CPL máximo aceptable**: PENDIENTE, porque falta el ticket y el margen. Referencia rotulada (no es un objetivo), tomada del benchmark de towing US del MCC:
@@ -49,7 +49,10 @@ plan_en: https://claude.ai/artifact/SXJzd5AN6xtkuqCGKqeAY7
   - Cohorte nueva, meses 1–2: $51–63
   - Cuentas maduras: $15–16
   - Equipment hauling y contenedores no tienen benchmark en el MCC.
-- Historial Google Ads: **no hay cuenta en el MCC de PMM.** Windsor tiene conectadas 64 cuentas de Google Ads y ninguna se llama Tuff Truck (Windsor). Semrush no le ve anuncios pagados (0 keywords de pago) (Semrush). Una cuenta previa fuera de PMM: PENDIENTE.
+- Historial Google Ads:
+  - **Cuenta nueva en el MCC: 727-278-3398** (Jhombis, 27-oct). Todavía no está conectada a Windsor y no hay API en la sesión, así que no se pudo leer si tiene campañas, conversiones o gasto.
+  - Semrush no le ve anuncios pagados (0 keywords de pago) (Semrush).
+  - Cuenta previa fuera de PMM: posible, por el tag AW-1004387232 que hay en la web. De quién es: PENDIENTE.
 
 ## Operación
 - Horario (cliente): **lun–vie 7:00–21:00**. No es 24/7. Fines de semana: no se mencionan.
@@ -111,7 +114,8 @@ Semrush no registra anunciantes para "towing tulsa" ni para "tow truck tulsa" (S
 - Aplica: PENDIENTE. Towing es categoría de LSA, pero hay que confirmar en el panel que esté disponible en Tulsa/Broken Arrow. Hay licencia estatal (web). Seguro y disposición al background check: PENDIENTE. Necesita el GBP verificado.
 
 ## Pendientes
-- [ ] **(bloqueante)** Presupuesto mensual de pauta (sin fee), para hacer la matemática de clics/día y el límite de fragmentación.
+- [~] Presupuesto: el paquete es de $1,400 (27-oct). Falta confirmar el monto exacto de medios (~$700 estimado).
+- [ ] Conectar 727-278-3398 a Windsor (o API) y revisar su estado antes de /build-campaign.
 - [ ] **(bloqueante)** Ticket promedio y margen por línea (light-duty, medium-duty, equipment/container hauling), para calcular el CPL máximo.
 - [ ] **(bloqueante)** Límites exactos de Tulsa con **Bree**: ¿Memorial Dr es el límite oeste en toda la ciudad o solo cerca de la Hwy 51? ¿Cuáles son los límites norte y sur?
 - [ ] **(bloqueante)** Claremore: ¿entra al lanzamiento? ¿La "Highway 40" es la I-44 / Route 66? ¿Con qué radio?
@@ -149,11 +153,10 @@ Semrush no registra anunciantes para "towing tulsa" ni para "tow truck tulsa" (S
 ## Preguntas para el cliente (solo lo que no se pudo investigar)
 Para mandar por correo o WhatsApp (traducir al inglés si va directo al cliente):
 
-1. ¿Cuánto quieres invertir al mes en pauta de Google (sin nuestro fee)?
-2. ¿Cuánto cobras en promedio y cuánto te queda por trabajo en cada línea: remolque liviano, medium-duty y traslado de equipo/contenedor/forklift? ¿Cuál quieres vender más?
-3. (Para Bree) En Tulsa, ¿Memorial Dr es el límite oeste en toda la ciudad o solo cerca de la Hwy 51? ¿Hasta qué calle al norte y al sur?
-4. Claremore: ¿lo incluimos desde el inicio? Cuando dices "Highway 40", ¿te refieres a la I-44 / Route 66? ¿Hasta qué distancia cubre el conductor de allá?
-5. El (918) 320-7595 ya está en tu web. ¿También está en tu ficha de Google Maps o en otros listados?
-6. ¿Atiendes sábados y domingos? Fuera de las 21:00, ¿alguien contesta?
-7. ¿Nos das acceso de colaborador a tu Wix para instalar la medición y un formulario? En la web hay un tag de Google Ads (AW-1004387232): ¿de quién es esa cuenta? ¿A qué correo deben llegar los leads?
-8. ¿Tienes la ficha de Google Business verificada? ¿Puedes darle acceso a PMM? ¿Haces heavy-duty (semis) o lo excluimos?
+1. ¿Cuánto cobras en promedio y cuánto te queda por trabajo en cada línea: remolque liviano, medium-duty y traslado de equipo/contenedor/forklift? ¿Cuál quieres vender más?
+2. (Para Bree) En Tulsa, ¿Memorial Dr es el límite oeste en toda la ciudad o solo cerca de la Hwy 51? ¿Hasta qué calle al norte y al sur?
+3. Claremore: ¿lo incluimos desde el inicio? Cuando dices "Highway 40", ¿te refieres a la I-44 / Route 66? ¿Hasta qué distancia cubre el conductor de allá?
+4. El (918) 320-7595 ya está en tu web. ¿También está en tu ficha de Google Maps o en otros listados?
+5. ¿Atiendes sábados y domingos? Fuera de las 21:00, ¿alguien contesta?
+6. ¿Nos das acceso de colaborador a tu Wix para instalar la medición y un formulario? En la web hay un tag de Google Ads (AW-1004387232): ¿de quién es esa cuenta? ¿A qué correo deben llegar los leads?
+7. ¿Tienes la ficha de Google Business verificada? ¿Puedes darle acceso a PMM? ¿Haces heavy-duty (semis) o lo excluimos?
