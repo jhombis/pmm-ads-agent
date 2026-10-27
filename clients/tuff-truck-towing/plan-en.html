@@ -226,23 +226,23 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
   </header>
 
   <nav class="toc" aria-label="Sections">
-    <a href="#resumen">Summary</a><a href="#pasos">Next steps</a><a href="#checklist">Checklist</a><a href="#cliente">Client</a>
+    <a href="#resumen">Summary</a><a href="#pasos">Next steps</a><a href="#landing">Landing</a><a href="#checklist">Checklist</a><a href="#cliente">Client</a>
   </nav>
 
   <section id="resumen">
     <div class="sec-head"><h2>Summary</h2><p>Family-owned towing company in Broken Arrow, OK: light and medium-duty towing, plus equipment, 20 ft container, lumber and forklift hauling. Goal: phone calls.</p></div>
     <div class="kpis">
-      <div class="kpi"><b>42</b><span>calls to the tracking number in 7 days (Oct 20–26) · 13 qualified</span></div>
-      <div class="kpi"><b>90%</b><span>answered (38 of 42) · CallFire</span></div>
+      <div class="kpi"><b>42</b><span>calls to the tracking number in 7 days (Oct 20–26) · 90% answered · 13 qualified</span></div>
       <div class="kpi"><b>Pending</b><span>ad spend/mo · no MCC account or contract amount yet</span></div>
-      <div class="kpi"><b>6</b><span>Phase 0 blockers before launch</span></div>
+      <div class="kpi"><b>7/22</b><span>landing: needs fixes (no form, 4 phone numbers, third-party tag)</span></div>
+      <div class="kpi"><b>10</b><span>open Phase 0 blockers (+1 partial)</span></div>
     </div>
 
     <div class="two">
       <div>
         <p class="eyebrow">Account status today</p>
         <h3 style="margin:6px 0 10px">No Google Ads account in the MCC; the tracking number already gets calls</h3>
-        <p>There is no account in the MCC (Windsor: 64 accounts, none for Tuff Truck) and Semrush shows no paid ads. Even so, tracking number (918) 320-7595, leased in CallFire on Oct 9 and forwarded to the main line, received 42 calls from 29 callers between Oct 20 and 26. Where it is published (GBP, website or directories) is still unknown: without that, once Ads starts we cannot separate what the ads bring in.</p>
+        <p>There is no account in the MCC (Windsor: 64 accounts, none for Tuff Truck) and Semrush shows no paid ads. Even so, tracking number (918) 320-7595, leased in CallFire on Oct 9 and forwarded to the main line, received 42 calls from 29 callers between Oct 20 and 26. It is the main phone number on the website, so at least part of that volume is organic (the site ranks #1 for "towing broken arrow"). Ads will have to be measured with Google’s forwarding number, not with CallFire.</p>
         <div class="bar-spend" role="img" aria-label="The 42 calls to the tracking number by outcome">
           <i style="width:40.5%; background:var(--green)"></i><i style="width:50.0%; background:var(--orange)"></i><i style="width:9.5%; background:var(--red)"></i>
         </div>
@@ -284,8 +284,30 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
     <div class="steps" id="steps"></div>
   </section>
 
+  <section id="landing">
+    <div class="sec-head"><h2>Landing</h2><p>tufftrucktowing.com (Wix): 7/22, speed not measured. Needs fixes before launch. Details in audit-site.md.</p></div>
+    <div class="two" style="margin-top:0">
+      <div>
+        <div class="rub" id="rubric"></div>
+      </div>
+      <div>
+        <h3 style="margin-bottom:8px">Landing pages needed</h3>
+        <div class="tbl"><table>
+          <thead><tr><th>URL</th><th>Status</th><th>For</th></tr></thead>
+          <tbody>
+            <tr><td class="mono">/towing</td><td><span class="chip st-block">Create</span></td><td>Proposed: light + medium-duty towing · BA and east Tulsa</td></tr>
+            <tr><td class="mono">/equipment</td><td><span class="chip st-block">Create</span></td><td>Proposed: equipment, forklift, skid steer, 20 ft container and lumber hauling</td></tr>
+            <tr><td class="mono">/</td><td><span class="chip st-todo">Improve</span></td><td>Generic home page: no form, "24/7" in the H1, job ad at the top</td></tr>
+            <tr><td class="mono">/hauling</td><td><span class="chip st-pause">No ads</span></td><td>Dirt, rock and asphalt dump hauling, with another number (894-0368)</td></tr>
+          </tbody>
+        </table></div>
+        <p class="muted" style="font-size:.86rem; margin-top:8px">Tracking today: tag AW-1004387232 from an account outside the MCC, with no conversions; no GA4 and no form. 4 tel: numbers (320-7595, 894-0368, 638-6348 in the schema, and the fax). The landing pages go on the client’s Wix, or with /landing on performancemediamarketing.com if access does not come in time.</p>
+      </div>
+    </div>
+  </section>
+
   <section id="checklist">
-    <div class="sec-head"><h2>Checklist</h2><p>Mirror of <span class="mono">clients/tuff-truck-towing/checklist.md</span> as of Oct 26. /roadmap creates the full checklist.</p></div>
+    <div class="sec-head"><h2>Checklist</h2><p>Mirror of <span class="mono">clients/tuff-truck-towing/checklist.md</span> as of Oct 27. /roadmap creates the full checklist.</p></div>
     <div class="filters" role="group" aria-label="Filters">
       <div class="grp"><span class="lab">Owner</span><span id="f-who"></span></div>
       <div class="grp"><span class="lab">Status</span><span id="f-st"></span></div>
@@ -308,7 +330,7 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
 
   <footer>
     <span>Performance Media Marketing · Tuff Truck Towing · account: no MCC account yet</span>
-    <span>Sources: brief.md and checklist.md (Oct 26, 2026), CallFire Oct 20–26, Semrush Oct 26, knowledge/benchmarks/towing-us.md</span>
+    <span>Sources: brief.md, audit-site.md and checklist.md (Oct 27, 2026), CallFire Oct 20–26, Semrush Oct 26, knowledge/benchmarks/towing-us.md</span>
   </footer>
 </div>
 
@@ -323,14 +345,17 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
   const esc = s => String(s).replace(/[&<>"]/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));
   const $ = id => document.getElementById(id);
 
-  const steps = [["Send the questions to the client", "Budget, ticket and margin per line, weekends, where the tracking number is published, website and GBP access. The message is ready under \"Client open items\".", "Jhombis", true], ["Confirm the Tulsa boundaries with Bree", "Memorial Dr as the west limit: across the whole city or only near Hwy 51? North and south limits? Claremore: in or out, and what radius? (\"Highway 40\" vs I-44).", "Jhombis", true], ["Audit tufftrucktowing.com", "/audit-landing from a session with access to the domain (this session's proxy blocks it): tag, call conversion, form, mobile speed.", "PMM", true], ["Find the source of the calls to the tracking number", "42 calls in 7 days with no campaign in the MCC. Find out whether it is on the GBP, the website or directories before measuring Ads.", "PMM/Client", true], ["Competitors and benchmark", "/competitors (real SERP for Broken Arrow and east Tulsa) and /benchmark-interno (MCC towing US, plus hauling accounts if any).", "PMM", false], ["Strategy and roadmap", "/strategy as soon as budget and ticket are in; then /roadmap with dates and exit conditions.", "PMM", false]];
+  const steps = [["Send the questions to the client", "Budget, ticket and margin per line, weekends, Wix and GBP access, owner of tag AW-1004387232. The message is ready under \"Client open items\".", "Jhombis", true], ["Confirm the Tulsa boundaries with Bree", "Memorial Dr as the west limit: across the whole city or only near Hwy 51? North and south limits? Claremore: in or out, and what radius? (\"Highway 40\" vs I-44).", "Jhombis", true], ["✓ Done Oct 27: site audit", "7/22, needs fixes. The tracking number is the main phone on the website: that is where at least part of the calls without a campaign come from.", "PMM", false], ["Call tracking on the website", "With Wix access: PMM account Google tag, website call conversion (forwarding number over 320-7595) and calls from ads ≥60 s. Sort out tag AW-1004387232 first.", "PMM", true], ["Form and a single phone number", "Form with ≤4 fields above the fold on mobile, with a measurable /thank-you. Remove the fax tel: link; (918) 894-0368 only on /hauling, which gets no ads.", "Client", true], ["Service landing pages", "Towing BA + East Tulsa and Equipment & Container Hauling. On the client's Wix, or with /landing if access does not come in time.", "PMM", true], ["Competitors and benchmark", "/competitors (real SERP for Broken Arrow and east Tulsa) and /benchmark-interno (MCC towing US, plus hauling accounts if any).", "PMM", false], ["Strategy and roadmap", "/strategy as soon as budget and ticket are in; then /roadmap with dates and exit conditions.", "PMM", false]];
   if ($('steps')) $('steps').innerHTML = steps.map((s,i)=>`
     <div class="step"><span class="n">${String(i+1).padStart(2,'0')}</span>
       <div><b>${esc(s[0])}</b><p class="d">${esc(s[1])}</p></div>
       <div class="tags">${s[3]?'<span class="b-flag" title="Blocker">B</span>':''}<span class="who">${esc(s[2])}</span></div>
     </div>`).join('');
 
-  const CL = [["F0", "Monthly ad budget (excluding fee)", "Client", "todo", true], ["F0", "Average ticket and margin per line → max CPL", "Client", "todo", true], ["F0", "Tulsa boundaries (Memorial Dr / Hwy 51, north and south) confirmed with Bree", "Jhombis", "todo", true], ["F0", "Claremore: in or out, radius, highway (\"Highway 40\" vs I-44)", "Jhombis", "todo", true], ["F0", "/audit-landing of tufftrucktowing.com from an environment with access (tag, call conversion, form)", "PMM", "todo", true], ["F0", "Current source of calls to tracking number (918) 320-7595 (already ~6/day with no MCC campaign)", "PMM", "todo", true]];
+  const rub = [["Headline matches the searched service", 1], ["Short form above the fold (mobile)", 0], ["Click to call on mobile", 2], ["Clear offer", 0], ["Social proof (reviews, real photos)", 1], ["Trust (DPS, MC, DOT, insurance)", 1], ["Mobile speed", null], ["Google Tag present", 1], ["Measurable thank-you page", 0], ["Pages per service", 0], ["No leaks", 1]];
+  if ($('rubric')) $('rubric').innerHTML = rub.map(r=>`<div class="rub-row"><span>${esc(r[0])}${r[1]===0?' <span class="b-flag">B</span>':''}</span><span class="pips">${r[1]===null?'<em>NO DATA</em>':`<i class="${r[1]>=1?'on':''}"></i><i class="${r[1]>=2?'on':''}"></i>`}</span></div>`).join('');
+
+  const CL = [["F0", "Monthly ad budget (excluding fee)", "Client", "todo", true], ["F0", "Average ticket and margin per line → max CPL", "Client", "todo", true], ["F0", "Tulsa boundaries (Memorial Dr / Hwy 51, north and south) confirmed with Bree", "Jhombis", "todo", true], ["F0", "Claremore: in or out, radius, highway (\"Highway 40\" vs I-44)", "Jhombis", "todo", true], ["F0", "/audit-landing of tufftrucktowing.com: done Oct 27 (7/22, needs fixes)", "PMM", "done", true], ["F0", "Source of calls to the tracking number: the website (Oct 27); GBP still to confirm", "Client", "part", true], ["F0", "PMM access to the client's Wix", "Client", "todo", true], ["F0", "Owner of account AW-1004387232 (tag on the site): access or link to the MCC, or remove it", "Jhombis", "todo", true], ["F0", "PMM Google tag + website call conversion + calls from ads ≥60 s", "PMM", "todo", true], ["F0", "Form with ≤4 fields above the fold on mobile + /thank-you with conversion", "Client", "todo", true], ["F0", "Single service number: remove the fax tel: link; (918) 894-0368 only on /hauling with no ads", "Client", "todo", true], ["F0", "Landing pages: Towing BA + East Tulsa and Equipment & Container Hauling", "PMM", "todo", true]];
   const PHT = {"F0": "Preparation (brief)"};
   let fWho='All', fSt='All';
   const whoOpts=['All','PMM','Client','Jhombis'], stOpts=['All','Pending','Blockers','Done'];
@@ -356,9 +381,9 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
   try{ const s=JSON.parse(localStorage.getItem(KEY)||'null'); if(s){ if(whoOpts.includes(s.fWho)) fWho=s.fWho; if(stOpts.includes(s.fSt)) fSt=s.fSt; } }catch(e){}
   if ($('cl')) render();
 
-  const qs = [["<b>Monthly ad budget</b> (excluding the PMM fee).", true], ["<b>Ticket and margin per line</b>: light-duty, medium-duty, and equipment/container/forklift hauling. Which one do they most want to grow?", true], ["<b>(Bree) Tulsa boundaries</b>: is Memorial Dr the west limit across the whole city or only near Hwy 51? How far north and south?", true], ["<b>Claremore</b>: in from launch? Is \"Highway 40\" actually I-44 / Route 66? What radius does the driver cover?", true], ["<b>Where is (918) 320-7595 published today?</b> GBP, website or directories: it already gets calls.", true], ["<b>Weekends and nights</b>: do they answer on Saturday, Sunday or after 9 pm?", false], ["<b>Website</b>: who edits it, which platform, whether it has a Google Tag/GA4 and where the form goes.", true], ["<b>GBP and heavy-duty</b>: verified listing and access for PMM? Do they tow semis, or do we exclude them?", false]];
+  const qs = [["<b>Monthly ad budget</b> (excluding the PMM fee).", true], ["<b>Ticket and margin per line</b>: light-duty, medium-duty, and equipment/container/forklift hauling. Which one do they most want to grow?", true], ["<b>(Bree) Tulsa boundaries</b>: is Memorial Dr the west limit across the whole city or only near Hwy 51? How far north and south?", true], ["<b>Claremore</b>: in from launch? Is \"Highway 40\" actually I-44 / Route 66? What radius does the driver cover?", true], ["<b>Is (918) 320-7595 also on the GBP?</b> It is already on the website as the main phone.", false], ["<b>Weekends and nights</b>: do they answer on Saturday, Sunday or after 9 pm?", false], ["<b>Wix access and tag AW-1004387232</b>: collaborator access for PMM; who owns the Google Ads account behind the tag; which email should receive leads.", true], ["<b>Is it 24/7?</b> The site says \"24/7 SERVICE!\" but the client gave Mon–Fri 7–21.", false], ["<b>GBP and heavy-duty</b>: verified listing and access for PMM? Do they tow semis, or do we exclude them?", false]];
   if ($('qlist')) $('qlist').innerHTML = qs.map(q=>`<li>${q[0]} ${q[1]?'<span class="b-flag">B</span>':''}</li>`).join('');
-  const msg = "Hi! To finish setting up your Google Ads campaigns we need a few things from you:\n\n1. Monthly ad budget: how much do you want to invest in Google Ads per month (not including our fee)?\n2. Average ticket and profit per job for each line: light-duty tow, medium-duty tow, and equipment / container / forklift hauling. Which one do you most want to grow?\n3. Claremore: should we include it from day one? When you mentioned \"Highway 40\", did you mean I-44 / Route 66? How far does your Claremore driver cover?\n4. Where is (918) 320-7595 published today (Google Maps listing, website, directories)? It is already receiving calls.\n5. Do you answer calls on Saturdays, Sundays or after 9 pm?\n6. Who can edit tufftrucktowing.com and what platform is it on? Is Google Analytics or a Google Tag installed? Where do form submissions go?\n7. Is your Google Business Profile verified? Can you give PMM manager access?\n8. Do you do heavy-duty towing (semis, 18-wheelers), or should we exclude it?\n\nThank you!";
+  const msg = "Hi! To finish setting up your Google Ads campaigns we need a few things from you:\n\n1. Monthly ad budget: how much do you want to invest in Google Ads per month (not including our fee)?\n2. Average ticket and profit per job for each line: light-duty tow, medium-duty tow, and equipment / container / forklift hauling. Which one do you most want to grow?\n3. Claremore: should we include it from day one? When you mentioned \"Highway 40\", did you mean I-44 / Route 66? How far does your Claremore driver cover?\n4. (918) 320-7595 is already on your website. Is it also on your Google Maps listing or other directories?\n5. Your homepage says \"24/7 SERVICE!\". Do you take calls 24/7, or only Mon–Fri 7 am–9 pm? Do you answer on Saturdays or Sundays?\n6. Can you add PMM as a collaborator on your Wix site so we can install call tracking and a quote form? There is a Google Ads tag on the site (AW-1004387232): whose account is it? Which email should receive leads?\n7. Is your Google Business Profile verified? Can you give PMM manager access?\n8. Do you do heavy-duty towing (semis, 18-wheelers), or should we exclude it?\n\nThank you!";
   const ta = $('clientmsg');
   if (ta){
     ta.value = msg;
