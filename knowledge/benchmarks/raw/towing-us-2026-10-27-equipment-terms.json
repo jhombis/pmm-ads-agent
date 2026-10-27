@@ -1,0 +1,6435 @@
+{
+ "meta": {
+  "fuente": "Windsor.ai google_ads (MCC PMM)",
+  "extraido": "2026-10-27",
+  "para": "benchmark-interno tuff-truck-towing",
+  "cuentas": "36 cuentas de towing/roadside (nombre con Towing/Tow/Roadside/Recovery); IDs sin nombre de cliente",
+  "search_terms": {
+   "periodo": "2025-10-27 a 2026-10-26",
+   "filtro": "search_term contains: equipment, forklift, fork lift, skid, bobcat, excavator, backhoe, tractor, machine, container, conex, lumber, medium, box truck, heavy, semi, 18 wheel, haul, flatbed transport, trailer",
+   "nota": "search terms cubren solo parte del gasto (playbook §2); 'tema' es la clasificación de esta sesión"
+  },
+  "keywords": "keyword_text con equipment/forklift/skid/bobcat/excavator/tractor/machine/container/conex/lumber/medium/box truck/heavy/semi/haul/flatbed/trailer/wrecker, 12 meses, ver keywords_tema",
+  "cuentas_90d": "2026-07-29 a 2026-10-26, nivel cuenta por tipo de campaña: [account_id, campaign_type, spend, clicks, impressions, conversions]",
+  "search_12m_total_spend": 145482.23
+ },
+ "search_terms": [
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "semi tow truck",
+   "tema": "heavy-duty / semi",
+   "impressions": 4,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "uhaul roadside",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "719-367-8947",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy equipment towing",
+   "tema": "equipo/maquinaria",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy haulers",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "179-026-2907",
+   "campaign_type": "SEARCH",
+   "search_term": "18 wheeler towing near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "semi truck tow",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "784-785-1491",
+   "campaign_type": "SEARCH",
+   "search_term": "box truck towing near me",
+   "tema": "medium-duty / box truck",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "semi tow truck",
+   "tema": "heavy-duty / semi",
+   "impressions": 3,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "799-783-3693",
+   "campaign_type": "SEARCH",
+   "search_term": "rv trailer towing",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "566-892-6004",
+   "campaign_type": "SEARCH",
+   "search_term": "vehicle towing trailer rental near me",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer tires near me",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "784-785-1491",
+   "campaign_type": "SEARCH",
+   "search_term": "florida truck and trailer bartow",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy duty wrecker tow truck",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "hauling construction equipment",
+   "tema": "equipo/maquinaria",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "969-181-4858",
+   "campaign_type": "SEARCH",
+   "search_term": "vehicle tow trailers",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "784-785-1491",
+   "campaign_type": "SEARCH",
+   "search_term": "tire repair semi truck near me",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy duty towing",
+   "tema": "heavy-duty / semi",
+   "impressions": 14,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "799-783-3693",
+   "campaign_type": "SEARCH",
+   "search_term": "box truck towing",
+   "tema": "medium-duty / box truck",
+   "impressions": 3,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "719-367-8947",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer for car towing",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "726-988-6211",
+   "campaign_type": "SEARCH",
+   "search_term": "tow truck for semi near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 2,
+   "spend": 15.04,
+   "conversions": 0
+  },
+  {
+   "account_id": "993-389-6186",
+   "campaign_type": "SEARCH",
+   "search_term": "cascade heavy rescue",
+   "tema": "heavy-duty / semi",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "784-785-1491",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer attached to car",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "all ways towing heavy haul",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "uhaul roadside assistance number",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 3,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy duty towing and recovery rates",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "889-300-4480",
+   "campaign_type": "SEARCH",
+   "search_term": "box truck roadside assistance",
+   "tema": "medium-duty / box truck",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "889-300-4480",
+   "campaign_type": "SEARCH",
+   "search_term": "roadside assistance for box trucks",
+   "tema": "medium-duty / box truck",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "373-659-3096",
+   "campaign_type": "SEARCH",
+   "search_term": "truck and trailer towing",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "784-785-1491",
+   "campaign_type": "SEARCH",
+   "search_term": "car tow trailer",
+   "tema": "remolque de trailers/RV",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "784-785-1491",
+   "campaign_type": "SEARCH",
+   "search_term": "atc heavy duty towing & recovery",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "784-785-1491",
+   "campaign_type": "SEARCH",
+   "search_term": "towing a destination trailer",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "373-659-3096",
+   "campaign_type": "SEARCH",
+   "search_term": "roadside assistance for 18 wheelers",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "784-785-1491",
+   "campaign_type": "SEARCH",
+   "search_term": "car trailer hauler",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "784-785-1491",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy towing",
+   "tema": "heavy-duty / semi",
+   "impressions": 10,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy haul towing near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy wrecker",
+   "tema": "heavy-duty / semi",
+   "impressions": 10,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "719-367-8947",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy duty towing buffalo ny",
+   "tema": "heavy-duty / semi",
+   "impressions": 5,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "726-988-6211",
+   "campaign_type": "SEARCH",
+   "search_term": "tow truck for tractor trailer",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "784-785-1491",
+   "campaign_type": "SEARCH",
+   "search_term": "roadside assistance semi truck",
+   "tema": "heavy-duty / semi",
+   "impressions": 3,
+   "clicks": 1,
+   "spend": 3.77,
+   "conversions": 0
+  },
+  {
+   "account_id": "784-785-1491",
+   "campaign_type": "SEARCH",
+   "search_term": "semi recovery truck",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy haul trailers",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 1,
+   "spend": 7.71,
+   "conversions": 0
+  },
+  {
+   "account_id": "784-785-1491",
+   "campaign_type": "SEARCH",
+   "search_term": "towing seminole fl",
+   "tema": "otros",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "719-367-8947",
+   "campaign_type": "SEARCH",
+   "search_term": "semi truck tow",
+   "tema": "heavy-duty / semi",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "566-892-6004",
+   "campaign_type": "SEARCH",
+   "search_term": "tractor trailer towing near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "5th wheel hauling",
+   "tema": "remolque de trailers/RV",
+   "impressions": 3,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "semi tow truck near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 3,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "719-367-8947",
+   "campaign_type": "SEARCH",
+   "search_term": "semi towing company near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "993-389-6186",
+   "campaign_type": "SEARCH",
+   "search_term": "gerlock towing & heavy haul",
+   "tema": "heavy-duty / semi",
+   "impressions": 2,
+   "clicks": 1,
+   "spend": 2.27,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "d&l truck and trailer",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "rgn heavy haul jobs",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "truck haul",
+   "tema": "hauling genérico",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "716-097-5854",
+   "campaign_type": "SEARCH",
+   "search_term": "towing trailers near me",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "redding trailer",
+   "tema": "remolque de trailers/RV",
+   "impressions": 6,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer transport services near me",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "676-691-8250",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy duty help",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "784-785-1491",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy duty towing near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "semi truck tire services near me",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "hauling",
+   "tema": "hauling genérico",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy haul trucking",
+   "tema": "heavy-duty / semi",
+   "impressions": 6,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "wrecker semi tow truck",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "719-367-8947",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy equipment tow truck",
+   "tema": "equipo/maquinaria",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "676-691-8250",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy duty towing louisville ky",
+   "tema": "heavy-duty / semi",
+   "impressions": 4,
+   "clicks": 1,
+   "spend": 2.97,
+   "conversions": 0
+  },
+  {
+   "account_id": "726-988-6211",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy duty roadside assistance near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "566-892-6004",
+   "campaign_type": "SEARCH",
+   "search_term": "car hauler for rent near me",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "719-367-8947",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy duty towing near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "484-782-0739",
+   "campaign_type": "SEARCH",
+   "search_term": "city trailer service montebello",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "484-782-0739",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer tow",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "hauler",
+   "tema": "hauling genérico",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "566-892-6004",
+   "campaign_type": "SEARCH",
+   "search_term": "car hauler rental",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 3,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "farm equipment haulers",
+   "tema": "equipo/maquinaria",
+   "impressions": 1,
+   "clicks": 2,
+   "spend": 11.92,
+   "conversions": 1
+  },
+  {
+   "account_id": "179-026-2907",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy tow truck near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "566-892-6004",
+   "campaign_type": "SEARCH",
+   "search_term": "car towing trailer rental",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "road service near me semi truck near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "semi truck tow truck",
+   "tema": "heavy-duty / semi",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "landstar heavy haul",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "719-367-8947",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer towing",
+   "tema": "remolque de trailers/RV",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "993-389-6186",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy recovery towing",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "566-892-6004",
+   "campaign_type": "SEARCH",
+   "search_term": "rent a trailer to tow a car",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 3,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "haul",
+   "tema": "hauling genérico",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy haul loads",
+   "tema": "heavy-duty / semi",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy duty towing company near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "179-026-2907",
+   "campaign_type": "SEARCH",
+   "search_term": "medium duty towing service",
+   "tema": "medium-duty / box truck",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "799-783-3693",
+   "campaign_type": "SEARCH",
+   "search_term": "box truck tow truck",
+   "tema": "medium-duty / box truck",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "726-988-6211",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy duty towing",
+   "tema": "heavy-duty / semi",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "676-691-8250",
+   "campaign_type": "SEARCH",
+   "search_term": "semi wreckers",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy duty towing near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 9,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy towing near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 9,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "566-892-6004",
+   "campaign_type": "SEARCH",
+   "search_term": "car trailer rental",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "676-691-8250",
+   "campaign_type": "SEARCH",
+   "search_term": "equipment towing near me",
+   "tema": "equipo/maquinaria",
+   "impressions": 1,
+   "clicks": 1,
+   "spend": 5.1099,
+   "conversions": 1
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "box truck towing service",
+   "tema": "medium-duty / box truck",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "566-892-6004",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy towing near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 6,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "hauling truck",
+   "tema": "hauling genérico",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "716-097-5854",
+   "campaign_type": "SEARCH",
+   "search_term": "tow a trailer",
+   "tema": "remolque de trailers/RV",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer transport services near me",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "851-804-7062",
+   "campaign_type": "SEARCH",
+   "search_term": "tow truck for box truck",
+   "tema": "medium-duty / box truck",
+   "impressions": 2,
+   "clicks": 1,
+   "spend": 5.61,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "semi truck maintenance near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "equipment transport rates",
+   "tema": "equipo/maquinaria",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "484-782-0739",
+   "campaign_type": "SEARCH",
+   "search_term": "tow truck for trailer",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "799-783-3693",
+   "campaign_type": "SEARCH",
+   "search_term": "car hauler near me",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "726-988-6211",
+   "campaign_type": "SEARCH",
+   "search_term": "tow truck with trailer",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "851-804-7062",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy duty wrecker service near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "box truck roadside assistance near me",
+   "tema": "medium-duty / box truck",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "semi towing near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 3,
+   "clicks": 1,
+   "spend": 0.3215,
+   "conversions": 0
+  },
+  {
+   "account_id": "726-988-6211",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy tow truck near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "uhaul car trailer near me",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "726-988-6211",
+   "campaign_type": "SEARCH",
+   "search_term": "tow haul",
+   "tema": "hauling genérico",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "bar 7 heavy haul",
+   "tema": "heavy-duty / semi",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "993-389-6186",
+   "campaign_type": "SEARCH",
+   "search_term": "tow a car trailer",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "373-659-3096",
+   "campaign_type": "SEARCH",
+   "search_term": "flatbed trailer towing",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "forklift transport services",
+   "tema": "forklift",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy haul",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "566-892-6004",
+   "campaign_type": "SEARCH",
+   "search_term": "towing trailers",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy equipment movers grand rapids mi",
+   "tema": "equipo/maquinaria",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "towing trailers near me",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy equipment transport near me",
+   "tema": "equipo/maquinaria",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "tow truck for heavy equipment",
+   "tema": "equipo/maquinaria",
+   "impressions": 5,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "rv trailer moving service",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "semi truck towing near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 10,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "969-181-4858",
+   "campaign_type": "SEARCH",
+   "search_term": "semi truck towing near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy wrecker near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 3,
+   "clicks": 1,
+   "spend": 2.13,
+   "conversions": 1
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "travel trailer transport services near me",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "373-659-3096",
+   "campaign_type": "SEARCH",
+   "search_term": "18 wheeler tow truck",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "993-389-6186",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy duty towing",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "719-367-8947",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy truck towing near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "784-785-1491",
+   "campaign_type": "SEARCH",
+   "search_term": "fishtail trailer",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "566-892-6004",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer towing company near me",
+   "tema": "remolque de trailers/RV",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "rv haulers near me",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 3,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "fifth wheel trailer transport",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy towing",
+   "tema": "heavy-duty / semi",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "travel trailer movers",
+   "tema": "remolque de trailers/RV",
+   "impressions": 4,
+   "clicks": 1,
+   "spend": 0.21,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "semi truck towing",
+   "tema": "heavy-duty / semi",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "851-804-7062",
+   "campaign_type": "SEARCH",
+   "search_term": "semi truck wrecker near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "566-892-6004",
+   "campaign_type": "SEARCH",
+   "search_term": "u haul car tow",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "tow truck for semi",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "969-181-4858",
+   "campaign_type": "SEARCH",
+   "search_term": "semi truck towing",
+   "tema": "heavy-duty / semi",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "969-181-4858",
+   "campaign_type": "SEARCH",
+   "search_term": "tow trailer",
+   "tema": "remolque de trailers/RV",
+   "impressions": 3,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "uhaul car tow",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "851-804-7062",
+   "campaign_type": "SEARCH",
+   "search_term": "hook n haul",
+   "tema": "hauling genérico",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "uhaul emergency roadside assistance",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "semi truck road service near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "851-804-7062",
+   "campaign_type": "SEARCH",
+   "search_term": "container towing service",
+   "tema": "contenedores",
+   "impressions": 2,
+   "clicks": 1,
+   "spend": 4.5412,
+   "conversions": 0
+  },
+  {
+   "account_id": "784-785-1491",
+   "campaign_type": "SEARCH",
+   "search_term": "travel trailer towing service near me",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "semi roadside",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "uhaul tow car",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "semi road service near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 3,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "889-300-4480",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer towing",
+   "tema": "remolque de trailers/RV",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "676-691-8250",
+   "campaign_type": "SEARCH",
+   "search_term": "semi wrecker service near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 2,
+   "clicks": 1,
+   "spend": 3.7951,
+   "conversions": 0
+  },
+  {
+   "account_id": "799-783-3693",
+   "campaign_type": "SEARCH",
+   "search_term": "trailers tow",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "676-691-8250",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy towing service near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 2,
+   "clicks": 1,
+   "spend": 2.48,
+   "conversions": 1
+  },
+  {
+   "account_id": "676-691-8250",
+   "campaign_type": "SEARCH",
+   "search_term": "onsite truck & trailer service",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "784-785-1491",
+   "campaign_type": "SEARCH",
+   "search_term": "haul o way towing",
+   "tema": "hauling genérico",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "676-691-8250",
+   "campaign_type": "SEARCH",
+   "search_term": "semi towing",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "semi truck road service",
+   "tema": "heavy-duty / semi",
+   "impressions": 5,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "hauling redding ca",
+   "tema": "hauling genérico",
+   "impressions": 3,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "semi tow truck near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 3,
+   "clicks": 2,
+   "spend": 15.8,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "semi towing near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "993-389-6186",
+   "campaign_type": "SEARCH",
+   "search_term": "semi truck tow truck",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "719-367-8947",
+   "campaign_type": "SEARCH",
+   "search_term": "forklift towing near me",
+   "tema": "forklift",
+   "impressions": 2,
+   "clicks": 1,
+   "spend": 3.0909,
+   "conversions": 1
+  },
+  {
+   "account_id": "676-691-8250",
+   "campaign_type": "SEARCH",
+   "search_term": "semi truck towing near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 2,
+   "clicks": 1,
+   "spend": 1.29,
+   "conversions": 0
+  },
+  {
+   "account_id": "784-785-1491",
+   "campaign_type": "SEARCH",
+   "search_term": "hook and haul",
+   "tema": "hauling genérico",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "semi towing",
+   "tema": "heavy-duty / semi",
+   "impressions": 3,
+   "clicks": 1,
+   "spend": 7.59,
+   "conversions": 0
+  },
+  {
+   "account_id": "719-367-8947",
+   "campaign_type": "SEARCH",
+   "search_term": "semi truck towing near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 2,
+   "clicks": 1,
+   "spend": 5.3161,
+   "conversions": 1
+  },
+  {
+   "account_id": "719-367-8947",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy duty towing & recovery",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "tow haul near me",
+   "tema": "hauling genérico",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "676-691-8250",
+   "campaign_type": "SEARCH",
+   "search_term": "medium duty towing",
+   "tema": "medium-duty / box truck",
+   "impressions": 3,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "676-691-8250",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy duty tow truck near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 3,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "676-691-8250",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy towing",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 1,
+   "spend": 6.2912,
+   "conversions": 2
+  },
+  {
+   "account_id": "676-691-8250",
+   "campaign_type": "SEARCH",
+   "search_term": "semi tow truck",
+   "tema": "heavy-duty / semi",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy duty towing",
+   "tema": "heavy-duty / semi",
+   "impressions": 16,
+   "clicks": 2,
+   "spend": 2.59,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy equipment hauling near me",
+   "tema": "equipo/maquinaria",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "redding trailers",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "hauling trailers",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "676-691-8250",
+   "campaign_type": "SEARCH",
+   "search_term": "semi towing near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "car trailer for pickup truck",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "726-988-6211",
+   "campaign_type": "SEARCH",
+   "search_term": "18 wheeler tow truck",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "726-988-6211",
+   "campaign_type": "SEARCH",
+   "search_term": "semi towing near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "716-097-5854",
+   "campaign_type": "SEARCH",
+   "search_term": "medium duty tow truck",
+   "tema": "medium-duty / box truck",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "993-389-6186",
+   "campaign_type": "SEARCH",
+   "search_term": "box truck towing",
+   "tema": "medium-duty / box truck",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "676-691-8250",
+   "campaign_type": "SEARCH",
+   "search_term": "medium duty wrecker",
+   "tema": "medium-duty / box truck",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "676-691-8250",
+   "campaign_type": "SEARCH",
+   "search_term": "tow truck for tractor trailer near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "784-785-1491",
+   "campaign_type": "SEARCH",
+   "search_term": "haul tow",
+   "tema": "hauling genérico",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "676-691-8250",
+   "campaign_type": "SEARCH",
+   "search_term": "18 wheeler towing",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "semi truck towing",
+   "tema": "heavy-duty / semi",
+   "impressions": 4,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "799-783-3693",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer tow",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "969-181-4858",
+   "campaign_type": "SEARCH",
+   "search_term": "tow haul",
+   "tema": "hauling genérico",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "semi truck wrecker",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "auto transport trailer",
+   "tema": "remolque de trailers/RV",
+   "impressions": 3,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "484-782-0739",
+   "campaign_type": "SEARCH",
+   "search_term": "medium duty tow truck",
+   "tema": "medium-duty / box truck",
+   "impressions": 3,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "716-097-5854",
+   "campaign_type": "SEARCH",
+   "search_term": "u haul towing car",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "676-691-8250",
+   "campaign_type": "SEARCH",
+   "search_term": "cheap semi towing near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "2 wheel car hauler",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer tow truck",
+   "tema": "remolque de trailers/RV",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "969-181-4858",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer for car towing",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "676-691-8250",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy duty towing near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 6,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "719-367-8947",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy duty tow truck near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "719-367-8947",
+   "campaign_type": "SEARCH",
+   "search_term": "semi tow truck near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "semi towing company near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 2,
+   "clicks": 1,
+   "spend": 10.9209,
+   "conversions": 1
+  },
+  {
+   "account_id": "889-300-4480",
+   "campaign_type": "SEARCH",
+   "search_term": "tow truck for trailer",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 2,
+   "spend": 1.8,
+   "conversions": 1
+  },
+  {
+   "account_id": "676-691-8250",
+   "campaign_type": "SEARCH",
+   "search_term": "tow truck for box trucks near me",
+   "tema": "medium-duty / box truck",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "676-691-8250",
+   "campaign_type": "SEARCH",
+   "search_term": "tow truck trailer",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy equipment towing",
+   "tema": "equipo/maquinaria",
+   "impressions": 3,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "semi truck wrecker service near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "676-691-8250",
+   "campaign_type": "SEARCH",
+   "search_term": "box truck stuck in mud",
+   "tema": "medium-duty / box truck",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "719-367-8947",
+   "campaign_type": "SEARCH",
+   "search_term": "uhaul roadside assistance",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "semi truck towing near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 5,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer delivery service",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "travel trailer towing",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "993-389-6186",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy duty truck towing",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy equipment hauling near me",
+   "tema": "equipo/maquinaria",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "semi trailer truck",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "road service for semi truck near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "574-661-0292",
+   "campaign_type": "SEARCH",
+   "search_term": "towing trailer",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "semi tire replacement",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "car haulers",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "vehicles towing trailers",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "784-785-1491",
+   "campaign_type": "SEARCH",
+   "search_term": "box truck towing",
+   "tema": "medium-duty / box truck",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "rv trailer towing",
+   "tema": "remolque de trailers/RV",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "719-367-8947",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy duty towing",
+   "tema": "heavy-duty / semi",
+   "impressions": 3,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "784-785-1491",
+   "campaign_type": "SEARCH",
+   "search_term": "seminole towing",
+   "tema": "otros",
+   "impressions": 3,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "784-785-1491",
+   "campaign_type": "SEARCH",
+   "search_term": "seminole towing & recovery",
+   "tema": "otros",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "semi truck kingpin replacement cost",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "towing trailer for truck",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 1,
+   "spend": 8,
+   "conversions": 0
+  },
+  {
+   "account_id": "574-661-0292",
+   "campaign_type": "SEARCH",
+   "search_term": "car towing trailer near me",
+   "tema": "remolque de trailers/RV",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "676-691-8250",
+   "campaign_type": "SEARCH",
+   "search_term": "semi towing service near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "rv trailer transport",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "969-181-4858",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer towing service",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "784-785-1491",
+   "campaign_type": "SEARCH",
+   "search_term": "haul away towing",
+   "tema": "hauling genérico",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "car hauling trailer",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer transport near me",
+   "tema": "remolque de trailers/RV",
+   "impressions": 3,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer hauling",
+   "tema": "remolque de trailers/RV",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "676-691-8250",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer transport",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "travel trailer moving service near me",
+   "tema": "remolque de trailers/RV",
+   "impressions": 2,
+   "clicks": 1,
+   "spend": 8,
+   "conversions": 0
+  },
+  {
+   "account_id": "784-785-1491",
+   "campaign_type": "SEARCH",
+   "search_term": "professional auto heavy wrecker towing",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "969-181-4858",
+   "campaign_type": "SEARCH",
+   "search_term": "car towing trailer",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "784-785-1491",
+   "campaign_type": "SEARCH",
+   "search_term": "tow truck for 18 wheeler",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "784-785-1491",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy duty towing",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "566-892-6004",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy wrecker service near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 5,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "car hauling trailers",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 2,
+   "clicks": 1,
+   "spend": 7.8,
+   "conversions": 0
+  },
+  {
+   "account_id": "108-022-5049",
+   "campaign_type": "SEARCH",
+   "search_term": "can you patch a trailer tire",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "redding trailer center",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "799-783-3693",
+   "campaign_type": "SEARCH",
+   "search_term": "tow haul en español",
+   "tema": "hauling genérico",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "108-022-5049",
+   "campaign_type": "SEARCH",
+   "search_term": "semi truck road service",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "784-785-1491",
+   "campaign_type": "SEARCH",
+   "search_term": "tow haul",
+   "tema": "hauling genérico",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "676-691-8250",
+   "campaign_type": "SEARCH",
+   "search_term": "equipment towing",
+   "tema": "equipo/maquinaria",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "676-691-8250",
+   "campaign_type": "SEARCH",
+   "search_term": "haul towing",
+   "tema": "hauling genérico",
+   "impressions": 3,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "969-181-4858",
+   "campaign_type": "SEARCH",
+   "search_term": "flatbed trailer for car towing",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "676-691-8250",
+   "campaign_type": "SEARCH",
+   "search_term": "towing for semi truck",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "726-988-6211",
+   "campaign_type": "SEARCH",
+   "search_term": "roadside assistance for 18 wheelers near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "851-804-7062",
+   "campaign_type": "SEARCH",
+   "search_term": "tsr hauling",
+   "tema": "hauling genérico",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "108-022-5049",
+   "campaign_type": "SEARCH",
+   "search_term": "roadside trailer assistance",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "574-661-0292",
+   "campaign_type": "SEARCH",
+   "search_term": "can you tow a car without a trailer",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy duty recovery",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "road service semi truck",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "179-026-2907",
+   "campaign_type": "SEARCH",
+   "search_term": "cooper truck & trailer repair plus tires and towing",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "108-022-5049",
+   "campaign_type": "SEARCH",
+   "search_term": "jump start semi truck near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "108-022-5049",
+   "campaign_type": "SEARCH",
+   "search_term": "mobile semi truck tire service",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "car hauler near me",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "car hauler rentals",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "uhaul roadside assistance",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 3,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "676-691-8250",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy duty wrecker service near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "784-785-1491",
+   "campaign_type": "SEARCH",
+   "search_term": "semi truck road service near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "851-804-7062",
+   "campaign_type": "SEARCH",
+   "search_term": "travel trailer moving service near me",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "574-661-0292",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy wreckers near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 3,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "574-661-0292",
+   "campaign_type": "SEARCH",
+   "search_term": "semi truck towing near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "574-661-0292",
+   "campaign_type": "SEARCH",
+   "search_term": "semi truck towing near me near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "719-367-8947",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy towing company",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "676-691-8250",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy duty tow truck service near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "574-661-0292",
+   "campaign_type": "SEARCH",
+   "search_term": "18 wheeler wrecker near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "cargo heavy duty coopersville mi",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "281-767-4511",
+   "campaign_type": "SEARCH",
+   "search_term": "car hauler trailer",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "281-767-4511",
+   "campaign_type": "SEARCH",
+   "search_term": "towing trailer",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "road service near me semi truck",
+   "tema": "heavy-duty / semi",
+   "impressions": 3,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "726-988-6211",
+   "campaign_type": "SEARCH",
+   "search_term": "parrish towing and hauling",
+   "tema": "hauling genérico",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "784-785-1491",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer tow trucks",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "851-804-7062",
+   "campaign_type": "SEARCH",
+   "search_term": "is it hard to tow a trailer",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "566-892-6004",
+   "campaign_type": "SEARCH",
+   "search_term": "rent car hauler near me",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "281-767-4511",
+   "campaign_type": "SEARCH",
+   "search_term": "lts 24 hour truck & trailer repair services",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "281-767-4511",
+   "campaign_type": "SEARCH",
+   "search_term": "utility trailer repair near me",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "719-367-8947",
+   "campaign_type": "SEARCH",
+   "search_term": "tow truck for semi trucks",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "equipment haulers near me",
+   "tema": "equipo/maquinaria",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "michigan car hauling",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "484-782-0739",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer hitch installation near me",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 3,
+   "clicks": 1,
+   "spend": 14.035,
+   "conversions": 0
+  },
+  {
+   "account_id": "726-988-6211",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy duty towing company near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "281-767-4511",
+   "campaign_type": "SEARCH",
+   "search_term": "michigan car hauling",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "equipment hauling near me",
+   "tema": "equipo/maquinaria",
+   "impressions": 3,
+   "clicks": 1,
+   "spend": 4.8631,
+   "conversions": 1
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "oversized tractor trailer",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "676-691-8250",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy duty tow truck",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "676-691-8250",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy duty wrecker service",
+   "tema": "heavy-duty / semi",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "574-661-0292",
+   "campaign_type": "SEARCH",
+   "search_term": "car hauling",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "574-661-0292",
+   "campaign_type": "SEARCH",
+   "search_term": "tow truck for tractor trailer near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "machinery moving",
+   "tema": "equipo/maquinaria",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "484-782-0739",
+   "campaign_type": "SEARCH",
+   "search_term": "tow haul",
+   "tema": "hauling genérico",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "car hauling companies",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "roadside assistance semi truck near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "x pert truck and trailer",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 2,
+   "clicks": 1,
+   "spend": 5.6658,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer service near me",
+   "tema": "remolque de trailers/RV",
+   "impressions": 4,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "676-691-8250",
+   "campaign_type": "SEARCH",
+   "search_term": "tow company for trailer removal",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "autohauler",
+   "tema": "hauling genérico",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "719-367-8947",
+   "campaign_type": "SEARCH",
+   "search_term": "truck & trailer repair express",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "574-661-0292",
+   "campaign_type": "SEARCH",
+   "search_term": "towing trailer service",
+   "tema": "remolque de trailers/RV",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy duty wrecker near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "forklift movers",
+   "tema": "forklift",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "forklift moving service",
+   "tema": "forklift",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy equipment towing near me",
+   "tema": "equipo/maquinaria",
+   "impressions": 3,
+   "clicks": 1,
+   "spend": 2.15,
+   "conversions": 1
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "renting a car trailer",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "equipment movers in my area",
+   "tema": "equipo/maquinaria",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy equipment movers in my area",
+   "tema": "equipo/maquinaria",
+   "impressions": 1,
+   "clicks": 1,
+   "spend": 7.99,
+   "conversions": 0
+  },
+  {
+   "account_id": "281-767-4511",
+   "campaign_type": "SEARCH",
+   "search_term": "semi truck jump starter near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "566-892-6004",
+   "campaign_type": "SEARCH",
+   "search_term": "tow equipment",
+   "tema": "equipo/maquinaria",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "566-892-6004",
+   "campaign_type": "SEARCH",
+   "search_term": "towing trailers for rent near me",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 3,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "pull trailers",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "993-389-6186",
+   "campaign_type": "SEARCH",
+   "search_term": "car hauler near me",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "uhaul tow trailer",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "969-181-4858",
+   "campaign_type": "SEARCH",
+   "search_term": "tow truck for semi truck",
+   "tema": "heavy-duty / semi",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "676-691-8250",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer recovery",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "969-181-4858",
+   "campaign_type": "SEARCH",
+   "search_term": "pull my trailer",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "car trailer rentals",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "roadside assistance trailer",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "equipment transport near me",
+   "tema": "equipo/maquinaria",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "484-782-0739",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer towing companies",
+   "tema": "remolque de trailers/RV",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "574-661-0292",
+   "campaign_type": "SEARCH",
+   "search_term": "flatbed car hauler",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "574-661-0292",
+   "campaign_type": "SEARCH",
+   "search_term": "18 wheeler roadside assistance near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "574-661-0292",
+   "campaign_type": "SEARCH",
+   "search_term": "car hauler",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 3,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "566-892-6004",
+   "campaign_type": "SEARCH",
+   "search_term": "car towing trailer near me",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "car towing trailer",
+   "tema": "remolque de trailers/RV",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "281-767-4511",
+   "campaign_type": "SEARCH",
+   "search_term": "car hauler near me",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "719-367-8947",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy equipment recovery near me",
+   "tema": "equipo/maquinaria",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "machine moving companies",
+   "tema": "equipo/maquinaria",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "799-783-3693",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer hitch install colorado springs",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "726-988-6211",
+   "campaign_type": "SEARCH",
+   "search_term": "18 wheeler towing near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "716-097-5854",
+   "campaign_type": "SEARCH",
+   "search_term": "weis truck and trailer repair",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "799-783-3693",
+   "campaign_type": "SEARCH",
+   "search_term": "towing trailer",
+   "tema": "remolque de trailers/RV",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer services near me",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy d wrecker",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "993-389-6186",
+   "campaign_type": "SEARCH",
+   "search_term": "semi truck towing near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "993-389-6186",
+   "campaign_type": "SEARCH",
+   "search_term": "travel trailer movers near me",
+   "tema": "remolque de trailers/RV",
+   "impressions": 3,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "784-785-1491",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer recovery",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "719-367-8947",
+   "campaign_type": "SEARCH",
+   "search_term": "semi truck tow trucks",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "719-367-8947",
+   "campaign_type": "SEARCH",
+   "search_term": "tow trucks for semis",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "373-659-3096",
+   "campaign_type": "SEARCH",
+   "search_term": "car hauling companies near me",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "676-691-8250",
+   "campaign_type": "SEARCH",
+   "search_term": "tow trailers near me",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer hauling near me",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "719-367-8947",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer towing near me",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "574-661-0292",
+   "campaign_type": "SEARCH",
+   "search_term": "vehicle hauler",
+   "tema": "hauling genérico",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "799-783-3693",
+   "campaign_type": "SEARCH",
+   "search_term": "towing a trailer",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer repairs",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "574-661-0292",
+   "campaign_type": "SEARCH",
+   "search_term": "18 wheeler towing near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "566-892-6004",
+   "campaign_type": "SEARCH",
+   "search_term": "u haul towing trailer",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "574-661-0292",
+   "campaign_type": "SEARCH",
+   "search_term": "best auto haulers",
+   "tema": "hauling genérico",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "574-661-0292",
+   "campaign_type": "SEARCH",
+   "search_term": "car haulers",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "574-661-0292",
+   "campaign_type": "SEARCH",
+   "search_term": "best car hauling companies",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "574-661-0292",
+   "campaign_type": "SEARCH",
+   "search_term": "box truck towing near me near me",
+   "tema": "medium-duty / box truck",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "566-892-6004",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer towing service",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "799-783-3693",
+   "campaign_type": "SEARCH",
+   "search_term": "car towing trailer",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "719-367-8947",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy duty recovery",
+   "tema": "heavy-duty / semi",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "719-367-8947",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy duty road service",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "fifth wheel haulers near me",
+   "tema": "hauling genérico",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "conestoga trailer",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "566-892-6004",
+   "campaign_type": "SEARCH",
+   "search_term": "rv haulers near me",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "851-804-7062",
+   "campaign_type": "SEARCH",
+   "search_term": "biggest little haulers",
+   "tema": "hauling genérico",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "mobile machines near me",
+   "tema": "equipo/maquinaria",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy duty help",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "lowboy heavy haul trailers",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer hitches installed near me",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 3,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "average cost to tow a semi truck",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "676-691-8250",
+   "campaign_type": "SEARCH",
+   "search_term": "semi truck wrecker service near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "tow truck semi truck",
+   "tema": "heavy-duty / semi",
+   "impressions": 3,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "969-181-4858",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer towing near me",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "617-549-0037",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy duty towing",
+   "tema": "heavy-duty / semi",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "617-549-0037",
+   "campaign_type": "SEARCH",
+   "search_term": "towing heavy equipment",
+   "tema": "equipo/maquinaria",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "566-892-6004",
+   "campaign_type": "SEARCH",
+   "search_term": "car hauler trailer rental",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 3,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "617-549-0037",
+   "campaign_type": "SEARCH",
+   "search_term": "car trailer",
+   "tema": "remolque de trailers/RV",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "truck hauling company",
+   "tema": "hauling genérico",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "969-181-4858",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer tow",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "851-804-7062",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer towing service",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "617-549-0037",
+   "campaign_type": "SEARCH",
+   "search_term": "box truck towing",
+   "tema": "medium-duty / box truck",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "898-105-8395",
+   "campaign_type": "SEARCH",
+   "search_term": "travel trailer towing service near me",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "hauling trucks",
+   "tema": "hauling genérico",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "676-691-8250",
+   "campaign_type": "SEARCH",
+   "search_term": "robert's heavy duty towing",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "617-549-0037",
+   "campaign_type": "SEARCH",
+   "search_term": "car hauler",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "898-105-8395",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer repairs near me",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "770-506-4141",
+   "campaign_type": "SEARCH",
+   "search_term": "semi truck breakdown",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "770-506-4141",
+   "campaign_type": "SEARCH",
+   "search_term": "tow haul",
+   "tema": "hauling genérico",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "mobile semi tire service near me",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "179-026-2907",
+   "campaign_type": "SEARCH",
+   "search_term": "semi truck towing near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "617-549-0037",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy truck towing near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "617-549-0037",
+   "campaign_type": "SEARCH",
+   "search_term": "truck and trailer repair near me",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "898-105-8395",
+   "campaign_type": "SEARCH",
+   "search_term": "road service near me semi truck near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 2,
+   "clicks": 1,
+   "spend": 1.71,
+   "conversions": 1
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "car hauling near me",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "898-105-8395",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy equipment wrecker",
+   "tema": "equipo/maquinaria",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "898-105-8395",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy tow company near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy haul load board",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "676-691-8250",
+   "campaign_type": "SEARCH",
+   "search_term": "kentucky trailer services",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "travel trailer service",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "farm equipment hauling near me",
+   "tema": "equipo/maquinaria",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "676-691-8250",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy duty towing company",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "617-549-0037",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer brake system service",
+   "tema": "remolque de trailers/RV",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "haul a car",
+   "tema": "hauling genérico",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "hoppers heavy haulers",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "716-097-5854",
+   "campaign_type": "SEARCH",
+   "search_term": "brad's trailer service",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "676-691-8250",
+   "campaign_type": "SEARCH",
+   "search_term": "towing heavy duty",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "369-986-4590",
+   "campaign_type": "SEARCH",
+   "search_term": "tow my trailer for me",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "898-105-8395",
+   "campaign_type": "SEARCH",
+   "search_term": "roadside service for semi trucks",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy equipment movers",
+   "tema": "equipo/maquinaria",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "676-691-8250",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy duty tow near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "semi truck road service near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 5,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "car hauling",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy haul transporting",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "machine mover near me",
+   "tema": "equipo/maquinaria",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "rv trailer moving",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "semi hauling semis",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "851-804-7062",
+   "campaign_type": "SEARCH",
+   "search_term": "on the go towing & hauling llc",
+   "tema": "hauling genérico",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "851-804-7062",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer to tow a car",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "898-105-8395",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy towing near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 4,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "898-105-8395",
+   "campaign_type": "SEARCH",
+   "search_term": "semi truck road assistance near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "889-300-4480",
+   "campaign_type": "SEARCH",
+   "search_term": "car trailer rentals",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 1,
+   "spend": 3.28,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "equipment hauling service",
+   "tema": "equipo/maquinaria",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy equipment movers near me",
+   "tema": "equipo/maquinaria",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "179-026-2907",
+   "campaign_type": "SEARCH",
+   "search_term": "towing hauling",
+   "tema": "hauling genérico",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "373-659-3096",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer tow",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "898-105-8395",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy duty tow truck service near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "898-105-8395",
+   "campaign_type": "SEARCH",
+   "search_term": "medium duty tow truck",
+   "tema": "medium-duty / box truck",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "camper haulers",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "travel trailer tow",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "gooseneck trailer",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 1,
+   "spend": 7.95,
+   "conversions": 0
+  },
+  {
+   "account_id": "676-691-8250",
+   "campaign_type": "SEARCH",
+   "search_term": "tow truck for box truck",
+   "tema": "medium-duty / box truck",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "676-691-8250",
+   "campaign_type": "SEARCH",
+   "search_term": "car hauler near me",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "369-986-4590",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy truck towing near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "rv haulers near me",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "373-659-3096",
+   "campaign_type": "SEARCH",
+   "search_term": "larry's trailer service",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy wrecker",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer hauling services near me",
+   "tema": "remolque de trailers/RV",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "676-691-8250",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy equipment towing",
+   "tema": "equipo/maquinaria",
+   "impressions": 3,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "8 axle flatbed trailer",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "898-105-8395",
+   "campaign_type": "SEARCH",
+   "search_term": "car haulers near me",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 1,
+   "spend": 0.62,
+   "conversions": 0
+  },
+  {
+   "account_id": "898-105-8395",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy wrecker service near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 5,
+   "clicks": 2,
+   "spend": 44.058,
+   "conversions": 1
+  },
+  {
+   "account_id": "898-105-8395",
+   "campaign_type": "SEARCH",
+   "search_term": "car hauling company",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy wrecker service near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 2,
+   "clicks": 2,
+   "spend": 10.62,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "equipment hauling",
+   "tema": "equipo/maquinaria",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "566-892-6004",
+   "campaign_type": "SEARCH",
+   "search_term": "car trailer rental near me",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "676-691-8250",
+   "campaign_type": "SEARCH",
+   "search_term": "car hauler",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "5th wheel haulers near me",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "road service trailer",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "car hauler",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "car towing trailer",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "179-026-2907",
+   "campaign_type": "SEARCH",
+   "search_term": "car towing trailer near me",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "898-105-8395",
+   "campaign_type": "SEARCH",
+   "search_term": "car hauler companies",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy equipment towing",
+   "tema": "equipo/maquinaria",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "rv trailer service",
+   "tema": "remolque de trailers/RV",
+   "impressions": 3,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "hot shot hauling near me",
+   "tema": "hauling genérico",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "784-785-1491",
+   "campaign_type": "SEARCH",
+   "search_term": "tow truck for trailer removal",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "676-691-8250",
+   "campaign_type": "SEARCH",
+   "search_term": "tow box truck",
+   "tema": "medium-duty / box truck",
+   "impressions": 2,
+   "clicks": 1,
+   "spend": 3.56,
+   "conversions": 0
+  },
+  {
+   "account_id": "281-767-4511",
+   "campaign_type": "SEARCH",
+   "search_term": "semi truck towing near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "676-691-8250",
+   "campaign_type": "SEARCH",
+   "search_term": "towing semi truck near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "281-767-4511",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer fixer near me",
+   "tema": "remolque de trailers/RV",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "784-785-1491",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer tow",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "semi truck tire service near me",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "semi truck service near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "898-105-8395",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy duty towing near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 3,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy equipment transport near me",
+   "tema": "equipo/maquinaria",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "617-549-0037",
+   "campaign_type": "SEARCH",
+   "search_term": "cascade heavy rescue",
+   "tema": "heavy-duty / semi",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "969-181-4858",
+   "campaign_type": "SEARCH",
+   "search_term": "herbert towing and hauling",
+   "tema": "hauling genérico",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "lc hauling inc",
+   "tema": "hauling genérico",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "676-691-8250",
+   "campaign_type": "SEARCH",
+   "search_term": "towing company heavy duty",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "281-767-4511",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer grand rapids",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "898-105-8395",
+   "campaign_type": "SEARCH",
+   "search_term": "car hauling companies",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "898-105-8395",
+   "campaign_type": "SEARCH",
+   "search_term": "truck and trailer repairs near me",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 9,
+   "clicks": 2,
+   "spend": 13.0564,
+   "conversions": 1
+  },
+  {
+   "account_id": "898-105-8395",
+   "campaign_type": "SEARCH",
+   "search_term": "truck and trailer repairs near me near me",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "617-549-0037",
+   "campaign_type": "SEARCH",
+   "search_term": "tow box truck",
+   "tema": "medium-duty / box truck",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "484-782-0739",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer tow service near me",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "676-691-8250",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer towing",
+   "tema": "remolque de trailers/RV",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "semi wrecker",
+   "tema": "heavy-duty / semi",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "753-255-2245",
+   "campaign_type": "SEARCH",
+   "search_term": "car towing trailer",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer towing near me",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 1,
+   "spend": 6.43,
+   "conversions": 0
+  },
+  {
+   "account_id": "898-105-8395",
+   "campaign_type": "SEARCH",
+   "search_term": "car hauling service",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "rgn trailer",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "753-255-2245",
+   "campaign_type": "SEARCH",
+   "search_term": "fifth wheel trailer hitch",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "753-255-2245",
+   "campaign_type": "SEARCH",
+   "search_term": "small teardrop trailer",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "753-255-2245",
+   "campaign_type": "SEARCH",
+   "search_term": "small toy hauler",
+   "tema": "hauling genérico",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "753-255-2245",
+   "campaign_type": "SEARCH",
+   "search_term": "travel trailer with cargo deck",
+   "tema": "remolque de trailers/RV",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "roadside assistance for semi trucks near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 2,
+   "spend": 15.24,
+   "conversions": 1
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "road service for semi truck near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 3,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "676-691-8250",
+   "campaign_type": "SEARCH",
+   "search_term": "car trailer tow",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "753-255-2245",
+   "campaign_type": "SEARCH",
+   "search_term": "18 ft trailer",
+   "tema": "remolque de trailers/RV",
+   "impressions": 3,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "753-255-2245",
+   "campaign_type": "SEARCH",
+   "search_term": "cargo trailer",
+   "tema": "remolque de trailers/RV",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "753-255-2245",
+   "campaign_type": "SEARCH",
+   "search_term": "tall cargo trailers",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "hauling contractor",
+   "tema": "hauling genérico",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "753-255-2245",
+   "campaign_type": "SEARCH",
+   "search_term": "4x8 enclosed trailer",
+   "tema": "remolque de trailers/RV",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "753-255-2245",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer brakes",
+   "tema": "remolque de trailers/RV",
+   "impressions": 3,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "484-782-0739",
+   "campaign_type": "SEARCH",
+   "search_term": "mobile trailer repair near me",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer service near me",
+   "tema": "remolque de trailers/RV",
+   "impressions": 3,
+   "clicks": 1,
+   "spend": 9.5709,
+   "conversions": 1
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer towing service",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "898-105-8395",
+   "campaign_type": "SEARCH",
+   "search_term": "lowboy hauling near me",
+   "tema": "hauling genérico",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "898-105-8395",
+   "campaign_type": "SEARCH",
+   "search_term": "semi towing near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 4,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "898-105-8395",
+   "campaign_type": "SEARCH",
+   "search_term": "semi truck towing near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 7,
+   "clicks": 1,
+   "spend": 0.31,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy duty near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "676-691-8250",
+   "campaign_type": "SEARCH",
+   "search_term": "semi jump start near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "676-691-8250",
+   "campaign_type": "SEARCH",
+   "search_term": "semi truck jump start near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy duty tow truck",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer services near me",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer tow service near me",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "676-691-8250",
+   "campaign_type": "SEARCH",
+   "search_term": "car trailer near me",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "towing equipment",
+   "tema": "equipo/maquinaria",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "822-393-5903",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer tire roadside assistance near me",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "484-782-0739",
+   "campaign_type": "SEARCH",
+   "search_term": "rv haul",
+   "tema": "hauling genérico",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "semi truck",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "898-105-8395",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy duty towing",
+   "tema": "heavy-duty / semi",
+   "impressions": 3,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "523-801-4243",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer towing",
+   "tema": "remolque de trailers/RV",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "822-393-5903",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer repair near me",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "719-367-8947",
+   "campaign_type": "SEARCH",
+   "search_term": "medium duty towing service near me",
+   "tema": "medium-duty / box truck",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "898-105-8395",
+   "campaign_type": "SEARCH",
+   "search_term": "car haulers",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "semi truck services",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "220-410-9619",
+   "campaign_type": "SEARCH",
+   "search_term": "car pulling trailer",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "898-105-8395",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy wrecker near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "281-767-4511",
+   "campaign_type": "SEARCH",
+   "search_term": "towing for semi trucks near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "523-801-4243",
+   "campaign_type": "SEARCH",
+   "search_term": "semi tow truck near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "220-410-9619",
+   "campaign_type": "SEARCH",
+   "search_term": "car hauler",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "220-410-9619",
+   "campaign_type": "SEARCH",
+   "search_term": "car trailer",
+   "tema": "remolque de trailers/RV",
+   "impressions": 6,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "220-410-9619",
+   "campaign_type": "SEARCH",
+   "search_term": "towing a utility trailer",
+   "tema": "remolque de trailers/RV",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "425-405-2574",
+   "campaign_type": "SEARCH",
+   "search_term": "towing seminole ok",
+   "tema": "otros",
+   "impressions": 3,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "220-410-9619",
+   "campaign_type": "SEARCH",
+   "search_term": "car tow trailer",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "220-410-9619",
+   "campaign_type": "SEARCH",
+   "search_term": "fifth wheel car hauler",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "220-410-9619",
+   "campaign_type": "SEARCH",
+   "search_term": "used car haulers near me",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 1,
+   "spend": 1.12,
+   "conversions": 0
+  },
+  {
+   "account_id": "676-691-8250",
+   "campaign_type": "SEARCH",
+   "search_term": "semi tow truck near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "676-691-8250",
+   "campaign_type": "SEARCH",
+   "search_term": "towing a trailer",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "213-019-5545",
+   "campaign_type": "SEARCH",
+   "search_term": "semi truck tow",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "220-410-9619",
+   "campaign_type": "SEARCH",
+   "search_term": "como quitar el tow haul",
+   "tema": "hauling genérico",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "220-410-9619",
+   "campaign_type": "SEARCH",
+   "search_term": "fifth wheel hauling service near me",
+   "tema": "hauling genérico",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "220-410-9619",
+   "campaign_type": "SEARCH",
+   "search_term": "flatbed equipment near me",
+   "tema": "equipo/maquinaria",
+   "impressions": 1,
+   "clicks": 1,
+   "spend": 5.11,
+   "conversions": 0
+  },
+  {
+   "account_id": "425-405-2574",
+   "campaign_type": "SEARCH",
+   "search_term": "tow trailer",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "898-105-8395",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy duty towing company",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "213-019-5545",
+   "campaign_type": "SEARCH",
+   "search_term": "rv haulers in texas",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 2,
+   "clicks": 1,
+   "spend": 11.43,
+   "conversions": 0
+  },
+  {
+   "account_id": "220-410-9619",
+   "campaign_type": "SEARCH",
+   "search_term": "single car hauling",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 1,
+   "spend": 0.8,
+   "conversions": 0
+  },
+  {
+   "account_id": "898-105-8395",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer service near me",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "753-255-2245",
+   "campaign_type": "SEARCH",
+   "search_term": "semi truck stuck in sand",
+   "tema": "heavy-duty / semi",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "220-410-9619",
+   "campaign_type": "SEARCH",
+   "search_term": "car hauling",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "213-019-5545",
+   "campaign_type": "SEARCH",
+   "search_term": "rv trailer transport",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "425-405-2574",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer to pull car",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer service near me open now",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "220-410-9619",
+   "campaign_type": "SEARCH",
+   "search_term": "car hauler trailer",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "220-410-9619",
+   "campaign_type": "SEARCH",
+   "search_term": "haul",
+   "tema": "hauling genérico",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "220-410-9619",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy tow truck recovery",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "tractor towing near me",
+   "tema": "equipo/maquinaria",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "676-691-8250",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer service",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "220-410-9619",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy duty car hauler",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "898-105-8395",
+   "campaign_type": "SEARCH",
+   "search_term": "road service semi truck near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 4,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "tow truck for semis",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "220-410-9619",
+   "campaign_type": "SEARCH",
+   "search_term": "car hauler trailers near me",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 1,
+   "spend": 1.32,
+   "conversions": 0
+  },
+  {
+   "account_id": "220-410-9619",
+   "campaign_type": "SEARCH",
+   "search_term": "flatbed trailer",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "220-410-9619",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy rescue tow truck",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "220-410-9619",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer battery not charging 2015 f150",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "784-785-1491",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy duty battery jump starter",
+   "tema": "heavy-duty / semi",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "851-804-7062",
+   "campaign_type": "SEARCH",
+   "search_term": "5th wheel trailer towing service",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "566-892-6004",
+   "campaign_type": "SEARCH",
+   "search_term": "rent a car hauler trailer",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "986-810-9972",
+   "campaign_type": "SEARCH",
+   "search_term": "trailers to tow cars",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "semi jump start near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "semi tow near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "roadside assistance for semi trucks near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "753-255-2245",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy wrecker",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "851-804-7062",
+   "campaign_type": "SEARCH",
+   "search_term": "hot shot car haulers",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "281-767-4511",
+   "campaign_type": "SEARCH",
+   "search_term": "haulers",
+   "tema": "hauling genérico",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "986-810-9972",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy haul towing near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "566-892-6004",
+   "campaign_type": "SEARCH",
+   "search_term": "car haulers",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy equipment towing near me",
+   "tema": "equipo/maquinaria",
+   "impressions": 6,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer transport",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "towing semi truck near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 3,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "986-810-9972",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer repair near me",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "566-892-6004",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy equipment towing near me",
+   "tema": "equipo/maquinaria",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "969-181-4858",
+   "campaign_type": "SEARCH",
+   "search_term": "car hauler trailer",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "986-810-9972",
+   "campaign_type": "SEARCH",
+   "search_term": "rv haulers near me",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "truck and trailer road service",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "898-105-8395",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer fix near me",
+   "tema": "remolque de trailers/RV",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy towing near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "851-804-7062",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer towing",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "trailer fixer",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "898-105-8395",
+   "campaign_type": "SEARCH",
+   "search_term": "semi truck roadside assistance",
+   "tema": "heavy-duty / semi",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "986-810-9972",
+   "campaign_type": "SEARCH",
+   "search_term": "small trailer repair near me",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "24 hour semi roadside service",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy recovery",
+   "tema": "heavy-duty / semi",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "676-691-8250",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy duty tow company near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "986-810-9972",
+   "campaign_type": "SEARCH",
+   "search_term": "car trailer",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy duty towing near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "220-410-9619",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy duty towing",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "898-105-8395",
+   "campaign_type": "SEARCH",
+   "search_term": "semi truck road service near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "semi trailer towing near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "986-810-9972",
+   "campaign_type": "SEARCH",
+   "search_term": "independent roadside assistance contractor",
+   "tema": "otros",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "220-410-9619",
+   "campaign_type": "SEARCH",
+   "search_term": "box truck towing",
+   "tema": "medium-duty / box truck",
+   "impressions": 2,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "425-405-2574",
+   "campaign_type": "SEARCH",
+   "search_term": "jump start box truck",
+   "tema": "medium-duty / box truck",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "trucking companies that haul cars",
+   "tema": "hauling genérico",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "semi road service near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "private car haulers",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "179-026-2907",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy towing near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "semi truck roadside assistance",
+   "tema": "heavy-duty / semi",
+   "impressions": 2,
+   "clicks": 2,
+   "spend": 14.6175,
+   "conversions": 0
+  },
+  {
+   "account_id": "799-783-3693",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy duty towing colorado springs",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 1,
+   "spend": 6.16,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy towing",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "822-393-5903",
+   "campaign_type": "SEARCH",
+   "search_term": "mobile trailer service near me",
+   "tema": "remolque de trailers/RV",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "898-105-8395",
+   "campaign_type": "SEARCH",
+   "search_term": "semi truck roadside assistance near me",
+   "tema": "heavy-duty / semi",
+   "impressions": 2,
+   "clicks": 2,
+   "spend": 1.8,
+   "conversions": 0
+  },
+  {
+   "account_id": "898-105-8395",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy duty flatbed tow truck",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "898-105-8395",
+   "campaign_type": "SEARCH",
+   "search_term": "heavy duty wrecker",
+   "tema": "heavy-duty / semi",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "558-147-4778",
+   "campaign_type": "SEARCH",
+   "search_term": "box truck towing near me",
+   "tema": "medium-duty / box truck",
+   "impressions": 3,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  },
+  {
+   "account_id": "935-440-8113",
+   "campaign_type": "SEARCH",
+   "search_term": "car haulers for hire near me",
+   "tema": "ruido: compra/renta/reparación/car hauler",
+   "impressions": 1,
+   "clicks": 0,
+   "spend": 0,
+   "conversions": 0
+  }
+ ],
+ "keywords_tema_resumen": {
+  "cuenta con ad group Heavy Duty/Semi (12 kw, broad+exact)": {
+   "spend": 303.78,
+   "clicks": 44,
+   "impressions": 973,
+   "conversions": 4
+  },
+  "cuenta con campaña Heavy Radius (9 kw broad, incl. 'heavy towing')": {
+   "spend": 1298.17,
+   "clicks": 273,
+   "impressions": 3183,
+   "conversions": 102.83,
+   "nota": "en search terms de esa cuenta solo ~$46 tienen palabras heavy/semi/equipment: la amplia sirvió sobre todo búsquedas genéricas"
+  },
+  "heavy equipment hauling (broad, 1 cuenta)": {
+   "spend": 4.86,
+   "clicks": 1,
+   "impressions": 33,
+   "conversions": 1
+  }
+ },
+ "cuentas_90d": [
+  [
+   "369-986-4590",
+   "SEARCH",
+   1271.4389,
+   337,
+   3657,
+   104
+  ],
+  [
+   "784-785-1491",
+   "PERFORMANCE_MAX",
+   240.9328,
+   123,
+   4078,
+   8
+  ],
+  [
+   "784-785-1491",
+   "SEARCH",
+   2482.5639,
+   265,
+   4319,
+   63
+  ],
+  [
+   "898-105-8395",
+   "SEARCH",
+   3214.4504,
+   373,
+   3502,
+   160.9989
+  ],
+  [
+   "898-105-8395",
+   "DISPLAY",
+   90.4555,
+   2000,
+   72128,
+   0
+  ],
+  [
+   "716-097-5854",
+   "SEARCH",
+   1336.5288,
+   133,
+   1006,
+   37
+  ],
+  [
+   "716-097-5854",
+   "PERFORMANCE_MAX",
+   899.929,
+   293,
+   5275,
+   49
+  ],
+  [
+   "558-147-4778",
+   "PERFORMANCE_MAX",
+   2250.5402,
+   341,
+   10286,
+   99.6614
+  ],
+  [
+   "558-147-4778",
+   "SEARCH",
+   1048.9049,
+   169,
+   2209,
+   87.3295
+  ],
+  [
+   "179-026-2907",
+   "SEARCH",
+   2036.4017,
+   448,
+   5357,
+   162
+  ],
+  [
+   "742-239-3943",
+   "PERFORMANCE_MAX",
+   1319.6077,
+   313,
+   3189,
+   158.9988
+  ],
+  [
+   "566-892-6004",
+   "SEARCH",
+   1036.6235,
+   212,
+   2788,
+   92
+  ],
+  [
+   "583-434-2464",
+   "SEARCH",
+   540.5238,
+   212,
+   1608,
+   49.9971
+  ],
+  [
+   "583-434-2464",
+   "PERFORMANCE_MAX",
+   622.6242,
+   423,
+   3973,
+   100.0016
+  ],
+  [
+   "935-440-8113",
+   "SEARCH",
+   4582.8906,
+   790,
+   8159,
+   336
+  ],
+  [
+   "935-440-8113",
+   "PERFORMANCE_MAX",
+   1927.2034,
+   560,
+   8002,
+   281
+  ],
+  [
+   "484-782-0739",
+   "SEARCH",
+   2221.2949,
+   178,
+   2530,
+   42
+  ],
+  [
+   "889-300-4480",
+   "SEARCH",
+   806.5901,
+   146,
+   1917,
+   55
+  ],
+  [
+   "799-783-3693",
+   "SEARCH",
+   713.2593,
+   74,
+   1080,
+   8
+  ],
+  [
+   "799-783-3693",
+   "PERFORMANCE_MAX",
+   6600.8003,
+   1060,
+   24264,
+   236.9989
+  ],
+  [
+   "969-181-4858",
+   "SEARCH",
+   901.337,
+   148,
+   1458,
+   57
+  ],
+  [
+   "969-181-4858",
+   "PERFORMANCE_MAX",
+   396.6247,
+   90,
+   1621,
+   21
+  ],
+  [
+   "719-367-8947",
+   "SEARCH",
+   1258.9277,
+   218,
+   2175,
+   88.9989
+  ],
+  [
+   "719-367-8947",
+   "PERFORMANCE_MAX",
+   989.6295,
+   198,
+   3672,
+   50.6678
+  ],
+  [
+   "373-659-3096",
+   "SEARCH",
+   1728.9168,
+   235,
+   3314,
+   111.3328
+  ],
+  [
+   "373-659-3096",
+   "PERFORMANCE_MAX",
+   1601.3047,
+   284,
+   5176,
+   127.6667
+  ],
+  [
+   "676-691-8250",
+   "SEARCH",
+   3438.313,
+   660,
+   6818,
+   318.9986
+  ],
+  [
+   "676-691-8250",
+   "PERFORMANCE_MAX",
+   876.3035,
+   440,
+   14940,
+   81.0009
+  ],
+  [
+   "851-804-7062",
+   "SEARCH",
+   917.8969,
+   113,
+   1284,
+   12
+  ],
+  [
+   "281-767-4511",
+   "SEARCH",
+   2533.8253,
+   325,
+   5028,
+   109
+  ],
+  [
+   "281-767-4511",
+   "PERFORMANCE_MAX",
+   504.2717,
+   367,
+   18507,
+   42
+  ],
+  [
+   "770-506-4141",
+   "SEARCH",
+   39.59,
+   8,
+   71,
+   1
+  ],
+  [
+   "726-988-6211",
+   "SEARCH",
+   822.4576,
+   198,
+   1522,
+   59
+  ],
+  [
+   "617-549-0037",
+   "SEARCH",
+   1726.1316,
+   220,
+   2826,
+   47
+  ],
+  [
+   "617-549-0037",
+   "PERFORMANCE_MAX",
+   65.9668,
+   49,
+   2231,
+   2
+  ],
+  [
+   "373-000-5941",
+   "SEARCH",
+   687.7405,
+   97,
+   1106,
+   23
+  ],
+  [
+   "753-255-2245",
+   "SEARCH",
+   1466.9391,
+   94,
+   789,
+   33.999
+  ],
+  [
+   "523-801-4243",
+   "SEARCH",
+   1456.1275,
+   182,
+   1783,
+   32
+  ],
+  [
+   "822-393-5903",
+   "SEARCH",
+   1768.1035,
+   148,
+   1260,
+   34
+  ],
+  [
+   "753-255-2245",
+   "PERFORMANCE_MAX",
+   151.7252,
+   77,
+   3382,
+   8.999
+  ],
+  [
+   "373-000-5941",
+   "PERFORMANCE_MAX",
+   69.3257,
+   209,
+   12647,
+   1
+  ],
+  [
+   "220-410-9619",
+   "SEARCH",
+   1147.0447,
+   133,
+   2031,
+   19
+  ],
+  [
+   "425-405-2574",
+   "SEARCH",
+   1875.3296,
+   221,
+   3593,
+   37
+  ],
+  [
+   "213-019-5545",
+   "SEARCH",
+   1089.6682,
+   105,
+   1015,
+   15
+  ],
+  [
+   "986-810-9972",
+   "SEARCH",
+   892.28,
+   141,
+   1631,
+   20
+  ],
+  [
+   "185-043-8400",
+   "SEARCH",
+   422.23,
+   91,
+   1487,
+   4
+  ],
+  [
+   "951-316-3041",
+   "SEARCH",
+   303.77,
+   70,
+   1071,
+   3.9989
+  ],
+  [
+   "523-801-4243",
+   "PERFORMANCE_MAX",
+   61.5713,
+   24,
+   1347,
+   3
+  ]
+ ]
+}

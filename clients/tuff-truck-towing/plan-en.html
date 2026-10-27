@@ -226,7 +226,7 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
   </header>
 
   <nav class="toc" aria-label="Sections">
-    <a href="#resumen">Summary</a><a href="#pasos">Next steps</a><a href="#landing">Landing</a><a href="#checklist">Checklist</a><a href="#cliente">Client</a>
+    <a href="#resumen">Summary</a><a href="#pasos">Next steps</a><a href="#landing">Landing</a><a href="#mercado">Market</a><a href="#checklist">Checklist</a><a href="#cliente">Client</a>
   </nav>
 
   <section id="resumen">
@@ -266,16 +266,16 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
     </div>
     <div style="margin-top:24px">
       <p class="eyebrow">Budget math (playbook §4)</p>
-      <h3 style="margin:6px 0 10px">Reference, not a proposal: CPC ~$7.50 and 14–19% conversion rate (new towing cohort in the MCC)</h3>
+      <h3 style="margin:6px 0 10px">Reference, not a proposal: CPC ~$8.24 (new towing accounts in the MCC; Oklahoma $8.49) and ~$51 CPL in months 1–2</h3>
       <div class="tbl"><table>
-        <thead><tr><th>Scenario</th><th class="r">Conv. rate</th><th class="r">Leads/mo</th><th class="r">CPL</th><th>Reference</th></tr></thead>
+        <thead><tr><th>Scenario</th><th class="r">Clicks/day</th><th class="r">Conv./mo (months 1–2)</th><th class="r">Conv./mo (month 3+)</th><th>Reference</th></tr></thead>
         <tbody>
-          <tr><td>$400/mo (~$13/day · ~53 clicks)</td><td class="r">14–19%</td><td class="r">~7–10</td><td class="r">~$40–53</td><td>1 campaign, 2–3 groups</td></tr>
-          <tr><td>$700/mo (~$23/day · ~93 clicks)</td><td class="r">14–19%</td><td class="r">~13–18</td><td class="r">~$40–53</td><td>1 campaign, 3–5 groups</td></tr>
-          <tr><td>$1,000/mo (~$33/day · ~133 clicks)</td><td class="r">14–19%</td><td class="r">~19–25</td><td class="r">~$40–53</td><td>1 campaign, 3–5 groups; 2–3 campaigns from $1,500</td></tr>
+          <tr><td>$400/mo (~$13/day)</td><td class="r">1.6–2.1</td><td class="r">~8</td><td class="r">12–15</td><td>Below the 3 clicks/day floor; 1 campaign, 2–3 groups, no equipment group</td></tr>
+          <tr><td>$700/mo (~$23/day)</td><td class="r">2.8–3.7</td><td class="r">~14</td><td class="r">21–27</td><td>Median real spend in the niche; towing + an equipment test group</td></tr>
+          <tr><td>$1,000/mo (~$33/day)</td><td class="r">4.0–5.3</td><td class="r">~19</td><td class="r">30–38</td><td>Exits learning; tCPA barely from month 3–4</td></tr>
         </tbody>
       </table></div>
-      <p class="muted" style="font-size:.86rem; margin-top:8px">Semrush shows $3.32–4.59 CPCs in the area, but it underestimates the real auction: towing in the MCC pays $4.84–7.60 at the median. Maximize conversions needs ~15 stable conversions/mo and tCPA ~30 in 30 days (playbook §5). The max CPL stays pending until we have ticket and margin.</p>
+      <p class="muted" style="font-size:.86rem; margin-top:8px">Source: benchmark.md (Oct 27). With Mon–Fri 7–21 hours (42% of the week), the trimmed geo and a qualified ≥60 s call conversion, expect less than the table shows. Maximize conversions needs ~15 stable conversions/mo and tCPA ~30 in 30 days (playbook §5). The max CPL stays pending until we have ticket and margin.</p>
     </div>
   </section>
 
@@ -306,6 +306,45 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
     </div>
   </section>
 
+  <section id="mercado">
+    <div class="sec-head"><h2>Benchmark & competitors</h2><p>31 towing accounts in the MCC (90 days, Windsor) and the only one in Oklahoma. Target CPL from month 3: $21–40; months 1–2: ~$51; 6-month goal: ~$15.</p></div>
+    <div class="tbl"><table>
+      <thead><tr><th>Account</th><th>Market</th><th>Bidding</th><th class="r">CPC</th><th class="r">Conv. rate</th><th class="r">CPL</th><th class="r">Conv./mo</th></tr></thead>
+      <tbody>
+        <tr><td>Mature, account level (median, n=21)</td><td>US</td><td>Max. conversions</td><td class="r">$5.41</td><td class="r">32.8%</td><td class="r"><b>$16.10</b></td><td class="r">47</td></tr>
+        <tr><td>Search only, all (median, n=30)</td><td>US</td><td>mixed</td><td class="r">$7.22</td><td class="r">25.8%</td><td class="r"><b>$33.01</b></td><td class="r">—</td></tr>
+        <tr><td>New Search, under 90 days (median, n=10)</td><td>US</td><td>mixed</td><td class="r">$8.24</td><td class="r">15.5%</td><td class="r"><b>$51.34</b></td><td class="r">—</td></tr>
+        <tr><td>A · towing Oklahoma City (42 days)</td><td>OKC, OK</td><td>Max. conv., broad</td><td class="r">$8.49</td><td class="r">16.7%</td><td class="r"><b>$50.68</b></td><td class="r">~33 (Oct)</td></tr>
+        <tr><td><b>TUFF TRUCK TOWING</b></td><td>Broken Arrow + east Tulsa</td><td>no account</td><td class="r">—</td><td class="r">—</td><td class="r">—</td><td class="r">—</td></tr>
+      </tbody>
+    </table></div>
+    <p class="muted" style="font-size:.86rem; margin-top:8px">The real CPC in Oklahoma ($8.49) is double Semrush’s figure for Tulsa ($3.35–4.59): plan with $8–8.5. For equipment, forklift, container, lumber and medium-duty terms, the MCC has 11 clicks, $53.95 and 5 conversions in 12 months (36 accounts). That is noise: the theme is untested because almost no one bids on it. Heavy-duty/semi runs ~$76 per conversion in the only dedicated group (44 clicks). Conversions are unqualified "Calls from Ads".</p>
+
+    <div class="two">
+      <div>
+        <h3 style="margin-bottom:8px">Competitors in Broken Arrow and Tulsa</h3>
+        <div class="tbl"><table>
+          <thead><tr><th>Competitor</th><th>Reviews</th><th>Angle</th></tr></thead>
+          <tbody>
+            <tr><td>Allied Towing Tulsa</td><td class="num">Pending</td><td>24/7 + auctions; strongest in organic (~4.4k visits/mo)</td></tr>
+            <tr><td>Speedy’s Towing & Recovery</td><td class="num">Pending</td><td>24/7, 30+ years, published prices; containers, heavy equipment, Landoll</td></tr>
+            <tr><td>Tow N Go Wrecker</td><td class="num">Pending</td><td>24/7 "Anytime, Anywhere", roadside, form</td></tr>
+            <tr><td>Storey Wrecker</td><td class="num">Pending</td><td>Broken Arrow line; light, medium and heavy duty</td></tr>
+            <tr><td>A & W Towing</td><td class="num">Pending</td><td>24/7, light, medium and heavy, Equipment Hauling page, family-owned</td></tr>
+            <tr><td>BA Towing and Neptune (BA)</td><td class="num">Pending</td><td>"Broken Arrow Towing", 30-min response, free quote, container transport</td></tr>
+          </tbody>
+        </table></div>
+        <p class="muted" style="font-size:.86rem; margin-top:8px">Semrush shows no paid ads for any of them (0 keywords; Semrush barely tracks local ads). Who shows up in ads and LSA gets checked with the Ad Preview tool before /build-campaign.</p>
+      </div>
+      <div class="callout">
+        <h3>Opportunities</h3>
+        <ul><li><b>Forklifts, skid steers and containers</b> no one in the area has a page for them (forklift transport 210/mo, forklift towing 210/mo in Semrush).</li><li><b>Visible license</b> DPS #53342-W, MC, DOT, insured: no competitor shows a license number. B2B trust.</li><li><b>Local Broken Arrow</b> the client already ranks #1–2 organically for "towing broken arrow"; few competitors based in BA.</li><li><b>Medium-duty and box trucks</b> 390 + 260 searches/mo; only Storey and A&W, both Tulsa-based and heavy-duty.</li></ul>
+        <h3 style="margin-top:14px">Threats</h3>
+        <ul><li>All 7 competitors sell 24/7; the client works Mon–Fri 7–21.</li><li>Reviews: A&W and BA Towing show testimonials; Tuff Truck shows none.</li><li>High CPC for hauling and containers ($6.43–7.87) and a real $8–8.5 for towing in OK.</li></ul>
+      </div>
+    </div>
+  </section>
+
   <section id="checklist">
     <div class="sec-head"><h2>Checklist</h2><p>Mirror of <span class="mono">clients/tuff-truck-towing/checklist.md</span> as of Oct 27. /roadmap creates the full checklist.</p></div>
     <div class="filters" role="group" aria-label="Filters">
@@ -330,7 +369,7 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
 
   <footer>
     <span>Performance Media Marketing · Tuff Truck Towing · account: no MCC account yet</span>
-    <span>Sources: brief.md, audit-site.md and checklist.md (Oct 27, 2026), CallFire Oct 20–26, Semrush Oct 26, knowledge/benchmarks/towing-us.md</span>
+    <span>Sources: brief.md, audit-site.md, competitors.md, benchmark.md and checklist.md (Oct 27, 2026), CallFire Oct 20–26, Semrush Oct 26, knowledge/benchmarks/towing-us.md</span>
   </footer>
 </div>
 
@@ -345,7 +384,7 @@ footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--line); font
   const esc = s => String(s).replace(/[&<>"]/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));
   const $ = id => document.getElementById(id);
 
-  const steps = [["Send the questions to the client", "Budget, ticket and margin per line, weekends, Wix and GBP access, owner of tag AW-1004387232. The message is ready under \"Client open items\".", "Jhombis", true], ["Confirm the Tulsa boundaries with Bree", "Memorial Dr as the west limit: across the whole city or only near Hwy 51? North and south limits? Claremore: in or out, and what radius? (\"Highway 40\" vs I-44).", "Jhombis", true], ["✓ Done Oct 27: site audit", "7/22, needs fixes. The tracking number is the main phone on the website: that is where at least part of the calls without a campaign come from.", "PMM", false], ["Call tracking on the website", "With Wix access: PMM account Google tag, website call conversion (forwarding number over 320-7595) and calls from ads ≥60 s. Sort out tag AW-1004387232 first.", "PMM", true], ["Form and a single phone number", "Form with ≤4 fields above the fold on mobile, with a measurable /thank-you. Remove the fax tel: link; (918) 894-0368 only on /hauling, which gets no ads.", "Client", true], ["Service landing pages", "Towing BA + East Tulsa and Equipment & Container Hauling. On the client's Wix, or with /landing if access does not come in time.", "PMM", true], ["Competitors and benchmark", "/competitors (real SERP for Broken Arrow and east Tulsa) and /benchmark-interno (MCC towing US, plus hauling accounts if any).", "PMM", false], ["Strategy and roadmap", "/strategy as soon as budget and ticket are in; then /roadmap with dates and exit conditions.", "PMM", false]];
+  const steps = [["Send the questions to the client", "Budget, ticket and margin per line, weekends, Wix and GBP access, owner of tag AW-1004387232. The message is ready under \"Client open items\".", "Jhombis", true], ["Confirm the Tulsa boundaries with Bree", "Memorial Dr as the west limit: across the whole city or only near Hwy 51? North and south limits? Claremore: in or out, and what radius? (\"Highway 40\" vs I-44).", "Jhombis", true], ["✓ Done Oct 27: site audit", "7/22, needs fixes. The tracking number is the main phone on the website: that is where at least part of the calls without a campaign come from.", "PMM", false], ["Call tracking on the website", "With Wix access: PMM account Google tag, website call conversion (forwarding number over 320-7595) and calls from ads ≥60 s. Sort out tag AW-1004387232 first.", "PMM", true], ["Form and a single phone number", "Form with ≤4 fields above the fold on mobile, with a measurable /thank-you. Remove the fax tel: link; (918) 894-0368 only on /hauling, which gets no ads.", "Client", true], ["Service landing pages", "Towing BA + East Tulsa and Equipment & Container Hauling. On the client's Wix, or with /landing if access does not come in time.", "PMM", true], ["✓ Done Oct 27: competitors and benchmark", "Target CPL $21–40 from month 3 (~$51 in months 1–2); real CPC ~$8–8.5. Equipment untested in the MCC: test group only at $700/mo or more.", "PMM", false], ["Strategy and roadmap", "/strategy as soon as budget and ticket are in; then /roadmap with dates and exit conditions.", "PMM", false]];
   if ($('steps')) $('steps').innerHTML = steps.map((s,i)=>`
     <div class="step"><span class="n">${String(i+1).padStart(2,'0')}</span>
       <div><b>${esc(s[0])}</b><p class="d">${esc(s[1])}</p></div>

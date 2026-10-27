@@ -3,7 +3,7 @@ nicho: towing
 pais: US
 cuentas: 21–31 por extracción (19–23 maduras)
 periodo: últimos 90 días, extracciones del 2026-09-23 al 2026-10-01 (jun–oct 2026) + 12 meses de control
-actualizado: 2026-10-01
+actualizado: 2026-10-27 (sección equipment/medium-duty + refresh de 90 días; el resto es del 2026-10-01)
 fuente: Windsor.ai (google_ads). Consolidado de 7 extracciones hechas para 290 Tow, Precision Towing, Jerry's Towing, Spillane's, RR Roadside, JQ Towing y Jump Towing. Crudos en raw/. Cuentas identificadas por nombre (towing, tow, roadside, recovery) porque el MCC aún no tiene etiquetas nicho:/pais:
 ---
 # Benchmark towing US — MCC PMM (consolidado)
@@ -179,6 +179,39 @@ Windsor no expone las listas de negativas. Esto sale de términos con gasto y 0 
   - verificar qué acciones son primarias; algunas cuentas tienen llamada y formulario como primarias a la vez
 
   La CVR baja (<10%) apunta a lo contrario: tracking de llamadas roto o tráfico de ticket bajo (lockout, llantas).
+
+## Equipment, forklift, contenedores y medium-duty (search terms de 12 meses, extracción del 2026-10-27)
+Fuente: search terms del 2025-10-27 al 2026-10-26 en 36 cuentas de towing, que gastaron $145,482 en Search en ese periodo. El filtro buscó equipment, forklift, skid, bobcat, excavator, backhoe, tractor, machine, container, conex, lumber, medium, box truck, heavy, semi, 18 wheel, haul, flatbed transport y trailer. Salieron 601 términos, 62 clics, $339.83 y 17 conversiones: el **0.23% del gasto Search**. Crudo en `raw/towing-us-2026-10-27-equipment-terms.json`.
+
+| Tema | Impr. | Clics | Gasto | Conv. | CPC |
+|---|---|---|---|---|---|
+| Equipo / maquinaria (heavy equipment towing/hauling/movers, farm equipment, machinery) | 64 | 7 | $37.14 | 4 | $5.31 |
+| Forklift | 5 | 1 | $3.09 | 1 | $3.09 |
+| Contenedores (container, conex) | 2 | 1 | $4.54 | 0 | $4.54 |
+| Madera (lumber) | 0 | 0 | $0 | 0 | — |
+| Medium-duty / box truck | 41 | 2 | $9.17 | 0 | $4.58 |
+| Heavy-duty / semi | 437 | 31 | $177.09 | 9 | $5.71 |
+| Remolque de trailers / RV | 215 | 7 | $34.01 | 2 | $4.86 |
+| Ruido: compra, renta o reparación de trailers, car hauler, uhaul | 155 | 13 | $74.79 | 1 | $5.75 |
+
+- **Equipment, forklift, contenedores, madera y medium-duty suman 11 clics y 5 conversiones en un año: es ruido** (playbook §9). No prueba demanda ni la descarta.
+  - Casi ninguna cuenta puja por esos temas. Hay una sola keyword de equipment en el MCC, en amplia.
+  - Lo que aparece entra por amplia desde keywords genéricas.
+  - Para un cliente que vende traslado de equipo, el tema **no está probado**. Va como ad group de prueba, en frase y con landing propia, y se evalúa al llegar a 50 clics o más. Su CPL objetivo sale del margen del cliente, no de este archivo.
+- **Heavy-duty con ad group dedicado** (1 cuenta, 12 keywords): $303.78, 44 clics y 4 conversiones en 12 meses. Es un CPL de ~$76 con una tasa de conversión del 9%, unas 5 veces el CPL de towing liviano de esa misma cuenta. Son menos de 50 clics, así que es un indicio.
+- **Contradicción aparente**: una campaña "heavy" en amplia reporta 103 conversiones a ~$12.6 en keywords "heavy towing". Pero en sus search terms solo ~$46 llevan palabras heavy, semi o equipment. La amplia sirvió búsquedas genéricas de towing, así que **ese CPL no es de heavy-duty**.
+- **Medium-duty y box truck**: hay demanda mínima, con 41 impresiones en 17 cuentas. Va como variante en frase dentro del grupo de towing, no como grupo propio.
+- **Negativas para cuentas que sí hacen equipment hauling**: car hauler/hauling, rv hauler, trailer rental, for rent, for sale, hitch, trailer repair, gooseneck, uhaul y hot shot.
+  - "flatbed equipment" y "trailer" no se negativizan si el cliente transporta equipo o trailers.
+
+**Refresh de 90 días** (2026-07-29 → 2026-10-26), nivel cuenta, 31 cuentas con 50 clics o más; crudo en el mismo JSON:
+- **Maduras**, n=21: CPL $12.23 / $16.10 / $26.01, CPC $4.39 / $5.41 / $6.47, conversión 21.8% / 32.8% / 37.7%. Coincide con los rangos de arriba.
+- **Solo Search, todas**, n=30: CPL $13.99 / **$33.01** / $51.67. La mediana sube frente a $26–32 porque 10 de las 30 cuentas tienen menos de 90 días.
+  - Las nuevas: CPL $44.84 / $51.34 / $69.58, CPC $8.24 en la mediana.
+  - Search madura: mediana de $15.10.
+
+  Para una cuenta nueva solo Search, el CPL objetivo inicial queda en **$21–40** (mediana $26–33 ±20%).
+- **Oklahoma** (1 cuenta, OKC, 42 días): CPC $8.49, conversión 16.7% y CPL $50.68. Bajó de $81 en el mes 1 a $42 en el mes 2. El CPC real del estado es el doble del que estima Semrush para Tulsa ($3.35–4.59).
 
 ## Cómo se actualiza
 Cuando `/benchmark-interno` vuelva a correr para towing US, **actualiza este archivo**; no crees `towing.md` ni otra variante. Agrega la extracción nueva a los rangos (o reemplaza las de más de 90 días) y guarda el crudo en `raw/towing-us-<fecha>.*`.
