@@ -2,11 +2,11 @@
 cliente: Tuff Truck Towing
 slug: tuff-truck-towing
 actualizado: 2026-10-27
-version: 1
+version: 1.1
 customer_id: 727-278-3398
 supuestos:
-  - Pauta en medios estimada en ~$700/mes, a partir del paquete de $1,400 (cuenta "Premium Local Listings 004061"). En el MCC, los paquetes de $1,200–1,500 destinan ~45–50% a medios (towing-us.md). El monto exacto está PENDIENTE de confirmación con Jhombis.
-  - La cuenta 727-278-3398 no está conectada a Windsor ni hay API en la sesión. No se leyó su configuración actual (campañas, conversiones, presupuesto). Se asume vacía o sin gasto.
+  - Pauta en medios confirmada: 52.5% del paquete de $1,400 = $735/mes (Jhombis, 27-oct).
+  - La cuenta 727-278-3398 está conectada a Windsor (27-oct) y está vacía: sin campañas, acciones de conversión ni gasto. No se pudo leer su zona horaria (Windsor no devuelve filas sin campañas): verificarla antes de programar el horario.
   - Ticket y margen por línea PENDIENTES. No hay CPL máximo: se usa el CPL del benchmark como objetivo provisional.
   - Límites de Tulsa PENDIENTES con Bree (Memorial Dr / Hwy 51). Claremore es condicional.
   - Peso máximo que mueve el cliente sin confirmar: "heavy equipment" queda fuera hasta saberlo.
@@ -24,22 +24,22 @@ supuestos:
   
   Va en la cuenta **727-278-3398**. Sin marca, sin PMax, sin Display.
 - **Matemática** (playbook §4):
-  - Pauta ~$700/mes → **$32/día** en días activos (lun–vie, ~21.7 días/mes).
-  - CPC real esperado de ~$8.24 (cuentas nuevas del MCC; Oklahoma $8.49) → **~3.9 clics por día activo, ~84 clics/mes**.
-  - Con la tasa de conversión de cuentas nuevas (15.5%) → **~13 conversiones/mes en los meses 1–2**. Desde el mes 3, 21–27 (benchmark).
+  - Pauta de **$735/mes** → **$34/día** en días activos (lun–vie, ~21.7 días/mes).
+  - CPC real esperado de ~$8.24 (cuentas nuevas del MCC; Oklahoma $8.49) → **~4.1 clics por día activo, ~90 clics/mes**.
+  - Con la tasa de conversión de cuentas nuevas (15.5%) → **~14 conversiones/mes en los meses 1–2**. Desde el mes 3, 22–28 (benchmark).
 - **Puja**: Maximizar clics con **tope de CPC de $9** mientras haya menos de 15 conversiones/mes. Se pasa a **Maximizar conversiones** con 15+ conversiones/mes estables y medición limpia, probablemente en el mes 2–3.
 - **CPL objetivo**: ~$51 en los meses 1–2 (cohorte nueva) y **$21–40 desde el mes 3** (mediana Search ±20%). Meta a 6 meses: ~$15. El **CPL máximo del cliente está PENDIENTE** (ticket y margen).
-- **tCPA**: no antes del **mes 4–6**, y solo con ~30 conversiones calificadas en 30 días, desde el CPA observado. Con $700, el horario comercial y la geo recortada, es probable que no se llegue (ver Riesgos).
+- **tCPA**: no antes del **mes 4–6**, y solo con ~30 conversiones calificadas en 30 días, desde el CPA observado. Con $735, el horario comercial y la geo recortada, es probable que no se llegue (ver Riesgos).
 
 ## Campañas
 | Campaña | Objetivo | Presupuesto/día F1 | % | Puja inicial | Geo | Horario |
 |---|---|---|---|---|---|---|
-| Search \| Towing & Hauling \| BA-East Tulsa \| v1 | Llamadas ≥60 s (+ formulario cuando exista) | **$32** (~$700/mes) | 100% | Maximizar clics, tope de CPC $9 | **Presencia**. Ciudades: Broken Arrow, Bixby, Coweta, Catoosa. Tulsa **solo al este de Memorial Dr** (ZIP completos y pines, con exclusiones; ver abajo). Claremore condicional. Excluir el resto de países | **Lun–vie 7:00–21:00** America/Chicago |
+| Search \| Towing & Hauling \| BA-East Tulsa \| v1 | Llamadas ≥60 s (+ formulario cuando exista) | **$34** ($735/mes) | 100% | Maximizar clics, tope de CPC $9 | **Presencia**. Ciudades: Broken Arrow, Bixby, Coweta, Catoosa. Tulsa **solo al este de Memorial Dr** (ZIP completos y pines, con exclusiones; ver abajo). Claremore condicional. Excluir el resto de países | **Lun–vie 7:00–21:00** America/Chicago |
 | ~~Marca~~ | — | — | — | — | — | No en F1: "tuff truck towing" tiene 90 búsquedas/mes, el sitio está #1 orgánico y nadie puja por la marca (Semrush). Si aparece en search terms con CPC bajo, se agrega en exacta a T2 |
 | LSA (pista paralela) | Llamadas | Presupuesto aparte, a definir | — | — | Mismas ciudades | Igual al horario |
 
 **Por qué una sola campaña.**
-- La regla de aprendizaje pide ≥3× CPL por día y campaña: $153/día con CPL de $51. Con $32/día no alcanza ni para una, así que no se separa towing de hauling en campañas distintas.
+- La regla de aprendizaje pide ≥3× CPL por día y campaña: $153/día con CPL de $51. Con $34/día no alcanza ni para una, así que no se separa towing de hauling en campañas distintas.
 - El límite de fragmentación para $600–1,500 es **1 campaña con 3–5 grupos**. Aquí son 3, con lugar para 1 de Claremore.
 - El cuartil superior del benchmark (CPL de $8–13) usa justo esto: una campaña "Radius" con 1–2 grupos consolidados.
 
@@ -52,7 +52,7 @@ supuestos:
 
 **Por qué el horario no lleva margen.** El estándar es horario comercial + margen, pero el cliente dio lun–vie 7–21. Una llamada pagada que nadie atiende es desperdicio puro. CallFire muestra llamadas contestadas un sábado, así que se amplía a fin de semana solo si el cliente confirma que contesta (pregunta abierta).
 
-**Presupuesto con programación solo de lunes a viernes.** $32/día × ~21.7 días activos ≈ $694/mes. El tope mensual de Google es $32 × 30.4 = $973, así que hay que vigilar la semana 1 para que el gasto no pase de ~$700.
+**Presupuesto con programación solo de lunes a viernes.** $34/día × ~21.7 días activos ≈ $738/mes. El tope mensual de Google es $34 × 30.4 = $1,034, así que hay que vigilar la semana 1 para que el gasto no pase de ~$170 (5 días × $34).
 
 **Configuración fija (estándares PMM):**
 - Solo red de Búsqueda: sin socios ni Display.
@@ -139,15 +139,15 @@ Mínimos del estándar 11 (ver `audit-site.md`):
 ## Presupuesto por fase
 | Fase | Total/mes | Por campaña | Condición para pasar |
 |---|---|---|---|
-| **F0: medición, landings, geo** (ya) | $0 | — | Google tag de la cuenta 727-278-3398 en la landing; llamadas desde anuncios ≥60 s y llamada desde la web (número de reenvío) **probadas con Tag Assistant**; landing /towing publicada; ZIP de Tulsa confirmados con Bree; negativas universales + nicho aplicadas; monto de medios confirmado |
-| **F1: lanzamiento T1 + T2** (días 1–30) | ~$700 | $32/día, Max. clics con tope de $9. E1 en pausa hasta que exista /equipment | ≥14 días y ≥80 clics; search terms revisados los días 7 y 14 |
-| **F2: E1 + optimización** (días 31–60) | ~$700 | Igual; E1 se activa si /equipment existe. Se pausan las keywords con gasto ≥2× CPL objetivo (~$100) y 0 conversiones | **15+ conversiones/mes estables** con medición limpia → Maximizar conversiones |
-| **F3: Max. conversiones y escala** (días 61–120) | ~$700 → proponer más presupuesto si el IS perdido por presupuesto es >40% y el CPL está en objetivo | Max. conversiones sin tCPA | CPL ≤ $40 sostenido 30 días. Se evalúa E1 (50 clics) |
+| **F0: medición, landings, geo** (ya) | $0 | — | Google tag de la cuenta 727-278-3398 en la landing; llamadas desde anuncios ≥60 s y llamada desde la web (número de reenvío) **probadas con Tag Assistant**; landing /towing publicada; ZIP de Tulsa confirmados con Bree; negativas universales + nicho aplicadas; geo confirmada |
+| **F1: lanzamiento T1 + T2** (días 1–30) | $735 | $34/día, Max. clics con tope de $9. E1 en pausa hasta que exista /equipment | ≥14 días y ≥80 clics; search terms revisados los días 7 y 14 |
+| **F2: E1 + optimización** (días 31–60) | $735 | Igual; E1 se activa si /equipment existe. Se pausan las keywords con gasto ≥2× CPL objetivo (~$100) y 0 conversiones | **15+ conversiones/mes estables** con medición limpia → Maximizar conversiones |
+| **F3: Max. conversiones y escala** (días 61–120) | $735 → proponer más presupuesto si el IS perdido por presupuesto es >40% y el CPL está en objetivo | Max. conversiones sin tCPA | CPL ≤ $40 sostenido 30 días. Se evalúa E1 (50 clics) |
 | **F4: tCPA** | igual | tCPA = CPA observado de 30 días ×1.1 | Solo con ~30 conversiones calificadas en 30 días (probablemente no antes del mes 4–6) |
 | **F5: RLSA / PMax** | — | Ver "Por qué NO" | Condiciones de `knowledge/estrategias/pmax-cuando-y-como.md` |
 | **LSA** (paralelo desde F0) | Aparte, a definir | — | GBP verificado + seguro + background check (2–4 semanas). Confirmar que la categoría Towing esté disponible en Broken Arrow |
 
-**Límites de bajo volumen** (playbook §9): con ~84 clics/mes:
+**Límites de bajo volumen** (playbook §9): con ~90 clics/mes:
 - No se podrá comparar T1 contra T2, ni el rendimiento por ciudad o dispositivo, antes del mes 2.
 - No se podrá juzgar E1 antes de los 50 clics: probablemente meses.
 - Nada de A/B de anuncios. Se decide por search terms, por dinero gastado sin conversión y por llamadas calificadas en CallFire, no por tasas sobre menos de 50 clics.
@@ -164,7 +164,7 @@ Mínimos del estándar 11 (ver `audit-site.md`):
 ## Riesgos y supuestos
 1. **El horario recorta la demanda.** Los 7 competidores venden 24/7. Con lun–vie 7–21 se cubre el 42% de las horas de la semana. Es el mayor techo de la cuenta y es decisión del cliente.
 2. **Hay llamadas orgánicas mezcladas.** El número de tracking (918) 320-7595 ya recibe ~6 llamadas/día desde la web. Si Ads no se mide con el número de reenvío de Google, el CPL sale artificialmente bajo. Sin esa conversión probada, no se lanza.
-3. **El monto de medios no está confirmado.** Si el paquete de $1,400 deja menos de $600 en medios, la cuenta cae a 1 campaña con 2 grupos, sin E1, y con menos de 3 clics/día.
+3. **Presupuesto justo para 3 grupos.** $735/mes está apenas por encima del límite de $600 del playbook. Si el CPC real supera ~$11, los clics bajan de 3/día y E1 deja de tener sentido.
 4. **CPL máximo sin calcular.** Ejemplo ilustrativo, no cifra del cliente: un remolque de $150 con 40% de margen y 50% de cierre da un CPL máximo de ~$9 (×0.3). Con un ticket así, el objetivo de $21–40 no sería rentable. Por eso el ticket es bloqueante para validar el objetivo.
 5. **CPC real ~2× Semrush.** En Oklahoma se pagan $8.49 frente a $3.35–4.59 en Semrush. Si el CPC supera $9 en las primeras semanas, Max. clics con tope va a frenar el volumen. En ese caso se revisa el tope, no se quita.
 6. **La geo de Tulsa es fina.** Si los ZIP quedan mal o se usa "Presencia o interés", se paga por clics de toda Tulsa que el cliente no va a atender.

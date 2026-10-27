@@ -39,7 +39,7 @@ tracking_destino: "(918) 638-6348"
 
 ## Objetivo y economía
 - Objetivo primario: **llamadas** (inferido: el cliente pidió un número de tracking, y en el nicho el 86% de las conversiones son llamadas según `knowledge/benchmarks/towing-us.md`). Formulario: secundario, PENDIENTE confirmar si hay uno.
-- Presupuesto mensual: **paquete de $1,400/mes**. La cuenta del MCC se llama "Premium Local Listings 004061 ($1,400 Tuff Truck Towing)" (Jhombis, 27-oct). Pauta real en medios estimada en **~$630–700/mes** (inferido: en el MCC los paquetes de $1,200–1,500 van ~45–50% a medios, towing-us.md). Monto exacto: PENDIENTE de confirmar.
+- Presupuesto mensual: **paquete de $1,400/mes**. La cuenta del MCC se llama "Premium Local Listings 004061 ($1,400 Tuff Truck Towing)" (Jhombis, 27-oct). **Pauta en medios: 52.5% del paquete = $735/mes** (Jhombis, 27-oct).
 - Ticket promedio / margen: PENDIENTE. Hay que pedirlo por línea, porque un remolque liviano, un medium-duty y un traslado de maquinaria o contenedor tienen tickets muy distintos.
 - Capacidad: 5 camiones (cliente) y un conductor nuevo en Claremore (cliente). Trabajos al mes: PENDIENTE.
 - **CPL máximo aceptable**: PENDIENTE, porque falta el ticket y el margen. Referencia rotulada (no es un objetivo), tomada del benchmark de towing US del MCC:
@@ -48,7 +48,7 @@ tracking_destino: "(918) 638-6348"
   - Cuentas maduras: $15–16
   - Equipment hauling y contenedores no tienen benchmark en el MCC.
 - Historial Google Ads:
-  - **Cuenta nueva en el MCC: 727-278-3398** (Jhombis, 27-oct). Todavía no está conectada a Windsor y no hay API en la sesión, así que no se pudo leer si tiene campañas, conversiones o gasto.
+  - **Cuenta nueva en el MCC: 727-278-3398** (Jhombis, 27-oct). Conectada a Windsor el 27-oct: no devuelve campañas, acciones de conversión ni gasto en 2 años (Windsor).
   - Semrush no le ve anuncios pagados (0 keywords de pago) (Semrush).
   - Cuenta previa fuera de PMM: posible, por el tag AW-1004387232 que hay en la web. De quién es: PENDIENTE.
 
@@ -112,8 +112,8 @@ Semrush no registra anunciantes para "towing tulsa" ni para "tow truck tulsa" (S
 - Aplica: PENDIENTE. Towing es categoría de LSA, pero hay que confirmar en el panel que esté disponible en Tulsa/Broken Arrow. Hay licencia estatal (web). Seguro y disposición al background check: PENDIENTE. Necesita el GBP verificado.
 
 ## Pendientes
-- [~] Presupuesto: el paquete es de $1,400 (27-oct). Falta confirmar el monto exacto de medios (~$700 estimado).
-- [ ] Conectar 727-278-3398 a Windsor (o API) y revisar su estado antes de /build-campaign.
+- [x] Presupuesto: paquete de $1,400, con 52.5% a medios = $735/mes (Jhombis, 27-oct).
+- [x] 727-278-3398 conectada a Windsor (27-oct). Está vacía: sin campañas, conversiones ni gasto.
 - [ ] **(bloqueante)** Ticket promedio y margen por línea (light-duty, medium-duty, equipment/container hauling), para calcular el CPL máximo.
 - [ ] **(bloqueante)** Límites exactos de Tulsa con **Bree**: ¿Memorial Dr es el límite oeste en toda la ciudad o solo cerca de la Hwy 51? ¿Cuáles son los límites norte y sur?
 - [ ] **(bloqueante)** Claremore: ¿entra al lanzamiento? ¿La "Highway 40" es la I-44 / Route 66? ¿Con qué radio?

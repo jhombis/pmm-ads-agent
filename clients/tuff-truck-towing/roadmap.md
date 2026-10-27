@@ -12,7 +12,7 @@ plan_en: https://claude.ai/artifact/SXJzd5AN6xtkuqCGKqeAY7
 
 > Las fechas son una proyección; la condición de paso es la que manda. `/weekly-review` avanza de fase solo cuando se cumple la condición.
 >
-> Inputs: brief.md, audit-site.md (7/22, requiere ajustes), competitors.md, benchmark.md y strategy.md v1. Cuenta 727-278-3398. Pauta estimada en ~$700/mes, de un paquete de $1,400.
+> Inputs: brief.md, audit-site.md (7/22, requiere ajustes), competitors.md, benchmark.md y strategy.md v1. Cuenta 727-278-3398. Pauta de $735/mes (52.5% de un paquete de $1,400, confirmado el 27-oct).
 
 ## Resumen
 | Fase | Fecha estimada | Estado |
@@ -21,9 +21,9 @@ plan_en: https://claude.ai/artifact/SXJzd5AN6xtkuqCGKqeAY7
 | 1 — Lanzamiento Search (T1 + T2) | 2026-11-10 → 2026-11-17 | ⏳ |
 | 2 — Limpieza D7 · D14 · D30 (+ E1) | 2026-11-17 · 2026-11-24 · 2026-12-10 | ⏳ |
 | Hito: Max. clics → Max. conversiones | ~2027-01-11 (día 60), con 15+ conv/mes estables | ⏳ |
-| 3 — tCPA | primer chequeo 2027-03-10 (mes 4) | ⏳, probablemente ⛔ con $700/mes (ver supuesto) |
+| 3 — tCPA | primer chequeo 2027-03-10 (mes 4) | ⏳, probablemente ⛔ con $735/mes (ver supuesto) |
 | 4 — Remarketing | no antes de 2027-T2 | ⛔ no califica por tráfico (<1,000 usuarios/30 días) |
-| 5 — PMax | no realista con ~$700/mes | ⛔ por presupuesto y volumen |
+| 5 — PMax | no realista con $735/mes | ⛔ por presupuesto y volumen |
 | 6 — Conversiones offline | fuera de alcance | — |
 | Pista Landing | /towing 2026-10-27 → 2026-11-07 · /equipment → 2026-11-24 | 🔄 |
 | Pista LSA | 2026-11-03 → 2026-12-01 | ⏳ (depende del GBP) |
@@ -39,10 +39,10 @@ plan_en: https://claude.ai/artifact/SXJzd5AN6xtkuqCGKqeAY7
   - negativas aplicadas;
   - monto de medios confirmado.
 - **Tareas** (responsable):
-  - (Jhombis) Confirmar el monto de medios del paquete de $1,400 (~$700 estimado). Si queda por debajo de $600, E1 sale de la estrategia.
+  - ✅ (Jhombis) Monto de medios: 52.5% de $1,400 = $735/mes (27-oct).
   - (Jhombis) Mandar las preguntas del brief al cliente: ticket y margen, peso máximo, fines de semana, acceso al Wix y al GBP, dueño del tag AW-1004387232, heavy/RV/motos, [C] del copy.
   - (Jhombis + Bree) ZIP y pines al este de Memorial Dr sobre el mapa; límites norte y sur; Claremore sí o no.
-  - (PMM) Conectar 727-278-3398 a Windsor o a la API, y revisar si ya tiene campañas, conversiones o recomendaciones automáticas.
+  - ✅ (Jhombis) 727-278-3398 conectada a Windsor (27-oct): vacía. Pendiente (PMM): zona horaria, facturación y recomendaciones automáticas en la interfaz.
   - (PMM) Facturación, recomendaciones automáticas apagadas, lista universal PMM (sin "equipment" ni "cheapest") + `data/negatives-nicho.txt`.
   - (PMM) Google tag de 727-278-3398 en /towing y en la web, más estas conversiones:
     - "Llamadas desde anuncios" ≥60 s;
@@ -61,14 +61,14 @@ plan_en: https://claude.ai/artifact/SXJzd5AN6xtkuqCGKqeAY7
 - **Fecha estimada**: 2026-11-10 (lunes) → 2026-11-17.
 - **Condición de paso**: campaña activa 7 días, anuncios aprobados y ≥1 conversión de llamada ≥60 s registrada (confirma el tracking en producción). CallFire debe mostrar las mismas llamadas, separadas de las orgánicas.
 - **Qué se lanza** (strategy.md, F1):
-  - "Search | Towing & Hauling | BA-East Tulsa | v1" a $32/día, solo lun–vie 7:00–21:00 Central.
+  - "Search | Towing & Hauling | BA-East Tulsa | v1" a $34/día, solo lun–vie 7:00–21:00 Central.
   - T1 Towing Near Me + T2 Towing Ciudades.
   - Max. clics con tope de $9, frase + exacta, Presencia.
   - 1 RSA por grupo y las extensiones.
   - E1 creado **en pausa**.
 - **Riesgos**:
   - CPC de más de $9 → poco volumen (se revisa el tope, no se quita).
-  - El gasto de la semana 1 se pasa de ~$160 por el tope mensual de Google ($973): hay que vigilarlo.
+  - El gasto de la semana 1 se pasa de ~$170 por el tope mensual de Google ($1,034): hay que vigilarlo.
   - Llamadas fuera de horario sin contestar.
 
 ## Fase 2 — Limpieza (D7 · D14 · D30)
@@ -79,21 +79,21 @@ plan_en: https://claude.ai/artifact/SXJzd5AN6xtkuqCGKqeAY7
   - gasto sin conversión (keywords con ≥$100 y 0 conversiones);
   - llamadas en CallFire: contestadas, ≥60 s, fuera de horario, fuera del estado;
   - IS perdido por presupuesto y por ranking.
-  - No hay A/B: con ~84 clics/mes es ruido (1 RSA por grupo).
+  - No hay A/B: con ~90 clics/mes es ruido (1 RSA por grupo).
 - **Ventana**: Thanksgiving (2026-11-26) cae entre D14 y D30. La semana del 23-nov tendrá menos días hábiles y menos llamadas B2B; no hay que leerla como caída.
 
 ## Hito — Max. clics → Max. conversiones
 - **Fecha estimada**: ~2027-01-11 (día 60).
 - **Condición**: 15+ conversiones de llamada calificadas (≥60 s) en 30 días, con la medición limpia.
-- **Supuesto**: ~13 conversiones/mes en los meses 1–2 a ~$700 (benchmark: cohorte nueva, CPL ~$51). Con eso, el umbral de 15 aparece hacia el día 45–60.
+- **Supuesto**: ~14 conversiones/mes en los meses 1–2 a $735 (benchmark: cohorte nueva, CPL ~$51). Con eso, el umbral de 15 aparece hacia el día 45–60.
 - Las cuentas del MCC que se quedan en Max. clics tienen CPL de $70–83, así que el cambio no se pospone si la condición se cumple antes.
 
 ## Fase 3 — Optimización de puja (tCPA)
-- **Fecha estimada**: primer chequeo el **2027-03-10 (mes 4)**; lo realista es que **no califique** con ~$700/mes.
+- **Fecha estimada**: primer chequeo el **2027-03-10 (mes 4)**; lo realista es que **no califique** con $735/mes.
 - **Supuesto explícito**:
-  - Conversiones por día esperadas = presupuesto diario promedio ($23) ÷ CPL del benchmark. A $51 (meses 1–2) da 0.45/día; a $26–33 (mes 3+) da 0.7–0.9/día.
-  - Hacen falta 30 en una **ventana de 30 días** (1/día). A $700 se llega solo con un CPL de ≤$23, por debajo de la mediana de Search.
-  - Además, el presupuesto ($32/día activo) es menor que 3× el CPL ($153): el aprendizaje es lento (+2 semanas).
+  - Conversiones por día esperadas = presupuesto diario promedio ($24) ÷ CPL del benchmark. A $51 (meses 1–2) da 0.47/día; a $26–33 (mes 3+) da 0.7–0.9/día.
+  - Hacen falta 30 en una **ventana de 30 días** (1/día). A $735 se llega solo con un CPL de ≤$24, por debajo de la mediana de Search.
+  - Además, el presupuesto ($34/día activo) es menor que 3× el CPL ($153): el aprendizaje es lento (+2 semanas).
   - El horario lun–vie y la geo recortada restan volumen.
 - **Condición de paso**: ≥30 conversiones calificadas en 30 días con tracking verificado.
 - **Acción**: tCPA = CPA real observado ×1.1 y presupuesto reajustado.
@@ -102,15 +102,15 @@ plan_en: https://claude.ai/artifact/SXJzd5AN6xtkuqCGKqeAY7
 ## Fase 4 — Remarketing
 - **Fecha estimada**: no antes de 2027-T2.
 - **Condición de paso**: audiencia ≥1,000 usuarios en 30 días.
-- **Por qué no califica**: ~84 clics/mes de Ads más ~136 visitas orgánicas/mes (Semrush) dan ~220 usuarios/mes.
+- **Por qué no califica**: ~90 clics/mes de Ads más ~136 visitas orgánicas/mes (Semrush) dan ~225 usuarios/mes.
 - **Si cambia el volumen**: RLSA en observación para E1 (hauling B2B: contratistas que vuelven). Display de remarketing no aplica.
 
 ## Fase 5 — Performance Max
-- **Fecha estimada**: no realista con ~$700/mes.
+- **Fecha estimada**: no realista con $735/mes.
 - **Condiciones que fallan** (pmax-cuando-y-como.md):
   1. ≥30 conversiones/mes (ver Fase 3);
   2. tCPA activo 4 semanas;
-  3. presupuesto ≥3× el CPA por día (~$150/día contra $23);
+  3. presupuesto ≥3× el CPA por día (~$150/día contra $24);
   4. assets propios: 5+ imágenes reales y un video (hoy hay pocas fotos y ningún video);
   5. landing con ≥5% de conversión y anti-spam (no existe).
 - **Qué hacer para cumplirlas**: subir la pauta a ≥$1,500/mes, sostener un CPL de ≤$25 y conseguir fotos y video.
@@ -144,4 +144,5 @@ plan_en: https://claude.ai/artifact/SXJzd5AN6xtkuqCGKqeAY7
 - **Thanksgiving 2026-11-26 y fiestas de fin de año**: semanas cortas; se comparan contra la mediana, no contra la semana anterior.
 
 ## Historial de cambios
+- 2026-10-27: pauta confirmada en $735/mes ($34/día lun–vie); cuenta conectada a Windsor (vacía).
 - 2026-10-27: creado (D0 = 2026-10-27). Inputs: brief, audit-site, competitors, benchmark, strategy v1. URLs del plan pasadas desde brief.md.

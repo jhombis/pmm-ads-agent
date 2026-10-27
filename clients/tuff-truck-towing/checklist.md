@@ -13,7 +13,7 @@ Generado por /roadmap a partir de `knowledge/checklists/setup-cuenta.md` y de la
 ## Fase 0 — Fundación (bloqueante para lanzar)
 ### Negocio y datos
 - [x] (PMM) /audit-landing de tufftrucktowing.com — 2026-10-27 (7/22, requiere ajustes)
-- [~] (Jhombis) **(B)** Presupuesto: paquete de $1,400 (2026-10-27). Falta confirmar el monto de medios (~$700 estimado)
+- [x] (Jhombis) **(B)** Presupuesto: 52.5% del paquete de $1,400 = $735/mes (2026-10-27)
 - [ ] (Cliente) **(B)** Ticket promedio y margen por línea → CPL máximo
 - [ ] (Jhombis) **(B)** Límites de Tulsa (Memorial Dr / Hwy 51, norte y sur) confirmados con Bree
 - [ ] (Jhombis) **(B)** ZIP y pines de Tulsa al este de Memorial, armados sobre el mapa con Bree
@@ -23,8 +23,8 @@ Generado por /roadmap a partir de `knowledge/checklists/setup-cuenta.md` y de la
 - [ ] (Cliente) Confirmar los [C] del copy: horario visible, "Free Hauling Quote", dispatcher, peso máximo, heavy/RV/motos
 
 ### Cuenta 727-278-3398
-- [ ] (PMM) **(B)** Conectar a Windsor o a la API y revisar campañas, conversiones y recomendaciones existentes
-- [ ] (PMM) **(B)** Cuenta vinculada al MCC de PMM con acceso admin (verificar)
+- [x] (Jhombis) **(B)** Conectada a Windsor (2026-10-27): vacía, sin campañas, conversiones ni gasto
+- [ ] (PMM) **(B)** Cuenta vinculada al MCC con acceso admin, y zona horaria verificada (America/Chicago)
 - [ ] (PMM) **(B)** Facturación configurada y verificada
 - [ ] (PMM) **(B)** Aplicación automática de recomendaciones DESACTIVADA
 - [ ] (PMM) **(B)** Lista universal PMM a nivel de cuenta, **sin "equipment" ni "cheapest"**
@@ -58,7 +58,7 @@ Generado por /roadmap a partir de `knowledge/checklists/setup-cuenta.md` y de la
 - [ ] (PMM) 1 RSA por grupo, H1 pinneado, 15H/4D, fuerza "Buena" o más (sin [C] no confirmados)
 - [ ] (PMM) Extensiones: llamada (reenvío de Google), sitelinks (4), callouts (6), snippet Services, ubicación si hay GBP
 - [ ] (PMM) URLs finales verificadas (200, https, sin redirect)
-- [ ] (PMM) Presupuesto de $32/día; vigilar que el gasto de la semana 1 no pase de ~$160
+- [ ] (PMM) Presupuesto de $34/día; vigilar que el gasto de la semana 1 no pase de ~$170
 - [ ] (PMM) Anuncios aprobados (revisar 24 h después)
 - [ ] (PMM) Primera conversión de llamada ≥60 s registrada y cruzada con CallFire
 
@@ -83,10 +83,10 @@ Generado por /roadmap a partir de `knowledge/checklists/setup-cuenta.md` y de la
 - [ ] (PMM) E1 evaluado a los 50 clics: seguir, ajustar o pausar
 
 ## Fase 4 — Remarketing (no califica hoy)
-- [ ] (PMM) Audiencia de visitantes ≥1,000 usuarios en 30 días (hoy ~220/mes)
+- [ ] (PMM) Audiencia de visitantes ≥1,000 usuarios en 30 días (hoy ~225/mes)
 - [ ] (PMM) RLSA en observación (prioridad: E1 / hauling B2B)
 
-## Fase 5 — Performance Max (no realista con ~$700/mes)
+## Fase 5 — Performance Max (no realista con $735/mes)
 - [ ] (PMM) Condiciones de pmax-cuando-y-como.md verificadas (pauta ≥$1,500, ≥30 conv/mes, tCPA 4 semanas, assets propios)
 
 ## Pista Landing (mejoras, F2–3)
@@ -99,7 +99,7 @@ Generado por /roadmap a partir de `knowledge/checklists/setup-cuenta.md` y de la
 
 ## Recurrente (semanal, /weekly-review)
 - [ ] Search terms → negativas
-- [ ] Gasto vs presupuesto mensual (~$700)
+- [ ] Gasto vs presupuesto mensual ($735)
 - [ ] CPA vs objetivo ($51 meses 1–2 · $21–40 desde el mes 3); tendencia 7d vs 28d
 - [ ] Llamadas CallFire vs conversiones de Ads (separar las orgánicas)
 - [ ] Anuncios rechazados o limitados
